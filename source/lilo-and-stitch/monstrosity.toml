@@ -1,0 +1,8 @@
+title = 'Monstrosity'
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:24'
+duration = '4.8'

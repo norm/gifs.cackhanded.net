@@ -1,0 +1,46 @@
+#!/bin/bash
+
+set -eu
+
+PATH=./bin:$PATH
+
+
+declare -a files
+files=( $(find source -name [a-z]*.toml) )
+
+for toml in "${files[@]}"; do
+    x="${toml#source/}"
+    slug="${x%.*}"
+
+    source=$(toml $toml video.source)
+
+    case $source in
+        youtube)
+            ext="$(toml $toml video.ext)"
+            id="$(toml $toml video.file)"
+            video="videos/${id}.${ext}"
+            if [ ! -f "$video" ]; then
+                echo "++ $video"
+                youtube-dl \
+                    -o "$video" \
+                    -f "bestvideo[ext=${ext}]" \
+                    -- \
+                    "$id"
+            fi
+            ;;
+
+        file)
+            ext="$(toml $toml video.ext)"
+            name="$(toml $toml video.file)"
+            video="videos/${name}.${ext}"
+            if [ ! -f "$video" ]; then
+                echo "** $video does not exist"
+            fi
+            ;;
+
+        *)
+            echo "** $toml unknown source: '$source'"
+            ;;
+    esac
+done
+

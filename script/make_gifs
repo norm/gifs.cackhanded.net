@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -eu
+
+PATH="./bin:$PATH"
+
+declare -a files
+files=( $(find source -name [a-z]*.toml) )
+
+for toml in "${files[@]}"; do
+    slug="${toml%.*}"
+
+    file=$(toml $toml video.file)
+    ext=$(toml $toml video.ext)
+    gif="${slug}.gif"
+    video="videos/${file}.${ext}"
+
+    if [ ! -f "$video" ]; then
+        echo "** $toml:"
+        echo "   $video does not exist"
+        exit 1
+    fi
+
+    if [ ! -f "$gif" ]; then
+        start=$(toml $toml video.start)
+        duration=$(toml $toml video.duration)
+
+        echo "++ $gif"
+
+        ffmpeg \
+            -loglevel warning \
+            -ss "$start" \
+            -t "$duration" \
+            -i "$video" \
+            -f gif \
+            "$gif"
+    fi
+done
