@@ -52,30 +52,40 @@ for toml in "${files[@]}"; do
 
         # FIXME actual size
         # captions
-        caption_text="$(toml $toml caption.text)"
-        if [ -n "$caption_text" ]; then
-            caption_font="$(toml $toml caption.font)"
+        ffmpeg_args=""
+        filter="[0:v] ${fps},${scale},split [a][b];"
+        num_captions="$(toml $toml caption --length)"
+        if [ "$num_captions" -gt 0 ]; then
+            for index in $(seq 1 $num_captions); do
+                caption_text="$(toml $toml caption.text $index)"
+                caption_font="$(toml $toml caption.font $index)"
+                caption \
+                    480 \
+                    200 \
+                    --font "${caption_font:-morlrounded-regular.otf}" \
+                    "${caption_text}" \
+                    caption-${index}.png
 
-            caption \
-                480 \
-                200 \
-                --font "${caption_font:-morlrounded-regular.otf}" \
-                "${caption_text}" \
-                caption.png
+                caption_from="$(toml $toml caption.from $index)"
+                caption_to="$(toml $toml caption.to $index)"
 
-            overlay="overlay=(main_w-overlay_w):(main_h-overlay_h)"
+                position="(main_w-overlay_w):(main_h-overlay_h)"
+                timing="${caption_from:-0},${caption_to:-1000}"
+                overlay="overlay=${position}:enable='between(t,${timing})'"
 
-            filter="[0:v] ${fps},${scale},split [a][b];"
-            filter="${filter} [a][1:v] ${overlay} [o];"
-            filter="${filter} [o] palettegen=${max_cols}:${mode} [p];"
-            filter="${filter} [b][1:v] ${overlay} [v];"
-            filter="${filter} [v][p] paletteuse=${dither}:${diff_mode}"
-            ffmpeg_args="-i caption.png"
+                if [ $index = 1 ]; then
+                    filter="${filter} [a][1:v] ${overlay} [o1];"
+                    filter="${filter} [o1] palettegen=${max_cols}:${mode} [p];"
+                    filter="${filter} [b][$index:v] ${overlay} [v$index];"
+                else
+                    filter="${filter} [v$((index-1))][$index:v] ${overlay} [v$index];"
+                fi
+                ffmpeg_args="${ffmpeg_args} -i caption-${index}.png"
+            done
+            filter="${filter} [v$index][p] paletteuse=${dither}:${diff_mode}"
         else
-            filter="[0:v] ${fps},${scale},split [a][b];"
             filter="${filter} [a] palettegen=${max_cols}:${mode} [p];"
             filter="${filter} [b][p] paletteuse=${dither}:${diff_mode}"
-            ffmpeg_args=""
         fi
 
         ffmpeg \

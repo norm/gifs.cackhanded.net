@@ -6,3 +6,13 @@ file     = 'lilo-and-stitch'
 ext      = 'm4v'
 start    = '1:24'
 duration = '4.8'
+
+[[caption]]
+text = 'What is that monstrosity?'
+from = '0'
+to   = '2'
+
+[[caption]]
+text = 'Monstrosity?!'
+from = '3'
+to   = '10'

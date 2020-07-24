@@ -37,11 +37,17 @@ colours  = 192
 mode     = 'full'
 max_size = 2048000
 
-[caption]
+[[caption]]
 text = 'What is that monstrosity?'
 font = 'acherusgrotesque-black.otf'
 from = '0'
 to   = '2'
+
+[[caption]]
+text = 'Monstrosity?!'
+from = '3'
+to   = '10'
+
 ```
 
 ### `[video]` describes the source
@@ -76,11 +82,16 @@ to   = '2'
   larger than this value `gifsicle` will be run with increasing levels
   of `--lossy` to shrink the file size at the expense of image quality
 
-### `[caption]` describes the caption
+### `[[caption]]` describes the caption(s)
+
+Note the double square brackets to indicate `caption` is an entry in an
+array, supporting multiple captions in a GIF.
 
 * `text` is the caption's text
 * `font` is the font to use for the caption, expected to be found in the
   `fonts/` directory; the default is `morlrounded-regular.otf`
+* `from` the [duration][dur] when the caption should start appearing in the GIF
+* `to` the [duration][dur] when the caption should stop appearing
 
 
 ## Making GIFs
