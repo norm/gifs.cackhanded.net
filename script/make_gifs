@@ -3,6 +3,8 @@
 set -eu
 
 PATH="./bin:$PATH"
+DEFAULT_WIDTH=480
+
 
 declare -a files
 files=( $(find source -name [a-z]*.toml) )
@@ -27,12 +29,19 @@ for toml in "${files[@]}"; do
 
         echo "++ $gif"
 
+        # resize the image, preserving the aspect ratio
+        output_width="$(toml $toml output.width)"
+        scale="scale=${output_width:-$DEFAULT_WIDTH}:-1"
+
+        filter="[0:v] ${scale}"
+
         ffmpeg \
             -loglevel warning \
             -ss "$start" \
             -t "$duration" \
             -i "$video" \
             -f gif \
+            -filter_complex "$filter" \
             "$gif"
     fi
 done
