@@ -65,12 +65,14 @@ for toml in "${files[@]}"; do
             for index in $(seq 1 $num_captions); do
                 caption_text="$(toml $toml caption.text $index)"
                 caption_size="$(toml $toml caption.size $index)"
+                caption_margin="$(toml $toml caption.margin $index)"
                 caption_font="$(toml $toml caption.font $index)"
                 caption \
                     ${output_width:-$DEFAULT_WIDTH} \
                     $output_height \
                     --font "${caption_font:-morlrounded-regular.otf}" \
                     --font-size "${caption_size:-128}" \
+                    --margin "${caption_margin:-10}" \
                     "${caption_text}" \
                     caption-${index}.png
 

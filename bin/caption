@@ -6,7 +6,6 @@ import sys
 from PIL import Image, ImageDraw, ImageFont
 
 MINIMUM_FONT_SIZE = 8
-MARGIN = 10
 
 
 class FontTooSmall(Exception):
@@ -16,6 +15,11 @@ class FontTooSmall(Exception):
 def main():
     parser = argparse.ArgumentParser(
         description='Create a caption image.'
+    )
+    parser.add_argument(
+        '--margin',
+        default=10,
+        type=int,
     )
     parser.add_argument(
         '--font',
@@ -49,7 +53,7 @@ def main():
         args.text,
         stroke_width=2
     )
-    while text_too_large(text_size, image_size):
+    while text_too_large(text_size, image_size, args.margin):
         args.font_size -= 2
         if args.font_size < MINIMUM_FONT_SIZE:
             raise FontTooSmall
@@ -61,7 +65,7 @@ def main():
 
     canvas = Image.new('RGBA', image_size, (0, 0, 0, 0))
     image = ImageDraw.Draw(canvas)
-    placement = (MARGIN, image_size[1] - (text_size[1] + MARGIN))
+    placement = (args.margin, image_size[1] - (text_size[1] + args.margin))
     image.text(
         placement,
         args.text,
@@ -74,10 +78,10 @@ def main():
     print('   %s: size=%s %s' % (args.output, args.font_size, args.text))
 
 
-def text_too_large(text, image):
-    if text[0] + (MARGIN * 2) > image[0]:
+def text_too_large(text, image, margin):
+    if text[0] + (margin * 2) > image[0]:
         return True
-    if text[1] + (MARGIN * 2) > image[1]:
+    if text[1] + (margin * 2) > image[1]:
         return True
     return False
 

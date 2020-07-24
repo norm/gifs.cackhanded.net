@@ -96,6 +96,8 @@ array, supporting multiple captions in a GIF.
 * `size` the largest size in pixels of the text, however it will always be
   sized down until the text fits across the GIF (`caption` reports the size 
   actually used); defaults to 128
+* `margin` the margin around the caption text, to stop it butting against
+  the edge of the GIF; defaults to 10
 
 ## Making GIFs
 
