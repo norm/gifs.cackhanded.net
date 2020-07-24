@@ -9,3 +9,4 @@ duration = '4.5'
 
 [output]
 colours  = 192
+mode     = 'full'

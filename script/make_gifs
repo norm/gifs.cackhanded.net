@@ -42,9 +42,15 @@ for toml in "${files[@]}"; do
         output_colours="$(toml $toml output.colours)"
         max_cols="max_colors=${output_colours:-64}"
 
+        # dithering to improve output
+        output_mode="$(toml $toml output.mode)"
+        mode="stats_mode=${output_mode:-diff}"
+        dither="dither=bayer:bayer_scale=4"
+        diff_mode="diff_mode=rectangle"
+
         filter="[0:v] ${fps},${scale},split [a][b];"
-        filter="${filter} [a] palettegen=${max_cols} [p];"
-        filter="${filter} [b][p] paletteuse"
+        filter="${filter} [a] palettegen=${max_cols}:${mode} [p];"
+        filter="${filter} [b][p] paletteuse=${dither}:${diff_mode}"
 
         ffmpeg \
             -loglevel warning \
