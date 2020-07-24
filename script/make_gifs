@@ -64,12 +64,31 @@ for toml in "${files[@]}"; do
             -filter_complex "$filter" \
             "${TEMP}/output.gif"
 
+        losses=0
         gifsicle \
             -O3 \
             --no-extensions \
-            -o "${TEMP}/gifsicle.gif" \
+            -o "${TEMP}/gifsicle.${losses}.gif" \
             "$TEMP/output.gif"
 
-        mv "$TEMP/gifsicle.gif" "$gif"
+        output_max_size="$(toml $toml output.max_size)"
+        if [ -n "$output_max_size" ]; then
+            size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
+            until [ "$size" -lt "$output_max_size" ]; do
+                let "losses = losses + 5"
+
+                gifsicle \
+                    -O3 \
+                    --lossy=$losses \
+                    --no-extensions \
+                    -o "${TEMP}/gifsicle.${losses}.gif" \
+                    "$TEMP/output.gif"
+
+                size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
+                echo "   loss=$losses max=$output_max_size size=$size"
+            done
+        fi
+
+        mv "$TEMP/gifsicle.${losses}.gif" "$gif"
     fi
 done
