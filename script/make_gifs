@@ -38,7 +38,9 @@ for toml in "${files[@]}"; do
         output_fps="$(toml $toml output.fps)"
         fps="fps=${output_fps:-$DEFAULT_FPS}"
 
-        filter="[0:v] ${fps},${scale}"
+        filter="[0:v] ${fps},${scale},split [a][b];"
+        filter="${filter} [a] palettegen [p];"
+        filter="${filter} [b][p] paletteuse"
 
         ffmpeg \
             -loglevel warning \
