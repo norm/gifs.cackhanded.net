@@ -1,0 +1,12 @@
+title = 'Captain Kirk is climbing a mountain'
+
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '15.2'
+duration = '4'
+
+[output]
+colours  = 96
+fps      = '18'

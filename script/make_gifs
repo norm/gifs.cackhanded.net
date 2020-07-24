@@ -4,6 +4,7 @@ set -eu
 
 PATH="./bin:$PATH"
 DEFAULT_WIDTH=480
+DEFAULT_FPS=10
 
 
 declare -a files
@@ -33,7 +34,11 @@ for toml in "${files[@]}"; do
         output_width="$(toml $toml output.width)"
         scale="scale=${output_width:-$DEFAULT_WIDTH}:-1"
 
-        filter="[0:v] ${scale}"
+        # reduce the framerate
+        output_fps="$(toml $toml output.fps)"
+        fps="fps=${output_fps:-$DEFAULT_FPS}"
+
+        filter="[0:v] ${fps},${scale}"
 
         ffmpeg \
             -loglevel warning \
