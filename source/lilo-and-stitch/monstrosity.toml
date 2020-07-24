@@ -12,9 +12,11 @@ text = 'What is that monstrosity?'
 size = '40'
 from = '0'
 to   = '2'
+stroke_width = '0'
 
 [[caption]]
 text = 'Monstrosity?!'
 size = '40'
 from = '3'
 to   = '10'
+stroke_width = '0'

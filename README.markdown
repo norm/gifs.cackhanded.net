@@ -98,6 +98,16 @@ array, supporting multiple captions in a GIF.
   actually used); defaults to 128
 * `margin` the margin around the caption text, to stop it butting against
   the edge of the GIF; defaults to 10
+* `colour` the colour (in a format compatible with
+  [the Pillow ImageColor][col] module) to use for the caption; default is
+  white
+* `stroke_colour` the colour to use for the stroke around around the caption;
+  default is black
+* `stroke_width` the width in pixels for the stroke, 0 to remove; default
+  is 1
+
+[col]: https://pillow.readthedocs.io/en/stable/reference/ImageColor.html
+
 
 ## Making GIFs
 

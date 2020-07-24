@@ -67,12 +67,18 @@ for toml in "${files[@]}"; do
                 caption_size="$(toml $toml caption.size $index)"
                 caption_margin="$(toml $toml caption.margin $index)"
                 caption_font="$(toml $toml caption.font $index)"
+                caption_colour="$(toml $toml caption.colour $index)"
+                caption_strokew="$(toml $toml caption.stroke_width $index)"
+                caption_strokecol="$(toml $toml caption.stroke_colour $index)"
                 caption \
                     ${output_width:-$DEFAULT_WIDTH} \
                     $output_height \
+                    --colour "${caption_colour:-#ffffff}" \
                     --font "${caption_font:-morlrounded-regular.otf}" \
                     --font-size "${caption_size:-128}" \
                     --margin "${caption_margin:-10}" \
+                    --stroke-width "${caption_strokew:-1}" \
+                    --stroke-colour "${caption_strokecol:-#000000}" \
                     "${caption_text}" \
                     caption-${index}.png
 
