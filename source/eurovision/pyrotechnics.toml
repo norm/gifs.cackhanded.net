@@ -11,3 +11,7 @@ duration = '4.5'
 colours  = 192
 mode     = 'full'
 max_size = 2048000
+
+[caption]
+text = 'PYROTECHNICS'
+font = 'acherusgrotesque-black.otf'

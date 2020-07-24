@@ -1,0 +1,82 @@
+#!/usr/bin/env python
+
+import argparse
+import sys
+
+from PIL import Image, ImageDraw, ImageFont
+
+MINIMUM_FONT_SIZE = 8
+MARGIN = 10
+
+
+class FontTooSmall(Exception):
+    pass
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Create a caption image.'
+    )
+    parser.add_argument(
+        '--font',
+        default='morlrounded-regular.otf',
+    )
+    parser.add_argument(
+        'width',
+        type=int,
+    )
+    parser.add_argument(
+        'height',
+        type=int,
+    )
+    parser.add_argument(
+        'text',
+    )
+    parser.add_argument(
+        'output',
+    )
+    args = parser.parse_args()
+    image_size = (args.width, args.height)
+
+    # check the text fits
+    font_size = 64
+    font = ImageFont.truetype('fonts/%s' % args.font, font_size)
+    text_size = font.getsize_multiline(
+        args.text,
+        stroke_width=2
+    )
+    while text_too_large(text_size, image_size):
+        font_size -= 2
+        if font_size < MINIMUM_FONT_SIZE:
+            raise FontTooSmall
+        font = ImageFont.truetype('fonts/%s' % args.font, font_size)
+        text_size = font.getsize_multiline(
+            args.text,
+            stroke_width=2
+        )
+
+    canvas = Image.new('RGBA', image_size, (0, 0, 0, 0))
+    image = ImageDraw.Draw(canvas)
+    placement = (MARGIN, image_size[1] - (text_size[1] + MARGIN))
+    image.text(
+        placement,
+        args.text,
+        '#ffffff',
+        font,
+        stroke_fill='#000000',
+        stroke_width=2,
+    )
+    canvas.save(args.output)
+    print('   %s: size=%s %s' % (args.output, font_size, args.text))
+
+
+def text_too_large(text, image):
+    if text[0] + (MARGIN * 2) > image[0]:
+        return True
+    if text[1] + (MARGIN * 2) > image[1]:
+        return True
+    return False
+
+
+if __name__ == '__main__':
+    main()

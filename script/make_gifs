@@ -50,9 +50,33 @@ for toml in "${files[@]}"; do
         dither="dither=bayer:bayer_scale=4"
         diff_mode="diff_mode=rectangle"
 
-        filter="[0:v] ${fps},${scale},split [a][b];"
-        filter="${filter} [a] palettegen=${max_cols}:${mode} [p];"
-        filter="${filter} [b][p] paletteuse=${dither}:${diff_mode}"
+        # FIXME actual size
+        # captions
+        caption_text="$(toml $toml caption.text)"
+        if [ -n "$caption_text" ]; then
+            caption_font="$(toml $toml caption.font)"
+
+            caption \
+                480 \
+                200 \
+                --font "${caption_font:-morlrounded-regular.otf}" \
+                "${caption_text}" \
+                caption.png
+
+            overlay="overlay=(main_w-overlay_w):(main_h-overlay_h)"
+
+            filter="[0:v] ${fps},${scale},split [a][b];"
+            filter="${filter} [a][1:v] ${overlay} [o];"
+            filter="${filter} [o] palettegen=${max_cols}:${mode} [p];"
+            filter="${filter} [b][1:v] ${overlay} [v];"
+            filter="${filter} [v][p] paletteuse=${dither}:${diff_mode}"
+            ffmpeg_args="-i caption.png"
+        else
+            filter="[0:v] ${fps},${scale},split [a][b];"
+            filter="${filter} [a] palettegen=${max_cols}:${mode} [p];"
+            filter="${filter} [b][p] paletteuse=${dither}:${diff_mode}"
+            ffmpeg_args=""
+        fi
 
         ffmpeg \
             -loglevel warning \
@@ -60,6 +84,7 @@ for toml in "${files[@]}"; do
             -ss "$start" \
             -t "$duration" \
             -i "$video" \
+            ${ffmpeg_args} \
             -f gif \
             -filter_complex "$filter" \
             "${TEMP}/output.gif"

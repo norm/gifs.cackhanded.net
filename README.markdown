@@ -36,6 +36,12 @@ duration = '4.8'
 colours  = 192
 mode     = 'full'
 max_size = 2048000
+
+[caption]
+text = 'What is that monstrosity?'
+font = 'acherusgrotesque-black.otf'
+from = '0'
+to   = '2'
 ```
 
 ### `[video]` describes the source
@@ -69,6 +75,12 @@ max_size = 2048000
 * `max_size` is the maximum size in bytes of the GIF, if the output is
   larger than this value `gifsicle` will be run with increasing levels
   of `--lossy` to shrink the file size at the expense of image quality
+
+### `[caption]` describes the caption
+
+* `text` is the caption's text
+* `font` is the font to use for the caption, expected to be found in the
+  `fonts/` directory; the default is `morlrounded-regular.otf`
 
 
 ## Making GIFs
