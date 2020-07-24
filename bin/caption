@@ -22,6 +22,11 @@ def main():
         default='morlrounded-regular.otf',
     )
     parser.add_argument(
+        '--font-size',
+        default=80,
+        type=int,
+    )
+    parser.add_argument(
         'width',
         type=int,
     )
@@ -39,17 +44,16 @@ def main():
     image_size = (args.width, args.height)
 
     # check the text fits
-    font_size = 64
-    font = ImageFont.truetype('fonts/%s' % args.font, font_size)
+    font = ImageFont.truetype('fonts/%s' % args.font, args.font_size)
     text_size = font.getsize_multiline(
         args.text,
         stroke_width=2
     )
     while text_too_large(text_size, image_size):
-        font_size -= 2
-        if font_size < MINIMUM_FONT_SIZE:
+        args.font_size -= 2
+        if args.font_size < MINIMUM_FONT_SIZE:
             raise FontTooSmall
-        font = ImageFont.truetype('fonts/%s' % args.font, font_size)
+        font = ImageFont.truetype('fonts/%s' % args.font, args.font_size)
         text_size = font.getsize_multiline(
             args.text,
             stroke_width=2
@@ -67,7 +71,7 @@ def main():
         stroke_width=2,
     )
     canvas.save(args.output)
-    print('   %s: size=%s %s' % (args.output, font_size, args.text))
+    print('   %s: size=%s %s' % (args.output, args.font_size, args.text))
 
 
 def text_too_large(text, image):

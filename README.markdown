@@ -47,6 +47,7 @@ to   = '2'
 text = 'Monstrosity?!'
 from = '3'
 to   = '10'
+size = '100'
 
 ```
 
@@ -92,7 +93,9 @@ array, supporting multiple captions in a GIF.
   `fonts/` directory; the default is `morlrounded-regular.otf`
 * `from` the [duration][dur] when the caption should start appearing in the GIF
 * `to` the [duration][dur] when the caption should stop appearing
-
+* `size` the largest size in pixels of the text, however it will always be
+  sized down until the text fits across the GIF (`caption` reports the size 
+  actually used); defaults to 128
 
 ## Making GIFs
 
