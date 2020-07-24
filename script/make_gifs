@@ -2,9 +2,11 @@
 
 set -eu
 
-PATH="./bin:$PATH"
 DEFAULT_WIDTH=480
 DEFAULT_FPS=10
+
+PATH="./bin:$PATH"
+TEMP="$(mktemp -d /tmp/make_gif.XXXXX)"
 
 
 declare -a files
@@ -54,11 +56,20 @@ for toml in "${files[@]}"; do
 
         ffmpeg \
             -loglevel warning \
+            -y \
             -ss "$start" \
             -t "$duration" \
             -i "$video" \
             -f gif \
             -filter_complex "$filter" \
-            "$gif"
+            "${TEMP}/output.gif"
+
+        gifsicle \
+            -O3 \
+            --no-extensions \
+            -o "${TEMP}/gifsicle.gif" \
+            "$TEMP/output.gif"
+
+        mv "$TEMP/gifsicle.gif" "$gif"
     fi
 done
