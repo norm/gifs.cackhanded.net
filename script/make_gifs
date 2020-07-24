@@ -38,8 +38,12 @@ for toml in "${files[@]}"; do
         output_fps="$(toml $toml output.fps)"
         fps="fps=${output_fps:-$DEFAULT_FPS}"
 
+        # reduce no. of colours in the uniform palette
+        output_colours="$(toml $toml output.colours)"
+        max_cols="max_colors=${output_colours:-64}"
+
         filter="[0:v] ${fps},${scale},split [a][b];"
-        filter="${filter} [a] palettegen [p];"
+        filter="${filter} [a] palettegen=${max_cols} [p];"
         filter="${filter} [b][p] paletteuse"
 
         ffmpeg \

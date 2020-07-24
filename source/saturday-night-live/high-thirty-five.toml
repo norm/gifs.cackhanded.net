@@ -6,3 +6,6 @@ file     = 'b-2fnZfK9Lg'
 ext      = 'mp4'
 start    = '2:25.48'
 duration = '2.25'
+
+[output]
+colours = 192
