@@ -64,6 +64,7 @@ for toml in "${files[@]}"; do
 
             for index in $(seq 1 $num_captions); do
                 caption_text="$(toml $toml caption.text $index)"
+                caption_placement="$(toml $toml caption.placement $index)"
                 caption_size="$(toml $toml caption.size $index)"
                 caption_margin="$(toml $toml caption.margin $index)"
                 caption_font="$(toml $toml caption.font $index)"
@@ -79,6 +80,7 @@ for toml in "${files[@]}"; do
                     --margin "${caption_margin:-10}" \
                     --stroke-width "${caption_strokew:-1}" \
                     --stroke-colour "${caption_strokecol:-#000000}" \
+                    --placement ${caption_placement:-bl} \
                     "${caption_text}" \
                     caption-${index}.png
 

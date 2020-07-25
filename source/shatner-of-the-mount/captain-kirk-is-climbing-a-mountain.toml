@@ -17,6 +17,7 @@ from = '0.3'
 to   = '1.9'
 font = 'assistant-semibold.ttf'
 size = '24'
+placement = 'bc'
 
 [[caption]]
 text = 'Why is he climbing a mountain?'
@@ -24,3 +25,4 @@ from = '2'
 to   = '3.4'
 font = 'assistant-semibold.ttf'
 size = '24'
+placement = 'bc'

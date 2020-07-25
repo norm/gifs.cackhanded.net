@@ -57,6 +57,10 @@ def main():
     parser.add_argument(
         'output',
     )
+    parser.add_argument(
+        '--placement',
+        default='bl',
+    )
     args = parser.parse_args()
     image_size = (args.width, args.height)
 
@@ -78,7 +82,46 @@ def main():
 
     canvas = Image.new('RGBA', image_size, (0, 0, 0, 0))
     image = ImageDraw.Draw(canvas)
-    placement = (args.margin, image_size[1] - (text_size[1] + args.margin))
+
+    top = args.margin
+    bottom = image_size[1] - (text_size[1]+args.margin)
+    left = args.margin
+    right = image_size[0] - (text_size[0]+args.margin)
+    vcentre = int((image_size[1] - text_size[1]) / 2)
+    hcentre = int((image_size[0] - text_size[0]) / 2)
+
+    # FIXME percentage placements?
+    placement = list(image_size)
+
+    if ',' in args.placement:
+        x, y = args.placement.split(',')
+        try:
+            x = int(x)
+            if x < 0:
+                x = placement[0] + x
+        except ValueError:
+            pass
+        try:
+            y = int(y)
+            if y < 0:
+                y = placement[1] + y
+        except ValueError:
+            pass
+        placement = [x, y]
+
+    if 't' in args.placement:
+        placement[1] = top
+    if 'm' in args.placement:
+        placement[1] = vcentre
+    if 'b' in args.placement:
+        placement[1] = bottom
+    if 'l' in args.placement:
+        placement[0] = left
+    if 'c' in args.placement:
+        placement[0] = hcentre
+    if 'r' in args.placement:
+        placement[0] = right
+
     image.text(
         placement,
         args.text,
@@ -88,7 +131,12 @@ def main():
         stroke_width=args.stroke_width,
     )
     canvas.save(args.output)
-    print('   %s: size=%s %s' % (args.output, args.font_size, args.text))
+    print('   %s: size=%s placement=%s %s' % (
+        args.output,
+        args.font_size,
+        placement,
+        args.text
+    ))
 
 
 def text_too_large(text, image, margin):

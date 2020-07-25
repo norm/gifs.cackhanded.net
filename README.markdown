@@ -105,6 +105,20 @@ array, supporting multiple captions in a GIF.
   default is black
 * `stroke_width` the width in pixels for the stroke, 0 to remove; default
   is 1
+* `placement` a string representing where the caption should appear;
+  default is `bl`, acceptable values are:
+  * `50,100` — 50 pixels across from the left, 100 pixels down from the top
+  * `-50,-100` — 50 pixels across from the right, 100 pixels up from the
+    bottom
+  * `t` — at the **t**op, `margin` pixels down from the top
+  * `m` — in the **m**iddle, centered vertically
+  * `b` — at the **b**ottom, `margin` pixels up from the bottom
+  * `l` — at the **l**eft, `margin` pixels across from the left
+  * `c` — in the **c**enter, centered horizontally
+  * `r` — at the **r**ight, `margin` pixels across from the right
+  * `c,-60` — letters and numbers can be used in combination, and if
+    only letters the comma can be omitted
+  `caption` reports the x,y position actually used
 
 [col]: https://pillow.readthedocs.io/en/stable/reference/ImageColor.html
 
