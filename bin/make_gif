@@ -33,11 +33,19 @@ function main {
 
     # resize the image, preserving the aspect ratio
     output_width="$(toml $toml output.width)"
-    scale="scale=${output_width:-$DEFAULT_WIDTH}:-1"
+    if [ "$output_width" == 'original' ]; then
+        scale=''
+    else
+        scale="scale=${output_width:-$DEFAULT_WIDTH}:-1"
+    fi
 
     # reduce the framerate
     output_fps="$(toml $toml output.fps)"
-    fps="fps=${output_fps:-$DEFAULT_FPS}"
+    if [ "$output_fps" == 'original' ]; then
+        fps=''
+    else
+        fps="fps=${output_fps:-$DEFAULT_FPS}"
+    fi
 
     # reduce no. of colours in the uniform palette
     output_colours="$(toml $toml output.colours)"

@@ -80,10 +80,11 @@ size = '100'
     * `single` don't optimise
   The differences are illustrated in more detail in
   "[High quality GIF with FFmpeg][quality]")
-* `width` is how wide to make the GIF in pixels; default is 480
+* `width` is how wide to make the GIF in pixels; default is 480,
+  `original` leaves it the same as the source
 * `fps` is how many frames per second to include in the GIF, a lower
   number means a smaller GIF but less smooth movement; default
-  is 10 (animation-like)
+  is 10 (animation-like), `original` leaves it the same as the source
 * `max_size` is the maximum size in bytes of the GIF, if the output is
   larger than this value `gifsicle` will be run with increasing levels
   of `--lossy` to shrink the file size at the expense of image quality
