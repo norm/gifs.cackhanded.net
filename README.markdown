@@ -136,4 +136,4 @@ To make the GIFs:
     % ./script/get_videos
 
     # create GIFs
-    % ./script/make_gifs
+    % make
