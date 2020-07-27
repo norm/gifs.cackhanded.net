@@ -2,6 +2,8 @@
 
 set -eu
 
+export AV_LOG_FORCE_NOCOLOR=1
+
 DEFAULT_WIDTH=480
 DEFAULT_FPS=10
 
