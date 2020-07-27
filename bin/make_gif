@@ -25,6 +25,12 @@ function main {
     start=$(toml $toml video.start)
     duration=$(toml $toml video.duration)
 
+    # crop the image
+    video_crop="$(toml $toml video.crop)"
+    crop=''
+    [ -n "$video_crop" ] \
+        && crop="crop=${video_crop}"
+
     # resize the image, preserving the aspect ratio
     output_width="$(toml $toml output.width)"
     scale="scale=${output_width:-$DEFAULT_WIDTH}:-1"
@@ -45,14 +51,17 @@ function main {
 
     # captions
     ffmpeg_args=""
-    filter="[0:v] ${fps},${scale},split [a][b];"
+    input_filter=$(join ',' "$fps" "$crop" "$scale" "split")
+    filter="[0:v] ${input_filter} [a][b];"
     num_captions="$(toml $toml caption --length)"
     if [ "$num_captions" -gt 0 ]; then
         # determine output size
+        size_filter="$(join ',' "$crop" "$scale")"
         ffmpeg \
             -loglevel warning -y -ss 0 -t 0.01 -i "$video" \
-            -filter_complex "[0:v] ${scale}" \
+            -filter_complex "[0:v] ${size_filter:-scale=w=in_w:h=in_h}" \
             size.gif
+        output_width="$( file size.gif | awk '{ print $7 }')"
         output_height="$( file size.gif | awk '{ print $9 }')"
 
         for index in $(seq 1 $num_captions); do
@@ -136,6 +145,12 @@ function main {
     fi
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
+}
+
+function join {
+    local IFS="$1";
+    shift;
+    echo "$*" | tr -s ',' | sed -e 's/^,//' -e 's/,$//'
 }
 
 function cleanup {

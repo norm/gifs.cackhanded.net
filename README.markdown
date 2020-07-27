@@ -31,6 +31,7 @@ file     = 'lilo-and-stitch'
 ext      = 'm4v'
 start    = '1:24'
 duration = '4.8'
+crop     = '628:468'
 
 [output]
 colours  = 192
@@ -60,8 +61,12 @@ size = '100'
 * `start` is the [duration][dur] into the source video file where the
   GIF will begin
 * `duration` is how long the GIF should be
+* `crop` applies a [cropping value][crop] to the video before it is
+  converted, and crucially before any resize happens so that the output
+  width of the GIF is not reduced
 
 [dur]: http://ffmpeg.org/ffmpeg-utils.html#time-duration-syntax
+[crop]: http://ffmpeg.org/ffmpeg-filters.html#crop
 
 
 ### `[output]` describes the GIF
