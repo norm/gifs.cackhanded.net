@@ -44,6 +44,10 @@ def main():
         type=int,
     )
     parser.add_argument(
+        '--text-align',
+        default='left',
+    )
+    parser.add_argument(
         'width',
         type=int,
     )
@@ -129,6 +133,7 @@ def main():
         font,
         stroke_fill=args.stroke_colour,
         stroke_width=args.stroke_width,
+        align=args.text_align,
     )
     canvas.save(args.output)
     print('   %s: size=%s placement=%s %s' % (

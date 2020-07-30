@@ -122,6 +122,8 @@ array, supporting multiple captions in a GIF.
   default is black
 * `stroke_width` the width in pixels for the stroke, 0 to remove; default
   is 2
+* `align` is how to align the text (only makes sense for multi-line strings),
+  `left`, `center`, or `right`; defaults to `left`
 * `placement` a string representing where the caption should appear;
   default is `bl`, acceptable values are:
   * `50,100` — 50 pixels across from the left, 100 pixels down from the top
