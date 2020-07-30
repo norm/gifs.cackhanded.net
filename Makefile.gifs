@@ -1,6 +1,6 @@
 TOML_DIR := source
 
-TOML  := $(shell find source -name [a-z]*.toml)
+TOML  := $(shell find source -name '[a-z]*.toml')
 GIF   := $(TOML:$(TOML_DIR)/%.toml=$(TOML_DIR)/%.gif)
 THUMB := $(TOML:$(TOML_DIR)/%.toml=$(TOML_DIR)/%.tn.gif)
 
