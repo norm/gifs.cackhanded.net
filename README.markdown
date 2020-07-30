@@ -37,6 +37,7 @@ crop     = '628:468'
 colours  = 192
 mode     = 'full'
 max_size = 2048000
+dither   = 'floyd_steinberg'
 
 [[caption]]
 text = 'What is that monstrosity?'
@@ -88,6 +89,16 @@ size = '100'
 * `max_size` is the maximum size in bytes of the GIF, if the output is
   larger than this value `gifsicle` will be run with increasing levels
   of `--lossy` to shrink the file size at the expense of image quality
+* `dither` is how the palette colours are dithered to create the appearance
+  of more colours:
+    * `bayer:bayer_scale=1` — the scale is an integer between 0 and 5
+    * `floyd_steinberg`
+    * `sierra2`
+    * `sierra2_4a`
+
+  The default is `bayer:bayer_scale=4`. Illustrative samples can be found in
+  "[High quality GIF with FFmpeg][quality]".
+
 
 ### `[[caption]]` describes the caption(s)
 

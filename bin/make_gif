@@ -56,7 +56,8 @@ function main {
     # dithering to improve output
     output_mode="$(toml $toml output.mode)"
     mode="stats_mode=${output_mode:-diff}"
-    dither="dither=bayer:bayer_scale=4"
+    output_dither="$(toml $toml output.dither)"
+    dither="dither=${output_dither:-bayer:bayer_scale=4}"
     diff_mode="diff_mode=rectangle"
 
     # captions
