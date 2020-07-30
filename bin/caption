@@ -40,7 +40,7 @@ def main():
     )
     parser.add_argument(
         '--stroke-width',
-        default=1,
+        default=2,
         type=int,
     )
     parser.add_argument(

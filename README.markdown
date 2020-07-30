@@ -121,7 +121,7 @@ array, supporting multiple captions in a GIF.
 * `stroke_colour` the colour to use for the stroke around around the caption;
   default is black
 * `stroke_width` the width in pixels for the stroke, 0 to remove; default
-  is 1
+  is 2
 * `placement` a string representing where the caption should appear;
   default is `bl`, acceptable values are:
   * `50,100` — 50 pixels across from the left, 100 pixels down from the top
