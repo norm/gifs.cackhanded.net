@@ -1,0 +1,12 @@
+<h1>GIFs tagged {{tokens.tag}}</h1>
+
+<ul class='thumbs'>
+  {% for gif in pages %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,26 @@
+title = 'Letting the oxygen out'
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-16T13:10:00Z
+updated = 2020-07-29T11:29:03Z
+tag = ['benny', 'construction', 'disappointment', 'lego', 'spaceship']
+body_markdown = """
+
+Benny says “You’re really letting the oxygen out of my tank here”
+and thumps a partially assembled spaceship, which breaks apart.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-lego-movie'
+ext      = 'm4v'
+start    = '55:40.2'
+duration = '4.2'
+
+[[caption]]
+text = "You’re really letting the\noxygen out of my tank here"
+from = '1'
+to   = '3'
+placement = 'bc'
+size = '24'
+align = 'center'

@@ -1,0 +1,24 @@
+title = 'So naughty'
+published = 2014-10-21T10:30:00Z
+updated = 2020-07-29T11:42:41Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['captain-gantu', 'court', 'dr-jumba-jookiba', 'experiment-626', 'mazzgif', 'quote']
+body_markdown = """
+
+The Grand Councilwoman says (of Experiment 626's language) “So naughty!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '2:25.3'
+duration = '4.5'
+
+[[caption]]
+text = 'So naughty!'
+size = '32'
+from = '1.9'
+to   = '4.5'
+placement = 'bc'

@@ -1,0 +1,6 @@
+<h1>All tags</h1>
+<ul class='tags'>
+  {% for tag in pages %}
+    <li><a href='{{ path("tag-index", tag=tag) }}'>{{tag}}</a></li>
+  {% endfor %}
+</ul>

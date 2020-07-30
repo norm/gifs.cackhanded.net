@@ -1,0 +1,26 @@
+title = 'Hit the hyperdrive!'
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-12T15:40:00Z
+updated = 2020-07-29T10:58:48Z
+tag = ['asteroid', 'exogorth', 'lego', 'millennium-falcon']
+body_markdown = """
+
+The Millennium Falcon flies out of a tunnel in an asteroid. (In the movie
+soundtrack Lando Calrissian exclaims “Come on Chewie, hit the hyperdrive!”)
+
+The engine lights go out.
+
+An exogorth swallows the Millennium Falcon.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-lego-movie'
+ext      = 'm4v'
+start    = '57:43'
+duration = '4.3'
+
+[output]
+colours = 96
+dither  = 'floyd_steinberg'

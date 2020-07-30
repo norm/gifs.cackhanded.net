@@ -1,0 +1,23 @@
+title = 'Adrift in the sheltered harbour'
+published = 2014-10-03T08:00:00Z
+updated = 2020-07-29T13:25:08Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['cobra-bubbles', 'mazzgif', 'patience', 'quote']
+body_markdown = """
+
+Cobra Bubbles flexes his shoulders and neck, then says “Thus far you have been
+adrift in the sheltered harbour of my patience…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '41:51.8'
+duration = '8.6'
+
+[[caption]]
+text = "Thus far you have been adrift in the\nsheltered harbour of my patience…"
+from = '3.5'
+to   = '10'

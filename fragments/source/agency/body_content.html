@@ -1,0 +1,21 @@
+<h1>NASA</h1>
+<p class='subhead'>Space missions.</p>
+
+{{body}}
+
+<ul>
+  {% for mission in page.agency_set.filter(type='mission') %}
+    <li><a href='{{mission.path}}'>{{mission.title}}</a></li>
+  {% endfor %}
+</ul>
+
+<ul class='thumbs'>
+  {% for gif in page.agency_set.filter(type__neq='mission') %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

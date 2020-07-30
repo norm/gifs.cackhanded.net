@@ -1,0 +1,32 @@
+title = 'First try!'
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-11T14:00:00Z
+updated = 2020-07-29T10:14:20Z
+tag = ['batarang', 'batman', 'benny', 'lego']
+body_markdown = """
+
+Batman is throwing countless batarangs at a red button and they all miss.
+The last one finally catches, spins, and drops on the button. It turns green.
+
+Batman exclaims “First try!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-lego-movie'
+ext      = 'm4v'
+start    = '58:33.1'
+duration = '5.2'
+
+[output]
+colours = 160
+dither  = 'sierra2_4a'
+mode    = 'full'
+
+[[caption]]
+text = 'First try!'
+from = '4.1'
+to   = '10'
+placement = 'bc'
+size = '24'

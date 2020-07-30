@@ -1,0 +1,29 @@
+title = 'Hold it'
+source_fkey = 'shatner-of-the-mount/index'
+published = 2020-07-30T07:02:00Z
+body_markdown = """
+
+William Shatner saying 
+“Hold it, please.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '102.3'
+duration = '1.7'
+crop     = '628:468'
+
+[output]
+colours  = 96
+fps      = '18'
+
+[[caption]]
+text = 'Hold it, please'
+from = '0.3'
+to   = '1.1'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'

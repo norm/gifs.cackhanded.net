@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+
+{{body}}
+
+<h3>Related articles</h3>
+<ul id='related'>
+  {% for source in page.source_set.order_by('published') %}
+    <li>
+      <a href='{{source.path}}'>{{source.title}}
+        <img src='/{{source.slug}}.tn.gif'>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

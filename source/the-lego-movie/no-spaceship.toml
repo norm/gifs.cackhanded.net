@@ -1,0 +1,23 @@
+title = 'No spaceship'
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-17T15:00:00Z
+# updated = 2020-01-01T00:00:00Z
+tag = ['benny', 'construction', 'disappointment', 'lego', 'spaceship']
+body_markdown = """
+
+A supercut of Benny hitting partially assembled spaceships,
+which then break apart.
+
+"""
+
+# FIXME
+# this was made from different segments of the movie, which there is No
+# option for yet (using the original 2014 gif)
+#
+# [video]
+# source   = 'file'
+# file     = 'the-lego-movie'
+# ext      = 'm4v'
+# start    = '5:17'
+# duration = '3'
+

@@ -1,0 +1,47 @@
+title = 'Not now son'
+published = 2014-07-10T12:20:00Z
+updated = 2020-07-28T16:30:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+body_markdown = """
+
+Professor Membrane interrupts his son Dib. “Not now son, I’m making…”
+Lightning erupts from an offscreen device. Membrane holds his creation aloft.
+
+“TOAST!”
+
+Dib walks off.
+
+"""
+
+tag = [
+    'dib',
+    'lightning',
+    'professor-membrane',
+    'toast',
+]
+
+[video]
+source   = 'file'
+file     = 'zim-s01e01'
+ext      = 'mp4'
+start    = '8:44'
+duration = '6.6'
+crop     = '700:480'
+
+[output]
+colours  = 192
+mode     = 'full'
+max_size = 2048000
+
+[[caption]]
+text = "Not now son, I'm making..."
+from = '0'
+to   = '2'
+
+[[caption]]
+text = "TOAST!"
+size = '180'
+stroke_width = '4'
+from = '4.25'
+to   = '5.25'

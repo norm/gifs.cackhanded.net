@@ -1,0 +1,25 @@
+title = 'Moon on a stick'
+published = 2015-07-07T16:30:00Z
+# updated = 2020-01-01T00:00:00Z
+agency_fkey = 'nasa/index'
+mission_fkey = 'nasa/apollo-11/index'
+tag = ['buzz-aldrin', 'flag', 'mazzgif', 'moon', 'neil-armstrong', 'stick']
+
+body_markdown = """
+
+Neil Armstrong and Buzz Aldrin plant the American flag on the moon. The image
+is vertically flipped so that it looks like the moon is on top of the stick.
+
+"""
+
+# FIXME
+# this was made from different segments of the movie, which there is No
+# option for yet (using the original 2014 gif)
+#
+# [video]
+# source   = 'file'
+# file     = 'the-lego-movie'
+# ext      = 'm4v'
+# start    = '5:17'
+# duration = '3'
+

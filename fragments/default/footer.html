@@ -1,0 +1,23 @@
+<footer>
+  <p>
+    <span>
+      Created by 
+      <a href='https://twitter.com/cackhanded'>Mark Norman Francis</a>.
+    </span>
+    {% if page and page.output %}
+      <span>
+        The config that produced this GIF is on 
+        <a href='https://github.com/norm/gifs.cackhanded.net/blob/main/source{{page.path}}.toml'>GitHub</a>.
+      </span>
+    {% else %}
+      <span>
+        The source for this site is on 
+        <a href='https://github.com/norm/gifs.cackhanded.net/'>GitHub</a>.
+      </span>
+    {% endif %}
+    <span>
+      Site generated
+      <a href='https://github.com/norm/flourish'>with a flourish</a>.
+    </span>
+  </p>
+</footer>

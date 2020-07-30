@@ -1,4 +1,22 @@
 title = 'High thirty-five'
+published = 2014-07-09T17:00:00Z
+updated = 2020-07-28T16:30:00Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/37x16/index'
+body_markdown = """
+
+Snow White holds her hand up and it is high-fived by all seven dwarves at
+the same time.
+
+"""
+
+tag = [
+    'high-five',
+    'vanessa-bayer',
+    'snow-white',
+    'seven-dwarves',
+]
+
 
 [video]
 source   = 'youtube'

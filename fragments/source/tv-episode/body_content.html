@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+<p class='subhead'>
+  {% if season %}
+    Season {{season}}, episode {{episode}}
+  {% else %}
+    An episode
+  {% endif %}
+  of <a href='{{page.show.path}}'>{{page.show.title}}</a>.
+</p>
+
+<div class='synopsis'>
+{{body}}
+</div>
+
+<ul class='thumbs'>
+  {% for gif in page.episode_set.all().order_by('published') %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

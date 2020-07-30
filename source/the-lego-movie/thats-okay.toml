@@ -1,0 +1,92 @@
+title = "That's okay"
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-13T17:20:00Z
+updated = 2020-07-29T10:48:33Z
+tag = ['benny', 'construction', 'disappointment', 'lego', 'spaceship']
+body_markdown = """
+
+Benny says “That’s okay, I didn’t really want to build a spaceship anyway.”
+and kicks a partially assembled spaceship, which breaks apart.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-lego-movie'
+ext      = 'm4v'
+start    = '46:51'
+duration = '3.7'
+
+[output]
+colours = 96
+dither  = 'floyd_steinberg'
+
+[[caption]]
+text = "That’s okay, I didn’t really want\nto build a spaceship anyway."
+size = '24'
+from = '0'
+to = '2.2'
+
+# from = '0'
+# to   = '1.2'
+# placement = 'bc'
+
+# [[caption]]
+# text = 'GO'
+# from = '1.5'
+# to   = '1.6'
+# size = '40'
+# placement = '63,154'
+# # size = '24'
+# # font = 'assistant-semibold.ttf'
+# # placement = 'bc'
+
+# [[caption]]
+# text = 'GOO'
+# from = '1.6'
+# to   = '1.7'
+# size = '40'
+# placement = '63,154'
+# # size = '24'
+# # font = 'assistant-semibold.ttf'
+# # placement = 'bc'
+
+# [[caption]]
+# text = 'GOOO'
+# from = '1.7'
+# to   = '1.8'
+# size = '40'
+# placement = '63,154'
+# # size = '24'
+# # font = 'assistant-semibold.ttf'
+# # placement = 'bc'
+
+# [[caption]]
+# text = 'GOOOO'
+# from = '1.8'
+# to   = '1.9'
+# size = '40'
+# placement = '63,154'
+# # size = '24'
+# # font = 'assistant-semibold.ttf'
+# # placement = 'bc'
+
+# [[caption]]
+# text = 'GOOOOO'
+# from = '1.9'
+# to   = '2'
+# size = '40'
+# placement = '63,154'
+# # size = '24'
+# # font = 'assistant-semibold.ttf'
+# # placement = 'bc'
+
+
+# [[caption]]
+# text = 'GOOOOO SPORTS TEAM!'
+# from = '2'
+# to   = '4'
+# size = '40'
+# # size = '24'
+# # font = 'assistant-semibold.ttf'
+# placement = 'bc'

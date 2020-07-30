@@ -1,0 +1,20 @@
+title = 'What a lady!'
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-06T17:25:00Z
+updated = 2020-07-29T10:37:16Z
+tag = ['lego', 'saloon', 'spit', 'spitoon', 'the-old-west', 'wyldstyle']
+body_markdown = """
+
+Wyldstyle spits into a spitoon.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-lego-movie'
+ext      = 'm4v'
+start    = '27:33.1'
+duration = '5'
+
+[output]
+colours  = 128

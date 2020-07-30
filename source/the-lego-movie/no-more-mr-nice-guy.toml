@@ -1,0 +1,21 @@
+title = 'No more Mr Nice Guy'
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-07T13:30:00Z
+updated = 2020-07-29T10:29:12Z
+tag = ['bricksburg', 'ear-bud', 'face', 'good-cop', 'lego', 'police', 'q-tip', 'nail-polish-remover']
+body_markdown = """
+
+President Business uses an ear bud doused in nail polish remover to
+remove Good Cop's face.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-lego-movie'
+ext      = 'm4v'
+start    = '26:23.8'
+duration = '5'
+
+[output]
+dither = 'floyd_steinberg'

@@ -1,0 +1,45 @@
+title = 'New job.'
+published = 2014-10-21T10:30:00Z
+updated = 2020-07-29T13:42:22Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['cobra-bubbles', 'mazzgif', 'job', 'quote']
+body_markdown = """
+
+Cobra Bubbles points with his sunglasses at Nani and says “New job.”
+Points at Stitch. “Model citizen.” 
+
+He puts his sunglasses on, but the right lens jumps out ruining his gravitas.
+
+“Good day.”
+
+He walks off.
+ 
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '42:15.2'
+duration = '6.7'
+
+[output]
+colours = '96'
+
+[[caption]]
+text = 'New job.'
+size = '32'
+from = '0'
+to   = '1'
+
+[[caption]]
+text = 'Model citizen.'
+size = '32'
+from = '2'
+to   = '3.3'
+
+[[caption]]
+text = 'Good day.'
+size = '32'
+from = '5.3'
+to   = '5.7'

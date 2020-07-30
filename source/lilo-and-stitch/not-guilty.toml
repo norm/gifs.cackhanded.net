@@ -1,0 +1,23 @@
+title = 'Not guilty'
+published = 2014-10-21T10:30:00Z
+updated = 2020-07-29T11:51:49Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['court', 'dr-jumba-jookiba', 'mazzgif', 'quote']
+body_markdown = """
+
+Dr Jumba Jookiba proclaims “Not guilty!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '0:53'
+duration = '2.1'
+
+[[caption]]
+text = 'Not guilty!'
+size = '32'
+from = '0.5'
+to   = '2.1'

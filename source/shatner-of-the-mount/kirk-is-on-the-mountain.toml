@@ -1,0 +1,29 @@
+title = 'Kirk is on the mountain'
+source_fkey = 'shatner-of-the-mount/index'
+published = 2020-07-30T06:58:00Z
+body_markdown = """
+
+William Shatner saying 
+“Kirk is on the mountain.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '1:11.6'
+duration = '1.12'
+crop     = '628:468'
+
+[output]
+colours  = 96
+fps      = '18'
+
+[[caption]]
+text = 'Kirk is on the mountain'
+from = '0'
+to   = '0.85'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'

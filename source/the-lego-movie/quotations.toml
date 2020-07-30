@@ -1,0 +1,26 @@
+title = 'Quotations'
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-09T09:15:00Z
+updated = 2020-07-29T10:12:51Z
+tag = ['air-quotes', 'bad-cop', 'bricksburg', 'claw-hands', 'emmet-brickowski', 'interrogation', 'lego', 'police', 'quotations']
+body_markdown = """
+
+Bad Cop, interrogating Emmet Brickowski about the Piece of Resistance.
+
+“You see the quotations I'm making with my claw hands?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-lego-movie'
+ext      = 'm4v'
+start    = '11:00.75'
+duration = '2.8'
+
+[output]
+colours = 80
+
+[[caption]]
+text = "You see the quotations I'm\nmaking with my claw hands?"
+size = '24'

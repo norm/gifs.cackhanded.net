@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+
+{% if page.series %}
+<p>
+  I AM A TV SERIES
+  <a href='{{page.series.path}}'>{{page.series.title}}</a>
+</p>
+{% endif %}
+
+{{body}}

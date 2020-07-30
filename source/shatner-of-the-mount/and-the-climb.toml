@@ -1,0 +1,45 @@
+title = 'The climb is going'
+source_fkey = 'shatner-of-the-mount/index'
+published = 2020-07-30T07:04:00Z
+body_markdown = """
+
+William Shatner saying 
+“And the climb is going where no man has gone before.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '120'
+duration = '7.5'
+crop     = '628:468'
+
+[output]
+colours  = 96
+fps      = '18'
+
+[[caption]]
+text = 'And the climb'
+from = '2'
+to   = '3.2'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = 'is going'
+from = '4.2'
+to   = '5.3'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = 'Where no man has gone before'
+from = '6'
+to   = '7'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'

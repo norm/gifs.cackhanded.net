@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<p class='subhead'>
+  A space mission, from 
+  {{start.strftime('%A %d %B, %Y')}}
+  to
+  {{finish.strftime('%A %d %B, %Y')}}.
+</p>
+
+
+<div class='synopsis'>
+{{body}}
+</div>
+
+<ul class='thumbs'>
+  {% for gif in page.mission_set.all() %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

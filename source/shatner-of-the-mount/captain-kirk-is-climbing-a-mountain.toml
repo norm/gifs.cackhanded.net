@@ -1,4 +1,13 @@
 title = 'Captain Kirk is climbing a mountain'
+source_fkey = 'shatner-of-the-mount/index'
+published = 2020-07-30T06:45:00Z
+body_markdown = """
+
+William Shatner saying 
+“Captain Kirk is climbing a mountain.
+Why is he climbing a mountain?”
+
+"""
 
 [video]
 source   = 'youtube'
@@ -9,7 +18,7 @@ duration = '4'
 crop     = '628:468'
 
 [output]
-colours  = 96
+colours  = '96'
 fps      = '18'
 
 [[caption]]

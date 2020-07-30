@@ -1,0 +1,93 @@
+title = 'Go Sports Team!'
+source_fkey = 'the-lego-movie/index'
+published = 2014-07-06T15:10:00Z
+updated = 2020-07-29T10:02:40Z
+tag = ['bricksburg', 'crowd', 'emmet-brickowski', 'lego', 'sports', 'train']
+body_markdown = """
+
+Emmet Brickowski, walking along a train platform, reciting the 
+instructions on how to fit in, have everybody like you, and always be happy
+(step 19).
+
+“Always support the local sports team.”
+
+A train pulls in and everyone on it shouts “GO SPORTS TEAM!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-lego-movie'
+ext      = 'm4v'
+start    = '5:17'
+duration = '3'
+
+[output]
+colours = 96
+dither  = 'floyd_steinberg'
+
+[[caption]]
+text = 'Always root for the local sports team'
+from = '0'
+to   = '1.2'
+placement = 'bc'
+
+[[caption]]
+text = 'GO'
+from = '1.5'
+to   = '1.6'
+size = '40'
+placement = '63,154'
+# size = '24'
+# font = 'assistant-semibold.ttf'
+# placement = 'bc'
+
+[[caption]]
+text = 'GOO'
+from = '1.6'
+to   = '1.7'
+size = '40'
+placement = '63,154'
+# size = '24'
+# font = 'assistant-semibold.ttf'
+# placement = 'bc'
+
+[[caption]]
+text = 'GOOO'
+from = '1.7'
+to   = '1.8'
+size = '40'
+placement = '63,154'
+# size = '24'
+# font = 'assistant-semibold.ttf'
+# placement = 'bc'
+
+[[caption]]
+text = 'GOOOO'
+from = '1.8'
+to   = '1.9'
+size = '40'
+placement = '63,154'
+# size = '24'
+# font = 'assistant-semibold.ttf'
+# placement = 'bc'
+
+[[caption]]
+text = 'GOOOOO'
+from = '1.9'
+to   = '2'
+size = '40'
+placement = '63,154'
+# size = '24'
+# font = 'assistant-semibold.ttf'
+# placement = 'bc'
+
+
+[[caption]]
+text = 'GOOOOO SPORTS TEAM!'
+from = '2'
+to   = '4'
+size = '40'
+# size = '24'
+# font = 'assistant-semibold.ttf'
+placement = 'bc'

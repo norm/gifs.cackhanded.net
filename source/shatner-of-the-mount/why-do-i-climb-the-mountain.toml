@@ -1,0 +1,54 @@
+title = 'Why do I climb the mountain?'
+source_fkey = 'shatner-of-the-mount/index'
+published = 2020-07-30T06:53:00Z
+body_markdown = """
+
+William Shatner saying 
+“Why do I climb the mountain? Because I’m in love.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '55.7'
+duration = '4.5'
+crop     = '628:468'
+
+[output]
+colours  = 96
+fps      = '18'
+
+[[caption]]
+text = 'Why do I climb the mountain?'
+from = '0.3'
+to   = '1.8'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = "Because I'm in love"
+from = '2.6'
+to   = '3.8'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+
+# # [output]
+# # colours  = 192
+# # mode     = 'full'
+# # max_size = 2048000
+
+# # [[caption]]
+# # text = 'PYROTECHNICS'
+# # font = 'acherusgrotesque-black.otf'
+# # from = '0'
+# # to = '0.6'
+# # margin = '2'
+# # colour = '#ff0000'
+# # stroke_colour = '#ffffff'
+# # size = '48'
+# # placement = 'c,-60'

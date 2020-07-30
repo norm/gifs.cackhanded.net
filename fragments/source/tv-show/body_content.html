@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<p class='subhead'>A TV series.</p>
+
+{{body}}
+
+<ul>
+  {% for episode in page.show_set.filter(type='tv-episode') %}
+    <li><a href='{{episode.path}}'>{{episode.title}}</a></li>
+  {% endfor %}
+</ul>
+
+<h2>Latest {{title}} GIFs</h2>
+<ul class='thumbs'>
+  {# FIXME slice #}
+  {% for gif in page.show_set.filter(type__neq='tv-episode').order_by('published') %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

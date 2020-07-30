@@ -1,0 +1,20 @@
+title = 'Expressions'
+source_fkey = 'shatner-of-the-mount/index'
+published = 2020-07-30T06:54:30Z
+body_markdown = """
+
+A selection of wordless William Shatner expressions and pointing.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '59.2'
+duration = '4.3'
+crop     = '628:468'
+
+[output]
+colours  = 96
+fps      = '18'

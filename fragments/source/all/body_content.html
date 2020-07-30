@@ -1,0 +1,48 @@
+<h1>{{title}}</h1>
+
+<figure>
+  <img src='/{{tokens.slug}}.gif'>
+  <figcaption>
+    <p class='url'><a href='/{{tokens.slug}}.gif'>¶</a></p>
+    {% if body %}
+      {{body}}
+    {% else %}
+      {% for caption in page.caption %}
+        <p>“{{caption.text}}”</p>
+      {% endfor %}
+    {% endif %}
+  </figcaption>
+</figure>
+
+<dl>
+  <dt>Posted</dt>
+  <dd>{{published.strftime('%-I:%M%p')|lower}} {{published.strftime('%A %d %B, %Y')}}</dd>
+  {% if page.updated %}
+    <dt>Updated</dt>
+    <dd>{{updated.strftime('%-I:%M%p')|lower}} {{updated.strftime('%A %d %B, %Y')}}</dd>
+  {% endif %}
+  {% if page.episode %}
+    <dt>Episode</dt>
+    <dd><a href='{{page.episode.path}}'>{{page.episode.title}}</a></dd>
+    <dt>Show</dt>
+    <dd><a href='{{page.show.path}}'>{{page.show.title}}</a></dd>
+  {% endif %}
+  {% if page.agency %}
+    <dt>Agency</dt>
+    <dd><a href='{{page.agency.path}}'>{{page.agency.title}}</a></dd>
+    <dt>Mission</dt>
+    <dd><a href='{{page.mission.path}}'>{{page.mission.title}}</a></dd>
+  {% endif %}
+  {% if page.source %}
+    <dt>Source</dt>
+    <dd><a href='{{page.source.path}}'>{{page.source.title}}</a></dd>
+  {% endif %}
+  {% if tag %}
+    <li class='tag'>
+      <dt>Tagged</dt>
+      {% for t in tag %}
+        <dd><a href='{{ path("tag-index", tag=t) }}'>{{t}}</a></dd>
+      {% endfor %}
+    </li>
+  {% endif %}
+</dl>

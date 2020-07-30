@@ -1,0 +1,45 @@
+title = 'To hug the mountain'
+source_fkey = 'shatner-of-the-mount/index'
+published = 2020-07-30T06:47:00Z
+body_markdown = """
+
+William Shatner saying 
+“To hug the mountain. To envelop that mountain.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '30.1'
+duration = '3.8'
+crop     = '628:468'
+
+[output]
+colours  = 96
+fps      = '18'
+
+[[caption]]
+text = 'To hug the mountain'
+from = '0'
+to   = '1.4'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = 'To envelop'
+from = '1.75'
+to   = '2.95'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = '107,319'
+
+[[caption]]
+text = 'To envelop that mountain'
+from = '3'
+to   = '3.5'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
