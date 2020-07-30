@@ -107,7 +107,7 @@ function main {
             overlay="overlay=${position}:enable='between(t,${timing})'"
 
             if [ $index = 1 ]; then
-                filter="${filter} [a][1:v] ${overlay} [o1];"
+                filter="${filter} [a][1:v] overlay=${position} [o1];"
                 filter="${filter} [o1] palettegen=${max_cols}:${mode} [p];"
                 filter="${filter} [b][$index:v] ${overlay} [v$index];"
             else
