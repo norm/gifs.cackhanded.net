@@ -136,7 +136,7 @@ def main():
         align=args.text_align,
     )
     canvas.save(args.output)
-    print('   size=%s placement=%s %s' % (
+    print('   font_size=%s placement=%s %s' % (
         args.font_size,
         placement,
         args.text

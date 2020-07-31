@@ -10,8 +10,9 @@ all: $(GIF) $(THUMB)
 
 .SECONDEXPANSION:
 $(TOML_DIR)/%.gif: $(TOML_DIR)/%.toml
+	@echo '==' $@
 	@PATH="./bin:${PATH}" make_gif $< $@
-	@stat -f'%z %N' $@
+	@stat -f'   %z %N' $@
 
 $(TOML_DIR)/%.tn.gif: $(TOML_DIR)/%.gif
 	@gifsicle \
@@ -22,7 +23,7 @@ $(TOML_DIR)/%.tn.gif: $(TOML_DIR)/%.gif
 		--resize-colors 8 \
 			$< '#0-20' \
 			> $@
-	@stat -f'%z %N' $@
+	@stat -f'   %z %N' $@
 
 clean:
 	@rm -f $(GIF) $(THUMB)

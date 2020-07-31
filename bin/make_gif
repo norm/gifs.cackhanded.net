@@ -64,16 +64,19 @@ function main {
     ffmpeg_args=""
     input_filter=$(join ',' "$fps" "$crop" "$scale" "split")
     filter="[0:v] ${input_filter} [a][b];"
+
+    size_filter="$(join ',' "$crop" "$scale")"
+    ffmpeg \
+        -loglevel error -y -ss 0 -t 0.01 -i "$video" \
+        -filter_complex "[0:v] ${size_filter:-scale=w=in_w:h=in_h}" \
+        ${TEMP}/size.gif
+    output_width="$( file $TEMP/size.gif | awk '{ print $7 }')"
+    output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
+    echo "   ${output_width} x ${output_height}"
+
     num_captions="$(toml $toml caption --length)"
     if [ "$num_captions" -gt 0 ]; then
         # determine output size
-        size_filter="$(join ',' "$crop" "$scale")"
-        ffmpeg \
-            -loglevel warning -y -ss 0 -t 0.01 -i "$video" \
-            -filter_complex "[0:v] ${size_filter:-scale=w=in_w:h=in_h}" \
-            ${TEMP}/size.gif
-        output_width="$( file $TEMP/size.gif | awk '{ print $7 }')"
-        output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
 
         for index in $(seq 1 $num_captions); do
             caption_text="$(toml $toml caption.text $index)"
@@ -122,7 +125,7 @@ function main {
     fi
 
     ffmpeg \
-        -loglevel warning \
+        -loglevel error \
         -y \
         -ss "$start" \
         -t "$duration" \
