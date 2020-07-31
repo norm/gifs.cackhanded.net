@@ -1,0 +1,12 @@
+#!/bin/sh
+
+for gif in "$@"; do
+    destination="${gif##source/}"
+    dir=$(dirname "$HOME/Dropbox/Apps/GIFwrapped/$destination")
+    mkdir -p "$dir"
+    rsync \
+        --itemize-changes \
+        --inplace \
+        --size-only \
+        "$gif" "$HOME/Dropbox/Apps/GIFwrapped/$destination"
+done

@@ -30,3 +30,6 @@ clean:
 
 cleanthumbs:
 	@rm -f $(THUMB)
+
+gifwrapped:
+	@gifwrapped $(GIF)
