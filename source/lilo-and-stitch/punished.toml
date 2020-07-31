@@ -1,0 +1,27 @@
+title = 'Punished'
+published = 2020-07-31T09:12:38Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'cobra-bubbles', 'lilo-pelakai', 'voodoo']
+body_markdown = """
+
+Lilo puts a lid on a pickle jar containing voodoo dolls made out of spoons
+and shakes it up. She tells Cobra Bubbles “My friends need to be punished.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '19:31.8'
+duration = '9.4'
+
+[output]
+fps = '12'
+colours = '128'
+
+[[caption]]
+text = "My friends need to be punished"
+from = '5.8'
+to   = '8.2'
+size = '32'

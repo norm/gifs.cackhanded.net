@@ -1,0 +1,26 @@
+title = 'Expert'
+published = 2020-07-30T15:02:35Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['grand-councilwoman', 'mazzgif']
+body_markdown = """
+
+The Grand Councilwoman asks of Wendell Pleakley,
+ “Am I to assume you’re the expert?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '7:32.3'
+duration = '2.8'
+
+[output]
+colours = '128'
+
+[[caption]]
+text = "Am I to assume you’re the expert?"
+from = '0'
+to   = '2.9'
+size = '32'

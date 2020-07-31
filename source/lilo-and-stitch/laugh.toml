@@ -1,0 +1,28 @@
+title = 'Laugh'
+published = 2020-07-31T10:27:27Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['experiment-626', 'laughter', 'evil-laughter']
+body_markdown = """
+
+Experiment 626, standing over a smoking crater, laughs manically.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '23:57.8'
+duration = '3.7'
+crop     = '1200:712'
+
+[output]
+fps = '12'
+dither = 'bayer:bayer_scale=2'
+max_size = 1024000
+
+# [[caption]]
+# text = ""
+# from = '0'
+# to   = '10'
+# size = '32'

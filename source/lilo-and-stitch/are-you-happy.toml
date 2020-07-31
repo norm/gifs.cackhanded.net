@@ -1,0 +1,27 @@
+title = 'Are you happy?'
+published = 2020-07-31T08:43:03Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'cobra-bubbles', 'lilo-pelekia' ]
+body_markdown = """
+
+Cobra Bubbles asks Lilo ”Are you happy?”
+
+Lilo smiles a fake smile.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '18:28.8'
+duration = '4'
+
+[output]
+fps = '12'
+
+[[caption]]
+text = "Are you happy?"
+from = '0.3'
+to   = '1.5'
+size = '32'

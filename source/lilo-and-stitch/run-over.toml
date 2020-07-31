@@ -1,0 +1,22 @@
+title = 'Run over'
+published = 2020-07-31T12:04:21Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['experiment-626', 'raygun', 'truck', 'collision']
+body_markdown = """
+
+Experiment 626 points his rayguns at an oncoming truck. The truck runs into
+him, taking him along and leaving the guns behind.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '24:27.4'
+duration = '3.5'
+
+[output]
+fps = '12'
+colours = '96'
+max_size = '1600000'

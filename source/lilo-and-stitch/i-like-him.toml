@@ -1,0 +1,31 @@
+title = 'I like him'
+published = 2020-07-31T13:05:30Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'lilo-pelekai', 'nani-pelekai', 'rescue-lady', 'experiment-626']
+body_markdown = """
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '26:36'
+duration = '3'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+# faked to get the caption colours in the gif
+text = "ABCDEFGHIJKLM"
+from = '4'
+to   = '10'
+size = '64'
+
+[[caption]]
+text = "I like him!"
+from = '0.4'
+to   = '2'
+size = '32'

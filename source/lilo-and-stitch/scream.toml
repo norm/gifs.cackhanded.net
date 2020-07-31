@@ -1,0 +1,31 @@
+title = 'Scream'
+published = 2020-07-31T09:59:58Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['lilo-pelekai', 'nani-pelekai', 'scream']
+body_markdown = """
+
+Nani picks up a pillow and, holding it to her face, muffles a scream.
+
+Lilo, in her bedroom, is doing the same.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '21:25.1'
+duration = '8'
+
+[output]
+fps = '12'
+colours = '128'
+
+[[caption]]
+text = "muffled screaming"
+font = 'morlrounded-italic.otf'
+from = '2.1'
+to   = '5.2'
+size = '32'
+placement = 'bc'
+colour = '#ffb98c'

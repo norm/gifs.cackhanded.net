@@ -1,0 +1,27 @@
+title = 'Educate yourself'
+published = 2020-07-31T13:32:44Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'dr-jumba-jookiba', 'wendell-pleakley']
+body_markdown = """
+
+Wendell Pleakley slams a device into Dr Jumba Jookiba's face.
+“Educate yourself.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '28:08.8'
+duration = '3.5'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "Educate yourself"
+from = '0.5'
+to   = '2.2'
+size = '32'

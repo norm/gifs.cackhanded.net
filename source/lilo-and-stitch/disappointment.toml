@@ -1,0 +1,20 @@
+title = 'Disappointment'
+published = 2020-07-30T14:59:08Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['captain-gantu', 'mazzgif', ]
+body_markdown = """
+
+Captain Gantu smacks his fist on the arm of his chair, leans his head
+back and sighs.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '6:28.1'
+duration = '3'
+
+[output]
+colours = '48'

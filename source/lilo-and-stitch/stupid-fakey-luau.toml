@@ -1,0 +1,34 @@
+title = 'Stupid fakey lū‘au'
+published = 2020-07-31T14:06:10Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'nani-pelekai', 'quit']
+body_markdown = """
+
+After being told by her boss that her job is not working out, Nani says back
+to him ”Yeah, well, who wants to work at this stupid fakey lū‘au anyway.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '34:53.5'
+duration = '4.8'
+
+[output]
+fps = '12'
+colours = '80'
+
+[[caption]]
+text = "Who wants to work at this"
+from = '0.5'
+to   = '2.1'
+size = '32'
+
+[[caption]]
+text = "stupid fakey lū‘au anyway"
+from = '2.11'
+to   = '4.2'
+size = '32'
+

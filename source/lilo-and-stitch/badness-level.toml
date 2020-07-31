@@ -1,0 +1,35 @@
+title = 'Badness level'
+published = 2020-07-31T13:44:03Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'lilo-pelekai', 'stitch', 'badness']
+body_markdown = """
+
+Lilo puts a book down in front of Stitch. In it she has drawn an outline
+of Stitch, and coloured it in mostly to the top with red. The red is
+marked “bad” in the drawing.
+
+”This is you. This is your badness level.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '32:20.6'
+duration = '5'
+
+[output]
+fps = '12'
+
+[[caption]]
+text = "This is you"
+from = '0'
+to   = '1'
+size = '32'
+
+[[caption]]
+text = "This is your badness level"
+from = '2.5'
+to   = '5'
+size = '32'

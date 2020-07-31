@@ -1,0 +1,26 @@
+title = 'Coffee'
+published = 2020-07-31T14:17:09Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'stitch', 'lilo-pelekai', 'coffee']
+body_markdown = """
+
+Lilo hands Stitch a baby bottle full of brown liquid.
+“I filled it with coffee.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '36:50.6'
+duration = '2.7'
+
+[output]
+fps = '12'
+
+[[caption]]
+text = "I filled it with coffee"
+from = '0.3'
+to   = '1.9'
+size = '32'

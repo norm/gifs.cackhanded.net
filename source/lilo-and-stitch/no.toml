@@ -1,0 +1,115 @@
+title = 'No!'
+published = 2020-07-31T09:35:49Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['lilo-pelekai', 'nani-pelekai', 'faceplant']
+body_markdown = """
+
+Lilo screams an extended “No!” then faceplants onto the floor in frustration.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '20:52'
+duration = '4.8'
+
+[output]
+fps = '12'
+
+[[caption]]
+text = "Nooooooooooooooooooooooooooo"
+from = '1.6'
+to   = '1.7'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooooooooooooooooooo"
+from = '1.5'
+to   = '1.6'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooooooooooooooooo"
+from = '1.4'
+to   = '1.5'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooooooooooooooo"
+from = '1.3'
+to   = '1.4'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooooooooooooo"
+from = '1.2'
+to   = '1.3'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooooooooooo"
+from = '1.1'
+to   = '1.2'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooooooooo"
+from = '1'
+to   = '1.1'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooooooo"
+from = '0.9'
+to   = '1'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooooo"
+from = '0.8'
+to   = '0.9'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooooo"
+from = '0.7'
+to   = '0.8'
+size = '32'
+
+
+[[caption]]
+text = "Nooooooo"
+from = '0.6'
+to   = '0.7'
+size = '32'
+
+
+[[caption]]
+text = "Nooooo"
+from = '0.5'
+to   = '0.6'
+size = '32'
+
+
+[[caption]]
+text = "Nooo"
+from = '0.4'
+to   = '0.5'
+size = '32'
+
+[[caption]]
+text = "No"
+from = '0.3'
+to   = '0.4'
+size = '32'

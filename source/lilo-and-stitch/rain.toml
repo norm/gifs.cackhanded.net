@@ -1,0 +1,25 @@
+title = 'Rain'
+published = 2020-07-31T11:43:40Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['experiment-626', 'rain', 'raygun']
+body_markdown = """
+
+A raindrop falls to the ground, and Experiment 626 shoots it with a raygun.
+
+A second drop falls on his head, he fires into the sky.
+
+Rain starts properly falling. He looks dejected.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '24:11'
+duration = '8.8'
+
+[output]
+fps      = '12'
+max_size = '2621440'
+

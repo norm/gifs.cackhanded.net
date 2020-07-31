@@ -1,0 +1,36 @@
+title = 'Wondering'
+published = 2020-07-31T09:18:31Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['cobra-bubbles', 'nani-pelekai' ]
+body_markdown = """
+
+As he is leaving, Cobra Bubbles tells Nani “In case you’re wondering things
+did not go well.”
+
+He pulls on the front door, which had been nailed shut.
+The nails pop out of the wood and the door opens.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '19:49.5'
+duration = '3.7'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "In case you’re wondering"
+from = '0'
+to   = '1.3'
+size = '32'
+
+[[caption]]
+text = "things did not go well"
+from = '1.6'
+to   = '2.7'
+size = '32'

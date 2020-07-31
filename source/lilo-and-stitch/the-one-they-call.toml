@@ -1,0 +1,46 @@
+title = 'The one they call'
+published = 2020-07-31T09:05:41Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['cobra-bubbles', 'nani-pelekia', 'washing-up']
+body_markdown = """
+
+Cobra Bubbles tells Nani “I am the one they call when things go wrong.” as he
+takes off his sunglasses. He looks at the piles of washing up waiting to
+be done. “And things have indeed gone wrong.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '19:11.2'
+duration = '9.6'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "I am the one they call"
+from = '0.3'
+to   = '2.7'
+size = '32'
+
+[[caption]]
+text = "when things go wrong"
+from = '2.75'
+to   = '4.8'
+size = '32'
+
+[[caption]]
+text = "And things have indeed"
+from = '5.3'
+to   = '7'
+size = '32'
+
+[[caption]]
+text = "gone wrong"
+from = '7.05'
+to   = '8.8'
+size = '32'

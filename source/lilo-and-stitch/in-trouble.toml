@@ -1,0 +1,21 @@
+title = 'In trouble'
+published = 2020-07-31T09:22:14Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['lilo-pelekai', 'nani-pelekai', 'scream', 'chase' ]
+body_markdown = """
+
+Nani turns to look at Lilo with an angry face. Lilo screams and runs off,
+Nani chasing her.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '19:57.6'
+duration = '5.2'
+
+[output]
+fps = '12'
+colours = '128'

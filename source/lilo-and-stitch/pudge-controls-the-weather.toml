@@ -1,0 +1,22 @@
+title = 'Pudge controls the weather'
+published = 2020-07-30T15:27:37Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'lilo-pelekai', 'pudge']
+body_markdown = """
+
+Lilo tells her hula teacher “Pudge controls the weather.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '13:09'
+duration = '3'
+
+[[caption]]
+text = "Pudge controls the weather"
+from = '0.7'
+to   = '1.9'
+size = '32'

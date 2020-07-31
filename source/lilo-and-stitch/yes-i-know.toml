@@ -1,0 +1,22 @@
+title = 'Yes I know'
+published = 2020-07-31T08:13:59Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'cobra-bubbles' ]
+body_markdown = """
+
+Cobra Bubbles says “Yes I know.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '16:55.8'
+duration = '1.2'
+
+[[caption]]
+text = "Yes I know"
+from = '0'
+to   = '1'
+size = '32'

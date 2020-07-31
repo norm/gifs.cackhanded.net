@@ -1,0 +1,36 @@
+title = 'Your room'
+published = 2020-07-31T09:45:46Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['lilo-pelekai', 'nani-pelekai']
+body_markdown = """
+
+Nani screams up the stairs at Lilo, “Go to your room!”
+
+Lilo, opening her bedroom door, scream back “I’m already in my room!” and
+slams the door again.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '21:19.7'
+duration = '5.4'
+
+[output]
+fps = '12'
+colours = '128'
+
+[[caption]]
+text = "Go to your roooooooom!"
+from = '0'
+to   = '1.9'
+size = '32'
+
+
+[[caption]]
+text = "I’m already in my room!"
+from = '2.2'
+to   = '4'
+size = '32'

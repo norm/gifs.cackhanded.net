@@ -1,0 +1,39 @@
+title = "That's not a real name"
+published = 2020-07-31T13:19:57Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['rescue-lady', 'nani-pelekai']
+body_markdown = """
+
+The rescue lady says “That’s not a real name” as Nani waves at her to
+not say that to Lilo. The rescue lady adds “…in Iceland.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '27:11.3'
+duration = '4.3'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "That’s not a real name"
+from = '0'
+to   = '1.3'
+size = '32'
+
+[[caption]]
+text = "...in..."
+from = '2.5'
+to   = '3'
+size = '32'
+
+[[caption]]
+text = "Iceland"
+from = '3.6'
+to   = '4'
+size = '32'

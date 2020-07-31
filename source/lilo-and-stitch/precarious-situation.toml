@@ -1,0 +1,42 @@
+title = 'Precarious situation'
+published = 2020-07-31T08:53:44Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['cobra-bubbles', 'nani-pelekai', 'fridge']
+body_markdown = """
+
+Nani is looking inside the fridge.
+
+Cobra Bubbles tells Nani “Let me illuminate you of the precarious
+situation in which you have found yourself.” and shuts the fridge door.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '19:04.8'
+duration = '6.2'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "Let me illuminate you"
+from = '0'
+to   = '2'
+size = '32'
+
+[[caption]]
+text = "of the precarious situation"
+from = '2.05'
+to   = '3.4'
+size = '32'
+
+[[caption]]
+text = "in which you have found yourself"
+from = '3.4'
+to   = '5.7'
+size = '32'
+ 

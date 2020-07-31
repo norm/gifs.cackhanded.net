@@ -1,0 +1,21 @@
+title = 'Space adventure'
+published = 2020-07-31T13:39:45Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', ]
+body_markdown = """
+
+Stitch is struggling with the controls in a children’s ride called “space
+adventure”. Lilo puts a coin in the machine, climbs in next to him, and it
+starts gently rocking back and forth. Stitch is not impressed.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '31:27'
+duration = '8.5'
+
+[output]
+fps = '12'

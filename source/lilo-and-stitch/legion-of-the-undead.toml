@@ -1,0 +1,32 @@
+title = 'Legion of the undead'
+published = 2020-07-31T14:11:46Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'nani-pelekai']
+body_markdown = """
+
+Nani saying “He wanted me to join his legion of the undead.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '35:10.5'
+duration = '3.1'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "He wanted me to join"
+from = '0.2'
+to   = '1.4'
+size = '32'
+
+[[caption]]
+text = "his legion of the undead"
+from = '1.41'
+to   = '2.8'
+size = '32'

@@ -1,0 +1,25 @@
+title = 'Different'
+published = 2020-07-31T10:08:49Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'lilo-pelekai', 'nani-pelekai' ]
+body_markdown = """
+
+Lilo tells Nani “People treat me different.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '22:33.7'
+duration = '3.7'
+
+[output]
+fps = '12'
+
+[[caption]]
+text = "People treat me different"
+from = '0'
+to   = '1.7'
+size = '32'

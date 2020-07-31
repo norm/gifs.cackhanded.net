@@ -1,0 +1,27 @@
+title = 'I don’t think so'
+published = 2020-07-31T08:31:15Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['cobra-bubbles', 'mazzgif', ]
+body_markdown = """
+
+Cobra Bubbles says “I don’t think so.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '17:02.8'
+duration = '2'
+
+[output]
+fps     = '12'
+# fps = 'original'
+# colours = '128'
+
+[[caption]]
+text = "I don’t think so"
+from = '0.6'
+to   = '1.7'
+size = '32'
