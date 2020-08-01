@@ -1,8 +1,7 @@
-.PHONY: all clean cleanthumbs gifwrapped
+.PHONY: all clean cleanthumbs gifwrapped publish
 
 all:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs
-	@PATH="./bin:${PATH}" flourish generate -v
 
 clean:
 	@make -f Makefile.gifs clean
@@ -12,3 +11,9 @@ cleanthumbs:
 
 gifwrapped:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs gifwrapped
+
+generate:
+	@flourish generate -v
+
+publish: generate gifwrapped
+	@flourish upload
