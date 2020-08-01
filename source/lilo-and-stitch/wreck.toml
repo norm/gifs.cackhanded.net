@@ -1,0 +1,27 @@
+title = 'Wreck'
+published = 2020-08-01T06:21:51Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'lilo-pelekai', 'stitch']
+body_markdown = """
+
+Stitch is clinging to an easel, having torn apart the paper on it. Lilo places
+a lei around Stitch's neck and he falls to the ground, seemingly powerless to
+move. Lilo tells him “You wreck everything you touch.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '37:30'
+duration = '5.6'
+
+[output]
+fps = '12'
+
+[[caption]]
+text = "You wreck everything you touch"
+from = '3.5'
+to   = '10'
+size = '32'

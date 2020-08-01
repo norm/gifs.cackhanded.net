@@ -1,0 +1,19 @@
+title = 'Hai'
+published = 2020-08-01T06:30:55Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'lilo-pelekai', 'stitch']
+body_markdown = """
+
+Lilo and Stitch standing on the deserted beach. Lilo waves hesitantly.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '45:13.8'
+duration = '2.2'
+
+[output]
+fps = '12'

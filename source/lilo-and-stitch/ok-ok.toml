@@ -1,0 +1,28 @@
+title = 'OK, OK'
+published = 2020-08-01T07:21:50Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'stitch', 'nani-pelekai']
+body_markdown = """
+
+Stitch holds four hands up and says ”OK, OK.”
+
+Nani screams and hits him with a tree branch.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:05:19'
+duration = '9.5'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "OK, OK"
+from = '1.3'
+to   = '2.5'
+size = '32'

@@ -1,0 +1,32 @@
+title = 'I am lost'
+published = 2020-08-01T06:46:28Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'stitch']
+body_markdown = """
+
+Stitch looking at the tale of the Ugly Duckling. “I am lost.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '55:29.5'
+duration = '8'
+
+[output]
+fps = '12'
+max_size = '1260000'
+
+[[caption]]
+text = "I am lost"
+from = '2'
+to   = '3'
+size = '32'
+
+[[caption]]
+text = "I am"
+from = '1'
+to   = '2.2'
+size = '32'

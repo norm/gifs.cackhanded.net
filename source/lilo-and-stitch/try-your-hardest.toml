@@ -1,0 +1,45 @@
+title = 'Try your hardest'
+published = 2020-08-01T07:02:45Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'lilo-pelekai', 'nani-pelekai']
+body_markdown = """
+
+Nani tells Lilo “Sometimes you try your hardest but things don’t work out
+the way you want them to.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '58:54.3'
+duration = '6.8'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "Sometimes you try your hardest"
+from = '0.2'
+to   = '2'
+size = '32'
+
+[[caption]]
+text = "but things"
+from = '2.4'
+to   = '3.2'
+size = '32'
+
+[[caption]]
+text = "don’t work out"
+from = '3.8'
+to   = '4.4'
+size = '32'
+
+[[caption]]
+text = "the way you want them to"
+from = '4.41'
+to   = '5.6'
+size = '32'
