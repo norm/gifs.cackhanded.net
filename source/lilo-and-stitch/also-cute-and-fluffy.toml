@@ -1,0 +1,56 @@
+title = 'Also cute and fluffy!'
+published = 2020-08-01T09:08:07Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'stitch', 'captain-gantu']
+body_markdown = """
+
+Captain Gantu tries to punch Stitch, who is dancing about on his 
+spaceship’s dashboard. “You’re vile! You’re foul! You’re flawed!”
+
+Stitch grabs Gantu’s hand, and as he pitches him through the windshield
+cries ”Also cute and fluffy!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:12:44'
+duration = '6.8'
+
+[output]
+fps = '12'
+# colours = '128'
+max_size = '1572000'
+
+# FIXME caption colours
+[[caption]]
+text = "VERY LONG FAKE CAPTION\nWITH LOTS AND LOTS OF WORDS"
+from = '10'
+to   = '11'
+size = '32'
+
+[[caption]]
+text = "You’re vile!"
+from = '0.1'
+to   = '0.9'
+size = '32'
+
+[[caption]]
+text = "You’re foul!"
+from = '1'
+to   = '1.9'
+size = '32'
+
+[[caption]]
+text = "You’re flawed!"
+from = '2.1'
+to   = '3.1'
+size = '32'
+
+[[caption]]
+text = "Also cute and fluffy!"
+from = '3.5'
+to   = '5.8'
+size = '32'

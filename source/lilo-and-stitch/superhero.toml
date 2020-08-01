@@ -1,0 +1,20 @@
+title = 'Cape'
+published = 2020-08-01T09:33:38Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', ]
+body_markdown = """
+
+Stitch puts a bra on his head, and a tshirt around his neck
+as a superhero cape.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:18:33.9'
+duration = '4.2'
+
+[output]
+fps = '12'

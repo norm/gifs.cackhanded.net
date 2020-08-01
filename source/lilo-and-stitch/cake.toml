@@ -1,0 +1,22 @@
+title = 'Birthday cake'
+published = 2020-08-01T09:27:27Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['stitch', 'lilo-pelekai', 'nani-pelekai', 'cobra-bubbles', 'david-kawena', 'happy-birthday', 'cake', 'birthday-cake']
+body_markdown = """
+
+Stitch pulls a cake out of the oven, the size of the oven.
+
+Cut to Lilo blowing candles out on the cake, with balloons in the background
+labelled ”Happy birthday”. Nani, Cobra, David, and Stitch clap.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:17:55.9'
+duration = '7'
+
+[output]
+fps = '12'

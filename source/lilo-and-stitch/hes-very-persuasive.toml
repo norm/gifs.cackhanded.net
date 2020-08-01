@@ -1,0 +1,67 @@
+title = 'He’s very persuasive'
+published = 2020-08-01T08:44:02Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'stitch', 'dr-jumba-jookiba', 'wendell-pleakley']
+body_markdown = """
+
+Dr Jumba Jookiba, holding a cuffed Stitch shouts at him “You expect
+me to help you? Just like that? Just like that?!”
+
+Stitch replies with one short syllable in an alien language.
+
+Jumba says “Fine” and starts to unlock his cuffs. Wendell Pleakley asks
+“Fine? You’re doing what he says?” Jumba replies “He’s very persuasive.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:07:36'
+duration = '10.7'
+
+[output]
+fps = '12'
+colours = '100'
+max_size = '3096000'
+
+# FIXME caption colours
+[[caption]]
+text = "VERY LONG FAKE CAPTION\nWITH LOTS AND LOTS OF WORDS"
+from = '11'
+to   = '12'
+size = '32'
+
+[[caption]]
+text = "You expect me to help you?"
+from = '0'
+to   = '2.9'
+size = '32'
+
+[[caption]]
+text = "Ih"
+from = '3.3'
+to   = '3.7'
+size = '32'
+font = 'morlrounded-italic.otf'
+# colour = '#0099ff'
+placement = 'br'
+
+[[caption]]
+text = "Fine"
+from = '4.6'
+to   = '5.3'
+size = '32'
+
+[[caption]]
+text = "Fine? You’re doing what he says?"
+from = '6.2'
+to   = '7.5'
+size = '32'
+
+[[caption]]
+text = "He’s very persuasive"
+from = '9.1'
+to   = '10.2'
+size = '32'

@@ -1,0 +1,33 @@
+title = 'Still good'
+published = 2020-08-01T09:16:34Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'cobra-bubbles', 'grand-councilwoman', 'lilo-pelekai', 'nani-pelekai', 'stitch']
+body_markdown = """
+
+Stitch tells the Grand Councilwoman about his family. “It’s little and
+broken, but still good. Yeah, still good.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:15:06.4'
+duration = '8.7'
+
+[output]
+fps = '12'
+# colours = '128'
+
+[[caption]]
+text = "It’s little and broken, but still good"
+from = '0'
+to   = '4.8'
+size = '32'
+
+[[caption]]
+text = "Yeah, still good"
+from = '5.8'
+to   = '8'
+size = '32'

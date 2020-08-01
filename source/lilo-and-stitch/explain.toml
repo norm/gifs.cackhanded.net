@@ -1,0 +1,26 @@
+title = 'Explain'
+published = 2020-08-01T09:21:49Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'cobra-bubbles']
+body_markdown = """
+
+Cobra Bubbles pulls down his sunglasses and says “This won’t be easy to
+explain back at headquarters.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:16:44.4'
+duration = '3.8'
+
+[output]
+fps = '12'
+
+[[caption]]
+text = "This won’t be easy to explain\nback at headquarters"
+from = '1'
+to   = '4'
+size = '32'

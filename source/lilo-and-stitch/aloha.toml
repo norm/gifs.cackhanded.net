@@ -1,0 +1,34 @@
+title = 'Aloha!'
+published = 2020-08-01T08:58:24Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['mazzgif', 'stitch', 'captain-gantu']
+body_markdown = """
+
+Stitch flies up and smashes through the windscreen of Captain Gantu's 
+spaceship. He stands up on the dashboard and says “Aloha!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:12:40.3'
+duration = '3.5'
+
+[output]
+fps = '12'
+# colours = '128'
+
+# FIXME caption colours
+[[caption]]
+text = "VERY LONG FAKE CAPTION\nWITH LOTS AND LOTS OF WORDS"
+from = '10'
+to   = '11'
+size = '32'
+
+[[caption]]
+text = "Aloha!"
+from = '2.5'
+to   = '3'
+size = '32'

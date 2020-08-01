@@ -1,0 +1,45 @@
+title = 'Ohana'
+published = 2020-08-01T08:19:48Z
+source_fkey = 'lilo-and-stitch/index'
+tag = ['stitch', 'nani-pelekai', 'ohana', ]
+body_markdown = """
+
+Stitch tells Nani ”Ohana means family. Family means…” Nani joins in. ”…nobody
+gets left behind.” Stitch finishes the saying. “Or forgotten.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lilo-and-stitch'
+ext      = 'm4v'
+start    = '1:07:15'
+duration = '10.7'
+
+[output]
+fps = '12'
+colours = '96'
+
+[[caption]]
+text = "Ohana means family"
+from = '0.3'
+to   = '3'
+size = '32'
+
+[[caption]]
+text = "Family means"
+from = '3.7'
+to   = '5.3'
+size = '32'
+
+[[caption]]
+text = "nobody gets left behind"
+from = '5.6'
+to   = '8'
+size = '32'
+
+[[caption]]
+text = "or forgotten"
+from = '9'
+to   = '10'
+size = '32'
