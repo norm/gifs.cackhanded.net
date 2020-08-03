@@ -39,6 +39,14 @@ mode     = 'full'
 max_size = 2048000
 dither   = 'floyd_steinberg'
 
+[[clip]]
+start = '2'
+end   = '3'
+
+[[clip]]
+start = '6'
+end   = '7'
+
 [[caption]]
 text = 'What is that monstrosity?'
 font = 'acherusgrotesque-black.otf'
@@ -62,12 +70,31 @@ size = '100'
 * `start` is the [duration][dur] into the source video file where the
   GIF will begin
 * `duration` is how long the GIF should be
+* `end` is the [duration][dur] into the source video file where the GIF
+  should end
 * `crop` applies a [cropping value][crop] to the video before it is
   converted, and crucially before any resize happens so that the output
   width of the GIF is not reduced
 
+You can either `end` or `duration`, not both.
+
 [dur]: http://ffmpeg.org/ffmpeg-utils.html#time-duration-syntax
 [crop]: http://ffmpeg.org/ffmpeg-filters.html#crop
+
+
+### `[[clip]]` describes a clip taken from the source
+
+Note the double square brackets to indicate `clip` is an entry in an array,
+supporting multiple clips in a GIF. You can combine disconnected parts of
+the source video into one GIF, eliminating the stuff in between. Each `clip`
+needs two keys:
+
+* `start` is the time in seconds from the start of the video
+* `end` is the time in seconds from the start of the video
+
+Combining these with `start` in the `[video]` section (see above) means
+it is the time in seconds from that start point, not the very start of
+the video source.
 
 
 ### `[output]` describes the GIF

@@ -1,0 +1,14 @@
+#!/usr/bin/env perl
+
+use v5.10;
+
+my @seg = reverse split /:/, $ARGV[0];
+my $time = 0;
+my $count = 0;
+for my $seg (@seg) {
+    $seg = $seg * 60 if $count == 1;
+    $seg = $seg * 3600 if $count == 2;
+    $time += $seg;
+    $count++;
+}
+say $time;
