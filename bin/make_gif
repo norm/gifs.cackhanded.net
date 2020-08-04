@@ -182,9 +182,11 @@ function main {
         -filter_complex "$filter" \
         "${TEMP}/output.gif"
 
-    losses=0
+    output_loss="$(toml $toml output.loss)"
+    losses="${output_loss:-0}"
     gifsicle \
         -O3 \
+        --lossy=$losses \
         --no-extensions \
         -o "${TEMP}/gifsicle.${losses}.gif" \
         "$TEMP/output.gif"

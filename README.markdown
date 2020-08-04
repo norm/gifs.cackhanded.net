@@ -113,9 +113,11 @@ the video source.
 * `fps` is how many frames per second to include in the GIF, a lower
   number means a smaller GIF but less smooth movement; default
   is 10 (animation-like), `original` leaves it the same as the source
+* `loss` is the amount of artifacts allowed when initially optimising the
+  GIF's size; default is `0`
 * `max_size` is the maximum size in bytes of the GIF, if the output is
   larger than this value `gifsicle` will be run with increasing levels
-  of `--lossy` to shrink the file size at the expense of image quality
+  of `loss` to shrink the file size at the expense of image quality
 * `dither` is how the palette colours are dithered to create the appearance
   of more colours:
     * `bayer:bayer_scale=1` — the scale is an integer between 0 and 5
