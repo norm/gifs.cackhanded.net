@@ -15,5 +15,8 @@ gifwrapped:
 generate:
 	@flourish generate -v
 
-publish: generate gifwrapped
+rebuild:
+	@./script/rebuild
+
+publish: rebuild gifwrapped
 	@flourish upload
