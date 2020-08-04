@@ -4,6 +4,11 @@ source_fkey = 'lilo-and-stitch/index'
 tag = ['mazzgif', 'lilo-pelekai', 'nani-pelekai', 'rescue-lady', 'experiment-626']
 body_markdown = """
 
+Lilo, trapped in Nani’s arms, says of Experiment 626 “I like him!”
+
+Lilo reaches out, and Experiment 626 tries to walk towards her, but is
+restrained by the rescue lady.
+
 """
 
 [video]
@@ -15,14 +20,6 @@ duration = '3'
 
 [output]
 fps = '12'
-# colours = '128'
-
-[[caption]]
-# faked to get the caption colours in the gif
-text = "ABCDEFGHIJKLM"
-from = '4'
-to   = '10'
-size = '64'
 
 [[caption]]
 text = "I like him!"
