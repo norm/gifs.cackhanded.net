@@ -60,22 +60,29 @@ function main {
     # clips
     extract_clips=''
     join_clips=''
+    filter=''
     num_clips="$(toml $toml clip --length)"
     if [ "$num_clips" -gt 0 ]; then
+        if [ -n "$fps" ]; then
+            stream="[v]"
+            filter="[0:v] ${fps} [v];"
+        else
+            stream="[0:v]"
+        fi
         for index in $(seq 1 $num_clips); do
             clip_start="$(toml $toml clip.start $index)"
             start="$(to_seconds $clip_start)"
             clip_end="$(toml $toml clip.end $index)"
             end="$(to_seconds $clip_end)"
-            extract_clips="${extract_clips}[0:v] trim=start=${start}:end=${end},"
+            extract_clips="${extract_clips}$stream trim=start=${start}:end=${end},"
             extract_clips="${extract_clips}setpts=PTS-STARTPTS [c$index]; "
             join_clips="${join_clips}[c$index]"
         done
         join_clips="$join_clips concat=n=$index:v=1 [vs];"
         extract_clips="$extract_clips $join_clips"
-        input_filter=$(join ',' "$fps" "$crop" "$scale")
+        input_filter=$(join ',' "$crop" "$scale")
         # filter="[0:v] ${input_filter:-scale=w=in_w:h=in_h} [v]; $extract_clips"
-        filter="$extract_clips [vs] $input_filter [iv];"
+        filter="$filter $extract_clips [vs] $input_filter [iv];"
     else
         input_filter=$(join ',' "$fps" "$crop" "$scale")
         filter="[0:v] $input_filter [iv];"
