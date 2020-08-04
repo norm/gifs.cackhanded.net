@@ -139,7 +139,7 @@ def main():
     print('   font_size=%s placement=%s %s' % (
         args.font_size,
         placement,
-        args.text
+        args.text.replace("\n", "\\n")
     ))
 
 
