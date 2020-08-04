@@ -1,0 +1,21 @@
+title = 'Sweating'
+published = 2020-08-04T17:51:16Z
+source_fkey = 'airplane/index'
+tag = ['ted-striker']
+body_markdown = """
+
+Ted sweating while trying to land the airplane.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '1:19:20.2'
+duration = '2.7'
+
+[output]
+fps      = '10'
+colours  = '48'
+max_size = '1024000'

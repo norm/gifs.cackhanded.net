@@ -1,0 +1,38 @@
+title = 'You can’t be serious'
+published = 2020-08-04T18:02:23Z
+source_fkey = 'airplane/index'
+tag = ['dr-rumack', 'ted-striker']
+body_markdown = """
+
+Ted asks the Doctor “Surely you can’t be serious?”
+
+Dr Rumack responds “I am serious, and don’t call me Shirley.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '49:54.3'
+duration = '4.6'
+
+[output]
+fps      = '16'
+max_size = '1572000'
+
+[[caption]]
+text = "Surely you can’t be serious?"
+from = '0.5'
+to   = '1.7'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = "I am serious, and don’t call me Shirley"
+from = '2.1'
+to   = '4.4'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'

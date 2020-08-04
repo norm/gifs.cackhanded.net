@@ -1,0 +1,37 @@
+title = 'Counting on you (alt)'
+published = 2020-08-04T17:12:39Z
+source_fkey = 'airplane/index'
+tag = ['leslie-neilsen', 'dr-rumack']
+body_markdown = """
+
+Dr. Rumack standing in the cockpit door says “I just want to tell you both
+good luck. We’re all counting on you.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '1:15:50.2'
+duration = '2.55'
+
+[output]
+fps = '12'
+max_size = '1024000'
+
+[[caption]]
+text = "I just want to tell you both good luck"
+from = '0.2'
+to   = '1.6'
+size = '26'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = "We’re all counting on you"
+from = '1.8'
+to   = '2.6'
+size = '26'
+font = 'assistant-semibold.ttf'
+placement = 'bc'

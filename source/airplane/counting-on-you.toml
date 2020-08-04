@@ -1,0 +1,38 @@
+title = 'Counting on you'
+published = 2020-08-04T17:08:02Z
+source_fkey = 'airplane/index'
+tag = ['leslie-neilsen', 'dr-rumack', 'ted-striker', 'elaine-dickinson']
+body_markdown = """
+
+Dr. Rumack opens the cockpit door, comes partway into the cockpit and says to
+Ted and Elaine “I just want to tell you both good luck. We’re all counting on
+you.” He leaves and closes the door again.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '1:15:47.5'
+duration = '8.4'
+
+[output]
+fps      = '12'
+max_size = '3096000'
+
+[[caption]]
+text = "I just want to tell you both good luck"
+from = '2.7'
+to   = '4.2'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = "We’re all counting on you"
+from = '4.4'
+to   = '5.2'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'

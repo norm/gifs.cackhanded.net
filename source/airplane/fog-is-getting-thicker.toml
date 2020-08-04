@@ -1,0 +1,46 @@
+title = 'The fog is getting thicker'
+published = 2020-08-04T17:36:10Z
+source_fkey = 'airplane/index'
+tag = ['johnny-henshaw-jacobs', 'steve-mccroskey']
+body_markdown = """
+
+A controller tells Steve ”The fog is getting thicker.”
+
+Johnny responds while shaking Leon’s belly “And Leon is getting laaaarger!” 
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '1:08:27.7'
+duration = '8'
+
+[output]
+fps      = '12'
+max_size = '1800000'
+
+[[clip]]
+start = '0'
+end   = '1.9'
+
+[[clip]]
+start = '4'
+end   = '6.1'
+
+[[caption]]
+text = "The fog is getting thicker"
+from = '0.3'
+to   = '1.8'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = "And Leon is getting larger!"
+from = '2.2'
+to   = '4.7'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
