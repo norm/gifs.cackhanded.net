@@ -78,11 +78,14 @@ function main {
             extract_clips="${extract_clips}setpts=PTS-STARTPTS [c$index]; "
             join_clips="${join_clips}[c$index]"
         done
-        join_clips="$join_clips concat=n=$index:v=1 [vs];"
+        join_clips="$join_clips concat=n=$index:v=1"
         extract_clips="$extract_clips $join_clips"
         input_filter=$(join ',' "$crop" "$scale")
-        # filter="[0:v] ${input_filter:-scale=w=in_w:h=in_h} [v]; $extract_clips"
-        filter="$filter $extract_clips [vs] $input_filter [iv];"
+        if [ -n "$input_filter" ]; then
+            filter="$filter $extract_clips [vs];[vs] $input_filter [iv];"
+        else
+            filter="$filter $extract_clips [iv];"
+        fi
     else
         input_filter=$(join ',' "$fps" "$crop" "$scale")
         filter="[0:v] $input_filter [iv];"
