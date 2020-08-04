@@ -18,5 +18,8 @@ generate:
 rebuild:
 	@./script/rebuild
 
-publish: rebuild gifwrapped
+push:
+	@git push origin main
+
+publish: push rebuild gifwrapped
 	@flourish upload
