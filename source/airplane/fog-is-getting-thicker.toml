@@ -1,10 +1,10 @@
 title = 'The fog is getting thicker'
 published = 2020-08-04T17:36:10Z
 source_fkey = 'airplane/index'
-tag = ['johnny-henshaw-jacobs', 'steve-mccroskey']
+tag = ['johnny-henshaw-jacobs', 'steve-mccroskey', 'rex-kramer']
 body_markdown = """
 
-A controller tells Steve ”The fog is getting thicker.”
+A controller tells McCroskey ”The fog is getting thicker.”
 
 Johnny responds while shaking Leon’s belly “And Leon is getting laaaarger!” 
 

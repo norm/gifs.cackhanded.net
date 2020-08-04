@@ -1,0 +1,30 @@
+title = 'Wrong week'
+published = 2020-08-04T22:54:32Z
+source_fkey = 'airplane/index'
+tag = ['steve-mccroskey']
+body_markdown = """
+
+McCroskey says “Looks like I picked the wrong week to give up drinking.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '56:12.5'
+duration = '4'
+
+[output]
+fps      = '12'
+colours  = '48'
+max_size = '1572864'
+
+[[caption]]
+text      = "Looks like I picked the\nwrong week to give up drinking"
+from      = '0'
+to        = '1.7'
+size      = '24'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+align     = 'center'

@@ -1,0 +1,30 @@
+title = 'Glasses'
+published = 2020-08-04T22:40:12Z
+source_fkey = 'airplane/index'
+tag = ['rex-kramer', 'glasses']
+body_markdown = """
+
+Rex Kramer takes off his glasses.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '55:37'
+crop     = '1040:585:0:220'
+
+[output]
+fps      = '12'
+colours  = '48'
+max_size = '840000'
+dither   = 'floyd_steinberg'
+
+[[clip]]
+start = '0'
+end   = '1.5'
+
+[[clip]]
+start = '10'
+end   = '11'
