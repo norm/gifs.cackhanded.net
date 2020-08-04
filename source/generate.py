@@ -1,4 +1,5 @@
 from datetime import datetime
+from textwrap import dedent
 
 from flourish.generators import mixins
 from flourish.generators import atom
@@ -51,10 +52,20 @@ class Homepage(MostRecentFirstMixin, base.IndexGenerator):
 
 
 class AtomFeed(atom.AtomGenerator):
-    def render_body(self, object):
-        return '<p><img src="%s.gif" alt=''></p>%s' % (
-            object.absolute_url,
-            object.body
+    def entry_content(self, object):
+        template = dedent("""\
+            <p><img src="{url}.gif" alt=''></p>
+            {body}
+            <hr>
+            <p>
+                The config that produced this GIF is on 
+                <a href='https://github.com/norm/gifs.cackhanded.net/blob/main/source{path}.toml'>GitHub</a>.
+            </p>
+        """)
+        return template.format(
+            url = object.absolute_url,
+            body = object.body,
+            path = object.path,
         )
 
 
