@@ -50,6 +50,14 @@ class Homepage(MostRecentFirstMixin, base.IndexGenerator):
     limit = 18
 
 
+class AtomFeed(atom.AtomGenerator):
+    def render_body(self, object):
+        return '<p><img src="%s.gif" alt=''></p>%s' % (
+            object.absolute_url,
+            object.body
+        )
+
+
 PATHS = (
     SourcePage(
         path = '/#slug',
@@ -71,7 +79,7 @@ PATHS = (
         path = '/sources',
         name = 'sources',
     ),
-    atom.AtomGenerator(
+    AtomFeed(
         path = '/index.atom',
         name = 'firehose',
     ),
