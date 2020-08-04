@@ -169,6 +169,24 @@ array, supporting multiple captions in a GIF.
 [col]: https://pillow.readthedocs.io/en/stable/reference/ImageColor.html
 
 
+### Note on colours
+
+If you add a caption, the output GIF may use more colours than specified in
+the `[output]` section. The colours of both the caption and outline are
+interpolated, and up to six colours per caption added to the GIF.
+
+As an example, creating a GIF from a video source contains no black or white
+elements and using a white caption with black outline, the palette used will
+be restricted by default to 64 colours, but black, white, and four shades of
+grey will be added, to a total of 70 colours. Using multiple captions of the
+same colour will not increase the palette, but multiple captions of different
+colours will.
+
+If you have set the GIF colours to 256 and used captions, it is likely that
+some of the colours calculated for the palette will be overwritten with
+caption colours.
+
+
 ## Making GIFs
 
 To install pre-requisites:

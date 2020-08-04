@@ -71,15 +71,33 @@ function main {
             extract_clips="${extract_clips}setpts=PTS-STARTPTS [c$index]; "
             join_clips="${join_clips}[c$index]"
         done
-        join_clips="$join_clips concat=n=$index:v=1 [iv];"
+        join_clips="$join_clips concat=n=$index:v=1 [vs];"
         extract_clips="$extract_clips $join_clips"
-        input_filter=$(join ',' "$fps" "$crop" "$scale", 'split')
+        input_filter=$(join ',' "$fps" "$crop" "$scale")
         # filter="[0:v] ${input_filter:-scale=w=in_w:h=in_h} [v]; $extract_clips"
-        filter="$extract_clips [iv] $input_filter [in][pg];"
+        filter="$extract_clips [vs] $input_filter [iv];"
     else
-        input_filter=$(join ',' "$fps" "$crop" "$scale", 'split')
-        filter="[0:v] $input_filter [in][pg];"
+        input_filter=$(join ',' "$fps" "$crop" "$scale")
+        filter="[0:v] $input_filter [iv];"
     fi
+
+    # main video timings
+    timing_args=''
+    start=$(toml $toml video.start)
+    [ -n "$start" ] && timing_args="$timing_args -ss $start"
+    duration=$(toml $toml video.duration)
+    [ -n "$duration" ] && timing_args="$timing_args -t $duration"
+    end=$(toml $toml video.end)
+    [ -n "$end" ] && timing_args="$timing_args -to $end"
+
+    # calculate the palette
+    ffmpeg \
+        -loglevel error \
+        -y \
+        ${timing_args} \
+        -i "$video" \
+        -filter_complex "$filter [iv] palettegen=${max_cols}:${mode}" \
+        "${TEMP}/palette.png"
 
     size_filter="$(join ',' "$crop" "$scale")"
     ffmpeg \
@@ -93,10 +111,12 @@ function main {
     # captions
     num_captions="$(toml $toml caption --length)"
     caption_args=""
+    caption_colours=""
     if [ "$num_captions" -gt 0 ]; then
         # determine output size
 
         for index in $(seq 1 $num_captions); do
+            let "input = index + 1"
             caption_text="$(toml $toml caption.text $index)"
             caption_placement="$(toml $toml caption.placement $index)"
             caption_size="$(toml $toml caption.size $index)"
@@ -120,6 +140,9 @@ function main {
                 "${caption_text}" \
                 "${TEMP}/caption-${index}.png"
 
+            caption_colours="${caption_colours} ${caption_colour:-#ffffff}"
+            caption_colours="${caption_colours} ${caption_strokecol:-#000000}"
+
             caption_from="$(toml $toml caption.from $index)"
             caption_to="$(toml $toml caption.to $index)"
 
@@ -128,32 +151,25 @@ function main {
             overlay="overlay=${position}:enable='between(t,${timing})'"
 
             if [ $index = 1 ]; then
-                filter="${filter} [pg][1:v] overlay=${position} [o1];"
-                filter="${filter} [o1] palettegen=${max_cols}:${mode} [p];"
-                filter="${filter} [in][$index:v] ${overlay} [v$index];"
+                filter="${filter} [iv][$input:v] ${overlay} [v$index];"
             else
-                filter="${filter} [v$((index-1))][$index:v] ${overlay} [v$index];"
+                filter="${filter} [v$((index-1))][$input:v] ${overlay} [v$index];"
             fi
             caption_args="${caption_args} -i ${TEMP}/caption-${index}.png"
         done
-        filter="${filter} [v$index][p] paletteuse=${dither}:${diff_mode}"
+        filter="${filter} [v$index][1:v] paletteuse=${dither}:${diff_mode}"
     else
-        filter="${filter} [pg] palettegen=${max_cols}:${mode} [p];"
-        filter="${filter} [in][p] paletteuse=${dither}:${diff_mode}"
+        filter="${filter} [iv][1:v] paletteuse=${dither}:${diff_mode}"
     fi
 
-    timing_args=''
-    start=$(toml $toml video.start)
-    [ -n "$start" ] && timing_args="$timing_args -ss $start"
-    duration=$(toml $toml video.duration)
-    [ -n "$duration" ] && timing_args="$timing_args -t $duration"
-    end=$(toml $toml video.end)
-    [ -n "$end" ] && timing_args="$timing_args -to $end"
+    edit-palette "${TEMP}/palette.png" $caption_colours
+
     ffmpeg \
         -loglevel error \
         -y \
         ${timing_args} \
         -i "$video" \
+        -i "${TEMP}/palette.png" \
         ${caption_args} \
         -f gif \
         -filter_complex "$filter" \

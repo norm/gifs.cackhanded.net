@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+"""
+Add white, black, and some greys to the end of an image,
+as used by FFmpeg's palette functions.
+
+Usage: edit-palette palette.png '#000000' '#ffffff' [...]
+"""
+
+import sys
+
+from PIL import Image, ImageColor
+
+
+def main():
+    image = Image.open(sys.argv[1])
+    pixels = image.load()
+    index = 254;
+    colours = {}
+
+    for x in range(0, 16):
+        for y in range(0, 16):
+            colours[pixels[x,y]] = 1
+
+    arg = 2
+    while len(sys.argv) >= arg+2:
+        (caption, stroke) = sys.argv[arg:arg+2]
+        for colour in colour_range(caption, stroke):
+            if colour not in colours:
+                x = index % 16
+                y = int(index / 16)
+                pixels[x,y] = colour
+                colours[colour] = 1
+                index -= 1
+        arg += 2
+    image.save(sys.argv[1])
+    print('   %s colours' % len(colours))
+
+
+def colour_range(caption, stroke, steps=5):
+    caption = ImageColor.getrgb(caption)
+    stroke = ImageColor.getrgb(stroke)
+
+    colours = [
+        (caption[0], caption[1], caption[2], 255),
+        (stroke[0], stroke[1], stroke[2], 255),
+    ]
+
+    for step in range(steps - 1, 0, -1):
+        mult  = (1 / steps) * step
+        red   = caption[0] + int((stroke[0] - caption[0]) * mult)
+        green = caption[1] + int((stroke[1] - caption[1]) * mult)
+        blue  = caption[2] + int((stroke[2] - caption[2]) * mult)
+        colours.append((red, green, blue, 255))
+
+    return colours
+
+
+if __name__ == '__main__':
+    main()

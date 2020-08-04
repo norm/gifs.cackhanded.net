@@ -26,13 +26,6 @@ fps = '12'
 colours = '100'
 max_size = '3096000'
 
-# FIXME caption colours
-[[caption]]
-text = "VERY LONG FAKE CAPTION\nWITH LOTS AND LOTS OF WORDS"
-from = '11'
-to   = '12'
-size = '32'
-
 [[caption]]
 text = "You expect me to help you?"
 from = '0'
@@ -45,7 +38,7 @@ from = '3.3'
 to   = '3.7'
 size = '32'
 font = 'morlrounded-italic.otf'
-# colour = '#0099ff'
+colour = '#33ccff'
 placement = 'br'
 
 [[caption]]

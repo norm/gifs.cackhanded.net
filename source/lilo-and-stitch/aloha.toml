@@ -18,17 +18,9 @@ duration = '3.5'
 
 [output]
 fps = '12'
-# colours = '128'
-
-# FIXME caption colours
-[[caption]]
-text = "VERY LONG FAKE CAPTION\nWITH LOTS AND LOTS OF WORDS"
-from = '10'
-to   = '11'
-size = '32'
 
 [[caption]]
-text = "Aloha!"
+text = "ALOHA!"
 from = '2.5'
 to   = '3'
-size = '32'
+size = '48'
