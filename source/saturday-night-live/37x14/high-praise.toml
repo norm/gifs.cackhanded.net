@@ -1,0 +1,33 @@
+title = 'That’s high praise'
+published = 2020-08-09T06:42:44Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/37x14/index'
+tag = ['nicolas-cage', 'andy-samberg', 'weekend-update', 'get-in-the-cage']
+body_markdown = """
+
+Andy Samberg, as Nicolas Cage, sitting next to actual Nicolas Cage,
+during the Weekend Update segment called “Get in the Cage”,
+says “That’s high praise”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'JdA9_mtXYME'
+ext      = 'mp4'
+start    = '02:07'
+duration = '3'
+
+[output]
+fps      = '16'
+colours  = '48'
+max_size = '524288'
+
+[[caption]]
+text      = "That’s high praise"
+from      = '0.7'
+to        = '2'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '36'
+margin    = '20'
