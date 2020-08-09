@@ -1,0 +1,47 @@
+title = 'Fresh oversize popcorn'
+published = 2020-08-08T11:06:25Z
+tag = ['stephen-colbert']
+body_markdown = """
+
+Stephen Colbert eating popcorn from a ridiculously large box.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'DnvTA9T_WfY'
+ext      = 'mp4'
+start    = '04:23'
+duration = '2.5'
+# end      = '00:00:00.0'
+crop     = '960:540:500:250'
+
+[output]
+fps      = '16'
+colours  = '48'
+dither   = 'bayer:bayer_scale=2'
+# dither   = 'floyd_steinberg'
+# dither   = 'sierra2'
+# dither   = 'sierra2_4a'
+# fps      = '16'
+# loss     = '0'
+max_size = '1024000'
+mode     = 'full'
+# width    = 'original'
+
+# [[clip]]
+# start = '1'
+# end   = '2'
+
+# [[caption]]
+# text      = "Looks like I picked the\nwrong week to give up drinking"
+# from      = '0'
+# to        = '1.7'
+# align     = 'center'
+# colour    = 'white'
+# font      = 'assistant-semibold.ttf'
+# margin    = '10'
+# placement = 'bc'
+# size      = '24'
+# stroke_colour = 'black'
+# stroke_width  = '2'
