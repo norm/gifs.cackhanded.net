@@ -37,6 +37,10 @@
     <dt>Source</dt>
     <dd><a href='{{page.source.path}}'>{{page.source.title}}</a></dd>
   {% endif %}
+  {% if page.artist %}
+    <dt>Artist</dt>
+    <dd><a href='{{page.artist.path}}'>{{page.artist.title}}</a></dd>
+  {% endif %}
   {% if tag %}
     <li class='tag'>
       <dt>Tagged</dt>

@@ -1,10 +1,14 @@
 title = 'Trip'
 published = 2020-08-09T07:20:30Z
 source_fkey = 'britney-spears/stronger/index'
+artist_fkey = 'britney-spears/index'
 tag = ['britney-spears']
 body_markdown = """
 
 Britney easily walks over an obstacle, the guy following her does not.
+
+(Although he would probably have made it past if he hadn’t obviously dropped
+his knee onto it first, almost as if he was expecting to trip over it.)
 
 """
 

@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+<ul class='links'>
+  {% if imdb %}
+    <li><a href='https://www.imdb.com/title/{{imdb}}/'>IMDb</a></li>
+  {% endif %}
+  {% if wikipedia %}
+    <li><a href='https://en.wikipedia.org/wiki/{{wikipedia}}'>Wikipedia</a></li>
+  {% endif %}
+</ul>
+
+{{body}}
+
+<ul>
+  {% for video in page.artist_set.filter(type='music-video') %}
+    <li><a href='{{video.path}}'>{{video.title}}</a></li>
+  {% endfor %}
+</ul>
+
+<ul class='thumbs'>
+  {% for gif in page.artist_set.filter(type__neq='music-video') %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

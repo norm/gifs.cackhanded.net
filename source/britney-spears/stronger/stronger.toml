@@ -1,6 +1,7 @@
 title = 'Stronger'
 published = 2020-08-09T07:44:06Z
 source_fkey = 'britney-spears/stronger/index'
+artist_fkey = 'britney-spears/index'
 tag = ['britney-spears']
 body_markdown = """
 
