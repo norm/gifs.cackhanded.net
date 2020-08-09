@@ -1,0 +1,22 @@
+title = 'Trip'
+published = 2020-08-09T07:20:30Z
+source_fkey = 'britney-spears/stronger/index'
+tag = ['britney-spears']
+body_markdown = """
+
+Britney easily walks over an obstacle, the guy following her does not.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'AJWtLf4-WWs'
+ext      = 'mp4'
+start    = '1:07.7'
+duration = '2.1'
+crop     = '854:460'
+
+[output]
+colours  = '48'
+fps      = '16'
+max_size = '1048576'

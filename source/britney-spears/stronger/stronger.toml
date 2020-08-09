@@ -1,0 +1,29 @@
+title = 'Stronger'
+published = 2020-08-09T07:44:06Z
+source_fkey = 'britney-spears/stronger/index'
+tag = ['britney-spears']
+body_markdown = """
+
+Britney sings “I’m stronger”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'AJWtLf4-WWs'
+ext      = 'mp4'
+start    = '3:30.25'
+duration = '2.7'
+crop     = '854:460'
+
+[output]
+colours  = '48'
+fps      = '16'
+max_size = '1258292'
+
+[[caption]]
+text      = "I’m stronger"
+from      = '0'
+to        = '2.6'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'

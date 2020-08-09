@@ -1,0 +1,30 @@
+title = 'Whatever'
+published = 2020-08-09T07:30:23Z
+source_fkey = 'britney-spears/stronger/index'
+tag = ['britney-spears']
+body_markdown = """
+
+Britney says “Whatever” in disgust.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'AJWtLf4-WWs'
+ext      = 'mp4'
+start    = '0:09.4'
+duration = '3.05'
+crop     = '854:460'
+
+[output]
+colours  = '96'
+dither   = 'floyd_steinberg'
+fps      = '18'
+max_size = '1572864'
+
+[[caption]]
+text      = "Whatever"
+from      = '0.8'
+to        = '1.7'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
