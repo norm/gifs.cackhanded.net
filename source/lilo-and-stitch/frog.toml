@@ -16,5 +16,5 @@ start    = '24:22'
 duration = '4.6'
 
 [output]
-fps = '12'
-max_size = '1260000'
+fps      = '12'
+max_size = '1.2mb'

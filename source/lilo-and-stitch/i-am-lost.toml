@@ -16,8 +16,8 @@ start    = '55:29.5'
 duration = '8'
 
 [output]
-fps = '12'
-max_size = '1260000'
+fps      = '12'
+max_size = '1.2mb'
 
 [[caption]]
 text = "I am lost"

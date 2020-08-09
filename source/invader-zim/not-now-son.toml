@@ -30,9 +30,9 @@ duration = '6.6'
 crop     = '700:480'
 
 [output]
-colours  = 192
+colours  = '192'
 mode     = 'full'
-max_size = 2048000
+max_size = '2mb'
 
 [[caption]]
 text = "Not now son, I'm making..."

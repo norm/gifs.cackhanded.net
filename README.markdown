@@ -34,9 +34,9 @@ duration = '4.8'
 crop     = '628:468'
 
 [output]
-colours  = 192
+colours  = '192'
 mode     = 'full'
-max_size = 2048000
+max_size = '2mb'
 dither   = 'floyd_steinberg'
 
 [[clip]]
@@ -118,6 +118,7 @@ the video source.
 * `max_size` is the maximum size in bytes of the GIF, if the output is
   larger than this value `gifsicle` will be run with increasing levels
   of `loss` to shrink the file size at the expense of image quality
+  (can be expressed in megabytes, eg `1.5mb`)
 * `dither` is how the palette colours are dithered to create the appearance
   of more colours:
     * `bayer:bayer_scale=1` — the scale is an integer between 0 and 5

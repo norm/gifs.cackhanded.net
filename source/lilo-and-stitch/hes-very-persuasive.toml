@@ -22,9 +22,9 @@ start    = '1:07:36'
 duration = '10.7'
 
 [output]
-fps = '12'
-colours = '100'
-max_size = '3096000'
+fps      = '12'
+colours  = '100'
+max_size = '3mb'
 
 [[caption]]
 text = "You expect me to help you?"

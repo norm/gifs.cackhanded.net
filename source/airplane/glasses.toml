@@ -18,7 +18,7 @@ crop     = '1040:585:0:220'
 [output]
 fps      = '12'
 colours  = '48'
-max_size = '840000'
+max_size = '0.8mb'
 dither   = 'floyd_steinberg'
 
 [[clip]]

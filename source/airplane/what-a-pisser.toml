@@ -20,7 +20,7 @@ colours  = '74'
 fps      = '12'
 dither   = 'sierra2_4a'
 loss     = '40'
-max_size = '1572864'
+max_size = '1.5mb'
 
 [[caption]]
 text      = "What a pisser"

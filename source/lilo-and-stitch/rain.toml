@@ -21,5 +21,4 @@ duration = '8.8'
 
 [output]
 fps      = '12'
-max_size = '2621440'
-
+max_size = '2.5mb'

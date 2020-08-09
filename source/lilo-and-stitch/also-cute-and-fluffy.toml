@@ -20,8 +20,8 @@ start    = '1:12:44'
 duration = '6.8'
 
 [output]
-fps = '12'
-max_size = '1572000'
+fps      = '12'
+max_size = '1.5mb'
 
 [[caption]]
 text = "You’re vile!"

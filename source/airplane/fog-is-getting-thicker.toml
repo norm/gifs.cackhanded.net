@@ -19,7 +19,7 @@ duration = '8'
 
 [output]
 fps      = '12'
-max_size = '1800000'
+max_size = '1.75mb'
 
 [[clip]]
 start = '0'

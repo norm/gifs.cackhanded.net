@@ -195,7 +195,7 @@ function main {
         -o "${TEMP}/gifsicle.${losses}.gif" \
         "$TEMP/output.gif"
 
-    output_max_size="$(toml $toml output.max_size)"
+    output_max_size="$(convert_mb $(toml $toml output.max_size))"
     if [ -n "$output_max_size" ]; then
         size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
         until [ "$size" -lt "$output_max_size" ]; do
@@ -214,6 +214,22 @@ function main {
     fi
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
+}
+
+function convert_mb {
+    size="${1:-0}"
+
+    case "$size" in
+        *mb)
+            echo "${size%%mb} 1024 1024 * * p" | dc | sed -e 's/\..*//'
+            ;;
+        0)
+            echo ''
+            ;;
+        *)
+            echo "$size"
+            ;;
+    esac
 }
 
 function debug {

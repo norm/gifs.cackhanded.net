@@ -25,7 +25,7 @@ dither   = 'bayer:bayer_scale=2'
 # dither   = 'sierra2_4a'
 # fps      = '16'
 # loss     = '0'
-max_size = '1024000'
+max_size = '1mb'
 mode     = 'full'
 # width    = 'original'
 

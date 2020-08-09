@@ -21,7 +21,7 @@ crop     = '854:460'
 colours  = '96'
 dither   = 'floyd_steinberg'
 fps      = '18'
-max_size = '1572864'
+max_size = '1.5mb'
 
 [[caption]]
 text      = "Whatever"

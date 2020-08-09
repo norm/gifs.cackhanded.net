@@ -19,7 +19,7 @@ duration = '8.4'
 
 [output]
 fps      = '12'
-max_size = '3096000'
+max_size = '3mb'
 
 [[caption]]
 text = "I just want to tell you both good luck"

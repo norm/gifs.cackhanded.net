@@ -18,4 +18,4 @@ duration = '2.7'
 [output]
 fps      = '10'
 colours  = '48'
-max_size = '1024000'
+max_size = '1mb'

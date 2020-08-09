@@ -23,4 +23,4 @@ crop     = '854:460'
 [output]
 colours  = '48'
 fps      = '16'
-max_size = '1048576'
+max_size = '1mb'

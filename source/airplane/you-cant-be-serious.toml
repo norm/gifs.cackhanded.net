@@ -19,7 +19,7 @@ duration = '4.6'
 
 [output]
 fps      = '16'
-max_size = '1572000'
+max_size = '1.5mb'
 
 [[caption]]
 text = "Surely you can’t be serious?"

@@ -20,7 +20,7 @@ crop     = '854:460'
 [output]
 colours  = '48'
 fps      = '16'
-max_size = '1258292'
+max_size = '1.2mb'
 
 [[caption]]
 text      = "I’m stronger"

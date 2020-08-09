@@ -21,7 +21,7 @@ duration = '3'
 [output]
 fps      = '16'
 colours  = '48'
-max_size = '524288'
+max_size = '0.5mb'
 
 [[caption]]
 text      = "That’s high praise"
