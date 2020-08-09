@@ -6,6 +6,7 @@ export AV_LOG_FORCE_NOCOLOR=1
 
 DEFAULT_WIDTH=480
 DEFAULT_FPS=10
+DEBUG=''
 
 
 function main {
@@ -101,7 +102,7 @@ function main {
     [ -n "$end" ] && timing_args="$timing_args -to $end"
 
     # calculate the palette
-    ffmpeg \
+    debug ffmpeg \
         -loglevel error \
         -y \
         ${timing_args} \
@@ -110,7 +111,7 @@ function main {
         "${TEMP}/palette.png"
 
     size_filter="$(join ',' "$crop" "$scale")"
-    ffmpeg \
+    debug ffmpeg \
         -loglevel error -y -ss 0 -t 0.01 -i "$video" \
         -filter_complex "[0:v] ${size_filter:-scale=w=in_w:h=in_h}" \
         ${TEMP}/size.gif
@@ -174,7 +175,7 @@ function main {
 
     edit-palette "${TEMP}/palette.png" $caption_colours
 
-    ffmpeg \
+    debug ffmpeg \
         -loglevel error \
         -y \
         ${timing_args} \
@@ -213,6 +214,11 @@ function main {
     fi
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
+}
+
+function debug {
+    [ -n "$DEBUG" ] && echo "$@"
+    "$@"
 }
 
 function join {
