@@ -142,7 +142,7 @@ function main {
                 $output_height \
                 --colour "${caption_colour:-#ffffff}" \
                 --font "${caption_font:-morlrounded-regular.otf}" \
-                --font-size "${caption_size:-128}" \
+                --font-size "${caption_size:-40}" \
                 --margin "${caption_margin:-10}" \
                 --stroke-width "${caption_strokew:-2}" \
                 --stroke-colour "${caption_strokecol:-#000000}" \

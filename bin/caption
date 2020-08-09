@@ -27,7 +27,7 @@ def main():
     )
     parser.add_argument(
         '--font-size',
-        default=80,
+        default=40,
         type=int,
     )
     parser.add_argument(
