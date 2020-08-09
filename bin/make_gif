@@ -199,7 +199,7 @@ function main {
     if [ -n "$output_max_size" ]; then
         size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
         until [ "$size" -lt "$output_max_size" ]; do
-            let "losses = losses + 5"
+            let "losses = losses + 10"
 
             gifsicle \
                 -O3 \
