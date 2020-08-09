@@ -1,0 +1,30 @@
+title = 'What a pisser'
+published = 2020-08-09T09:42:37Z
+source_fkey = 'airplane/index'
+tag = ['ted-striker', 'fourth-wall']
+body_markdown = """
+
+Ted turns to camera, breaking the fourth wall, and says “What a pisser.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '05:19.5'
+duration = '4.6'
+
+[output]
+colours  = '74'
+fps      = '12'
+dither   = 'sierra2_4a'
+loss     = '40'
+max_size = '1572864'
+
+[[caption]]
+text      = "What a pisser"
+from      = '2.9'
+to        = '3.9'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
