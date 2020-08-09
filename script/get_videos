@@ -6,7 +6,11 @@ PATH=./bin:$PATH
 
 
 declare -a files
-files=( $(find source -name [a-z]*.toml) )
+if [ -n "$*" ]; then
+    files=( "$@" )
+else
+    files=( $(find source -name [a-z]*.toml) )
+fi
 
 for toml in "${files[@]}"; do
     x="${toml#source/}"

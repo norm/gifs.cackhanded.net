@@ -1,0 +1,67 @@
+#!/bin/sh
+
+set -eux
+
+new="$1"
+
+index="$(dirname $new)"
+toml="source/$new.toml"
+dir="$(dirname $toml)"
+video="$(basename $dir)"
+
+mkdir -p $dir
+cat <<EOF > $toml
+title = '${2:-}'
+published = $(date "+%Y-%m-%dT%H:%M:%SZ")
+source_fkey = '$index/index'
+tag = ['TAG_ME']
+body_markdown = """
+
+WRITE_ME
+
+"""
+
+[video]
+source   = 'file'
+file     = '$video'
+ext      = 'm4v'
+start    = '00:00:00.0'
+# duration = '4'
+# end      = '00:00:00.0'
+# crop     = '1200:675'
+
+[output]
+fps = 'original'
+# colours  = '48'
+# dither   = 'bayer:bayer_scale=0-5'
+# dither   = 'floyd_steinberg'
+# dither   = 'sierra2'
+# dither   = 'sierra2_4a'
+# fps      = '16'
+# loss     = '0'
+# max_size = '1572864'
+# mode     = 'full'
+# width    = 'original'
+
+# [[clip]]
+# start = '1'
+# end   = '2'
+
+# [[caption]]
+# text      = "Looks like I picked the\nwrong week to give up drinking"
+# from      = '0'
+# to        = '1.7'
+# align     = 'center'
+# colour    = 'white'
+# font      = 'assistant-semibold.ttf'
+# margin    = '10'
+# placement = 'bc'
+# size      = '24'
+# stroke_colour = 'black'
+# stroke_width  = '2'
+EOF
+
+subl -w $toml
+subl $toml
+./script/get_videos $toml
+make
