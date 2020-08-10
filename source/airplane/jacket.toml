@@ -1,0 +1,24 @@
+title = 'Jacket'
+published = 2020-08-10T07:53:50Z
+source_fkey = 'airplane/index'
+tag = ['ted-striker', 'elaine-dickinson', 'dancing']
+body_markdown = """
+
+Ted’s jacket returns to him after he threw it away.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '19:07'
+duration = '5.25'
+
+# crop out the VERY OBVIOUS ARM that throws the jacket
+crop     = '1600:900:300:100'
+
+[output]
+fps      = '12'
+dither   = 'bayer:bayer_scale=3'
+max_size = '1.8mb'

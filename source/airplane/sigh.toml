@@ -1,0 +1,23 @@
+title = 'Sigh'
+published = 2020-08-10T06:17:08Z
+source_fkey = 'airplane/index'
+tag = ['hanging-lady']
+body_markdown = """
+
+The "hanging lady" turns as Ted starts into a story, takes off her glasses,
+sighs, and prepares to feign interest.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '15:49.75'
+duration = '4.2'
+
+[output]
+colours  = '48'
+fps      = '16'
+loss     = '60'
+max_size = '1.5mb'

@@ -1,0 +1,31 @@
+title = 'Jukebox'
+published = 2020-08-10T07:06:12Z
+source_fkey = 'airplane/index'
+tag = ['jukebox', 'dancing']
+body_markdown = """
+
+A Girl Scout crashes head-first into a jukebox, which begins to play.
+People are drawn to the dance floor and start dancing.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '17:11.6'
+
+[output]
+fps      = '12'
+dither   = 'sierra2'
+loss     = '200'
+max_size = '3mb'
+mode     = 'full'
+
+[[clip]]
+start = '0'
+end   = '3.2'
+
+[[clip]]
+start = '7.25'
+end   = '30.9'
