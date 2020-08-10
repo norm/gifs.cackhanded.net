@@ -207,3 +207,24 @@ To make the GIFs:
 
     # create GIFs with FFmpeg debugging output
     % GIF_DEBUG=y make
+
+To add a new GIF:
+
+    % ./script/new airplane/surely-you-cant-be-serious
+
+    # (opens config in Sublime Text)
+    # edit the config, save and close, and it makes the GIF
+    # (opens in Safari for previewing)
+
+    # tweak as necessary until happy, run make after each change and
+    # refresh Safari
+    % make
+
+    # when done, update the published date
+    % ./script/now airplane/surely-you-cant-be-serious
+
+    # commit and push
+    % git add source/airplane/surely-you-cant-be-serious*
+    % git commit -m'Add GIF'
+    % make publish
+
