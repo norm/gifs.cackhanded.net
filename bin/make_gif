@@ -65,10 +65,9 @@ function main {
     num_clips="$(toml $toml clip --length)"
     if [ "$num_clips" -gt 0 ]; then
         if [ -n "$fps" ]; then
-            stream="[v]"
-            filter="[0:v] ${fps} [v];"
+            stream="[0:v] ${fps},"
         else
-            stream="[0:v]"
+            stream="[0:v] "
         fi
         for index in $(seq 1 $num_clips); do
             clip_start="$(toml $toml clip.start $index)"
