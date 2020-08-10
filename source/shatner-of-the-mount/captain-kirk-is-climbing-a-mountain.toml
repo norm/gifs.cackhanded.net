@@ -1,6 +1,7 @@
 title = 'Captain Kirk is climbing a mountain'
 source_fkey = 'shatner-of-the-mount/index'
 published = 2020-07-30T06:45:00Z
+tag = ['william-shatner']
 body_markdown = """
 
 William Shatner saying 

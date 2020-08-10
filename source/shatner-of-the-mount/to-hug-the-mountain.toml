@@ -1,6 +1,7 @@
 title = 'To hug the mountain'
 source_fkey = 'shatner-of-the-mount/index'
 published = 2020-07-30T06:47:00Z
+tag = ['william-shatner']
 body_markdown = """
 
 William Shatner saying 

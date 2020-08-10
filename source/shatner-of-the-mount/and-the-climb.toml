@@ -1,6 +1,7 @@
 title = 'The climb is going'
 source_fkey = 'shatner-of-the-mount/index'
 published = 2020-07-30T07:04:00Z
+tag = ['william-shatner']
 body_markdown = """
 
 William Shatner saying 
