@@ -204,3 +204,6 @@ To make the GIFs:
 
     # create GIFs
     % make
+
+    # create GIFs with FFmpeg debugging output
+    % GIF_DEBUG=y make
