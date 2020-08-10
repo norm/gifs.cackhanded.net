@@ -2,7 +2,7 @@ title = 'Whatever'
 published = 2020-08-09T07:30:23Z
 source_fkey = 'britney-spears/stronger/index'
 artist_fkey = 'britney-spears/index'
-tag = ['britney-spears']
+tag = ['britney-spears', 'reaction']
 body_markdown = """
 
 Britney says “Whatever” in disgust.
@@ -21,6 +21,7 @@ crop     = '854:460'
 colours  = '96'
 dither   = 'floyd_steinberg'
 fps      = '18'
+loss     = '80'
 max_size = '1.5mb'
 
 [[caption]]
