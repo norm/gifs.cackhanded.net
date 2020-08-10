@@ -21,7 +21,7 @@ function main {
     fi
 
     if [ ! -f "$video" ]; then
-        echo "** $video does not exist"
+        echo " ** $video does not exist"
         exit 1
     fi
 
@@ -116,7 +116,7 @@ function main {
         ${TEMP}/size.gif
     output_width="$( file $TEMP/size.gif | awk '{ print $7 }')"
     output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
-    echo "   ${output_width} x ${output_height}"
+    echo "    ${output_width} x ${output_height}"
 
     # captions
     num_captions="$(toml $toml caption --length)"
@@ -185,6 +185,12 @@ function main {
         -filter_complex "$filter" \
         "${TEMP}/output.gif"
 
+    uncompressed_size="$(stat -f '%z' "${TEMP}/output.gif")"
+    output_max_size="$(convert_mb $(toml $toml output.max_size))"
+    echo -n "    size $uncompressed_size"
+    [ -n "$output_max_size" ] && echo -n ", max_size $output_max_size"
+    echo ''
+
     output_loss="$(toml $toml output.loss)"
     losses="${output_loss:-0}"
     gifsicle \
@@ -194,9 +200,13 @@ function main {
         -o "${TEMP}/gifsicle.${losses}.gif" \
         "$TEMP/output.gif"
 
-    output_max_size="$(convert_mb $(toml $toml output.max_size))"
+    size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
+    printf "  < optimised with loss %d, now %d, %.01f%% of original\n" \
+        $losses \
+        $size \
+        "$(echo 3k $size $uncompressed_size / 100 \* p | dc)"
+
     if [ -n "$output_max_size" ]; then
-        size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
         until [ "$size" -lt "$output_max_size" ]; do
             let "losses = losses + 10"
 
@@ -208,7 +218,10 @@ function main {
                 "$TEMP/output.gif"
 
             size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
-            echo "   loss=$losses max=$output_max_size size=$size"
+            printf "  < optimised with loss %d, now %d, %.01f%% of max\n" \
+                $losses \
+                $size \
+                "$(echo 3k $size $output_max_size / 100 \* p | dc)"
         done
     fi
 

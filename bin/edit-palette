@@ -33,7 +33,7 @@ def main():
                 index -= 1
         arg += 2
     image.save(sys.argv[1])
-    print('   %s colours' % len(colours))
+    print('    %s colours' % len(colours))
 
 
 def colour_range(caption, stroke, steps=5):
