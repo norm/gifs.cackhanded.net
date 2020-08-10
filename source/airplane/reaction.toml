@@ -1,0 +1,23 @@
+title = 'Reaction'
+published = 2020-08-10T08:17:30Z
+source_fkey = 'airplane/index'
+tag = ['reaction']
+body_markdown = """
+
+The "Young Boy with Coffee" reacts subtly to what he’s just heard.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '22:44.8'
+duration = '2.9'
+
+[output]
+colours  = '48'
+fps      = '18'
+dither   = 'floyd_steinberg'
+loss     = '50'
+max_size = '1.2mb'
