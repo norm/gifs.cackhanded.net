@@ -197,6 +197,12 @@ To install pre-requisites:
     % brew install ffmpeg gifsicle youtube-dl
     % pip install -r requirements.txt
 
+To run the tests (currently only fully works on macOS, with the right video
+and font file in place; see [workflow](.github/workflows/tests.yaml) for more
+information):
+
+    % make test
+
 To make the GIFs:
 
     # fetch youtube videos, issue reminders about other sources
