@@ -1,0 +1,23 @@
+title = 'Melting'
+published = 2020-08-10T11:24:52Z
+source_fkey = 'raiders-of-the-lost-ark/index'
+tag = ['nazi', 'power-of-god', 'arnold-toht']
+body_markdown = """
+
+Sturmbannführer Arnold Toht's face melts before the power of God coming
+from the Ark. 
+
+"""
+
+[video]
+source   = 'file'
+file     = 'raiders-of-the-lost-ark'
+ext      = 'm4v'
+start    = '1:47:38.6'
+duration = '4'
+crop     = '480:320:440:140'
+
+[output]
+fps      = '12'
+loss     = '50'
+max_size = '1.5mb'

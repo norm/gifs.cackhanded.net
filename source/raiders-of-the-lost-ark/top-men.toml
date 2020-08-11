@@ -1,0 +1,35 @@
+title = 'Top Men'
+published = 2020-08-10T10:58:17Z
+source_fkey = 'raiders-of-the-lost-ark/index'
+tag = ['top-men', 'indiana-jones', 'dr-marcus-brody', 'major-eaton']
+body_markdown = """
+
+Major Eaton tells Indiana “Top men.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'raiders-of-the-lost-ark'
+ext      = 'm4v'
+start    = '1:49:45.0'
+duration = '4.6'
+
+[output]
+colours  = '48'
+fps      = '18'
+max_size = '1.5mb'
+
+[[caption]]
+text      = "TOP."
+from      = '1.7'
+to        = '2.3'
+font      = 'lato-black.ttf'
+placement = 'bc'
+
+[[caption]]
+text      = "MEN."
+from      = '3'
+to        = '3.75'
+font      = 'lato-black.ttf'
+placement = 'bc'

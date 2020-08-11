@@ -1,0 +1,40 @@
+title = 'Mileage'
+published = 2020-08-11T12:13:57Z
+source_fkey = 'raiders-of-the-lost-ark/index'
+tag = ['indiana-jones', 'marion-ravenwood']
+body_markdown = """
+
+Indiana says to Marion “It’s not the years, honey, it’s the mileage.”
+
+She dabs at one of his wounds. He flinches.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'raiders-of-the-lost-ark'
+ext      = 'm4v'
+start    = '1:32:37'
+duration = '7'
+
+[output]
+colours  = '80'
+fps      = '18'
+loss     = '40'
+max_size = '2.5mb'
+
+[[caption]]
+text      = "It’s not the years, honey"
+from      = '0'
+to        = '1.5'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "It’s the mileage"
+from      = '2'
+to        = '3.5'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '32'
