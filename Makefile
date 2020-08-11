@@ -1,4 +1,4 @@
-.PHONY: all clean cleanthumbs gifwrapped publish
+.PHONY: all clean cleanthumbs gifwrapped generate rebuild push publish test
 
 all:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs
@@ -25,3 +25,6 @@ push:
 
 publish: push rebuild gifwrapped
 	@flourish upload
+
+test:
+	@./script/test
