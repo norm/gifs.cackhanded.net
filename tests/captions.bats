@@ -1,5 +1,9 @@
+#!/bin/bash
 
 @test caption_without_args_is_error {
+    # FIXME 
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
     run ./bin/caption
     echo "$output"
 
@@ -7,6 +11,8 @@
 }
 
 @test basic_caption {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
     run ./bin/caption 480 300 'I am a caption' $BATS_TMPDIR/caption.png
     echo "$output"
 
@@ -15,6 +21,8 @@
 }
 
 @test basic_caption_centred {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
     run ./bin/caption \
         480 300 \
         'I am a caption' \
@@ -27,6 +35,8 @@
 }
 
 @test basic_caption_placement_negative {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
     run ./bin/caption \
         480 300 \
         'I am a caption' \
@@ -39,6 +49,8 @@
 }
 
 @test basic_caption_colours {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
     run ./bin/caption \
         480 300 \
         'I am a caption' \
@@ -53,6 +65,8 @@
 }
 
 @test basic_caption_sizes {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
     run ./bin/caption \
         480 300 \
         'I am a caption' \
@@ -66,6 +80,8 @@
 }
 
 @test basic_caption_font {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
     run ./bin/caption \
         480 300 \
         'I am a caption' \
@@ -79,6 +95,8 @@
 }
 
 @test basic_caption_newline_align {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
     run ./bin/caption \
         480 300 \
         'I am a caption'$'\n''that lives next door' \
