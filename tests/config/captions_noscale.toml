@@ -1,0 +1,27 @@
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '120'
+duration = '1'
+
+[output]
+colours  = '96'
+fps      = 'original'
+width    = 'original'
+
+[[caption]]
+text = 'And the climb'
+from = '0'
+to   = '0.5'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = 'is going'
+from = '0.51'
+to   = '1'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'

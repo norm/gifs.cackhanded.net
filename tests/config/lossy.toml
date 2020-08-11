@@ -1,0 +1,12 @@
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '0:10'
+duration = '1'
+
+[output]
+fps      = 'original'
+width    = 'original'
+loss     = '20'
+max_size = '1mb'

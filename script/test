@@ -1,2 +1,22 @@
 #!/bin/bash
-true
+
+PATH="./bin:$PATH"
+
+declare -a tests
+blue="\e[34m"
+reset="\e[0m"
+success=0
+
+if [ -n "$*" ]; then
+    tests=( "$@" )
+else
+    tests=( $(echo tests/*.bats) )
+fi
+
+for test in "${tests[@]}"; do
+    printf "=== ${blue}%s${reset}\n" $test
+    bats $test
+    let "success = success + $?"
+done
+
+exit $success

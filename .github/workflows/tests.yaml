@@ -6,11 +6,49 @@ on:
 jobs:
   tests:
     name: Run the tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Install tools
+        run: |
+          sudo apt-get install dc ffmpeg gifsicle
+          sudo npm install -g bats
+
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Configure pip caching
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get install libfreetype-dev python3-pil
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install youtube-dl
+
+      - name: Download sample video
+        run: |
+          mkdir videos
+          youtube-dl \
+              -o "videos/HU2ftCitvyQ.mp4" \
+              -f "bestvideo[ext=mp4]" \
+              HU2ftCitvyQ
+
+      - name: Download font
+        run: |
+          mkdir fonts
+          curl -L -o fonts/assistant-semibold.ttf 'https://github.com/google/fonts/blob/master/ofl/assistant/Assistant-SemiBold.ttf?raw=true'
 
       - name: Run tests
         run: |

@@ -6,6 +6,7 @@ export AV_LOG_FORCE_NOCOLOR=1
 
 DEFAULT_WIDTH=480
 DEFAULT_FPS=10
+DEFAULT_COLOURS=64
 DEBUG="${GIF_DEBUG:-}"
 
 
@@ -25,72 +26,6 @@ function main {
         exit 1
     fi
 
-    # crop the image
-    video_crop="$(toml $toml video.crop)"
-    crop=''
-    [ -n "$video_crop" ] \
-        && crop="crop=${video_crop}"
-
-    # resize the image, preserving the aspect ratio
-    output_width="$(toml $toml output.width)"
-    if [ "$output_width" == 'original' ]; then
-        scale=''
-    else
-        scale="scale=${output_width:-$DEFAULT_WIDTH}:-1"
-    fi
-
-    # reduce the framerate
-    output_fps="$(toml $toml output.fps)"
-    if [ "$output_fps" == 'original' ]; then
-        fps=''
-    else
-        fps="fps=${output_fps:-$DEFAULT_FPS}"
-    fi
-
-    # reduce no. of colours in the uniform palette
-    output_colours="$(toml $toml output.colours)"
-    max_cols="max_colors=${output_colours:-64}"
-
-    # dithering to improve output
-    output_mode="$(toml $toml output.mode)"
-    mode="stats_mode=${output_mode:-diff}"
-    output_dither="$(toml $toml output.dither)"
-    dither="dither=${output_dither:-bayer:bayer_scale=4}"
-    diff_mode="diff_mode=rectangle"
-
-    # clips
-    extract_clips=''
-    join_clips=''
-    filter=''
-    num_clips="$(toml $toml clip --length)"
-    if [ "$num_clips" -gt 0 ]; then
-        if [ -n "$fps" ]; then
-            stream="[0:v] ${fps},"
-        else
-            stream="[0:v] "
-        fi
-        for index in $(seq 1 $num_clips); do
-            clip_start="$(toml $toml clip.start $index)"
-            start="$(to_seconds $clip_start)"
-            clip_end="$(toml $toml clip.end $index)"
-            end="$(to_seconds $clip_end)"
-            extract_clips+="${stream} trim=start=${start}:end=${end},"
-            extract_clips+="setpts=PTS-STARTPTS [c$index]; "
-            join_clips+="[c$index]"
-        done
-        join_clips+="concat=n=$index:v=1"
-        extract_clips+=" $join_clips"
-        input_filter=$(join ',' "$crop" "$scale")
-        if [ -n "$input_filter" ]; then
-            filter+="$extract_clips [vs];[vs] $input_filter [iv];"
-        else
-            filter+="$extract_clips [iv];"
-        fi
-    else
-        input_filter=$(join ',' "$fps" "$crop" "$scale")
-        filter="[0:v] $input_filter [iv];"
-    fi
-
     # main video timings
     timing_args=''
     start=$(toml $toml video.start)
@@ -106,9 +41,12 @@ function main {
         -y \
         ${timing_args} \
         -i "$video" \
-        -filter_complex "$filter [iv] palettegen=${max_cols}:${mode}" \
+        -filter_complex "$(palettegen_filter $toml)" \
         "${TEMP}/palette.png"
 
+    # calculate the size
+    local crop=$(get_crop $toml)
+    local scale=$(get_scale $toml)
     size_filter="$(join ',' "$crop" "$scale")"
     debug ffmpeg \
         -loglevel error -y -ss 0 -t 0.01 -i "$video" \
@@ -118,15 +56,12 @@ function main {
     output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
     echo "    ${output_width} x ${output_height}"
 
-    # captions
+    # create captions
     num_captions="$(toml $toml caption --length)"
-    caption_args=""
-    caption_colours=""
+    caption_args=''
+    caption_colours=''
     if [ "$num_captions" -gt 0 ]; then
-        # determine output size
-
         for index in $(seq 1 $num_captions); do
-            let "input = index + 1"
             caption_text="$(toml $toml caption.text $index)"
             caption_placement="$(toml $toml caption.placement $index)"
             caption_size="$(toml $toml caption.size $index)"
@@ -153,23 +88,8 @@ function main {
             caption_colours+=" ${caption_colour:-#ffffff}"
             caption_colours+=" ${caption_strokecol:-#000000}"
 
-            caption_from="$(toml $toml caption.from $index)"
-            caption_to="$(toml $toml caption.to $index)"
-
-            position="(main_w-overlay_w):(main_h-overlay_h)"
-            timing="${caption_from:-0},${caption_to:-1000}"
-            overlay="overlay=${position}:enable='between(t,${timing})'"
-
-            if [ $index = 1 ]; then
-                filter+=" [iv][$input:v] ${overlay} [v$index];"
-            else
-                filter+=" [v$((index-1))][$input:v] ${overlay} [v$index];"
-            fi
             caption_args+=" -i ${TEMP}/caption-${index}.png"
         done
-        filter+=" [v$index][1:v] paletteuse=${dither}:${diff_mode}"
-    else
-        filter+=" [iv][1:v] paletteuse=${dither}:${diff_mode}"
     fi
 
     edit-palette "${TEMP}/palette.png" $caption_colours
@@ -182,10 +102,10 @@ function main {
         -i "${TEMP}/palette.png" \
         ${caption_args} \
         -f gif \
-        -filter_complex "$filter" \
+        -filter_complex "$(generate_filter $toml)" \
         "${TEMP}/output.gif"
 
-    uncompressed_size="$(stat -f '%z' "${TEMP}/output.gif")"
+    uncompressed_size="$(filesize "${TEMP}/output.gif")"
     output_max_size="$(convert_mb $(toml $toml output.max_size))"
     echo -n "    size $uncompressed_size"
     [ -n "$output_max_size" ] && echo -n ", max_size $output_max_size"
@@ -200,7 +120,7 @@ function main {
         -o "${TEMP}/gifsicle.${losses}.gif" \
         "$TEMP/output.gif"
 
-    size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
+    size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
     printf "  < optimised with loss %d, now %d, %.01f%% of original\n" \
         $losses \
         $size \
@@ -217,7 +137,7 @@ function main {
                 -o "${TEMP}/gifsicle.${losses}.gif" \
                 "$TEMP/output.gif"
 
-            size="$(stat -f '%z' "${TEMP}/gifsicle.${losses}.gif")"
+            size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
             printf "  < optimised with loss %d, now %d, %.01f%% of max\n" \
                 $losses \
                 $size \
@@ -226,6 +146,156 @@ function main {
     fi
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
+}
+
+function palettegen_filter {
+    local toml="$1"
+
+    local crop=$(get_crop $toml)
+    local scale=$(get_scale $toml)
+    local fps=$(get_fps $toml)
+    local max_cols=$(get_colours $toml)
+    local mode=$(get_stats_mode $toml)
+    local palettegen="palettegen=${max_cols}:${mode}"
+
+    local clips=$(get_clips $toml)
+    if [ -n "$clips" ]; then
+        echo "$clips [cv] $(join ',' $crop $scale $palettegen)"
+    else
+        echo "[0:v] $(join ',' $fps $crop $scale $palettegen)"
+    fi
+}
+
+function generate_filter {
+    local toml="$1"
+
+    local crop=$(get_crop $toml)
+    local scale=$(get_scale $toml)
+    local fps=$(get_fps $toml)
+    local mode=$(get_stats_mode $toml)
+    local dither=$(get_dither $toml)
+
+    local paletteuse="[1:v] paletteuse=${dither}:diff_mode=rectangle"
+    local clips=$(get_clips $toml)
+    local captions=$(get_captions_filter $toml)
+    local alter
+
+    if [ -n "$clips" ]; then
+        alter="$(join ',' $crop $scale)"
+        alter="${alter:-scale=w=in_w:h=in_h}"
+        echo "$clips [cv]$captions $alter [iv]; [iv]$paletteuse"
+    else
+        alter="$(join ',' $fps $crop $scale)"
+        alter="${alter:-scale=w=in_w:h=in_h}"
+        echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
+    fi
+}
+
+function get_crop {
+    local toml="$1"
+
+    local video_crop="$(toml $toml video.crop)"
+    local crop=''
+    [ -n "$video_crop" ] && crop="crop=${video_crop}"
+
+    echo $crop
+}
+
+function get_fps {
+    local toml="$1"
+
+    local output_fps="$(toml $toml output.fps)"
+    local fps="fps=${output_fps:-$DEFAULT_FPS}"
+    [ "$output_fps" == 'original' ] && fps=''
+
+    echo $fps
+}
+
+function get_scale {
+    local toml="$1"
+
+    local output_width="$(toml $toml output.width)"
+    local scale="scale=${output_width:-$DEFAULT_WIDTH}:-1"
+    [ "$output_width" == 'original' ] && scale=''
+
+    echo $scale
+}
+
+function get_colours {
+    local toml="$1"
+
+    local output_colours="$(toml $toml output.colours)"
+
+    echo max_colors=${output_colours:-$DEFAULT_COLOURS}
+}
+
+function get_dither {
+    local toml="$1"
+
+    local output_dither="$(toml $toml output.dither)"
+
+    echo "dither=${output_dither:-bayer:bayer_scale=4}"
+}
+
+function get_clips {
+    local toml="$1"
+
+    local clips=''
+    local num_clips="$(toml $toml clip --length)"
+    if [ "$num_clips" -gt 0 ]; then
+        local fps=$(get_fps $toml)
+        local filters=''
+        for index in $(seq 1 $num_clips); do
+            local start="$(toml $toml clip.start $index)"
+            local end="$(toml $toml clip.end $index)"
+            local trim="trim=start=$(to_seconds $start)"
+            trim+=":end=$(to_seconds $end)"
+
+            local cmd="$(join ',' "$fps" "$trim" setpts=PTS-STARTPTS)"
+            clips+="[0:v] $cmd [c$index]; "
+            filters+="[c$index]"
+        done
+
+        clips+="$filters concat=n=$index:v=1 [cv];"
+    fi
+
+    echo $clips
+}
+
+function get_captions_filter {
+    local toml="$1"
+
+    local captions=''
+    local num_captions="$(toml $toml caption --length)"
+    local input
+    if [ "$num_captions" -gt 0 ]; then
+        for index in $(seq 1 $num_captions); do
+            let "input = index + 1"
+
+            local caption_from="$(toml $toml caption.from $index)"
+            local caption_to="$(toml $toml caption.to $index)"
+            local position="(main_w-overlay_w):(main_h-overlay_h)"
+            local timing="${caption_from:-0},${caption_to:-1000}"
+            local overlay="overlay=${position}:enable='between(t,${timing})'"
+
+            if [ $index = 1 ]; then
+                captions+="[$input:v] ${overlay} [v$index];"
+            else
+                captions+=" [v$((index-1))][$input:v] ${overlay} [v$index];"
+            fi
+        done
+        captions+=" [v$index]"
+    fi
+
+    echo $captions
+}
+
+function get_stats_mode {
+    local toml="$1"
+
+    local output_mode="$(toml $toml output.mode)"
+
+    echo "stats_mode=${output_mode:-diff}"
 }
 
 function convert_mb {
@@ -259,7 +329,14 @@ function cleanup {
     rm -rf "$TEMP"
 }
 
-TEMP="$(mktemp -d /tmp/make_gif.XXXXX)"
-trap cleanup EXIT
+function filesize {
+    perl -E 'say((stat($ARGV[0]))[7])' "$1"
+}
 
-main "$@"
+if [ "$0" = "${BASH_SOURCE[0]}" ]; then
+    # being called directly (rather than via 'source' in a test)
+    TEMP="$(mktemp -d /tmp/make_gif.XXXXX)"
+    trap cleanup EXIT
+
+    main "$@"
+fi
