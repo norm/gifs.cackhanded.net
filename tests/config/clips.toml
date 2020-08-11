@@ -1,0 +1,17 @@
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+crop     = '200:100'
+
+[output]
+fps      = '16'
+width    = '320'
+
+[[clip]]
+start = '10'
+end   = '12'
+
+[[clip]]
+start = '1:10'
+end   = '1:12'

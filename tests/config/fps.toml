@@ -1,0 +1,28 @@
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '0:10'
+duration = '1'
+
+[output]
+width    = 'original'
+
+# [output]
+# colours  = '48'
+# fps      = '18'
+# max_size = '1.5mb'
+
+# [[caption]]
+# text      = "TOP."
+# from      = '1.7'
+# to        = '2.3'
+# font      = 'lato-black.ttf'
+# placement = 'bc'
+
+# [[caption]]
+# text      = "MEN."
+# from      = '3'
+# to        = '3.75'
+# font      = 'lato-black.ttf'
+# placement = 'bc'
