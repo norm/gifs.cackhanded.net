@@ -1,0 +1,24 @@
+title = 'Yeah yeah yeah'
+published = 2020-08-13T08:14:27Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/37x08/index'
+tag = ['bill-hader', 'dateline', 'reaction']
+body_markdown = """
+
+Bill Hader, as Keith Morrison from Dateline, going “Yeah, yeah, yeah…”
+while making motorcycle revving motions with his hands.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'K5Lv6t0moFY'
+ext      = 'mp4'
+start    = '01:26.75'
+duration = '4.45'
+
+[output]
+colours  = '48'
+fps      = '10'
+max_size = '1mb'
+mode     = 'full'

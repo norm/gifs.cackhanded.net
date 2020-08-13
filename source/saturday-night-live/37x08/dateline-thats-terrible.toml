@@ -1,0 +1,31 @@
+title = 'That’s terrible!'
+published = 2020-08-13T08:00:05Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/37x08/index'
+tag = ['bill-hader', 'dateline', 'reaction']
+body_markdown = """
+
+Bill Hader, as Keith Morrison from Dateline, grinning while saying
+“That’s terrible!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'K5Lv6t0moFY'
+ext      = 'mp4'
+start    = '00:42.55'
+duration = '4.6'
+
+[output]
+colours  = '48'
+fps      = '12'
+dither   = 'bayer:bayer_scale=2'
+max_size = '0.85mb'
+
+[[caption]]
+text      = "That’s terrible!"
+from      = '1.75'
+to        = '3.9'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'

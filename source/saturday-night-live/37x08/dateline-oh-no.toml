@@ -1,0 +1,29 @@
+title = 'Oh no!'
+published = 2020-08-13T07:44:35Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/37x08/index'
+tag = ['bill-hader', 'dateline', 'reaction']
+body_markdown = """
+
+Bill Hader, as Keith Morrison from Dateline, grinning while saying “Oh no!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'K5Lv6t0moFY'
+ext      = 'mp4'
+start    = '02:50.7'
+duration = '3.25'
+
+[output]
+colours  = '48'
+fps      = '12'
+max_size = '0.65mb'
+
+[[caption]]
+text      = "Oh no!"
+from      = '0.3'
+to        = '2.9'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'

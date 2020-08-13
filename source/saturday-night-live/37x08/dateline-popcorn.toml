@@ -1,0 +1,22 @@
+title = 'Popcorn'
+published = 2020-08-13T07:25:48Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/37x08/index'
+tag = ['bill-hader', 'dateline', 'popcorn', 'reaction']
+body_markdown = """
+
+Bill Hader, as Keith Morrison from Dateline, grinning and eating popcorn.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'K5Lv6t0moFY'
+ext      = 'mp4'
+start    = '02:46.2'
+duration = '2.25'
+
+[output]
+colours  = '48'
+fps      = '12'
+max_size = '0.6mb'
