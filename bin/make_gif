@@ -94,6 +94,7 @@ function main {
 
     edit-palette "${TEMP}/palette.png" $caption_colours
 
+    filter_debug "$(generate_filter $toml)"
     debug ffmpeg \
         -loglevel error \
         -y \
@@ -151,17 +152,17 @@ function main {
 function palettegen_filter {
     local toml="$1"
 
-    local crop=$(get_crop $toml)
-    local scale=$(get_scale $toml)
-    local fps=$(get_fps $toml)
     local max_cols=$(get_colours $toml)
     local mode=$(get_stats_mode $toml)
     local palettegen="palettegen=${max_cols}:${mode}"
-
     local clips=$(get_clips $toml)
+
     if [ -n "$clips" ]; then
-        echo "$clips [cv] $(join ',' $crop $scale $palettegen)"
+        echo "$clips [cv] $palettegen"
     else
+        local crop=$(get_crop $toml)
+        local scale=$(get_scale $toml)
+        local fps=$(get_fps $toml)
         echo "[0:v] $(join ',' $fps $crop $scale $palettegen)"
     fi
 }
@@ -169,23 +170,20 @@ function palettegen_filter {
 function generate_filter {
     local toml="$1"
 
-    local crop=$(get_crop $toml)
-    local scale=$(get_scale $toml)
-    local fps=$(get_fps $toml)
     local mode=$(get_stats_mode $toml)
     local dither=$(get_dither $toml)
 
     local paletteuse="[1:v] paletteuse=${dither}:diff_mode=rectangle"
     local clips=$(get_clips $toml)
     local captions=$(get_captions_filter $toml)
-    local alter
 
     if [ -n "$clips" ]; then
-        alter="$(join ',' $crop $scale)"
-        alter="${alter:-scale=w=in_w:h=in_h}"
-        echo "$clips [cv]$captions $alter [iv]; [iv]$paletteuse"
+        echo "$clips [cv]${captions}${paletteuse}"
     else
-        alter="$(join ',' $fps $crop $scale)"
+        local crop=$(get_crop $toml)
+        local scale=$(get_scale $toml)
+        local fps=$(get_fps $toml)
+        local alter="$(join ',' $fps $crop $scale)"
         alter="${alter:-scale=w=in_w:h=in_h}"
         echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
     fi
@@ -256,7 +254,10 @@ function get_clips {
             filters+="[c$index]"
         done
 
-        clips+="$filters concat=n=$index:v=1 [cv];"
+        local scale=$(get_scale $toml)
+        local crop=$(get_crop $toml)
+        local alter="$(join ',' "concat=n=$index:v=1" "$crop" "$scale")"
+        clips+="$filters $alter [cv];"
     fi
 
     echo $clips
@@ -317,6 +318,12 @@ function convert_mb {
 function debug {
     [ -n "$DEBUG" ] && echo "$@"
     "$@"
+}
+
+function filter_debug {
+    if [ -n "$DEBUG" ]; then
+        echo "$@" | sed -e 's/; */;/g' | tr ';' '\n'
+    fi
 }
 
 function join {

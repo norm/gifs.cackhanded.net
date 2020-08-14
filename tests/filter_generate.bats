@@ -45,8 +45,8 @@ source bin/make_gif
 @test generate_clips {
     expected='[0:v] fps=16,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
     expected+='[0:v] fps=16,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
-    expected+='[c1][c2] concat=n=2:v=1 [cv]; '
-    expected+='[cv] crop=200:100,scale=320:-1 [iv]; [iv][1:v] paletteuse='
+    expected+='[c1][c2] concat=n=2:v=1,crop=200:100,scale=320:-1 [cv]; '
+    expected+='[cv][1:v] paletteuse='
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
 
     got="$(generate_filter tests/config/clips.toml)"
@@ -90,14 +90,14 @@ source bin/make_gif
 @test generate_clips_captions {
     expected='[0:v] fps=18,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
     expected+='[0:v] fps=18,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
-    expected+='[c1][c2] concat=n=2:v=1 [cv]; '
+    expected+='[c1][c2] concat=n=2:v=1,scale=480:-1 [cv]; '
     expected+='[cv][2:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0,0.3)' [v1]; "
     expected+='[v1][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0.31,0.6)' [v2]; "
     expected+='[v2][4:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0.61,0.9)' [v3]; "
-    expected+='[v3] scale=480:-1 [iv]; [iv][1:v] paletteuse='
+    expected+='[v3][1:v] paletteuse='
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
 
     got="$(generate_filter tests/config/clips_captions.toml)"

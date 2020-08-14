@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source bin/make_gif
 
 @test palettegen_no_args {
@@ -41,9 +43,8 @@ source bin/make_gif
 @test palettegen_clips {
     expected='[0:v] fps=16,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
     expected+='[0:v] fps=16,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
-    expected+='[c1][c2] concat=n=2:v=1 [cv]; '
-    expected+='[cv] crop=200:100,scale=320:-1,'
-    expected+='palettegen=max_colors=64:stats_mode=diff'
+    expected+='[c1][c2] concat=n=2:v=1,crop=200:100,scale=320:-1 [cv]; '
+    expected+='[cv] palettegen=max_colors=64:stats_mode=diff'
 
     got="$(palettegen_filter tests/config/clips.toml)"
     echo GOT=$got
