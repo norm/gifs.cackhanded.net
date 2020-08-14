@@ -4,7 +4,7 @@
 {{body}}
 
 <ul>
-  {% for episode in page.show_set.filter(type='tv-episode') %}
+  {% for episode in page.show_set.filter(type='tv-episode').order_by('-season') %}
     <li><a href='{{episode.path}}'>{{episode.title}}</a></li>
   {% endfor %}
 </ul>
