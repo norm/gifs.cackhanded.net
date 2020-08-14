@@ -1,6 +1,8 @@
 .PHONY: all clean cleanthumbs gifwrapped generate rebuild push publish test
 
-all:
+all: gifs
+
+gifs:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs
 
 clean:
@@ -12,10 +14,10 @@ cleanthumbs:
 gifwrapped:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs gifwrapped
 
-generate:
+generate: gifs
 	@flourish generate -v
 
-rebuild: all
+rebuild: gifs
 	@git stash --include-untracked
 	@./script/rebuild
 	@git stash pop

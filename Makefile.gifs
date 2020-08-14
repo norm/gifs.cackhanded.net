@@ -4,7 +4,7 @@ TOML  := $(shell find source -name '[a-z]*.toml')
 GIF   := $(TOML:$(TOML_DIR)/%.toml=$(TOML_DIR)/%.gif)
 THUMB := $(TOML:$(TOML_DIR)/%.toml=$(TOML_DIR)/%.tn.gif)
 
-.PHONY: all
+.PHONY: all gifwrapped
 
 all: $(GIF) $(THUMB)
 
