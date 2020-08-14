@@ -1,0 +1,52 @@
+title = 'How is that worse?'
+published = 2020-08-14T09:02:12Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/44x14/index'
+tag = ['john-mulaney', 'bill-hader']
+body_markdown = """
+
+Bill Hader as Vince Blight, host of “What’s That Name?” asks the contestant
+Doug, played by John Mulaney, “How is that worse?” He then instructs the 
+cameraman “Get all the cameras on him.” and says to Doug “No, no, no, finish
+that thought Doug.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'rImxuuD_kwM'
+ext      = 'mp4'
+start    = '03:02.65'
+duration = '9'
+crop     = '1920:1070'      # remove black stripe across the top
+
+[output]
+fps      = '12'
+colours  = '94'
+dither   = 'bayer:bayer_scale=3'
+max_size = '2mb'
+
+
+[[caption]]
+text      = "How is that worse?"
+from      = '0.2'
+to        = '1.4'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "Get all the cameras on him"
+from      = '3.1'
+to        = '4.3'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "No no no, finish that thought"
+from      = '4.31'
+to        = '5.8'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '32'
