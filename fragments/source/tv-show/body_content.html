@@ -12,7 +12,7 @@
 <h2>Latest {{title}} GIFs</h2>
 <ul class='thumbs'>
   {# FIXME slice #}
-  {% for gif in page.show_set.filter(type__neq='tv-episode').order_by('published') %}
+  {% for gif in page.show_set.filter(type__neq='tv-episode').order_by('-published') %}
     <li>
       <a href='{{gif.path}}'>
         <img src='{{gif.path}}.tn.gif' alt=''>
