@@ -1,0 +1,25 @@
+title = 'Popcorn'
+published = 2020-08-15T09:48:41Z
+show_fkey = 'the-nanny/index'
+episode_fkey = 'the-nanny/once-a-secretary/index'
+tag = ['niles', 'popcorn']
+body_markdown = """
+
+Niles the butler eating from a bowl of popcorn.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'nanny603'
+ext      = 'm4v'
+start    = '10:24'
+duration = '3.25'
+crop     = '410:320:00:90'
+
+[output]
+colours  = '48'
+fps      = '18'
+width    = '320'
+max_size = '0.8mb'
+mode     = 'full'
