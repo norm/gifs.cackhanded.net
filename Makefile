@@ -17,10 +17,12 @@ gifwrapped:
 generate: gifs
 	@flourish generate -v
 
-rebuild: gifs
-	@git stash --include-untracked
+rebuild: gifs stash
 	@./script/rebuild
 	@git stash pop
+
+stash:
+	git stash --include-untracked
 
 push:
 	@git push origin main
