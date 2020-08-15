@@ -1,5 +1,13 @@
 <h1>{{title}}</h1>
-<p class='subhead'>A TV series.</p>
+<ul class='links'>
+  <li>A TV series</li>
+  {% if imdb %}
+    <li><a href='https://www.imdb.com/title/{{imdb}}/'>IMDb</a></li>
+  {% endif %}
+  {% if wikipedia %}
+    <li><a href='https://en.wikipedia.org/wiki/{{wikipedia}}'>Wikipedia</a></li>
+  {% endif %}
+</ul>
 
 {{body}}
 

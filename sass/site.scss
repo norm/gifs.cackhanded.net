@@ -271,7 +271,11 @@ ul.links {
         padding: 0;
         list-style: none;
         display: inline-block;
-        color: $visited_link_color;
+        
+        a,
+        a:visited {
+            color: $visited_link_color;
+        }
 
         &:before {
             content: '•';
