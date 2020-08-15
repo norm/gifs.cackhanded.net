@@ -1,0 +1,33 @@
+title = 'Good takedown'
+published = 2020-08-15T06:03:30Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/36x22/index'
+tag = ['bill-hader', 'justin-timberlake', 'whats-that-name']
+body_markdown = """
+
+Bill Hader as Vince Blight, host of “What’s That Name?” grins and says
+“Good takedown!” to Justin Timberlake, who looks confused.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'snl3622'
+ext      = 'm4v'
+start    = '41:20.1'
+duration = '4'
+
+[output]
+colours  = '94'
+fps      = '12'
+dither   = 'bayer:bayer_scale=3'
+loss     = '20'
+max_size = '1.5mb'
+
+[[caption]]
+text      = "Good takedown!"
+from      = '0.4'
+to        = '2'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '32'
