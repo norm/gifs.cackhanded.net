@@ -56,6 +56,9 @@ class AtomFeed(atom.AtomGenerator):
         template = dedent("""\
             <p><img src="{url}.gif" alt=''></p>
             {body}
+            <ul>
+              <li>{tags}</li>
+            </ul>
             <hr>
             <p>
                 The config that produced this GIF is on 
@@ -66,6 +69,7 @@ class AtomFeed(atom.AtomGenerator):
             url = object.absolute_url,
             body = object.body,
             path = object.path,
+            tags = '</li><li>'.join(object.tag),
         )
 
 
