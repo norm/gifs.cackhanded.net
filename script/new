@@ -26,7 +26,7 @@ source   = 'file'
 file     = '$video'
 ext      = 'm4v'
 start    = '00:00:00.0'
-# duration = '4'
+duration = '4'
 # end      = '00:00:00.0'
 # crop     = '1200:675'
 
