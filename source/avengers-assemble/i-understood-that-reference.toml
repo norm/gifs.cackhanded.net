@@ -1,0 +1,31 @@
+title = 'I understood that reference'
+published = 2020-08-16T06:20:44Z
+source_fkey = 'avengers-assemble/index'
+tag = ['steve-rogers', 'captain-america', 'tony-stark', 'bruce-banner']
+body_markdown = """
+
+Cap says “I understood that reference.” In the background, Bruce and Tony
+walk off.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'avengers'
+ext      = 'm4v'
+start    = '00:55:48.6'
+duration = '6.8'
+
+[output]
+colours  = '58'
+fps      = '18'
+loss     = '50'
+max_size = '1.5mb'
+
+[[caption]]
+text      = "I understood that reference"
+from      = '0.9'
+to        = '2.4'
+font      = 'assistant-semibold.ttf'
+size      = '32'
+placement = 'bc'
