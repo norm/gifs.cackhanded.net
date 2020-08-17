@@ -1,0 +1,43 @@
+title = 'In a word, chaos'
+published = 2020-08-17T07:55:35Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/44x14/index'
+tag = ['bill-hader', 'whats-that-name']
+body_markdown = """
+
+The camera slowly pushes in on Bill Hader as Vince Blight, host of
+“What’s That Name?” as he says “In a word … chaos.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'rImxuuD_kwM'
+ext      = 'mp4'
+start    = '06:23.5'
+duration = '10.3'
+crop     = '1920:1070'      # remove black stripe across the top
+
+[output]
+fps      = '12'
+colours  = '88'
+loss     = '40'
+max_size = '2.5mb'
+
+[[caption]]
+text      = "In a word…"
+from      = '5.45'
+to        = '6.3'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "CHAOS"
+from      = '7.85'
+to        = '8.85'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '96'
+colour    = '#ffcc22'
+stroke_colour = '#660000'
