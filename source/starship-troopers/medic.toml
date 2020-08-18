@@ -1,0 +1,31 @@
+title = 'Medic!'
+published = 2020-08-18T07:39:12Z
+source_fkey = 'starship-troopers/index'
+tag = ['career-sergeant-zim', 'ace-levy']
+body_markdown = """
+
+Zim pulls a knife out of Ace’s hand, and shouts for medical attention.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'starship-troopers'
+ext      = 'm4v'
+start    = '29:09.0'
+duration = '4.25'
+
+[output]
+colours  = '42'
+fps      = '12'
+dither   = 'bayer:bayer_scale=2'
+loss     = '60'
+max_size = '1.5mb'
+
+[[caption]]
+text      = "MEDIC!"
+from      = '3.5'
+to        = '5'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '64'
