@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+
+<ul class='links'>
+  <li>An Internet source</li>
+  <li><a href='{{url}}/'>{{title}}</a></li>
+  {% if wikipedia %}
+    <li><a href='https://en.wikipedia.org/wiki/{{wikipedia}}'>Wikipedia</a></li>
+  {% endif %}
+</ul>
+
+{{body}}
+
+<ul class='thumbs'>
+  {% for gif in page.source_set.all().order_by('published') %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

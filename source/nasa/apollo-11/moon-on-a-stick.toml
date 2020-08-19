@@ -16,10 +16,9 @@ is vertically flipped so that it looks like the moon is on top of the stick.
 # this was made from different segments of the movie, which there is No
 # option for yet (using the original 2014 gif)
 #
-# [video]
+[video]
 # source   = 'file'
 # file     = 'the-lego-movie'
 # ext      = 'm4v'
 # start    = '5:17'
 # duration = '3'
-

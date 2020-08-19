@@ -1,0 +1,26 @@
+title = 'Slice'
+published = 2020-08-19T08:09:01Z
+source_fkey = 'buttystock/index'
+tag = ['buttystock']
+body_markdown = """
+
+A knife cuts a crisp sandwich vertically in half.
+
+"""
+
+[video]
+url      = 'https://vole.wtf/buttystock/~mark-norman-francis/6/'
+source   = 'file'
+file     = 'sandwich'
+ext      = 'mp4'
+start    = '0:34.85'
+duration = '5.6'
+crop     = '1440:810:0:0'
+
+[output]
+colours  = '48'
+fps      = '18'
+dither   = 'bayer:bayer_scale=2'
+mode     = 'full'
+loss     = '100'
+max_size = '2mb'
