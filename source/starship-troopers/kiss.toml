@@ -1,0 +1,30 @@
+title = 'Kiss'
+published = 2020-08-20T07:37:44Z
+source_fkey = 'starship-troopers/index'
+tag = ['dizzy-flores', 'kiss']
+body_markdown = """
+
+Dizzy kisses the side of the tank Johnny is healing in.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'starship-troopers'
+ext      = 'm4v'
+start    = '1:10:39.2'
+crop     = '880:495:0:180'
+
+[output]
+colours  = '96'
+fps      = '12'
+loss     = '40'
+mode     = 'full'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '4.4'
+end   = '6.3'
