@@ -1,0 +1,52 @@
+title = 'Do you believe in ghosts?'
+published = 2020-08-21T14:28:19Z
+source_fkey = 'ted-lasso/index'
+tag = ['ted-lasso', 'rebecca-welton']
+body_markdown = """
+
+Rebecca asks Ted if he believes in ghosts, Ted answers "I do, but more importantly I think they need to believe in themselves."
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lassoS01E01'
+ext      = 'mkv'
+start    = '00:10:39.5'
+end      = '00:10:45.5'
+
+[output]
+colours  = '74'
+fps      = '12'
+dither   = 'bayer:bayer_scale=3'
+loss     = '50'
+max_size = '1.5mb'
+
+
+
+[[caption]]
+text      = "Do you believe in ghosts, Ted?"
+from      = '0.1'
+to        = '2'
+align     = 'left'
+font      = 'assistant-semibold.ttf'
+size      = '28'
+placement = 'bl'
+
+[[caption]]
+text      = "I do."
+from      = '2'
+to        = '2.8'
+align     = 'right'
+placement = 'br'
+font      = 'assistant-semibold.ttf'
+size      = '28'
+
+[[caption]]
+text      = "but more importantly, I think\nthey need to believe in themselves."
+from      = '2.8'
+to        = '6'
+align     = 'right'
+placement = 'br'
+font      = 'assistant-semibold.ttf'
+size      = '28'
