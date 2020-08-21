@@ -1,0 +1,38 @@
+title = 'I cannot wait to unpack that with you'
+published = 2020-08-21T11:30:50Z
+source_fkey = 'tedlasso/index'
+tag = ['ted-lasso', 'coach-beard', 'rebecca-welton']
+body_markdown = """
+
+After an interesting comment by Rebecca, Ted replies with "If that's a joke, I love it, and if it's not, I cannot wait to unpack that with you."
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lassoS01E01'
+ext      = 'mkv'
+start    = '00:09:11.25'
+end      = '00:09:15.5'
+
+[output]
+colours  = '48'
+fps      = '18'
+
+[[caption]]
+text      = "If that's a, joke I love it!"
+from      = '0.5'
+to        = '2'
+align     = 'left'
+colour    = 'white'
+font      = 'assistant-semibold.ttf'
+placement = 'bl'
+
+[[caption]]
+text      = "...and if it's not, I cannot wait\nto unpack that with you."
+from      = '2.25'
+to        = '5.0'
+align     = 'left'
+colour    = 'white'
+font      = 'assistant-semibold.ttf'
+placement = 'bl'

@@ -1,0 +1,32 @@
+title = 'Coach approves'
+published = 2020-08-21T11:30:50Z
+source_fkey = 'tedlasso/index'
+tag = ['ted-lasso', 'coach-beard', 'nathan']
+body_markdown = """
+
+At Ted's insistance, Coach Beard tries Nathan's sport drink mix and
+when Coach indicates his approval Ted is delighted. 
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lassoS01E01'
+ext      = 'mkv'
+start    = '00:18:09.0'
+end      = '00:18:15.5'
+
+[output]
+colours  = '48'
+fps      = '18'
+loss     = '20'
+
+[[caption]]
+text      = "APPROVE"
+from      = '5'
+to        = '8'
+align     = 'center'
+colour    = 'white'
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '80'
