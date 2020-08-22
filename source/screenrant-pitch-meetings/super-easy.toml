@@ -1,0 +1,47 @@
+title = 'Super easy'
+published = 2020-08-22T08:15:21Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = ['ryan-george', 'pitch-meeting']
+body_markdown = """
+
+In a pitch meeting, a conversation between a script writer tells a
+studio exec “It’s gonna be super easy, barely an inconvenience.”
+The exec responds “Oh really?”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'XsNAu72v2Yc'
+ext      = 'mp4'
+start    = '04:25.85'
+duration = '3.3'
+
+[output]
+colours  = '96'
+fps      = '18'
+mode     = 'full'
+
+[[caption]]
+text      = "It’s gonna be super easy"
+from      = '0'
+to        = '1.15'
+font      = 'assistant-semibold.ttf'
+size      = '36'
+placement = 'bl'
+
+[[caption]]
+text      = "Barely an inconvenience"
+from      = '1.25'
+to        = '2.45'
+font      = 'assistant-semibold.ttf'
+size      = '36'
+placement = 'bl'
+
+[[caption]]
+text      = "Oh really?"
+from      = '2.55'
+to        = '3.5'
+font      = 'assistant-semibold.ttf'
+size      = '36'
+placement = 'br'
