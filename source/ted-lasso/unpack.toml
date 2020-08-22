@@ -20,8 +20,8 @@ colours  = '48'
 fps      = '18'
 
 [[caption]]
-text      = "If that's a, joke I love it!"
-from      = '0.5'
+text      = "If that's a joke, I love it!"
+from      = '0.75'
 to        = '2'
 align     = 'left'
 colour    = 'white'
@@ -29,8 +29,8 @@ font      = 'assistant-semibold.ttf'
 placement = 'bl'
 
 [[caption]]
-text      = "...and if it's not, I cannot wait\nto unpack that with you."
-from      = '2.25'
+text      = "If not, I cannot wait\nto unpack that with you."
+from      = '2.6'
 to        = '5.0'
 align     = 'left'
 colour    = 'white'

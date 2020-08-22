@@ -13,20 +13,19 @@ when Coach indicates his approval Ted is delighted.
 source   = 'file'
 file     = 'ted-lassoS01E01'
 ext      = 'mkv'
-start    = '00:18:09.0'
-end      = '00:18:15.5'
+start    = '00:18:09.9'
+end      = '00:18:16.7'
 
 [output]
-colours  = '48'
-fps      = '18'
-loss     = '20'
+colours  = '74'
+fps      = '12'
+loss     = '100'
 
 [[caption]]
 text      = "APPROVE"
-from      = '5'
+from      = '3.8'
 to        = '8'
-align     = 'center'
-colour    = 'white'
-font      = 'assistant-semibold.ttf'
+colour    = '#9efd38'
+font      = 'assistant-extrabold.ttf'
 placement = 'bc'
 size      = '80'

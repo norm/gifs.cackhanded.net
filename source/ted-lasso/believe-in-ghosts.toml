@@ -16,8 +16,11 @@ start    = '00:10:39.5'
 end      = '00:10:45.5'
 
 [output]
-colours  = '128'
-fps      = '18'
+colours  = '74'
+fps      = '12'
+dither   = 'bayer:bayer_scale=3'
+loss     = '50'
+max_size = '1.5mb'
 
 
 
@@ -27,6 +30,7 @@ from      = '0.1'
 to        = '2'
 align     = 'left'
 font      = 'assistant-semibold.ttf'
+size      = '28'
 placement = 'bl'
 
 [[caption]]
@@ -36,6 +40,7 @@ to        = '2.8'
 align     = 'right'
 placement = 'br'
 font      = 'assistant-semibold.ttf'
+size      = '28'
 
 [[caption]]
 text      = "but more importantly, I think\nthey need to believe in themselves."
@@ -44,3 +49,4 @@ to        = '6'
 align     = 'right'
 placement = 'br'
 font      = 'assistant-semibold.ttf'
+size      = '28'
