@@ -10,6 +10,9 @@ when Coach indicates his approval Ted is delighted.
 
 """
 
+author     = 'Ryan Alexander'
+author_url = 'https://twitter.com/rnalexander'
+
 [video]
 source   = 'file'
 file     = 'ted-lassoS01E01'

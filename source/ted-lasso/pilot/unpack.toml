@@ -10,6 +10,9 @@ love it! If not, I cannot wait to unpack that with you.”
 
 """
 
+author     = 'Ryan Alexander'
+author_url = 'https://twitter.com/rnalexander'
+
 [video]
 source   = 'file'
 file     = 'ted-lassoS01E01'
