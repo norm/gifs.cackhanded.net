@@ -22,10 +22,10 @@
     <dd>{{updated.strftime('%-I:%M%p')|lower}} {{updated.strftime('%A %d %B, %Y')}}</dd>
   {% endif %}
   {% if page.episode %}
-    <dt>Episode</dt>
-    <dd><a href='{{page.episode.path}}'>{{page.episode.title}}</a></dd>
     <dt>Show</dt>
     <dd><a href='{{page.show.path}}'>{{page.show.title}}</a></dd>
+    <dt>Episode</dt>
+    <dd><a href='{{page.episode.path}}'>{{page.episode.title}}</a></dd>
   {% endif %}
   {% if page.agency %}
     <dt>Agency</dt>

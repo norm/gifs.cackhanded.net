@@ -1,6 +1,7 @@
 title = 'I cannot wait to unpack that with you'
 published = 2020-08-21T11:30:50Z
 show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
 tag = ['ted-lasso', 'coach-beard', 'rebecca-welton']
 body_markdown = """
 

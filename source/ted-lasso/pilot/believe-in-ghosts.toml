@@ -1,6 +1,7 @@
 title = 'Do you believe in ghosts?'
 published = 2020-08-21T14:28:19Z
 show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
 tag = ['ted-lasso', 'rebecca-welton']
 body_markdown = """
 
