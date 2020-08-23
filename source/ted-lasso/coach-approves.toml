@@ -1,6 +1,6 @@
 title = 'Coach approves'
 published = 2020-08-21T11:30:50Z
-source_fkey = 'tedlasso/index'
+source_fkey = 'ted-lasso/index'
 tag = ['ted-lasso', 'coach-beard', 'nathan']
 body_markdown = """
 
