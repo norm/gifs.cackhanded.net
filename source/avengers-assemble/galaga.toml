@@ -1,0 +1,24 @@
+title = 'Galaga'
+published = 2020-08-24T09:31:09Z
+source_fkey = 'avengers-assemble/index'
+tag = ['galaga', 'gaming']
+body_markdown = """
+
+A S.H.I.E.L.D. member on the bridge of the Helicarrier starts playing Galaga.
+
+"""
+
+# FIXME is there an ffmpeg filter that can remove the lateral motion?
+[video]
+source   = 'file'
+file     = 'avengers'
+ext      = 'm4v'
+start    = '00:55:55.5'
+duration = '3.75'
+
+[output]
+colours  = '48'
+fps      = '12'
+mode     = 'full'
+dither   = 'bayer:bayer_scale=2'
+loss     = '60'
