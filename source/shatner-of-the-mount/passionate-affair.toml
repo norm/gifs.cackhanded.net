@@ -26,7 +26,6 @@ text = 'There is a passionate affair'
 from = '0.3'
 to   = '2.1'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -34,5 +33,4 @@ text = 'going on between Kirk and the mountain'
 from = '2.8'
 to   = '5'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'

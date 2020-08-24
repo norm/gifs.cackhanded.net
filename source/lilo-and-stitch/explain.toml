@@ -23,4 +23,5 @@ fps = '12'
 text = "This won’t be easy to explain\nback at headquarters"
 from = '1'
 to   = '4'
+font = 'morlrounded-regular.otf'
 size = '32'

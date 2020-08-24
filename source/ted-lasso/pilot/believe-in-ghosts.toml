@@ -34,7 +34,6 @@ text      = "Do you believe in ghosts, Ted?"
 from      = '0.4'
 to        = '2.3'
 align     = 'left'
-font      = 'assistant-semibold.ttf'
 size      = '28'
 placement = 'bl'
 
@@ -44,7 +43,6 @@ from      = '2.31'
 to        = '3.1'
 align     = 'right'
 placement = 'br'
-font      = 'assistant-semibold.ttf'
 size      = '28'
 
 [[caption]]
@@ -53,5 +51,4 @@ from      = '3.11'
 to        = '6'
 align     = 'right'
 placement = 'br'
-font      = 'assistant-semibold.ttf'
 size      = '28'

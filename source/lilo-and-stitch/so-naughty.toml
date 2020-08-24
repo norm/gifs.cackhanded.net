@@ -18,7 +18,8 @@ duration = '4.5'
 
 [[caption]]
 text = 'So naughty!'
-size = '32'
 from = '1.9'
 to   = '4.5'
+font = 'morlrounded-regular.otf'
+size = '32'
 placement = 'bc'

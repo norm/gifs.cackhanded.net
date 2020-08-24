@@ -31,7 +31,6 @@ max_size = '2mb'
 text      = "How is that worse?"
 from      = '0.2'
 to        = '1.4'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'
 size      = '32'
 
@@ -39,7 +38,6 @@ size      = '32'
 text      = "Get all the cameras on him"
 from      = '3.1'
 to        = '4.3'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'
 size      = '32'
 
@@ -47,6 +45,5 @@ size      = '32'
 text      = "No no no, finish that thought"
 from      = '4.31'
 to        = '5.8'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'
 size      = '32'

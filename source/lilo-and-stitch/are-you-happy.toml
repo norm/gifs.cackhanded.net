@@ -24,4 +24,5 @@ fps = '12'
 text = "Are you happy?"
 from = '0.3'
 to   = '1.5'
+font = 'morlrounded-regular.otf'
 size = '32'

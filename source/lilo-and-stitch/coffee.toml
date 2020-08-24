@@ -23,4 +23,5 @@ fps = '12'
 text = "I filled it with coffee"
 from = '0.3'
 to   = '1.9'
+font = 'morlrounded-regular.otf'
 size = '32'

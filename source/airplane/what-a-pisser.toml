@@ -26,5 +26,4 @@ max_size = '1.5mb'
 text      = "What a pisser"
 from      = '2.9'
 to        = '3.9'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'

@@ -25,22 +25,26 @@ fps = '12'
 text = "I am the one they call"
 from = '0.3'
 to   = '2.7'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "when things go wrong"
 from = '2.75'
 to   = '4.8'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "And things have indeed"
 from = '5.3'
 to   = '7'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "gone wrong"
 from = '7.05'
 to   = '8.8'
+font = 'morlrounded-regular.otf'
 size = '32'

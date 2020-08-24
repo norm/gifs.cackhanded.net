@@ -28,18 +28,21 @@ colours = '96'
 
 [[caption]]
 text = 'New job.'
-size = '32'
 from = '0'
 to   = '1'
+font = 'morlrounded-regular.otf'
+size = '32'
 
 [[caption]]
 text = 'Model citizen.'
-size = '32'
 from = '2'
 to   = '3.3'
+font = 'morlrounded-regular.otf'
+size = '32'
 
 [[caption]]
 text = 'Good day.'
-size = '32'
 from = '5.3'
 to   = '5.7'
+font = 'morlrounded-regular.otf'
+size = '32'

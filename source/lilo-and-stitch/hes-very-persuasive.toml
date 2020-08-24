@@ -30,31 +30,35 @@ max_size = '3mb'
 text = "You expect me to help you?"
 from = '0'
 to   = '2.9'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "Ih"
 from = '3.3'
 to   = '3.7'
-size = '32'
-font = 'morlrounded-italic.otf'
 colour = '#33ccff'
+font = 'morlrounded-italic.otf'
 placement = 'br'
+size = '32'
 
 [[caption]]
 text = "Fine"
 from = '4.6'
 to   = '5.3'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "Fine? You’re doing what he says?"
 from = '6.2'
 to   = '7.5'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "He’s very persuasive"
 from = '9.1'
 to   = '10.2'
+font = 'morlrounded-regular.otf'
 size = '32'

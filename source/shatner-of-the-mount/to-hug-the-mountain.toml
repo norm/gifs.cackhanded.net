@@ -26,7 +26,6 @@ text = 'To hug the mountain'
 from = '0'
 to   = '1.4'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -34,7 +33,6 @@ text = 'To envelop'
 from = '1.75'
 to   = '2.95'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = '107,319'
 
 [[caption]]
@@ -42,5 +40,4 @@ text = 'To envelop that mountain'
 from = '3'
 to   = '3.5'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'

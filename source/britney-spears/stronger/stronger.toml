@@ -26,5 +26,4 @@ max_size = '1.2mb'
 text      = "I’m stronger"
 from      = '0'
 to        = '2.6'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'

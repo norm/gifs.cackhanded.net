@@ -22,6 +22,7 @@ fps = '12'
 text = "Nooooooooooooooooooooooooooo"
 from = '1.6'
 to   = '1.7'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -29,6 +30,7 @@ size = '32'
 text = "Nooooooooooooooooooooooooo"
 from = '1.5'
 to   = '1.6'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -36,6 +38,7 @@ size = '32'
 text = "Nooooooooooooooooooooooo"
 from = '1.4'
 to   = '1.5'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -43,6 +46,7 @@ size = '32'
 text = "Nooooooooooooooooooooo"
 from = '1.3'
 to   = '1.4'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -50,6 +54,7 @@ size = '32'
 text = "Nooooooooooooooooooo"
 from = '1.2'
 to   = '1.3'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -57,6 +62,7 @@ size = '32'
 text = "Nooooooooooooooooo"
 from = '1.1'
 to   = '1.2'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -64,6 +70,7 @@ size = '32'
 text = "Nooooooooooooooo"
 from = '1'
 to   = '1.1'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -71,6 +78,7 @@ size = '32'
 text = "Nooooooooooooo"
 from = '0.9'
 to   = '1'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -78,6 +86,7 @@ size = '32'
 text = "Nooooooooooo"
 from = '0.8'
 to   = '0.9'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -85,6 +94,7 @@ size = '32'
 text = "Nooooooooo"
 from = '0.7'
 to   = '0.8'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -92,6 +102,7 @@ size = '32'
 text = "Nooooooo"
 from = '0.6'
 to   = '0.7'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -99,6 +110,7 @@ size = '32'
 text = "Nooooo"
 from = '0.5'
 to   = '0.6'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 
@@ -106,10 +118,12 @@ size = '32'
 text = "Nooo"
 from = '0.4'
 to   = '0.5'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "No"
 from = '0.3'
 to   = '0.4'
+font = 'morlrounded-regular.otf'
 size = '32'

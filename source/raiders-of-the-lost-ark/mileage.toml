@@ -27,7 +27,6 @@ max_size = '2.5mb'
 text      = "It’s not the years, honey"
 from      = '0'
 to        = '1.5'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'
 size      = '32'
 
@@ -35,6 +34,5 @@ size      = '32'
 text      = "It’s the mileage"
 from      = '2'
 to        = '3.5'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'
 size      = '32'

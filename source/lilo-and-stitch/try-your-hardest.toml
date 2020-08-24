@@ -24,22 +24,26 @@ fps = '12'
 text = "Sometimes you try your hardest"
 from = '0.2'
 to   = '2'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "but things"
 from = '2.4'
 to   = '3.2'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "don’t work out"
 from = '3.8'
 to   = '4.4'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "the way you want them to"
 from = '4.41'
 to   = '5.6'
+font = 'morlrounded-regular.otf'
 size = '32'

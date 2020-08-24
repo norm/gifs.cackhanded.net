@@ -24,4 +24,5 @@ fps = '12'
 text = "You wreck everything you touch"
 from = '3.5'
 to   = '10'
+font = 'morlrounded-regular.otf'
 size = '32'

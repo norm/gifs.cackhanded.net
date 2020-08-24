@@ -26,4 +26,5 @@ colours = '96'
 text = "I like fluffy!"
 from = '0'
 to   = '1.3'
+font = 'morlrounded-regular.otf'
 size = '32'

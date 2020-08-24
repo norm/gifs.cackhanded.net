@@ -15,10 +15,9 @@ ext      = 'm4v'
 start    = '12:56'
 duration = '3.7'
 
-# [output]
-# colours = '128'
-
 [[caption]]
 text = "If I gave Pudge tuna, I’d be an abomination!"
 from = '0'
 to   = '10'
+font = 'morlrounded-regular.otf'
+size = '32'

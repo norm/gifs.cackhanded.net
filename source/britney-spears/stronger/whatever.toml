@@ -28,5 +28,4 @@ max_size = '1.5mb'
 text      = "Whatever"
 from      = '0.8'
 to        = '1.7'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'

@@ -23,9 +23,9 @@ colours = '128'
 
 [[caption]]
 text = "muffled screaming"
-font = 'morlrounded-italic.otf'
 from = '2.1'
 to   = '5.2'
+colour = '#ffcc99'
+font = 'morlrounded-italic.otf'
 size = '32'
 placement = 'bc'
-colour = '#ffcc99'

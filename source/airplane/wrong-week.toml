@@ -25,6 +25,5 @@ text      = "Looks like I picked the\nwrong week to give up drinking"
 from      = '0'
 to        = '1.7'
 size      = '24'
-font      = 'assistant-semibold.ttf'
-placement = 'bc'
 align     = 'center'
+placement = 'bc'

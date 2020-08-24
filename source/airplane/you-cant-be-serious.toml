@@ -26,7 +26,6 @@ text = "Surely you can’t be serious?"
 from = '0.5'
 to   = '1.7'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -34,5 +33,4 @@ text = "I am serious, and don’t call me Shirley"
 from = '2.1'
 to   = '4.4'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'

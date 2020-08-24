@@ -137,7 +137,7 @@ array, supporting multiple captions in a GIF.
 
 * `text` is the caption's text
 * `font` is the font to use for the caption, expected to be found in the
-  `fonts/` directory; the default is `morlrounded-regular.otf`
+  `fonts/` directory; the default is `assistant-semibold.ttf`
 * `from` the [duration][dur] when the caption should start appearing in the GIF
 * `to` the [duration][dur] when the caption should stop appearing
 * `size` the largest size in pixels of the text, however it will always be
@@ -194,20 +194,27 @@ caption colours.
 
 To install pre-requisites:
 
+    # tools to make GIFs
     % brew install ffmpeg gifsicle youtube-dl
+
+    # the python libraries to make captions
     % pip install -r requirements.txt
+
+    # example Google Fonts from github.com/google/fonts to use in captions;
+    # see the [Makefile](Makefile) for the command to get others
+    make google-fonts
+
+Some GIFs use fonts such as
+[Acherus Grotesque](https://www.fontspring.com/fonts/horizon-type/acherus-grotesque) and
+[Morl Rounded](https://www.fontspring.com/fonts/typesketchbook/morl) which
+are not freely available.
 
 To run the tests (currently only fully works on macOS, with the right video
 and font file in place; see [workflow](.github/workflows/tests.yaml) for more
 information):
 
+    # honestly, don't bother unless you're changing the code
     % make test
-
-To install fonts:
-
-    # download example Google Fonts from github.com/google/fonts to use in
-    # captioning; see the [Makefile](Makefile) for the command to get others
-    make google-fonts
 
 To make the GIFs:
 
@@ -226,7 +233,7 @@ To add a new GIF:
 
     # (opens config in Sublime Text)
     # edit the config, save and close, and it makes the GIF
-    # (opens in Safari for previewing)
+    # (opens the GIF in Safari for previewing)
 
     # tweak as necessary until happy, run make after each change and
     # refresh Safari

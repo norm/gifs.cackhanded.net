@@ -75,7 +75,7 @@ function main {
                 ${output_width:-$DEFAULT_WIDTH} \
                 $output_height \
                 --colour "${caption_colour:-#ffffff}" \
-                --font "${caption_font:-morlrounded-regular.otf}" \
+                --font "${caption_font:-assistant-semibold.ttf}" \
                 --font-size "${caption_size:-40}" \
                 --margin "${caption_margin:-10}" \
                 --stroke-width "${caption_strokew:-2}" \

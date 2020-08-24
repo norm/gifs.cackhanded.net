@@ -24,22 +24,26 @@ colours = '96'
 text = "Ohana means family"
 from = '0.3'
 to   = '3'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "Family means"
 from = '3.7'
 to   = '5.3'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "nobody gets left behind"
 from = '5.6'
 to   = '8'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "or forgotten"
 from = '9'
 to   = '10'
+font = 'morlrounded-regular.otf'
 size = '32'

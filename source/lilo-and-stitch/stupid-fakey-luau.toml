@@ -24,11 +24,13 @@ colours = '80'
 text = "Who wants to work at this"
 from = '0.5'
 to   = '2.1'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "stupid fakey lū‘au anyway"
 from = '2.11'
 to   = '4.2'
+font = 'morlrounded-regular.otf'
 size = '32'
 

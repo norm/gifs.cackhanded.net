@@ -26,7 +26,6 @@ text = 'Why do I climb the mountain?'
 from = '0.3'
 to   = '1.8'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -34,22 +33,4 @@ text = "Because I'm in love"
 from = '2.6'
 to   = '3.8'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
-
-
-# # [output]
-# # colours  = 192
-# # mode     = 'full'
-# # max_size = 2048000
-
-# # [[caption]]
-# # text = 'PYROTECHNICS'
-# # font = 'acherusgrotesque-black.otf'
-# # from = '0'
-# # to = '0.6'
-# # margin = '2'
-# # colour = '#ff0000'
-# # stroke_colour = '#ffffff'
-# # size = '48'
-# # placement = 'c,-60'

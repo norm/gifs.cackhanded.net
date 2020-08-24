@@ -26,6 +26,5 @@ max_size = '1.5mb'
 text      = "I understood that reference"
 from      = '0.9'
 to        = '2.4'
-font      = 'assistant-semibold.ttf'
 size      = '32'
 placement = 'bc'

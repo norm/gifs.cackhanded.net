@@ -24,4 +24,5 @@ fps = '12'
 text = "Educate yourself"
 from = '0.5'
 to   = '2.2'
+font = 'morlrounded-regular.otf'
 size = '32'

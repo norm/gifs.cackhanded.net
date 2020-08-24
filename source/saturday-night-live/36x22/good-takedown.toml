@@ -28,6 +28,5 @@ max_size = '1.5mb'
 text      = "Good takedown!"
 from      = '0.4'
 to        = '2'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'
 size      = '32'

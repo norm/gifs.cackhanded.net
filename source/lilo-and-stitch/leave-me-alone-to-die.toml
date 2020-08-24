@@ -31,4 +31,5 @@ fps = '12'
 text = "Leave me alone to die"
 from = '1'
 to   = '2.4'
+font = 'morlrounded-regular.otf'
 size = '32'

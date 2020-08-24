@@ -20,12 +20,14 @@ duration = '4.8'
 
 [[caption]]
 text = 'What is that monstrosity?'
-size = '32'
 from = '0'
 to   = '2'
+font = 'morlrounded-regular.otf'
+size = '32'
 
 [[caption]]
 text = 'Monstrosity?!'
-size = '32'
 from = '3'
 to   = '10'
+font = 'morlrounded-regular.otf'
+size = '32'

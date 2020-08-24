@@ -34,7 +34,6 @@ text = "The fog is getting thicker"
 from = '0.3'
 to   = '1.8'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -42,5 +41,4 @@ text = "And Leon is getting larger!"
 from = '2.2'
 to   = '4.7'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'

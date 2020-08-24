@@ -24,4 +24,5 @@ fps     = '12'
 text = "I don’t think so"
 from = '0.6'
 to   = '1.7'
+font = 'morlrounded-regular.otf'
 size = '32'

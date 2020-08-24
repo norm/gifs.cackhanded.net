@@ -27,5 +27,4 @@ max_size = '0.85mb'
 text      = "That’s terrible!"
 from      = '1.75'
 to        = '3.9'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'

@@ -27,22 +27,26 @@ max_size = '1.5mb'
 text = "You’re vile!"
 from = '0.1'
 to   = '0.9'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "You’re foul!"
 from = '1'
 to   = '1.9'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "You’re flawed!"
 from = '2.1'
 to   = '3.1'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "Also cute and fluffy!"
 from = '3.5'
 to   = '5.8'
+font = 'morlrounded-regular.otf'
 size = '32'

@@ -26,7 +26,6 @@ mode     = 'full'
 text      = "It’s gonna be super easy"
 from      = '0'
 to        = '1.15'
-font      = 'assistant-semibold.ttf'
 size      = '36'
 placement = 'bl'
 
@@ -34,7 +33,6 @@ placement = 'bl'
 text      = "Barely an inconvenience"
 from      = '1.25'
 to        = '2.45'
-font      = 'assistant-semibold.ttf'
 size      = '36'
 placement = 'bl'
 
@@ -42,6 +40,5 @@ placement = 'bl'
 text      = "Oh really?"
 from      = '2.55'
 to        = '3.5'
-font      = 'assistant-semibold.ttf'
 size      = '36'
 placement = 'br'

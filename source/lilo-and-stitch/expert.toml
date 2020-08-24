@@ -23,4 +23,5 @@ colours = '128'
 text = "Am I to assume you’re the expert?"
 from = '0'
 to   = '2.9'
+font = 'morlrounded-regular.otf'
 size = '32'

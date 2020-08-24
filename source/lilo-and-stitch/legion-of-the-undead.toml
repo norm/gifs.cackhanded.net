@@ -23,10 +23,12 @@ fps = '12'
 text = "He wanted me to join"
 from = '0.2'
 to   = '1.4'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "his legion of the undead"
 from = '1.41'
 to   = '2.8'
+font = 'morlrounded-regular.otf'
 size = '32'

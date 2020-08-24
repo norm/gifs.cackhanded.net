@@ -26,5 +26,4 @@ text = "And that's putting me on the mountain"
 from = '0.8'
 to   = '2.8'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'

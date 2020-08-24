@@ -23,4 +23,5 @@ colours = 80
 
 [[caption]]
 text = "You see the quotations I'm\nmaking with my claw hands?"
+font = 'morlrounded-regular.otf'
 size = '24'

@@ -26,7 +26,6 @@ fps      = '18'
 text = 'Captain Kirk is climbing a mountain'
 from = '0.3'
 to   = '1.9'
-font = 'assistant-semibold.ttf'
 size = '24'
 placement = 'bc'
 

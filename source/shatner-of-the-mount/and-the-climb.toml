@@ -26,7 +26,6 @@ text = 'And the climb'
 from = '2'
 to   = '3.2'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -34,7 +33,6 @@ text = 'is going'
 from = '4.2'
 to   = '5.3'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -42,5 +40,4 @@ text = 'Where no man has gone before'
 from = '6'
 to   = '7'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'

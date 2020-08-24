@@ -26,7 +26,6 @@ text = 'Challenge the rock, challenging…'
 from = '0.3'
 to   = '2.5'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -34,5 +33,4 @@ text = '…death!'
 from = '3'
 to   = '3.8'
 size = '24'
-font = 'assistant-semibold.ttf'
 placement = 'bc'

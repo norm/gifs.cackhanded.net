@@ -22,4 +22,5 @@ fps = '12'
 text = "We’re getting off the subject."
 from = '1.3'
 to   = '3'
+font = 'morlrounded-regular.otf'
 size = '32'

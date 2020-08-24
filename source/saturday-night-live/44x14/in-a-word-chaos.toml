@@ -28,7 +28,6 @@ max_size = '2.5mb'
 text      = "In a word…"
 from      = '5.45'
 to        = '6.3'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'
 size      = '32'
 

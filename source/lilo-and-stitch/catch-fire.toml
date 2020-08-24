@@ -23,4 +23,5 @@ fps = '12'
 text = "Did you catch fire again?"
 from = '2'
 to   = '4'
+font = 'morlrounded-regular.otf'
 size = '32'

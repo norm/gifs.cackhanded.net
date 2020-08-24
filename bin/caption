@@ -23,7 +23,7 @@ def main():
     )
     parser.add_argument(
         '--font',
-        default='morlrounded-regular.otf',
+        default='assistant-semibold.ttf',
     )
     parser.add_argument(
         '--font-size',

@@ -24,10 +24,12 @@ fps = '12'
 text = "It’s little and broken, but still good"
 from = '0'
 to   = '4.8'
+font = 'morlrounded-regular.otf'
 size = '32'
 
 [[caption]]
 text = "Yeah, still good"
 from = '5.8'
 to   = '8'
+font = 'morlrounded-regular.otf'
 size = '32'

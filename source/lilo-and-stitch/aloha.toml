@@ -23,4 +23,5 @@ fps = '12'
 text = "ALOHA!"
 from = '2.5'
 to   = '3'
+font = 'morlrounded-regular.otf'
 size = '48'

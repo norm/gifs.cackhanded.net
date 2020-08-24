@@ -25,7 +25,6 @@ text = "I just want to tell you both good luck"
 from = '0.2'
 to   = '1.6'
 size = '26'
-font = 'assistant-semibold.ttf'
 placement = 'bc'
 
 [[caption]]
@@ -33,5 +32,4 @@ text = "We’re all counting on you"
 from = '1.8'
 to   = '2.6'
 size = '26'
-font = 'assistant-semibold.ttf'
 placement = 'bc'

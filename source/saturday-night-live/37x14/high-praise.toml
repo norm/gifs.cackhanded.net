@@ -27,6 +27,5 @@ max_size = '0.5mb'
 text      = "That’s high praise"
 from      = '0.7'
 to        = '2'
-font      = 'assistant-semibold.ttf'
 placement = 'bc'
 margin    = '20'

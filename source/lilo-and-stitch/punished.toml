@@ -24,4 +24,5 @@ colours = '128'
 text = "My friends need to be punished"
 from = '5.8'
 to   = '8.2'
+font = 'morlrounded-regular.otf'
 size = '32'
