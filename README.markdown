@@ -203,6 +203,12 @@ information):
 
     % make test
 
+To install fonts:
+
+    # download example Google Fonts from github.com/google/fonts to use in
+    # captioning; see the [Makefile](Makefile) for the command to get others
+    make google-fonts
+
 To make the GIFs:
 
     # fetch youtube videos, issue reminders about other sources
