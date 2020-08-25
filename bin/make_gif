@@ -114,18 +114,23 @@ function main {
 
     output_loss="$(toml $toml output.loss)"
     losses="${output_loss:-0}"
-    gifsicle \
-        -O3 \
-        --lossy=$losses \
-        --no-extensions \
-        -o "${TEMP}/gifsicle.${losses}.gif" \
-        "$TEMP/output.gif"
 
-    size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
-    printf "  < optimised with loss %d, now %d, %.01f%% of original\n" \
-        $losses \
-        $size \
-        "$(echo 3k $size $uncompressed_size / 100 \* p | dc)"
+    if [ "$losses" != 'no' ]; then
+        gifsicle \
+            -O3 \
+            --lossy=$losses \
+            --no-extensions \
+            -o "${TEMP}/gifsicle.${losses}.gif" \
+            "$TEMP/output.gif"
+
+        size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
+        printf "  < optimised with loss %d, now %d, %.01f%% of original\n" \
+            $losses \
+            $size \
+            "$(echo 3k $size $uncompressed_size / 100 \* p | dc)"
+    else
+        cp "$TEMP/output.gif" "${TEMP}/gifsicle.${losses}.gif"
+    fi
 
     if [ -n "$output_max_size" ]; then
         until [ "$size" -lt "$output_max_size" ]; do

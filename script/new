@@ -31,13 +31,18 @@ duration = '4'
 # crop     = '1200:675'
 
 [output]
+# used during creation to help get timings right
 colours  = '256'
+fps      = 'original'
+width    = '800'
+loss     = 'no'
+
+## for realsies
 # colours  = '48'
 # dither   = 'bayer:bayer_scale=0-5'
 # dither   = 'floyd_steinberg'
 # dither   = 'sierra2'
 # dither   = 'sierra2_4a'
-fps      = 'original'
 # fps      = '12'
 # fps      = '18'
 # loss     = '0'
@@ -53,14 +58,15 @@ fps      = 'original'
 # text      = "Looks like I picked the\nwrong week to give up drinking"
 # from      = '0'
 # to        = '1.7'
-# align     = 'center'
-# colour    = 'white'
-# font      = 'assistant-semibold.ttf'
-# margin    = '10'
-# placement = 'bc'
-# size      = '24'
-# stroke_colour = 'black'
-# stroke_width  = '2'
+# # not required, but can be used if needed
+# # align     = 'center'
+# # colour    = 'white'
+# # font      = 'assistant-extrabold.ttf'
+# # margin    = '10'
+# # placement = 'bc'
+# # size      = '24'
+# # stroke_colour = 'black'
+# # stroke_width  = '2'
 EOF
 
 subl -w $toml
