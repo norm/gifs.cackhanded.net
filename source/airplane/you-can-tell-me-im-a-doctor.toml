@@ -1,0 +1,41 @@
+title = 'You can tell me, I’m a doctor'
+published = 2020-08-25T06:21:11Z
+source_fkey = 'airplane/index'
+tag = ['dr-rumack', 'clarence-oveur']
+body_markdown = """
+
+Dr Rumack takes Captain Oveur to one side, and asks “How soon can
+you land?” Oveur replies “I can’t tell.” to which Rumack confides
+“You can tell me, I’m a doctor.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '00:38:54.25'
+duration = '4.75'
+
+[output]
+fps      = '12'
+loss     = '100'
+
+[[caption]]
+text      = "How soon can you land?"
+from      = '0.25'
+to        = '1.7'
+size      = '32'
+
+[[caption]]
+text      = "I can’t tell"
+from      = '2'
+to        = '2.5'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "You can tell me, I’m a doctor"
+from      = '3.25'
+to        = '4.5'
+size      = '32'
