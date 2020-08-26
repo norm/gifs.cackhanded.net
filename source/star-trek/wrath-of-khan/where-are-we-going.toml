@@ -1,0 +1,58 @@
+title = 'Where are we going?'
+published = 2020-08-27T07:16:25Z
+source_fkey = 'star-trek/wrath-of-khan/index'
+tag = ['james-t-kirk', 'leonard-mccoy', 'saavik']
+body_markdown = """
+
+McCoy asks Kirk as they are about to beam into Regula One ”Go? Where are we going?”
+
+Kirk gestures at the control panel, as Saavik is setting up the transport.
+“Where they went.”
+McCoy doesn’t seem convinced. “Suppose they went nowhere?”
+“Then this’ll be your big chance to get away from it all.”
+
+McCoy steps onto the transporter pad giving Kirk some serious side-eye.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wrath-of-khan'
+ext      = 'm4v'
+start    = '1:05:09.5'
+duration = '16.5'
+crop     = '1000:528:100:0'
+
+
+[output]
+colours  = '58'
+fps      = '12'
+mode     = 'full'
+loss     = '150'
+max_size = '3mb'
+
+[[caption]]
+text      = "Where are we going?"
+from      = '0'
+to        = '1.75'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "Where they went"
+from      = '1.76'
+to        = '2.75'
+size      = '32'
+
+[[caption]]
+text      = "Suppose they went nowhere?"
+from      = '4.4'
+to        = '6.25'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "Then this’ll be your big\nchance to get away from it all"
+from      = '7.25'
+to        = '9.5'
+size      = '32'
