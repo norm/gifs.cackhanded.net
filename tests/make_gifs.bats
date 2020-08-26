@@ -114,3 +114,18 @@
     [ "$status" -eq 0 ]
     diff -u $BATS_TMPDIR/gif tests/gifs/clips_captions.gif
 }
+
+@test generate_clips_captions_timing {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
+    run make_gif tests/config/clips_captions_timing.toml $BATS_TMPDIR/gif
+    echo "$output"
+
+    # [ "${lines[1]}" == '  " font_size=24 placement=[169, 321] And the climb' ]
+    # [ "${lines[2]}" == '  " font_size=24 placement=[199, 321] is going' ]
+    # [ "${lines[3]}" == '  " font_size=24 placement=[82, 321] Where no man has gone before' ]
+    # [ "${lines[4]}" == "    102 colours" ]
+
+    [ "$status" -eq 0 ]
+    diff -u $BATS_TMPDIR/gif tests/gifs/clips_captions_timing.gif
+}

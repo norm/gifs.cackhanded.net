@@ -36,6 +36,7 @@ colours  = '256'
 fps      = 'original'
 width    = '800'
 loss     = 'no'
+timing   = 'yes'
 
 ## for realsies
 # colours  = '48'
