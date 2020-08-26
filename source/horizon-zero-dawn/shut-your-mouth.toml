@@ -1,0 +1,54 @@
+title = 'Shut your mouth'
+published = 2020-08-26T05:56:23Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'bast']
+body_markdown = """
+
+Bast tells Aloy “You’ll be the one surprised tomorrow outcast, not me.”
+
+Aloy’s rejoinder is “Oh, are you going to shut your mouth? Because that
+would be a surprise!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-shut'
+ext      = 'mkv'
+start    = '00:22.25'
+
+[output]
+colours  = '42'
+fps      = '20'
+loss     = '80'
+dither   = 'bayer:bayer_scale=2'
+
+[[clip]]
+start = '0'
+end   = '1.8'
+
+[[caption]]
+text      = "You’ll be the one surprised\ntomorrow outcast, not me."
+from      = '0'
+to        = '1.8'
+align     = 'right'
+placement = 'br'
+size      = '26'
+
+[[clip]]
+start = '3.15'
+end   = '8.5'
+
+[[caption]]
+text      = "Oh, are you going\nto shut your mouth?"
+from      = '1.81'
+to        = '3'
+placement = 'bl'
+size      = '26'
+
+[[caption]]
+text      = "Because that\nwould be a surprise!"
+from      = '3.25'
+to        = '4.25'
+placement = 'bl'
+size      = '26'
