@@ -11,7 +11,7 @@ clean:
 cleanthumbs:
 	@make -f Makefile.gifs cleanthumbs
 
-gifwrapped:
+gifwrapped: gifs
 	@PATH="./bin:${PATH}" make -f Makefile.gifs gifwrapped
 
 generate: gifs
