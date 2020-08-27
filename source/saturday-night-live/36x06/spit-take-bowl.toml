@@ -1,0 +1,33 @@
+title = 'Spit-take and bowl'
+published = 2020-08-28T07:02:38Z
+source_fkey = 'saturday-night-live/36x06/index'
+tag = ['bill-hader', 'kristen-wiig', 'hollywood-dish', 'reaction', 'scarlett-johansson', 'spit-take']
+body_markdown = """
+
+Bill Hader as Brady Trunk and Kristen Wiig as Anastasia Sticks on Hollywood
+Dish during a Scarlett Johansson interview, where Bill does a spit-take 
+over Kristen, Scarlett looks on surprised, then Bill throws the remains
+of Kristen’s drink in her face, reaches off camera for a bowl which he tips
+over and places on her head.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'F3lEPL1nzYI'
+ext      = 'mp4'
+start    = '3:12.3'
+
+[output]
+colours  = '64'
+fps      = '18'
+loss     = '50'
+width    = '360'
+
+[[clip]]
+start = '0'
+end   = '3.75'
+
+[[clip]]
+start = '6.1'
+end   = '11.25'

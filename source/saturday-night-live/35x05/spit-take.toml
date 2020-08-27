@@ -1,0 +1,22 @@
+title = 'Spit-take'
+published = 2020-08-28T06:54:54Z
+tag = ['bill-hader', 'kristen-wiig', 'hollywood-dish', 'reaction', 'spit-take']
+body_markdown = """
+
+Bill Hader as Brady Trunk and Kristen Wiig as Anastasia Sticks on Hollywood
+Dish during a Taylor Swift interview, with Bill doing a spit-take over Kristen.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '7bK5BQVi2ZE'
+ext      = 'mp4'
+start    = '3:22'
+duration = '2.35'
+
+[output]
+colours  = '64'
+fps      = '18'
+# loss     = '50'
+width    = '360'

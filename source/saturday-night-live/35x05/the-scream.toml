@@ -1,0 +1,24 @@
+title = 'The Scream'
+published = 2020-08-28T06:43:23Z
+source_fkey = 'saturday-night-live/35x05/index'
+tag = ['bill-hader', 'kristen-wiig', 'hollywood-dish', 'reaction']
+body_markdown = """
+
+Bill Hader as Brady Trunk and Kristen Wiig as Anastasia Sticks on Hollywood
+Dish during a Taylor Swift interview, pulling faces reminiscent of Edvard
+Munch’s The Scream.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '7bK5BQVi2ZE'
+ext      = 'mp4'
+start    = '1:55.85'
+duration = '2.65'
+
+[output]
+colours  = '64'
+fps      = '18'
+# loss     = '50'
+width    = '360'
