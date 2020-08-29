@@ -1,0 +1,35 @@
+title = 'Don’t patronise me'
+published = 2020-08-29T07:02:30Z
+show_fkey = 'the-goes-wrong-show/index'
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+tag = ['robert-groves', 'sandra-wilkinson', 'vanessa', 'santa', 'nistle', 'belle', 'henry-lewis', 'charlie-russell', 'bryony-corrigan']
+body_markdown = """
+
+Behind Santa played by Robert Groves (played by Henry Lewis), Nistle played
+by Sandra Wilkinson (played by Charle Russell) and Belle played by Vanessa (played
+by Bryony Corrigan) are slow clapping and doing jazz hands. Robert turns
+to them and says “Don’t patronise me.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '13:02'
+duration = '6.5'
+crop     = '1040:585:0:90'
+
+[output]
+fps      = '12'
+colours  = '58'
+width    = '360'
+loss     = '80'
+mode     = 'full'
+
+[[caption]]
+text      = "Don’t patronise me"
+from      = '2.45'
+to        = '4'
+placement = 'bc'
+size      = '30'
