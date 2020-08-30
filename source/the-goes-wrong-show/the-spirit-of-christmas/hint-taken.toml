@@ -1,0 +1,42 @@
+title = 'Hint taken'
+published = 2020-08-30T06:07:00Z
+source_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+tag = ['robert-groves', 'sandra-wilkinson', 'vanessa', 'santa', 'nistle', 'belle', 'henry-lewis', 'charlie-russell', 'bryony-corrigan']
+body_markdown = """
+
+Belle played by Vanessa (played by Bryony Corrigan) waves goodbye to Santa
+played by Robert Groves (played by Henry Lewis). “Bye, bye, Santa!”
+
+Robert turns and mutters to Nistle played by Sandra Wilkinson (played by
+Charle Russell) “Wow, hint taken” and staggers away as Nistle waves back
+at Belle.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '27:19'
+duration = '5.5'
+crop     = '1040:585:120:90'
+
+[output]
+fps      = '12'
+colours  = '58'
+mode     = 'full'
+max_size = '2.2mb'
+
+[[caption]]
+text      = "Bye, bye, Santa!"
+from      = '0.3'
+to        = '1.9'
+placement = 'br'
+size      = '30'
+
+[[caption]]
+text      = "Wow, hint taken"
+from      = '2.5'
+to        = '3.7'
+placement = 'bl'
+size      = '30'
