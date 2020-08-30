@@ -23,7 +23,6 @@ crop     = '1040:585:0:90'
 [output]
 fps      = '12'
 colours  = '58'
-width    = '360'
 loss     = '80'
 mode     = 'full'
 
