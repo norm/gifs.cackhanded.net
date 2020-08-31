@@ -1,0 +1,35 @@
+title = 'For money'
+published = 2020-08-31T08:59:41Z
+episode_fkey = 'rick-and-morty/the-rickshank-redemption/index'
+show_fkey = 'rick-and-morty/index'
+tag = ['galactic-federation']
+body_markdown = """
+
+An officer of the Galactic Federation says “I can answer that. For money.”
+People panic.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'rick-and-morty-301'
+ext      = 'm4v'
+start    = '17:50.85'
+duration = '3.3'
+
+[output]
+colours  = '42'
+fps      = '15'
+
+[[caption]]
+text      = "I can answer that"
+from      = '0'
+to        = '1.05'
+placement = 'bc'
+
+[[caption]]
+text      = "FOR MONEY"
+from      = '1.35'
+to        = '2.5'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
