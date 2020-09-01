@@ -31,25 +31,26 @@ duration = '4'
 # crop     = '1200:675'
 
 [output]
-# used during creation to help get timings right
+# brightness = '0'
+# colours    = '48'
+# dither     = 'bayer:bayer_scale=0-5'
+# dither     = 'floyd_steinberg'
+# dither     = 'sierra2'
+# dither     = 'sierra2_4a'
+# fps        = '12'
+# fps        = '18'
+# loss       = '0'
+# max_size   = '2mb'
+# mode       = 'full'
+# width      = 'original'
+
+# values for during creation to help get timings right
 colours  = '256'
 fps      = 'original'
 width    = '800'
 loss     = 'no'
 timing   = 'yes'
 
-## for realsies
-# colours  = '48'
-# dither   = 'bayer:bayer_scale=0-5'
-# dither   = 'floyd_steinberg'
-# dither   = 'sierra2'
-# dither   = 'sierra2_4a'
-# fps      = '12'
-# fps      = '18'
-# loss     = '0'
-# max_size = '2mb'
-# mode     = 'full'
-# width    = 'original'
 
 # [[clip]]
 # start = '1'

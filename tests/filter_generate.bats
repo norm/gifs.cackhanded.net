@@ -12,6 +12,16 @@ source bin/make_gif
     [ "$got" = "$expected" ]
 }
 
+@test generate_brighten {
+    expected='[0:v] eq=brightness=0.25 [iv]; [iv][1:v] paletteuse='
+    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
+
+    got="$(generate_filter tests/config/brighten.toml)"
+    echo "GOT='$got'"
+    echo "EXP='$expected'"
+    [ "$got" = "$expected" ]
+}
+
 @test generate_fps {
     expected='[0:v] fps=10 [iv]; [iv][1:v] paletteuse='
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
@@ -82,6 +92,20 @@ source bin/make_gif
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
 
     got="$(generate_filter tests/config/clips.toml)"
+    echo "GOT='$got'"
+    echo "EXP='$expected'"
+    [ "$got" = "$expected" ]
+}
+
+@test generate_clips_brighten {
+    expected='[0:v] fps=16,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
+    expected+='[0:v] fps=16,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
+    expected+='[c1][c2] concat=n=2:v=1,crop=200:100,scale=320:-1,'
+    expected+='eq=brightness=0.25 [cv]; '
+    expected+='[cv][1:v] paletteuse='
+    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
+
+    got="$(generate_filter tests/config/clips_brighten.toml)"
     echo "GOT='$got'"
     echo "EXP='$expected'"
     [ "$got" = "$expected" ]

@@ -34,6 +34,7 @@ duration = '4.8'
 crop     = '628:468'
 
 [output]
+brighten = '0.05'
 colours  = '192'
 mode     = 'full'
 max_size = '2mb'
@@ -99,6 +100,9 @@ the video source.
 
 ### `[output]` describes the GIF
 
+* `brightness` is a number between -1 (completely dark) and 1 (completely
+  light) that will dial up or down the brightness from the source video;
+  default is 0 (unchanged)
 * `colours` is the maximum number of colours to be used in the GIF,
   a lower number means a smaller GIF up to a point; default is 64,
   maximum is 256

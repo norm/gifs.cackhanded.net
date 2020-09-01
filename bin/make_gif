@@ -191,10 +191,11 @@ function generate_filter {
             echo "$clips [cv]${captions}${paletteuse}"
         fi
     else
+        local bright=$(get_bright $toml)
         local crop=$(get_crop $toml)
-        local scale=$(get_scale $toml)
         local fps=$(get_fps $toml)
-        local alter="$(join ',' $fps $crop $scale)"
+        local scale=$(get_scale $toml)
+        local alter="$(join ',' $fps $crop $scale $bright)"
         alter="${alter:-scale=w=in_w:h=in_h}"
         if [ -n "$timings" ]; then
             echo "[0:v] $alter [cv]; ${timings}[tv]${captions}${paletteuse}"
@@ -222,6 +223,14 @@ function get_fps {
     [ "$output_fps" == 'original' ] && fps=''
 
     echo $fps
+}
+
+function get_bright {
+    local toml="$1"
+
+    local output_bright="$(toml $toml output.brightness)"
+    [ -n "$output_bright" ] && \
+        echo "eq=brightness=$output_bright"
 }
 
 function get_scale {
@@ -269,9 +278,11 @@ function get_clips {
             filters+="[c$index]"
         done
 
-        local scale=$(get_scale $toml)
+        local bright=$(get_bright $toml)
+        local concat="concat=n=$index:v=1"
         local crop=$(get_crop $toml)
-        local alter="$(join ',' "concat=n=$index:v=1" "$crop" "$scale")"
+        local scale=$(get_scale $toml)
+        local alter="$(join ',' $concat $crop $scale $bright)"
         clips+="$filters $alter [cv];"
     fi
 
