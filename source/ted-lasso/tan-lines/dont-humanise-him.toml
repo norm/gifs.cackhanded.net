@@ -1,0 +1,39 @@
+title = 'Don’t humanise him'
+published = 2020-09-01T06:38:33Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = ['paul', 'tommy']
+body_markdown = """
+
+In the pub with everyone watching a Richmond game, Tommy shouts
+“Dammit Paul, don’t humanise him!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '17:03'
+
+[output]
+brightness = '0.05'
+colours    = '42'
+fps        = '12'
+max_size   = '1.4mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '4.5'
+end   = '7.1'
+
+[[caption]]
+text      = "Dammit Paul, don’t humanise him!"
+from      = '2'
+to        = '5'
+placement = 'bc'
+size      = '28'
