@@ -1,0 +1,24 @@
+title = 'Roll'
+published = 2020-09-02T06:05:00Z
+episode_fkey = 'star-trek-lower-decks/moist-vessel/index'
+show_fkey = 'star-trek-lower-decks/index'
+tag = ['beckett-mariner']
+body_markdown = """
+
+In a satisfying match cut Lieutenant Mariner falls forward from her chair
+and faceplants onto her bed, then slowly rolls to the floor, and continues
+rolling out of frame.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lower-decks-104'
+ext      = 'm4v'
+start    = '10:46.9'
+duration = '7.75'
+
+[output]
+colours    = '32'
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
