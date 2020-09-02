@@ -6,6 +6,6 @@ start    = '0:10'
 duration = '1'
 
 [output]
-brighten = '0.25'
-fps      = 'original'
-width    = 'original'
+brightness = '0.25'
+fps        = 'original'
+width      = 'original'

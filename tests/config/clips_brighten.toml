@@ -5,9 +5,9 @@ ext      = 'mp4'
 crop     = '200:100'
 
 [output]
-brighten = '0.25'
-fps      = '16'
-width    = '320'
+brightness = '0.25'
+fps        = '16'
+width      = '320'
 
 [[clip]]
 start = '10'
