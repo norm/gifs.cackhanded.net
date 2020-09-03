@@ -1,0 +1,50 @@
+title = 'Not to go outside'
+published = 2020-09-02T07:12:51Z
+episode_fkey = 'star-wars-the-clone-wars/rookies/index'
+show_fkey = 'star-wars-the-clone-wars/index'
+tag = ['cutup', 'hevy', 'echo', 'fives', 'clone-trooper', 'rishi-eel']
+body_markdown = """
+
+The clones Cutup, Echo, Hevy, and Fives are exploring the Rishi moon. A Rishi
+Eel grabs Cutup in it’s jaws and slides away. Hevy takes a couple of shots at
+it, then turns to the others and shouts “What the hell was that?!”
+
+Echo states “That was an eel. Now, now, that’s why we have the regulation not
+to go outside.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'clone-wars-105'
+ext      = 'm4v'
+start    = '07:58.0'
+duration = '15.5'
+
+[output]
+brightness = '0.045'
+frames     = '18'
+colours    = '58'
+dither     = 'bayer:bayer_scale=5'
+loss       = '25'
+
+[[caption]]
+text      = "What the hell was that?!"
+from      = '9.4'
+to        = '11'
+size      = '28'
+
+[[caption]]
+text      = "That was an eel"
+from      = '11.5'
+to        = '12.5'
+placement = 'br'
+size      = '28'
+
+[[caption]]
+text      = "Now that’s why we have the\nregulation not to go outside"
+from      = '12.75'
+to        = '16'
+align     = 'right'
+placement = 'br'
+size      = '28'
