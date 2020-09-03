@@ -1,4 +1,4 @@
 author = 'Mark Norman Francis'
 title = 'GIFs'
-base_url = 'http://gifs.cackhanded.net'
-bucket = 'gifs.cackhanded.net'
+base_url = 'https://gifs.cackhanded.net'
+bucket = 'gifs.ch.net'

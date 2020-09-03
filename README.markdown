@@ -1,7 +1,7 @@
 gifs.cackhanded.net
 ===================
 
-Source files for generating http://gifs.cackhanded.net
+Source files for generating https://gifs.cackhanded.net
 
 The GIFs are made using ffmpeg, following advide from the GIPHY engineering
 blog post "[How to make GIFs with FFMPEG][how]",
