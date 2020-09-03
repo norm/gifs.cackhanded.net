@@ -73,6 +73,13 @@ class AtomFeed(atom.AtomGenerator):
         )
 
 
+class AllGifsCSV(base.IndexGenerator):
+    template_name = 'base.csv'
+    sources_filter = {'published__set': ''}
+    order_by = ('published')
+    file_extension = '.csv'
+
+
 PATHS = (
     SourcePage(
         path = '/#slug',
@@ -97,6 +104,10 @@ PATHS = (
     AtomFeed(
         path = '/index.atom',
         name = 'firehose',
+    ),
+    AllGifsCSV(
+        path = '/index.csv',
+        name = 'all-gifs-csv',
     ),
     sass.SassGenerator(
         path = '/css/#sass_source.css',
