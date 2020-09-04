@@ -1,37 +1,52 @@
-.PHONY: all clean cleanthumbs example-fonts gifwrapped generate rebuild push publish test
+.PHONY: all baked_css clean dev_css example-fonts gifwrapped generate rebuild push publish remove removethumbs test
 
 all: gifs
+
+clean:
 
 gifs:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs
 
-clean:
+remove:
 	@make -f Makefile.gifs clean
 
-cleanthumbs:
+removethumbs:
 	@make -f Makefile.gifs cleanthumbs
 
 gifwrapped: gifs
 	@PATH="./bin:${PATH}" make -f Makefile.gifs gifwrapped
 
-generate: gifs
+generate:
 	@flourish generate -v
 
-rebuild: gifs stash
-	@./script/rebuild
-	@git stash pop
+baked_css:
+	@./script/update_css
+
+dev_css: 
+	@./script/reset_css
+
+upload:
+	@flourish upload
+
+upload_css:
+	@flourish upload
+
+rebuild: gifs clean baked_css upload_css generate upload dev_css
 
 stash:
-	git stash --include-untracked
+	@git stash --include-untracked
 
 push:
 	@git push origin main
 
-publish: push rebuild gifwrapped
+publish: stash push rebuild gifwrapped unstash
 	@flourish upload
 
 test:
 	@./script/test
+
+unstash:
+	@git stash pop
 
 example-fonts:
 	mkdir -p fonts

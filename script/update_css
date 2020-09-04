@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# update the site's CSS
+flourish generate /css/site.css
+
+# determine the sha1 stamp to use to make the file permanent
+sha=$( shasum -a 256 output/css/site.css | cut -c1-7 )
+mv output/css/site.css output/css/site.${sha}.css
+echo \
+    "<link rel='stylesheet' href='/css/site.${sha}.css'>" \
+        > fragments/default/head_css_sitewide.html

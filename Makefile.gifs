@@ -4,7 +4,7 @@ TOML  := $(shell find source -name '[a-z]*.toml')
 GIF   := $(TOML:$(TOML_DIR)/%.toml=$(TOML_DIR)/%.gif)
 THUMB := $(TOML:$(TOML_DIR)/%.toml=$(TOML_DIR)/%.tn.gif)
 
-.PHONY: all gifwrapped
+.PHONY: all gifwrapped remove removethumbs
 
 all: $(GIF) $(THUMB)
 
@@ -25,10 +25,10 @@ $(TOML_DIR)/%.tn.gif: $(TOML_DIR)/%.gif
 			> $@
 	@stat -f'  = %z %N' $@
 
-clean:
+remove:
 	@rm -f $(GIF) $(THUMB)
 
-cleanthumbs:
+removethumbs:
 	@rm -f $(THUMB)
 
 gifwrapped:
