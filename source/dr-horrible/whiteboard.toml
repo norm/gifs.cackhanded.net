@@ -1,0 +1,38 @@
+title = 'To the whiteboard'
+published = 2020-09-04T05:47:52Z
+source_fkey = 'dr-horrible/index'
+tag = ['dr-horrible', 'whiteboard', 'doing-science']
+body_markdown = """
+
+Dr. Horrible opens the door to his secret “doing science” room, and proceeds
+to design a death ray on the whiteboard.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'dr-horrible'
+ext      = 'm4v'
+start    = '27:18'
+
+[output]
+colours    = '40'
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+max_size   = '1.5mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2.25'
+
+[[caption]]
+text      = "TO THE WHITEBOARD!"
+from      = '0'
+to        = '1.5'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+
+[[clip]]
+start = '1:26'
+end   = '1:30'
