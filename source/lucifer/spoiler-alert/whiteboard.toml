@@ -1,0 +1,25 @@
+title = 'Whiteboard'
+published = 2020-09-05T06:15:32Z
+show_fkey = 'lucifer/index'
+episode_fkey = 'lucifer/spoiler-alert/index'
+tag = ['lucifer-morningstar', 'whiteboard']
+body_markdown = """
+
+Lucifer, at a whiteboard, getting very excited about what he has just
+figured out.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lucifer-508'
+ext      = 'm4v'
+start    = '10:40'
+duration = '5'
+
+[output]
+colours    = '32'
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+max_size   = '1.25mb'
+mode       = 'full'
