@@ -1,0 +1,24 @@
+title = 'Glassboard'
+published = 2020-09-06T07:49:00Z
+episode_fkey = 'better-off-ted/the-impertence-of-communicationizing/index'
+show_fkey = 'better-off-ted/index'
+tag = ['whiteboard', 'glassboard', 'phil-myman', 'lem-hewitt']
+body_markdown = """
+
+Phil is standing at a glassboard on which some simple formula
+is written. Lem is standing behind him, wearing some sort of VR-style
+headgear, looking on.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'better-off-ted-208'
+ext      = 'm4v'
+start    = '13:17'
+end      = '13:19'
+crop     = '1120:585:50:0'
+
+[output]
+colours    = '64'
+fps        = '18'
