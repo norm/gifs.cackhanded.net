@@ -1,0 +1,30 @@
+title = 'Yes, have some'
+published = 2020-09-07T06:47:15Z
+source_fkey = 'ghostbusters/index'
+tag = ['louis-tully', 'keymaster', 'janice-melnitz']
+body_markdown = """
+
+Louis says to Janice, about having some coffee, “Yes, have some.”
+Janice employs a quality eyeroll.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '01:01:13.85'
+duration = '2.5'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '50'
+# max_size   = '2mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Yes, have some"
+from      = '0'
+to        = '1.25'
