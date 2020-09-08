@@ -22,7 +22,7 @@ start    = '07:58.0'
 duration = '15.5'
 
 [output]
-brightness = '0.045'
+brightness = '0.1'
 frames     = '18'
 colours    = '58'
 dither     = 'bayer:bayer_scale=5'

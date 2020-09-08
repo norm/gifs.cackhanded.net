@@ -159,6 +159,7 @@ function palettegen_filter {
     local toml="$1"
 
     local max_cols=$(get_colours $toml)
+    local bright=$(get_bright $toml)
     local mode=$(get_stats_mode $toml)
     local palettegen="palettegen=${max_cols}:${mode}"
     local clips=$(get_clips $toml)
@@ -169,7 +170,7 @@ function palettegen_filter {
         local crop=$(get_crop $toml)
         local scale=$(get_scale $toml)
         local fps=$(get_fps $toml)
-        echo "[0:v] $(join ',' $fps $crop $scale $palettegen)"
+        echo "[0:v] $(join ',' $fps $crop $scale $bright $palettegen)"
     fi
 }
 

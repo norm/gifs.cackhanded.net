@@ -11,6 +11,16 @@ source bin/make_gif
     [ "$got" = "$expected" ]
 }
 
+@test palettegen_brighten {
+    expected='[0:v] eq=brightness=0.25,'
+    expected+='palettegen=max_colors=64:stats_mode=diff'
+
+    got="$(palettegen_filter tests/config/brighten.toml)"
+    echo GOT=$got
+    echo EXP=$expected
+    [ "$got" = "$expected" ]
+}
+
 @test palettegen_fps {
     expected='[0:v] fps=10,palettegen=max_colors=64:stats_mode=diff'
 
