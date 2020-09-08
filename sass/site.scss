@@ -73,6 +73,18 @@ header {
 h1 {
     margin: 1em 0 0.25em;
     line-height: 1.1;
+
+    q {
+        font-weight: normal;
+        display: block;
+
+        &:before {
+            content: "‘";
+        }
+        &:after {
+            content: "’";
+        }
+    }
 }
 
 div.synopsis {
