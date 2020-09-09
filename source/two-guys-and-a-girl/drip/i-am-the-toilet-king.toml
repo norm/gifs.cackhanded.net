@@ -1,0 +1,35 @@
+title = 'I am the Toilet King!'
+published = 2020-09-09T06:07:59Z
+episode_fkey = 'two-guys-and-a-girl/drip/index'
+show_fkey = 'two-guys-and-a-girl/index'
+tag = ['berg-bergen', 'toilet', 'king']
+body_markdown = """
+
+Berg, trying to fix a leaking toilet, pulls out the ball arm from the ballcock
+valve. He throws it back into the tank, puts the lid back on, and declares
+himself the Toilet King.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'two-guys-girl-409'
+ext      = 'm4v'
+start    = '05:34.0'
+end      = '05:45.5'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = '12'
+loss       = '100'
+max_size   = '2mb'
+mode       = 'full'
+width      = '320'
+
+[[caption]]
+text      = "I AM THE TOILET KING!"
+from      = '9'
+to        = '12'
+placement = 'bc'
+size      = '28'
