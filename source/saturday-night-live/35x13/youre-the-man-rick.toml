@@ -1,0 +1,34 @@
+title = 'You’re the man, Rick!'
+published = 2020-09-10T06:02:09Z
+episode_fkey = 'saturday-night-live/35x13/index'
+show_fkey = 'saturday-night-live/index'
+tag = ['bill-hader', 'jon-hamm', 'jason-sudekis', 'will-forte']
+body_markdown = """
+
+Greg the Alien and three sequestered Greg-alike bodies declare
+“You’re the man, Rick!” in unison.
+
+The original Greg pulls a celebratory pose, then returns to its neutral 
+face.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'snl-3513'
+ext      = 'm4v'
+start    = '45:28.65'
+duration = '6'
+
+[output]
+colours    = '42'
+fps        = '18'
+loss       = '50'
+mode       = 'full'
+
+[[caption]]
+text      = "You’re the man, Rick!"
+from      = '0'
+to        = '3'
+placement = 'bc'
+size      = '32'
