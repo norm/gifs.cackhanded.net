@@ -1,5 +1,7 @@
 title = 'Spit-take'
 published = 2020-08-28T06:54:54Z
+episode_fkey = 'saturday-night-live/35x05/index'
+show_fkey = 'saturday-night-live/index'
 tag = ['bill-hader', 'kristen-wiig', 'hollywood-dish', 'reaction', 'spit-take']
 body_markdown = """
 

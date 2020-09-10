@@ -1,6 +1,7 @@
 title = 'Spit-take and bowl'
 published = 2020-08-28T07:02:38Z
-source_fkey = 'saturday-night-live/36x06/index'
+episode_fkey = 'saturday-night-live/36x06/index'
+show_fkey = 'saturday-night-live/index'
 tag = ['bill-hader', 'kristen-wiig', 'hollywood-dish', 'reaction', 'scarlett-johansson', 'spit-take']
 body_markdown = """
 

@@ -1,6 +1,7 @@
 title = 'Go bigger'
 published = 2020-08-28T06:45:58Z
-source_fkey = 'saturday-night-live/35x05/index'
+episode_fkey = 'saturday-night-live/35x05/index'
+show_fkey = 'saturday-night-live/index'
 tag = ['bill-hader', 'kristen-wiig', 'hollywood-dish', 'reaction']
 body_markdown = """
 
