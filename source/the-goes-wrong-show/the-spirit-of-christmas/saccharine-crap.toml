@@ -1,0 +1,36 @@
+title = 'This is saccharine crap'
+published = 2020-09-11T05:48:28Z
+show_fkey = 'the-goes-wrong-show/index'
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+tag = ['robert-groves', 'sandra-wilkinson', 'santa', 'nistle', 'henry-lewis', 'charlie-russell']
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis) looks through the
+window and declares “This is saccharine crap.” 
+
+Nistle played by Sandra Wilkinson (played by Charle Russell) flinches at
+the final word.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '24:53.5'
+duration = '3.65'
+crop     = '880:495:160:90'
+
+# FIXME can ffmpeg eliminate the camera pan?
+[output]
+colours    = '58'
+fps        = '12'
+loss       = '50'
+mode       = 'full'
+
+[[caption]]
+text      = "This is saccharine crap"
+from      = '0.5'
+to        = '2.25'
+placement = 'bc'
+size      = '32'
