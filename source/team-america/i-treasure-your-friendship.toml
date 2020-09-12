@@ -1,0 +1,32 @@
+title = 'I treasure your friendship!'
+published = 2020-09-12T06:29:52Z
+source_fkey = 'team-america/index'
+tag = ['lisa-jones', 'sarah-wong']
+body_markdown = """
+
+As North Korean guards go to take Lisa away, Sarah, who is tied down
+on a table, shouts “Lisa! I treasure your friendship!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'team-america'
+ext      = 'm4v'
+start    = '1:01:46'
+duration = '3.4'
+crop     = '1040:528'
+
+[output]
+colours    = '48'
+fps        = '18'
+mode       = 'full'
+loss       = '50'
+
+[[caption]]
+text      = "I TREASURE YOUR FRIENDSHIP!"
+from      = '1.15'
+to        = '3'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '28'
