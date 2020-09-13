@@ -1,0 +1,31 @@
+title = 'Han shot first'
+published = 2020-09-12T22:52:59Z
+source_fkey = 'star-wars/index'
+tag = ['han-solo', 'greedo']
+body_markdown = """
+
+Han Solo shoots Greedo then casually walks out of the bar, tossing the
+barman some money to cover the cost of the mess.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'star-wars'
+ext      = 'mkv'
+start    = '00:50:00.5'
+crop     = '1040:480'
+
+[output]
+colours    = '96'
+fps        = '18'
+loss       = '100'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '4.8'
+
+[[clip]]
+start = '8.5'
+end   = '20'
