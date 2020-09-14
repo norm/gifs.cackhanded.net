@@ -1,0 +1,50 @@
+title = 'Sorry, sorry'
+published = 2020-09-14T05:50:02Z
+source_fkey = 'ghostbusters/index'
+tag = ['peter-venkman', 'ray-stantz', 'egon-spengler']
+body_markdown = """
+
+All of the Ghostbusters are looking quite sheepish. Egon looks to Peter, then
+says “Sorry.” Peter also says “Sorry,“ quickly followed by Ray “I’m sorry”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:32:01.25'
+duration = '4.5'
+crop     = '500:350:280:65'
+
+[output]
+colours    = '42'
+dither     = 'bayer:bayer_scale=2'
+fps        = '12'
+loss       = '50'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "Sorry"
+from      = '1.9'
+to        = '2.5'
+placement = '280,205'
+# margin    = '30'
+# placement = 'br'
+
+[[caption]]
+text      = "Sorry"
+from      = '3'
+to        = '3.45'
+placement = '165,205'
+# margin    = '30'
+# placement = 'bc'
+
+[[caption]]
+text      = "I'm sorry"
+from      = '3.45'
+to        = '5'
+placement = '10,205'
+# margin    = '30'
+# placement = 'bl'
