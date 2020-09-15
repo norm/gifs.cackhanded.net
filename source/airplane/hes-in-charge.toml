@@ -1,0 +1,84 @@
+title = 'He’s in charge'
+published = 2020-09-15T06:53:24Z
+source_fkey = 'airplane/index'
+tag = ['rex-kramer', 'steve-mccroskey']
+body_markdown = """
+
+Kramer is telling McCroskey that it’s Ted’s airplane now. 
+
+“It’s his ship. His command. He’s in charge. The boss. Head man. Top Dog.
+Big cheese. The head honcho.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '01:11:21.2'
+end      = '01:11:29'
+crop     = '1680:945:0:100'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+mode       = 'full'
+max_size   = '3.51mb'
+
+# cheap way of centering text against the widest caption
+[[caption]]
+text      = "It’s his ship\n\nThe head honcho"
+from      = '0'
+to        = '0.8'
+align     = 'center'
+placement = '174,215'
+
+[[caption]]
+text      = "His command\n\nThe head honcho"
+from      = '0.81'
+to        = '1.5'
+align     = 'center'
+placement = '174,215'
+
+[[caption]]
+text      = "He’s in charge\n\nThe head honcho"
+from      = '1.51'
+to        = '2.4'
+align     = 'center'
+placement = '174,215'
+
+[[caption]]
+text      = "The boss\n\nThe head honcho"
+from      = '3.3'
+to        = '3.9'
+align     = 'center'
+placement = '174,215'
+
+[[caption]]
+text      = "Head man\n\nThe head honcho"
+from      = '4.0'
+to        = '4.8'
+align     = 'center'
+placement = '174,215'
+
+[[caption]]
+text      = "Top dog\n\nThe head honcho"
+from      = '5.15'
+to        = '5.9'
+align     = 'center'
+placement = '174,215'
+
+[[caption]]
+text      = "Big cheese\n\nThe head honcho"
+from      = '6.05'
+to        = '6.85'
+align     = 'center'
+placement = '174,215'
+
+[[caption]]
+text      = "The head honcho"
+from      = '6.9'
+to        = '7.55'
+align     = 'center'
+placement = 'br'
