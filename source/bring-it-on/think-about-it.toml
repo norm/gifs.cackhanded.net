@@ -1,0 +1,31 @@
+title = 'Think about it'
+published = 2020-09-16T06:01:37Z
+source_fkey = 'bring-it-on/index'
+tag = ['sparky-polastri', 'missy-pantone', 'jan']
+body_markdown = """
+
+Sparky Polastri tells Missy to “Think about it” and ponks her nose.
+She goes to attack him but is held back by Jan.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '00:48:21.75'
+duration = '3.5'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '50'
+max_size   = '1.75mb'
+mode       = 'full'
+
+[[caption]]
+text   = "Think about it"
+from   = '0.5'
+to     = '1.25'
+margin = '30'
