@@ -1,0 +1,30 @@
+title = 'Bagel!!!'
+published = 2020-09-17T06:26:46Z
+source_fkey = 'spider-man-into-the-spider-verse/index'
+tag = ['peter-b-parker', 'miles-morales', 'spider-man']
+body_markdown = """
+
+One Alchemax employee shouts “He took a bagel!” as many start to charge
+after the two Spider-Men (Spider-Mans?). Miles throws the bagel back at
+them, bonking one on the head.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'into-the-spiderverse'
+ext      = 'm4v'
+start    = '00:52:18.4'
+duration = '4.2'
+crop     = '1100:696:350:50'
+
+[output]
+colours    = '58'
+fps        = '12'
+mode       = 'full'
+
+[[caption]]
+text      = "HE TOOK A BAGEL!"
+from      = '0'
+to        = '0.9'
+font      = 'poppins-black.ttf'
