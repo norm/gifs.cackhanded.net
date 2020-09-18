@@ -1,0 +1,34 @@
+title = 'Not your best work'
+published = 2020-09-18T05:46:14Z
+show_fkey = 'the-goes-wrong-show/index'
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+tag = ['robert-groves', 'chris-bean', 'mr-snowman', 'santa', 'henry-lewis', 'henry-shields']
+body_markdown = """
+
+Mr Snowman played by Chris Bean (played by Henry Shields) is naked apart
+from his underpants and carrot nose after an accident with the Toy Machine.
+
+Santa played by Robert Groves (played by Henry Lewis) shakes his head.
+“This is not your best work, Chris.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '23:02.6'
+end      = '23:07.5'
+crop     = '960:560:80:60'
+
+[output]
+colours    = '58'
+fps        = '12'
+mode       = 'full'
+
+[[caption]]
+text      = "This is not your best work, Chris"
+from      = '1.5'
+to        = '3.65'
+placement = 'bc'
+size      = '24'
