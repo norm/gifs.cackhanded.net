@@ -53,7 +53,7 @@ class Homepage(MostRecentFirstMixin, base.IndexGenerator):
 
 
 class AtomFeed(atom.AtomGenerator):
-    def entry_content(self, object):
+    def get_entry_content(self, object):
         template = dedent("""\
             <p><img src="{url}.gif" alt=''></p>
             {body}
