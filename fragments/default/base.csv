@@ -1,4 +1,0 @@
-name,timestamp,url,gif,thumbnail,tags
-{% for gif in pages -%}
-"{{gif.title}}",{{gif.published.strftime('%s')}},{{gif.absolute_url}},{{gif.absolute_url}}.gif,{{gif.absolute_url}}.tn.gif,{% if gif.tag %}{{':'.join(gif.tag)}}{% endif %}
-{% endfor %}

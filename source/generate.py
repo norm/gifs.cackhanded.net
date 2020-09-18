@@ -3,6 +3,7 @@ from textwrap import dedent
 
 from flourish.generators import mixins
 from flourish.generators import atom
+from flourish.generators import csv
 from flourish.generators import base
 from flourish.generators import sass
 
@@ -73,11 +74,19 @@ class AtomFeed(atom.AtomGenerator):
         )
 
 
-class AllGifsCSV(base.IndexGenerator):
-    template_name = 'base.csv'
+class AllGifsCSV(csv.CSVGenerator):
     sources_filter = {'published__set': ''}
     order_by = ('published')
-    file_extension = '.csv'
+    fields = ['title', 'published', 'url', 'gif', 'thumbnail', 'tag']
+
+    def get_field_value(self, object, field):
+        if field == 'url':
+            return object.absolute_url
+        if field == 'gif':
+            return '%s.gif' % object.absolute_url
+        if field == 'thumbnail':
+            return '%s.tn.gif' % object.absolute_url
+        return super().get_field_value(object, field)
 
 
 PATHS = (

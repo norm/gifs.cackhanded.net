@@ -1,3 +1,3 @@
-flourish
+flourish>=0.9.1
 Pillow
 toml
