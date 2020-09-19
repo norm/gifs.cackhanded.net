@@ -1,0 +1,41 @@
+title = 'Stuck the landing'
+published = 2020-09-19T07:17:39Z
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+show_fkey = 'ted-lasso/index'
+tag = ['ted-lasso', 'coach-beard', 'nathan', 'higgins']
+body_markdown = """
+
+Ted admires a good bit of word play from his ‘Diamond Dogs’, Coach Beard, 
+Nathan and Higgins. He sits back in his chair and says “Y’all stuck the
+landing on that…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '05:41.0'
+
+[output]
+brightness = '0.075'
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '2.4mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '5.25'
+
+[[clip]]
+start = '13.5'
+end   = '14.5'
+
+[[caption]]
+text      = "Y’all stuck the landing on that"
+from      = '4'
+to        = '5.25'
+placement = 'bc'
+size      = '28'
