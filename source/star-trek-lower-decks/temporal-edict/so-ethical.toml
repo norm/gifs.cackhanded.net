@@ -1,0 +1,47 @@
+title = 'So ethical'
+published = 2020-09-20T05:48:24Z
+episode_fkey = 'star-trek-lower-decks/temporal-edict/index'
+show_fkey = 'star-trek-lower-decks/index'
+tag = ['beckett-mariner', 'jack-ransom', 'vindor']
+body_markdown = """
+
+Ensign Mariner, imprisoned, watches on as Ransom fights Vindor in a trial
+by combat. Finding his behaviour attractive she comments with a smile,
+“So ethical.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lower-decks-103'
+ext      = 'm4v'
+start    = '18:36.75'
+
+[output]
+colours    = '40'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+mode       = 'full'
+
+[[clip]]
+start = '4.4'
+end   = '6.8'
+
+[[clip]]
+start = '0'
+end   = '2.1'
+
+[[caption]]
+text      = "soooo"
+from      = '2.75'
+to        = '3.3'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "ETHICAL"
+from      = '3.6'
+to        = '4.5'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '40'
