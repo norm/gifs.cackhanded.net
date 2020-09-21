@@ -1,0 +1,33 @@
+title = 'How much?'
+published = 2020-09-21T05:47:53Z
+source_fkey = 'ghostbusters/index'
+tag = ['peter-venkman']
+body_markdown = """
+
+After Ray lists all the things wrong with the car he bought, Peter asks him
+“How much?”
+
+His expression beautifully tells you it was far too much.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:20:45.4'
+end      = '00:20:51.1'
+crop     = '960:528:320:0'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '2.56mb'
+mode       = 'full'
+
+[[caption]]
+text      = "How much?"
+from      = '1.15'
+to        = '2.1'
+placement = 'bc'
