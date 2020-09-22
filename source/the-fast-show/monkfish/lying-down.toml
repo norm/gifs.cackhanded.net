@@ -1,0 +1,31 @@
+title = 'Lying down'
+published = 2020-09-22T06:30:00Z
+source_fkey = 'the-fast-show/index'
+tag = ['john-actor', 'monkfish']
+body_markdown = """
+
+John Actor, as Inspector Monkfish, shouts at a corpse under a sheet
+“What are you doing down there?”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'imr8WKuqFZo'
+ext      = 'mp4'
+start    = '46.5'
+duration = '4'
+crop     = '580:420:30:50'
+
+[output]
+colours    = '58'
+fps        = '18'
+width      = '400'
+
+[[caption]]
+text      = "WHAT ARE YOU DOING\nDOWN THERE?"
+from      = '1'
+to        = '4'
+align     = 'center'
+font      = 'assistant-extrabold.ttf'
+placement = '20,80'

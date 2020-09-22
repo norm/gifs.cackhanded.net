@@ -1,0 +1,49 @@
+title = 'God doesn’t make people better'
+published = 2020-09-22T06:30:00Z
+source_fkey = 'the-fast-show/index'
+tag = ['john-actor', 'monkfish']
+body_markdown = """
+
+John Actor, as Monkfish M.D., grabs a man of the cloth and tells him
+sternly “You listen to me, Father. God doesn’t make people better 
+I do, savvy?”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'fQjTYxiXe_U'
+ext      = 'mp4'
+start    = '26.0'
+duration = '5.5'
+crop     = '600:380:20:10'
+
+[output]
+colours    = '72'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+# loss       = '50'
+max_size   = '2mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "You listen to me, Father"
+from      = '1.5'
+to        = '2.65'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "God doesn’t make people better"
+from      = '2.75'
+to        = '4.2'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "I do, savvy?"
+from      = '4.21'
+to        = '5'
+placement = 'bc'
+size      = '24'

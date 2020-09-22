@@ -1,0 +1,32 @@
+title = 'Shut it!'
+published = 2020-09-22T06:30:00Z
+source_fkey = 'the-fast-show/index'
+tag = ['john-actor', 'monkfish']
+body_markdown = """
+
+John Actor, as the vet Monkfish, walks into the barn and tells everyone
+there to “Shut it!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '0VIyZ10vkps'
+ext      = 'mp4'
+start    = '11.4'
+duration = '3.55'
+crop     = '600:380:20:10'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1.6mb'
+width      = '400'
+
+[[caption]]
+text      = "SHUT IT"
+from      = '2.8'
+to        = '3.6'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'

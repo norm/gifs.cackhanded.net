@@ -1,0 +1,34 @@
+title = 'Put your knickers on'
+published = 2020-09-22T06:30:00Z
+source_fkey = 'the-fast-show/index'
+tag = ['john-actor', 'monkfish']
+body_markdown = """
+
+John Actor, as Undercover Monkfish, turns to a prostitute, tells her
+“Put your knickers on and make me a cup of tea” and walks off clanging
+inconspicuously.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'R-Ct-CymZ7s'
+ext      = 'mp4'
+start    = '47'
+duration = '6'
+crop     = '480:360:0:0'
+
+[output]
+brightness = '0.05'
+colours    = '58'
+fps        = '18'
+max_size   = '2mb'
+mode       = 'full'
+width      = '360'
+
+[[caption]]
+text      = "Put your knickers on\nand make me a cup of tea"
+from      = '0.25'
+to        = '2.25'
+align     = 'center'
+placement = 'bc'

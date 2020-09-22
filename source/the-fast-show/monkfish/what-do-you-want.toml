@@ -1,0 +1,31 @@
+title = 'What do you want?'
+published = 2020-09-22T06:30:00Z
+source_fkey = 'the-fast-show/index'
+tag = ['john-actor', 'monkfish']
+body_markdown = """
+
+John Actor, as Inspector Monkfish, asking assembled police officers 
+“What do you want? A biscuit?”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'imr8WKuqFZo'
+ext      = 'mp4'
+start    = '23.2'
+duration = '2.35'
+crop     = '600:380:20:10'
+
+[output]
+colours    = '58'
+fps        = '18'
+max_size   = '1.07mb'
+
+[[caption]]
+text      = "WHAT DO YOU WANT?\nA BISCUIT?"
+from      = '0.8'
+to        = '2.5'
+align     = 'center'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
