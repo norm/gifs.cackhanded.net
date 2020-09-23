@@ -1,0 +1,22 @@
+title = 'Buh-bye'
+published = 2020-09-23T06:30:00Z
+source_fkey = 'bring-it-on/index'
+tag = ['torrance-shipman', 'aaron']
+body_markdown = """
+
+Torrance waves buh-bye to Aaron.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '01:08:51.9'
+duration = '3.5'
+
+[output]
+colours    = '64'
+fps        = '18'
+max_size   = '1.75mb'
+mode       = 'full'
