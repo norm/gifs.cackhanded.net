@@ -1,0 +1,37 @@
+title = 'Control and P'
+published = 2020-09-24T06:30:00Z
+source_fkey = 'eddie-izzard/index'
+tag = ['eddie-izzard']
+body_markdown = """
+
+Eddie saying “Control and P, print”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '-5pyEkBuIb8'
+ext      = 'mp4'
+start    = '0:03'
+duration = '3.5'
+
+[output]
+brightness = '0.05'
+colours    = '42'
+fps        = '18'
+max_size   = '1.6mb'
+
+[[caption]]
+text      = "Control and P"
+from      = '0.3'
+to        = '1.8'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "PRINT!"
+from      = '2'
+to        = '2.5'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '64'
