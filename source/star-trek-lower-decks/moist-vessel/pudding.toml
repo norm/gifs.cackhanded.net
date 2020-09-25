@@ -1,0 +1,37 @@
+title = 'Oh pudding'
+published = 2020-09-25T05:50:39Z
+episode_fkey = 'star-trek-lower-decks/moist-vessel/index'
+show_fkey = 'star-trek-lower-decks/index'
+tag = ['sam-rutherford', 'pudding']
+body_markdown = """
+
+Sam spots something on the tray of food left behind by D'Vana, and picks
+it up in triumph. ”Ohhh pudding!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lower-decks-104'
+ext      = 'm4v'
+start    = '11:55.3'
+duration = '2.5'
+
+[output]
+colours    = '32'
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+
+[[caption]]
+text      = "Ohhhhhh"
+from      = '0.1'
+to        = '1.15'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "PUDDING!"
+from      = '1.4'
+to        = '2.5'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
