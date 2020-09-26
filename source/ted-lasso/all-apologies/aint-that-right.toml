@@ -1,0 +1,70 @@
+title = 'Ain’t that right'
+published = 2020-09-26T07:25:00Z
+episode_fkey = 'ted-lasso/all-apologies/index'
+show_fkey = 'ted-lasso/index'
+tag = ['mae', 'coach-beard', 'ted-lasso']
+body_markdown = """
+
+Coach Beard is giving Ted some advice about the team of professional
+athletes.
+
+”Winning does matter to them. And it matters to me. And that‘s okay.
+Ain’t that right, Mae?”
+
+Mae confirms “A-fucking-men it is.”
+
+Coach points at her triumphantly. She acknowledges this with a tip
+of her head and walks off.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '23:23.85'
+duration = '11.2'
+crop     = '1200:675:200:0'
+
+[output]
+brightness = '0.075'
+colours    = '58'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+mode       = 'full'
+
+[[caption]]
+text      = "Winning does matter to them"
+from      = '0'
+to        = '1.2'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "And it matters to me"
+from      = '1.6'
+to        = '2.75'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "And that’s okay"
+from      = '3.2'
+to        = '4.4'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "Ain’t that right, Mae?"
+from      = '5'
+to        = '6.45'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "A-fucking-men it is"
+from      = '6.46'
+to        = '8.4'
+placement = 'bl'
+size      = '32'
