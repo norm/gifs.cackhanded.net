@@ -12,37 +12,43 @@ They look at you and they know, and they say “Who’s Ruby?”
 
 [video]
 source   = 'youtube'
-file     = '-gBIwBE9-vo'
+file     = 'piPyfqAKf6o'
 ext      = 'mp4'
-start    = '5:41.5'
-duration = '10.25'
-crop     = '600:390:20:10'
+start    = '6:58.5'
+duration = '13.5'
 
 [output]
-colours    = '48'
+colours    = '34'
 dither     = 'bayer:bayer_scale=5'
-fps        = '12'
-loss       = '20'
-mode       = 'full'
-width      = '320'
+fps        = '18'
+loss       = '25'
+# mode       = 'full'
+width      = 'original'
 
 [[caption]]
 text      = "They look at you"
 from      = '0.5'
-to        = '1.5'
+to        = '1.75'
 placement = 'bc'
 size      = '20'
 
 [[caption]]
 text      = "And they know"
-from      = '3.75'
-to        = '5'
+from      = '4.2'
+to        = '5.75'
 placement = 'bc'
 size      = '20'
 
 [[caption]]
-text      = "And they say “Who’s Ruby?”"
-from      = '6.75'
+text      = "And they say"
+from      = '7.75'
 to        = '9.5'
+placement = '38,205'
+size      = '20'
+
+[[caption]]
+text      = "And they say “Who’s Ruby?”"
+from      = '9.51'
+to        = '10.75'
 placement = 'bc'
 size      = '20'
