@@ -1,0 +1,48 @@
+title = 'Who’s Ruby?'
+published = 2020-09-27T05:55:19Z
+source_fkey = 'larry-miller/5-stages-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+They look at you and they know, and they say “Who’s Ruby?”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '-gBIwBE9-vo'
+ext      = 'mp4'
+start    = '5:41.5'
+duration = '10.25'
+crop     = '600:390:20:10'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+mode       = 'full'
+width      = '320'
+
+[[caption]]
+text      = "They look at you"
+from      = '0.5'
+to        = '1.5'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "And they know"
+from      = '3.75'
+to        = '5'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "And they say “Who’s Ruby?”"
+from      = '6.75'
+to        = '9.5'
+placement = 'bc'
+size      = '20'
