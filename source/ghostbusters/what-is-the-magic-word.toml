@@ -1,0 +1,46 @@
+title = 'What is the magic word?'
+published = 2020-09-28T07:29:25Z
+source_fkey = 'ghostbusters/index'
+tag = ['walter-peck', 'peter-venkman']
+body_markdown = """
+
+Walter Peck asks Venkman “What is the magic word, Mr Venkman?”
+
+Venkman replies, as though Peck is dumb, “Please.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:47:10.0'
+crop     = '1040:528'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2.65'
+
+[[caption]]
+text      = "What is the magic word?"
+from      = '0.5'
+to        = '2.4'
+placement = 'bl'
+margin    = '20'
+
+[[clip]]
+start = '4'
+end   = '6.4'
+
+[[caption]]
+text      = "Please."
+from      = '4'
+to        = '6'
+placement = 'br'
+margin    = '20'
