@@ -1,0 +1,30 @@
+title = 'Right in the eyes'
+published = 2020-09-29T06:47:50Z
+show_fkey = 'saturday-night-live/index'
+episode_fkey = 'saturday-night-live/44x14/index'
+tag = ['bill-hader', 'whats-that-name']
+body_markdown = """
+
+Bill Hader as Vince Blight, host of “What’s That Name?” says
+“Right in the eyes!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'rImxuuD_kwM'
+ext      = 'mp4'
+start    = '05:44.2'
+duration = '3'
+crop     = '1920:1070'      # remove black stripe across the top
+
+[output]
+colours  = '64'
+fps      = '12'
+
+[[caption]]
+text      = "Right in the eyes!"
+from      = '0.75'
+to        = '2'
+placement = 'bc'
+size      = '32'
