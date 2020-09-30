@@ -1,0 +1,43 @@
+title = 'Spirit fingers'
+published = 2020-09-30T21:16:12Z
+source_fkey = 'bring-it-on/index'
+tag = ['sparky-polastri']
+body_markdown = """
+
+Sparky Polastri demonstrates
+“These are spirit fingers, and these are gold.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '00:48:54.0'
+duration = '9.25'
+crop     = '1200:675:60:45'
+
+[output]
+colours    = '50'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '3.7mb'
+mode       = 'full'
+
+[[caption]]
+text      = "These"
+from      = '2.15'
+to        = '3.54'
+placement = '47,215'
+
+[[caption]]
+text      = "These are spirit fingers"
+from      = '3.55'
+to        = '4.75'
+placement = 'bc'
+
+[[caption]]
+text      = "And these are gold"
+from      = '5.4'
+to        = '8'
+placement = 'bc'
