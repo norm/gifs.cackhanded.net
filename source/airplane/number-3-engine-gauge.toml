@@ -1,0 +1,40 @@
+title = 'Number 3 engine gauge'
+published = 2020-10-01T04:56:39Z
+source_fkey = 'airplane/index'
+tag = ['ted-striker', 'elaine-dickinson']
+body_markdown = """
+
+Ted asks Elaine to keep an eye on the number 3 engine gauge,
+because it is running a little hot.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '00:59:11.5'
+end      = '00:59:19.1'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '40'
+max_size   = '3mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Keep an eye on that\nnumber 3 engine gauge"
+from      = '0'
+to        = '2'
+align     = 'right'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "It’s running a little hot"
+from      = '3'
+to        = '4'
+placement = 'br'
+size      = '32'

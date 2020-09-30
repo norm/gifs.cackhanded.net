@@ -1,0 +1,21 @@
+title = 'A little hot'
+published = 2020-10-01T04:56:39Z
+source_fkey = 'airplane/index'
+tag = ['controls', 'warning-light']
+body_markdown = """
+
+The “a little hot” warning light blinks.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'airplane'
+ext      = 'm4v'
+start    = '00:59:17.4'
+end      = '00:59:18.5'
+
+[output]
+colours    = '48'
+fps        = 'original'
+max_size   = '0.5mb'
