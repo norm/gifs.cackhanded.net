@@ -4,5 +4,5 @@ set -eu
 
 sed \
     -i '' \
-    "s/^published = .*/published = $(date "+%Y-%m-%dT%H:%M:%SZ")/" \
+    "s/^published = .*/published = $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" \
         "source/$1.toml"
