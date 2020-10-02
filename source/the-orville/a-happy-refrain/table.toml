@@ -1,0 +1,30 @@
+title = 'Table'
+published = 2020-10-02T05:32:57Z
+episode_fkey = 'the-orville/a-happy-refrain/index'
+show_fkey = 'the-orville/index'
+tag = ['claire-finn', 'isaac', 'table-flip']
+body_markdown = """
+
+Claire tells Isaac “Let’s flip the tables here…” and he takes it a
+little too literally.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'orville-206'
+ext      = 'm4v'
+start    = '21:50.0'
+duration = '3.8'
+
+[output]
+colours    = '42'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+mode       = 'full'
+
+[[caption]]
+text      = "Let’s flip the tables here…"
+from      = '0.5'
+to        = '2'
+size      = '32'
