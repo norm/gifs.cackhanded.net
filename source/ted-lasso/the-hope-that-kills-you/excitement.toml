@@ -1,0 +1,24 @@
+title = 'Excitement'
+published = 2020-10-03T06:13:19Z
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+show_fkey = 'ted-lasso/index'
+tag = ['coach-beard']
+body_markdown = """
+
+Coach Beard gets a little overexcited.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '02:59.65'
+duration = '0.9'
+
+[output]
+brightness = '0.05'
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = 'original'
+mode       = 'full'
