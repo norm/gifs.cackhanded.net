@@ -1,0 +1,39 @@
+title = 'Better luck next time, eels'
+published = 2020-10-04T05:41:00Z
+episode_fkey = 'star-trek-lower-decks/veritas/index'
+show_fkey = 'star-trek-lower-decks/index'
+tag = ['beckett-mariner']
+body_markdown = """
+
+Enign Mariner is held in a beam above the Tank of Contempt which is full of
+eels. She whoohoos and says “Better luck next time, eels”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lower-decks-108'
+ext      = 'm4v'
+start    = '07:19.5'
+duration = '2.5'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+mode       = 'full'
+
+[[caption]]
+text      = "Better luck next time…"
+from      = '1'
+to        = '2'
+placement = '49,223'
+size      = '32'
+
+[[caption]]
+text      = "…eels!"
+from      = '2.01'
+to        = '2.3'
+colour    = 'white'
+placement = '331,223'
+size      = '32'
