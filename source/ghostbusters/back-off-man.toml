@@ -1,0 +1,37 @@
+title = 'Back off man'
+published = 2020-10-05T05:16:46Z
+source_fkey = 'ghostbusters/index'
+tag = ['peter-venkman']
+body_markdown = """
+
+Venkman turns to the Library’s administrator and says
+“Back off man, I’m a scientist.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:08:15.1'
+duration = '3.8'
+crop     = '1160:528:120:0'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+max_size   = '1.75mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Back off man"
+from      = '1.6'
+to        = '2.5'
+placement = 'bc'
+
+[[caption]]
+text      = "I’m a scientist"
+from      = '3'
+to        = '4'
+placement = 'bc'
