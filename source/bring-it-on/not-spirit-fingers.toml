@@ -1,0 +1,39 @@
+title = 'Not spirit fingers'
+published = 2020-10-07T04:52:12Z
+source_fkey = 'bring-it-on/index'
+tag = ['sparky-polastri']
+body_markdown = """
+
+Sparky Polastri is frustrated that the team are not giving him spirit fingers,
+so he smashes a chair over a bar and starts to demonstrate them.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '00:48:44'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+mode       = 'full'
+
+[[clip]]
+start = '0.5'
+end   = '1.1'
+
+[[clip]]
+start = '1.5'
+end   = '3'
+
+[[clip]]
+start = '3.5'
+end   = '5'
+
+[[clip]]
+start = '5.95'
+end   = '8'
