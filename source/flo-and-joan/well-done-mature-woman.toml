@@ -1,0 +1,32 @@
+title = 'Well done, mature woman'
+published = 2020-10-08T05:34:14Z
+source_fkey = 'flo-and-joan/index'
+tag = ['flo', 'joan']
+body_markdown = """
+
+Flo and Joan, while performing their song “Drank Too Much”: 
+
+Well done, mature woman.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Oz3oDIN6AaQ'
+ext      = 'mp4'
+start    = '00:16.25'
+duration = '1.9'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+mode       = 'full'
+
+[[caption]]
+text      = "Well done, mature woman"
+from      = '0.2'
+to        = '1.7'
+placement = 'bc'
+margin    = '20'
