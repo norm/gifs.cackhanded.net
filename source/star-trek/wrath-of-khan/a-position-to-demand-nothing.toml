@@ -1,0 +1,46 @@
+title = 'A position to demand nothing'
+published = 2020-10-09T06:07:55Z
+source_fkey = 'star-trek/wrath-of-khan/index'
+tag = ['pavel-chekov', 'khan-noonien-singh', 'clark-terrell']
+body_markdown = """
+
+Khan tells Captain Terrell “You are in a position to demand nothing, sir.
+I, on the other hand, am in a position to grant…” and pauses for dramatic
+effect. “… nothing.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wrath-of-khan'
+ext      = 'm4v'
+start    = '00:19:14.75'
+duration = '12.5'
+crop     = '1000:528:100:0'
+
+[output]
+brightness = '0.05'
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '12'
+loss       = '100'
+max_size   = '3mb'
+mode       = 'full'
+
+[[caption]]
+text      = "You are in a position to demand nothing, sir"
+from      = '0.25'
+to        = '3.8'
+size      = '20'
+
+[[caption]]
+text      = "I, on the other hand, am in a position to grant"
+from      = '6.2'
+to        = '10.49'
+size      = '20'
+
+[[caption]]
+text      = "I, on the other hand, am in a position to grant nothing"
+from      = '10.5'
+to        = '11.5'
+size      = '20'
