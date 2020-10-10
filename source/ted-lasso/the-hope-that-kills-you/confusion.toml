@@ -1,0 +1,25 @@
+title = 'Confusion'
+published = 2020-10-10T06:25:35Z
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+show_fkey = 'ted-lasso/index'
+tag = ['ted-lasso', 'leslie-higgins']
+body_markdown = """
+
+Leslie goes to shake Ted’s hand, and Ted looks mighty confused.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '31:32'
+duration = '2.1'
+
+[output]
+brightness = '0.075'
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+mode       = 'full'
