@@ -1,0 +1,39 @@
+title = 'Difficult'
+published = 2020-10-11T06:23:10Z
+source_fkey = 'in-the-loop/index'
+tag = ['simon-foster', 'toby-wright']
+body_markdown = """
+
+Toby tells an over-confident Simon that it will be
+“difficult difficult lemon difficult”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'in-the-loop'
+ext      = 'mp4'
+start    = '00:50:25.6'
+duration = '3.5'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+
+[[caption]]
+text     = "It will be"
+from      = '0'
+to        = '0.3'
+align     = 'right'
+placement = 'br'
+size      = '28'
+
+[[caption]]
+text      = "It will be\ndifficult difficult lemon difficult"
+from      = '0.31'
+to        = '2.5'
+align     = 'right'
+placement = 'br'
+size      = '28'
