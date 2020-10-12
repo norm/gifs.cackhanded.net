@@ -1,0 +1,29 @@
+title = 'You are so odd'
+published = 2020-10-12T05:22:11Z
+source_fkey = 'ghostbusters/index'
+tag = ['peter-venkman', 'dana-barrett']
+body_markdown = """
+
+Dana tells Venkman “You are so odd.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:27:30.75'
+duration = '4.75'
+crop     = '1040:528'
+
+[output]
+colours    = '78'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "You are so odd"
+from      = '0.5'
+to        = '2.25'
