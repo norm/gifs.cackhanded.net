@@ -1,0 +1,41 @@
+title = 'You don’t have it'
+published = 2020-10-14T05:18:17Z
+source_fkey = 'bring-it-on/index'
+tag = ['missy-pantone']
+body_markdown = """
+
+Missy shouting out of the window at other contestants “Shut up! If you don’t
+have it yet, you don’t have it!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '01:20:02.5'
+duration = '4.5'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '12'
+max_size   = '2mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Shut up!"
+from      = '1.05'
+to        = '1.85'
+margin    = '25'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "If you don’t have it yet,\nyou don’t have it!"
+from      = '2.25'
+to        = '4'
+align     = 'center'
+margin    = '25'
+placement = 'bc'
+size      = '32'
