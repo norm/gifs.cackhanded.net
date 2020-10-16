@@ -1,0 +1,41 @@
+title = 'Malfunction'
+published = 2020-10-16T06:46:20Z
+source_fkey = 'star-trek/wolf-in-the-fold/index'
+tag = ['hikaru-sulu', 'james-t-kirk', 'spock']
+body_markdown = """
+
+Sulu comments that it is the first time he’s heard a malfunction threaten
+the crew.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'trek-tos-214'
+ext      = 'm4v'
+start    = '42:30.35'
+crop     = '960:620:0:0'
+
+[output]
+colours    = '78'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1.9mb'
+mode       = 'full'
+width      = '400'
+
+[[clip]]
+start = '5'
+end   = '7.9'
+
+[[clip]]
+start = '0'
+end   = '1.25'
+
+[[caption]]
+text      = "This is the first time I’ve heard\na malfunction threaten us"
+from      = '0'
+to        = '2.9'
+align     = 'center'
+placement = 'bc'
+size      = '24'
