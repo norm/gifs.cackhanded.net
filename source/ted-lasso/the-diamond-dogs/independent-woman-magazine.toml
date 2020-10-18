@@ -1,0 +1,38 @@
+title = 'Independent woman, magazine'
+published = 2020-10-18T05:27:52Z
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+show_fkey = 'ted-lasso/index'
+tag = ['keeley-jones', 'roy-kent']
+body_markdown = """
+
+Roy, during a mock press conference, nods to Keeley who introduces herself as
+“Keeley Jones, the independent woman (magazine)”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '18:51'
+
+[output]
+brightness = '0.1'
+colours    = '68'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '2.5mb'
+
+[[clip]]
+start = '0'
+end  = '2.2'
+
+[[clip]]
+start = '2.5'
+end  = '6'
+
+[[caption]]
+text      = "Keeley Jones,\nthe independent woman (magazine)"
+from      = '2.5'
+to        = '4.15'
+size      = '24'
