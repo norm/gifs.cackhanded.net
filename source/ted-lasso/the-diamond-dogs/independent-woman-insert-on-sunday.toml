@@ -1,0 +1,42 @@
+title = 'Independent woman, insert on Sunday'
+published = 2020-10-20T05:02:24Z
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+show_fkey = 'ted-lasso/index'
+tag = ['keeley-jones', 'roy-kent']
+body_markdown = """
+
+Roy, during a mock press conference, nods to Keeley who introduces herself as
+“Keeley Jones, the independent woman (insert on Sunday)”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '19:07.5'
+
+[output]
+brightness = '0.1'
+colours    = '68'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '2.5mb'
+
+[[clip]]
+start = '0'
+end  = '0.85'
+
+[[clip]]
+start = '3'
+end  = '6.5'
+
+[[clip]]
+start = '10.2'
+end  = '11.5'
+
+[[caption]]
+text      = "Keeley Jones,\nthe independent woman (insert on Sunday)"
+from      = '1.9'
+to        = '4'
+size      = '24'
