@@ -1,0 +1,58 @@
+title = 'There is no Dana'
+published = 2020-10-21T05:04:30Z
+source_fkey = 'ghostbusters/index'
+tag = ['dana-barrett', 'peter-venkman', 'zuul']
+body_markdown = """
+
+Dana, while possessed, says to Venkman “There is no Dana,
+there is only Zuul.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:57:46.0'
+crop     = '1040:528'
+
+[output]
+brightness = '0.045'
+colours    = '42'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+# loss       = '20'
+max_size   = '2mb'
+mode       = 'full'
+
+[[clip]]
+# "there is no dana"
+start = '3'
+end   = '5'
+
+[[clip]]
+# venkman looking on
+start = '0.5'
+end   = '1'
+
+[[clip]]
+# "there is only zuul"
+start = '5.01'
+end   = '6.9'
+
+[[clip]]
+# venkman pushing her back down
+start = '8.2'
+end   = '9'
+
+[[caption]]
+text      = "There is no Dana"
+from      = '0'
+to        = '1.9'
+placement = 'br'
+
+[[caption]]
+text      = "There is only Zuul"
+from      = '2.7'
+to        = '4.5'
+placement = 'br'
