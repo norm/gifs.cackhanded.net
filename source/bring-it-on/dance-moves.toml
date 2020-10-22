@@ -1,0 +1,42 @@
+title = 'Dance moves'
+published = 2020-10-22T06:33:06Z
+source_fkey = 'bring-it-on/index'
+tag = ['sparky-polastri']
+body_markdown = """
+
+Sparky Polastri’s sweet, sweet dance moves.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '00:45:16.0'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '80'
+mode       = 'full'
+
+[[clip]]
+start = '1.4'
+end   = '2.2'
+
+[[clip]]
+start = '4'
+end   = '5'
+
+[[clip]]
+start = '9.2'
+end   = '10.15'
+
+[[clip]]
+start = '12.6'
+end   = '13.4'
+
+[[clip]]
+start = '14.3'
+end   = '15.5'
