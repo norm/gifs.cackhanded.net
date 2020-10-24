@@ -1,0 +1,40 @@
+title = 'Left-handed'
+published = 2020-10-24T05:39:47Z
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+show_fkey = 'ted-lasso/index'
+tag = ['ted-lasso', 'rebecca-welton', 'rupert-mannion']
+body_markdown = """
+
+Ted tells Rupert “I forgot, I'm left-handed” and throws a dart into
+the bullseye.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '21:51.0'
+
+[output]
+brightness = '0.025'
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+max_size   = '2.25mb'
+mode       = 'full'
+
+[[clip]]
+start = '0.1'
+end   = '4'
+
+[[clip]]
+start = '5'
+end   = '6.65'
+
+[[caption]]
+text      = "I forgot, I'm left-handed"
+from      = '0'
+to        = '1.6'
+size      = '32'
+placement = 'bc'
