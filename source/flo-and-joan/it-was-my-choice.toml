@@ -1,0 +1,38 @@
+title = 'It was my choice'
+published = 2020-10-25T05:43:04Z
+source_fkey = 'flo-and-joan/index'
+tag = ['flo', 'joan']
+body_markdown = """
+
+Flo and Joan, while performing their song “Drank Too Much”: 
+
+Now I’m outside the bar, but it was my choice.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Oz3oDIN6AaQ'
+ext      = 'mp4'
+start    = '02:24.8'
+duration = '3.7'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+mode       = 'full'
+
+[[caption]]
+text      = "Now I’m outside the bar"
+from      = '0'
+to        = '1.6'
+placement = 'bc'
+margin    = '20'
+
+[[caption]]
+text      = "But it was my choice"
+from      = '2'
+to        = '3.2'
+placement = 'bc'
+margin    = '20'
