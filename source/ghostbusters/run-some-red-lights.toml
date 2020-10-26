@@ -1,0 +1,36 @@
+title = 'Run some red lights'
+published = 2020-10-26T05:41:21Z
+source_fkey = 'ghostbusters/index'
+tag = ['peter-venkman', 'ray-stanz', 'nypd']
+body_markdown = """
+
+Venkman leans out of the window of Ecto-1 and shouts at the police running
+around nearby “C’mon, let’s run some red lights!”
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:18:10'
+
+[output]
+colours    = '124'  # needs to be higher to get the bike lights to show red
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '30'
+max_size   = '1.8mb'
+mode       = 'full'
+
+[[clip]]
+start = '5.9'
+end   = '8.05'
+
+[[clip]]
+start = '3.5'
+end   = '4.75'
+
+[[caption]]
+text      = "C’mon, let’s run some red lights!"
+from      = '0'
+to        = '2'
