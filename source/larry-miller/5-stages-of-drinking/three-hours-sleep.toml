@@ -1,0 +1,49 @@
+title = 'Three hours sleep'
+published = 2020-10-27T06:01:25Z
+source_fkey = 'larry-miller/5-stages-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+As long as I get three hours sleep, and a complete change of blood … I’m cool.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '2:30.5'
+duration = '14'
+
+[output]
+colours    = '34'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "As long as I get three hours sleep"
+from      = '0'
+to        = '2.5'
+align     = 'center'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "And a complete change of blood"
+from      = '4'
+to        = '5.5'
+align     = 'center'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "I’m cool"
+from      = '12'
+to        = '13'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '24'
