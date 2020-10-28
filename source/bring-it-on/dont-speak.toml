@@ -1,0 +1,38 @@
+title = 'Don’t speak'
+published = 2020-10-28T06:13:14Z
+source_fkey = 'bring-it-on/index'
+tag = ['sparky-polastri', 'torrance-shipman']
+body_markdown = """
+
+Sparky Polastri walks up to the team. Torrance starts to speak, he 
+interrupts with a hand to the face. ”Don’t speak…” He walks past her as
+she looks confused.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '00:45:37.0'
+
+[output]
+colours    = '66'
+fps        = '12'
+max_size   = '3.96mb'
+
+[[clip]]
+start = '0'
+end   = '4.9'
+
+[[clip]]
+start = '5.4'
+end   = '9.5'
+
+[[caption]]
+text      = "Don’t speak…"
+from      = '4.91'
+to        = '6'
+font      = 'assistant-extrabold.ttf'
+margin    = '25'
+placement = 'bc'
