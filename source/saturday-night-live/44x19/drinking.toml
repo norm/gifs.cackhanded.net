@@ -1,0 +1,25 @@
+title = 'Drinking'
+published = 2020-10-29T05:39:49Z
+episode_fkey = 'saturday-night-live/44x19/index'
+show_fkey = 'saturday-night-live/index'
+tag = ['aidy-bryant', 'wine', 'drinking']
+body_markdown = """
+
+Aidy drinking wine, during the Romano Tours sketch.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'TbwlC2B-BIg'
+ext      = 'mp4'
+start    = '2:27.75'
+duration = '4.4'
+crop     = '1520:855:200:10'
+
+[output]
+colours    = '128'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1.9mb'
+mode       = 'full'
