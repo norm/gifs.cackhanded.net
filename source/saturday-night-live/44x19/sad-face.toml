@@ -1,0 +1,24 @@
+title = 'Sad face'
+published = 2020-10-30T06:19:43Z
+episode_fkey = 'saturday-night-live/44x19/index'
+show_fkey = 'saturday-night-live/index'
+tag = ['aidy-bryant', 'keenan-thompson']
+body_markdown = """
+
+Keenan's face betrays the sadness he feels inside.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'TbwlC2B-BIg'
+ext      = 'mp4'
+start    = '02:42.5'
+duration = '5.3'
+crop     = '1520:855:200:10'
+
+[output]
+colours    = '80'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+mode       = 'full'
