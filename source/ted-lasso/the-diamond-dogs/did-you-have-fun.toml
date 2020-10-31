@@ -1,0 +1,53 @@
+title = 'Did you have fun?'
+published = 2020-10-31T07:38:33Z
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+show_fkey = 'ted-lasso/index'
+tag = ['ted-lasso', 'coach-beard']
+body_markdown = """
+
+Coach emphatically asks Ted “Did you have fun?” punctuating each word 
+by slapping the desk.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '04:29.1'
+duration = '4.5'
+crop     = '1000:580:280:0'
+
+[output]
+brightness = '0.05'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '2mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "Did"
+from      = '0.4'
+to        = '0.7'
+placement = 'bl'
+
+[[caption]]
+text      = "Did you"
+from      = '0.71'
+to        = '1.1'
+placement = 'bl'
+
+[[caption]]
+text      = "Did you have"
+from      = '1.1'
+to        = '1.4'
+placement = 'bl'
+
+[[caption]]
+text      = "Did you have fun?"
+from      = '1.41'
+to        = '1.9'
+placement = 'bl'
