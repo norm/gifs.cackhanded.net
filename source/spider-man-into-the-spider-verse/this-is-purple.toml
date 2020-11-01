@@ -1,0 +1,43 @@
+title = 'This is purple?'
+published = 2020-11-01T07:42:26Z
+source_fkey = 'spider-man-into-the-spider-verse/index'
+tag = ['spider-man-noir', 'spider-ham', 'peter-porker', 'peter-parker', 'rubiks-cube']
+body_markdown = """
+
+Spider-Man Noir holds a Rubik's cube out to Spider-Ham and asks
+“This is purple?” only to be told no.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'into-the-spiderverse'
+ext      = 'm4v'
+start    = '1:10:10.5'
+duration = '3.75'
+crop     = '960:540:960:256'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1.8mb'
+mode       = 'full'
+
+[[caption]]
+text      = "This is"
+from      = '0'
+to        = '2'
+placement = 'bl'
+
+[[caption]]
+text      = "This is purple?"
+from      = '2.01'
+to        = '3'
+placement = 'bl'
+
+[[caption]]
+text      = "No"
+from      = '2.5'
+to        = '3.25'
+placement = 'br'
