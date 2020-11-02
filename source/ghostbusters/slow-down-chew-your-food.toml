@@ -1,0 +1,31 @@
+title = 'Slow down, chew your food'
+published = 2020-11-02T06:08:28Z
+source_fkey = 'ghostbusters/index'
+tag = ['peter-venkman', 'ray-stanz', 'egon-spengler']
+body_markdown = """
+
+As they eat some takeaway, Venkman advises Ray and Egon to “Slow down, chew
+your food.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '0:28:30.5'
+duration = '5.25'
+crop     = '1000:528:50:0'
+
+[output]
+brightness = '0.075'
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+mode       = 'full'
+
+[[caption]]
+text      = "Slow down, chew your food"
+from      = '3'
+to        = '5'
+margin    = '20'
