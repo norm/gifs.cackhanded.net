@@ -1,0 +1,41 @@
+title = 'Follow me or perish'
+published = 2020-11-04T06:04:05Z
+source_fkey = 'bring-it-on/index'
+tag = ['sparky-polastri']
+body_markdown = """
+
+Sparky Polastri tells the assembled team “Now, follow me or perish
+sweater monkeys.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '00:47:14.0'
+duration = '3.45'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '10'
+max_size   = '1.5mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Now follow me or perish…"
+from      = '0'
+to        = '2'
+align     = 'center'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "…sweater monkeys"
+from      = '2.4'
+to        = '3.35'
+align     = 'center'
+placement = 'bc'
+size      = '32'
