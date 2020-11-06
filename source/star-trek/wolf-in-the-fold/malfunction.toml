@@ -1,6 +1,7 @@
 title = 'Malfunction'
 published = 2020-10-16T06:46:20Z
-source_fkey = 'star-trek/wolf-in-the-fold/index'
+episode_fkey = 'star-trek/wolf-in-the-fold/index'
+show_fkey = 'star-trek/index'
 tag = ['hikaru-sulu', 'james-t-kirk', 'spock']
 body_markdown = """
 

@@ -1,7 +1,8 @@
 title = 'He’s dead, Jim'
 published = 2020-11-06T08:02:25Z
-source_fkey = 'star-trek/wolf-in-the-fold/index'
-tag = ['james-t-kirk', 'leonard-mccoy']
+episode_fkey = 'star-trek/wolf-in-the-fold/index'
+show_fkey = 'star-trek/index'
+tag = ['james-t-kirk', 'leonard-mccoy', 'spock', 'hengist']
 body_markdown = """
 
 Kirk slugs a guy, who falls down. Bones examines him and informs the captain
