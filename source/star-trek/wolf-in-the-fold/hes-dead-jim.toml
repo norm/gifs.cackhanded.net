@@ -1,0 +1,63 @@
+title = 'He’s dead, Jim'
+published = 2020-11-06T08:02:25Z
+source_fkey = 'star-trek/wolf-in-the-fold/index'
+tag = ['james-t-kirk', 'leonard-mccoy']
+body_markdown = """
+
+Kirk slugs a guy, who falls down. Bones examines him and informs the captain
+“He’s dead, Jim.”
+
+Kirk objects. “But that’s impossible!”
+
+Bones looks back at the ‘dead’ man.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'trek-tos-214'
+ext      = 'm4v'
+start    = '39:38.55'
+crop     = '960:580'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+width      = '400'
+max_size   = '4.3mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '5.2'
+end   = '6.8'
+# end   = '7.35'
+
+[[clip]]
+start = '7.4'
+end   = '8.1'
+
+[[clip]]
+# start = '8.25'
+start = '10'
+end   = '15.5'
+
+[[caption]]
+text      = "He’s dead, Jim"
+from      = '5.2'
+to        = '6.5'
+margin    = '20'
+placement = 'bl'
+size      = '32'
+
+[[caption]]
+text      = "But that’s impossible!"
+from      = '6.8'
+to        = '7.8'
+margin    = '20'
+placement = 'br'
+size      = '32'
