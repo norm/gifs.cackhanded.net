@@ -1,0 +1,36 @@
+title = ''
+published = 2020-11-07T06:12:11Z
+source_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = ['TAG_ME']
+body_markdown = """
+
+WRITE_ME
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '13:34.3'
+duration = '5'
+
+[output]
+brightness = '0.05'
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+
+[[clip]]
+start = '0'
+end   = '2.65'
+
+[[clip]]
+start = '3.4'
+end   = '4.5'
+
+[[caption]]
+text      = "Does my face look like it’s in\nthe mood for shape-based jokes?"
+from      = '0'
+to        = '2.4'
+margin    = '20'
