@@ -1,10 +1,12 @@
-title = ''
+title = 'Shape-based jokes'
 published = 2020-11-07T06:12:11Z
-source_fkey = 'ted-lasso/the-diamond-dogs/index'
-tag = ['TAG_ME']
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+show_fkey = 'ted-lasso/index'
+tag = ['ted-lasso', 'roy-kent']
 body_markdown = """
 
-WRITE_ME
+Roy asking Ted
+“Does my face look like it’s in the mood for shape-based jokes?”
 
 """
 

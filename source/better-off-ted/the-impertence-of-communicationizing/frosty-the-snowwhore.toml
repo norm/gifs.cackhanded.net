@@ -1,6 +1,7 @@
 title = 'Frosty the Snowwhore'
 published = 2020-11-08T06:57:52Z
-source_fkey = 'better-off-ted/the-impertence-of-communicationizing/index'
+episode_fkey = 'better-off-ted/the-impertence-of-communicationizing/index'
+show_fkey = 'better-off-ted/index'
 tag = ['veronica-palmer', 'linda-zwordling']
 body_markdown = """
 
