@@ -1,0 +1,44 @@
+title = 'Frosty the Snowwhore'
+published = 2020-11-08T06:57:52Z
+source_fkey = 'better-off-ted/the-impertence-of-communicationizing/index'
+tag = ['veronica-palmer', 'linda-zwordling']
+body_markdown = """
+
+Veronica tells Linda she needs her help. Linda responds “What’s the problem,
+Frosty the Snowwhore?”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Bh7Nz4bIwss'
+ext      = 'mp4'
+start    = '1:29'
+crop     = '620:350:0:0'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=2'
+fps        = '24'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '1.15'
+
+[[clip]]
+start = '2.4'
+end   = '4.3'
+
+[[caption]]
+text      = "I need your help"
+from      = '0'
+to        = '1.15'
+placement = 'bl'
+
+[[caption]]
+text      = "What’s the problem,\nFrosty the Snowwhore?"
+from      = '1.25'
+to        = '3'
+align     = 'right'
+placement = 'br'
