@@ -1,0 +1,26 @@
+title = 'Bye, Louis'
+published = 2020-11-09T06:27:44Z
+source_fkey = 'ghostbusters/index'
+tag = ['louis-tully', 'dana-barrett']
+body_markdown = """
+
+Dana shuts her apartment door in Louis' face.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '0:18:22.2'
+crop     = '1100:528'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2.35'
