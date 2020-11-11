@@ -1,0 +1,23 @@
+title = 'Hips'
+published = 2020-11-11T06:56:29Z
+source_fkey = 'bring-it-on/index'
+tag = ['sparky-polastri']
+body_markdown = """
+
+Sparky Polastri shakes his hips suggestively.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'bring-it-on'
+ext      = 'm4v'
+start    = '00:45:25.5'
+duration = '1.45'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=2'
+fps        = 'original'
+loss       = 'no'
+mode       = 'full'
