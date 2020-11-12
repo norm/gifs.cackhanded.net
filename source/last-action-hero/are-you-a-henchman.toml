@@ -1,0 +1,39 @@
+title = 'Are you a henchman?'
+published = 2020-11-12T06:46:34Z
+source_fkey = 'last-action-hero/index'
+tag = ['jack-slater', 'benedict']
+body_markdown = """
+
+Jack Slater asks Mr. Benedict “Are you a henchman?”, which gets the
+response “No, I only go as far as lackey.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'last-action-hero'
+ext      = 'm4v'
+start    = '0:43:03.75'
+duration = '4'
+crop     = '1000:528:230:0'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+mode       = 'full'
+
+[[caption]]
+text      = "Are you a henchman?"
+from      = '0'
+to        = '1.4'
+margin    = '20'
+size      = '32'
+
+[[caption]]
+text      = "No, I only go as far as lackey"
+from      = '2'
+to        = '4'
+margin    = '20'
+placement = 'br'
+size      = '32'
