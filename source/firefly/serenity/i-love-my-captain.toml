@@ -1,0 +1,32 @@
+title = 'I love my captain'
+published = 2020-11-15T07:24:22Z
+episode_fkey = 'firefly/serenity/index'
+show_fkey = 'firefly/index'
+tag = ['malcolm-reynolds', 'kaywinnet-lee-fry', 'jayne-cobb']
+body_markdown = """
+
+Kaylee kisses Mal and says “I love my captain.” as he and Jayne lift a
+crate. After a second, Mal smiles.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'firefly-1'
+ext      = 'm4v'
+start    = '13:21.4'
+duration = '5.2'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = 'original'
+loss       = '70'
+max_size   = '2.5mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I love my captain"
+from      = '1.6'
+to        = '3'
+margin    = '20'
