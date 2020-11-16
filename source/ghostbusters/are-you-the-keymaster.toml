@@ -1,0 +1,40 @@
+title = 'Are you the Keymaster?'
+published = 2020-11-16T06:34:13Z
+source_fkey = 'ghostbusters/index'
+tag = ['dana-barrett', 'zuul', 'peter-venkman']
+body_markdown = """
+
+Zuul asks Venkman if he is the Keymaster.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '0:55:43.0'
+end      = '0:55:58.0'
+crop     = '960:528'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+width      = '400'
+
+[[caption]]
+text      = "Are you the Keymaster?"
+from      = '8'
+to        = '10'
+margin    = '20'
+placement = 'bl'
+size      = '26'
+
+[[caption]]
+text      = "Not that I know of"
+from      = '11'
+to        = '13'
+margin    = '20'
+placement = 'br'
+size      = '26'
