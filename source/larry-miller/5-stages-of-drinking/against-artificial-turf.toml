@@ -1,0 +1,33 @@
+title = 'Against artificial turf'
+published = 2020-11-17T07:17:19Z
+source_fkey = 'larry-miller/5-stages-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+You’ve just spent twenty minutes arguing against artificial turf.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '0:55'
+duration = '6.5'
+
+[output]
+colours    = '34'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "You’ve just spent twenty minutes\narguing against artificial turf"
+from      = '0'
+to        = '3.5'
+align     = 'center'
+placement = 'bc'
+size      = '20'
