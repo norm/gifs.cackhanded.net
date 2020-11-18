@@ -1,0 +1,41 @@
+title = 'That makes us mighty'
+published = 2020-11-18T07:30:04Z
+source_fkey = 'firefly/serenity/index'
+tag = ['malcolm-reynolds']
+body_markdown = """
+
+Mal, giving a speech in the Battle of Serenity Valley, says "We’ve done the
+impossible, and that makes us mighty."
+
+"""
+
+[video]
+source   = 'file'
+file     = 'firefly-1'
+ext      = 'm4v'
+start    = '0:01:28'
+duration = '4.65'
+
+[output]
+brightness = '0.125'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '2.13mb'
+mode       = 'full'
+
+[[caption]]
+text      = "We’ve done the impossible"
+from      = '0'
+to        = '1.5'
+placement = 'bc'
+margin    = '20'
+size      = '32'
+
+[[caption]]
+text      = "And that makes us mighty"
+from      = '1.6'
+to        = '3.25'
+placement = 'bc'
+margin    = '20'
+size      = '32'
