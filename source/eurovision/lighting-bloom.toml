@@ -1,0 +1,66 @@
+title = 'Lighting bloom'
+published = 2020-11-19T07:01:00Z
+source_fkey = 'eurovision/index'
+tag = ['eurovisiondrinking']
+body_markdown = """
+
+A canonical example of "lighting bloom" for the 
+[Eurovision Drinking Game](http://eurovisiondrinking.com) rules.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '5mPUMPcFQAY'
+ext      = 'mp4'
+start    = '2:42.0'
+duration = '7'
+
+[output]
+colours    = '30'
+dither     = 'bayer:bayer_scale=2'
+fps        = '12'
+loss       = '100'
+max_size   = '1mb'
+mode       = 'full'
+width      = '360'
+
+[[caption]]
+text      = "LIGHTING BLOOM"
+from      = '0.5'
+to        = '3.3'
+colour    = '#333'
+font      = 'acherusgrotesque-black.otf'
+margin    = '2'
+size      = '36'
+placement = 'c,-45'
+
+[[caption]]
+text      = "LIGHTING BLOOM"
+from      = '0.61'
+to        = '3.2'
+colour    = '#666'
+font      = 'acherusgrotesque-black.otf'
+margin    = '2'
+size      = '36'
+placement = 'c,-45'
+
+[[caption]]
+text      = "LIGHTING BLOOM"
+from      = '0.71'
+to        = '3.1'
+colour    = '#969696'
+font      = 'acherusgrotesque-black.otf'
+margin    = '2'
+size      = '36'
+placement = 'c,-45'
+
+[[caption]]
+text      = "LIGHTING BLOOM"
+from      = '0.81'
+to        = '3'
+colour    = '#fff'
+font      = 'acherusgrotesque-black.otf'
+margin    = '2'
+size      = '36'
+placement = 'c,-45'
