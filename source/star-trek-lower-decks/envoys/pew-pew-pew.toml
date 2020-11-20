@@ -1,0 +1,23 @@
+title = 'Pew pew pew'
+published = 2020-11-20T06:11:39Z
+source_fkey = 'star-trek-lower-decks/envoys/index'
+tag = ['brad-boimler']
+body_markdown = """
+
+Boimler does finger guns at some engineers in the shuttle deck.
+They cast him withering looks and he slinks off.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'lower-decks-102'
+ext      = 'm4v'
+start    = '04:58.5'
+duration = '6.5'
+crop     = '1200:675'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
