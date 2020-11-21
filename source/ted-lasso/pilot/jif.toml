@@ -1,0 +1,64 @@
+title = 'Jif'
+published = 2020-11-21T07:24:07Z
+episode_fkey = 'ted-lasso/pilot/index'
+show_fkey = 'ted-lasso/index'
+tag = ['leslie-higgins', 'rebecca-welton', 'meta']
+body_markdown = """
+
+Higgins telling Rebecca about GIFs, “That’s correct,
+though some people pronounce it ‘jif’.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '17:08.5'
+duration = '9.25'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '30'
+max_size   = '3mb'
+mode       = 'full'
+
+[[caption]]
+text      = "That’s"
+from      = '1'
+to        = '2'
+placement = '156,197'
+size      = '28'
+
+[[caption]]
+text      = "That’s correct"
+from      = '2'
+to        = '3'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Though some people\n "
+from      = '3.75'
+to        = '7.5'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "pronounce it"
+from      = '5.5'
+to        = '7.5'
+align     = 'center'
+placement = '134,197'
+size      = '28'
+
+[[caption]]
+text      = "pronounce it “jif”"
+from      = '6.8'
+to        = '7.5'
+align     = 'center'
+placement = 'bc'
+size      = '28'
