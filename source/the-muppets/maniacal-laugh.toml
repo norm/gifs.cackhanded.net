@@ -1,0 +1,41 @@
+title = 'Maniacal laugh'
+published = 2020-11-22T08:42:17Z
+source_fkey = 'the-muppets/index'
+tag = ['tex-richman', 'bobo-the-bear', 'uncle-deadly']
+body_markdown = """
+
+Tex saying “Maniacal laugh” to Bobo the Bear and Uncle Deadly.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'the-muppets'
+ext      = 'm4v'
+start    = '0:15:19.0'
+duration = '4.25'
+
+[output]
+brightness = '0.025'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1.9mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Maniacal laugh"
+from      = '0.4'
+to        = '2'
+font      = 'greycliffcf-heavy.otf'
+margin    = '20'
+placement = 'bc'
+
+[[caption]]
+text      = "Maniacal laugh"
+from      = '2.5'
+to        = '4'
+font      = 'greycliffcf-heavy.otf'
+margin    = '20'
+placement = 'bc'
