@@ -1,0 +1,42 @@
+title = 'You smell something?'
+published = 2020-11-23T06:04:08Z
+source_fkey = 'ghostbusters/index'
+tag = ['peter-venkman', 'egon-spengler', 'ray-stantz']
+body_markdown = """
+
+Ray exclaims “Listen!”, then asks the other two Ghostbusters
+“You smell something?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '0:09:06.0'
+duration = '7'
+crop     = '960:528:185:0'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '3.15mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "Listen!"
+from      = '1.25'
+to        = '1.75'
+margin    = '30'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "You smell something?"
+from      = '3'
+to        = '4'
+margin    = '30'
+placement = 'br'
+size      = '32'

@@ -1,7 +1,7 @@
 title = 'Slow down, chew your food'
 published = 2020-11-02T06:08:28Z
 source_fkey = 'ghostbusters/index'
-tag = ['peter-venkman', 'ray-stanz', 'egon-spengler']
+tag = ['peter-venkman', 'ray-stantz', 'egon-spengler']
 body_markdown = """
 
 As they eat some takeaway, Venkman advises Ray and Egon to “Slow down, chew

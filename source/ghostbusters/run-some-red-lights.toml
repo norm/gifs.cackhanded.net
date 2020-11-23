@@ -1,7 +1,7 @@
 title = 'Run some red lights'
 published = 2020-10-26T05:41:21Z
 source_fkey = 'ghostbusters/index'
-tag = ['peter-venkman', 'ray-stanz', 'nypd']
+tag = ['peter-venkman', 'ray-stantz', 'nypd']
 body_markdown = """
 
 Venkman leans out of the window of Ecto-1 and shouts at the police running
