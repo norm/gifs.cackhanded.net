@@ -1,0 +1,26 @@
+title = 'Popcorn'
+published = 2020-11-25T06:47:02Z
+episode_fkey = 'murder-she-wrote/witness-for-the-defense/index'
+show_fkey = 'murder-she-wrote/index'
+tag = ['jessica-fletcher', 'popcorn']
+body_markdown = """
+
+Jessica eating popcorn.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'murder-she-wrote-403'
+ext      = 'm4v'
+start    = '21:54.75'
+duration = '2.05'
+crop     = '570:426:0:125'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1mb'
+mode       = 'full'
+width      = '360'
