@@ -1,7 +1,7 @@
 title = 'Fresh oversize popcorn'
 published = 2020-08-08T11:06:25Z
 source_fkey = 'stephen-colbert/index'
-tag = ['stephen-colbert']
+tag = ['stephen-colbert', 'popcorn']
 body_markdown = """
 
 Stephen Colbert eating popcorn from a ridiculously large box.
