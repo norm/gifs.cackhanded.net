@@ -1,0 +1,41 @@
+title = 'THE WILL OF THE MONOLITH'
+published = 2020-11-27T06:22:37Z
+source_fkey = 'stephen-colbert/index'
+tag = ['stephen-colbert', 'monolith']
+body_markdown = """
+
+Stephen snaps to the side and declares “IT WAS THE WILL OF THE MONOLITH”
+then looks confused for a moment.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '362n-CIg3jo'
+ext      = 'mp4'
+start    = '9:14.5'
+duration = '8.75'
+crop     = '1520:855:200:50'
+
+[output]
+colours    = '53'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '3mb'
+mode       = 'full'
+
+[[caption]]
+text      = "because"
+from      = '0'
+to        = '1'
+font      = 'greycliffcf-medium.otf'
+placement = 'bc'
+
+[[caption]]
+text      = "IT  WAS   THE  WILL\nOF THE MONOLITH"
+from      = '2.1'
+to        = '5'
+align     = 'center'
+colour    = '#bb78fa'
+font      = 'greycliffcf-heavy.otf'
+placement = 'tc'
