@@ -199,7 +199,7 @@ caption colours.
 To install pre-requisites:
 
     # tools to make GIFs
-    % brew install ffmpeg gifsicle youtube-dl
+    % brew install entr ffmpeg gifsicle youtube-dl
 
     # the python libraries to make captions
     % pip install -r requirements.txt
@@ -239,15 +239,15 @@ To add a new GIF:
     # edit the config, save and close, and it makes the GIF
     # (opens the GIF in Safari for previewing)
 
-    # tweak as necessary until happy, run make after each change and
-    # refresh Safari
-    % make
+    # this will rebuild the GIF and refresh it in Safari as
+    # you continue tweaking the config until you are happy
+    % make remake
 
     # when done, update the published date
     % ./script/now airplane/surely-you-cant-be-serious
 
-    # commit and push
+    # commit and push (GitHub actions will update the website)
     % git add source/airplane/surely-you-cant-be-serious*
     % git commit -m'Add GIF'
-    % make publish
+    % git push origin main
 

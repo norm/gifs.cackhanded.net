@@ -7,6 +7,9 @@ clean:
 gifs:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs
 
+remake:
+	@find source -name '*.toml' | entr make
+
 remove:
 	@make -f Makefile.gifs clean
 
