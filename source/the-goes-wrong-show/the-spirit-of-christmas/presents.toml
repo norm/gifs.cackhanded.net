@@ -1,0 +1,26 @@
+title = 'Presents'
+published = 2020-11-29T08:59:59Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = ['robert-groves', 'vanessa', 'santa', 'belle', 'henry-lewis', 'bryony-corrigan']
+body_markdown = """
+
+Belle played by Vanessa (played by Bryony Corrigan) gets hit on the head
+by the present sack as Santa played by Robert Groves (played by Henry Lewis)
+swings it over his shoulder.
+
+"""
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '7:29.0'
+duration = '4'
+crop     = '1040:585:120:90'
+
+[output]
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+loss     = '25'
+max_size = '2.2mb'
