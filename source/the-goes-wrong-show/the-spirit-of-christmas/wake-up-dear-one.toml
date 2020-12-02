@@ -1,0 +1,34 @@
+title = 'Wake up, dear one'
+published = 2020-12-02T16:31:37Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = ['robert-groves', 'vanessa', 'santa', 'belle', 'henry-lewis', 'bryony-corrigan']
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis) knocks a table, which
+sets of a very aggressive Christmas cracker, which wakes Belle played by
+Vanessa (played by Bryony Corrigan). Santa plays it cool, adjusts his fake
+beard, and says “Wake up, dear one.”
+
+"""
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '7:42.6'
+duration = '10'
+crop     = '1040:585:160:90'
+
+[output]
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+loss     = '50'
+max_size = '4.6mb'
+
+[[caption]]
+text      = "Wake up, dear one"
+from      = '6'
+to        = '8'
+placement = 'bl'
+size      = '30'
