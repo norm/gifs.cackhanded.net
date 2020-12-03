@@ -1,0 +1,32 @@
+title = 'Commercial holiday'
+published = 2020-12-03T06:51:47Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = ['robert-groves', 'vanessa', 'santa', 'belle', 'henry-lewis', 'bryony-corrigan']
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis) tells Belle played by
+Vanessa (played by Bryony Corrigan) that Christmas is ultimately a
+“commercial holiday”.
+
+"""
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '25:59'
+duration = '1.7'
+crop     = '1040:585:160:90'
+
+[output]
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+max_size = '1mb'
+
+[[caption]]
+text      = "Commercial holiday"
+from      = '0.5'
+to        = '1.8'
+placement = 'bl'
+size      = '30'
