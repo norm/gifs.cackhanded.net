@@ -1,0 +1,30 @@
+title = 'Hug'
+published = 2020-12-04T07:34:10Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = ['robert-groves', 'sandra-wilkinson', 'vanessa', 'santa', 'nistle', 'belle', 'henry-lewis', 'charlie-russell', 'bryony-corrigan']
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis) is dancing merrily, with
+a bottle in his hand. Belle played by Vanessa (played by Bryony Corrigan)
+gives Santa a hug and tries to take the bottle away. Santa pushes Belle onto
+the sofa, where Nistle played by Sandra Wilkinson (played by Charle Russell)
+is sitting.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '12:07.5'
+duration = '6'
+crop     = '1040:585'
+
+[output]
+dither   = 'bayer:bayer_scale=2'
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+loss     = '50'
+max_size = '3.6mb'
