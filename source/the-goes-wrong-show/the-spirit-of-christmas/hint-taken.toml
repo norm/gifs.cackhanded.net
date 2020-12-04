@@ -1,6 +1,7 @@
 title = 'Hint taken'
 published = 2020-08-30T06:07:00Z
-source_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
 tag = ['robert-groves', 'sandra-wilkinson', 'vanessa', 'santa', 'nistle', 'belle', 'henry-lewis', 'charlie-russell', 'bryony-corrigan']
 body_markdown = """
 
