@@ -1,0 +1,43 @@
+title = 'And the truth comes out'
+published = 2020-12-05T08:21:17Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = ['robert-groves', 'sandra-wilkinson', 'vanessa', 'santa', 'nistle', 'belle', 'henry-lewis', 'charlie-russell', 'bryony-corrigan']
+body_markdown = """
+
+Belle played by Vanessa (played by Bryony Corrigan) tells 
+Nistle played by Sandra Wilkinson (played by Charle Russell)
+that she doesn’t want presents. Behind them
+Santa played by Robert Groves (played by Henry Lewis)
+points accusingly and declares “And the truth comes out!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '21:33'
+duration = '3.75'
+crop     = '1040:585'
+
+[output]
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+loss     = '50'
+max_size = '2.25mb'
+
+[[caption]]
+text      = "I don’t want presents…"
+from      = '0'
+to        = '1.7'
+placement = 'bl'
+size      = '30'
+
+[[caption]]
+text      = "And the truth comes out!"
+from      = '2.1'
+to        = '4'
+placement = 'br'
+size      = '30'
