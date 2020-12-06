@@ -1,0 +1,44 @@
+title = 'The real winner'
+published = 2020-12-06T06:53:36Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = ['robert-groves', 'sandra-wilkinson', 'vanessa', 'santa', 'nistle', 'belle', 'henry-lewis', 'charlie-russell', 'bryony-corrigan']
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis)
+asks
+Belle played by Vanessa (played by Bryony Corrigan)
+and
+Nistle played by Sandra Wilkinson (played by Charle Russell)
+who is the real winner at Christmas.
+“I’ll tell you who,” he says, “Amazon!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '26:01'
+duration = '4.85'
+crop     = '1040:585:160:90'
+
+[output]
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+max_size = '2.9mb'
+
+[[caption]]
+text      = "Who’s the real winner at Christmas?"
+from      = '1'
+to        = '2.75'
+placement = 'br'
+size      = '30'
+
+[[caption]]
+text      = "I’ll tell you who, Amazon."
+from      = '3'
+to        = '6'
+placement = 'br'
+size      = '30'
