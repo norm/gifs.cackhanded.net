@@ -1,0 +1,51 @@
+title = 'Where are my gifts?'
+published = 2020-12-07T07:36:59Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = [
+    'santa', 'robert-groves', 'henry-lewis',
+    'belle', 'vanessa', 'bryony-corrigan',
+    'mr-snowman', 'chris-bean', 'henry-shields',
+    'nistle', 'sandra-wilkinson', 'charlie-russell',
+]
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis)
+says to 
+Belle played by Vanessa (played by Bryony Corrigan)
+“Where are my gifts? Think about that.”
+as
+Mr Snowman played by Chris Bean (played by Henry Shields)
+and
+Nistle played by Sandra Wilkinson (played by Charle Russell)
+look on.
+
+"""
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '18:28.25'
+duration = '3.8'
+crop     = '1040:585'
+
+[output]
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+max_size = '2.28mb'
+
+[[caption]]
+text      = "Where are my gifts?"
+from      = '0.6'
+to        = '1.75'
+placement = 'bl'
+size      = '30'
+
+
+[[caption]]
+text      = "Think about that."
+from      = '2.25'
+to        = '4.5'
+placement = 'bl'
+size      = '30'
