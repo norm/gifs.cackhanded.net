@@ -1,0 +1,45 @@
+title = 'Always happy'
+published = 2020-12-08T06:17:17Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = [
+    'santa', 'robert-groves', 'henry-lewis',
+    'nistle', 'sandra-wilkinson', 'charlie-russell',
+]
+body_markdown = """
+
+Nistle played by Sandra Wilkinson (played by Charle Russell)
+says to
+Santa played by Robert Groves (played by Henry Lewis)
+“I’m always happy!” and he responds
+“Why? You're essentially enslaved.”
+
+"""
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '15:30.25'
+duration = '5.8'
+crop     = '1040:585'
+
+[output]
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+max_size = '3mb'
+
+[[caption]]
+text      = "I’m always happy!"
+from      = '0'
+to        = '2'
+placement = 'br'
+size      = '30'
+
+
+[[caption]]
+text      = "Why? You’re essentially enslaved."
+from      = '2.5'
+to        = '4.5'
+placement = 'bl'
+size      = '30'
