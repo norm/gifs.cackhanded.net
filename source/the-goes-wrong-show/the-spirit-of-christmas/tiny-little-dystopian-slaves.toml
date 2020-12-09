@@ -1,0 +1,50 @@
+title = 'Tiny little dystopian slaves'
+published = 2020-12-09T06:05:41Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = [
+    'santa', 'robert-groves', 'henry-lewis',
+    'belle', 'vanessa', 'bryony-corrigan',
+    'mr-snowman', 'chris-bean', 'henry-shields',
+    'nistle', 'sandra-wilkinson', 'charlie-russell',
+]
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis)
+explains to 
+Belle played by Vanessa (played by Bryony Corrigan)
+and
+Nistle played by Sandra Wilkinson (played by Charle Russell)
+the future of present delivery:
+“They have drones now, tiny little dystopian slaves…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '26:08.2'
+duration = '5.3'
+crop     = '1040:585:160:90'
+
+[output]
+dither   = 'bayer:bayer_scale=2'
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+max_size = '3.2mb'
+
+[[caption]]
+text      = "They have drones now"
+from      = '0'
+to        = '1.75'
+placement = 'br'
+size      = '30'
+
+[[caption]]
+text      = "Tiny little dystopian slaves"
+from      = '2.5'
+to        = '5'
+placement = 'br'
+size      = '30'
