@@ -1,0 +1,33 @@
+title = 'Where are my gifts?'
+published = 2020-12-10T06:01:59Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = [
+    'santa', 'robert-groves', 'henry-lewis',
+    'lawrence', 'max-bennett', 'dave-hearn',
+    'nistle', 'sandra-wilkinson', 'charlie-russell',
+]
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis)
+shrugs at
+Lawrence played by Max Bennett (played by Dave Hearn)
+while
+Nistle played by Sandra Wilkinson (played by Charle Russell)
+looks on.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '25:14.5'
+duration = '1.9'
+crop     = '1040:585'
+
+[output]
+dither   = 'bayer:bayer_scale=2'
+fps      = '18'
+colours  = '80'
+max_size = '1.1mb'
