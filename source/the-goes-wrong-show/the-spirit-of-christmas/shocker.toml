@@ -1,0 +1,42 @@
+title = 'Shocker'
+published = 2020-12-11T06:44:03Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = [
+    'santa', 'robert-groves', 'henry-lewis',
+    'mr-snowman', 'chris-bean', 'henry-shields',
+    'nistle', 'sandra-wilkinson', 'charlie-russell',
+]
+body_markdown = """
+
+Santa played by Robert Groves (played by Henry Lewis)
+says to 
+Mr Snowman played by Chris Bean (played by Henry Shields)
+“You're having a shocker, Chris.”
+
+Nistle played by Sandra Wilkinson (played by Charle Russell)
+looks on uncomfortably.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '27:35'
+duration = '5'
+crop     = '1040:585'
+
+[output]
+dither   = 'bayer:bayer_scale=2'
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+max_size = '3mb'
+
+[[caption]]
+text      = "You’re having a shocker"
+from      = '0.5'
+to        = '2.5'
+placement = 'bl'
+size      = '30'
