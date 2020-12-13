@@ -1,0 +1,52 @@
+title = 'Christmas is hard for all of us'
+published = 2020-12-13T07:11:10Z
+episode_fkey = 'the-goes-wrong-show/the-spirit-of-christmas/index'
+show_fkey = 'the-goes-wrong-show/index'
+tag = [
+    'santa', 'robert-groves', 'henry-lewis',
+    'belle', 'vanessa', 'bryony-corrigan',
+    'mr-snowman', 'chris-bean', 'henry-shields',
+    'nistle', 'sandra-wilkinson', 'charlie-russell',
+]
+body_markdown = """
+
+Belle played by Vanessa (played by Bryony Corrigan)
+starts to cry.
+Santa played by Robert Groves (played by Henry Lewis)
+says “What is it now? What a drain!”
+Mr Snowman played by Chris Bean (played by Henry Shields)
+and
+Nistle played by Sandra Wilkinson (played by Charle Russell)
+look at him in horror.
+Santa continues, 
+“Christmas is hard for all of us!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'goes-wrong-101'
+ext      = 'm4v'
+start    = '18:21.5'
+duration = '7'
+crop     = '1040:585'
+
+[output]
+fps      = '18'
+colours  = '64'
+mode     = 'full'
+max_size = '3.2mb'
+
+[[caption]]
+text      = "What is it now? What a drain!"
+from      = '2'
+to        = '4'
+placement = 'bl'
+size      = '32'
+
+[[caption]]
+text      = "Christmas is hard for all of us!"
+from      = '5'
+to        = '7'
+placement = 'bl'
+size      = '32'
