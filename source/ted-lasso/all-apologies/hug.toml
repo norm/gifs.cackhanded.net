@@ -1,0 +1,26 @@
+title = 'Hug'
+published = 2020-12-14T06:42:34Z
+episode_fkey = 'ted-lasso/all-apologies/index'
+show_fkey = 'ted-lasso/index'
+tag = ['ted-lasso', 'rebecca-welton']
+body_markdown = """
+
+Rebecca hugs Ted, which surprises him and so he takes a moment to hug back.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '13:12.5'
+duration = '4.25'
+crop     = '1200:675'
+
+[output]
+brightness = '0.05'
+colours    = '64'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+max_size   = '2mb'
+mode       = 'full'
