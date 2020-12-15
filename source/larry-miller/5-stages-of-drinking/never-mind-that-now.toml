@@ -1,0 +1,39 @@
+title = 'Never mind that now'
+published = 2020-12-15T06:15:04Z
+source_fkey = 'larry-miller/5-stages-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+Okay. But never mind that now.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '0:12.5'
+duration = '4.35'
+
+[output]
+colours    = '44'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "Okay"
+from      = '0'
+to        = '1'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "But never mind that now"
+from      = '1.01'
+to        = '3'
+placement = 'bc'
+size      = '20'
