@@ -1,0 +1,32 @@
+title = 'No studying'
+published = 2020-12-16T06:40:46Z
+source_fkey = 'ghostbusters/index'
+tag = ['ray-stantz', 'peter-venkman']
+body_markdown = """
+
+Venkman looks at Ray and sneers “No studying…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:12:21.0'
+duration = '5'
+crop     = '960:528'
+
+[output]
+colours    = '38'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '25'
+max_size   = '2.4mb'
+
+[[caption]]
+text      = "No studying…"
+from      = '0.75'
+to        = '2.25'
+margin    = '20'
+placement = 'bl'
+size      = '26'
