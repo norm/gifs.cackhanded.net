@@ -1,0 +1,33 @@
+title = 'Rum and a Coke'
+published = 2020-12-17T05:49:55Z
+source_fkey = 'larry-miller/5-stages-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+For last call you ordered a bottle of rum and a Coke.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '3:09.5'
+duration = '4.45'
+
+[output]
+colours    = '34'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "For last call you ordered\na bottle of rum and a Coke"
+from      = '0'
+to        = '2.45'
+align     = 'center'
+placement = 'bc'
+size      = '20'
