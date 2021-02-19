@@ -13,7 +13,7 @@ $(TOML_DIR)/%.gif: $(TOML_DIR)/%.toml
 	@echo '===' $@
 	@PATH="./bin:${PATH}" make_gif $< $@
 	@stat -f'  = %z %N' $@
-	@open -a Safari $@
+	@open -ga Safari $@
 
 $(TOML_DIR)/%.tn.gif: $(TOML_DIR)/%.gif
 	@gifsicle \
