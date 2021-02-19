@@ -1,0 +1,36 @@
+title = 'Switch me on'
+published = 2021-05-24T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Ray tells Egon “Switch me on”. Egon does that and then backs away into
+the corner of the elevator.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:31:21'
+duration = '8.4'
+crop     = '1120:528'
+
+[output]
+colours    = '48'
+loss       = '30'
+fps        = '18'
+max_size   = '3.6mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Switch me on"
+from      = '0.4'
+to        = '1.8'
+placement = 'bl'
+size      = '32'

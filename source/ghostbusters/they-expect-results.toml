@@ -1,0 +1,42 @@
+title = 'They expect results'
+published = 2021-08-09T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+]
+body_markdown = """
+
+Ray telling Venkman “I’ve worked in the private sector, they expect results.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:14:33.5'
+duration = '3.2'
+crop     = '1040:528:0:0'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+loss       = '30'
+fps        = '18'
+max_size   = '1.4mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "I’ve worked in the private sector"
+from      = '0'
+to        = '1.5'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "They expect results"
+from      = '1.8'
+to        = '3'
+placement = 'bc'
+size      = '32'

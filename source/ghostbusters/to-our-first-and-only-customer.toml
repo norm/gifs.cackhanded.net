@@ -1,0 +1,36 @@
+title = 'To our first and only customer'
+published = 2021-06-07T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Ray raises a toast to “our first and only customer.” Ray, Egon, and Venkman
+drink from cans.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:28:16'
+duration = '5.5'
+crop     = '960:528:80:0'
+
+[output]
+colours    = '48'
+loss       = '25'
+fps        = '18'
+max_size   = '2.34mb'
+mode       = 'full'
+
+[[caption]]
+text      = "To our first and only customer"
+from      = '0.85'
+to        = '3'
+placement = 'bl'
+size      = '32'

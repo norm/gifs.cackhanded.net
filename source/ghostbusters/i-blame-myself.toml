@@ -1,0 +1,47 @@
+title = 'I blame myself'
+published = 2021-07-26T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+While standing in an elevator with Ray and Venkman, Egon says
+“I blame myself.”
+
+Venkman chimes in “So do I.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:31:08'
+duration = '2.8'
+crop     = '1120:528'
+
+[output]
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '1.4mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I blame myself"
+from      = '0'
+to        = '1.1'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "So do I"
+from      = '1.2'
+to        = '2.2'
+# placement = 'br'
+placement = '360,171'
+size      = '32'

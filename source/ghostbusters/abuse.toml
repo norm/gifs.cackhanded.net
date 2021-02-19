@@ -1,0 +1,42 @@
+title = 'I don’t have to take this abuse'
+published = 2021-09-06T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'dana-barrett',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman tells Dana “I don’t have to take this abuse from you, I got
+hundreds of people dying to abuse me.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:43:08'
+duration = '5.5'
+
+[output]
+colours    = '58'
+dither     = 'floyd_steinberg'
+loss       = '50'
+fps        = '18'
+max_size   = '2.5mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I don’t have to take this abuse from you"
+from      = '0.4'
+to        = '3'
+placement = 'br'
+size      = '22'
+
+[[caption]]
+text      = "I got hundreds of people dying to abuse me"
+from      = '3.2'
+to        = '5'
+placement = 'br'
+size      = '22'

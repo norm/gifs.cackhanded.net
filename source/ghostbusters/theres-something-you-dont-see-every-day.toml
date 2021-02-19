@@ -1,0 +1,33 @@
+title = 'There’s something you don’t see every day'
+published = 2021-02-23T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman saying “There’s something you don’t see every day.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:31:36.7'
+duration = '2.2'
+crop     = '960:528:220:0'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+max_size   = '1mb'
+
+[[caption]]
+text      = "There’s something\nyou don’t see every day"
+from      = '0.6'
+to        = '4'
+align     = 'center'
+placement = 'bc'
+size      = '32'

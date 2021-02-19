@@ -1,0 +1,36 @@
+title = 'Sample of your brain tissue'
+published = 2021-11-01T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'louis-tully',
+]
+body_markdown = """
+
+Egon tells Louis “We’d like to get a sample of your brain tissue.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:37:56'
+duration = '2.5'
+crop     = '1040:528'
+
+[output]
+brightness = '0.04'
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '1.35mb'
+mode       = 'full'
+
+[[caption]]
+text      = "We’d like to get a\nsample of your brain tissue"
+from      = '0'
+to        = '4'
+size      = '32'

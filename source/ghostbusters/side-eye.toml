@@ -1,0 +1,28 @@
+title = 'Side eye'
+published = 2021-08-23T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'janine-melnitz',
+    'egon-spengler',
+    'louis-tully',
+]
+body_markdown = """
+
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:01:30.5'
+duration = '6.6'
+crop     = '960:480:280:0'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=3'
+loss       = '25'
+fps        = '18'
+max_size   = '3.05mb'
+mode       = 'full'

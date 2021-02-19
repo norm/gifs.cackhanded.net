@@ -1,0 +1,25 @@
+title = 'Warrant'
+published = 2021-08-02T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'walter-peck',
+]
+body_markdown = """
+
+Walter Peck stands outside Ghostbusters HQ. A man in a suit hands
+him an envelope containing multiple legal documents.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:04:56.5'
+duration = '5.6'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+max_size   = '2.4mb'

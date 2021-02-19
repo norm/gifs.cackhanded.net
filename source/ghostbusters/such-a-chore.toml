@@ -1,0 +1,46 @@
+title = 'Such a chore'
+published = 2021-04-12T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Ray saying “Well that wasn’t such a chore” and Egon just staring at
+him, wordless.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:38:05'
+duration = '5.2'
+crop     = '1040:528:240:0'
+
+[output]
+brightness = '0.035'
+colours    = '48'
+dither     = 'floyd_steinberg'
+fps        = '18'
+max_size   = '2.3mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '4.1'
+end   = '5.7'
+
+[[caption]]
+text      = "Well that wasn’t such a chore"
+from      = '0.4'
+to        = '1.95'
+align     = 'center'
+placement = 'bl'
+size      = '32'

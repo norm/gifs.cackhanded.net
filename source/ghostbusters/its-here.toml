@@ -1,0 +1,35 @@
+title = 'It’s here'
+published = 2021-08-16T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Egon detects a ghost with his PKE meter. “It’s here.” Ray and Venkman 
+come in behind him.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:10:37'
+duration = '6.5'
+crop     = '1040:528:160:0'
+
+[output]
+colours    = '64'
+dither     = 'floyd_steinberg'
+loss       = '50'
+fps        = '18'
+max_size   = '3.1mb'
+
+[[caption]]
+text      = "It’s here"
+from      = '5.8'
+to        = '8'
+placement = 'br'

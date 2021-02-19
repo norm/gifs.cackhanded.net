@@ -1,0 +1,45 @@
+title = 'Where do these stairs go?'
+published = 2021-03-29T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+    'peter-venkman',
+    'winston-zeddemore',
+]
+body_markdown = """
+
+Ray asks “Where do these stairs go?” Venkman and Winston come over. Venkman
+tells him “They go up.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:23:57'
+duration = '7.3'
+crop     = '960:528:160:0'
+
+[output]
+colours    = '64'
+dither     = 'floyd_steinberg'
+loss       = '25'
+fps        = '18'
+max_size   = '3mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "Where do these stairs go?"
+from      = '0.9'
+to        = '2.65'
+placement = 'bl'
+size      = '32'
+
+[[caption]]
+text      = "They go up"
+from      = '6.1'
+to        = '7'
+placement = 'br'
+size      = '32'

@@ -1,0 +1,38 @@
+title = 'What do you mean “bad”?'
+published = 2021-06-14T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman asks Egon “What do you mean ‘bad’?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:35:48.2'
+duration = '3'
+crop     = '960:528:320:0'
+
+[output]
+brightness = '0.04'
+colours    = '58'
+dither     = 'floyd_steinberg'
+loss       = '25'
+fps        = '18'
+max_size   = '1.35mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "What do you mean “bad”?"
+from      = '1.7'
+to        = '3'
+placement = 'bc'
+size      = '28'

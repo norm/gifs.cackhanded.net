@@ -1,0 +1,35 @@
+title = 'We got one!'
+published = 2021-07-12T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'janine-melnitz',
+]
+body_markdown = """
+
+Janine shouts “We got one!” and slams her hand on the alarm button.
+A bell starts ringing and a red light flashes.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:29:02'
+duration = '4.6'
+crop     = '960:528'
+
+[output]
+colours    = '48'
+loss       = '30'
+fps        = '18'
+max_size   = '2.1mb'
+mode       = 'full'
+
+[[caption]]
+text      = "WE GOT ONE!"
+from      = '1.1'
+to        = '2.75'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '48'

@@ -1,0 +1,36 @@
+title = 'Will you excuse me for a second?'
+published = 2021-07-05T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman asks the female volunteer “Will you excuse me for a second?”
+walks over to Ray and slaps him on the head.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:05:33.35'
+duration = '7.5'
+crop     = '960:528:320:0'
+
+[output]
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '25'
+fps        = '18'
+max_size   = '2.8mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "Will you excuse me for a second?"
+from      = '0'
+to        = '1.5'
+size      = '22'

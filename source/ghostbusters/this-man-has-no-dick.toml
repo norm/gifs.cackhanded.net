@@ -1,0 +1,44 @@
+title = 'This man has no dick'
+published = 2021-11-22T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'walter-peck',
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman tells the Mayor about Walter Peck that it is true that
+"This man has no dick."
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:15:22'
+crop     = '948:524'
+
+[output]
+colours    = '58'
+loss       = '25'
+fps        = '18'
+max_size   = '1.9mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2.3'
+
+[[clip]]
+start = '3.1'
+end   = '5'
+
+[[caption]]
+text      = "This man has no dick"
+from      = '0.4'
+to        = '2.1'
+placement = 'bc'
+size      = '32'

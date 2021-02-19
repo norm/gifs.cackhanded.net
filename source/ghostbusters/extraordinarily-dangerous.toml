@@ -1,0 +1,39 @@
+title = 'Extraordinarily dangerous'
+published = 2021-10-04T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'janine-melnitz',
+    'egon-spengler',
+    'louis-tully',
+]
+body_markdown = """
+
+After looking at Louis drinking water straight from a coffee
+jug, Egon tells Venkman over the phone "I think that would be
+extraordinarily dangerous".
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:02:44.5'
+duration = '5.5'
+crop     = '960:528:280:0'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=5'
+loss       = '25'
+fps        = '18'
+max_size   = '2.7mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I think that would be\nextraordinarily dangerous"
+from      = '2.5'
+to        = '5.6'
+align     = 'center'
+placement = 'bc'
+size      = '32'

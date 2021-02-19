@@ -1,0 +1,28 @@
+title = 'PKE meter'
+published = 2021-08-30T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'louis-tully',
+]
+body_markdown = """
+
+Egon turns his PKE meter on Louis, and it immediately goes to maximum.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:00:35.5'
+duration = '2.7'
+crop     = '960:528:320:0'
+
+[output]
+colours    = '110'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '1.5mb'
+mode       = 'full'

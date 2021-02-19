@@ -1,0 +1,43 @@
+title = 'This happen to you before?'
+published = 2021-10-18T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman asks Ray “This happen to you before?” Ray shakes his head.
+“Oh. First time?” Ray nods gravely.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:10:11'
+duration = '7'
+crop     = '1040:528'
+
+[output]
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '3mb'
+width      = '400'
+
+[[caption]]
+text      = "This happen to you before?"
+from      = '1'
+to        = '2'
+align     = 'center'
+size      = '32'
+
+[[caption]]
+text      = "Oh. First time?"
+from      = '4'
+to        = '5.6'
+align     = 'center'
+size      = '32'

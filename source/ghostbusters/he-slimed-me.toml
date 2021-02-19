@@ -1,0 +1,42 @@
+title = 'He slimed me'
+published = 2021-12-13T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Ray kneels over a prone Venkman, who is covered in ectoplasmic residue.
+Venkman says “He slimed me”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:34:19.05'
+crop     = '920:500:180:28'
+
+[output]
+colours    = '54'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '2.18mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '1.6'
+
+[[clip]]
+start = '5.2'
+end   = '7.3'
+
+[[caption]]
+text      = "He slimed me"
+from      = '0'
+to        = '1.59'
+placement = 'bc'

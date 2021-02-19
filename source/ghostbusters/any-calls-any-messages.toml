@@ -1,0 +1,61 @@
+title = 'Any calls?'
+published = 2021-04-05T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'janine-melnitz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman asks Janine “Any calls?” and she almost interrupts him with her
+quick response, “No.”
+
+He tries again. “Any messages?”
+
+“No.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:20:56.25'
+duration = '5'
+crop     = '800:500:260:0'
+
+[output]
+colours    = '48'
+fps        = '18'
+max_size   = '2.25mb'
+width      = '400'
+
+[[caption]]
+text      = "Any calls?"
+from      = '0'
+to        = '1'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "No."
+from      = '0.6'
+to        = '1'
+# placement = 'bl'
+placement = '50,203'
+size      = '32'
+
+[[caption]]
+text      = "Any messages?"
+from      = '1.8'
+to        = '2.8'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "No."
+from      = '2.5'
+to        = '3'
+# placement = 'bl'
+placement = '50,203'
+size      = '32'

@@ -1,0 +1,50 @@
+title = 'I love this plan'
+published = 2021-09-13T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+    'winston-zeddemore',
+]
+body_markdown = """
+
+Venkman, talking the other Ghostbusters, slaps Ray on the face and says
+“I love this plan! I’m excited to be a part of it! Let’s do it!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:33:35.4'
+duration = '6'
+crop     = '960:528'
+
+[output]
+brightness = '0.05'
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '2.7mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I love this plan!"
+from      = '0.6'
+to        = '1.6'
+size      = '32'
+
+[[caption]]
+text      = "I’m excited to be a part of it!"
+from      = '1.8'
+to        = '3.3'
+size      = '32'
+
+[[caption]]
+text      = "Let’s do it!"
+from      = '3.7'
+to        = '5'
+size      = '32'

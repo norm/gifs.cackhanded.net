@@ -1,0 +1,37 @@
+title = 'Ecto-1'
+published = 2021-03-01T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ecto-1',
+]
+body_markdown = """
+
+Ecto-1 starts up and leaves the Ghostbusters HQ.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:29:26'
+
+[output]
+colours    = '80'
+dither     = 'floyd_steinberg'
+loss       = '20'
+fps        = '18'
+max_size   = '3.15mb'
+mode       = 'full'
+
+[[clip]]
+start = '2.5'
+end   = '4'
+
+[[clip]]
+start = '7'
+end   = '8.5'
+
+[[clip]]
+start = '9.8'
+end   = '14'

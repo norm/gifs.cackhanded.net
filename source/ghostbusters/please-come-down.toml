@@ -1,0 +1,36 @@
+title = 'Please come down'
+published = 2021-11-15T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'dana-barrett',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman pleads to a floating Data “Please come down”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:59:07'
+duration = '4'
+crop     = '960:528:240:0'
+
+[output]
+brightness = '0.065'
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '1.8mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Please come down"
+from      = '2.5'
+to        = '3.5'
+placement = 'br'
+size      = '32'

@@ -1,0 +1,43 @@
+title = 'You do your job'
+published = 2021-05-31T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'police-captain',
+]
+body_markdown = """
+
+The Police Captain tells Walter Peck, “You do your job, pencil-neck, don’t
+tell me how to do mine!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:06:58'
+duration = '3.4'
+crop     = '740:400:540:60'
+
+[output]
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '1.72mb'
+mode       = 'full'
+width      = '480'
+
+[[caption]]
+text      = "You do your job, pencil-neck"
+from      = '0'
+to        = '1.5'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "Don’t tell me how to do mine"
+from      = '1.51'
+to        = '3'
+placement = 'bc'
+size      = '32'

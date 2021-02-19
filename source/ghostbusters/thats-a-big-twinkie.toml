@@ -1,0 +1,36 @@
+title = 'That’s a big Twinkie'
+published = 2021-12-20T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'winston-zeddemore',
+]
+body_markdown = """
+
+Winston tells Egon “That’s a big Twinkie.”
+
+Egon nods, and takes a bite out of a normal-sized Twinkie.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:48:19.5'
+duration = '2.8'
+crop     = '1040:528'
+
+[output]
+colours    = '48'
+fps        = '18'
+loss       = '20'
+max_size   = '1.2mb'
+mode       = 'full'
+
+[[caption]]
+text      = "That’s a big Twinkie"
+from      = '0'
+to        = '1'
+placement = 'br'
+size      = '32'

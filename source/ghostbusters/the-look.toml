@@ -1,0 +1,26 @@
+title = 'The look'
+published = 2021-10-11T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+]
+body_markdown = """
+
+Egon and Ray share a look after Venkman has said something.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:23:27.3'
+duration = '1.8'
+crop     = '960:528:260:0'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '0.9mb'

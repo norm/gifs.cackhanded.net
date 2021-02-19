@@ -1,0 +1,38 @@
+title = 'It’s moving'
+published = 2021-02-20T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+    'alice',
+    'library-administrator',
+]
+body_markdown = """
+
+Egon runs up and declares “Ray, it’s moving…” and immediately doubles back.
+Ray grabs his equipment and starts to follow.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:08:19.0'
+duration = '3.5'
+crop     = '960:528'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1.8mb'
+width      = '400'
+
+[[caption]]
+text      = "Ray, it’s moving…"
+from      = '0.2'
+to        = '1.9'
+placement = 'bc'
+size      = '32'

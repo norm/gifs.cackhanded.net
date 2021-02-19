@@ -1,0 +1,45 @@
+title = 'We have the tools, we have the talent'
+published = 2021-03-22T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+    'peter-venkman',
+    'winston-zeddemore',
+]
+body_markdown = """
+
+Winston victoriously tells the other Ghostbusters “We have the tools,
+we have the talent!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:28:44'
+duration = '3.6'
+crop     = '860:370:420:100'
+
+[output]
+brightness = '0.075'
+colours    = '58'
+dither     = 'floyd_steinberg'
+loss       = '25'
+fps        = '18'
+max_size   = '1.65mb'
+mode       = 'full'
+
+[[caption]]
+text      = "We have the tools"
+from      = '0.6'
+to        = '2.2'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "We have the talent"
+from      = '2.25'
+to        = '3.4'
+placement = 'bc'
+size      = '32'

@@ -1,0 +1,42 @@
+title = 'What do you need from me?'
+published = 2021-05-10T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+'mayor-of-new-york',
+]
+body_markdown = """
+
+The Mayor of New York turns from a map and asks the Ghostbusters
+“You got work to do, now whaddaya need from me?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:17:58.2'
+duration = '3.9'
+crop     = '1040:528'
+
+[output]
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '40'
+fps        = '18'
+max_size   = '2.15mb'
+mode       = 'full'
+
+[[caption]]
+text      = "You got work to do"
+from      = '0.6'
+to        = '1.9'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "Now whaddaya need from me?"
+from      = '2.7'
+to        = '4'
+placement = 'bc'
+size      = '32'

@@ -1,0 +1,28 @@
+title = 'Human test'
+published = 2021-12-06T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+]
+body_markdown = """
+
+Egon pokes a hotel guest with his finger to see if he is human.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:33:26'
+duration = '7.3'
+crop     = '800:450:140:20'
+
+[output]
+colours    = '80'
+dither     = 'floyd_steinberg'
+loss       = '40'
+fps        = '18'
+max_size   = '3.1mb'
+mode       = 'full'
+width      = '400'

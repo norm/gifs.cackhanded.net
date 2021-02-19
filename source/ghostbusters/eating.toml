@@ -1,0 +1,28 @@
+title = 'Eating'
+published = 2021-10-25T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'louis-tully',
+    'restaurant',
+]
+body_markdown = """
+
+Louis slides down the window of a restaurant as diners look on. Once he has
+dropped out of view, they all turn back to their meals and conversations.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:54:57.4'
+duration = '6.5'
+crop     = '1040:528'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '2.71mb'
+mode       = 'full'

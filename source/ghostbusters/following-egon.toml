@@ -1,0 +1,30 @@
+title = 'Following Egon'
+published = 2021-03-15T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Egon walks down an aisle of the library, intent on the readings of
+his PKE meter. Venkman and Ray follow.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:10:26.5'
+duration = '3.75'
+crop     = '960:528'
+
+[output]
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '50'
+fps        = '18'
+max_size   = '2mb'
+width      = '400'

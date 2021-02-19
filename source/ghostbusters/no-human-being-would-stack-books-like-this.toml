@@ -1,0 +1,38 @@
+title = 'No human being would stack books like this'
+published = 2021-09-27T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+While observing a stack of hardback books that goes from the floor to the
+ceiling, Venkman says to Ray “You’re right, no human being would stack
+books like this.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:09:02.9'
+duration = '4'
+crop     = '960:528:185:0'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1.8mb'
+width      = '400'
+
+[[caption]]
+text      = "No human being\nwould stack books like this"
+from      = '0'
+to        = '4'
+align     = 'center'
+placement = 'bc'
+size      = '32'

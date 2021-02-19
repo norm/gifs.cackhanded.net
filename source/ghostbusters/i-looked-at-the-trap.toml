@@ -1,0 +1,36 @@
+title = 'I looked at the trap'
+published = 2021-05-17T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ghost-trap',
+    'particle-thrower',
+]
+body_markdown = """
+
+Egon, entranced, saying “I looked at the trap, Ray.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:37:33.35'
+duration = '2.8'
+crop     = '960:528:280:0'
+
+[output]
+colours    = '94'
+dither     = 'floyd_steinberg'
+loss       = '50'
+fps        = '18'
+max_size   = '1.7mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I looked at the trap, Ray"
+from      = '1.1'
+to        = '3'
+placement = 'bc'
+size      = '32'

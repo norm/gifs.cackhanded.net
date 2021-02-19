@@ -1,0 +1,44 @@
+title = 'Tell him about the Twinkie'
+published = 2021-12-27T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+    'winston-zeddemore',
+]
+body_markdown = """
+
+Winston tells Egon to tell Venkman about the Twinkie. Venkman
+turns, serious, and asks “What about the Twinkie?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:48:33'
+duration = '5.2'
+crop     = '1040:528'
+
+[output]
+colours    = '72'
+dither     = 'bayer:bayer_scale=3'
+loss       = '25'
+fps        = '18'
+max_size   = '2.62mb'
+
+[[caption]]
+text      = "Tell him about the Twinkie"
+from      = '1'
+to        = '2'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "What about the Twinkie?"
+from      = '4'
+to        = '5'
+placement = 'bc'
+size      = '32'

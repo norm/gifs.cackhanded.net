@@ -1,0 +1,36 @@
+title = 'I’m always serious'
+published = 2021-11-08T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Egon tells Venkman “I’m always serious.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:13:00.5'
+duration = '3'
+crop     = '800:500:300:0'
+
+[output]
+colours    = '58'
+dither     = 'floyd_steinberg'
+loss       = '50'
+fps        = '18'
+max_size   = '1.88mb'
+width      = '400'
+
+[[caption]]
+text      = "I’m always serious"
+from      = '1'
+to        = '2'
+placement = 'bc'
+size      = '32'

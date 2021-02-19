@@ -1,0 +1,42 @@
+title = 'Type something will you?'
+published = 2021-04-26T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'janine-melnitz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman tells Janine “Type something will you? We’re paying for this stuff.”
+She watches him walk off, then returns to reading a magazine.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:21:08.6'
+duration = '8'
+crop     = '960:528'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '3.3mb'
+
+[[caption]]
+text      = "Type something will you?"
+from      = '0'
+to        = '0.8'
+placement = 'bc'
+size      = '30'
+
+[[caption]]
+text      = "We’re paying for this stuff"
+from      = '0.81'
+to        = '1.8'
+placement = 'bc'
+size      = '30'

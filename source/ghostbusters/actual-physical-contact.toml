@@ -1,0 +1,51 @@
+title = 'Actual physical contact'
+published = 2021-02-22T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Ray, commenting on Venkman having been slimed,
+“That’s great! Actual physical contact!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:34:20.8'
+crop     = '960:528'
+
+[output]
+colours    = '64'
+dither     = 'floyd_steinberg'
+loss       = '30'
+fps        = '18'
+max_size   = '2.1mb'
+mode       = 'full'
+width      = '400'
+
+[[clip]]
+start = '0'
+end   = '3.4'
+
+[[clip]]
+start = '10.5'
+end   = '11.8'
+
+[[caption]]
+text      = "That’s great!"
+from      = '0.2'
+to        = '1.2'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "Actual physical contact!"
+from      = '1.25'
+to        = '3'
+placement = 'br'
+size      = '32'

@@ -1,0 +1,44 @@
+title = 'I don’t think you’re crazy'
+published = 2021-04-19T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'dana-barrett',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman smiles at Dana and says "I don’t think you’re crazy".
+
+Sarcastically she replies "Oh good, that makes me feel so much better".
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:26:47.75'
+duration = '5.2'
+crop     = '960:528'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+max_size   = '2.3mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I don’t think you’re crazy"
+from      = '0.5'
+to        = '1.75'
+placement = 'bl'
+size      = '28'
+
+[[caption]]
+text      = "Oh good, that makes\nme feel so much better"
+from      = '3.4'
+to        = '5.3'
+align     = 'center'
+placement = 'br'
+size      = '28'

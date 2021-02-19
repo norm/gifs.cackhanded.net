@@ -1,0 +1,28 @@
+title = 'Alarm'
+published = 2021-05-03T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'alarm-bell',
+    'red-light',
+]
+body_markdown = """
+
+The alarm bell ringing, with a red light flashing nearby.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:29:05.75'
+duration = '0.5'
+crop     = '960:528'
+
+[output]
+colours    = '96'
+dither     = 'floyd_steinberg'
+fps        = 'original'
+loss       = '20'
+mode       = 'full'
+max_size   = '0.45mb'

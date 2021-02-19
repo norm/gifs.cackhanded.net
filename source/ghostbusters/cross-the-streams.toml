@@ -1,0 +1,35 @@
+title = 'Cross the streams'
+published = 2021-06-28T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+]
+body_markdown = """
+
+Ray, lamenting “cross the streams”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:33:17.48'
+duration = '2.4'
+crop     = '960:528:0:0'
+
+[output]
+brightness = '0.05'
+colours    = '48'
+dither     = 'bayer:bayer_scale=5'
+loss       = '10'
+fps        = '18'
+max_size   = '0.9mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Cross the streams"
+from      = '0'
+to        = '2'
+placement = 'bc'
+size      = '32'

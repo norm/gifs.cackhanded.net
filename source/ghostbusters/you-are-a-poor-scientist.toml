@@ -1,0 +1,62 @@
+title = 'You are a poor scientist'
+published = 2021-03-08T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'dean-yeager',
+    'peter-venkman',
+]
+body_markdown = """
+
+Dean Yeagar tells Venkman “Your theories are the worst kind of popular tripe,
+your methods are sloppy, and your conclusions are highly questionable.
+You are a poor scientist.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:13:55'
+duration = '10'
+crop     = '960:528'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+loss       = '30'
+fps        = '18'
+max_size   = '3mb'
+width      = '400'
+
+[[caption]]
+text      = "Your theories are\nthe worst kind of popular tripe"
+from      = '0.8'
+to        = '3.3'
+align     = 'center'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "Your methods are sloppy"
+from      = '3.31'
+to        = '4.35'
+align     = 'center'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "And your conclusions\nare highly questionable"
+from      = '4.36'
+to        = '6.5'
+align     = 'center'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "You are a poor scientist"
+from      = '6.51'
+to        = '10'
+align     = 'center'
+placement = 'bc'
+size      = '32'

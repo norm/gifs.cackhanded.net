@@ -1,0 +1,43 @@
+title = 'Light is green, trap is clean'
+published = 2021-02-21T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+    'winston-zeddemore',
+    'containment-unit',
+]
+body_markdown = """
+
+Ray, instructing Winston how to use the containment unit, saying
+“The light is green, the trap is clean.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:45:31'
+duration = '4.4'
+crop     = '800:450:800:78'
+
+[output]
+colours    = '74'
+dither     = 'floyd_steinberg'
+loss       = '50'
+fps        = '18'
+max_size   = '2mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "The light is green"
+from      = '1.35'
+to        = '2.4'
+size      = '32'
+
+[[caption]]
+text      = "The trap is clean"
+from      = '2.75'
+to        = '3.8'
+size      = '32'

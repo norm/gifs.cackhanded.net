@@ -1,0 +1,38 @@
+title = 'Go get her'
+published = 2021-06-21T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'ray-stantz',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman exhorts “Go get her, Ray!” 
+
+Ray looks unsure, so Venkman nods positively at him.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:26:09'
+duration = '7.6'
+crop     = '1080:528:130:0'
+
+[output]
+colours    = '48'
+dither     = 'floyd_steinberg'
+loss       = '20'
+fps        = '18'
+max_size   = '3.1mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "Go get her, Ray"
+from      = '0.5'
+to        = '1.9'
+placement = 'br'
+size      = '32'
