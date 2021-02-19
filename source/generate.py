@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from textwrap import dedent
 
 from flourish.generators import mixins
@@ -14,6 +14,14 @@ def global_context(self):
     }
 
 GLOBAL_CONTEXT = global_context
+NOW = datetime.now(tz=timezone.utc)
+
+
+class GifSources:
+    sources_filter = {
+        'published__set': '',
+        'published__lt': NOW,
+    }
 
 
 class SourcePage(base.SourceGenerator):
@@ -24,7 +32,7 @@ class MostRecentFirstMixin:
     order_by = ('-published')
 
 
-class TagIndex(MostRecentFirstMixin, base.IndexGenerator):
+class TagIndex(GifSources, MostRecentFirstMixin, base.IndexGenerator):
     template_name = 'base_template.html'
 
 
@@ -46,13 +54,12 @@ class AllSources(base.IndexGenerator):
     order_by = ('title')
 
 
-class Homepage(MostRecentFirstMixin, base.IndexGenerator):
+class Homepage(GifSources, MostRecentFirstMixin, base.IndexGenerator):
     template_name = 'base_template.html'
-    sources_filter = {'published__set': ''}
     limit = 18
 
 
-class AtomFeed(atom.AtomGenerator):
+class AtomFeed(GifSources, atom.AtomGenerator):
     def get_entry_content(self, object):
         template = dedent("""\
             <p><img src="{url}.gif" alt=''></p>
@@ -74,8 +81,7 @@ class AtomFeed(atom.AtomGenerator):
         )
 
 
-class AllGifsCSV(csv.CSVGenerator):
-    sources_filter = {'published__set': ''}
+class AllGifsCSV(GifSources, csv.CSVGenerator):
     order_by = ('published')
     fields = ['title', 'published', 'url', 'gif', 'thumbnail', 'tag']
 
