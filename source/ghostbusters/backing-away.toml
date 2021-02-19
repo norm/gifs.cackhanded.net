@@ -1,0 +1,29 @@
+title = 'Backing away'
+published = 2021-02-19T07:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'egon-spengler',
+    'ray-stantz',
+    'peter-venkman',
+    'winston-zeddemore',
+]
+body_markdown = """
+
+Ray backs away from the group. Venkman, Egon, and Winston turn to
+look at him and start walking towards him. Ray looks sheepish.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '1:30:22'
+duration = '10'
+crop     = '1040:528'
+
+[output]
+colours    = '40'
+fps        = '18'
+loss       = '30'
+width      = '400'
