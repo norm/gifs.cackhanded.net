@@ -40,7 +40,15 @@ duration = '4'
 # fps        = '12'
 # fps        = '18'
 # loss       = '0'
-# max_size   = '2mb'
+# max_size   = '0.9mb'   # 2s
+# max_size   = '1.35mb'  # 3s
+# max_size   = '1.8mb'   # 4s
+# max_size   = '2.25mb'  # 5s
+# max_size   = '2.7mb'   # 6s
+# max_size   = '3.15mb'  # 7s
+# max_size   = '3.6mb'   # 8s
+# max_size   = '4.05mb'  # 9s
+# max_size   = '4.5mb'   # 10s
 # mode       = 'full'
 # width      = 'original'
 
