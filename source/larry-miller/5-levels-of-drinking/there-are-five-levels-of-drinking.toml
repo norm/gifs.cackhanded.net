@@ -1,5 +1,6 @@
 title = 'There are five levels of drinking'
 published = 2021-03-02T07:00:00Z
+sequence = 1
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

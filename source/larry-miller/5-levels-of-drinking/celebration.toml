@@ -1,5 +1,6 @@
 title = 'Celebration'
 published = 2021-03-16T07:00:00Z
+sequence = 11
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

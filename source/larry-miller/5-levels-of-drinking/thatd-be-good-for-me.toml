@@ -1,5 +1,6 @@
 title = 'That’d be good for me'
 published = 2021-04-06T07:00:00Z
+sequence = 18
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

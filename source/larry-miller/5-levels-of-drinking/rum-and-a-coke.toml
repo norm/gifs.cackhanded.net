@@ -1,5 +1,6 @@
 title = 'Rum and a Coke'
 published = 2020-12-17T05:49:55Z
+sequence = 14
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

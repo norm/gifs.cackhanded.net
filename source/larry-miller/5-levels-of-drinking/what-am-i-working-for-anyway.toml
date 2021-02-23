@@ -1,5 +1,6 @@
 title = 'What am I working for anyway?'
 published = 2021-03-02T07:00:00Z
+sequence = 6
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

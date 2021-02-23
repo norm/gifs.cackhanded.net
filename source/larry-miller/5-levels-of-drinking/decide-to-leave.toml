@@ -1,5 +1,6 @@
 title = 'Decide to leave'
 published = 2021-04-27T07:00:00Z
+sequence = 16
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

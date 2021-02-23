@@ -1,5 +1,6 @@
 title = 'Grin'
 published = 2021-05-25T07:00:00Z
+sequence = 20
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

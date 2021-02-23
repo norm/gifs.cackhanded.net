@@ -12,7 +12,7 @@
 </div>
 
 <ul class='thumbs'>
-  {% for gif in page.source_set.all().order_by('published') %}
+  {% for gif in page.source_set.all().order_by('published', 'sequence') %}
     <li>
       <a href='{{gif.path}}'>
         <img src='{{gif.path}}.tn.gif' alt=''>

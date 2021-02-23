@@ -1,5 +1,6 @@
 title = 'You have no idea'
 published = 2020-12-01T07:11:13Z
+sequence = 10
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

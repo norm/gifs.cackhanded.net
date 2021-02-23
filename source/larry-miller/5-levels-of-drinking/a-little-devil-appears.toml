@@ -1,5 +1,6 @@
 title = 'A little devil appears'
 published = 2021-05-04T07:00:00Z
+sequence = 5
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

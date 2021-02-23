@@ -1,5 +1,6 @@
 title = 'Seven hours sleep'
 published = 2020-10-06T05:43:52Z
+sequence = 3
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """

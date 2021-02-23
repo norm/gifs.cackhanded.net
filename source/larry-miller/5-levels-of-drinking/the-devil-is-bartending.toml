@@ -1,5 +1,6 @@
 title = 'The devil is bartending'
 published = 2021-03-09T07:00:00Z
+sequence = 13
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """
