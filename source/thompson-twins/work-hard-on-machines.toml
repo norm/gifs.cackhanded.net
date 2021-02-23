@@ -1,0 +1,36 @@
+title = 'I know what it means to work hard on machines'
+published = 2021-02-25T07:00:00Z
+source_fkey = 'thompson-twins/you-take-me-up/index'
+artist_fkey = 'thompson-twins/index'
+tag = ['thompson-twins', 'tom-bailey']
+body_markdown = """
+
+Tom Bailey of the Thompson Twins singing “I know what it means to work
+hard on machines”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '5Dho47jZS9U'
+ext      = 'mp4'
+start    = '1:15.9'
+duration = '5'
+crop     = '600:450'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '2mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "I know what it means\nto work hard on machines"
+from      = '0'
+to        = '3.8'
+align     = 'center'
+placement = 'bc'
+size      = '32'
