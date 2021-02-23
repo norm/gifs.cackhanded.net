@@ -30,7 +30,7 @@ text      = "Okay"
 from      = '0'
 to        = '1'
 placement = 'bc'
-size      = '24'
+size      = '20'
 
 [[caption]]
 text      = "But never mind that now"
