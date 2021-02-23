@@ -1,0 +1,18 @@
+#!/usr/bin/env bash -oeu pipefail
+
+days="${1:-60}"
+skip="${2:-}"
+
+for day in $(seq 0 ${days}); do
+    datestamp=$(gdate +'%Y-%m-%d' --date="now $day days")
+    content=$(
+        ( ag published.*$datestamp source || echo '' ) \
+            | cut -d: -f1 \
+            | sed -e 's#source/##' \
+                  -e 's/.toml//'
+    )
+
+    if [ -n "$content" -o -z "$skip" ]; then
+        echo "$datestamp $(gdate +%a --date $datestamp) $content"
+    fi
+done
