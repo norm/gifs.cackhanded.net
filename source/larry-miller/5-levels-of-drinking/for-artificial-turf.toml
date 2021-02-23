@@ -1,12 +1,12 @@
-title = 'Rum and a Coke'
-published = 2020-12-17T05:49:55Z
-source_fkey = 'larry-miller/5-stages-of-drinking/index'
+title = 'For artificial turf'
+published = 2020-11-10T09:05:29Z
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """
 
 Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
 
-For last call you ordered a bottle of rum and a Coke.
+You’ve just spent twenty minutes arguing for artificial turf.
 
 """
 
@@ -14,8 +14,8 @@ For last call you ordered a bottle of rum and a Coke.
 source   = 'youtube'
 file     = 'piPyfqAKf6o'
 ext      = 'mp4'
-start    = '3:09.5'
-duration = '4.45'
+start    = '1:41'
+duration = '5.35'
 
 [output]
 colours    = '34'
@@ -25,9 +25,9 @@ loss       = '25'
 width      = 'original'
 
 [[caption]]
-text      = "For last call you ordered\na bottle of rum and a Coke"
-from      = '0'
-to        = '2.45'
+text      = "You’ve just spent twenty minutes\narguing for artificial turf"
+from      = '1'
+to        = '4'
 align     = 'center'
 placement = 'bc'
 size      = '20'

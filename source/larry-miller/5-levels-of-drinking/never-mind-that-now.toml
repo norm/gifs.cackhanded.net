@@ -1,12 +1,12 @@
-title = 'Against artificial turf'
-published = 2020-11-17T07:17:19Z
-source_fkey = 'larry-miller/5-stages-of-drinking/index'
+title = 'Never mind that now'
+published = 2020-12-15T06:15:04Z
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = ['larry-miller']
 body_markdown = """
 
 Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
 
-You’ve just spent twenty minutes arguing against artificial turf.
+Okay. But never mind that now.
 
 """
 
@@ -14,20 +14,26 @@ You’ve just spent twenty minutes arguing against artificial turf.
 source   = 'youtube'
 file     = 'piPyfqAKf6o'
 ext      = 'mp4'
-start    = '0:55'
-duration = '6.5'
+start    = '0:12.5'
+duration = '4.35'
 
 [output]
-colours    = '34'
+colours    = '44'
 dither     = 'bayer:bayer_scale=5'
 fps        = '18'
 loss       = '25'
 width      = 'original'
 
 [[caption]]
-text      = "You’ve just spent twenty minutes\narguing against artificial turf"
+text      = "Okay"
 from      = '0'
-to        = '3.5'
-align     = 'center'
+to        = '1'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "But never mind that now"
+from      = '1.01'
+to        = '3'
 placement = 'bc'
 size      = '20'
