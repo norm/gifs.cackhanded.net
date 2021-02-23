@@ -1,0 +1,32 @@
+title = 'Someday I’m gonna marry that girl'
+published = 2021-05-18T07:00:00Z
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+Someday I’m gonna marry that girl.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '6:03.6'
+duration = '3.4'
+
+[output]
+colours    = '44'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "Someday I’m gonna marry that girl"
+from      = '0.5'
+to        = '2.7'
+placement = 'bc'
+size      = '20'

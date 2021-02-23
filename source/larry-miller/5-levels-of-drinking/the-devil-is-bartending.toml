@@ -1,0 +1,48 @@
+title = 'The devil is bartending'
+published = 2021-03-09T07:00:00Z
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+Two in the morning, and the devil is bartending.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '2:46'
+
+[output]
+colours    = '40'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[clip]]
+start = '0'
+end   = '6.5'
+
+[[clip]]
+start = '8.5'
+end   = '11.2'
+
+[[caption]]
+text      = "Two in the morning"
+from      = '0'
+to        = '1.5'
+align     = 'center'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "And the devil is bartending"
+from      = '2'
+to        = '4'
+align     = 'center'
+placement = 'bc'
+size      = '20'

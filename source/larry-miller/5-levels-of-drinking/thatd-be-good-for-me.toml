@@ -1,0 +1,32 @@
+title = 'That’d be good for me'
+published = 2021-04-06T07:00:00Z
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+That’d be good for me.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '4:14.4'
+duration = '6'
+
+[output]
+colours    = '44'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "That’d be good for me"
+from      = '2.5'
+to        = '3.8'
+placement = 'bc'
+size      = '20'

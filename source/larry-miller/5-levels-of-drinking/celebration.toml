@@ -1,0 +1,24 @@
+title = 'Celebration'
+published = 2021-03-16T07:00:00Z
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, and waving
+his arms in celebration.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '2:16'
+duration = '4.5'
+
+[output]
+colours    = '34'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'

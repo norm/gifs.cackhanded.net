@@ -1,0 +1,33 @@
+title = 'Turn that around'
+published = 2021-05-11T07:00:00Z
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+I’ll turn that around, make it work for me.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '4:29.8'
+duration = '3.5'
+
+[output]
+colours    = '44'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "I‘ll turn that around,\nmake it work for me"
+from      = '0.2'
+to        = '2.2'
+align     = 'center'
+placement = 'bc'
+size      = '20'

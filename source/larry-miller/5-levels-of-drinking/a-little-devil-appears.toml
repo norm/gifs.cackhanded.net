@@ -1,0 +1,40 @@
+title = 'A little devil appears'
+published = 2021-05-04T07:00:00Z
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+A little devil appears on your shoulder.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '1:03.2'
+duration = '3'
+
+[output]
+colours    = '44'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "A little devil appears on your shoulder"
+from      = '0.2'
+to        = '2'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "*POP*"
+from      = '2.1'
+to        = '2.4'
+placement = 'bc'
+size      = '20'
+font      = 'assistant-extrabold.ttf'
