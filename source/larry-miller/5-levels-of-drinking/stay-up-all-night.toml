@@ -1,0 +1,53 @@
+title = 'Stay up all night'
+published = 2020-11-03T06:39:07Z
+sequence = 17
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+As long as I'm only gonna get a few hours sleep anyway, I might as
+well stay up all night!
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '3:56.85'
+duration = '11.7'
+
+[output]
+colours    = '34'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+# loss       = '25'
+loss       = 'no'
+width      = 'original'
+
+[[caption]]
+text      = "Long as I'm only gonna\nget a few hours sleep anyway"
+from      = '0.9'
+to        = '3.4'
+align     = 'center'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "I might as well"
+from      = '4.9'
+to        = '5.9'
+align     = 'center'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "stay up all night!"
+from      = '7.9'
+to        = '9.4'
+align     = 'center'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '20'

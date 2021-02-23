@@ -1,0 +1,33 @@
+title = 'What am I working for anyway?'
+published = 2021-03-02T07:00:00Z
+sequence = 6
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+What am I working for anyway?
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '1:18'
+duration = '3.5'
+
+[output]
+colours    = '34'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "What am I working for anyway?"
+from      = '0.65'
+to        = '2.4'
+placement = 'bc'
+size      = '20'

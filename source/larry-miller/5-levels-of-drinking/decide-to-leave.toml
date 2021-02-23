@@ -1,0 +1,43 @@
+title = 'Decide to leave'
+published = 2021-04-27T07:00:00Z
+sequence = 16
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+You and your friends decide to leave, right after you get thrown out.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '3:37'
+duration = '7'
+
+[output]
+colours    = '44'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "You and your friends decide to leave"
+from      = '0.5'
+to        = '2.4'
+margin    = '0'
+# placement = 'bc'
+placement = '5,205'
+size      = '20'
+
+
+[[caption]]
+text      = "Right after you get thrown out"
+from      = '2.41'
+to        = '4.1'
+placement = 'bc'
+size      = '20'

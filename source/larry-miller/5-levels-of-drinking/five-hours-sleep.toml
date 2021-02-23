@@ -1,0 +1,41 @@
+title = 'Five hours sleep'
+published = 2020-10-13T04:55:13Z
+sequence = 7
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+As long as I get five hours sleep … I’m cool.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '1:23'
+duration = '9.5'
+
+[output]
+colours    = '34'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "As long as I get five hours sleep"
+from      = '0.75'
+to        = '3'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "I'm cool"
+from      = '7.25'
+to        = '8.5'
+font      = 'assistant-extrabold.ttf'
+placement = 'bc'
+size      = '24'

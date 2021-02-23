@@ -1,0 +1,40 @@
+title = 'There are five levels of drinking'
+published = 2021-03-02T07:00:00Z
+sequence = 1
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+There are five levels of drinking. Six if you live in a trailer park.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '0:02.7'
+duration = '8'
+
+[output]
+colours    = '44'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "There are five levels of drinking"
+from      = '0.5'
+to        = '2.4'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "Six if you live in a trailer park"
+from      = '3.8'
+to        = '6'
+placement = 'bc'
+size      = '20'

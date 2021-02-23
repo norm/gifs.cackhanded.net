@@ -1,0 +1,44 @@
+title = 'Artificial turf'
+published = 2020-11-24T05:55:35Z
+sequence = 15
+source_fkey = 'larry-miller/5-levels-of-drinking/index'
+tag = ['larry-miller']
+body_markdown = """
+
+Larry Miller performing his skit ‘The Five Levels of Drinking’, saying:
+
+You ARE artificial turf.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'piPyfqAKf6o'
+ext      = 'mp4'
+start    = '3:14'
+duration = '4'
+
+[output]
+colours    = '34'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+width      = 'original'
+
+[[caption]]
+text      = "You               artificial turf"
+from      = '0.75'
+to        = '3'
+align     = 'center'
+margin    = '15'
+placement = 'bc'
+size      = '20'
+
+[[caption]]
+text      = "ARE"
+from      = '0.75'
+to        = '3'
+align     = 'center'
+font      = 'greycliffcf-heavy.otf'
+placement = '97,197'
+size      = '26'
