@@ -84,3 +84,4 @@ subl $toml
 ./script/get_videos $toml
 make
 open -a Safari source/$new.gif
+make remake
