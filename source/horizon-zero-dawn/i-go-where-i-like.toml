@@ -1,0 +1,45 @@
+title = 'I go where I like'
+published = 2021-02-26T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'sun-furrows-keeper']
+body_markdown = """
+
+The Sun Furrows Hunting Grounds keeper asks Aloy “Aren’t you a little out
+of your way, Nora?” to which she snaps back “I go where I like!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-like'
+ext      = 'mp4'
+
+[output]
+colours  = '84'
+fps      = '20'
+loss     = '25'
+max_size = '1.8mb'
+
+[[clip]]
+start = '1.45'
+end   = '3.7'
+
+[[caption]]
+text      = "Aren’t you a little\nout of your way, Nora?"
+from      = '0'
+to        = '2'
+align     = 'center'
+placement = 'br'
+size      = '32'
+
+[[clip]]
+start = '7.35'
+end   = '9.2'
+
+[[caption]]
+text      = "I go where I like!"
+from      = '2.25'
+to        = '3.5'
+# placement = 'bl'
+placement = '40,200'
+size      = '26'
