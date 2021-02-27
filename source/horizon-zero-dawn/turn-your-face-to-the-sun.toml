@@ -1,0 +1,44 @@
+title = 'Turn your face to the sun'
+published = 2021-02-27T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'helis']
+body_markdown = """
+
+Helis, holding Aloy aloft, places a knife at her throat and instructs
+“Turn your face to the sun, child.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-sun'
+ext      = 'mp4'
+
+[output]
+colours  = '54'
+fps      = '18'
+loss     = '50'
+dither   = 'floyd_steinberg'
+max_size = '3.12mb'
+mode     = 'full'
+
+[[clip]]
+start = '3.8'
+end   = '5.8'
+
+[[clip]]
+start = '6.8'
+end   = '9.3'
+
+[[caption]]
+text      = "Turn your face to the sun, child"
+from      = '2.2'
+to        = '4.45'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
+
+[[clip]]
+start = '10'
+end   = '11'
