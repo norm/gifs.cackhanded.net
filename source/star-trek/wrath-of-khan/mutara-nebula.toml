@@ -1,0 +1,30 @@
+title = 'Mutara Nebula'
+published = 2021-02-28T07:00:00Z
+source_fkey = 'star-trek/wrath-of-khan/index'
+tag = [
+    'uss-enterprise',
+    'ncc-1701',
+    'mutara-nebula',
+]
+body_markdown = """
+
+The USS Enterprise moving through the Mutara Nebula, as a lightning or static
+charge moves across a part of the nebula.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wrath-of-khan'
+ext      = 'm4v'
+start    = '1:22:28.5'
+duration = '8.4'
+crop     = '1024:528'
+
+[output]
+colours    = '80'
+dither     = 'floyd_steinberg'
+fps        = '18'
+loss       = '20'
+max_size   = '3mb'
+mode       = 'full'
