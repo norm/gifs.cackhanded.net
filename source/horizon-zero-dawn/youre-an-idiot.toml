@@ -1,0 +1,45 @@
+title = 'You’re an idiot'
+published = 2021-03-03T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy']
+body_markdown = """
+
+Aloy telling Helis “You’re an idiot. A dangerous idiot, but an idiot.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-idiot'
+ext      = 'mp4'
+crop     = '1360:765'
+
+[output]
+colours  = '54'
+fps      = '18'
+dither     = 'bayer:bayer_scale=3'
+loss     = '50'
+max_size   = '2.4mb'
+mode       = 'full'
+
+[[clip]]
+start = '4.05'
+end   = '9.5'
+
+[[caption]]
+text      = "You’re an idiot"
+from      = '0'
+to        = '1.2'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "A dangerous idiot, but an idiot"
+from      = '1.8'
+to        = '4.8'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
