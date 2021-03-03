@@ -29,10 +29,10 @@ dev_css:
 	@./script/reset_css
 
 upload:
-	@flourish upload
+	@flourish upload --invalidate
 
 upload_css:
-	@flourish upload
+	@flourish upload --invalidate
 
 rebuild: gifs clean baked_css upload_css generate upload dev_css
 

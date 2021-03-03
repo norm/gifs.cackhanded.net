@@ -2,4 +2,5 @@ author = 'Mark Norman Francis'
 title = 'GIFs'
 base_url = 'https://gifs.cackhanded.net'
 bucket = 'gifs.ch.net'
+cloudfront_id = 'E2UHAOR9WJ1WUL'
 future = false
