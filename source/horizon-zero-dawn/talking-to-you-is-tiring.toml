@@ -1,0 +1,36 @@
+title = 'Talking to you is tiring'
+published = 2021-03-04T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'blameless-marad']
+body_markdown = """
+
+Aloy, comments while talking with Blameless Marad, 
+“Talking to you is tiring.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-tiring'
+ext      = 'mp4'
+
+[output]
+brightness = '0.05'
+colours    = '54'
+fps        = '18'
+dither     = 'bayer:bayer_scale=2'
+mode       = 'full'
+max_size   = '1mb'
+
+[[clip]]
+start = '1.5'
+end   = '3.7'
+
+[[caption]]
+text      = "Talking to you is tiring"
+from      = '0.3'
+to        = '2.3'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
