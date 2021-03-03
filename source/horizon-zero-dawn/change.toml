@@ -1,0 +1,46 @@
+title = 'Change'
+published = 2021-03-17T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'brin']
+body_markdown = """
+
+Brin talking to Aloy, says “Change comes in rushes huntress,
+like time around an arrow.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-change'
+ext      = 'mp4'
+crop     = '1360:765:500:0'
+
+[output]
+brightness = '0.075'
+colours    = '74'
+dither     = 'sierra2'
+fps        = '18'
+loss       = '50'
+max_size   = '3.08mb'
+
+[[clip]]
+start = '1.2'
+end   = '7.1'
+
+[[caption]]
+text      = "Change comes in rushes"
+from      = '0.4'
+to        = '2.85'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "Like time around an arrow"
+from      = '3.3'
+to        = '5.25'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'

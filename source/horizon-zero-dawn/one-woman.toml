@@ -1,0 +1,55 @@
+title = 'One woman'
+published = 2021-03-24T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'teersa']
+body_markdown = """
+
+Teersa says to Aloy “I am just one woman.”
+
+Aloy responds “As am I. No need to sell ourselves short.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-one-woman'
+ext      = 'mp4'
+
+[output]
+brightness = '0.08'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '2.18mb'
+
+[[clip]]
+start = '3.9'
+end   = '9.8'
+
+[[caption]]
+text      = "I am just one woman"
+from      = '0.1'
+to        = '2'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "As am I"
+from      = '2.1'
+to        = '3'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "No need to sell ourselves short"
+from      = '3.9'
+to        = '5.7'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'

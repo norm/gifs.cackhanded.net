@@ -1,0 +1,50 @@
+title = 'Inevitability'
+published = 2021-03-31T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'brin']
+body_markdown = """
+
+Aloy asks Brin “Trying to appeal to my pride?”
+
+He responds “To inevitability.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-inevitability'
+ext      = 'mp4'
+
+[output]
+brightness = '0.075'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1.55mb'
+
+[[clip]]
+start = '5.4'
+end   = '7.1'
+
+[[caption]]
+text      = "Trying to appeal to my pride?"
+from      = '0.05'
+to        = '1.65'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
+
+[[clip]]
+start = '9'
+end   = '10.65'
+
+[[caption]]
+text      = "To inevitability"
+from      = '2'
+to        = '3.7'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'

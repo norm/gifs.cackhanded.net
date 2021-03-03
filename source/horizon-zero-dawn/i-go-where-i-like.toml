@@ -29,8 +29,9 @@ text      = "Aren’t you a little\nout of your way, Nora?"
 from      = '0'
 to        = '2'
 align     = 'center'
+font      = 'oita.otf'
 placement = 'br'
-size      = '32'
+size      = '28'
 
 [[clip]]
 start = '7.35'
@@ -40,6 +41,7 @@ end   = '9.2'
 text      = "I go where I like!"
 from      = '2.25'
 to        = '3.5'
+font      = 'oita.otf'
 # placement = 'bl'
 placement = '40,200'
-size      = '26'
+size      = '28'

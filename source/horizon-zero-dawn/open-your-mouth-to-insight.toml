@@ -1,0 +1,36 @@
+title = 'Open your mouth to insight'
+published = 2021-03-10T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['brin']
+body_markdown = """
+
+Brin telling Aloy “Open your mouth to insight.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-insight'
+ext      = 'mp4'
+
+[output]
+colours    = '54'
+dither     = 'sierra2'
+fps        = '18'
+loss       = '40'
+max_size   = '1.8mb'
+width      = '400'
+
+[[clip]]
+start = '7'
+end   = '10.7'
+
+
+[[caption]]
+text      = "Open your mouth to insight"
+from      = '0.4'
+to        = '3.3'
+align     = 'center'
+placement = 'bc'
+size      = '24'
+font      = 'oita.otf'

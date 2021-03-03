@@ -1,0 +1,46 @@
+title = 'No more stories of the past'
+published = 2021-04-21T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'brin']
+body_markdown = """
+
+Brin saying to Aloy “But no more stories of the past, all told, all done.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-past'
+ext      = 'mp4'
+crop     = '1600:900:260:0'
+
+[output]
+brightness = '0.02'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '25'
+max_size   = '3.02mb'
+width      = '400'
+
+[[clip]]
+start = '3'
+end   = '11'
+
+[[caption]]
+text      = "But no more stories of the past"
+from      = '0.7'
+to        = '3.5'
+align     = 'center'
+placement = 'bc'
+size      = '24'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "All told, all done"
+from      = '4.4'
+to        = '8'
+align     = 'center'
+placement = 'bc'
+size      = '24'
+font      = 'oita.otf'

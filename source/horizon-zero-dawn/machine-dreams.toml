@@ -1,0 +1,33 @@
+title = 'Machine dreams'
+published = 2021-04-14T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'brin']
+body_markdown = """
+
+Brin talking to Aloy, says “Machine dreams, huntress.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-machine-dreams'
+ext      = 'mp4'
+
+[output]
+colours    = '58'
+fps        = '18'
+loss       = '20'
+max_size   = '1.6mb'
+
+[[clip]]
+start = '1.8'
+end   = '5.4'
+
+[[caption]]
+text      = "Machine dreams, huntress"
+from      = '0.4'
+to        = '3.5'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'

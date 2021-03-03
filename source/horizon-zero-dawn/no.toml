@@ -1,0 +1,72 @@
+title = 'You’re curious'
+published = 2021-04-28T07:00:00Z
+source_fkey = 'horizon-zero-dawn/index'
+tag = ['aloy', 'brin']
+body_markdown = """
+
+Aloy responds to Brin, “Uhhhhh, no.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'horizon-no'
+ext      = 'mp4'
+crop     = '1600:900:0:0'
+
+[output]
+brightness = '0.025'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1.1mb'
+
+[[clip]]
+start = '2.1'
+end   = '4.2'
+
+[[caption]]
+text      = "Uh"
+from      = '0.4'
+to        = '0.6'
+align     = 'center'
+placement = '181,235'
+size      = '28'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "Uhh"
+from      = '0.61'
+to        = '0.8'
+align     = 'center'
+placement = '181,235'
+size      = '28'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "Uhhh"
+from      = '0.81'
+to        = '1'
+align     = 'center'
+placement = '181,235'
+size      = '28'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "Uhhhh"
+from      = '1.01'
+to        = '1.2'
+align     = 'center'
+placement = '181,235'
+size      = '28'
+font      = 'oita.otf'
+
+[[caption]]
+text      = "Uhhhh no"
+from      = '1.21'
+to        = '2'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+font      = 'oita.otf'
+
