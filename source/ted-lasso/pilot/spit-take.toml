@@ -17,6 +17,13 @@ start    = '14:31.6'
 duration = '2.8'
 crop     = '1200:675'
 
+[palette]
+add = [
+    '#5a7e4c',  # green for microphone
+    '#9e3e39',  # red for microphone
+    '#d5dc4b',  # yellow for bg light
+]
+
 [output]
 colours    = '48'
 dither     = 'bayer:bayer_scale=2'

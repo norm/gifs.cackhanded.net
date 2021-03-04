@@ -9,7 +9,7 @@
 
     [ "$status" -eq 0 ]
     [ "${lines[0]}" == "    640 x 480" ]
-    [ "${lines[1]}" == "    64 colours" ]
+    [ "${lines[1]}" == "    64 colours (64 initially)" ]
     [ "${lines[2]}" == "    size 1684875" ]
     [ "${lines[3]}" == "  < optimised with loss 0, now 1555222, 92.3% of original" ]
     diff -u $BATS_TMPDIR/gif tests/gifs/original.gif
@@ -79,7 +79,7 @@
     [ "${lines[1]}" == '  " font_size=24 placement=[169, 321] And the climb' ]
     [ "${lines[2]}" == '  " font_size=24 placement=[199, 321] is going' ]
     [ "${lines[3]}" == '  " font_size=24 placement=[82, 321] Where no man has gone before' ]
-    [ "${lines[4]}" == "    102 colours" ]
+    [ "${lines[4]}" == "    102 colours (96 initially)" ]
 
     [ "$status" -eq 0 ]
     diff -u $BATS_TMPDIR/gif tests/gifs/captions.gif
@@ -128,4 +128,16 @@
 
     [ "$status" -eq 0 ]
     diff -u $BATS_TMPDIR/gif tests/gifs/clips_captions_timing.gif
+}
+
+@test generate_palette_additions {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
+    run make_gif tests/config/captions_colours.toml $BATS_TMPDIR/gif
+    echo "$output"
+
+    [ "${lines[4]}" == "    58 colours (48 initially)" ]
+
+    [ "$status" -eq 0 ]
+    diff -u $BATS_TMPDIR/gif tests/gifs/captions_colours.gif
 }

@@ -69,10 +69,14 @@ for arg, more in lookahead(args.key.split('.')):
             if args.length:
                 print(len(data))
                 sys.exit(0)
-            # FIXME, this should be done in the class
-            data = NestedNamespace(data[args.index-1])
+            if more:
+                # FIXME, this should be done in the class
+                data = NestedNamespace(data[args.index-1])
         if not more:
-            print(data)
+            if type(data) == list:
+                print('\n'.join(data))
+            else:
+                print(data)
     except AttributeError:
         if args.length:
             print('0')

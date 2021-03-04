@@ -85,14 +85,21 @@ function main {
                 "${caption_text}" \
                 "${TEMP}/caption-${index}.png"
 
-            caption_colours+=" ${caption_colour:-#ffffff}"
-            caption_colours+=" ${caption_strokecol:-#000000}"
+            caption_colours+="--range ${caption_colour:-#ffffff} "
+            caption_colours+="${caption_strokecol:-#000000} "
 
             caption_args+=" -i ${TEMP}/caption-${index}.png"
         done
     fi
 
-    edit-palette "${TEMP}/palette.png" $caption_colours
+    debug edit-palette \
+        $caption_colours \
+        $(toml $toml palette.add) \
+        "${TEMP}/palette.png"
+
+    if [ -n "$(toml $toml palette.show)" ]; then
+        open "${TEMP}/palette.png"
+    fi
 
     filter_debug "$(generate_filter $toml)"
     debug ffmpeg \

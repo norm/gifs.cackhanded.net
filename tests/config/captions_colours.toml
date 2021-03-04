@@ -1,0 +1,42 @@
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '120'
+duration = '1'
+
+[output]
+colours  = '48'
+fps      = '18'
+
+[palette]
+add = [
+    '#b8cfe4',
+    '#b5c0c8',
+    '#bad3e5',
+    '#bac0bf',
+]
+
+[[caption]]
+text = 'And the climb'
+from = '0'
+to   = '0.3'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = 'is going'
+from = '0.31'
+to   = '0.6'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[[caption]]
+text = 'Where no man has gone before'
+from = '0.61'
+to   = '0.9'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'

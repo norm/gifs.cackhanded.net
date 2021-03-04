@@ -6,34 +6,42 @@ as used by FFmpeg's palette functions.
 Usage: edit-palette palette.png '#000000' '#ffffff' [...]
 """
 
+import argparse
 import sys
 
 from PIL import Image, ImageColor
 
 
-def main():
-    image = Image.open(sys.argv[1])
+def main(args):
+    image = Image.open(args.palette)
     pixels = image.load()
     index = 254;
     colours = {}
+    add = []
 
     for x in range(0, 16):
         for y in range(0, 16):
             colours[pixels[x,y]] = 1
+    orig_count = len(colours)
 
-    arg = 2
-    while len(sys.argv) >= arg+2:
-        (caption, stroke) = sys.argv[arg:arg+2]
-        for colour in colour_range(caption, stroke):
-            if colour not in colours:
-                x = index % 16
-                y = int(index / 16)
-                pixels[x,y] = colour
-                colours[colour] = 1
-                index -= 1
-        arg += 2
-    image.save(sys.argv[1])
-    print('    %s colours' % len(colours))
+    for colour in args.colours:
+        rgb = ImageColor.getrgb(colour)
+        add.append((rgb[0], rgb[1], rgb[2], 255))
+
+    if args.range:
+        for crange in args.range:
+            for colour in colour_range(*crange):
+                add.append(colour)
+
+    for colour in add:
+        if colour not in colours:
+            x = index % 16
+            y = int(index / 16)
+            pixels[x,y] = colour
+            colours[colour] = 1
+            index -= 1
+    image.save(args.palette)
+    print('    %s colours (%s initially)' % (len(colours), orig_count))
 
 
 def colour_range(caption, stroke, steps=5):
@@ -56,4 +64,15 @@ def colour_range(caption, stroke, steps=5):
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description='')
+    parser.add_argument(
+        '--range',
+        nargs=2,
+        action='append',
+    )
+    parser.add_argument(
+        'colours',
+        nargs='*',
+    )
+    parser.add_argument('palette')
+    main(parser.parse_args(sys.argv[1:]))

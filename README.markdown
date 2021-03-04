@@ -33,6 +33,13 @@ start    = '1:24'
 duration = '4.8'
 crop     = '628:468'
 
+[palette]
+add = [
+    '#5a7e4c',
+    '#d5dc4b',
+]
+show = 1
+
 [output]
 brighten = '0.05'
 colours  = '192'
@@ -133,6 +140,12 @@ the video source.
   The default is `bayer:bayer_scale=4`. Illustrative samples can be found in
   "[High quality GIF with FFmpeg][quality]".
 
+### `[palette]` provides finer grained control over the colour palette chosen
+
+* `add` is an array of colours (in any format compatible with
+  [the Pillow ImageColor][col] module) to add to the initial palette
+  formed from the video source
+* `show` will open the final palette selection for inspection
 
 ### `[[caption]]` describes the caption(s)
 
@@ -178,9 +191,10 @@ array, supporting multiple captions in a GIF.
 
 ### Note on colours
 
-If you add a caption, the output GIF may use more colours than specified in
-the `[output]` section. The colours of both the caption and outline are
-interpolated, and up to six colours per caption added to the GIF.
+If you specifically add colours in `[palette]`, or use a caption, the output
+GIF will probably use more colours than specified in the `[output]` section.
+The colours of both the caption text and the outline stroke are interpolated,
+and up to six colours per caption added to the GIF.
 
 As an example, creating a GIF from a video source contains no black or white
 elements and using a white caption with black outline, the palette used will
