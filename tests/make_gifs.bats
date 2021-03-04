@@ -10,8 +10,8 @@
     [ "$status" -eq 0 ]
     [ "${lines[0]}" == "    640x480 dither=bayer_scale=4 fps=original" ]
     [ "${lines[1]}" == "    64 colours (64 initially)" ]
-    [ "${lines[2]}" == "    size 1684875" ]
-    [ "${lines[3]}" == "  < optimised with loss 0, now 1555222, 92.3% of original" ]
+    [ "${lines[2]}" == "    size 1.61mb" ]
+    [ "${lines[3]}" == "  < optimised with loss 0, now 1.48mb, 92.3% of original" ]
     diff -u $BATS_TMPDIR/gif tests/gifs/original.gif
 }
 
@@ -21,10 +21,10 @@
     run make_gif tests/config/lossy.toml $BATS_TMPDIR/gif
     echo "$output"
 
-    [ "${lines[2]}" == "    size 1684875, max_size 1048576" ]
-    [ "${lines[3]}" == "  < optimised with loss 20, now 1253148, 74.3% of original" ]
-    [ "${lines[4]}" == "  < optimised with loss 30, now 1132900, 108.0% of max" ]
-    [ "${lines[5]}" == "  < optimised with loss 40, now 1045286, 99.6% of max" ]
+    [ "${lines[2]}" == "    size 1.61mb, max_size 1.00mb" ]
+    [ "${lines[3]}" == "  < optimised with loss 20, now 1.20mb, 74.3% of original" ]
+    [ "${lines[4]}" == "  < optimised with loss 30, now 1.08mb, 108.0% of max" ]
+    [ "${lines[5]}" == "  < optimised with loss 40, now 1.00mb, 99.6% of max" ]
 
     [ "$status" -eq 0 ]
     diff -u $BATS_TMPDIR/gif tests/gifs/lossy.gif

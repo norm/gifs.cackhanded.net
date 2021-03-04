@@ -56,7 +56,7 @@ function main {
     output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
     echo "    ${output_width}x${output_height}" \
         $(get_dither $toml | sed -e 's/bayer://') \
-        fps=$(toml $toml output.fps)
+        $(get_fps $toml | sed -e 's/^$/fps=original/')
 
 
     # create captions
@@ -119,8 +119,9 @@ function main {
 
     uncompressed_size="$(filesize "${TEMP}/output.gif")"
     output_max_size="$(convert_mb $(toml $toml output.max_size))"
-    echo -n "    size $uncompressed_size"
-    [ -n "$output_max_size" ] && echo -n ", max_size $output_max_size"
+    printf '    size %.2fmb' $(size_in_mb $uncompressed_size)
+    [ -n "$output_max_size" ] && \
+        printf ', max_size %.2fmb' $(size_in_mb $output_max_size)
     echo ''
 
     output_loss="$(toml $toml output.loss)"
@@ -135,9 +136,9 @@ function main {
             "$TEMP/output.gif"
 
         size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
-        printf "  < optimised with loss %d, now %d, %.01f%% of original\n" \
+        printf "  < optimised with loss %d, now %.02fmb, %.01f%% of original\n" \
             $losses \
-            $size \
+            $(size_in_mb $size) \
             "$(echo 3k $size $uncompressed_size / 100 \* p | dc)"
     else
         cp "$TEMP/output.gif" "${TEMP}/gifsicle.${losses}.gif"
@@ -155,9 +156,9 @@ function main {
                 "$TEMP/output.gif"
 
             size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
-            printf "  < optimised with loss %d, now %d, %.01f%% of max\n" \
+            printf "  < optimised with loss %d, now %.02fmb, %.01f%% of max\n" \
                 $losses \
-                $size \
+                $(size_in_mb $size) \
                 "$(echo 3k $size $output_max_size / 100 \* p | dc)"
         done
     fi
@@ -352,6 +353,11 @@ function get_stats_mode {
     local output_mode="$(toml $toml output.mode)"
 
     echo "stats_mode=${output_mode:-diff}"
+}
+
+function size_in_mb {
+    local bytes="$1"
+    echo "$(echo 4k $bytes 1048576 / p | dc)"
 }
 
 function convert_mb {
