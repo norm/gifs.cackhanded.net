@@ -1,0 +1,32 @@
+title = 'I could ask the same of your hair'
+published = 2021-05-14T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['rebecca-welton']
+body_markdown = """
+
+Rebecca saying “I could ask the same of your hair.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '1:31'
+duration = '1.7'
+crop     = '1200:675'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "I could ask the same of your hair"
+from      = '0'
+to        = '1.7'
+placement = 'bc'
+size      = '28'

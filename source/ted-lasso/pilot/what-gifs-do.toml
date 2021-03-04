@@ -1,0 +1,49 @@
+title = 'What GIFs do'
+published = 2022-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['rebecca-welton', 'leslie-higgins']
+body_markdown = """
+
+Rebecca asking Higgins “That’s what GIFs do isn’t it? They’re just … endless.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '17:04'
+duration = '4.4'
+crop     = '1200:678'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.4mb'
+
+[[caption]]
+text      = "That’s what GIFs do isn’t it?\n "
+from      = '0'
+to        = '5'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "They’re just …"
+from      = '0'
+to        = '3.39'
+align     = 'center'
+placement = '120,228'
+size      = '28'
+
+[[caption]]
+text      = "They’re just endless"
+from      = '3.4'
+to        = '5'
+align     = 'center'
+placement = 'bc'
+size      = '28'

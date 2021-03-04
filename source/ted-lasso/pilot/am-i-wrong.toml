@@ -1,0 +1,33 @@
+title = 'Am I wrong?'
+published = 2022-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['rebecca-welton']
+body_markdown = """
+
+WRITE_ME
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '15:17.3'
+duration = '3.5'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+dither     = 'floyd_steinberg'
+fps        = '18'
+loss       = '15'
+max_size   = '2mb'
+
+[[caption]]
+text      = "Am I wrong?"
+from      = '0.95'
+to        = '2'
+align     = 'center'
+placement = 'bc'
+size      = '28'

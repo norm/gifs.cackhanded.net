@@ -1,0 +1,26 @@
+title = 'Dancing'
+published = 2021-03-12T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['ted-lasso']
+body_markdown = """
+
+Ted dancing in a locker room with some American Football players.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '3:44'
+duration = '2'
+crop     = '800:475:278:60'
+
+[output]
+colours    = '64'
+dither     = 'sierra2'
+fps        = '18'
+loss       = '100'
+max_size   = '1.15mb'
+mode       = 'full'

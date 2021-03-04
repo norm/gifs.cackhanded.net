@@ -1,0 +1,32 @@
+title = 'Your casual misogyny for one'
+published = 2022-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['TAG_ME']
+body_markdown = """
+
+WRITE_ME
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '2:01.4'
+duration = '2.8'
+crop     = '1200:675'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.35mb'
+
+[[caption]]
+text      = "Your casual misogyny for one"
+from      = '0'
+to        = '1.95'
+size      = '28'
+placement = 'bc'

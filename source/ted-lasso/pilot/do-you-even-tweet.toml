@@ -1,0 +1,36 @@
+title = 'Do you even tweet?'
+published = 2022-01-01T07:00:00Z
+episode_fkey = 'ted-lasso/pilot/index'
+show_fkey = 'ted-lasso/index'
+tag = ['keeley-jones']
+body_markdown = """
+
+Keeley asks Ted “Do you even tweet?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '24:31.2'
+duration = '0.8'
+crop     = '1200:678'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+# dither     = 'floyd_steinberg'
+# dither     = 'sierra2'
+# dither     = 'sierra2_4a'
+fps        = '18'
+loss       = '0'
+max_size   = '0.36mb'
+
+[[caption]]
+text      = "Do you even tweet?"
+from      = '0'
+to        = '0.9'
+margin    = '40'
+placement = 'br'
+size      = '28'

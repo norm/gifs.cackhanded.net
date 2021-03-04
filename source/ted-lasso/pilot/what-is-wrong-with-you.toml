@@ -1,0 +1,34 @@
+title = 'What is wrong with you?'
+published = 2022-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['rebecca-welton', 'leslie-higgins']
+body_markdown = """
+
+Rebecca asks Higgins “What is wrong with you?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '25:39.3'
+duration = '3.1'
+crop     = '1200:678'
+
+[output]
+colours    = '48'
+dither     = 'floyd_steinberg'
+fps        = '18'
+loss       = '15'
+max_size   = '1.33mb'
+width     = '400'
+
+[[caption]]
+text      = "What is wrong with you?"
+from      = '2.1'
+to        = '2.9'
+margin    = '20'
+placement = 'bl'
+size      = '26'

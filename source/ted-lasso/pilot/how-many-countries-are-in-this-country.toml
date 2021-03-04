@@ -1,0 +1,49 @@
+title = 'How many countries are in this country?'
+published = 2022-01-01T07:00:00Z
+episode_fkey = 'ted-lasso/pilot/index'
+show_fkey = 'ted-lasso/index'
+tag = ['ted-lasso', 'coach-beard', 'nathan-shelley']
+body_markdown = """
+
+Ted asks Nathan and Coach Beard “How many countries are in this country?”
+
+They answer in unison “Four.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '18:58.9'
+duration = '3'
+crop     = '1200:678'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '50'
+# max_size   = '1.35mb'  # 3s
+
+[[caption]]
+text      = "How many countries\nare in this country?"
+from      = '0.2'
+to        = '2'
+align     = 'center'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Four"
+from      = '2.4'
+to        = '2.7'
+placement = '340,191'
+size      = '28'
+
+[[caption]]
+text      = "Four"
+from      = '2.4'
+to        = '2.7'
+placement = '70,191'
+size      = '28'

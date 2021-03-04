@@ -1,0 +1,27 @@
+title = 'Laughing'
+published = 2022-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['jeremy', 'baz', 'paul']
+body_markdown = """
+
+Paul laughs at something Ted says during a press conference,
+so Jeremy and Baz turn to stare at him.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '13:01.7'
+duration = '2.25'
+crop     = '1200:678:140:0'
+
+[output]
+brightness = '0.06'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1mb'

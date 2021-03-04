@@ -1,0 +1,35 @@
+title = 'Punching dicks'
+published = 2022-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['roy-kent', 'sam-obisanya']
+body_markdown = """
+
+Roy telling the team “If I don’t hear silence,
+I’m gonna start punching dicks.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '11:47.8'
+duration = '3.6'
+crop     = '1200:675'
+
+[output]
+brightness = '0.08'
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.6mb'
+
+[[caption]]
+text      = "If I don’t hear silence\nI’m gonna start punching dicks"
+from      = '0.5'
+to        = '3.2'
+align     = 'center'
+placement = 'bc'
+size      = '28'

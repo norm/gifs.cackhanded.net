@@ -1,0 +1,32 @@
+title = 'No thank you'
+published = 2022-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['ted-lasso', 'rebecca-welton']
+body_markdown = """
+
+Ted saying (about tea) “It’s horrible, no thank you.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '10:11.5'
+duration = '1.85'
+crop     = '1200:675'
+
+[output]
+colours    = '58'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "It’s horrible, no thank you"
+from      = '0.3'
+to        = '2'
+placement = 'bc'
+size      = '28'

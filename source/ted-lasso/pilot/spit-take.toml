@@ -1,0 +1,26 @@
+title = 'Spit take'
+published = 2021-03-05T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/pilot/index'
+tag = ['ted-lasso', 'press-conference']
+body_markdown = """
+
+Ted unintentionally spits out some unexpectedly fizzy water.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '14:31.6'
+duration = '2.8'
+crop     = '1200:675'
+
+[output]
+colours    = '48'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '50'
+max_size   = '1.25mb'
+mode       = 'full'
