@@ -8,7 +8,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
-    [ "${lines[0]}" == "    640 x 480" ]
+    [ "${lines[0]}" == "    640x480 dither=bayer_scale=4 fps=original" ]
     [ "${lines[1]}" == "    64 colours (64 initially)" ]
     [ "${lines[2]}" == "    size 1684875" ]
     [ "${lines[3]}" == "  < optimised with loss 0, now 1555222, 92.3% of original" ]
@@ -37,6 +37,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    [ "${lines[0]}" == "    640x480 dither=bayer_scale=4 fps=10" ]
     diff -u $BATS_TMPDIR/gif tests/gifs/fps.gif
 }
 
@@ -47,6 +48,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    [ "${lines[0]}" == "    480x360 dither=floyd_steinberg fps=10" ]
     diff -u $BATS_TMPDIR/gif tests/gifs/scale.gif
 }
 
@@ -91,11 +93,6 @@
     run make_gif tests/config/captions_noscale.toml $BATS_TMPDIR/gif
     echo "$output"
 
-    # [ "${lines[1]}" == '  " font_size=24 placement=[169, 321] And the climb' ]
-    # [ "${lines[2]}" == '  " font_size=24 placement=[199, 321] is going' ]
-    # [ "${lines[3]}" == '  " font_size=24 placement=[82, 321] Where no man has gone before' ]
-    # [ "${lines[4]}" == "    102 colours" ]
-
     [ "$status" -eq 0 ]
     diff -u $BATS_TMPDIR/gif tests/gifs/captions_noscale.gif
 }
@@ -106,11 +103,6 @@
     run make_gif tests/config/clips_captions.toml $BATS_TMPDIR/gif
     echo "$output"
 
-    # [ "${lines[1]}" == '  " font_size=24 placement=[169, 321] And the climb' ]
-    # [ "${lines[2]}" == '  " font_size=24 placement=[199, 321] is going' ]
-    # [ "${lines[3]}" == '  " font_size=24 placement=[82, 321] Where no man has gone before' ]
-    # [ "${lines[4]}" == "    102 colours" ]
-
     [ "$status" -eq 0 ]
     diff -u $BATS_TMPDIR/gif tests/gifs/clips_captions.gif
 }
@@ -120,11 +112,6 @@
 
     run make_gif tests/config/clips_captions_timing.toml $BATS_TMPDIR/gif
     echo "$output"
-
-    # [ "${lines[1]}" == '  " font_size=24 placement=[169, 321] And the climb' ]
-    # [ "${lines[2]}" == '  " font_size=24 placement=[199, 321] is going' ]
-    # [ "${lines[3]}" == '  " font_size=24 placement=[82, 321] Where no man has gone before' ]
-    # [ "${lines[4]}" == "    102 colours" ]
 
     [ "$status" -eq 0 ]
     diff -u $BATS_TMPDIR/gif tests/gifs/clips_captions_timing.gif

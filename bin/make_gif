@@ -54,7 +54,10 @@ function main {
         ${TEMP}/size.gif
     output_width="$( file $TEMP/size.gif | awk '{ print $7 }')"
     output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
-    echo "    ${output_width} x ${output_height}"
+    echo "    ${output_width}x${output_height}" \
+        $(get_dither $toml | sed -e 's/bayer://') \
+        fps=$(toml $toml output.fps)
+
 
     # create captions
     num_captions="$(toml $toml caption --length)"
