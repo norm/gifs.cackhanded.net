@@ -1,0 +1,33 @@
+title = 'Robot arm'
+published = 2021-03-13T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'dr-niles',
+]
+body_markdown = """
+
+Dr. Niles gets impatient with a robot arm.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:49:39'
+duration = '8'
+
+[palette]
+add = [
+    '#86615f',  # skin tones
+    '#7a5d5d',
+]
+
+[output]
+colours    = '62'
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '30'
+max_size   = '3.6mb'
+mode       = 'full'
+width      = '400'

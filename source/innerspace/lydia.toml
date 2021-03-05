@@ -1,0 +1,54 @@
+title = 'Lydia!'
+published = 2021-03-20T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'tuck-pendleton',
+    'taxi-cab',
+    'san-francisco',
+    'kearny-street',
+]
+body_markdown = """
+
+Tuck, shouting after a taxi that is taking his ex-girlfriend and a towel, his
+only clothing, away. “Lydia! LYDIA!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:08:04.8'
+duration = '6.1'
+crop     = '1000:560:140:160'
+
+[palette]
+add = [
+    '#744d49', # taxicab brake lights
+    '#846752',
+]
+
+[output]
+brightness = '0.08'
+colours    = '62'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '40'
+max_size   = '2.85mb'
+width      = '400'
+
+[[caption]]
+text      = "LYDIA!"
+from      = '1'
+to        = '2'
+font      = 'greycliffcf-medium.otf'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "LYDIA!"
+from      = '3.9'
+to        = '5.2'
+font      = 'greycliffcf-heavy.otf'
+placement = 'bc'
+size      = '48'

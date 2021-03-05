@@ -1,0 +1,44 @@
+title = 'Zero defects'
+published = 2021-03-06T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'ozzie-wexler',
+    'tuck-pendleton',
+]
+body_markdown = """
+
+Tuck, staring at himself in a mirror, declares “The Tuck Pendleton
+machine: zero defects.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:12:23'
+duration = '5.4'
+
+[output]
+colours    = '54'
+dither     = 'floyd_steinberg'
+fps        = '18'
+loss       = '25'
+max_size   = '2.7mb'
+width    = '400'
+
+[[caption]]
+text      = "The Tuck Pendleton machine:\n "
+from      = '0.2'
+to        = '5'
+align     = 'center'
+placement = 'tc'
+font      = 'greycliffcf-medium.otf'
+size      = '24'
+
+[[caption]]
+text      = "ZERO DEFECTS"
+from      = '3'
+to        = '5'
+font      = 'greycliffcf-heavy.otf'
+placement = 'bc'
