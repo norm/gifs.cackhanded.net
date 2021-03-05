@@ -13,8 +13,8 @@ Ted unintentionally spits out some unexpectedly fizzy water.
 source   = 'file'
 file     = 'ted-lasso-101'
 ext      = 'm4v'
-start    = '14:31.6'
-duration = '2.8'
+start    = '14:31.0'
+duration = '3.4'
 crop     = '1200:675'
 
 [palette]
@@ -29,5 +29,5 @@ colours    = '48'
 dither     = 'bayer:bayer_scale=2'
 fps        = '18'
 loss       = '50'
-max_size   = '1.25mb'
+max_size   = '1.55mb'
 mode       = 'full'
