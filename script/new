@@ -1,45 +1,78 @@
-#!/bin/sh
+#!/usr/bin/env bash -euo pipefail
 
-set -eu
 
-new="$1"
+function main {
+    local create="$1"
+    local path="$(dirname $create)"
 
-index="$(dirname $new)"
-toml="source/$new.toml"
-dir="$(dirname $toml)"
-video="$(basename $dir)"
+    # create the source/episode index files if necessary
+    local source="${path%/*}"
+    create_source "$source"
 
-mkdir -p $dir
-cat <<EOF > $toml
-title = '${2:-}'
-published = $(date "+%Y-%m-%dT%H:%M:%SZ")
-source_fkey = '$index/index'
-tag = ['TAG_ME']
+    if [ "$source" != "$path" ]; then
+        create_episode "$path"
+    fi
+
+    gif="$(basename $create)"
+    create_gif "$source" "$path" "$gif"
+}
+
+function create_gif {
+    local source="$1"
+    local path="$2"
+    local gif="$3"
+    local toml="source/$path/$gif.toml"
+
+    cat <<EOF > "$toml"
+title = '$gif'
+published = 2100-01-01T07:00:00Z
+EOF
+    
+    if [ "$source" = "$path" ]; then
+        echo "source_fkey = '$source/index'" >> "$toml"
+    else
+        echo "show_fkey = '$source/index'" >> "$toml"
+        echo "episode_fkey = '$path/index'" >> "$toml"
+    fi
+
+    cat <<EOF >> "$toml"
+tag = [
+    'tag',
+    'tag2',
+]
 body_markdown = """
 
-WRITE_ME
+WRITE ME.
 
 """
 
 [video]
-source   = 'file'
-file     = '$video'
+source   = 'file | youtube'
+file     = '$path'
 ext      = 'm4v'
-start    = '00:00:00.0'
-duration = '4'
+start    = '0:00:00.0'
+duration = '1'
 # end      = '00:00:00.0'
 # crop     = '1200:675'
 
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# show = 1
+
 [output]
 # brightness = '0'
-# colours    = '48'
+colours    = '254'
 # dither     = 'bayer:bayer_scale=0-5'
 # dither     = 'floyd_steinberg'
 # dither     = 'sierra2'
 # dither     = 'sierra2_4a'
 # fps        = '12'
 # fps        = '18'
-# loss       = '0'
+fps        = 'original'
+loss       = 'no'
 # max_size   = '0.9mb'   # 2s
 # max_size   = '1.35mb'  # 3s
 # max_size   = '1.8mb'   # 4s
@@ -51,14 +84,7 @@ duration = '4'
 # max_size   = '4.5mb'   # 10s
 # mode       = 'full'
 # width      = 'original'
-
-# values for during creation to help get timings right
-colours  = '256'
-fps      = 'original'
-width    = '800'
-loss     = 'no'
-timing   = 'yes'
-
+width    = '640'
 
 # [[clip]]
 # start = '1'
@@ -66,22 +92,88 @@ timing   = 'yes'
 
 # [[caption]]
 # text      = "Looks like I picked the\nwrong week to give up drinking"
-# from      = '0'
-# to        = '1.7'
-# # not required, but can be used if needed
-# # align     = 'center'
-# # colour    = 'white'
-# # font      = 'assistant-extrabold.ttf'
-# # margin    = '10'
-# # placement = 'bc'
-# # size      = '24'
-# # stroke_colour = 'black'
-# # stroke_width  = '2'
+# from      = '1'
+# to        = '2'
+#
+##### not required, but can be used if needed
+# align     = 'center'
+# colour    = 'white'
+# font      = 'assistant-semibold.ttf'      # DEFAULT
+# font      = 'assistant-extrabold.ttf'     # emphasis
+# font      = 'acherusgrotesque-black.otf'  # eurovision
+# font      = 'greycliffcf-medium.otf'
+# font      = 'greycliffcf-heavy.otf'       # emphasis
+# font      = 'lato-black.ttf'              # "TOP. MEN."
+# font      = 'oita.otf'                    # Horizon Zero Dawn
+# font      = 'poppins-black.ttf'           # Spider-Verse
+# font      = 'morlrounded-regular.otf'     # animated
+# font      = 'morlrounded-italic.otf'      # animated actions (bonk, scream)
+# margin    = '10'
+# placement = 'bc'
+# size      = '24'
+# stroke_colour = 'black'
+# stroke_width  = '2'
 EOF
 
-subl -w $toml
-subl $toml
-./script/get_videos $toml
-make
-open -a Safari source/$new.gif
-make remake
+    subl -w $toml
+    subl $toml
+    ./script/get_videos $toml
+    make
+
+}
+
+function create_source {
+    local source="$1"
+
+    mkdir -p "source/$source"
+    if [ ! -f "source/$source/index.markdown" ]; then
+        cat <<EOF > "source/$source/index.markdown"
+\`\`\`
+title = '$source'
+year = '0000'
+type = 'act agency event game internet movie recording-artist tv-show youtube'
+source = true
+imdb = 'tt0000000'
+wikipedia = '__'
+
+# homepage = 'https://www.guerrilla-games.com/play/horizon'
+# playlist = 'PL--PgETgAz5FGoatB9KQzbnpv0bgZqU2l'
+# url = 'https://vole.wtf/buttystock/'
+# video = 'HU2ftCitvyQ'
+\`\`\`
+
+Write something here. If you want to.
+EOF
+        subl "source/$source/index.markdown"
+    fi
+}
+
+function create_episode {
+    local episode="$1"
+    local source="${episode%/*}"
+
+    mkdir -p "source/$episode"
+    if [ ! -f "source/$episode/index.markdown" ]; then
+        cat <<EOF > "source/$episode/index.markdown"
+\`\`\`
+title = 'TITLE'
+type = 'tv-episode'
+show_fkey = '$source/index'
+season = 1
+episode = 1
+# imdb = 'tt0000000'
+# wikipedia = '__'
+
+type = 'music-video'
+artist_fkey = '$source/index'
+video = '5Dho47jZS9U'
+source = true
+\`\`\`
+
+Write something here. If you want to.
+EOF
+        subl "source/$episode/index.markdown"
+    fi
+}
+
+main "$1"
