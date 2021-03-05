@@ -1,0 +1,28 @@
+title = 'Walking'
+published = 2021-03-14T07:00:00Z
+show_fkey = 'world-order/index'
+episode_fkey = 'world-order/have-a-nice-day/index'
+tag = [
+    'world-order',
+]
+body_markdown = """
+
+The boys of WORLD ORDER walking in simulated slow motion.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '_mkiGMtbrPM'
+ext      = 'mp4'
+start    = '0:40.35'
+duration = '2.7'
+crop     = '1600:900:320:180'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=5'
+fps        = '20'
+loss       = '30'
+max_size   = '1.26mb'
+width      = '400'

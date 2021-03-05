@@ -1,0 +1,26 @@
+title = 'Lights'
+published = 2021-04-11T07:00:00Z
+show_fkey = 'world-order/index'
+episode_fkey = 'world-order/have-a-nice-day/index'
+tag = [
+    'world-order',
+]
+body_markdown = """
+
+Two boys of WORLD ORDER playing with some lights.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '_mkiGMtbrPM'
+ext      = 'mp4'
+start    = '0:43.45'
+duration = '1.7'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '20'
+loss       = '0'
+max_size   = '1.2mb'

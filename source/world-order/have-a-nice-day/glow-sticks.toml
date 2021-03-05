@@ -1,0 +1,27 @@
+title = 'Dancing with glow sticks'
+published = 2021-03-21T07:00:00Z
+show_fkey = 'world-order/index'
+episode_fkey = 'world-order/have-a-nice-day/index'
+tag = [
+    'world-order',
+]
+body_markdown = """
+
+The boys of WORLD ORDER dancing with glow sticks.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '_mkiGMtbrPM'
+ext      = 'mp4'
+start    = '2:59.4'
+duration = '4'
+crop     = '1520:855:220:225'
+
+[output]
+colours    = '128'
+dither     = 'floyd_steinberg'
+fps        = '20'
+loss       = '20'
+max_size   = '1.95mb'

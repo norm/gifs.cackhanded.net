@@ -1,0 +1,35 @@
+title = 'Glasses'
+published = 2021-03-07T07:00:00Z
+show_fkey = 'world-order/index'
+episode_fkey = 'world-order/have-a-nice-day/index'
+tag = [
+    'world-order',
+]
+body_markdown = """
+
+The boys of WORLD ORDER nodding in time, while holding toys and wearing
+comedy glasses.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '_mkiGMtbrPM'
+ext      = 'mp4'
+start    = '1:51.85'
+end      = '1:52.7'
+crop     = '1920:1080:0:0'
+
+[palette]
+add = [
+    '#729345',      # green bg accent
+    '#d4676d',      # pink bg accent
+    '#d05a42',      # reddish pink bg accent
+]
+
+[output]
+colours    = '77'
+dither     = 'bayer:bayer_scale=2'
+fps        = '20'
+loss       = '0'
+max_size   = '0.56mb'

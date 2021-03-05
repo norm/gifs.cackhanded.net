@@ -1,0 +1,44 @@
+title = 'Winning'
+published = 2021-03-18T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'francis-munch',
+]
+body_markdown = """
+
+Francis telling Martha “Some people waste time with the fighting,
+I skip straight to the winning.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '58:11.6'
+duration = '3.5'
+crop     = '950:532:330:0'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.18mb'
+width      = '400'
+
+[[caption]]
+text      = "Some people waste time\nwith the fighting"
+from      = '0'
+to        = '2'
+align     = 'center'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "I skip straight\nto the winning"
+from      = '2.01'
+to        = '4'
+align     = 'center'
+placement = 'bc'
+size      = '24'

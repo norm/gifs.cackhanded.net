@@ -1,0 +1,27 @@
+title = 'Prize crane'
+published = 2021-04-18T07:00:00Z
+show_fkey = 'world-order/index'
+episode_fkey = 'world-order/have-a-nice-day/index'
+tag = [
+    'world-order',
+]
+body_markdown = """
+
+The boys of WORLD ORDER watching a prize crane slowly lower.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '_mkiGMtbrPM'
+ext      = 'mp4'
+start    = '2:07.1'
+duration = '2'
+crop     = '1600:900:320:120'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=2'
+fps        = '20'
+loss       = '0'
+max_size   = '1mb'

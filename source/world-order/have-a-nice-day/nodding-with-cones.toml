@@ -1,0 +1,28 @@
+title = 'Nodding with cones'
+published = 2021-03-28T07:00:00Z
+show_fkey = 'world-order/index'
+episode_fkey = 'world-order/have-a-nice-day/index'
+tag = [
+    'world-order',
+]
+body_markdown = """
+
+The boys of WORLD ORDER nodding and bopping whilst holding some form
+of delicious food in cone form.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '_mkiGMtbrPM'
+ext      = 'mp4'
+start    = '1:46'
+duration = '3.5'
+crop     = '1600:900:0:140'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=2'
+fps        = '20'
+loss       = '0'
+max_size   = '1.7mb'
