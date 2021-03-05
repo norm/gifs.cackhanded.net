@@ -1,0 +1,43 @@
+title = 'How does it feel?'
+published = 2021-03-27T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'tuck-pendleton',
+]
+body_markdown = """
+
+Tuck, staring at himself in a mirror, asks himself “How does it feel?”
+and responds “Feels good.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:12:16'
+duration = '4'
+
+[output]
+colours    = '54'
+dither     = 'floyd_steinberg'
+fps        = '18'
+loss       = '25'
+max_size   = '1.8mb'
+width    = '400'
+
+[[caption]]
+text      = "How does it feel?"
+from      = '0.25'
+to        = '1.4'
+placement = 'bc'
+font      = 'greycliffcf-medium.otf'
+size      = '32'
+
+[[caption]]
+text      = "FEELS GOOD!"
+from      = '1.8'
+to        = '3.4'
+placement = 'bc'
+font      = 'greycliffcf-heavy.otf'
+size      = '48'
