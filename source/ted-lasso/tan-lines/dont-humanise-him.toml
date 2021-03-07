@@ -2,10 +2,10 @@ title = 'Don’t humanise him'
 published = 2020-09-01T06:38:33Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/tan-lines/index'
-tag = ['paul', 'tommy']
+tag = ['jeremy', 'baz', 'paul']
 body_markdown = """
 
-In the pub with everyone watching a Richmond game, Tommy shouts
+In the pub with everyone watching a Richmond game, Baz shouts
 “Dammit Paul, don’t humanise him!”
 
 """

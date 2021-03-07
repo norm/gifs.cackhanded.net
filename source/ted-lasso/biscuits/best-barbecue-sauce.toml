@@ -1,0 +1,40 @@
+title = 'Best barbecue sauce'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'barbecue-sauce',
+]
+body_markdown = """
+
+Ted tastes some of the best barbecue sauce.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '17:00'
+duration = '2.75'
+crop     = '960:540:396:50'
+
+[palette]
+add = [
+    '#ad8471',  # sauce
+    '#9b614a',
+    '#803c1f',
+    '#682c16',
+    '#421207',
+    '#310d09',
+    '#230a06',
+    '#1b0806',
+]
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.25mb'

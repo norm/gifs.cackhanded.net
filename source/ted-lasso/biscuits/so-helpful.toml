@@ -1,0 +1,37 @@
+title = 'So helpful'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'rebecca-welton',
+    'leslie-higgins',
+]
+body_markdown = """
+
+In answer to a question, Higgins' mouth gapes and he doesn't answer.
+Rebecca stares at him for a beat, then says “So helpful.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '6:44.1'
+duration = '3.8'
+crop     = '1120:630'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.8mb'
+mode       = 'full'
+
+[[caption]]
+text      = "So helpful"
+from      = '3'
+to        = '4'
+placement = 'bc'
+size      = '40'

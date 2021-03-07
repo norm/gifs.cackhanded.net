@@ -1,0 +1,28 @@
+title = 'Bite'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'keeley-jones',
+]
+body_markdown = """
+
+Ted holds out a burger so Keeley can take a bite.
+
+"""
+
+[video]
+source   = 'file | youtube'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '19:12.6'
+duration = '2.1'
+crop     = '1120:630:190:48'
+
+[output]
+colours    = '80'
+fps        = '18'
+loss       = '20'
+max_size   = '1.17mb'
+mode       = 'full'

@@ -1,0 +1,55 @@
+title = 'Solid entrance'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'rebecca-welton',
+    'ted-lasso',
+]
+body_markdown = """
+
+A car roars around the corner and slams to a stop.
+Ted comments “Solid entrance.”
+
+"""
+
+[video]
+source   = 'file | youtube'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '8:48.5'
+crop     = '1120:630'
+
+[palette]
+add = [
+    '#4e4f35',  # grass greens
+    '#5c5a42',
+    '#63623b',
+    '#7f7c4e',
+    '#858251',
+]
+
+[output]
+colours    = '53'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.4mb'
+
+[[clip]]
+start = '0'
+end   = '0.9'
+
+[[clip]]
+start = '1.3'
+end   = '2'
+
+[[clip]]
+start = '2.25'
+end   = '3.65'
+
+[[caption]]
+text      = "Solid entrance"
+from      = '1.9'
+to        = '3.6'
+placement = 'bc'

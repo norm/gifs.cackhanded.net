@@ -1,0 +1,30 @@
+title = 'Water pressure'
+published = 2021-03-19T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'roy-kent',
+    'colin',
+]
+body_markdown = """
+
+Colin turns on a shower, only to be knocked to the floor with the 
+water pressure.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '26:56.7'
+duration = '2.5'
+crop     = '1200:675:0:0'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.1mb'
+mode       = 'full'

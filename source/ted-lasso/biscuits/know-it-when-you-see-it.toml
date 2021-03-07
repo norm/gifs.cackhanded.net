@@ -1,0 +1,50 @@
+title = 'You know it when you see it'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'press-conference',
+    'trent-crimm',
+]
+body_markdown = """
+
+Ted tells Trent Crimm (of The Independent) “It ain’t easy to explain,
+but you know it when you see it.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '15:13.2'
+duration = '3.5'
+crop     = '1120:630'
+
+[palette]
+add = [
+    '#476738',  # green mic
+    '#325026',
+    '#7c2624',  # red mic
+    '#4f1214',
+]
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.6mb'
+
+[[caption]]
+text      = "It ain‘t easy to explain"
+from      = '0.3'
+to        = '1.25'
+placement = 'bc'
+
+[[caption]]
+text      = "But you know it when you see it"
+from      = '1.26'
+to        = '2.3'
+placement = 'bc'

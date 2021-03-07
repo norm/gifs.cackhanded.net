@@ -5,7 +5,8 @@ episode_fkey = 'ted-lasso/pilot/index'
 tag = ['rebecca-welton']
 body_markdown = """
 
-WRITE_ME
+Rebecca saying “Am I wrong?” to a member of the press, who gulps and shakes
+his head.
 
 """
 

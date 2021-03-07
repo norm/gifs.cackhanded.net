@@ -1,0 +1,39 @@
+title = 'Psychologically healthy'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'jamie-tartt',
+    'keeley-jones',
+]
+body_markdown = """
+
+Ted, talking to Jamie, “I’m not sure you realise how psychologically
+healthy that actually is.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '9:44.6'
+duration = '4.8'
+crop     = '1120:630:40:24'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '2.4mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I‘m not sure you realise\nhow psychologically healthy\nthat actually is"
+from      = '0.4'
+to        = '3.3'
+align     = 'center'
+placement = 'bc'
+size      = '28'

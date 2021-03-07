@@ -1,0 +1,39 @@
+title = 'I got the moves'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'jamie-tartt',
+]
+body_markdown = """
+
+Jamie wiggles his head and declares “I got the moves.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '14:15.8'
+duration = '1.4'
+crop     = '960:540:0:0'
+
+[palette]
+add = [
+    '#9ab483',  # shirt highlight
+]
+
+[output]
+colours    = '87'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.9mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I got the moves"
+from      = '0.55'
+to        = '1.1'
+placement = 'bc'

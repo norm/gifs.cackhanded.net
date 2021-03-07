@@ -1,0 +1,38 @@
+title = 'Wanker'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'coach-beard',
+]
+body_markdown = """
+
+Ted reads a note from the suggestion box. “Wanker.”
+
+Coach Beard nods, as though he expected that.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '10:25.5'
+duration = '2.1'
+crop     = '1120:630'
+
+[output]
+brightness = '0.05'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '5'
+max_size   = '1mb'
+
+[[caption]]
+text      = "Wanker."
+from      = '0.5'
+to        = '1.4'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,48 @@
+title = 'Yes'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'rebecca-welton',
+    'leslie-higgins',
+]
+body_markdown = """
+
+Ted bursts through Rebecca's office door, making her jump.
+Ted points at Higgins and emphatically says “YES!”
+Higgins double points back.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '12:37.1'
+duration = '4.2'
+crop     = '1120:630'
+
+[palette]
+add = [
+    '#9fa033',  # pictures: green
+    '#b8ad74',  #           light green
+    '#384a22',  #           dark green
+    '#822f23',  #           red
+]
+
+[output]
+colours    = '70'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '25'
+max_size   = '2.2mb'
+
+[[caption]]
+text          = "YES"
+from          = '2.8'
+to            = '3.4'
+placement     = 'bc'
+size          = '96'
+font          = 'greycliffcf-heavy.otf'
+stroke_width  = '5'

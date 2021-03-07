@@ -1,0 +1,42 @@
+title = 'laughing'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'nathan-shelley',
+]
+body_markdown = """
+
+Nathan laughs at a joke Ted has just told. Ted turns and asks
+“You still laughing at stuff you don’t think is funny?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '5:53'
+duration = '5'
+
+[palette]
+add = [
+    '#9a8d57',  # grass highlight
+    '#af9c64',
+]
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.85mb'
+
+[[caption]]
+text      = "You still laughing at stuff\nyou don’t think is funny?"
+from      = '3'
+to        = '6'
+align     = 'center'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,41 @@
+title = 'Hold my beer'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'coach-beard',
+]
+body_markdown = """
+
+Ted passes Coach Beard his coffee and says “Hey, hold my beer.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '11:21.5'
+duration = '2'
+crop     = '1120:630'
+
+[palette]
+add = [
+    '#c08972',  # backpack strap
+    '#734c2a',
+    '#5f311a',
+    '#c06655',  # sunlight through ear
+]
+
+[output]
+colours    = '54'
+fps        = '18'
+loss       = '25'
+max_size   = '1.1mb'
+
+[[caption]]
+text      = "Hold my beer"
+from      = '1.1'
+to        = '2'
+placement = 'bc'

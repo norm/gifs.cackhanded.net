@@ -1,0 +1,46 @@
+title = 'I am equally livid'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'nathan-shelley',
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Nate says to Roy “I am equally livid” and cracks his elbow into Ted's
+office window, splintering the glass. Roy nods approval.
+
+"""
+
+[video]
+source   = 'file | youtube'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '24:31.0'
+crop     = '1120:630:200:48'
+
+[output]
+brightness = '0.09'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '2.5mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '4.1'
+
+[[caption]]
+text      = "I am equally livid"
+from      = '0.4'
+to        = '2.4'
+margin    = '30'
+placement = 'bl'
+
+[[clip]]
+start = '5.7'
+end   = '6.8'

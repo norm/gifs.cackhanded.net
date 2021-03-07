@@ -1,0 +1,36 @@
+title = 'Comfort food'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca looks down at the box of biscuits, then looks back up at Ted.
+His eyes flick to the box.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '17:07.9'
+
+[output]
+colours    = '80'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '15'
+max_size   = '1.8mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2.3'
+
+[[clip]]
+start = '3.2'
+end   = '5.3'

@@ -1,0 +1,41 @@
+title = 'not-you'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'rebecca-welton',
+    'leslie-higgins',
+]
+body_markdown = """
+
+Rebecca says to Higgins “Not you, you garden gnome.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '6:15.8'
+duration = '2.5'
+crop     = '960:540:198:0'
+
+[palette]
+add = [
+    '#38517e',  # light blue (wall)
+]
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1.3mb'
+width      = '400'
+
+[[caption]]
+text      = "Not you, you garden gnome"
+from      = '0.5'
+to        = '1.8'
+placement = 'bc'
+size      = '24'

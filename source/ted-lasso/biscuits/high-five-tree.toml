@@ -1,0 +1,34 @@
+title = 'High-five, tree'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/biscuits/index'
+tag = [
+    'ted-lasso',
+    'high-five',
+]
+body_markdown = """
+
+Ted Lasso high-fives a tree-shaped coat rack as he leaves Rebecca's office.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-102'
+ext      = 'm4v'
+start    = '3:17.75'
+duration = '2'
+crop     = '1200:675:400:400'
+
+[output]
+colours    = '42'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '30'
+max_size   = '0.92mb'
+
+[[caption]]
+text      = "High-five, tree!"
+from      = '0.1'
+to        = '1.2'
+placement = 'bc'
