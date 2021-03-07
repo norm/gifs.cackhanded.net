@@ -24,7 +24,7 @@ function create_gif {
     local toml="source/$path/$gif.toml"
 
     cat <<EOF > "$toml"
-title = '$gif'
+title = '$(echo "$gif" | sed -e 's/-/ /g')'
 published = 2100-01-01T07:00:00Z
 EOF
     
