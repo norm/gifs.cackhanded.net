@@ -1,0 +1,29 @@
+title = 'Wink'
+published = 2021-03-08T11:00:00Z
+show_fkey = 'wandavision/index'
+episode_fkey = 'wandavision/now-in-color/index'
+tag = [
+    'herb',
+    'agatha-harkness',
+    'vision',
+]
+body_markdown = """
+
+Agatha winks at Vision.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wandavision-103'
+ext      = 'm4v'
+start    = '24:14.3'
+duration = '1.7'
+crop     = '720:405:220:150'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '0.91mb'
