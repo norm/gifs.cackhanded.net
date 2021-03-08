@@ -129,7 +129,10 @@ EOF
             videos/$(bin/toml $toml video.file).$(bin/toml $toml video.ext) \
                 | head -1
     )
-    sed -i -e "s/REPLACE_SIZE/$(echo $dimensions | sed -e 's/x/:/')/" $toml
+    sed \
+        -i '' \
+        -e "s/REPLACE_SIZE/$(echo $dimensions | sed -e 's/x/:/')/" \
+            $toml
 
     subl $toml
     make
