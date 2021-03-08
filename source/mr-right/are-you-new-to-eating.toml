@@ -1,0 +1,36 @@
+title = 'Are you new to eating?'
+published = 2021-04-08T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'francis-munch',
+    'martha-mckay',
+]
+body_markdown = """
+
+Martha asks Francis, who is eating a hotdog, “Are you new to eating?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:16:01.0'
+duration = '3.3'
+crop     = '960:532'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '25'
+max_size   = '2.04mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Are you new to eating?"
+from      = '1.5'
+to        = '3.1'
+margin    = '20'
+placement = 'bc'
+size      = '28'

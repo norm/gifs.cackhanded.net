@@ -1,0 +1,27 @@
+title = 'Dead eyeing'
+published = 2021-06-10T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'martha-mckay',
+]
+body_markdown = """
+
+Martha dead-eyeing.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:28:53.9'
+duration = '1.6'
+crop     = '960:532'
+
+[output]
+colours    = '54'
+dither     = 'sierra2'
+fps        = '18'
+loss       = '15'
+max_size   = '0.75mb'
+mode       = 'full'

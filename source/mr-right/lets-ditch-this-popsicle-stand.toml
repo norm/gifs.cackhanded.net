@@ -1,0 +1,43 @@
+title = 'Let’s ditch this popsicle stand'
+published = 2021-07-29T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'francis-munch',
+    'martha-mckay',
+]
+body_markdown = """
+
+Francis tells Martha “Let’s ditch this popsicle stand.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:15:17.2'
+crop     = '960:532'
+
+[output]
+colours    = '90'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '2.1'
+
+[[clip]]
+start = '11.2'
+end   = '12.7'
+
+[[caption]]
+text      = "Let’s ditch this popsicle stand"
+from      = '0'
+to        = '1.6'
+margin    = '20'
+placement = 'bc'
+size      = '28'

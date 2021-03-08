@@ -1,0 +1,45 @@
+title = 'Super good'
+published = 2021-05-06T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'martha-mckay',
+]
+body_markdown = """
+
+Martha brushes some hair from her bloodstained face
+and mutters “Super good, super good.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '1:21:30.5'
+duration = '3.4'
+crop     = '960:532'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.62mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Super good"
+from      = '1'
+to        = '1.6'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Super good"
+from      = '2.35'
+to        = '2.9'
+margin    = '20'
+placement = 'bc'
+size      = '28'

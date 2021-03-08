@@ -1,0 +1,35 @@
+title = 'Nobody’s perfect'
+published = 2021-04-22T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'francis-munch',
+]
+body_markdown = """
+
+Francis says “Nobody’s perfect”, then shoots a woman dead.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:04:33.1'
+duration = '2.9'
+crop     = '960:532:180:0'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.35mb'
+
+[[caption]]
+text      = "Nobody’s perfect"
+from      = '0.2'
+to        = '1'
+margin    = '20'
+placement = 'bc'
+size      = '28'

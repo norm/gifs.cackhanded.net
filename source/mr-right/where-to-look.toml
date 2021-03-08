@@ -1,0 +1,26 @@
+title = 'Where to look'
+published = 2021-07-15T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'martha-mckay',
+]
+body_markdown = """
+
+Martha not quite knowing where to look.
+
+"""
+
+[video]
+source   = 'file | youtube'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:01:50.1'
+duration = '5'
+crop     = '960:532:80:0'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '2.1mb'

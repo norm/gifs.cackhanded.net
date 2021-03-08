@@ -1,0 +1,50 @@
+title = 'She seems sticky'
+published = 2021-06-24T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'sophie',
+    'julia',
+]
+body_markdown = """
+
+Julia declares “I am not touching her, she seems sticky!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:05:37.4'
+duration = '2.45'
+crop     = '560:315:520:210'
+
+[palette]
+add = [
+    '#c4a691',  # flesh tones
+    '#a08670',
+    '#614134',
+]
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '40'
+max_size   = '1.36mb'
+
+[[caption]]
+text      = "I am not touching her"
+from      = '0.16'
+to        = '1.4'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "She seems sticky"
+from      = '1.41'
+to        = '2.3'
+margin    = '20'
+placement = 'bc'
+size      = '28'

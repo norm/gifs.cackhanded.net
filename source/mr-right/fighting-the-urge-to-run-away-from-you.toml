@@ -1,0 +1,33 @@
+title = 'Fighting the urge to run away from you'
+published = 2021-07-01T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'martha-mckay',
+]
+body_markdown = """
+
+Martha, looking perturbed, says “…fighting the urge to run away from you?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:14:23.0'
+duration = '4.2'
+crop     = '960:532:320:0'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "fighting the urge to run away from you"
+from      = '2.5'
+to        = '4'
+placement = '10,215'
+size      = '28'

@@ -1,0 +1,38 @@
+title = 'Double menopause punch'
+published = 2021-05-27T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'martha-mckay',
+    'francis-munch',
+]
+body_markdown = """
+
+Martha telling Francis about her name, describes it as “It’s just a 
+double menopause punch in the… ugh.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:28:23.5'
+duration = '4.5'
+crop     = '960:532:380:0'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '2.05mb'
+
+[[caption]]
+text      = "It’s just a double menopause\npunch in the…"
+from      = '0.4'
+to        = '3.5'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

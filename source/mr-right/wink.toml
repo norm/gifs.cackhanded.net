@@ -1,0 +1,26 @@
+title = 'Wink'
+published = 2021-05-20T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'francis-munch',
+]
+body_markdown = """
+
+Francis winks twice in an overexaggerated manner.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:15:34.7'
+duration = '2.2'
+crop     = '720:405:560:0'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.03mb'

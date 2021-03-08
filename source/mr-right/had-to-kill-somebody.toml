@@ -1,0 +1,46 @@
+title = 'Had to kill somebody'
+published = 2021-04-01T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'francis-munch',
+    'martha-mckay',
+]
+body_markdown = """
+
+Francis sits back down at the restaurant table, saying “Sorry, I had to
+kill somebody in the parking lot.” Martha shakes her head and smiles
+as if to say yeah, that happens.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '0:31:30'
+crop     = '960:532:140:0'
+
+[output]
+brightness = '0.033'
+colours    = '114'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1.83mb'
+
+[[clip]]
+start = '0'
+end   = '2.25'
+
+[[clip]]
+start = '2.7'
+end   = '4'
+
+[[caption]]
+text      = "Had to kill somebody\nin the parking lot"
+from      = '0.5'
+to        = '2.15'
+align     = 'center'
+margin    = '20'
+placement = 'bl'
+size      = '28'

@@ -1,0 +1,46 @@
+title = 'I am a T-Rex'
+published = 2021-08-05T07:00:00Z
+source_fkey = 'mr-right/index'
+tag = [
+    'martha-mckay',
+]
+body_markdown = """
+
+Martha, angry, shouts “I am a T. Rex! I am invincible!”
+and then fires a round from a revolver.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mr-right'
+ext      = 'mp4'
+start    = '1:23:32'
+duration = '5.4'
+crop     = '960:532'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'floyd_steinberg'
+fps        = '18'
+loss       = '50'
+max_size   = '2.47mb'
+
+[[caption]]
+text      = "I AM A T. REX!"
+from      = '0.4'
+to        = '1.8'
+font      = 'assistant-extrabold.ttf'
+margin    = '20'
+placement = 'bc'
+size      = '40'
+
+[[caption]]
+text      = "I AM INVINCIBLE!"
+from      = '2'
+to        = '3.4'
+font      = 'assistant-extrabold.ttf'
+margin    = '20'
+placement = 'bc'
+size      = '40'
