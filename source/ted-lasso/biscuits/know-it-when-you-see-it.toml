@@ -41,10 +41,16 @@ max_size   = '1.6mb'
 text      = "It ain‘t easy to explain"
 from      = '0.3'
 to        = '1.25'
+align     = 'center'
+margin    = '20'
 placement = 'bc'
+size      = '28'
 
 [[caption]]
 text      = "But you know it when you see it"
 from      = '1.26'
 to        = '2.3'
+align     = 'center'
+margin    = '20'
 placement = 'bc'
+size      = '28'

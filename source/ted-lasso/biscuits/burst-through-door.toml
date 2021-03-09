@@ -40,8 +40,8 @@ max_size   = '2.2mb'
 
 [[caption]]
 text          = "YES"
-from          = '2.8'
-to            = '3.4'
+from          = '2.7'
+to            = '3.35'
 placement     = 'bc'
 size          = '96'
 font          = 'greycliffcf-heavy.otf'

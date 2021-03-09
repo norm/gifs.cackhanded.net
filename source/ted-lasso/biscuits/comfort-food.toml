@@ -18,6 +18,7 @@ source   = 'file'
 file     = 'ted-lasso-102'
 ext      = 'm4v'
 start    = '17:07.9'
+crop     = '1200:675'
 
 [output]
 colours    = '80'

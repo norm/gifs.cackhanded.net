@@ -1,5 +1,6 @@
 title = 'Did you have fun?'
 published = 2020-10-31T07:38:33Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/the-diamond-dogs/index'
 show_fkey = 'ted-lasso/index'
 tag = ['ted-lasso', 'coach-beard']
@@ -16,38 +17,51 @@ file     = 'ted-lasso-108'
 ext      = 'm4v'
 start    = '04:29.1'
 duration = '4.5'
-crop     = '1000:580:280:0'
+crop     = '880:495:400:40'
+
+[palette]
+add = [
+    '#152223',  # green shirt
+    '#25383b',
+    '#495762',
+]
 
 [output]
 brightness = '0.05'
-colours    = '74'
+colours    = '71'
 dither     = 'bayer:bayer_scale=2'
 fps        = '18'
 loss       = '20'
-max_size   = '2mb'
-mode       = 'full'
-width      = '400'
+max_size   = '2.6mb'
 
 [[caption]]
 text      = "Did"
 from      = '0.4'
 to        = '0.7'
+margin    = '20'
 placement = 'bl'
+size      = '28'
 
 [[caption]]
 text      = "Did you"
 from      = '0.71'
 to        = '1.1'
+margin    = '20'
 placement = 'bl'
+size      = '28'
 
 [[caption]]
 text      = "Did you have"
 from      = '1.1'
 to        = '1.4'
+margin    = '20'
 placement = 'bl'
+size      = '28'
 
 [[caption]]
 text      = "Did you have fun?"
 from      = '1.41'
 to        = '1.9'
+margin    = '20'
 placement = 'bl'
+size      = '28'

@@ -38,8 +38,10 @@ end   = '4.1'
 text      = "I am equally livid"
 from      = '0.4'
 to        = '2.4'
-margin    = '30'
-placement = 'bl'
+# margin    = '30'
+# placement = 'bl'
+placement = '50,207'
+size      = '28'
 
 [[clip]]
 start = '5.7'

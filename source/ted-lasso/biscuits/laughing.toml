@@ -19,6 +19,7 @@ file     = 'ted-lasso-102'
 ext      = 'm4v'
 start    = '5:53'
 duration = '5'
+crop     = '1200:675'
 
 [palette]
 add = [
@@ -38,5 +39,6 @@ text      = "You still laughing at stuff\nyou don’t think is funny?"
 from      = '3'
 to        = '6'
 align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'

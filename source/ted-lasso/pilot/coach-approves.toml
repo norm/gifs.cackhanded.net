@@ -1,5 +1,6 @@
 title = 'Coach approves'
 published = 2020-08-21T11:30:50Z
+updated = 2021-03-09T14:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/pilot/index'
 tag = ['ted-lasso', 'coach-beard', 'nathan-shelley']
@@ -15,15 +16,18 @@ author_url = 'https://twitter.com/rnalexander'
 
 [video]
 source   = 'file'
-file     = 'ted-lassoS01E01'
-ext      = 'mkv'
-start    = '00:18:09.9'
-end      = '00:18:16.7'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '18:09.9'
+duration = '6.8'
+crop     = '1200:675'
 
 [output]
-colours  = '74'
-fps      = '12'
-loss     = '100'
+colours  = '96'
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '0'
+max_size = '3.15mb'
 
 [[caption]]
 text      = "APPROVE"

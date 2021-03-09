@@ -1,5 +1,6 @@
 title = 'Stuck the landing'
 published = 2020-09-19T07:17:39Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/the-diamond-dogs/index'
 show_fkey = 'ted-lasso/index'
 tag = ['ted-lasso', 'coach-beard', 'nathan-shelley', 'leslie-higgins']
@@ -16,13 +17,15 @@ source   = 'file'
 file     = 'ted-lasso-108'
 ext      = 'm4v'
 start    = '05:41.0'
+crop     = '1120:630:80:0'
 
 [output]
 brightness = '0.075'
-colours    = '58'
-dither     = 'bayer:bayer_scale=2'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
 fps        = '18'
-max_size   = '2.4mb'
+loss       = '10'
+max_size   = '3.06mb'
 mode       = 'full'
 
 [[clip]]
@@ -37,5 +40,6 @@ end   = '14.5'
 text      = "Y’all stuck the landing on that"
 from      = '4'
 to        = '5.25'
+margin    = '20'
 placement = 'bc'
 size      = '28'

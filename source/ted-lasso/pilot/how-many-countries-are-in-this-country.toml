@@ -20,17 +20,17 @@ duration = '3'
 crop     = '1200:678'
 
 [output]
-colours    = '54'
+colours    = '74'
 dither     = 'bayer:bayer_scale=2'
 fps        = '18'
-loss       = '50'
-# max_size   = '1.35mb'  # 3s
+max_size   = '1.35mb'
 
 [[caption]]
 text      = "How many countries\nare in this country?"
 from      = '0.2'
 to        = '2'
 align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'
 

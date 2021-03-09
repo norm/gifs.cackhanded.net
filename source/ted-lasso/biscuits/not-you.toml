@@ -37,5 +37,6 @@ width      = '400'
 text      = "Not you, you garden gnome"
 from      = '0.5'
 to        = '1.8'
+margin    = '20'
 placement = 'bc'
 size      = '24'

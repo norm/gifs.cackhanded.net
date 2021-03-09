@@ -31,4 +31,6 @@ max_size   = '0.92mb'
 text      = "High-five, tree!"
 from      = '0.1'
 to        = '1.2'
+margin    = '20'
 placement = 'bc'
+size      = '28'

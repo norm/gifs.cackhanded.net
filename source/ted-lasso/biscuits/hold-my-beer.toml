@@ -38,4 +38,6 @@ max_size   = '1.1mb'
 text      = "Hold my beer"
 from      = '1.1'
 to        = '2'
+margin    = '20'
 placement = 'bc'
+size      = '28'

@@ -1,5 +1,6 @@
 title = 'Jif'
 published = 2020-11-21T07:24:07Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/pilot/index'
 show_fkey = 'ted-lasso/index'
 tag = ['leslie-higgins', 'rebecca-welton', 'meta']
@@ -16,49 +17,54 @@ file     = 'ted-lasso-101'
 ext      = 'm4v'
 start    = '17:08.5'
 duration = '9.25'
+crop     = '1200:675'
 
 [output]
-colours    = '58'
-dither     = 'bayer:bayer_scale=5'
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
 fps        = '18'
-loss       = '30'
-max_size   = '3mb'
-mode       = 'full'
+loss       = '25'
+max_size   = '4mb'
 
 [[caption]]
 text      = "That’s"
 from      = '1'
 to        = '2'
-placement = '156,197'
+placement = '156,217'
 size      = '28'
 
 [[caption]]
 text      = "That’s correct"
 from      = '2'
 to        = '3'
+margin    = '20'
 placement = 'bc'
 size      = '28'
 
 [[caption]]
 text      = "Though some people\n "
 from      = '3.75'
-to        = '7.5'
+to        = '7.4'
 align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'
 
 [[caption]]
 text      = "pronounce it"
 from      = '5.5'
-to        = '7.5'
+to        = '6.59'
 align     = 'center'
-placement = '134,197'
+margin    = '20'
+placement = '134,217'
 size      = '28'
 
 [[caption]]
 text      = "pronounce it “jif”"
-from      = '6.8'
-to        = '7.5'
+from      = '6.6'
+to        = '7.4'
 align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'

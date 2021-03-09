@@ -29,6 +29,6 @@ max_size   = '2mb'
 text      = "Am I wrong?"
 from      = '0.95'
 to        = '2'
-align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'

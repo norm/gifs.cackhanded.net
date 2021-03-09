@@ -1,5 +1,6 @@
 title = 'Running away'
 published = 2020-11-28T07:31:55Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/pilot/index'
 show_fkey = 'ted-lasso/index'
 tag = ['nathan-shelley', 'leslie-higgins', 'rebecca-welton']
@@ -14,7 +15,8 @@ off in a panic.
 source   = 'file'
 file     = 'ted-lasso-101'
 ext      = 'm4v'
-start    = '8:51.0'
+start    = '8:51'
+duration = '8.5'
 crop     = '1200:675'
 
 [output]
@@ -25,7 +27,3 @@ loss       = '20'
 max_size   = '3.825mb'
 mode       = 'full'
 width      = '400'
-
-[[clip]]
-start = '0'
-end   = '8.5'

@@ -1,5 +1,6 @@
 title = 'Shape-based jokes'
 published = 2020-11-07T06:12:11Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/the-diamond-dogs/index'
 show_fkey = 'ted-lasso/index'
 tag = ['ted-lasso', 'roy-kent']
@@ -16,12 +17,14 @@ file     = 'ted-lasso-108'
 ext      = 'm4v'
 start    = '13:34.3'
 duration = '5'
+crop     = '1120:630'
 
 [output]
 brightness = '0.05'
 colours    = '48'
-dither     = 'bayer:bayer_scale=5'
+dither     = 'bayer:bayer_scale=3'
 fps        = '18'
+max_size   = '2.25mb'
 
 [[clip]]
 start = '0'
@@ -35,4 +38,7 @@ end   = '4.5'
 text      = "Does my face look like it’s in\nthe mood for shape-based jokes?"
 from      = '0'
 to        = '2.4'
+align     = 'center'
 margin    = '20'
+placement = 'bc'
+size      = '28'

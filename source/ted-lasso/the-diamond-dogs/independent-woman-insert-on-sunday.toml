@@ -1,5 +1,6 @@
 title = 'Independent woman, insert on Sunday'
 published = 2020-10-20T05:02:24Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/the-diamond-dogs/index'
 show_fkey = 'ted-lasso/index'
 tag = ['keeley-jones', 'roy-kent']
@@ -15,13 +16,20 @@ source   = 'file'
 file     = 'ted-lasso-108'
 ext      = 'm4v'
 start    = '19:07.5'
+crop     = '1120:630'
+
+[palette]
+add = [
+    '#596852',      # green microphone
+    '#947d4a',      # postit
+]
 
 [output]
 brightness = '0.1'
-colours    = '68'
+colours    = '54'
 dither     = 'bayer:bayer_scale=2'
 fps        = '18'
-max_size   = '2.5mb'
+max_size   = '2.25mb'
 
 [[clip]]
 start = '0'
@@ -36,7 +44,10 @@ start = '10.2'
 end  = '11.5'
 
 [[caption]]
-text      = "Keeley Jones,\nthe independent woman (insert on Sunday)"
+text      = "Keeley Jones, the independent\nwoman (insert on Sunday)"
 from      = '1.9'
 to        = '4'
-size      = '24'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

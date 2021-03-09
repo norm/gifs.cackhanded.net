@@ -1,5 +1,6 @@
 title = 'Ain’t that right'
 published = 2020-09-26T07:25:00Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/all-apologies/index'
 show_fkey = 'ted-lasso/index'
 tag = ['mae', 'coach-beard', 'ted-lasso']
@@ -28,43 +29,51 @@ crop     = '1200:675:200:0'
 
 [output]
 brightness = '0.075'
-colours    = '58'
-dither     = 'bayer:bayer_scale=5'
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
 fps        = '18'
-loss       = '25'
+loss       = '20'
 mode       = 'full'
+# max_size   = '4.5mb'  # 10s
+max_size   = '3.63mb'
 
 [[caption]]
 text      = "Winning does matter to them"
-from      = '0'
+from      = '0.1'
 to        = '1.2'
+margin    = '20'
 placement = 'br'
-size      = '32'
+size      = '28'
 
 [[caption]]
 text      = "And it matters to me"
-from      = '1.6'
+from      = '1.5'
 to        = '2.75'
+margin    = '20'
 placement = 'br'
-size      = '32'
+size      = '28'
 
 [[caption]]
 text      = "And that’s okay"
 from      = '3.2'
 to        = '4.4'
-placement = 'br'
-size      = '32'
+margin    = '20'
+# placement = 'br'
+placement = '232,217'
+size      = '28'
 
 [[caption]]
 text      = "Ain’t that right, Mae?"
 from      = '5'
 to        = '6.45'
+margin    = '20'
 placement = 'br'
-size      = '32'
+size      = '28'
 
 [[caption]]
 text      = "A-fucking-men it is"
 from      = '6.46'
 to        = '8.4'
+margin    = '20'
 placement = 'bl'
-size      = '32'
+size      = '28'

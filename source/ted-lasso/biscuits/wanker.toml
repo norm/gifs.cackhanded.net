@@ -31,8 +31,9 @@ loss       = '5'
 max_size   = '1mb'
 
 [[caption]]
-text      = "Wanker."
+text      = "“Wanker.”"
 from      = '0.5'
 to        = '1.4'
+margin    = '20'
 placement = 'bc'
 size      = '28'

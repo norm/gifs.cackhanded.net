@@ -1,12 +1,13 @@
 title = 'I cannot wait to unpack that with you'
 published = 2020-08-21T11:30:50Z
+updated = 2021-03-09T14:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/pilot/index'
 tag = ['ted-lasso', 'coach-beard', 'rebecca-welton']
 body_markdown = """
 
-After an interesting comment by Rebecca, Ted replies with “If that’s a joke, I
-love it! If not, I cannot wait to unpack that with you.”
+After an interesting comment by Rebecca, Ted replies with “If that’s a joke,
+I love it! If not, I cannot wait to unpack that with you.”
 
 """
 
@@ -15,32 +16,33 @@ author_url = 'https://twitter.com/rnalexander'
 
 [video]
 source   = 'file'
-file     = 'ted-lassoS01E01'
-ext      = 'mkv'
-start    = '00:09:11.25'
-end      = '00:09:15.5'
+file     = 'ted-lasso-101'
+ext      = 'm4v'
+start    = '9:11.25'
+duration = '4.3'
+crop     = '1120:630:0:20'
 
 [output]
-colours  = '48'
+colours  = '64'
 fps      = '18'
 dither   = 'bayer:bayer_scale=3'
-loss     = '50'
-max_size = '1.6mb'
+max_size = '2.02mb'
+width    = '400'
 
 [[caption]]
 text      = "If that’s a joke, I love it!"
 from      = '0.75'
 to        = '2'
 align     = 'left'
-colour    = 'white'
+margin    = '20'
 placement = 'bl'
 size      = '28'
 
 [[caption]]
-text      = "If not, I cannot wait\nto unpack that with you."
+text      = "If not, I cannot wait\nto unpack that with you"
 from      = '2.6'
 to        = '5.0'
 align     = 'left'
-colour    = 'white'
+margin    = '20'
 placement = 'bl'
 size      = '28'

@@ -31,9 +31,10 @@ max_size   = '2.4mb'
 mode       = 'full'
 
 [[caption]]
-text      = "I‘m not sure you realise\nhow psychologically healthy\nthat actually is"
+text      = "I‘m not sure you realise how\npsychologically healthy that actually is"
 from      = '0.4'
 to        = '3.3'
 align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'

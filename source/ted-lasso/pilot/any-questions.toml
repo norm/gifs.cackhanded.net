@@ -1,5 +1,6 @@
 title = 'Any questions'
 published = 2020-11-14T06:54:54Z
+updated = 2021-03-09T14:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/pilot/index'
 tag = ['ted-lasso', 'leslie-higgins']
@@ -18,13 +19,18 @@ start    = '12:08.4'
 duration = '3.8'
 crop     = '1200:675'
 
+[palette]
+add = [
+    '#963834',  # red microphone
+    '#69805f',  # green microphone
+]
+
 [output]
-colours    = '88'
-dither     = 'bayer:bayer_scale=2'
+colours    = '56'
+dither     = 'bayer:bayer_scale=3'
 fps        = '18'
-loss       = '50'
-max_size   = '1.8mb'
-mode       = 'full'
+loss       = '15'
+max_size   = '1.85mb'
 
 [[caption]]
 text      = "Anybody got any questions?"
@@ -32,3 +38,4 @@ from      = '0'
 to        = '1.4'
 margin    = '20'
 placement = 'bc'
+size      = '28'

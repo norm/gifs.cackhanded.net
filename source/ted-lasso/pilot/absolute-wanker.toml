@@ -28,5 +28,6 @@ text      = "He’s an absolute wanker"
 from      = '0.65'
 to        = '2'
 align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'

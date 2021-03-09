@@ -1,5 +1,6 @@
 title = 'Hug'
 published = 2020-12-14T06:42:34Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/all-apologies/index'
 show_fkey = 'ted-lasso/index'
 tag = ['ted-lasso', 'rebecca-welton']
@@ -19,8 +20,7 @@ crop     = '1200:675'
 
 [output]
 brightness = '0.05'
-colours    = '64'
-dither     = 'bayer:bayer_scale=5'
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
 fps        = '18'
-max_size   = '2mb'
-mode       = 'full'
+max_size   = '1.9mb'

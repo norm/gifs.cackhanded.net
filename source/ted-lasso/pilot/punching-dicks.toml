@@ -31,5 +31,6 @@ text      = "If I don’t hear silence\nI’m gonna start punching dicks"
 from      = '0.5'
 to        = '3.2'
 align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'

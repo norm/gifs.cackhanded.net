@@ -1,5 +1,6 @@
 title = 'Independent woman, online'
 published = 2020-10-17T05:30:15Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/the-diamond-dogs/index'
 show_fkey = 'ted-lasso/index'
 tag = ['keeley-jones', 'roy-kent']
@@ -18,16 +19,23 @@ start    = '18:33.5'
 duration = '6.2'
 crop     = '1000:580:0:0'
 
+[palette]
+add = [
+    '#596852',      # green microphone
+]
+
 [output]
 brightness = '0.1'
-colours    = '68'
+colours    = '54'
 dither     = 'bayer:bayer_scale=2'
 fps        = '18'
-loss       = '25'
-max_size   = '2.1mb'
+max_size   = '2.7mb'
 
 [[caption]]
-text      = "Keeley Jones,\nthe independent woman (online edition)"
+text      = "Keeley Jones, the independent\nwoman (online edition)"
 from      = '3'
 to        = '5.3'
-size      = '24'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

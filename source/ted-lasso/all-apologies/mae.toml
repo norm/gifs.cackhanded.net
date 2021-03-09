@@ -1,5 +1,6 @@
 title = 'Mae'
 published = 2020-09-26T07:26:00Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/all-apologies/index'
 show_fkey = 'ted-lasso/index'
 tag = ['mae', 'coach-beard', 'ted-lasso']
@@ -20,7 +21,7 @@ crop     = '1200:675'
 
 [output]
 brightness = '0.075'
-colours    = '48'
+colours    = '80'
 dither     = 'bayer:bayer_scale=2'
 fps        = '18'
-mode       = 'full'
+max_size   = '1.82mb'

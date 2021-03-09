@@ -1,5 +1,6 @@
 title = 'Don’t humanise him'
 published = 2020-09-01T06:38:33Z
+updated = 2021-03-09T14:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/tan-lines/index'
 tag = ['jeremy', 'baz', 'paul']
@@ -15,13 +16,14 @@ source   = 'file'
 file     = 'ted-lasso-105'
 ext      = 'm4v'
 start    = '17:03'
+crop     = '1200:675'
 
 [output]
-brightness = '0.1'
-colours    = '42'
-fps        = '12'
-max_size   = '1.4mb'
-mode       = 'full'
+brightness = '0.075'
+colours    = '74'
+fps        = '18'
+loss       = '20'
+max_size   = '2.1mb'
 
 [[clip]]
 start = '0'
@@ -35,5 +37,7 @@ end   = '7.1'
 text      = "Dammit Paul, don’t humanise him!"
 from      = '2'
 to        = '5'
+align     = 'center'
+margin    = '20'
 placement = 'bc'
 size      = '28'

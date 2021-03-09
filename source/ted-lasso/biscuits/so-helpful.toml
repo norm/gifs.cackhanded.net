@@ -33,5 +33,6 @@ mode       = 'full'
 text      = "So helpful"
 from      = '3'
 to        = '4'
+margin    = '20'
 placement = 'bc'
-size      = '40'
+size      = '28'

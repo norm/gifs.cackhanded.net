@@ -1,5 +1,6 @@
 title = 'Independent woman, magazine'
 published = 2020-10-18T05:27:52Z
+updated = 2021-03-09T14:00:00Z
 episode_fkey = 'ted-lasso/the-diamond-dogs/index'
 show_fkey = 'ted-lasso/index'
 tag = ['keeley-jones', 'roy-kent']
@@ -15,10 +16,16 @@ source   = 'file'
 file     = 'ted-lasso-108'
 ext      = 'm4v'
 start    = '18:51'
+crop     = '1040:585:0:0'
+
+[palette]
+add = [
+    '#596852',      # green microphone
+]
 
 [output]
 brightness = '0.1'
-colours    = '68'
+colours    = '54'
 dither     = 'bayer:bayer_scale=2'
 fps        = '18'
 max_size   = '2.5mb'
@@ -35,4 +42,7 @@ end  = '6'
 text      = "Keeley Jones,\nthe independent woman (magazine)"
 from      = '2.5'
 to        = '4.15'
-size      = '24'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
