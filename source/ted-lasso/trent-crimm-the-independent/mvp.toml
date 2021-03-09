@@ -1,0 +1,45 @@
+title = 'M.V.P.!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'ted-lasso',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Ted crying “M.V.P.!” repeatedly at Rebecca.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '12:55.6'
+duration = '5'
+crop     = '1200:675'
+
+[output]
+brightness = '0.035'
+colours    = '64'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '2.3mb'
+
+[[caption]]
+text      = "MVP!"
+from      = '0.3'
+to        = '1.5'
+margin    = '20'
+font      = 'poppins-black.ttf'
+placement = '118,212'
+
+[[caption]]
+text      = "MVP!  MVP!"
+from      = '1.51'
+to        = '2.9'
+margin    = '20'
+font      = 'poppins-black.ttf'
+placement = 'bc'

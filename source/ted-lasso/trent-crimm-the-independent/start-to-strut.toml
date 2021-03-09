@@ -1,0 +1,35 @@
+title = 'Start to strut'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted starts to strut. “Oooh, I like this.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '4:29.25'
+duration = '2.3'
+crop     = '1040:585:0:40'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+fps        = '18'
+loss       = '15'
+max_size   = '1.12mb'
+
+[[caption]]
+text      = "Oooh, I like this"
+from      = '1.3'
+to        = '2.3'
+margin    = '20'
+placement = 'bc'
+size      = '28'

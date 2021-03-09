@@ -1,0 +1,39 @@
+title = 'That’s not a compliment I’ve had before'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'rebecca-welton',
+    'ted-lasso',
+    'keeley-jones',
+]
+body_markdown = """
+
+Rebecca tells Ted and Keeley “That’s not a compliment I’ve had before.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '7:02'
+duration = '3.2'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.4mb'
+mode       = 'full'
+
+[[caption]]
+text      = 'That’s not a compliment I’ve had before'
+from      = '0.25'
+to        = '1.9'
+margin    = '20'
+placement = 'bc'
+size      = '24'

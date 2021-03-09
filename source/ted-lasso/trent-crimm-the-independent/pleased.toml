@@ -1,0 +1,27 @@
+title = 'Pleased'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca looks pleased.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '20:15.3'
+duration = '2.8'
+crop     = '1200:675'
+
+[output]
+colours    = '80'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.25mb'

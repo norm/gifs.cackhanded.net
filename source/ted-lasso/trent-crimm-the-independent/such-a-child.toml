@@ -1,0 +1,44 @@
+title = 'Such a child'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy takes a swig from a bottle. “Vanilla vodka? Such a child.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '29:05.7'
+duration = '4.6'
+crop     = '1200:675:150:0'
+
+[output]
+brightness = '0.05'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2mb'
+
+[[caption]]
+text      = "Vanilla vodka?"
+from      = '1'
+to        = '2.1'
+margin    = '20'
+placement = '240,217'
+size      = '28'
+
+[[caption]]
+text      = "Such a child"
+from      = '3.5'
+to        = '5'
+margin    = '20'
+placement = '230,217'
+size      = '28'

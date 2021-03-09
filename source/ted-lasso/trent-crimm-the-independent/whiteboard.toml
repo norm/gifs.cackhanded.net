@@ -1,0 +1,36 @@
+title = 'Whiteboard'
+published = 2021-03-26T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'ted-lasso',
+    'whiteboard',
+]
+body_markdown = """
+
+Ted drawing on a whiteboard.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '2:38.7'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '64'
+dither     = 'floyd_steinberg'
+fps        = '18'
+loss       = '15'
+max_size   = '1.85mb'
+
+[[clip]]
+start = '0'
+end   = '1.6'
+
+[[clip]]
+start = '3.5'
+end   = '6'

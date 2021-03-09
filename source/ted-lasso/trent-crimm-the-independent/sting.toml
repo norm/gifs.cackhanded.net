@@ -1,0 +1,27 @@
+title = 'Sting'
+published = 2021-08-13T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted taps out a sting, after making a joke, on Rebecca’s desk.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '1:57.1'
+duration = '2'
+crop     = '1200:675:158:3'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '0.9mb'

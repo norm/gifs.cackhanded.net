@@ -1,0 +1,29 @@
+title = 'Be good'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'roy-kent',
+    'phoebe',
+]
+body_markdown = """
+
+Roy leans in and kisses his niece goodnight.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '27:31.0'
+duration = '4.2'
+crop     = '960:540'
+
+[output]
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.8mb'
+mode       = 'full'

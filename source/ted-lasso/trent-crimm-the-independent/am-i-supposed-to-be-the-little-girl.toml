@@ -1,0 +1,48 @@
+title = 'Am I supposed to be the little girl?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'roy-kent',
+    'ted-lasso',
+    'trent-crimm',
+]
+body_markdown = """
+
+Roy asks “Am I supposed to be the little girl?”
+
+Ted responds “I’d like you to be.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '23:30.7'
+duration = '4.7'
+crop     = '1200:675'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.1mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Am I supposed to be the little girl?"
+from      = '1.5'
+to        = '2.8'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "I’d like you to be"
+from      = '3.6'
+to        = '4.4'
+margin    = '20'
+placement = 'bc'
+size      = '28'

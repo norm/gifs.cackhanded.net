@@ -1,0 +1,40 @@
+title = 'The power of rhyme'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'keeley-jones',
+    'ted-lasso',
+]
+body_markdown = """
+
+Keeley tells Ted “You have no idea the power of rhyme in this goddamn
+country.” Ted sort of agrees.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '5:49.8'
+duration = '3.4'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '10'
+max_size   = '1.48mb'
+width      = '400'
+
+[[caption]]
+text      = "You have no idea the power of rhyme\nin this goddamn country"
+from      = '0'
+to        = '2.2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '24'

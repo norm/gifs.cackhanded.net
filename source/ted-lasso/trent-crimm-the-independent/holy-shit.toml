@@ -1,0 +1,36 @@
+title = 'Holy shit'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'keeley-jones',
+]
+body_markdown = """
+
+Keeley reacts to a picture on Rebecca's laptop “Holy shit!’
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '19:39.5'
+duration = '4.05'
+crop     = '1040:595:0:40'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1.8mb'
+width      = '400'
+
+[[caption]]
+text      = "Holy shit!"
+from      = '2.6'
+to        = '5'
+margin    = '20'
+placement = 'bc'
+size      = '28'

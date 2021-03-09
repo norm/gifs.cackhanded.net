@@ -1,0 +1,39 @@
+title = 'A very specific scenario'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'keeley-jones',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Keeley saying “That’s like a very specific scenario.”
+
+Rebecca reacts slightly.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '19:24.1'
+duration = '3.4'
+crop     = '1200:675'
+
+[output]
+colours    = '94'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.35mb'
+mode       = 'full'
+
+[[caption]]
+text      = "That’s like a very specific scenario"
+from      = '0.1'
+to        = '2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

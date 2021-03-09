@@ -1,0 +1,38 @@
+title = 'Tricky time hearing folks'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted saying “I have a real tricky time hearing folks who don’t believe in
+themselves.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '3:46.6'
+duration = '4'
+crop     = '960:540:100:0'
+
+[output]
+brightness = '0.075'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '15'
+max_size   = '1.76mb'
+
+[[caption]]
+text      = "I have a real tricky time hearing\nfolks who don’t believe in themselves"
+from      = '0'
+to        = '2.8'
+align     = 'center'
+margin    = '15'
+placement = 'bc'
+size      = '28'

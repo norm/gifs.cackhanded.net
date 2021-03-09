@@ -1,0 +1,37 @@
+title = 'Fuck!'
+published = 2021-06-04T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca sighs, shouts “FUCK!”, and falls back on her bed.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '29:42.3'
+duration = '3'
+crop     = '1200:675'
+
+[output]
+brightness = '0.05'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.35mb'
+
+[[caption]]
+text      = "FUCK!"
+from      = '2'
+to        = '3'
+font      = 'poppins-black.ttf'
+margin    = '20'
+placement = 'br'
+size      = '60'

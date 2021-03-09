@@ -1,0 +1,28 @@
+title = 'Kids reaction'
+published = 2021-10-22T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'children',
+]
+body_markdown = """
+
+The schoolkids reacting to Roy Kent.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '21:43.7'
+duration = '3.7'
+crop     = '1040:585'
+
+[output]
+brightness = '0.03'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '15'
+loss       = '0'
+max_size   = '1.87mb'

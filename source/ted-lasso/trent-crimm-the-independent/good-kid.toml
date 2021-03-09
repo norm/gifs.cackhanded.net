@@ -1,0 +1,40 @@
+title = 'Good kid'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'ted-lasso',
+    'coach-beard',
+    'trent-crimm',
+]
+body_markdown = """
+
+Coach Beard comments about Nate, “Good kid.” Ted turns and pulls
+a mock astonished face. Trent raises an eyebrow.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '15:26.8'
+duration = '3'
+crop     = '1200:675'
+
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.35mb'
+
+[[caption]]
+text      = "Good kid"
+from      = '0.25'
+to        = '0.9'
+margin    = '20'
+# placement = 'br'
+placement = '270,217'
+size      = '28'

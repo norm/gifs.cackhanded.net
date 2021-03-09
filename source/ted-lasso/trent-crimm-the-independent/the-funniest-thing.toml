@@ -1,0 +1,38 @@
+title = 'The funniest thing'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'roy-kent',
+    'jamie-tartt',
+]
+body_markdown = """
+
+Roy saying “Now I’m gonna have to rethink my order of what I think is the
+funniest thing I’ve ever seen.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '14:40.5'
+duration = '3.4'
+crop     = '1120:630:100:50'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.5mb'
+
+[[caption]]
+text      = "Now I’m gonna have to rethink\nmy order of what I think\nis the funniest thing I’ve ever seen"
+from      = '0.3'
+to        = '3.25'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

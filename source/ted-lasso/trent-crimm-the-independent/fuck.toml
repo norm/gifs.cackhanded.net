@@ -1,0 +1,39 @@
+title = 'Fuck!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'roy-kent',
+    'phoebe',
+]
+body_markdown = """
+
+Roy, whilst reading to his niece Phoebe, puts down the book and shouts
+“FUCK!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '27:18'
+duration = '5.8'
+crop     = '1200:675'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '2.6mb'
+mode       = 'full'
+
+[[caption]]
+text      = "FUCK!"
+from      = '4.4'
+to        = '5'
+font      = 'poppins-black.ttf'
+margin    = '30'
+placement = 'bc'
+size      = '80'

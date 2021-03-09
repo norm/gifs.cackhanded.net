@@ -1,0 +1,49 @@
+title = 'Is that making you mad?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/trent-crimm-the-independent/index'
+tag = [
+    'keeley-jones',
+    'roy-kent',
+]
+body_markdown = """
+
+Keeley asks Roy “Is that making you mad?”
+
+Roy tries to remain composed and quietly says “No.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-103'
+ext      = 'm4v'
+start    = '17:13.0'
+duration = '4'
+crop     = '1200:675'
+
+[output]
+brightness = '0.05'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '15'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "Is that making you mad?"
+from      = '0.15'
+to        = '1.25'
+margin    = '20'
+# placement = 'br'
+placement = '140,217'
+size      = '28'
+
+[[caption]]
+text      = "No"
+from      = '2.5'
+to        = '3.25'
+margin    = '20'
+# placement = 'bl'
+placement = '140,217'
+size      = '28'
