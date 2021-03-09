@@ -1,10 +1,28 @@
 #!/usr/bin/env bash -oeu pipefail
 
-days="${1:-60}"
-skip="${2:-}"
+count="${1:-60}"
+days=''
+empty=''
+full=''
 
-for day in $(seq 0 ${days}); do
+shift
+while [ "${1:-}" ]; do
+    case "${1:-}" in
+        empty)  empty=empty full=''  ;;
+        full)   full=full   empty='' ;;
+        *)      [ -n "$days" ] && days="$days|$1" || days="$1"
+    esac
+    shift
+done
+
+for day in $(seq 0 ${count}); do
     datestamp=$(gdate +'%Y-%m-%d' --date="now $day days")
+    day=$(gdate +%a --date $datestamp)
+
+    [ -n "$days" ] \
+        && echo "$day" | egrep -iqv "$days" \
+        && continue
+
     content=$(
         ( ag published.*$datestamp source || echo '' ) \
             | cut -d: -f1 \
@@ -12,7 +30,9 @@ for day in $(seq 0 ${days}); do
                   -e 's/.toml//'
     )
 
-    if [ -n "$content" -o -z "$skip" ]; then
-        echo "$datestamp $(gdate +%a --date $datestamp) $content"
-    fi
+    [ -n "$content" -a -n "$empty" ] && continue
+    [ -z "$content" -a -n "$full" ] && continue
+
+    echo "$datestamp $(gdate +%a --date $datestamp) $content"
+
 done
