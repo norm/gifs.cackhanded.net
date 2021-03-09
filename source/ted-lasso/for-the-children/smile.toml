@@ -1,0 +1,29 @@
+title = 'Smile'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'rebecca-welton',
+    'ted-lasso',
+]
+body_markdown = """
+
+Rebecca cracks a smile at Ted.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '30:58.5'
+duration = '3.7'
+crop     = '1120:630:200:0'
+
+[output]
+brightness = '0.06'
+colours    = '80'
+dither     = 'bayer:bayer_scale=4'
+fps        = '18'
+loss       = '15'
+max_size   = '1.68mb'

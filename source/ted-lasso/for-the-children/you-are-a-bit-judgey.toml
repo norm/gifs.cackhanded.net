@@ -1,0 +1,38 @@
+title = 'You are a bit judgey'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'keeley-jones',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Keeley tells Rebecca “It’s okay, you are a bit judgey.”
+Rebecca rolls her eyes, judgmentally.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '25:02.3'
+duration = '2.9'
+crop     = '1200:675'
+
+[output]
+brightness = '0.02'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '5'
+max_size   = '1.38mb'
+
+[[caption]]
+text      = "It’s okay, you are a bit judgey"
+from      = '0.1'
+to        = '1.3'
+margin    = '20'
+placement = 'bc'
+size      = '28'

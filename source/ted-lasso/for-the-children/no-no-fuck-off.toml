@@ -1,0 +1,54 @@
+title = 'No. No. Fuck off.'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy, entering the Gala, repeatedly sticking two fingers up at the
+photographers. “No. No. Fuck off.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '9:16.8'
+duration = '2.85'
+crop     = '1120:630'
+
+
+[output]
+brightness = '0.02'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.35mb'
+
+[[caption]]
+text      = "No."
+from      = '0.7'
+to        = '1.15'
+margin    = '20'
+placement = '129,217'
+size      = '28'
+
+[[caption]]
+text      = "No.   No."
+from      = '1.16'
+to        = '2'
+margin    = '20'
+placement = '129,217'
+size      = '28'
+
+[[caption]]
+text      = "No.   No.   Fuck off."
+from      = '2'
+to        = '4'
+margin    = '20'
+placement = 'bc'
+size      = '28'

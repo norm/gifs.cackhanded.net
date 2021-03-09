@@ -1,0 +1,39 @@
+title = 'Two bottles'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'keeley-jones',
+]
+body_markdown = """
+
+Keeley takes two bottles of champagne from the bar and walks off.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '32:21.8'
+duration = '5.3'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: 1356:678
+crop     = '1200:675'
+
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# show = 1
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '2.35mb'

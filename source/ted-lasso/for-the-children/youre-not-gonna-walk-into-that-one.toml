@@ -1,0 +1,37 @@
+title = 'You’re not gonna walk into that one are you?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca asks Ted “You’re not gonna walk into that one are you?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '11:35.2'
+duration = '2'
+crop     = '1040:585:0:40'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '10'
+max_size   = '1.04mb'
+
+[[caption]]
+text      = "You’re not gonna walk\ninto that one are you?"
+from      = '0'
+to        = '2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

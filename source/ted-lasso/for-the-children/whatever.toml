@@ -1,0 +1,38 @@
+title = 'Whatever'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'jamie-tartt',
+    'keeley-jones',
+]
+body_markdown = """
+
+Jamie looks very confused, snorts “Whatever!”, and walks off leaving
+Keeley to smile to herself.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '32:09'
+duration = '6'
+crop     = '1120:630:40:0'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+max_size   = '2.63mb'
+width      = '400'
+
+[[caption]]
+text      = "Whatever!"
+from      = '1.7'
+to        = '2.4'
+margin    = '15'
+placement = 'bc'
+size      = '24'

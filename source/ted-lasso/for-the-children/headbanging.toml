@@ -1,0 +1,29 @@
+title = 'Coach headbanging'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'coach-beard',
+    'cam-cole',
+]
+body_markdown = """
+
+Coach headbanging to Cam Cole.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '30:05.8'
+duration = '4.5'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '2mb'

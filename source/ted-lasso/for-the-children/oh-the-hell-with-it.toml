@@ -1,0 +1,38 @@
+title = 'Oh the hell with it'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'rebecca-welton',
+    'ted-lasso',
+    'leslie-higgins',
+]
+body_markdown = """
+
+Rebecca says “Oh the hell with it”. Ted and Leslie grin at each other.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '28:16.6'
+duration = '4.5'
+crop     = '1080:585:180:0'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '15'
+max_size   = '2.05mb'
+
+[[caption]]
+text      = "Oh the hell with it"
+from      = '1.3'
+to        = '2'
+margin    = '20'
+placement = 'bl'
+size      = '28'

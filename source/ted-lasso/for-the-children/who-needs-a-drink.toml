@@ -1,0 +1,36 @@
+title = 'Who needs a drink'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/for-the-children/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted asks “Who needs a drink?” and the entire table puts up their hands.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-104'
+ext      = 'm4v'
+start    = '10:47.8'
+duration = '2.4'
+crop     = '1200:675'
+
+[output]
+brightness = '0.03'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.15mb'
+
+[[caption]]
+text      = "Who needs a drink?"
+from      = '0.1'
+to        = '0.85'
+margin    = '20'
+placement = 'bc'
+size      = '28'
