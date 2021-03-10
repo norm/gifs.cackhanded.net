@@ -1,0 +1,40 @@
+title = 'Off you go'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/two-aces/index'
+tag = [
+    'rebecca-welton',
+    'leslie-higgins',
+    'ted-lasso',
+]
+body_markdown = """
+
+Rebecca says to Higgins “Off you go”.
+
+He and Ted walk off to join the team.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-106'
+ext      = 'm4v'
+start    = '28:25.9'
+duration = '6'
+crop     = '1200:675:140:0'
+
+[output]
+brightness = '0.06'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '2.35mb'
+
+[[caption]]
+text      = "Off you go"
+from      = '0.5'
+to        = '1.2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,50 @@
+title = 'Outside'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/two-aces/index'
+tag = [
+    'ted-lasso',
+    'coach-beard',
+    'rebecca-welton',
+    'jamie-tartt',
+]
+body_markdown = """
+
+Ted says to the team “What do you say we burn this crap?”
+
+Coach Beard sensibly interjects “Maybe we should do this part outside!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-106'
+ext      = 'm4v'
+start    = '26:39.0'
+duration = '5.2'
+crop     = '1120:630:100:30'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '2.65mb'
+width      = '400'
+
+[[caption]]
+text      = "What do you say we burn this crap?"
+from      = '0.1'
+to        = '1.85'
+margin    = '20'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "Maybe we should do this part outside!"
+from      = '2.15'
+to        = '3.8'
+# margin    = '20'
+# placement = 'bc'
+placement = '20,176'
+size      = '24'

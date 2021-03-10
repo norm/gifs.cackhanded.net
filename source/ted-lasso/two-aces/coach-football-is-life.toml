@@ -1,0 +1,39 @@
+title = 'Coach, football is life'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/two-aces/index'
+tag = [
+    'dani-rojas',
+    'ted-lasso',
+    'coach-beard',
+]
+body_markdown = """
+
+Dani Rojas puts his head around Ted's office door and says “Coach, football
+is life.” Ted nods.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-106'
+ext      = 'm4v'
+start    = '30:29'
+duration = '5'
+crop     = '1040:585:0:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.25mb'
+
+[[caption]]
+text      = "Football is life"
+from      = '0.7'
+to        = '2.2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

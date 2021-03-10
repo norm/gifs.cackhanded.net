@@ -1,0 +1,39 @@
+title = 'Crack that bastard open'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/two-aces/index'
+tag = [
+    'jamie-tartt',
+    'dani-rojas',
+    'sam-obisanya',
+]
+body_markdown = """
+
+Jamie points at the bottle of mescal and instructs Dani Rojas to 
+“Crack that bastard open”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-106'
+ext      = 'm4v'
+start    = '27:32.5'
+duration = '2.4'
+crop     = '1200:675:0:0'
+
+[output]
+brightness = '0.06'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '10'
+max_size   = '1.37mb'
+
+[[caption]]
+text      = "Crack that bastard open"
+from      = '0.4'
+to        = '1.6'
+margin    = '20'
+placement = 'bc'
+size      = '28'
