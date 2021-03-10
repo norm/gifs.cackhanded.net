@@ -1,0 +1,38 @@
+title = 'Good save'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'coach-beard',
+]
+body_markdown = """
+
+Coach Beard mutters “Good save” sotto voce.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '23:28.5'
+duration = '1.4'
+crop     = '880:495:60:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.65mb'
+mode       = 'full'
+
+[[caption]]
+text      = "good save"
+from      = '0.4'
+to        = '2'
+margin    = '20'
+# placement = 'bc'
+placement = '130,216'
+size      = '28'

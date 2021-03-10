@@ -1,0 +1,45 @@
+title = 'Celebration'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'ted-lasso',
+    'coach-beard',
+    'nathan-shelley',
+    'leslie-higgins',
+    'keeley-jones',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Ted, Coach, Nate, Higgins, and Keeley celebrate a game-winning goal;
+Rebecca is displeased.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '24:25.3'
+crop     = '1120:630'
+
+[output]
+brightness = '0.04'
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '3.2mb'
+
+[[clip]]
+start = '0'
+end   = '1.1'
+
+[[clip]]
+start = '2.36'
+end   = '4.95'
+
+[[clip]]
+start = '7.06'
+end   = '9'

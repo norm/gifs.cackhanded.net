@@ -1,0 +1,30 @@
+title = 'Pints'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'ted-lasso',
+    'coach-beard',
+]
+body_markdown = """
+
+Coach Beard hands Ted a pint, then sits down next to him.
+They nod at each other.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '29:47.4'
+duration = '12.4'
+crop     = '1040:585:190:0'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '25'
+max_size   = '3.5mb'

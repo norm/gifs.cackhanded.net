@@ -1,0 +1,49 @@
+title = 'Fucking good idea'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'roy-kent',
+    'jamie-tartt',
+    'ted-lasso',
+    'coach-beard',
+]
+body_markdown = """
+
+Roy says “Fucking good idea, to be fair.”
+
+Ted points at him and nods agreement “Yeah it is”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '4:08'
+duration = '2.1'
+crop     = '1120:630:0:0'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '0.98mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Fucking good idea, to be fair"
+from      = '0'
+to        = '1.1'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Yeah it is"
+from      = '1.35'
+to        = '1.8'
+margin    = '20'
+placement = 'bc'
+size      = '28'

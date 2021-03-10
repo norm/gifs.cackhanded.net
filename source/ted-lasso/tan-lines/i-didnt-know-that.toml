@@ -1,0 +1,69 @@
+title = 'I didn’t know that'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'roy-kent',
+    'keeley-jones',
+]
+body_markdown = """
+
+Roy tells Keeley “Right, I didn’t know that, so … apologies.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '9:02.0'
+duration = '3.7'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: 1356:678
+crop     = '1200:675'
+
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# show = 1
+
+[output]
+# brightness = '0'
+colours    = '254'
+# dither     = 'bayer:bayer_scale=0-5'
+# dither     = 'floyd_steinberg'
+# dither     = 'sierra2'
+# dither     = 'sierra2_4a'
+fps        = '18'
+loss       = 'no'
+# max_size   = '0.9mb'   # 2s
+# max_size   = '1.35mb'  # 3s
+# max_size   = '1.8mb'   # 4s
+# max_size   = '2.25mb'  # 5s
+# max_size   = '2.7mb'   # 6s
+# max_size   = '3.15mb'  # 7s
+# max_size   = '3.6mb'   # 8s
+# max_size   = '4.05mb'  # 9s
+# max_size   = '4.5mb'   # 10s
+# mode       = 'full'
+
+[[caption]]
+text      = "I didn’t know that, so …"
+from      = '0.6'
+to        = '2.8'
+# margin    = '20'
+# placement = 'bc'
+placement = '51,217'
+size      = '28'
+
+[[caption]]
+text      = "I didn’t know that, so apologies"
+from      = '2.81'
+to        = '4'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,48 @@
+title = 'The actor?!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'ted-lasso',
+    'coach-beard',
+]
+body_markdown = """
+
+Coach Beard, channelling his inner Christopher Lloyd, saying “Ronald Reagan?
+The actor?!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '25:40.8'
+duration = '3.8'
+crop     = '1120:630:180:0'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '30'
+max_size   = '1.87mb'
+
+[[caption]]
+text      = "Ronald Reagan?"
+from      = '0.25'
+to        = '2.6'
+# margin    = '20'
+# placement = 'bc'
+placement = '255,187'
+size      = '28'
+
+[[caption]]
+text      = "THE ACTOR?!"
+from      = '1.75'
+to        = '2.6'
+# margin    = '20'
+# placement = 'bc'
+placement = '265,217'
+size      = '28'
+font      = 'assistant-extrabold.ttf'

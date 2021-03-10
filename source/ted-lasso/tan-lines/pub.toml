@@ -1,0 +1,43 @@
+title = 'Pints'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'baz',
+    'jeremy',
+    'mae',
+    'paul',
+]
+body_markdown = """
+
+Richmond fans in the pub throw their pints in the air in celebration.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '24:25.3'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '128'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+max_size   = '3.2mb'
+width      = '400'
+
+[[clip]]
+start = '1.11'
+end   = '2.35'
+
+[[clip]]
+start = '4.96'
+end   = '7.05'
+
+[[clip]]
+start = '13'
+end   = '15.9'

@@ -1,0 +1,36 @@
+title = 'Reach those lips'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'keeley-jones',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Keeley tells Rebecca ”I’d kiss you on the mouth if I could reach those lips.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '6:01.2'
+duration = '2.5'
+crop     = '880:495:150:20'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.2mb'
+
+[[caption]]
+text      = "I’d kiss you on the mouth\nif I could reach those lips"
+from      = '0.3'
+to        = '2.15'
+margin    = '20'
+placement = 'bc'
+size      = '28'

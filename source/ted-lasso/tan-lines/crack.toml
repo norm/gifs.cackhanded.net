@@ -1,0 +1,27 @@
+title = 'Crack'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted cracks his head on the metal shutter and falls back to the ground.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '0:39.0'
+duration = '2.1'
+crop     = '1040:585:100:50'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '0.9mb'

@@ -1,0 +1,47 @@
+title = 'Embracing change'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/tan-lines/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted telling the lads in the changing room ”I think that’s what it’s all
+about, embracing change.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-105'
+ext      = 'm4v'
+start    = '22:55.0'
+duration = '5.2'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.32mb'
+width      = '400'
+
+[[caption]]
+text      = "I think that’s what it’s all about"
+from      = '0.35'
+to        = '1.85'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+
+[[caption]]
+text      = "Embracing change"
+from      = '3.8'
+to        = '4.95'
+margin    = '20'
+placement = 'bc'
+size      = '28'
