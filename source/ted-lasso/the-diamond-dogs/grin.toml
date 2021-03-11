@@ -1,0 +1,29 @@
+title = 'Grin'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = [
+    'ted-lasso',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Ted grins at Rebecca.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '16:37'
+duration = '1.5'
+crop     = '720:405:150:40'
+
+[output]
+brightness = '0.06'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '0.9mb'

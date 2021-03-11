@@ -1,0 +1,36 @@
+title = 'You’re all pricks'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy kent comments “You’re all pricks”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '15:28.4'
+duration = '2.8'
+crop     = '880:495:0:30'
+
+[output]
+brightness = '0.06'
+colours    = '60'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.3mb'
+
+[[caption]]
+text      = "You’re all pricks"
+from      = '1.2'
+to        = '2.2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

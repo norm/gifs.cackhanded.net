@@ -1,0 +1,41 @@
+title = 'He means the opposite'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = [
+    'nathan-shelley',
+    'ted-lasso',
+    'roy-kent',
+]
+body_markdown = """
+
+Nate says “He means the opposite”, and Ted puts a finger on his nose
+and points at Nate with the other hand, as you would to tell someone
+you got it right in a game of charades. Roy looks nonplussed
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '14:48.1'
+duration = '2'
+crop     = '1120:630'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '0.92mb'
+width      = '400'
+
+[[caption]]
+text      = "He means the opposite"
+from      = '0'
+to        = '1'
+margin    = '20'
+placement = 'bc'
+size      = '28'

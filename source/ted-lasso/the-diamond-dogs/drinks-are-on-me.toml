@@ -1,0 +1,53 @@
+title = 'Drinks are on me!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = [
+    'rebecca-welton',
+    'baz',
+    'jeremy',
+    'paul',
+]
+body_markdown = """
+
+Rebecca slaps the bar and shouts ”Drinks are on me!”
+
+Baz, Paul, and Jeremy shout excitedly.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '26:02.8'
+duration = '2.8'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: 1280:640
+crop     = '1040:585:40:0'
+
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# show = 1
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '10'
+max_size   = '1.54mb'
+width      = '400'
+
+[[caption]]
+text      = "DRINKS ARE ON ME!"
+from      = '0.45'
+to        = '1.4'
+margin    = '16'
+placement = 'bc'
+size      = '24'

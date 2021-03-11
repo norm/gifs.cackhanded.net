@@ -1,0 +1,48 @@
+title = 'What am I doing?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca starts to creep out of the bedroom, then realises and mutters
+to herself “What am I doing? This is my fucking room!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '0:54.5'
+duration = '4.2'
+crop     = '960:540:180:20'
+
+[output]
+brightness = '0.075'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '10'
+max_size   = '1.8mb'
+width      = '400'
+
+[[caption]]
+text      = "What am I doing?\n "
+from      = '2.25'
+to        = '3.85'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "This is my fucking room!"
+from      = '3.15'
+to        = '3.85'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

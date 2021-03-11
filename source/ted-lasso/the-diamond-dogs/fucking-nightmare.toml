@@ -1,0 +1,36 @@
+title = 'Fucking nightmare'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy saying ”This is my fucking nightmare”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '14:07.9'
+duration = '1.7'
+crop     = '1040:585:0:55'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '0.94mb'
+
+[[caption]]
+text      = "This is my fucking nightmare"
+from      = '0.4'
+to        = '2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

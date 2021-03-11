@@ -1,0 +1,36 @@
+title = 'Grow up and get over it'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = [
+    'coach-beard',
+]
+body_markdown = """
+
+Coach Beard comments “Grow up and get over it”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '15:17.8'
+duration = '2.8'
+crop     = '960:540:0:100'
+
+[output]
+brightness = '0.06'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.35mb'
+
+[[caption]]
+text      = "Grow up and get over it"
+from      = '0.3'
+to        = '3'
+margin    = '20'
+placement = 'bc'
+size      = '28'

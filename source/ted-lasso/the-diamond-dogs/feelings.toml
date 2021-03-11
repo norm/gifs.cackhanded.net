@@ -1,0 +1,49 @@
+title = 'Feelings'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-diamond-dogs/index'
+tag = [
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy says “I can’t control my feelings.”
+
+Ted overexaggerates his response “Then by all means you should let them
+control you!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-108'
+ext      = 'm4v'
+start    = '14:52.45'
+duration = '3.75'
+crop     = '1040:585:60:55'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+max_size   = '1.8mb'
+width      = '400'
+
+[[caption]]
+text      = "I can’t control my feelings"
+from      = '0'
+to        = '0.8'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Then by all means\nyou should let them control you!"
+from      = '1.2'
+to        = '3.6'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
