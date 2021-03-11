@@ -1,0 +1,30 @@
+title = 'Encouragement'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/make-rebecca-great-again/index'
+tag = [
+    'coach-beard',
+    'ted-lasso',
+    'nathan-shelley',
+]
+body_markdown = """
+
+Ted nods encouragement at Nate.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-107'
+ext      = 'm4v'
+start    = '17:45.1'
+duration = '3'
+crop     = '1120:630'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.4mb'

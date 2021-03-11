@@ -1,0 +1,27 @@
+title = 'Panic attack'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/make-rebecca-great-again/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+A close-up on Ted's hands as he is having a panic attack.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-107'
+ext      = 'm4v'
+start    = '25:47.7'
+duration = '4'
+crop     = '1080:585:120:55'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1.96mb'

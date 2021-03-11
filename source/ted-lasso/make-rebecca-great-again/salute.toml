@@ -1,0 +1,28 @@
+title = 'Salute'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/make-rebecca-great-again/index'
+tag = [
+    'rebecca-welton',
+    'roy-kent',
+]
+body_markdown = """
+
+Rebecca salutes Roy, who salutes back.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-107'
+ext      = 'm4v'
+start    = '29:41.0'
+duration = '3.8'
+crop     = '960:540:80:0'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '10'
+max_size   = '1.8mb'

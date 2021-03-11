@@ -1,0 +1,28 @@
+title = 'Horror'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/make-rebecca-great-again/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca turns with a growing look of horror on her face.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-107'
+ext      = 'm4v'
+start    = '1:40.0'
+duration = '1.75'
+crop     = '1040:585:200:0'
+
+[output]
+brightness = '0.04'
+colours    = '128'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '0.93mb'

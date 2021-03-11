@@ -1,0 +1,37 @@
+title = 'Doing work that doesn’t matter'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/make-rebecca-great-again/index'
+tag = [
+    'rebecca-welton',
+    'leslie-higgins',
+]
+body_markdown = """
+
+Rebecca telling Higgins he'll be “…doing work that doesn’t matter.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-107'
+ext      = 'm4v'
+start    = '2:19.2'
+duration = '3.1'
+crop     = '1120:630'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.36mb'
+
+[[caption]]
+text      = "Doing work that doesn’t matter"
+from      = '1'
+to        = '2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

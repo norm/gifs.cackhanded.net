@@ -1,0 +1,40 @@
+title = 'What just happened?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/make-rebecca-great-again/index'
+tag = [
+    'colin',
+]
+body_markdown = """
+
+Colin asks “What just happened?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-107'
+ext      = 'm4v'
+start    = '18:37.4'
+duration = '1.85'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: 1280:640
+crop     = '960:540:0:0'
+
+[output]
+brightness = '0.04'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '15'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "What just happened?"
+from      = '0.7'
+to        = '1.7'
+margin    = '20'
+placement = 'bc'
+size      = '28'

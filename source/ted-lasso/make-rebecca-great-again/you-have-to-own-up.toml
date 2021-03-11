@@ -1,0 +1,37 @@
+title = 'You have to own up'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/make-rebecca-great-again/index'
+tag = [
+    'flo-collins',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Flo telling Rebecca “You have to own up to the part that you played.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-107'
+ext      = 'm4v'
+start    = '23:34.8'
+duration = '3'
+crop     = '1120:630:40:0'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '25'
+max_size   = '1.46mb'
+
+[[caption]]
+text      = "You have to own up\nto the part that you played"
+from      = '0'
+to        = '3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,33 @@
+title = 'Winning'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/make-rebecca-great-again/index'
+tag = [
+    'roy-kent',
+    'dani-rojas',
+    'isaac-mcadoo',
+    'sam-obisanya',
+]
+body_markdown = """
+
+The AFC Richmond players burst into the changing room after beating Everton
+at Anfield.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-107'
+ext      = 'm4v'
+start    = '20:59'
+duration = '4.2'
+crop     = '1120:630'
+
+[output]
+brightness = '0.06'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.9mb'
+width      = '400'
