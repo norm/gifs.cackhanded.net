@@ -1,0 +1,37 @@
+title = 'Referee!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'keeley-jones',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Keeley shouts “Referee!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '13:29.9'
+duration = '2'
+crop     = '1040:585:260:138'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "REFEREE!"
+from      = '0.2'
+to        = '1.8'
+font      = 'poppins-black.ttf'
+margin    = '20'
+placement = 'bc'
+size      = '40'

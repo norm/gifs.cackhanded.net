@@ -1,0 +1,29 @@
+title = 'Too close'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'tommy',
+    'jamie-tartt',
+]
+body_markdown = """
+
+Tommy puts his arm around Jamie, who looks at it, then at Tommy.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '10:40.3'
+duration = '3.8'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.7mb'

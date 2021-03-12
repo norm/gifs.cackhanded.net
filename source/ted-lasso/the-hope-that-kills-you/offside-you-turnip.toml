@@ -1,0 +1,37 @@
+title = 'Offside, you turnip!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'keeley-jones',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Keeley shouting “Offside, you turnip!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '13:31.9'
+duration = '2.5'
+crop     = '960:540:300:138'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.1mb'
+
+[[caption]]
+text      = "OFFSIDE, YOU TURNIP!"
+from      = '0.5'
+to        = '2.4'
+font      = 'poppins-black.ttf'
+# placement = 'bc'
+placement = '10,210'
+size      = '40'

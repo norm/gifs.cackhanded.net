@@ -1,0 +1,59 @@
+title = 'Oops, innit'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'jamie-tartt',
+    'nathan-shelley',
+    'isaac-mcadoo',
+    'dani-rojas',
+    'roy-kent',
+]
+body_markdown = """
+
+A chair crashes into a TV showing an interview with Jamie Tartt.
+Isaac says “Oops, innit” and Roy agrees “Well said!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '04:30.0'
+crop     = '1200:675:0:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '2.35mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '1.9'
+
+[[clip]]
+start = '3.9'
+end   = '6.8'
+
+[[caption]]
+text      = "Oops, innit"
+from      = '2.3'
+to        = '3.5'
+# margin    = '20'
+# placement = 'bc'
+placement = '160,217'
+size      = '28'
+
+[[caption]]
+text      = "Well said!"
+from      = '3.8'
+to        = '4.8'
+# margin    = '20'
+# placement = 'bc'
+placement = '230,217'
+size      = '28'

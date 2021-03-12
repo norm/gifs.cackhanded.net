@@ -1,0 +1,36 @@
+title = 'Whistle'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'nathan-shelley',
+    'ted-lasso',
+    'coach-beard',
+    'isaac-mcadoo',
+    'colin',
+    'dani-rojas',
+    'rebecca-welton',
+    'leslie-higgins',
+]
+body_markdown = """
+
+Nate blows on his whistle indoors, and everybody cringes from the sound.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '1:49.0'
+duration = '2.3'
+crop     = '1200:675:0:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = 'auto'
+width      = '400'

@@ -1,0 +1,37 @@
+title = 'Foot bouncing'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'roy-kent',
+    'jamie-tartt',
+]
+body_markdown = """
+
+Roy and Jamie sat completely still at a table, apart from Roy’s foot bouncing.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '11:08.7'
+duration = '2.7'
+crop     = '1040:585:200:100'
+
+[palette]
+add = [
+    '#b57952',  # orange lampshades
+    '#8f6432',
+    '#724317',
+    '#5f3510',
+]
+
+# FIXME candidate for motion stabilising?
+[output]
+colours    = '80'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.2mb'

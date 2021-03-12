@@ -1,0 +1,37 @@
+title = 'This is why it’s hard to love you'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy tells Ted “This is why it’s hard to love you”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '3:00.6'
+duration = '2.4'
+crop     = '1200:675:0:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1mb'
+
+[[caption]]
+text      = "This is why it’s hard to love you"
+from      = '0'
+to        = '1.3'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,29 @@
+title = 'Cheers'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'ted-lasso',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Ted and Rebecca clink drinking vessels in a toast.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '32:47.7'
+duration = '2.7'
+crop     = '1200:675'
+
+[output]
+brightness = '0.06'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.34mb'

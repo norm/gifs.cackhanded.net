@@ -1,0 +1,37 @@
+title = 'Today I care very much'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'keeley-jones',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Keeley tells Rebecca “Today, I care very much”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '13:45.5'
+duration = '2.1'
+crop     = '960:540:500:40'
+
+[output]
+brightness = '0.02'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.8mb'
+
+[[caption]]
+text      = "Today, I care very much"
+from      = '0.45'
+to        = '1.95'
+margin    = '20'
+placement = 'bc'
+size      = '28'

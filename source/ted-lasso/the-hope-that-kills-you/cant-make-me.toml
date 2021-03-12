@@ -1,0 +1,46 @@
+title = 'Can’t make me'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy tosses the Captain’s band at Ted “Can’t make me” and Ted returns it 
+with “I insist”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '2:46.7'
+duration = '2.9'
+crop     = '1200:675:0:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.3mb'
+
+[[caption]]
+text      = "I insist"
+from      = '0.15'
+to        = '0.9'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Can’t make me"
+from      = '1.9'
+to        = '2.8'
+margin    = '20'
+placement = 'bc'
+size      = '28'

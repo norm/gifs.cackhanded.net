@@ -1,0 +1,36 @@
+title = 'Belief can’t score goals'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'coach-beard',
+]
+body_markdown = """
+
+Coach Beard saying “Belief can’t score goals”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '6:47.65'
+duration = '1.7'
+crop     = '1120:630:230:0'
+
+[output]
+brightness = '0.06'
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.7mb'
+
+[[caption]]
+text      = "Belief can’t score goals"
+from      = '0'
+to        = '2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

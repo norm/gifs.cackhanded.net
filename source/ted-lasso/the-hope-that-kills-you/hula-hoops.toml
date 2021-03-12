@@ -1,0 +1,31 @@
+title = 'Hula hoop'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'coach-beard',
+    'nathan-shelley',
+]
+body_markdown = """
+
+Coach Beard leans forward to the table, snags a Hula Hoop, and sits back
+again.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '6:18.8'
+duration = '4.1'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '128'
+dither     = 'floyd_steinberg'
+fps        = '18'
+loss       = '15'
+max_size   = '2mb'
+width      = '400'

@@ -1,0 +1,36 @@
+title = 'Jackpot'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted points with both hands and declares “Jackpot!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '7:05.05'
+duration = '2.25'
+crop     = '800:450:0:0'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1mb'
+
+[[caption]]
+text      = "Jackpot!"
+from      = '1.3'
+to        = '1.9'
+margin    = '20'
+placement = 'bc'
+size      = '28'

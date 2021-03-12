@@ -1,0 +1,36 @@
+title = 'Super embarrassing for you'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'tommy',
+    'jamie-tartt',
+]
+body_markdown = """
+
+Tommy tells Jamie “Super embarrassing for you, yeah”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '10:26.3'
+duration = '2.8'
+crop     = '1200:675'
+
+[output]
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.25mb'
+
+[[caption]]
+text      = "Super embarrasing for you, yeah"
+from      = '0.6'
+to        = '2.05'
+margin    = '20'
+placement = 'bc'
+size      = '28'
