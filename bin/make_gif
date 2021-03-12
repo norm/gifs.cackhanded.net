@@ -117,11 +117,32 @@ function main {
         -filter_complex "$(generate_filter $toml)" \
         "${TEMP}/output.gif"
 
+    gif_duration=$(
+        printf '%.2f' $(
+        ffprobe \
+            -v error \
+            -show_entries format=duration \
+            -of default=noprint_wrappers=1:nokey=1 \
+                "${TEMP}/output.gif"
+        )
+    )
     uncompressed_size="$(filesize "${TEMP}/output.gif")"
+    printf '    size %.2fmb (duration %s)' \
+        $(size_in_mb $uncompressed_size) \
+        $gif_duration
+
     output_max_size="$(convert_mb $(toml $toml output.max_size))"
-    printf '    size %.2fmb' $(size_in_mb $uncompressed_size)
-    [ -n "$output_max_size" ] && \
+    auto_max_size=$(
+        printf '%.0f' "$(echo "$gif_duration .45 1048576 * * p" | dc)"
+    )
+
+    [ "${output_max_size:-}" = "auto" ] && \
+        output_max_size=$auto_max_size
+    if [ -n "$output_max_size" ]; then
         printf ', max_size %.2fmb' $(size_in_mb $output_max_size)
+    else
+        printf ' [auto max %.2fmb]' $(size_in_mb $auto_max_size)
+    fi
     echo ''
 
     output_loss="$(toml $toml output.loss)"

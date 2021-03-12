@@ -44,7 +44,7 @@ show = 1
 brighten = '0.05'
 colours  = '192'
 mode     = 'full'
-max_size = '2mb'
+max_size = '2mb'  # or 'auto'
 dither   = 'floyd_steinberg'
 
 [[clip]]
@@ -129,7 +129,8 @@ the video source.
 * `max_size` is the maximum size in bytes of the GIF, if the output is
   larger than this value `gifsicle` will be run with increasing levels
   of `loss` to shrink the file size at the expense of image quality
-  (can be expressed in megabytes, eg `1.5mb`)
+  (can be expressed in megabytes, eg `1.5mb`, or as `auto` to calculate
+  a maximum based on `0.45mb` per second from the length of the GIF).
 * `dither` is how the palette colours are dithered to create the appearance
   of more colours:
     * `bayer:bayer_scale=1` — the scale is an integer between 0 and 5
