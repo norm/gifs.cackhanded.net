@@ -1,0 +1,31 @@
+title = 'Nods'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'nathan-shelley',
+    'ted-lasso',
+    'coach-beard',
+]
+body_markdown = """
+
+Ted nods at Coach Beard, who nods back, then turns to Nate and they nod
+at each other in synchronisation.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '28:54.5'
+duration = '4.8'
+crop     = '960:540:190:0'
+
+[output]
+brightness = '0.06'
+colours    = '60'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '2.06mb'

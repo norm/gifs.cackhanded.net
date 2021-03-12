@@ -1,0 +1,37 @@
+title = 'I forgive you'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'ted-lasso',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Ted tells Rebecca “I forgive you”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '12:22.0'
+duration = '3.2'
+crop     = '1120:630'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.4mb'
+
+[[caption]]
+text      = "I forgive you"
+from      = '0.65'
+to        = '1.5'
+margin    = '20'
+placement = 'bc'
+size      = '28'

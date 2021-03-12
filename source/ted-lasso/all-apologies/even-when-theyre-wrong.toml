@@ -1,0 +1,44 @@
+title = 'Even when they’re wrong'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted commenting ”I value opinions … even when they’re wrong.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '07:01.3'
+duration = '4.4'
+crop     = '800:450:300:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "I value each of your opinions"
+from      = '0.3'
+to        = '2.2'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Even when they’re wrong"
+from      = '3.7'
+to        = '5'
+margin    = '20'
+placement = 'bc'
+size      = '28'

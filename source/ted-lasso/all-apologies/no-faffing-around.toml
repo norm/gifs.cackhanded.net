@@ -1,0 +1,44 @@
+title = 'No faffing around'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca “No faffing around”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '7:48.3'
+duration = '3.4'
+crop     = '960:540:400:60'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.5mb'
+
+[[caption]]
+text      = "No faffing around,\n’cause that’s just annoying"
+from      = '0.1'
+to        = '1.79'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "And definitely no procrastinating"
+from      = '1.8'
+to        = '3.2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

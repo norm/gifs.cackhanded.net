@@ -1,0 +1,48 @@
+title = 'Checkmate, mate'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'coach-beard',
+    'jane',
+]
+body_markdown = """
+
+Coach Beard moves a piece on the chessboard and says to the guy
+Jane was playing with “Checkmate, mate”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '23:59'
+duration = '6.5'
+crop     = '1200:675:0:40'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '2.72mb'
+width      = '400'
+
+[[caption]]
+text      = "Checkmate"
+from      = '1.7'
+to        = '3.5'
+# margin    = '16'
+# placement = 'bc'
+placement = '109,180'
+size      = '24'
+
+[[caption]]
+text      = "Checkmate, mate"
+from      = '3.51'
+to        = '4.2'
+margin    = '16'
+placement = 'bc'
+size      = '24'

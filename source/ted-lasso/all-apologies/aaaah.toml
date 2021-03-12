@@ -1,0 +1,28 @@
+title = 'Aaaah'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy kent enjoying his sip of tea.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '27:22.0'
+duration = '1.8'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.7mb'

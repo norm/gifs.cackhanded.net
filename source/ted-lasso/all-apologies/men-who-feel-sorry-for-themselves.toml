@@ -1,0 +1,48 @@
+title = 'Men who feel sorry for themselves'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'keeley-jones',
+    'roy-kent',
+]
+body_markdown = """
+
+Keeley telling Roy “I think men who feel sorry for themselves
+are so sexy”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '20:40.2'
+duration = '4.6'
+crop     = '1120:630:400:0'
+
+[output]
+brightness = '0.04'
+colours    = '90'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '2mb'
+width      = '400'
+
+[[caption]]
+text      = "I think men who feel sorry\nfor themselves are so                   "
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "SEXY"
+from      = '3.06'
+to        = '4'
+font      = 'poppins-black.ttf'
+placement = '262,182'
+size      = '34'

@@ -1,0 +1,28 @@
+title = 'Point'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca, pointing with her hands.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '7:45.2'
+duration = '1.5'
+crop     = '960:540:500:60'
+
+# FIXME candidate for motion stabilising?
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '0.9mb'

@@ -1,0 +1,28 @@
+title = 'Believe'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy taps on the ‘believe’ sign.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '31:02'
+duration = '7'
+crop     = '480:269:330:200'
+
+[output]
+brightness = '0.04'
+colours    = '80'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '2.6mb'

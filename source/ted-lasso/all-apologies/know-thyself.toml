@@ -1,0 +1,45 @@
+title = 'Know thyself'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/all-apologies/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted telling Roy “Know thyself. Rest in peace, Socrates.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-109'
+ext      = 'm4v'
+start    = '25:06.4'
+duration = '3.2'
+crop     = '880:495:478:50'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '5'
+max_size   = '1.5mb'
+width      = '400'
+
+[[caption]]
+text      = "Know thyself"
+from      = '0'
+to        = '1'
+margin    = '16'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "Rest in peace, Socrates"
+from      = '1.7'
+to        = '2.8'
+margin    = '16'
+placement = 'bc'
+size      = '24'
