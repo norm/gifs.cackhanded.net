@@ -266,3 +266,30 @@ To add a new GIF:
     % git commit -m'Add GIF'
     % git push origin main
 
+
+## Scheduling GIFs
+
+To schedule a post on a given day without the need for human interaction, set
+the `published` date to 7am UTC on a given future day.
+
+The site configuration is set to ignore GIFs with a `published` date in the
+future. A GitHub [workflow](.github/workflows/rebuild.yaml) is set to rebuild
+the site daily, and runs after 7am (so there will be a short delay between 
+7am and the content appearing on the site, I'm not bothered).
+
+To list what is scheduled, there is a `next` script in the repo.
+
+    # coming in the next 30 days
+    ./script/next
+
+    # coming in the next 60 days
+    ./script/next 60
+
+    # coming on Wednesdays in the next 30 days
+    ./script/next wed
+
+    # coming on weekends in the next year
+    ./script/next 365 sat sun
+
+    # a summary of what has been created but not yet scheduled
+    ./script/next unscheduled
