@@ -1,0 +1,44 @@
+title = 'Real words'
+published = 2021-06-20T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec comments “Most of the things in
+that sentence were real words, so no complaints here”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'XsNAu72v2Yc'
+ext      = 'mp4'
+start    = '3:33'
+duration = '3.7'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.67mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I mean most of the things\nin that sentence were real words\nso no complaints here"
+from      = '0'
+to        = '3.8'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '26'

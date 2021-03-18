@@ -1,0 +1,70 @@
+title = 'Wow wow wow wow wow'
+published = 2021-05-30T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec reacts “wow wow wow wow wow”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'VWjJxeAsruo'
+ext      = 'mp4'
+start    = '3:17.95'
+duration = '1.35'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '0.62mb'
+mode       = 'full'
+
+[[caption]]
+text      = "wow"
+from      = '0'
+to        = '0.15'
+placement = '83,217'
+size      = '28'
+
+[[caption]]
+text      = "wow wow"
+from      = '0.19'
+to        = '0.36'
+placement = '83,217'
+size      = '28'
+
+[[caption]]
+text      = "wow wow wow"
+from      = '0.37'
+to        = '0.65'
+placement = '83,217'
+size      = '28'
+
+[[caption]]
+text      = "wow wow wow wow"
+from      = '0.66'
+to        = '0.99'
+placement = '83,217'
+size      = '28'
+
+[[caption]]
+text      = "wow wow wow wow wow"
+from      = '1'
+to        = '1.5'
+margin    = '20'
+placement = 'bc'
+size      = '28'

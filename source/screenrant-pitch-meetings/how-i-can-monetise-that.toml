@@ -1,0 +1,44 @@
+title = 'How I can monetise that'
+published = 2021-05-23T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec considers “I don’t really see how I 
+can monetise that, but, but okay”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'NtH-HhaLw-Q'
+ext      = 'mp4'
+start    = '0:32.3'
+duration = '3'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.37mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I don’t really see how I can\nmonetise that, but, but okay"
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

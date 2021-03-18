@@ -1,0 +1,43 @@
+title = 'Solving problems by burping'
+published = 2021-06-27T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec proclaims that “solving problems
+by burping is tight!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Inf5du8u7OE'
+ext      = 'mp4'
+start    = '5:13.8'
+duration = '3.1'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.4mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Solving problems by burping is tight!"
+from      = '0.3'
+to        = '2.4'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,41 @@
+title = 'Good character development'
+published = 2021-07-04T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec comments “That’s just good character
+development, is what that is”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '4_Tm0SxIp6w'
+ext      = 'mp4'
+start    = '1:38.8'
+duration = '2.45'
+
+[palette]
+add = [
+    '#51684b',      # green book spine
+]
+
+[output]
+colours    = '121'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.11mb'
+
+[[caption]]
+text      = "That’s just good character\ndevelopment, is what that is"
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

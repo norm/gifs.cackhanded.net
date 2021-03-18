@@ -1,0 +1,81 @@
+title = 'Jellicle jellicle jellicle jellicle'
+published = 2021-05-09T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec asks “You’re just gonna keep saying
+the word ‘jellicle’ over and over again with no explanation?” and the
+script writer responds “Jellicle, jellicle, jellicle, jellicle.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'XsNAu72v2Yc'
+ext      = 'mp4'
+start    = '0:44.3'
+duration = '5.7'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '120'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '2.5mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Jellicle"
+from      = '0.2'
+to        = '2.05'
+font      = 'poppins-black.ttf'
+placement = '100,180'
+size      = '48'
+colour    = '#ffffff'
+
+[[caption]]
+text      = "Jellicle"
+from      = '0.6'
+to        = '2.05'
+font      = 'poppins-black.ttf'
+placement = '30,165'
+size      = '48'
+colour    = '#a3afad'
+
+[[caption]]
+text      = "Jellicle"
+from      = '1.15'
+to        = '2.05'
+font      = 'poppins-black.ttf'
+placement = '75,200'
+size      = '48'
+colour    = '#d8a999'
+
+[[caption]]
+text      = "Jellicle"
+from      = '1.6'
+to        = '2.05'
+font      = 'poppins-black.ttf'
+placement = '40,180'
+size      = '60'
+colour    = '#7494d0'
+
+[[caption]]
+text      = "You’re just gonna keep saying\nthe word “jellicle” over and over\nagain with no explanation?"
+from      = '2.15'
+to        = '6'
+align     = 'center'
+placement = 'bc'
+margin    = '20'
+size      = '28'

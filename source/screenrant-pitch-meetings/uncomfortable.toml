@@ -1,0 +1,65 @@
+title = 'I feel so very uncomfortable'
+published = 2021-06-13T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec comments
+“I feel just so *very* uncomfortable”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'XsNAu72v2Yc'
+ext      = 'mp4'
+start    = '3:18.7'
+duration = '2.4'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.08mb'
+mode       = 'full'
+
+[[caption]]
+text      = "I feel just"
+from      = '0'
+to        = '1.49'
+align     = 'center'
+# margin    = '20'
+# placement = 'bc'
+placement = '20,217'
+size      = '28'
+
+[[caption]]
+text      = "SO VERY"
+from      = '0.8'
+to        = '2.25'
+align     = 'center'
+font      = 'assistant-extrabold.ttf'
+# margin    = '20'
+# placement = 'bc'
+placement = '132,211'
+size      = '38'
+
+[[caption]]
+text      = "I feel just                         uncomfortable"
+from      = '1.5'
+to        = '2.25'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
