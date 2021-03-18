@@ -1,0 +1,47 @@
+title = 'Birds'
+published = 2021-04-25T07:00:00Z
+show_fkey = 'hey-duggee/index'
+episode_fkey = 'hey-duggee/the-scarecrow-badge/index'
+tag = [
+    'roly',
+]
+body_markdown = """
+
+Roly scares some birds away by jumping out from underground and shouting
+“Birds!”. He then repeats himself in a much more sinister tone “biiiirds”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'KOIDNq8Ay5c'
+ext      = 'mp4'
+start    = '3:15.7'
+end      = '3:32.0'
+crop     = '1600:900'
+
+[output]
+colours    = '120'
+fps        = '18'
+loss       = '0'
+max_size   = '1.42mb'
+
+[[caption]]
+text      = "BIRDS!"
+from      = '11.9'
+to        = '12.8'
+font      = 'poppins-black.ttf'
+# margin    = '20'
+# placement = 'br'
+placement = '255,205'
+size      = '60'
+
+[[caption]]
+text      = "biiiiiiirds"
+from      = '14.8'
+to        = '15.85'
+font      = 'morlrounded-regular.otf'
+# margin    = '20'
+# placement = 'br'
+placement = '295,215'
+size      = '40'
