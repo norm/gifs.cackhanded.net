@@ -18,38 +18,14 @@ file     = 'ted-lasso-105'
 ext      = 'm4v'
 start    = '9:02.0'
 duration = '3.7'
-# end      = '00:00:00.0'
-# even numbered 16x9 crops:
-# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
-# video size: 1356:678
 crop     = '1200:675'
 
-# [palette]
-# add = [
-#     '#5a7e4c',
-#     '#d5dc4b',
-# ]
-# show = 1
-
 [output]
-# brightness = '0'
-colours    = '254'
-# dither     = 'bayer:bayer_scale=0-5'
-# dither     = 'floyd_steinberg'
-# dither     = 'sierra2'
-# dither     = 'sierra2_4a'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
 fps        = '18'
-loss       = 'no'
-# max_size   = '0.9mb'   # 2s
-# max_size   = '1.35mb'  # 3s
-# max_size   = '1.8mb'   # 4s
-# max_size   = '2.25mb'  # 5s
-# max_size   = '2.7mb'   # 6s
-# max_size   = '3.15mb'  # 7s
-# max_size   = '3.6mb'   # 8s
-# max_size   = '4.05mb'  # 9s
-# max_size   = '4.5mb'   # 10s
-# mode       = 'full'
+loss       = '20'
+max_size   = '1.65mb'
 
 [[caption]]
 text      = "I didn’t know that, so …"

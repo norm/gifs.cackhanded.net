@@ -17,10 +17,6 @@ file     = 'ted-lasso-107'
 ext      = 'm4v'
 start    = '18:37.4'
 duration = '1.85'
-# end      = '00:00:00.0'
-# even numbered 16x9 crops:
-# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
-# video size: 1280:640
 crop     = '960:540:0:0'
 
 [output]

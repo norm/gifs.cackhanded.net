@@ -1,0 +1,28 @@
+title = 'Chuck'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
+tag = [
+    'jamie-tartt',
+    'tommy',
+]
+body_markdown = """
+
+Jamie throws Tommy's phone away.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-110'
+ext      = 'm4v'
+start    = '10:51.5'
+duration = '2.6'
+crop     = '1120:630:200:20'
+
+[output]
+colours    = '54'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.2mb'

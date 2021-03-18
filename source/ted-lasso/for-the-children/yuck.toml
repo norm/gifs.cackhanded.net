@@ -1,13 +1,13 @@
-title = 'Two bottles'
+title = 'Yuck'
 published = 2100-01-01T07:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/for-the-children/index'
 tag = [
-    'keeley-jones',
+    'nathan-shelley',
 ]
 body_markdown = """
 
-Keeley takes two bottles of champagne from the bar and walks off.
+Nathan spits back into the glass the mouthful of the drink he’d just taken.
 
 """
 
@@ -15,14 +15,14 @@ Keeley takes two bottles of champagne from the bar and walks off.
 source   = 'file'
 file     = 'ted-lasso-104'
 ext      = 'm4v'
-start    = '32:21.8'
-duration = '5.3'
+start    = '13:40.3'
+duration = '4'
 crop     = '1200:675'
 
 [output]
 brightness = '0.04'
-colours    = '54'
-dither     = 'bayer:bayer_scale=2'
+colours    = '60'
+dither     = 'bayer:bayer_scale=3'
 fps        = '18'
-loss       = '20'
-max_size   = '2.35mb'
+loss       = '0'
+max_size   = '1.7mb'

@@ -34,7 +34,6 @@ dither     = 'bayer:bayer_scale=3'
 fps        = '18'
 loss       = '20'
 mode       = 'full'
-# max_size   = '4.5mb'  # 10s
 max_size   = '3.63mb'
 
 [[caption]]

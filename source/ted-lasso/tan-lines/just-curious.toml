@@ -19,18 +19,7 @@ file     = 'ted-lasso-105'
 ext      = 'm4v'
 start    = '08:19'
 duration = '3.6'
-# end      = '00:00:00.0'
-# even numbered 16x9 crops:
-# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
-# video size: 1356:678
 crop     = '1200:675'
-
-# [palette]
-# add = [
-#     '#5a7e4c',
-#     '#d5dc4b',
-# ]
-# show = 1
 
 [output]
 brightness = '0.06'
