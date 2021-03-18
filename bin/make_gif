@@ -138,12 +138,9 @@ function main {
 
     [ "${output_max_size:-}" = "auto" ] && \
         output_max_size=$auto_max_size
-    if [ -n "$output_max_size" ]; then
+    [ -n "$output_max_size" ] && \
         printf ', max_size %.2fmb' $(size_in_mb $output_max_size)
-    else
-        printf ' [auto max %.2fmb]' $(size_in_mb $auto_max_size)
-    fi
-    echo ''
+    printf ' [auto max %.2fmb]\n' $(size_in_mb $auto_max_size)
 
     output_loss="$(toml $toml output.loss)"
     losses="${output_loss:-0}"
