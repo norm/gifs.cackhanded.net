@@ -9,6 +9,14 @@ I like to noodle about making GIFs. Many are going to be from
 You are free to link to them or copy them. But I would prefer that you link,
 because The Internet Works That Way.
 
+<figure>
+  <p class='image'><img src='/ted-lasso/pilot/what-gifs-do.gif' width='480' height='271' alt=''></p>
+  <figcaption>
+    “That’s what GIFs do isn’t it? They’re just … endless.”
+  </figcaption>
+</figure>
+
+
 If you have any requests, then feel free to ask me via
 [twitter](https://twitter.com/cackhanded). I might even honour the request one
 day. Or, if you know how and can be bothered, issue a pull request with
