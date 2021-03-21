@@ -1,7 +1,7 @@
 #!/usr/bin/env bash -oeu pipefail
 
 function main {
-    case "$1" in
+    case "${1:-}" in
         count)      count_unscheduled_gifs ;;
         un*)        list_unscheduled_gifs ;;
         [0-9]*)     list_scheduled_gifs "$@" ;;
