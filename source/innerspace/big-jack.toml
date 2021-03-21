@@ -1,0 +1,31 @@
+title = 'Big jack'
+published = 2021-07-17T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'the-cowboy',
+    'jack-putter'
+]
+body_markdown = """
+
+Jack kicks open a hotel door to reveal The Cowboy, dressed only in hat, boots,
+and underpants. The Cowboy pops the cork off a champagne bottle he is holding,
+and the cork flies past Jack into the corridor.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:18:09.0'
+duration = '4'
+crop     = '1040:585'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.9mb'
+mode       = 'full'

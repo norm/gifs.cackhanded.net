@@ -1,0 +1,31 @@
+title = 'Face'
+published = 2021-08-14T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+    'lydia-maxwell',
+    'the-cowboy',
+]
+body_markdown = """
+
+Jack (who has had his face changed to match The Cowboy's) and Lydia 
+push Jack's face around.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:20:51.2'
+duration = '5.6'
+crop     = '1040:585:240:0'
+
+[output]
+brightness = '0.05'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.37mb'
+width      = '400'

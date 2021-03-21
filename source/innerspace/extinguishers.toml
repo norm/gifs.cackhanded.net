@@ -1,0 +1,28 @@
+title = 'Extinguishers'
+published = 2021-06-12T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+    'tuck-pendelton',
+]
+body_markdown = """
+
+Jack and Tuck putting out fires at the same time.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:41:33.7'
+duration = '2.6'
+
+[output]
+colours    = '128'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.3mb'
+mode       = 'full'
+width      = '400'

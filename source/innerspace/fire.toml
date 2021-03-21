@@ -1,0 +1,38 @@
+title = 'FIRE!'
+published = 2021-04-10T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+    'fire',
+]
+body_markdown = """
+
+Jack turns to looks at the TV and VCR, which have flames coming out, and he
+screams “FIRE!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:41:16.2'
+duration = '4.2'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.9mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "FIRE!"
+from      = '3.3'
+to        = '3.9'
+font      = 'poppins-black.ttf'
+margin    = '20'
+placement = 'bc'
+size      = '80'

@@ -1,0 +1,45 @@
+title = 'Doctor’s office'
+published = 2021-06-05T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+]
+body_markdown = """
+
+A patient in the waiting room asks Jack “Are you feeling alright?”
+
+He looks at her and asks incredulously “Would I be in a doctor’s office if I 
+was feeling alright?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:38:07.5'
+duration = '9'
+crop     = '960:540:400:100'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '4.05mb'
+
+[[caption]]
+text      = "Are you feeling alright?"
+from      = '0.5'
+to        = '1.8'
+margin    = '20'
+placement = 'br'
+size      = '28'
+
+[[caption]]
+text      = "Would I be in a doctor’s office\nif I was feeling alright?"
+from      = '4.7'
+to        = '7.9'
+margin    = '20'
+placement = 'bl'
+size      = '28'

@@ -1,0 +1,26 @@
+title = 'Finger gun'
+published = 2021-07-03T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'mr-igoe',
+]
+body_markdown = """
+
+Mr Igoe blows the smoke from his finger gun.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:25:50.8'
+duration = '4.1'
+
+[output]
+brightness = '0.02'
+colours    = '128'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1.88mb'

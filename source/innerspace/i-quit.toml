@@ -1,0 +1,37 @@
+title = 'I quit!'
+published = 2021-04-24T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+]
+body_markdown = """
+
+Jack tells his boss “I quit!”, runs off and jumps into a ’67 Ford Mustang.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:55:20.3'
+duration = '5.9'
+crop     = '1120:630:2000:0'
+
+[output]
+brightness = '0.06'
+colours    = '90'
+dither     = 'bayer:bayer_scale=4'
+fps        = '18'
+loss       = '25'
+max_size   = '2.7mb'
+width      = '400'
+
+[[caption]]
+text      = "I quit!"
+from      = '0'
+to        = '1'
+# margin    = '16'
+# placement = 'bc'
+placement = '180,180'
+size      = '24'

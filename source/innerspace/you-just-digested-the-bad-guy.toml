@@ -1,0 +1,36 @@
+title = 'You just digested the bad guy'
+published = 2021-04-03T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'tuck-pendelton',
+    'skeleton',
+]
+body_markdown = """
+
+A skeleton floats outside of the Kraken II's window. Tuck informs Jack
+“you just digested the bad guy”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:46:14.5'
+duration = '6'
+
+[output]
+brightness = '0.1'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '15'
+max_size   = '2.7mb'
+
+[[caption]]
+text      = "You just digested the bad guy"
+from      = '3'
+to        = '6'
+margin    = '20'
+placement = 'bc'
+size      = '28'

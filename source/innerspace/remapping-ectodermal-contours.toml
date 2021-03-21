@@ -1,0 +1,29 @@
+title = 'Remapping ectodermal contours'
+published = 2021-05-08T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+]
+body_markdown = """
+
+Jack makes some strange faces and his head shakes back and forth,
+as the Kraken II proceeds with remapping his ectodermal contours.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:19:31.05'
+duration = '2.54'
+crop     = '1200:720:0:0'
+
+[output]
+brightness = '0.05'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.16mb'
+width      = '400'

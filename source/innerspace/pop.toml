@@ -1,0 +1,29 @@
+title = 'Pop'
+published = 2021-04-17T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'mr-igoe',
+    'clown',
+    'balloon',
+]
+body_markdown = """
+
+Mr Igoe cruelly pops the balloon of a clown.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:27:37.0'
+duration = '5'
+crop     = '800:450:80:130'
+
+[output]
+colours    = '64'
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '30'
+max_size   = '2.31mb'
+width      = '400'

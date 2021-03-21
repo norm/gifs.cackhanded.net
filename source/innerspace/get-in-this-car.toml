@@ -1,0 +1,40 @@
+title = 'Get in this car!'
+published = 2021-08-07T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'lydia-maxwell',
+    'jack-putter',
+]
+body_markdown = """
+
+Jack is precariously balanced between the open door of a refrigerated
+truck and the top of the windscreen of a ’67 Ford Mustang. Lydia,
+driving the car, shouts at him to “Get in this car!” He waves his arms around.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:07:16'
+duration = '2.75'
+crop     = '1040:585:0:100'
+
+[output]
+brightness = '0.05'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '35'
+max_size   = '1.31mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Get in this car!"
+from      = '0'
+to        = '1'
+# margin    = '16'
+# placement = 'br'
+placement = '275,170'
+size      = '28'

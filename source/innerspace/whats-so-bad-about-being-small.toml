@@ -1,0 +1,36 @@
+title = 'What’s so bad about being small?'
+published = 2021-05-01T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+]
+body_markdown = """
+
+Jack talking to Tuck, asks “What’s so bad about being small?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:59:47.0'
+duration = '3'
+crop     = '1120:630:160:50'
+
+[output]
+brightness = '0.075'
+colours    = '74'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1.36mb'
+width      = '400'
+
+[[caption]]
+text      = "What’s so bad about being small?"
+from      = '1.1'
+to        = '2.65'
+margin    = '16'
+placement = 'bc'
+size      = '24'

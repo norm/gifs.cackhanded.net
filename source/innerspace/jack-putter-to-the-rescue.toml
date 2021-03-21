@@ -1,0 +1,35 @@
+title = 'Jack Putter to the rescue!'
+published = 2021-07-10T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+]
+body_markdown = """
+
+Jack behind the wheel of a ’67 Ford Mustang shouts “Jack Putter to the rescue!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:55:25.9'
+duration = '2'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '0.97mb'
+width      = '400'
+
+[[caption]]
+text      = "Jack Putter to the rescue!"
+from      = '0.4'
+to        = '2'
+margin    = '16'
+placement = 'bc'
+size      = '24'

@@ -1,0 +1,29 @@
+title = 'Eject'
+published = 2021-05-29T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+    'vcr',
+]
+body_markdown = """
+
+The VCR spits out a cassette at such high speed that the cassette flies
+across the room and smashes through the window.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:41:13.2'
+duration = '2.8'
+
+[output]
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.28mb'
+mode       = 'full'
+width      = '400'

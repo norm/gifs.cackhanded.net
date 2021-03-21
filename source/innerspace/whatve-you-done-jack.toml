@@ -1,0 +1,46 @@
+title = 'What’ve you done Jack?'
+published = 2021-06-19T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+    'mr-wormwood',
+]
+body_markdown = """
+
+Jack's boss, Mr Wormwood, puts on his glasses and asks
+“What’ve you done, Jack? What’ve you done?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:30:45.0'
+duration = '3.9'
+
+[output]
+brightness = '0.06'
+colours    = '58'
+dither     = 'sierra2'
+fps        = '15'
+loss       = '15'
+max_size   = '1.9mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "What’ve you done, Jack?"
+from      = '1'
+to        = '2.5'
+margin    = '20'
+placement = 'br'
+size      = '28'
+
+[[caption]]
+text      = "What’ve you done?"
+from      = '2.51'
+to        = '3.7'
+margin    = '20'
+placement = 'br'
+size      = '28'

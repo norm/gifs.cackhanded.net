@@ -1,0 +1,56 @@
+title = 'Women love me'
+published = 2021-05-15T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'the-cowboy',
+    'lydia-maxwell',
+]
+body_markdown = """
+
+The Cowboy, talking to Lydia, lights a cigar and says “Women love me,
+but you know that”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:15:15.0'
+duration = '5.5'
+
+[output]
+brightness = '0.025'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '40'
+max_size   = '2.47mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "Women"
+from      = '1.1'
+to        = '3.2'
+# margin    = '20'
+# placement = 'bc'
+placement = '103,172'
+size      = '28'
+
+[[caption]]
+text      = "Women love me"
+from      = '2.6'
+to        = '3.2'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "But you know that"
+from      = '4'
+to        = '5'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+

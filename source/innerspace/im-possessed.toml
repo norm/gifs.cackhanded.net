@@ -1,0 +1,36 @@
+title = 'I‘m possessed!'
+published = 2021-07-24T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'jack-putter',
+]
+body_markdown = """
+
+Jack screams “I’m possessed!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '0:38:34.0'
+duration = '2.4'
+
+[output]
+colours    = '122'
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '10'
+max_size   = '1.2mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "I’M POSSESSED!"
+from      = '0.5'
+to        = '2'
+font      = 'poppins-black.ttf'
+margin    = '20'
+placement = 'bc'
+size      = '40'

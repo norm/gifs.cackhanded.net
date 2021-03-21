@@ -1,0 +1,36 @@
+title = 'Take care Big Jack'
+published = 2021-07-31T07:00:00Z
+source_fkey = 'innerspace/index'
+tag = [
+    'tuck-pendelton',
+    'jack-putter',
+    'lydia-maxwell',
+]
+body_markdown = """
+
+Tuck kisses Jack on the cheek after the wedding.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'innerspace'
+ext      = 'mp4'
+start    = '1:53:26.0'
+
+[output]
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.21mb'
+mode       = 'full'
+width      = '400'
+
+[[clip]]
+start = '0'
+end   = '1.5'
+
+[[clip]]
+start = '2.2'
+end   = '3.3'
