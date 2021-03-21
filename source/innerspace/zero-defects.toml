@@ -3,11 +3,11 @@ published = 2021-03-06T07:00:00Z
 source_fkey = 'innerspace/index'
 tag = [
     'ozzie-wexler',
-    'tuck-pendleton',
+    'tuck-pendelton',
 ]
 body_markdown = """
 
-Tuck, staring at himself in a mirror, declares “The Tuck Pendleton
+Tuck, staring at himself in a mirror, declares “The Tuck Pendelton
 machine: zero defects.”
 
 """
@@ -28,7 +28,7 @@ max_size   = '2.7mb'
 width    = '400'
 
 [[caption]]
-text      = "The Tuck Pendleton machine:\n "
+text      = "The Tuck Pendelton machine:\n "
 from      = '0.2'
 to        = '5'
 align     = 'center'
