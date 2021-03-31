@@ -37,7 +37,8 @@ function list_scheduled_gifs {
             ( ag published.*$datestamp source || echo '' ) \
                 | cut -d: -f1 \
                 | sed -e 's#source/##' \
-                      -e 's/.toml//'
+                      -e 's/.toml//' \
+                      -e '2,$s/^/               /'
         )
 
         [ -n "$content" -a -n "$empty" ] && continue
