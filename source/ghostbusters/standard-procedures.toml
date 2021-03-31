@@ -1,0 +1,53 @@
+title = 'Standard procedures'
+published = 2021-03-31T09:00:00Z
+source_fkey = 'ghostbusters/index'
+tag = [
+    'dana-barrett',
+    'peter-venkman',
+]
+body_markdown = """
+
+Venkman tells Dana while shrugging “There are some things we do, 
+standard procedures in a case like this,
+that often bring us results”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ghostbusters'
+ext      = 'm4v'
+start    = '00:23:29.1'
+duration = '3.7'
+crop     = '1040:528'
+
+[output]
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.82mb'
+width      = '400'
+
+[[caption]]
+text      = "There are some things we do"
+from      = '0'
+to        = '1.2'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "standard procedures in a case like this"
+from      = '1.21'
+to        = '2.4'
+margin    = '0'
+# placement = 'bc'
+placement = '6,164'
+size      = '24'
+
+[[caption]]
+text      = "that often bring us results"
+from      = '2.41'
+to        = '4'
+placement = 'bc'
+size      = '24'
