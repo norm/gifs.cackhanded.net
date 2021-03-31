@@ -51,6 +51,12 @@ test:
 unstash:
 	@git stash pop
 
+next: gifwrapped
+	@clear
+	@./script/next 60
+	@echo ''
+	@./script/next un
+
 example-fonts:
 	mkdir -p fonts
 	curl -L -o fonts/assistant-semibold.ttf 'https://github.com/google/fonts/blob/master/ofl/assistant/Assistant-SemiBold.ttf?raw=true'
