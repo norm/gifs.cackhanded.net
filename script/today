@@ -1,0 +1,13 @@
+#!/usr/bin/env bash -euo pipefail
+
+datestamp=$(date +'%Y-%m-%d')
+files=($(ag -l published.*$datestamp source))
+
+for file in "${files[@]}"; do
+    echo "== $file"
+    link=$(echo $file | sed -e 's#source/##' -e 's#.toml##')
+
+    ./bin/toml $file body_markdown
+    open -a Safari https://gifs.cackhanded.net/$link
+    open -a Safari https://gifs.cackhanded.net/${link}.gif
+done
