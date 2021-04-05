@@ -7,7 +7,14 @@ for file in "${files[@]}"; do
     echo "== $file"
     link=$(echo $file | sed -e 's#source/##' -e 's#.toml##')
 
-    ./bin/toml $file body_markdown
     open -a Safari https://gifs.cackhanded.net/$link
     open -a Safari https://gifs.cackhanded.net/${link}.gif
+    echo https://gifs.cackhanded.net/${link}.gif
+    echo https://gifs.cackhanded.net/$link
+    ./bin/toml $file body_markdown
+
+    (
+        ./bin/toml $file body_markdown | tr -s '\n' ' ';
+        echo https://gifs.cackhanded.net/$link
+    ) | pbcopy
 done
