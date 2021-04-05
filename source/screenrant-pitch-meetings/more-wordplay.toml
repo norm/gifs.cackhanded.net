@@ -1,0 +1,51 @@
+title = 'More wordplay'
+published = 2021-09-12T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec comments “More wordplay, okay” and a
+screen writer replies “You’re damn right!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Ha10ImiP6So'
+ext      = 'mp4'
+start    = '2:16.85'
+duration = '1.8'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#542c22',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '0.82mb'
+mode       = 'full'
+
+[[caption]]
+text      = "More wordplay, okay"
+from      = '0'
+to        = '0.95'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "You’re damn right!"
+from      = '0.96'
+to        = '2'
+margin    = '20'
+placement = 'bc'
+size      = '28'

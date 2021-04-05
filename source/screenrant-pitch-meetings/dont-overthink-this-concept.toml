@@ -1,0 +1,44 @@
+title = 'Don’t overthink this concept'
+published = 2021-08-08T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a screen writer explains “Definitely don’t overthink
+this concept, it does not hold up to scrutiny”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Ha10ImiP6So'
+ext      = 'mp4'
+start    = '1:47.5'
+duration = '4'
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.8mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Definitely don’t overthink this concept"
+from      = '0'
+to        = '2.15'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "It does not hold up to scrutiny"
+from      = '2.25'
+to        = '4'
+margin    = '20'
+placement = 'bc'
+size      = '28'

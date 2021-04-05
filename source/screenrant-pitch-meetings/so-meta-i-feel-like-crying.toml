@@ -1,0 +1,44 @@
+title = 'So meta I feel like crying'
+published = 2021-07-11T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec comments “That was so meta
+I feel like crying”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Ha10ImiP6So'
+ext      = 'mp4'
+start    = '4:17.1'
+duration = '1.8'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '0.8mb'
+mode       = 'full'
+
+[[caption]]
+text      = "That was so meta I feel like crying"
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

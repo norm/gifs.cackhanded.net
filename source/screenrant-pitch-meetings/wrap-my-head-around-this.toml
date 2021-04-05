@@ -1,0 +1,52 @@
+title = 'Wrap my head around this'
+published = 2021-08-15T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec requests “Let me try to wrap my head
+around this”, and the script writer comments “Uh-oh, no”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Ha10ImiP6So'
+ext      = 'mp4'
+start    = '3:26.6'
+duration = '2.5'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#542c22',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.12mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Let me try to wrap\nmy head around this"
+from      = '0'
+to        = '1.82'
+align     = 'center'
+margin    = '20'
+placement = '180,180'
+size      = '28'
+
+[[caption]]
+text      = "Uh-oh, no"
+from      = '1.83'
+to        = '2.5'
+margin    = '20'
+placement = '140,217'
+size      = '28'

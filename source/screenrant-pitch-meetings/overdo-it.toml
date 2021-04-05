@@ -1,0 +1,36 @@
+title = 'Overdo it'
+published = 2021-09-19T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a script writer confirms “Oh, we’re gonna overdo it!”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Ha10ImiP6So'
+ext      = 'mp4'
+start    = '1:30.9'
+duration = '1.3'
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '0.58mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Oh we’re gonna overdo it!"
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

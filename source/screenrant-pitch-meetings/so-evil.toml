@@ -1,0 +1,43 @@
+title = 'So evil'
+published = 2021-07-18T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a studio exec comments “Oh you’re so evil, I love it!”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Ha10ImiP6So'
+ext      = 'mp4'
+start    = '0:36'
+duration = '1.65'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#542c22',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '0.76mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Oh you’re so evil, I love it!"
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

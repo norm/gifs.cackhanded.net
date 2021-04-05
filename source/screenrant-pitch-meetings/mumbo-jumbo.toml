@@ -1,0 +1,48 @@
+title = 'Mumbo jumbo'
+published = 2021-08-01T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a script writer comments “Nobody has any time to digest
+any of the mumbo-jumbo we use as explanations”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'LGGWC5-q1Ts'
+ext      = 'mp4'
+start    = '5:14.3'
+duration = '4.01'
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.82mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Nobody has any time to digest"
+from      = '0'
+to        = '1.74'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "any of the mumbo-jumbo\nwe use as explanations"
+from      = '1.75'
+to        = '5'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+ 
