@@ -1,0 +1,46 @@
+title = 'Say something about The Muppets'
+published = 2021-04-09T10:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/sag-awards/index'
+tag = [
+    'roy-kent',
+    'the-muppets',
+]
+body_markdown = """
+
+Roy steps forward and threatens Colin “Say something about The Muppets, 
+I fucking dare you”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-1101'
+ext      = 'mp4'
+start    = '1:01.2'
+duration = '4.6'
+crop     = '1120:640'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.5mb'
+
+[[caption]]
+text      = "Say something about The Muppets"
+from      = '0.6'
+to        = '2.3'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "I fucking dare you"
+from      = '3'
+to        = '4.4'
+margin    = '20'
+placement = 'bc'
+size      = '28'

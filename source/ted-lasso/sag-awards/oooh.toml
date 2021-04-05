@@ -1,0 +1,30 @@
+title = 'Oooh'
+published = 2021-04-07T10:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/sag-awards/index'
+tag = [
+    'rebecca-welton',
+    'sam-obisanya',
+]
+body_markdown = """
+
+Rebecca going "ooooh" at a great idea. Sam looks more confused than anything.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-1101'
+ext      = 'mp4'
+start    = '0:45.05'
+duration = '1'
+crop     = '960:540:800:90'
+
+[output]
+brightness = '0.06'
+colours    = '128'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.6mb'
+mode       = 'full'

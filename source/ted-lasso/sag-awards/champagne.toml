@@ -1,0 +1,40 @@
+title = 'Celebration'
+published = 2021-04-05T10:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/sag-awards/index'
+tag = [
+    'coach-beard',
+    'colin-hughes',
+    'dani-rojas',
+    'isaac-mcadoo',
+    'jamie-tartt',
+    'keeley-jones',
+    'leslie-higgins',
+    'nathan-shelley',
+    'rebecca-welton',
+    'roy-kent',
+    'sam-obisanya',
+    'ted-lasso',
+]
+body_markdown = """
+
+AFC Richmond, and Jamie Tartt, celebrating.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-1101'
+ext      = 'mp4'
+start    = '2:30'
+duration = '2.5'
+crop     = '1120:640:20:40'
+
+[output]
+brightness = '0.06'
+colours    = '80'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '1.4mb'
+width      = '400'

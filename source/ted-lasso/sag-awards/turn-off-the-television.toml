@@ -1,0 +1,43 @@
+title = 'Turn off the television'
+published = 2021-04-08T10:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/sag-awards/index'
+tag = [
+    'sam-obisanya',
+    'rebecca-welton',
+    'leslie-higgins',
+    'dani-rojas',
+]
+body_markdown = """
+
+Sam suggests that everyone “just turn off the television and go to bed”.
+Rebecca, Higgins, Dani Rojas, and a bunch of the other players react as
+though this is a great idea.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-1101'
+ext      = 'mp4'
+start    = '0:31.3'
+duration = '3.6'
+crop     = '1120:640'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.76mb'
+mode       = 'full'
+
+[[caption]]
+text      = "May I suggest we just turn off\nthe television and go to bed?"
+from      = '0'
+to        = '2.3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

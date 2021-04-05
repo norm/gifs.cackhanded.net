@@ -1,0 +1,31 @@
+title = 'Tension'
+published = 2021-04-10T10:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/sag-awards/index'
+tag = [
+    'ted-lasso',
+    'rebecca-welton',
+    'sam-obisanya',
+]
+body_markdown = """
+
+Ted purses his lips and looks sideways. Rebecca does the same.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted-lasso-1101'
+ext      = 'mp4'
+start    = '1:05.9'
+duration = '2.25'
+crop     = '1120:640'
+
+[output]
+brightness = '0.06'
+colours    = '80'
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '0'
+max_size   = '1mb'
+mode       = 'full'
