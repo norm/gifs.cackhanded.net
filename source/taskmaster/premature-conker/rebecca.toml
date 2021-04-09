@@ -1,0 +1,36 @@
+title = 'Rebecca'
+published = 2021-04-09T13:00:00Z
+show_fkey = 'taskmaster/index'
+episode_fkey = 'taskmaster/premature-conker/index'
+tag = [
+    'alex-horne',
+]
+body_markdown = """
+
+Alex Horne saying “Her name is Rebecca, she wasn’t happy”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'taskmaster-1104'
+ext      = 'mkv'
+start    = '36:26.8'
+duration = '2'
+crop     = '480:270:2000:80'
+
+[output]
+colours    = '94'
+dither     = 'bayer:bayer_scale=3'
+fps        = 'original'
+loss       = '0'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "Her name is Rebecca,\nshe wasn’t happy"
+from      = '0'
+to        = '2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
