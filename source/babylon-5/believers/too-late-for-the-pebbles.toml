@@ -1,0 +1,47 @@
+title = 'Too late for the pebbles'
+published = 2021-05-12T07:00:00Z
+show_fkey = 'babylon-5/index'
+episode_fkey = 'babylon-5/believers/index'
+tag = [
+    'kosh',
+]
+body_markdown = """
+
+Ambassador Kosh telling some concerned parents “The avalanche has already
+started, it is too late for the pebbles to vote”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'babylon5-110'
+ext      = 'm4v'
+start    = '22:01.7'
+duration = '8.5'
+crop     = '1440:810:0:40'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '3.82mb'
+mode       = 'full'
+
+[[caption]]
+text      = "The avalanche has already started"
+from      = '0.4'
+to        = '3.8'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "It is too late for the pebbles to vote"
+from      = '5'
+to        = '8'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,39 @@
+title = 'You talk like a Minbari'
+published = 2021-05-26T07:00:00Z
+show_fkey = 'babylon-5/index'
+episode_fkey = 'babylon-5/legacies/index'
+tag = [
+    'neroon',
+    'jeffrey-sinclair',
+]
+body_markdown = """
+
+Neroon tells Sinclair “You talk like a Minbari”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'babylon5-117'
+ext      = 'm4v'
+start    = '38:32.0'
+duration = '2.35'
+crop     = '1440:810:0:40'
+
+[output]
+brightness = '0.04'
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1mb'
+mode       = 'full'
+
+[[caption]]
+text      = "You talk like a Minbari"
+from      = '0.45'
+to        = '4'
+margin    = '20'
+placement = 'bc'
+size      = '28'

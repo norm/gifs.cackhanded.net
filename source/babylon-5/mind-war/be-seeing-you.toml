@@ -1,0 +1,39 @@
+title = 'Be seeing you'
+published = 2021-05-19T07:00:00Z
+show_fkey = 'babylon-5/index'
+episode_fkey = 'babylon-5/mind-war/index'
+tag = [
+    'alfred-bester',
+    'jeffrey-sinclair',
+]
+body_markdown = """
+
+Bester makes a gesture with his hand reminiscent of The Prisoner, (except he
+puts it up to his brain, not his eye) and says to Sinclair “Be seeing you,
+Commander”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'babylon5-106'
+ext      = 'm4v'
+start    = '38:59.0'
+duration = '3.6'
+crop     = '1440:810'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.63mb'
+
+[[caption]]
+text      = "Be seeing you, Commander"
+from      = '1.9'
+to        = '3.3'
+margin    = '20'
+placement = 'bc'
+size      = '28'

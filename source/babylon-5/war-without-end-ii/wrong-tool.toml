@@ -1,0 +1,69 @@
+title = 'Wrong tool'
+published = 2021-06-02T07:00:00Z
+show_fkey = 'babylon-5/index'
+episode_fkey = 'babylon-5/war-without-end-ii/index'
+tag = [
+    'susan-ivanova',
+    'zathras',
+]
+body_markdown = """
+
+Zathras, pawing through a box of tools, tells Ivanova “This is wrong tool.
+No, no, not good, no, no”. He pulls out something, and waves it at Ivanova.
+“Never use this”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'babylon5-317'
+ext      = 'm4v'
+start    = '23:37.0'
+duration = '9.1'
+crop     = '1440:810:0:40'
+
+[output]
+brightness = '0.1'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '3.6mb'
+mode       = 'full'
+
+[[caption]]
+text      = "This"
+from      = '0.4'
+to        = '1.6'
+align     = 'center'
+# placement = 'bc'
+placement = '133,217'
+size      = '28'
+
+[[caption]]
+text      = "This is wrong tool"
+from      = '1.61'
+to        = '3.1'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "No, no, not good, no, no"
+from      = '3.8'
+to        = '7'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Never use this"
+from      = '7.6'
+to        = '8.8'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
