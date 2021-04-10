@@ -22,6 +22,16 @@ source bin/make_gif
     [ "$got" = "$expected" ]
 }
 
+@test generate_denoise {
+    expected='[0:v] hqdn3d [iv]; [iv][1:v] paletteuse='
+    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
+
+    got="$(generate_filter tests/config/denoise.toml)"
+    echo "GOT='$got'"
+    echo "EXP='$expected'"
+    [ "$got" = "$expected" ]
+}
+
 @test generate_fps {
     expected='[0:v] fps=10 [iv]; [iv][1:v] paletteuse='
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
@@ -106,6 +116,20 @@ source bin/make_gif
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
 
     got="$(generate_filter tests/config/clips_brighten.toml)"
+    echo "GOT='$got'"
+    echo "EXP='$expected'"
+    [ "$got" = "$expected" ]
+}
+
+@test generate_clips_denoise {
+    expected='[0:v] fps=16,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
+    expected+='[0:v] fps=16,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
+    expected+='[c1][c2] concat=n=2:v=1,crop=200:100,scale=320:-1,'
+    expected+='hqdn3d [cv]; '
+    expected+='[cv][1:v] paletteuse='
+    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
+
+    got="$(generate_filter tests/config/clips_denoise.toml)"
     echo "GOT='$got'"
     echo "EXP='$expected'"
     [ "$got" = "$expected" ]

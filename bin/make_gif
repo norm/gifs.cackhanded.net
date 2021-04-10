@@ -56,6 +56,7 @@ function main {
     output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
     echo "    ${output_width}x${output_height}" \
         $(get_dither $toml | sed -e 's/bayer://') \
+        $(get_denoise $toml | sed -e 's/hqdn3d/denoise/') \
         $(get_fps $toml | sed -e 's/^$/fps=original/')
 
 
@@ -189,6 +190,7 @@ function palettegen_filter {
 
     local max_cols=$(get_colours $toml)
     local bright=$(get_bright $toml)
+    local denoise=$(get_denoise $toml)
     local mode=$(get_stats_mode $toml)
     local palettegen="palettegen=${max_cols}:${mode}"
     local clips=$(get_clips $toml)
@@ -199,7 +201,7 @@ function palettegen_filter {
         local crop=$(get_crop $toml)
         local scale=$(get_scale $toml)
         local fps=$(get_fps $toml)
-        echo "[0:v] $(join ',' $fps $crop $scale $bright $palettegen)"
+        echo "[0:v] $(join ',' $fps $crop $scale $bright $denoise $palettegen)"
     fi
 }
 
@@ -222,10 +224,11 @@ function generate_filter {
         fi
     else
         local bright=$(get_bright $toml)
+        local denoise=$(get_denoise $toml)
         local crop=$(get_crop $toml)
         local fps=$(get_fps $toml)
         local scale=$(get_scale $toml)
-        local alter="$(join ',' $fps $crop $scale $bright)"
+        local alter="$(join ',' $fps $crop $scale $bright $denoise)"
         alter="${alter:-scale=w=in_w:h=in_h}"
         if [ -n "$timings" ]; then
             echo "[0:v] $alter [cv]; ${timings}[tv]${captions}${paletteuse}"
@@ -261,6 +264,14 @@ function get_bright {
     local output_bright="$(toml $toml output.brightness)"
     [ -n "$output_bright" ] && \
         echo "eq=brightness=$output_bright"
+}
+
+function get_denoise {
+    local toml="$1"
+
+    local output_denoise="$(toml $toml output.denoise)"
+    [ -n "$output_denoise" ] && \
+        echo "hqdn3d"
 }
 
 function get_scale {
@@ -309,10 +320,11 @@ function get_clips {
         done
 
         local bright=$(get_bright $toml)
+        local denoise=$(get_denoise $toml)
         local concat="concat=n=$index:v=1"
         local crop=$(get_crop $toml)
         local scale=$(get_scale $toml)
-        local alter="$(join ',' $concat $crop $scale $bright)"
+        local alter="$(join ',' $concat $crop $scale $bright $denoise)"
         clips+="$filters $alter [cv];"
     fi
 

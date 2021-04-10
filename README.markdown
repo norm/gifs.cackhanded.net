@@ -41,11 +41,12 @@ add = [
 show = 1
 
 [output]
-brighten = '0.05'
-colours  = '192'
-mode     = 'full'
-max_size = '2mb'  # or 'auto'
-dither   = 'floyd_steinberg'
+brightness = '0.05'
+colours    = '192'
+denoise    = true
+mode       = 'full'
+max_size   = '2mb'  # or 'auto'
+dither     = 'floyd_steinberg'
 
 [[clip]]
 start = '2'
@@ -113,6 +114,8 @@ the video source.
 * `colours` is the maximum number of colours to be used in the GIF,
   a lower number means a smaller GIF up to a point; default is 64,
   maximum is 256
+* `denoise` should be set to `true` to apply the `hqdn3d` filter (very
+  useful for older, grainy footage, smoother video makes for smaller GIFs)
 * `mode` is used when creating the palette; default is `diff`:
     * `full` optimise colours for the full image
     * `diff` optimise colours for the differences between frames

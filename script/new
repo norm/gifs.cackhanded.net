@@ -68,6 +68,7 @@ duration = '1'
 [output]
 # brightness = '0'
 colours    = '254'
+# denoise    = true
 # dither     = 'bayer:bayer_scale=0-5'
 # dither     = 'floyd_steinberg'
 # dither     = 'sierra2'

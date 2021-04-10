@@ -21,6 +21,16 @@ source bin/make_gif
     [ "$got" = "$expected" ]
 }
 
+@test palettegen_denoise {
+    expected='[0:v] hqdn3d,'
+    expected+='palettegen=max_colors=64:stats_mode=diff'
+
+    got="$(palettegen_filter tests/config/denoise.toml)"
+    echo GOT=$got
+    echo EXP=$expected
+    [ "$got" = "$expected" ]
+}
+
 @test palettegen_fps {
     expected='[0:v] fps=10,palettegen=max_colors=64:stats_mode=diff'
 
