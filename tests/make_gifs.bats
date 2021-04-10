@@ -21,7 +21,7 @@
     run make_gif tests/config/lossy.toml $BATS_TMPDIR/gif
     echo "$output"
 
-    [ "${lines[2]}" == "    size 1.61mb (duration 1.01), max_size 1.00mb" ]
+    [ "${lines[2]}" == "    size 1.61mb (duration 1.01), max_size 1.00mb [auto max 0.45mb]" ]
     [ "${lines[3]}" == "  < optimised with loss 20, now 1.20mb, 74.3% of original" ]
     [ "${lines[4]}" == "  < optimised with loss 30, now 1.08mb, 108.0% of max" ]
     [ "${lines[5]}" == "  < optimised with loss 40, now 1.00mb, 99.6% of max" ]
