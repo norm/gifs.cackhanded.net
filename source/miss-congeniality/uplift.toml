@@ -1,0 +1,35 @@
+title = 'Uplift'
+published = 2022-06-14T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+    'victor-melling',
+    'mary-jo-wright',
+    'miss-texas',
+]
+body_markdown = """
+
+Gracie tries to push her boobs up to make some cleavage,
+while Victor does up her dress.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:36:10.5'
+duration = '2.4'
+crop     = '1080:585:0:80'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '18'
+loss       = '25'
+max_size   = '1.53mb'
+mode       = 'full'

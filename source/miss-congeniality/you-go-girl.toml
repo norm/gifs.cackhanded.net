@@ -1,0 +1,39 @@
+title = 'You go, girl'
+published = 2021-08-17T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'agent-grant',
+    'agent-harris',
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Gracie takes down Eric. On the benches, Agent Grant comments “You go, girl”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:22:16.5'
+duration = '4.4'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '18'
+loss       = '10'
+max_size   = '1.9mb'
+
+[[caption]]
+text      = "you go, girl"
+from      = '2.4'
+to        = '3.4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

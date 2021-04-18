@@ -1,0 +1,37 @@
+title = 'Easy to talk to'
+published = 2021-07-27T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Eric tells Gracie “You’re easy to talk to when you’re not armed”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:00:42.7'
+duration = '3.4'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.5mb'
+
+[[caption]]
+text      = "You’re easy to talk to\nwhen you’re not armed"
+from      = '0.3'
+to        = '2.19'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

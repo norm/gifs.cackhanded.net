@@ -1,0 +1,48 @@
+title = 'She’s kicking his ass'
+published = 2021-08-24T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'pageant-director',
+    'assistant-director',
+    'eric-matthews',
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+]
+body_markdown = """
+
+Gracie demonstrating self-defense moves on Eric, as the pageant
+director comments “She’s kicking his ass!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:30:40.7'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.01mb'
+
+[[clip]]
+start = '37.5'
+end   = '40'
+
+[[clip]]
+start = '0'
+end   = '1.6'
+
+[[caption]]
+text      = "She’s kicking his ass!"
+from      = '2.6'
+to        = '3.6'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

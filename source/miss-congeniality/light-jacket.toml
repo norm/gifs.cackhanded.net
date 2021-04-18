@@ -1,0 +1,37 @@
+title = 'Light jacket'
+published = 2021-04-25T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'stan-fields',
+]
+body_markdown = """
+
+Cheryl tells Stan “All you need is a light jacket”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:06:07.6'
+duration = '3'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.36mb'
+
+[[caption]]
+text      = "All you need is a light jacket"
+from      = '0.4'
+to        = '2.3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

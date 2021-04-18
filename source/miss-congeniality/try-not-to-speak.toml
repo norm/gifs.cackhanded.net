@@ -1,0 +1,41 @@
+title = 'Try not to speak'
+published = 2022-06-07T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+    'victor-melling',
+]
+body_markdown = """
+
+Victor tells Gracie “Try not to speak”, so she puts on her best
+winner’s smile.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:36:17.0'
+duration = '3.2'
+crop     = '1120:630'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.49mb'
+width      = '400'
+
+[[caption]]
+text      = "Try not to speak"
+from      = '1.5'
+to        = '2.7'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'

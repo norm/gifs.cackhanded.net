@@ -1,0 +1,35 @@
+title = 'How you doin’'
+published = 2021-09-14T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+]
+body_markdown = """
+
+Eric casually asking “So how you doin’ huh? You okay?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:14:07.65'
+duration = '2.1'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '5'
+max_size   = '0.95mb'
+
+[[caption]]
+text      = "So how you doin’ huh? You okay?"
+from      = '0.5'
+to        = '2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,36 @@
+title = 'Doesn’t inspire much confidence'
+published = 2022-03-15T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'harry-mcdonald',
+]
+body_markdown = """
+
+Harry commenting “Doesn’t inspire much confidence”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:19:26.8'
+duration = '2.7'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.2mb'
+
+[[caption]]
+text      = "Doesn’t inspire much confidence"
+from      = '0.7'
+to        = '2.4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

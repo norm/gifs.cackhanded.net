@@ -1,0 +1,63 @@
+title = 'You are the crown'
+published = 2022-07-19T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'victor-melling',
+]
+body_markdown = """
+
+Victor affims to Gracie “Yes, wear the crown, be the crown,
+you **are** the crown!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:36:35.0'
+duration = '4.4'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.35mb'
+width      = '360'
+
+[[caption]]
+text      = "Wear the crown"
+from      = '0.35'
+to        = '1.5'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "Be the crown"
+from      = '2'
+to        = '2.95'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "You             the crown"
+from      = '3.3'
+to        = '4.4'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "ARE"
+from      = '3.3'
+to        = '4.4'
+font      = 'greycliffcf-heavy.otf'
+placement = '118,155'
+size      = '30'

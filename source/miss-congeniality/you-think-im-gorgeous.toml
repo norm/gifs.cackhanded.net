@@ -1,0 +1,48 @@
+title = 'You think I’m gorgeous'
+published = 2022-07-12T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Gracie teases Eric “You think I’m gorgeous, you wanna date me…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:42:37.0'
+duration = '7'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '3.42mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "You think I’m gorgeous"
+from      = '0.4'
+to        = '3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "You wanna date me"
+from      = '3.6'
+to        = '6.6'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

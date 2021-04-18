@@ -1,0 +1,42 @@
+title = 'More fluffy'
+published = 2021-09-21T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'victor-melling',
+]
+body_markdown = """
+
+Victor tells a hair stylist to make it more fluffy.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:34:07'
+duration = '4.4'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.1mb'
+
+[[caption]]
+text      = "More"
+from      = '1.8'
+to        = '4.5'
+placement = '173,217'
+size      = '28'
+
+[[caption]]
+text      = "More fluffy"
+from      = '3.6'
+to        = '4.5'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

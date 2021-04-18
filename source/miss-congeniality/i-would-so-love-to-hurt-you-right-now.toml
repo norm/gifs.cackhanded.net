@@ -1,0 +1,38 @@
+title = 'I would so love to hurt you right now'
+published = 2021-07-06T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie tells Victor “I would so love to hurt you right now”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:57:48.5'
+duration = '2.7'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.31mb'
+
+[[caption]]
+text      = "I would so love to hurt you right now"
+from      = '0'
+to        = '3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

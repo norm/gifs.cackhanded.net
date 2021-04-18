@@ -1,0 +1,31 @@
+title = 'Bagel'
+published = 2022-02-22T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie goes to bite a bagel, and Victor pulls it out of her hand.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:47:54.8'
+duration = '3.4'
+crop     = '960:540:320:60'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '15'
+max_size   = '1.82mb'
+width      = '400'

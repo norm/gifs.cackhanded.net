@@ -1,0 +1,58 @@
+title = 'Perfect date'
+published = 2021-04-25T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'stan-fields',
+]
+body_markdown = """
+
+Cheryl tells Stan about her perfect date:
+
+“I’d have to say April 25th. Because it's not too hot and not too cold,
+all you need is a light jacket.”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:06:01.0'
+duration = '11'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '4.4mb'
+
+[[caption]]
+text      = "I’d have to say April 25th"
+from      = '0.25'
+to        = '2.9'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Because it's not too hot and not too cold"
+from      = '3.45'
+to        = '6.6'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "All you need is a light jacket"
+from      = '7'
+to        = '8.9'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

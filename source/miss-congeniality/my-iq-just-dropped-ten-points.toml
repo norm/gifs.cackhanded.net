@@ -1,0 +1,39 @@
+title = 'My IQ just dropped ten points'
+published = 2021-09-28T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Gracie, looking at her new identity,
+tells Eric “My IQ just dropped ten points”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:34:02.4'
+duration = '2.8'
+crop     = '1120:630:160:70'
+
+[output]
+brightness = '0.1'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.23mb'
+
+[[caption]]
+text      = "My IQ just dropped ten points"
+from      = '0.6'
+to        = '2.6'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

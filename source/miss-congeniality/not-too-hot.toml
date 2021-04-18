@@ -1,0 +1,37 @@
+title = 'Not too hot'
+published = 2021-04-25T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'stan-fields',
+]
+body_markdown = """
+
+Cheryl tells Stan “It’s not too hot and not too cold”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:06:04.8'
+duration = '3'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.3mb'
+
+[[caption]]
+text      = "It’s not too hot and not too cold"
+from      = '0'
+to        = '3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

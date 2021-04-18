@@ -1,0 +1,45 @@
+title = 'Miserable, grumpy elitist'
+published = 2021-06-29T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'victor-melling',
+]
+body_markdown = """
+
+Victor telling Gracie “I’m a miserable, grumpy elistist,
+and that works for me”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:58:37.5'
+duration = '3.44'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.57mb'
+
+[[caption]]
+text      = "I’m a miserable, grumpy elistist"
+from      = '0.1'
+to        = '2.2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "And that works for me"
+from      = '2.6'
+to        = '3.5'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

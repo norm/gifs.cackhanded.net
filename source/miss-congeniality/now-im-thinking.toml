@@ -1,0 +1,38 @@
+title = 'Now I’m thinking'
+published = 2022-05-31T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Eric points at Gracie, who was telling him how to do his job,
+and declares “Yeah, yeah, yeah, now I’m thinking!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:17:04.8'
+duration = '4'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.9mb'
+width      = '400'
+
+[[caption]]
+text      = "Yeah, yeah, yeah, now I’m thinking!"
+from      = '0.4'
+to        = '2.8'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'

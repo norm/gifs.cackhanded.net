@@ -1,0 +1,38 @@
+title = 'Good show, everybody'
+published = 2021-10-26T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'pageant-director',
+    'assistant-director',
+]
+body_markdown = """
+
+The director comments “Good show, everybody!”
+The assistant director looks around at him, bemused.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:40:32.2'
+duration = '3.7'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.6mb'
+
+[[caption]]
+text      = "Good show, everybody!"
+from      = '1.05'
+to        = '2.35'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

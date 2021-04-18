@@ -1,0 +1,58 @@
+title = 'Very large cheesy pizza'
+published = 2021-06-15T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'alana-krewson',
+    'miss-hawaii',
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+    'karen-krantz',
+    'miss-new-york',
+    'leslie-davis',
+    'miss-california',
+    'mary-jo-wright',
+    'miss-texas',
+]
+body_markdown = """
+
+Gracie tells the girls she has a “very large cheesy pizza, ooh, look
+at all that cheese” and they come to look, excited but also afraid.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:07:53.5'
+duration = '8'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '3.3mb'
+width      = '400'
+
+[[caption]]
+text      = "Very large cheesy pizza"
+from      = '0.3'
+to        = '3.7'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'
+
+[[caption]]
+text      = "Ooh look at all that cheese"
+from      = '4'
+to        = '6'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'

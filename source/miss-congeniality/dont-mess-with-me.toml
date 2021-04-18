@@ -1,0 +1,100 @@
+title = 'Don’t mess with me'
+published = 2022-05-03T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie ranting “I am in a dress, I have gel in my hair, I haven’t slept all
+night, I am starved, and I’m armed. Don’t mess with me!" and then stumbles
+because of the high heels.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:35:05.0'
+duration = '8'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '3.9mb'
+
+[[caption]]
+text      = "I am in a dress"
+from      = '0'
+to        = '1.1'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "I have gel in my hair"
+from      = '1.11'
+to        = '2.2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "I haven’t slept all night"
+from      = '2.21'
+to        = '3.25'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "I am starved"
+from      = '3.26'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "And I’m armed"
+from      = '4.01'
+to        = '4.79'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Don’t"
+from      = '4.8'
+to        = '6.3'
+placement = '103,217'
+size      = '28'
+
+[[caption]]
+text      = "MESS"
+from      = '5.5'
+to        = '6.3'
+font      = 'greycliffcf-heavy.otf'
+placement = '176,213'
+size      = '36'
+
+[[caption]]
+text      = "Don’t                  with me"
+from      = '5.7'
+to        = '6.3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+

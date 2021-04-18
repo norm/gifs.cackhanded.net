@@ -1,0 +1,39 @@
+title = 'I’m gliding here'
+published = 2021-11-30T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+As she is practising gliding down a New York street, a cab brakes to a stop, 
+and Gracie slams on the bonnet shouting “HEY! I’M GLIDING HERE!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:29:59.0'
+duration = '5.5'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.47mb'
+width      = '360'
+
+[[caption]]
+text      = "HEY! I’M GLIDING HERE!"
+from      = '1'
+to        = '3.6'
+align     = 'center'
+font      = 'greycliffcf-heavy.otf'
+margin    = '20'
+placement = 'bc'
+size      = '36'

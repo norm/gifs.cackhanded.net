@@ -1,0 +1,47 @@
+title = 'She’s Miss United States'
+published = 2022-07-26T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'stan-fields',
+]
+body_markdown = """
+
+Stan Fields, standing in amongst the wreckage of the pageant but
+still the consummate professional, delivering his song.
+“She’s Miss United States!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:40:23.7'
+duration = '6.4'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.8mb'
+
+[[caption]]
+text      = "She’s"
+from      = '1.5'
+to        = '2.8'
+# align     = 'center'
+# margin    = '20'
+# placement = 'bc'
+placement = '93,217'
+size      = '28'
+
+[[caption]]
+text      = "She’s Miss United States!"
+from      = '2.81'
+to        = '4.5'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

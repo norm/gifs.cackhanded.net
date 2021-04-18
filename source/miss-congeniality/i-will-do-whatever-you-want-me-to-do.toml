@@ -1,0 +1,49 @@
+title = 'I will do whatever you want me to do'
+published = 2022-02-01T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie tells Victor “I will do whatever you want me to do, Yoda”
+to which he exclaims “Oh Lord”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:47:38.4'
+duration = '4'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "I will do whatever you want me to, Yoda"
+from      = '0'
+to        = '2.4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '26'
+
+[[caption]]
+text      = "Oh Lord"
+from      = '2.6'
+to        = '3.55'
+align     = 'center'
+# margin    = '20'
+# placement = 'bc'
+placement = '140,217'
+size      = '28'

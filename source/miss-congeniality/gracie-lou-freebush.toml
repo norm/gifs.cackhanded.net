@@ -1,0 +1,38 @@
+title = 'Gracie Lou Freebush'
+published = 2021-11-02T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Gracie, mocking the name of pageant contestants,
+comes up with “Gracie Lou Freebush”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:20:16.4'
+duration = '2.2'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.03mb'
+
+[[caption]]
+text      = "Gracie Lou Freebush"
+from      = '0.6'
+to        = '2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

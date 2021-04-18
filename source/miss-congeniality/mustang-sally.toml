@@ -1,0 +1,28 @@
+title = 'Mustang Sally'
+published = 2022-05-17T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie walks out of the treatment looking incredible.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:34:49.3'
+duration = '6.05'
+crop     = '960:540:150:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.36mb'

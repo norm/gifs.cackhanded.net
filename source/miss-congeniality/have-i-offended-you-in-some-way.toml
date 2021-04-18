@@ -1,0 +1,37 @@
+title = 'Have I offended you in some way?'
+published = 2022-04-19T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie, with a mouthful of half-masticated cow, angrily asks Victor
+“Have I offended you in some way?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:27:19.5'
+duration = '1.85'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '0.8mb'
+
+[[caption]]
+text      = "Have I offended you in some way?"
+from      = '0.2'
+to        = '2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

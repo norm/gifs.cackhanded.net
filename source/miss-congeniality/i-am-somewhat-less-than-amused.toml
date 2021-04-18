@@ -1,0 +1,37 @@
+title = 'I am somewhat less than amused'
+published = 2022-05-10T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+Victor tells Gracie “I am somewhat less than amused” and moves away.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:31:01.2'
+duration = '6'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '2.7mb'
+
+[[caption]]
+text      = "I am somewhat less than amused"
+from      = '0.8'
+to        = '3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

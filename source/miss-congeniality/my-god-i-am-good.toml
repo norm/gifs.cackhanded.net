@@ -1,0 +1,35 @@
+title = 'My God, I am good'
+published = 2022-05-24T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'victor-melling',
+]
+body_markdown = """
+
+Victor tells himself “My God, I am good”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:35:24.4'
+duration = '2.2'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1mb'
+
+[[caption]]
+text      = "My God, I am good"
+from      = '0.4'
+to        = '2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

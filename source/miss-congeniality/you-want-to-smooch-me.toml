@@ -1,0 +1,39 @@
+title = 'You want to smooch me'
+published = 2021-06-08T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Gracie dances around infront of Eric, mocking him and singing “You want to
+smooch me!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:50:07.2'
+duration = '2'
+crop     = '1080:585:0:0'
+
+[output]
+brightness = '0.07'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '0.93mb'
+
+[[caption]]
+text      = "You want to smooch me"
+from      = '0'
+to        = '2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

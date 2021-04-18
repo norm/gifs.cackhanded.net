@@ -1,0 +1,50 @@
+title = 'World peace'
+published = 2022-01-25T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'alana-krewson',
+    'miss-hawaii',
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'eric-matthews',
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+    'karen-krantz',
+    'miss-new-york',
+    'leslie-davis',
+    'miss-california',
+    'mary-jo-wright',
+    'miss-texas',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie tells the crowd “I really do want world peace”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:45:12.0'
+duration = '5'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.1mb'
+width      = '400'
+
+[[caption]]
+text      = "I really do want world peace"
+from      = '1.55'
+to        = '3.2'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'

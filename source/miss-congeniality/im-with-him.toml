@@ -1,0 +1,40 @@
+title = 'I’m with him'
+published = 2021-11-23T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'victor-melling',
+]
+body_markdown = """
+
+As Eric gets past a security guard with his FBI badge, Victor walks up
+behind, opens a makeup box in a similar manner, declares “I’m with him”,
+and walks past the bemused guard.
+
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:26:45.2'
+duration = '5'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.2mb'
+width      = '400'
+
+[[caption]]
+text      = "I’m with him"
+from      = '2'
+to        = '2.8'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

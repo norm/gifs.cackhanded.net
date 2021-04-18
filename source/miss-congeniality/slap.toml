@@ -1,0 +1,28 @@
+title = 'Slap'
+published = 2022-01-04T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'kathy-morningside',
+    'victor-melling',
+]
+body_markdown = """
+
+Kathy slaps Victor upside the back of the head.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:04:42.0'
+duration = '2.6'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '15'
+max_size   = '1.18mb'
+width      = '400'

@@ -1,0 +1,45 @@
+title = 'And then that mouth'
+published = 2021-11-09T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'victor-melling',
+]
+body_markdown = """
+
+Victor despairs “A brief shining moment, and then that mouth”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:36:00.5'
+duration = '4'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "A brief shining moment"
+from      = '0.3'
+to        = '2.2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "And then that mouth"
+from      = '2.21'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

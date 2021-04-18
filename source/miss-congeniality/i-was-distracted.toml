@@ -1,0 +1,46 @@
+title = 'I was distracted'
+published = 2022-03-22T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+Victor telling Gracie “I was distracted by the half-masticated cow
+rolling around in your wide-open trap”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:27:08.0'
+duration = '6.9'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.7mb'
+
+[[caption]]
+text      = "I was distracted by\nthe half-masticated cow"
+from      = '0.3'
+to        = '3.1'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "rolling around in\nyour wide-open trap"
+from      = '3.75'
+to        = '6.7'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

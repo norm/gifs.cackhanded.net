@@ -1,0 +1,44 @@
+title = 'Gun'
+published = 2021-12-07T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+    'victor-melling',
+]
+body_markdown = """
+
+After Victor once again pulls a bagel from her hand before she can eat it,
+Gracie pulls a gun and points it at him. He returns the bagel.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:58:59.0'
+# duration = '9'
+
+[output]
+brightness = '0.06'
+colours    = '254'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '3.4mb'
+width      = '400'
+
+[[clip]]
+start = '0'
+end   = '2.3'
+
+[[clip]]
+start = '3'
+end   = '4'
+
+[[clip]]
+start = '4.4'
+end   = '9'

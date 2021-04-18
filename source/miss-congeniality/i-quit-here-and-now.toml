@@ -1,0 +1,36 @@
+title = 'I quit, here and now'
+published = 2022-01-11T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'victor-melling',
+]
+body_markdown = """
+
+Victor declares “I quit, here and now”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:25:32.5'
+duration = '1.75'
+crop     = '1040:585:40:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '0.77mb'
+
+[[caption]]
+text      = "I quit, here and now"
+from      = '0.2'
+to        = '1.5'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

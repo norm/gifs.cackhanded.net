@@ -1,0 +1,36 @@
+title = 'Come on, muffin!'
+published = 2022-02-15T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'victor-melling',
+]
+body_markdown = """
+
+Victor grabs Eric, says “Come on, muffin!” and steers him away, grinning.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:27:30.2'
+duration = '2.45'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.3mb'
+
+[[caption]]
+text      = "Come on, muffin!"
+from      = '0'
+to        = '0.95'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

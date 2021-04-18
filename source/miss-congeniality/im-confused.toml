@@ -1,0 +1,35 @@
+title = 'I’m confused'
+published = 2021-07-13T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'stan-fields',
+]
+body_markdown = """
+
+Stan puts a hand on his frowning face, and declares “I’m confused”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:23:56.7'
+duration = '2.55'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1mb'
+
+[[caption]]
+text      = "I’m confused"
+from      = '1.25'
+to        = '2.1'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

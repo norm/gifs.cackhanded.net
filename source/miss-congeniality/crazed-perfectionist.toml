@@ -1,0 +1,54 @@
+title = 'Crazed perfectionist'
+published = 2022-03-08T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'victor-melling',
+]
+body_markdown = """
+
+Victor, talking about himself, “I was a crazed perfectionist who
+had harangued her to within an inch of her sanity”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:28:02.2'
+duration = '5.6'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "I was a crazed perfectionist"
+from      = '0.1'
+to        = '1.8'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "who had harangued her"
+from      = '1.81'
+to        = '3.2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "to within an inch of her sanity"
+from      = '3.21'
+to        = '5.6'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

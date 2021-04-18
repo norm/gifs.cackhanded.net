@@ -1,0 +1,38 @@
+title = 'April 25th'
+published = 2021-04-25T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'stan-fields',
+]
+body_markdown = """
+
+Cheryl tells Stan “April 25th”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:06:02.2'
+duration = '2.2'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1mb'
+
+[[caption]]
+text      = "APRIL 25TH"
+from      = '0.2'
+to        = '1.8'
+align     = 'center'
+font      = 'greycliffcf-heavy.otf'
+margin    = '20'
+placement = 'bc'
+size      = '40'

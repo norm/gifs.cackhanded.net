@@ -1,0 +1,39 @@
+title = 'Ugh, girl talk'
+published = 2021-11-16T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie pulls her dress up, flexes her arms and neck in preparation,
+and mutters “Ugh, girl talk”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:06:58.0'
+duration = '5'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.2mb'
+
+[[caption]]
+text      = "Ugh, girl talk"
+from      = '3.1'
+to        = '4.1'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

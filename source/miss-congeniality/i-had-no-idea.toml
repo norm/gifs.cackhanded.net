@@ -1,0 +1,38 @@
+title = 'I had no idea'
+published = 2022-03-01T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+Gracie, with a mouthful of half-masticated cow,
+mockingly declares ”I had no idea!”
+then carries on chewing.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:27:30.0'
+duration = '4'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "I had no idea!"
+from      = '0.5'
+to        = '2.2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

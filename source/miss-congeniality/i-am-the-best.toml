@@ -1,0 +1,43 @@
+title = 'I am the best'
+published = 2021-12-14T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'victor-melling',
+]
+body_markdown = """
+
+Victor declares “Because I am the best”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:28:24.0'
+duration = '3.45'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "Because"
+from      = '0.7'
+to        = '1.69'
+placement = '108,217'
+size      = '28'
+
+[[caption]]
+text      = "Because I am the best"
+from      = '1.7'
+to        = '3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

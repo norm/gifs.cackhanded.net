@@ -1,0 +1,32 @@
+title = 'Beating'
+published = 2022-07-05T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+]
+body_markdown = """
+
+Cheryl beating Gracie with her bouquet of red roses.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:39:12.6'
+duration = '2.85'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.01mb'
+mode       = 'full'

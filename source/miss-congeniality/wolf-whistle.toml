@@ -1,0 +1,27 @@
+title = 'Wolf whistle'
+published = 2022-02-08T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+]
+body_markdown = """
+
+Eric wolf whistling.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:44:18.8'
+duration = '2.6'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.2mb'
+width      = '400'

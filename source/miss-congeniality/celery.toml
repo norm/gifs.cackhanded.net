@@ -1,0 +1,30 @@
+title = 'Celery'
+published = 2021-08-03T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Gracie takes an aggressive bite from a stick of celery. Eric responds
+by biting a powdered donut, to which Gracie looks nonplussed.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:33:25.0'
+duration = '8'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '3.6mb'
+width      = '400'

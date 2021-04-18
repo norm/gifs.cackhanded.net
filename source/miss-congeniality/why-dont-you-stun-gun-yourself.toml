@@ -1,0 +1,38 @@
+title = 'Why dont you stun gun yourself?'
+published = 2022-06-21T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+]
+body_markdown = """
+
+Gracie tells Eric “Why dont you stun gun yourself?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:36:11.0'
+duration = '1.75'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '0.86mb'
+width      = '400'
+
+[[caption]]
+text      = "Why don’t you stun gun yourself?"
+from      = '0.4'
+to        = '2'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'

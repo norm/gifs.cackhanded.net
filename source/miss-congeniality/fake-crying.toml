@@ -1,0 +1,28 @@
+title = 'Fake crying'
+published = 2021-12-28T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'agent-grant',
+    'gracie-hart',
+]
+body_markdown = """
+
+Gracie parodying a contestant crying.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:31:32.4'
+duration = '6.7'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.1mb'

@@ -1,0 +1,41 @@
+title = 'A lot of rage'
+published = 2022-01-18T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'agent-grant',
+    'agent-harris',
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+As Gracie performs a body slam on Eric, Agent Grant tells Agent Harris
+“She’s got a lot of rage”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:21:46.6'
+duration = '4.1'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.55mb'
+width      = '400'
+
+[[caption]]
+text      = "She’s got a lot of rage"
+from      = '0.15'
+to        = '1.5'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'

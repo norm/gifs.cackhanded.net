@@ -1,0 +1,49 @@
+title = 'Ostentatious'
+published = 2021-06-22T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'gracie-hart',
+    'gracie-lou-freebush',
+    'miss-new-jersey',
+]
+body_markdown = """
+
+Cheryl telling Gracie “Oh, my parents don’t like anything ostentatious,
+and they really don’t like fire”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:45:19.4'
+duration = '6.5'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.92mb'
+
+[[caption]]
+text      = "Oh my parents don’t\nlike anything ostentatious"
+from      = '0.2'
+to        = '3.25'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "And they really don’t like fire"
+from      = '3.35'
+to        = '5.3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

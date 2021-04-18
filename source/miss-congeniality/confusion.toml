@@ -1,0 +1,28 @@
+title = 'Confusion'
+published = 2021-04-25T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'cheryl-frasier',
+    'miss-rhode-island',
+    'stan-fields',
+]
+body_markdown = """
+
+Stan looks confused after Cheryl's answer to her perfect date.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:06:09.8'
+duration = '2.45'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.12mb'

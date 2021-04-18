@@ -1,0 +1,37 @@
+title = 'Proud of my breasts'
+published = 2021-10-05T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'eric-matthews',
+    'gracie-hart',
+]
+body_markdown = """
+
+Gracie telling Eric “I'm suddenly very aware and proud of my breasts”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '1:43:02.0'
+duration = '3'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.35mb'
+width      = '400'
+
+[[caption]]
+text      = "I'm suddenly very aware\nand proud of my breasts"
+from      = '0'
+to        = '3'
+align     = 'center'
+margin    = '16'
+placement = 'bc'
+size      = '24'

@@ -1,0 +1,45 @@
+title = 'There are no words'
+published = 2022-03-29T07:00:00Z
+source_fkey = 'miss-congeniality/index'
+tag = [
+    'kathy-morningside',
+    'victor-melling',
+]
+body_markdown = """
+
+Victor tells Kathy “I wish I could explain, but there are no words”.
+"""
+
+[video]
+source   = 'file'
+file     = 'miss-congeniality'
+ext      = 'm4v'
+start    = '0:53:23.8'
+duration = '5.7'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '2.55mb'
+width      = '400'
+
+[[caption]]
+text      = "I wish I could explain"
+from      = '0.3'
+to        = '1.5'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "But there are no words"
+from      = '2.8'
+to        = '4.7'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
