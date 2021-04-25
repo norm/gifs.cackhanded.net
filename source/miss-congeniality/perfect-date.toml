@@ -5,6 +5,7 @@ tag = [
     'cheryl-frasier',
     'miss-rhode-island',
     'stan-fields',
+    'perfect-date',
 ]
 body_markdown = """
 
@@ -40,7 +41,7 @@ placement = 'bc'
 size      = '28'
 
 [[caption]]
-text      = "Because it's not too hot and not too cold"
+text      = "Because it's not too hot\nand not too cold"
 from      = '3.45'
 to        = '6.6'
 align     = 'center'
