@@ -2,7 +2,7 @@
 
 function main {
     case "${1:-}" in
-        count)      count_unscheduled_gifs ;;
+        count)      count_unscheduled ;;
         un*)        list_unscheduled_gifs ;;
         [0-9]*)     list_scheduled_gifs "$@" ;;
         *)          list_scheduled_gifs 30 "$@" ;;
@@ -14,6 +14,7 @@ function list_scheduled_gifs {
     local days=''
     local empty=''
     local full=''
+    local unscheduled_day=0
 
     shift
     while [ "${1:-}" ]; do
@@ -42,19 +43,26 @@ function list_scheduled_gifs {
         )
 
         [ -n "$content" -a -n "$empty" ] && continue
-        [ -z "$content" -a -n "$full" ] && continue
 
-        [ -z "$content" ] && printf '\e[1m\e[35m'
-        printf '%s %s %s\e[0m\n' $datestamp $day "$content"
+        if [ -z "$content" ]; then
+            [ -n "$full" ] && continue
+            unscheduled_day=1
+            printf '\e[1m\e[35m'
+        fi
+
+        printf '%s %s %s\e[0m\n' $datestamp $day_of_week "$content"
     done
 
-    count_unscheduled
+    if [ $unscheduled_day = 1 ]; then
+        echo ''
+        count_unscheduled
+    fi
 }
 
 function count_unscheduled {
     unscheduled=$(ag -l 2100 source | wc -l)
     [ -n "$unscheduled" ] && \
-        printf '\n\e[1m\e[32mThere are %d unscheduled GIFs.\e[0m\n' $unscheduled
+        printf '\e[1m\e[32mThere are %d unscheduled GIFs.\e[0m\n' $unscheduled
 }
 
 function list_unscheduled_gifs {
@@ -63,6 +71,9 @@ function list_unscheduled_gifs {
         | sort \
         | uniq -c \
         | sort -n
+
+    echo ''
+    count_unscheduled
 }
 
 main "$@"
