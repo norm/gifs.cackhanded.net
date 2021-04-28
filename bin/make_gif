@@ -8,6 +8,10 @@ DEFAULT_WIDTH=480
 DEFAULT_FPS=10
 DEFAULT_COLOURS=64
 DEBUG="${GIF_DEBUG:-}"
+green=$'\e'[32m
+cyan=$'\e'[36m
+magenta=$'\e'[35m
+reset=$'\e'[0m
 
 
 function main {
@@ -128,20 +132,37 @@ function main {
         )
     )
     uncompressed_size="$(filesize "${TEMP}/output.gif")"
+    output_max_size="$(convert_mb $(toml $toml output.max_size))"
+
     printf '    size %.2fmb (duration %s)' \
         $(size_in_mb $uncompressed_size) \
         $gif_duration
 
-    output_max_size="$(convert_mb $(toml $toml output.max_size))"
     auto_max_size=$(
         printf '%.0f' "$(echo "$gif_duration .45 1048576 * * p" | dc)"
     )
-
     [ "${output_max_size:-}" = "auto" ] && \
         output_max_size=$auto_max_size
+
+    indicator="$cyan"
+    if [ -n "$output_max_size" ]; then
+        [ "$uncompressed_size" -lt "$output_max_size" ] \
+            && indicator="$green" \
+            || indicator="$magenta"
+    fi
     [ -n "$output_max_size" ] && \
-        printf ', max_size %.2fmb' $(size_in_mb $output_max_size)
-    printf ' [auto max %.2fmb]\n' $(size_in_mb $auto_max_size)
+        printf ', %smax_size %.2fmb%s' \
+            $indicator \
+            $(size_in_mb $output_max_size) \
+            $reset
+
+    [ "$uncompressed_size" -lt "$auto_max_size" ] \
+            && indicator="$green" \
+            || indicator="$magenta"
+    printf ' %s[auto max %.2fmb]%s\n' \
+        $indicator \
+        $(size_in_mb $auto_max_size) \
+        $reset
 
     output_loss="$(toml $toml output.loss)"
     losses="${output_loss:-0}"
@@ -155,10 +176,18 @@ function main {
             "$TEMP/output.gif"
 
         size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
-        printf "  < optimised with loss %d, now %.02fmb, %.01f%% of original\n" \
+        indicator="$cyan"
+        if [ -n "$output_max_size" ]; then
+            [ "$size" -lt "$output_max_size" ] \
+                && indicator="$green" \
+                || indicator="$magenta"
+        fi
+        printf "  %s< optimised with loss %d, now %.02fmb, %.01f%% of original%s\n" \
+            $indicator \
             $losses \
             $(size_in_mb $size) \
-            "$(echo 3k $size $uncompressed_size / 100 \* p | dc)"
+            "$(echo 3k $size $uncompressed_size / 100 \* p | dc)" \
+            $reset
     else
         cp "$TEMP/output.gif" "${TEMP}/gifsicle.${losses}.gif"
     fi
@@ -175,10 +204,15 @@ function main {
                 "$TEMP/output.gif"
 
             size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
-            printf "  < optimised with loss %d, now %.02fmb, %.01f%% of max\n" \
+            [ "$size" -lt "$output_max_size" ] \
+                && indicator="$green" \
+                || indicator="$magenta"
+            printf "  %s< optimised with loss %d, now %.02fmb, %.01f%% of max%s\n" \
+                $indicator \
                 $losses \
                 $(size_in_mb $size) \
-                "$(echo 3k $size $output_max_size / 100 \* p | dc)"
+                "$(echo 3k $size $output_max_size / 100 \* p | dc)" \
+                $reset
         done
     fi
 
