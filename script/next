@@ -5,6 +5,7 @@ function main {
         count)      count_unscheduled ;;
         un*)        list_unscheduled_gifs ;;
         [0-9]*)     list_scheduled_gifs "$@" ;;
+        '')         list_scheduled_gifs 1000 "next" ;;
         *)          list_scheduled_gifs 30 "$@" ;;
     esac
 }
@@ -14,6 +15,7 @@ function list_scheduled_gifs {
     local days=''
     local empty=''
     local full=''
+    local next=0
     local unscheduled_day=0
 
     shift
@@ -21,6 +23,7 @@ function list_scheduled_gifs {
         case "${1:-}" in
             empty)  empty=empty full=''  ;;
             full)   full=full   empty='' ;;
+            next)   next=1 empty=empty full='' ;;
             *)      [ -n "$days" ] && days="$days|$1" || days="$1"
         esac
         shift
@@ -28,10 +31,10 @@ function list_scheduled_gifs {
 
     for day in $(seq 0 ${count}); do
         datestamp=$(gdate +'%Y-%m-%d' --date="now $day days")
-        day=$(gdate +%a --date $datestamp)
+        day_of_week=$(gdate +%a --date $datestamp)
 
         [ -n "$days" ] \
-            && echo "$day" | egrep -iqv "$days" \
+            && echo "$day_of_week" | egrep -iqv "$days" \
             && continue
 
         content=$(
@@ -46,11 +49,15 @@ function list_scheduled_gifs {
 
         if [ -z "$content" ]; then
             [ -n "$full" ] && continue
+
+            [ $next = 1 ] && content=" --  in $day days"
             unscheduled_day=1
             printf '\e[1m\e[35m'
         fi
 
         printf '%s %s %s\e[0m\n' $datestamp $day_of_week "$content"
+
+        [ $next = 1 ] && break
     done
 
     if [ $unscheduled_day = 1 ]; then
