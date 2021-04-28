@@ -2,6 +2,7 @@
 
 function main {
     case "${1:-}" in
+        -h|help)    usage ;;
         count)      count_unscheduled ;;
         un*)        list_unscheduled_gifs ;;
         [0-9]*)     list_scheduled_gifs "$@" ;;
@@ -10,6 +11,27 @@ function main {
     esac
 }
 
+function usage {
+    sed -e 's/^        //' <<"    EOF"
+        Usage:
+
+            next
+                    next day with no scheduled gif
+            next count
+                    count of unscheduled GIFs
+            next un[scheduled]
+                    sources of unscheduled GIFs
+            next <count>
+                    show the schedule for the next <count> days
+            next [<count>] <day> [...] [empty|full]
+                -   show the schedule for the next <count> <day(s)>
+                    (eg. 'next 90 sat sun' will list weekends for 3 months);
+                -   <count> defaults to 30
+                -   'empty' will only list empty days
+                -   'full' will only list full days
+    EOF
+    exit 1
+}
 function list_scheduled_gifs {
     local count="$1"
     local days=''
