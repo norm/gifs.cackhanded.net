@@ -53,7 +53,7 @@ unstash:
 
 next: gifwrapped
 	@clear
-	@./script/next 60
+	@./script/next 60 high
 	@echo ''
 	@./script/next un
 

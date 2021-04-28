@@ -23,10 +23,11 @@ function usage {
                     sources of unscheduled GIFs
             next <count>
                     show the schedule for the next <count> days
-            next [<count>] <day> [...] [empty|full]
+            next [<count>] <day> [...] [highlight] [empty|full]
                 -   show the schedule for the next <count> <day(s)>
                     (eg. 'next 90 sat sun' will list weekends for 3 months);
                 -   <count> defaults to 30
+                -   'highlight' will highlight each Monday in colour
                 -   'empty' will only list empty days
                 -   'full' will only list full days
     EOF
@@ -37,6 +38,7 @@ function list_scheduled_gifs {
     local days=''
     local empty=''
     local full=''
+    local highlight=0
     local next=0
     local unscheduled_day=0
 
@@ -45,6 +47,7 @@ function list_scheduled_gifs {
         case "${1:-}" in
             empty)  empty=empty full=''  ;;
             full)   full=full   empty='' ;;
+            high*)  highlight=1 ;;
             next)   next=1 empty=empty full='' ;;
             *)      [ -n "$days" ] && days="$days|$1" || days="$1"
         esac
@@ -68,6 +71,8 @@ function list_scheduled_gifs {
         )
 
         [ -n "$content" -a -n "$empty" ] && continue
+
+        [ $highlight = 1 -a "$day_of_week" = "Mon" ] && printf '\e[34m'
 
         if [ -z "$content" ]; then
             [ -n "$full" ] && continue
