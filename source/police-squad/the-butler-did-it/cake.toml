@@ -1,0 +1,31 @@
+title = 'Cake'
+published = 2021-10-13T07:00:00Z
+show_fkey = 'police-squad/ring-of-fear/index'
+episode_fkey = 'police-squad/ring-of-fear/the-butler-did-it/index'
+tag = [
+    'charlotte-burton',
+    'terri-burton',
+    'warner-burton',
+]
+body_markdown = """
+
+Terri Burton blows the cake out of her birthday cake.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-103'
+ext      = 'm4v'
+start    = '2:50.0'
+duration = '3'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '0.95mb'
+width    = '400'

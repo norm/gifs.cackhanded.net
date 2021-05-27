@@ -1,0 +1,30 @@
+title = 'Special Guest Star: Robert Goulet'
+published = 2021-10-06T07:00:00Z
+show_fkey = 'police-squad/ring-of-fear/index'
+episode_fkey = 'police-squad/ring-of-fear/the-butler-did-it/index'
+tag = [
+    'robert-goulet',
+]
+body_markdown = """
+
+Robert Goulet gets killed by firing squad in the opening
+credits of Police Squad!
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-103'
+ext      = 'm4v'
+start    = '00:40'
+duration = '6'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.75mb'
+width    = '400'

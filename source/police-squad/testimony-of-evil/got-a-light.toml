@@ -1,0 +1,40 @@
+title = 'Got a light'
+published = 2022-02-16T07:00:00Z
+show_fkey = 'police-squad/testimony-of-evil/index'
+episode_fkey = 'police-squad/testimony-of-evil/william-conrad/index'
+tag = [
+    'frank-drebin',
+    'tony-diwonderful',
+    'veronica-rivers',
+]
+body_markdown = """
+
+Sitting with Frank Drebin, undercover as Tony Diwonderful, Veronica Rivers
+puts a cigarette to her lips. Multiple arms appear, offering her a light.
+After lighting the cigarette, she breathes out some smoke.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-106'
+ext      = 'm4v'
+start    = '12:48.0'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.6mb'
+width    = '400'
+
+[[clip]]
+start = '0'
+end   = '3.8'
+
+[[clip]]
+start = '4.4'
+end   = '6'

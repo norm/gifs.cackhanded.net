@@ -1,0 +1,37 @@
+title = 'Special Guest Star: Georg Stanford Brown'
+published = 2021-09-01T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/ring-of-fear/index'
+tag = [
+    'georg-stanford-brown',
+]
+body_markdown = """
+
+Georg Stanford Brown gets a safe dropped on his head in the opening
+credits of Police Squad!
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-102'
+ext      = 'm4v'
+start    = '0:40.5'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '0.8mb'
+width    = '400'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '2.7'
+end   = '3.7'

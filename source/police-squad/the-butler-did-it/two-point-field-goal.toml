@@ -1,0 +1,29 @@
+title = 'Two point field goal'
+published = 2021-10-20T07:00:00Z
+show_fkey = 'police-squad/ring-of-fear/index'
+episode_fkey = 'police-squad/ring-of-fear/the-butler-did-it/index'
+tag = [
+    'frank-drebin',
+]
+body_markdown = """
+
+Frank Drebin scores a two point field goal in some friendly baseketball.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-103'
+ext      = 'm4v'
+start    = '10:08.0'
+duration = '3.3'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.4mb'
+width    = '400'

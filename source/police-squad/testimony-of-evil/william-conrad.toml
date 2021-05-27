@@ -1,0 +1,37 @@
+title = 'Special Guest Star: William Conrad'
+published = 2022-01-26T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/testimony-of-evil/index'
+tag = [
+    'william-conrad',
+]
+body_markdown = """
+
+William Conrad is thrown out of a moving car, stabbed, in the opening credits
+of Police Squad!
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-106'
+ext      = 'm4v'
+start    = '00:36.5'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.45mb'
+width    = '400'
+
+[[clip]]
+start = '0'
+end   = '1.5'
+
+[[clip]]
+start = '2.5'
+end   = '8'

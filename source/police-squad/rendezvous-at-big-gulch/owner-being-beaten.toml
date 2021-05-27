@@ -1,0 +1,30 @@
+title = 'Owner being beaten'
+published = 2022-01-05T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/rendezvous-at-big-gulch/index'
+tag = [
+    'leo',
+]
+body_markdown = """
+
+Leo the gangster, peers through the glass, then turns around the shop’s “Open”
+sign to reveal the other side: “Sorry, owner being beaten. Be back in 5 mins.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-105'
+ext      = 'm4v'
+start    = '12:04.0'
+duration = '5'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.01mb'
+width    = '400'

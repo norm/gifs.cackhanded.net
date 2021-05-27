@@ -1,0 +1,30 @@
+title = 'Special Guest Star: Lorne Greene'
+published = 2021-07-07T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/a-substantial-gift/index'
+tag = [
+    'lorne-greene',
+]
+body_markdown = """
+
+Lorne Greene is thrown out of a moving car, stabbed, in the opening credits of
+Police Squad!
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-101'
+ext      = 'm4v'
+start    = '00:38.2'
+duration = '5'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.45mb'
+width    = '400'

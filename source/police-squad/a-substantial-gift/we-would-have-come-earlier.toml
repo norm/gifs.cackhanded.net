@@ -1,0 +1,40 @@
+title = 'We would have come earlier'
+published = 2021-07-21T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/a-substantial-gift/index'
+tag = [
+    'frank-drebin',
+]
+body_markdown = """
+
+Frank Drebin tells a woman “We would’ve come earlier, but your husband
+wasn’t dead then.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-101'
+ext      = 'm4v'
+start    = '9:28.0'
+duration = '2.75'
+crop     = '1440:900:0:140'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '0.6mb'
+width    = '400'
+
+[[caption]]
+text      = "We would've come earlier, but\nyour husband wasn’t dead then"
+from      = '0'
+to        = '4'
+align     = 'center'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'

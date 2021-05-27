@@ -1,0 +1,30 @@
+title = 'You may be seated'
+published = 2021-11-24T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/revenge-and-remorse/index'
+tag = [
+    'jury',
+]
+body_markdown = """
+
+After the judge has told the jury that they may be seated, they all sit,
+and end up falling down because there are no chairs.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-104'
+ext      = 'm4v'
+start    = '03:04.2'
+duration = '2.4'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '0.46mb'
+width    = '400'

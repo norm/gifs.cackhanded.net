@@ -1,0 +1,46 @@
+title = 'Hilarious'
+published = 2022-02-02T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/testimony-of-evil/index'
+tag = [
+    'applause',
+    'crowd',
+]
+body_markdown = """
+
+The crowd finds Frank hilarious.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-106'
+ext      = 'm4v'
+start    = '10:12.0'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '50'
+max_size = '1.9mb'
+mode     = 'full'
+width    = '320'
+
+[[clip]]
+start = '33'
+end   = '35'
+
+[[clip]]
+start = '22.4'
+end   = '24'
+
+[[clip]]
+start = '11'
+end   = '13'
+
+[[clip]]
+start = '1:56'
+end   = '1:58'

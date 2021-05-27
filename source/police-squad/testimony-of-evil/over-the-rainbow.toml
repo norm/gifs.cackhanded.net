@@ -1,0 +1,31 @@
+title = 'Over the rainbow'
+published = 2022-02-09T07:00:00Z
+show_fkey = 'police-squad/testimony-of-evil/index'
+episode_fkey = 'police-squad/testimony-of-evil/william-conrad/index'
+tag = [
+    'frank-drebin',
+    'tony-diwonderful',
+]
+body_markdown = """
+
+Frank Drebin, undercover as Tony Diwonderful, charms the crowd singing
+“Somewhere over the Rainbow” and they all get tearful.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-106'
+ext      = 'm4v'
+start    = '11:53.0'
+duration = '4'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '0.82mb'
+width    = '400'

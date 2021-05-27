@@ -1,0 +1,50 @@
+title = 'Cigarette?'
+published = 2021-12-22T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/rendezvous-at-big-gulch/index'
+tag = [
+    'frank-drebin',
+    'jill',
+]
+body_markdown = """
+
+Frank Drebin offers Jill a smoke. “Cigarette?”
+
+She looks at it and says “Yes, it is.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-105'
+ext      = 'm4v'
+start    = '3:17.2'
+duration = '4.4'
+crop     = '1200:750:80:200'
+
+[output]
+colours  = '82'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '2mb'
+width    = '400'
+
+[[caption]]
+text      = "Cigarette?"
+from      = '0.45'
+to        = '1.3'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = '100,195'
+size      = '32'
+
+[[caption]]
+text      = "Yes, it is."
+from      = '1.6'
+to        = '2.9'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'br'
+size      = '32'

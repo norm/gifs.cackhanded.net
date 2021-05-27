@@ -1,0 +1,38 @@
+title = 'Wig attack'
+published = 2021-08-25T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/a-substantial-gift/index'
+tag = [
+    'frank-drebin',
+    'sally-decker',
+]
+body_markdown = """
+
+Sally Decker attacks Frank Drebin with a wig.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-101'
+ext      = 'm4v'
+start    = '22:21.5'
+crop     = '1440:900'
+
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '2mb'
+width    = '400'
+
+[[clip]]
+start = '0.2'
+end   = '2.4'
+
+[[clip]]
+start = '2.8'
+end   = '5.3'

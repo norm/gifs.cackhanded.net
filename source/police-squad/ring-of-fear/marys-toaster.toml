@@ -1,0 +1,40 @@
+title = 'Mary’s toaster'
+published = 2021-09-29T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/ring-of-fear/index'
+tag = [
+    'buddy-briggs',
+    'frank-drebin',
+    'montague-martin',
+]
+body_markdown = """
+
+Montague Martin hands Buddy Briggs Mary’s toaster. Toast pops out.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-102'
+ext      = 'm4v'
+start    = '17:05.0'
+duration = '4.4'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.3mb'
+width    = '400'
+
+[[caption]]
+text      = "Mary’s toaster!"
+from      = '1.3'
+to        = '2.6'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'br'
+size      = '32'

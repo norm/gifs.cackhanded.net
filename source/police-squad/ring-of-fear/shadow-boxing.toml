@@ -1,0 +1,29 @@
+title = 'Shadow boxing'
+published = 2021-09-15T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/ring-of-fear/index'
+tag = [
+    'buddy-briggs',
+]
+body_markdown = """
+
+Buddy Briggs is boxing towards his shadow, and knocks it out.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-102'
+ext      = 'm4v'
+start    = '06:06.0'
+duration = '4'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.65mb'
+width    = '400'

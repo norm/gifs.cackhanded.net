@@ -1,0 +1,64 @@
+title = 'Let’s say'
+published = 2021-12-08T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/revenge-and-remorse/index'
+tag = [
+    'ed-hocker',
+    'eddie-casales',
+    'frank-drebin',
+]
+body_markdown = """
+
+Frank Drebin and Ed Hocker are interrogating Eddie Casales. Frank suggests 
+“Let’s say you were nowhere near the Club Flamingo…”
+
+Eddie nods, “Okay…” and all three repeat in unison
+“You were nowhere near the Club Flamingo.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-104'
+ext      = 'm4v'
+start    = '15:03.5'
+duration = '7.4'
+crop     = '1440:900:0:140'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.33mb'
+width    = '400'
+
+[[caption]]
+text      = "Now, let’s say you were\nnowhere near the Club Flamingo"
+from      = '0.5'
+to        = '3'
+align     = 'right'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "Okay…"
+from      = '3.6'
+to        = '4.4'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "YOU WERE NOWHERE\nNEAR THE CLUB FLAMINGO"
+from      = '4.8'
+to        = '8'
+align     = 'center'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'

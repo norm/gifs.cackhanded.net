@@ -1,0 +1,52 @@
+title = 'Press!'
+published = 2021-09-08T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/ring-of-fear/index'
+tag = [
+    'security-guard',
+    'luca-burnett',
+]
+body_markdown = """
+
+A security guard tells Luca Burnett, who is carrying several 
+different types of weapons and ammunition, “No entry.”
+
+Luca declares “Press!” and dips his head to show the card tucked
+into his hat. The guard lets him in.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-102'
+ext      = 'm4v'
+start    = '3:02.0'
+duration = '5'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.75mb'
+width    = '400'
+
+[[caption]]
+text      = "No entry"
+from      = '1.3'
+to        = '2.1'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "Press"
+from      = '2.65'
+to        = '3.4'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'

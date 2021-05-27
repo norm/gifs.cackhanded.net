@@ -1,0 +1,30 @@
+title = 'Door'
+published = 2021-10-27T07:00:00Z
+show_fkey = 'police-squad/ring-of-fear/index'
+episode_fkey = 'police-squad/ring-of-fear/the-butler-did-it/index'
+tag = [
+    'frank-drebin',
+    'ted-olson',
+]
+body_markdown = """
+
+Ted Olson walks through a door in the lab. Frank Drebin walks around it.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-103'
+ext      = 'm4v'
+start    = '14:52.0'
+duration = '4'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '2.2mb'
+width    = '400'

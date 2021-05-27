@@ -1,0 +1,60 @@
+title = 'Pick a topic'
+published = 2021-08-04T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/a-substantial-gift/index'
+tag = [
+    'frank-drebin',
+    'johnny',
+]
+body_markdown = """
+
+Frank Drebin asks Johnny what the word on the street is. Johnny replies
+cagily, “I don’t know, I hear a lot of things. Pick a topic.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-101'
+ext      = 'm4v'
+start    = '13:55.7'
+duration = '6.6'
+crop     = '1440:900:0:180'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '2.1mb'
+width    = '400'
+
+[[caption]]
+text      = "What’s the word\non the street, Johnny?"
+from      = '0.3'
+to        = '1.65'
+align     = 'center'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "I don’t know,\nI hear a lot of things"
+from      = '2'
+to        = '4.4'
+align     = 'center'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'
+
+[[caption]]
+text      = "Pick a topic"
+from      = '4.41'
+to        = '5.5'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'

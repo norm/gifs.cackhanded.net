@@ -1,0 +1,49 @@
+title = 'Screwdriver'
+published = 2021-09-22T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/ring-of-fear/index'
+tag = [
+    'bartender',
+    'frank-drebin',
+]
+body_markdown = """
+
+Frank Drebin ask a bartender for a screwdriver. The bartender passes one
+over, and Frank uses it to adjust the height of the stool.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-102'
+ext      = 'm4v'
+start    = '14:04.0'
+duration = '11'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '2.6mb'
+width    = '400'
+
+[[caption]]
+text      = "What’ll it be?"
+from      = '0.2'
+to        = '1.6'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'br'
+size      = '32'
+
+[[caption]]
+text      = "Screwdriver."
+from      = '2.1'
+to        = '3'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bc'
+size      = '32'

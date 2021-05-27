@@ -1,0 +1,29 @@
+title = 'Glove compartment'
+published = 2021-11-10T07:00:00Z
+show_fkey = 'police-squad/ring-of-fear/index'
+episode_fkey = 'police-squad/ring-of-fear/the-butler-did-it/index'
+tag = [
+    'ed-hocken',
+]
+body_markdown = """
+
+Ed Hocken roots around some gloves stored in a car’s glove compartment.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-103'
+ext      = 'm4v'
+start    = '18:50.3'
+duration = '5'
+crop     = '1440:900'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.9mb'
+width    = '400'

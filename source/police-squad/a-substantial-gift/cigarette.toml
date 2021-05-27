@@ -1,0 +1,50 @@
+title = 'Cigarette?'
+published = 2021-07-14T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/a-substantial-gift/index'
+tag = [
+    'ed-hocken',
+    'frank-drebin',
+    'sally-decker',
+]
+body_markdown = """
+
+Frank Drebin offers Sally Decker a cigarette. “Cigarette?” She responds,
+“Yes, I know.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-101'
+ext      = 'm4v'
+start    = '5:35.3'
+duration = '3.6'
+crop     = '1440:900'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1mb'
+width      = '400'
+
+[[caption]]
+text      = "Cigarette?"
+from      = '0.2'
+to        = '0.95'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = '230,195'
+size      = '32'
+
+[[caption]]
+text      = "Yes, I know."
+from      = '1.2'
+to        = '2'
+font      = 'univers-condensed-bold.ttf'
+margin    = '12'
+placement = 'bl'
+size      = '32'

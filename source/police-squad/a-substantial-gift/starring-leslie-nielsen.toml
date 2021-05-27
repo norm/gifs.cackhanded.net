@@ -1,0 +1,31 @@
+title = 'Starring: Leslie Nielsen'
+published = 2021-06-16T07:00:00Z
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/a-substantial-gift/index'
+tag = [
+    'frank-drebin',
+    'leslie-nielsen',
+]
+body_markdown = """
+
+Frank Drebin gets shot at in the opening credits for Police Squad!
+
+"""
+
+[video]
+source   = 'file'
+file     = 'police-squad-101'
+ext      = 'm4v'
+start    = '0:16.1'
+duration = '4.6'
+crop     = '1440:900'
+
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.9mb'
+width      = '400'
