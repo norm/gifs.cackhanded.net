@@ -67,18 +67,19 @@ def main():
     )
     args = parser.parse_args()
     image_size = (args.width, args.height)
+    font_size = args.font_size
 
     # check the text fits
-    font = ImageFont.truetype('fonts/%s' % args.font, args.font_size)
+    font = ImageFont.truetype('fonts/%s' % args.font, font_size)
     text_size = font.getsize_multiline(
         args.text,
         stroke_width=args.stroke_width
     )
     while text_too_large(text_size, image_size, args.margin):
-        args.font_size -= 2
+        font_size -= 2
         if args.font_size < MINIMUM_FONT_SIZE:
             raise FontTooSmall
-        font = ImageFont.truetype('fonts/%s' % args.font, args.font_size)
+        font = ImageFont.truetype('fonts/%s' % args.font, font_size)
         text_size = font.getsize_multiline(
             args.text,
             stroke_width=2
@@ -136,11 +137,19 @@ def main():
         align=args.text_align,
     )
     canvas.save(args.output)
-    print('  " font_size=%s placement=%s %s' % (
-        args.font_size,
-        placement,
-        args.text.replace("\n", "\\n")
-    ))
+
+    if args.font_size > font_size:
+        print('  " \33[35mfont_size=%s\33[0m placement=%s %s' % (
+            font_size,
+            placement,
+            args.text.replace("\n", "\\n")
+        ))
+    else:
+        print('  " font_size=%s placement=%s %s' % (
+            font_size,
+            placement,
+            args.text.replace("\n", "\\n")
+        ))
 
 
 def text_too_large(text, image, margin):

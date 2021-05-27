@@ -83,9 +83,9 @@ reset=$'\e'[0m
     run make_gif tests/config/captions.toml $BATS_TMPDIR/gif
     echo "$output"
 
-    [ "${lines[1]}" == '  " font_size=24 placement=[169, 321] And the climb' ]
-    [ "${lines[2]}" == '  " font_size=24 placement=[199, 321] is going' ]
-    [ "${lines[3]}" == '  " font_size=24 placement=[82, 321] Where no man has gone before' ]
+    [ "${lines[1]}" == '  " font_size=40 placement=[122, 305] And the climb' ]
+    [ "${lines[2]}" == '  " font_size=40 placement=[172, 305] is going' ]
+    [ "${lines[3]}" == "  \" ${magenta}font_size=34${reset} placement=[15, 311] Where no man has gone before" ]
     [ "${lines[4]}" == "    102 colours (96 initially)" ]
 
     [ "$status" -eq 0 ]
