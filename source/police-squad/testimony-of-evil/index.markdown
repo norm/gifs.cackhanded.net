@@ -1,5 +1,5 @@
 ```
-title = 'Testimony of Evil (Dead Men Don't Laugh)'
+title = "Testimony of Evil (Dead Men Don't Laugh)"
 type = 'tv-episode'
 show_fkey = 'police-squad/testimony-of-evil/index'
 season = 1
