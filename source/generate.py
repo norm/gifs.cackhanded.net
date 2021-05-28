@@ -1,8 +1,10 @@
 from datetime import datetime
+import random
 from textwrap import dedent
 
 from flourish.generators import mixins
 from flourish.generators import atom
+from flourish.generators import calendar
 from flourish.generators import csv
 from flourish.generators import base
 from flourish.generators import sass
@@ -50,6 +52,42 @@ class Homepage(MostRecentFirstMixin, base.IndexGenerator):
     template_name = 'base_template.html'
     sources_filter = {'published__set': ''}
     limit = 18
+
+
+class GifsByYear(calendar.CalendarYearGenerator):
+    template_name = 'base_template.html'
+    sources_filter = {'published__set': ''}
+
+    def get_context_data(self):
+        context = super().get_context_data()
+
+        # choose up to 24 GIFs to be displayed (24 thumbnails is a
+        # manageable page size; 300+ thumbnails not so much)
+        max_sample = 24
+        if max_sample > len(context['pages']):
+            max_sample = len(context['pages'])
+        sample = random.sample(
+            list(context['pages']),
+            k = max_sample,
+        )
+        for gif in context['pages']:
+            if gif in sample:
+                gif.in_sample = True
+
+        # group content into months for easier templating
+        context['months'] = {}
+        for page in context['pages']:
+            month = page.published.month
+            if month not in context['months']:
+                context['months'][month] = {'pages': []}
+            context['months'][month]['pages'].append(page)
+
+        return context
+
+
+class GifsByMonth(calendar.CalendarMonthGenerator):
+    template_name = 'base_template.html'
+    sources_filter = {'published__set': ''}
 
 
 class AtomFeed(atom.AtomGenerator):
@@ -109,6 +147,14 @@ PATHS = (
     AllSources(
         path = '/sources',
         name = 'sources',
+    ),
+    GifsByYear(
+        path = '/#year/',
+        name = 'year-index',
+    ),
+    GifsByMonth(
+        path = '/#year/#month/',
+        name = 'month-index',
     ),
     AtomFeed(
         path = '/index.atom',

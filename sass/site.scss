@@ -58,7 +58,7 @@ header {
         margin-top: 10px;
 
         em {
-            font-weight: normal;
+            font-weight: bold;
             font-style: normal;
             color: $visited_link_color;
         }
@@ -213,6 +213,45 @@ ul.thumbs {
     }
 }
 
+ol.year {
+    @include contain-floated-children;
+
+    margin: 0;
+    padding: 0 30px;
+
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    & > li {
+        list-style: none;
+    }
+
+    h2 {
+        margin: 2em 0 0 -30px;
+    }
+
+    li li {
+        clear: right;
+        margin-bottom: 5px;
+
+        > a:first-child {
+            font-weight: bold;
+        }
+
+        span.source a {
+            color: black;
+        }
+
+        img {
+            float: right;
+            margin: 10px -28px 10px 10px;
+            outline: 2px solid #000;
+        }
+    }
+}
+
 dl {
     margin-left: 100px;
 
@@ -302,7 +341,6 @@ ul.links {
             }
         }
     }
-
 }
 
 ul.tags {

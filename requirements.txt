@@ -1,4 +1,4 @@
-flourish>=0.9.5
+flourish>=0.9.6
 Pillow
 toml
 tweepy

@@ -1,0 +1,12 @@
+<h1>{{pages|count}} GIFs were published in {{month.strftime('%B, %Y')}}</h1>
+
+<ul class='thumbs'>
+  {% for gif in pages %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.published.day}} — {{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

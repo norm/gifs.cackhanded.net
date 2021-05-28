@@ -1,0 +1,34 @@
+<h1>{{pages|count}} GIFs were published in {{year.year}}</h1>
+
+<ol class='year'>
+  {% for month in months %}
+    <li>
+      <h2>
+        <a href='{{ path("month-index", year=year.year, month=month) }}'
+          >{{months[month].pages[0].published.strftime('%B, %Y')}}</a>
+      </h2>
+      <ol>
+        {% for gif in months[month].pages %}
+          <li value='{{gif.published.day}}'>
+              <a href='{{gif.path}}'>
+                {% if gif.in_sample %}
+                  <img src='{{gif.path}}.tn.gif' alt=''>
+                {% endif %}
+                {{gif.title}}</a>
+            <span class='source'>
+              {% if gif.agency %}
+                (from <a href='{{gif.agency.path}}'>{{gif.agency.title}}</a>)
+              {% elif gif.artist %}
+                (from <a href='{{gif.artist.path}}'>{{gif.artist.title}}</a>)
+              {% elif gif.show %}
+                (from <a href='{{gif.show.path}}'>{{gif.show.title}}</a>)
+              {% else %}
+                (from <a href='{{gif.source.path}}'>{{gif.source.title}}</a>)
+              {% endif %}
+            </span>
+          </li>
+        {% endfor %}
+      </ol>
+    </li>
+  {% endfor %}
+</ol>
