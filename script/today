@@ -1,20 +1,42 @@
-#!/usr/bin/env bash -euo pipefail
+#!/usr/bin/env python
 
-datestamp=$(date +'%Y-%m-%d')
-files=($(ag -l published.*$datestamp source))
+from datetime import datetime, timezone
+import os
+from flourish import Flourish
+import tweepy
 
-for file in "${files[@]}"; do
-    echo "== $file"
-    link=$(echo $file | sed -e 's#source/##' -e 's#.toml##')
 
-    open -a Safari https://gifs.cackhanded.net/$link
-    open -a Safari https://gifs.cackhanded.net/${link}.gif
-    echo https://gifs.cackhanded.net/${link}.gif
-    echo https://gifs.cackhanded.net/$link
-    ./bin/toml $file body_markdown
+auth = tweepy.OAuthHandler(
+        os.environ['CONSUMER_KEY'],
+        os.environ['CONSUMER_SECRET'],
+    )
+auth.set_access_token(
+        os.environ['ACCESS_TOKEN'],
+        os.environ['ACCESS_TOKEN_SECRET'],
+    )
+api = tweepy.API(auth)
 
-    (
-        ./bin/toml $file body_markdown | tr -s '\n' ' ';
-        echo https://gifs.cackhanded.net/$link
-    ) | pbcopy
-done
+today = datetime.now().replace(
+        hour=0,
+        minute=0,
+        second=0,
+        tzinfo=timezone.utc,
+    )
+
+fl = Flourish()
+for gif in fl.sources.filter(published__gte=today):
+    try:
+        source = gif.show.title
+    except:
+        source = gif.source.title
+    description = gif.body_markdown.replace('\n', ' ')
+    url = gif.absolute_url
+    media = 'source%s.gif' % gif.path
+    tweet = "Today's %s GIF: %s\n\n%s" % (
+            source,
+            description,
+            url,
+        )
+
+    upload = api.media_upload(media)
+    api.update_status(tweet, media_ids=[upload.media_id_string])
