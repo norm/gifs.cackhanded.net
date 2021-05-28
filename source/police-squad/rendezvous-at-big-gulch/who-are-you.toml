@@ -11,7 +11,7 @@ body_markdown = """
 Dutch Gunderson turns in his chair and asks Frank Drebin, “Who are you, and
 how did you get in here?”
 
-Frank replies “I’m the locksmith, and I’m the locksmith.”
+Frank replies “I’m a locksmith, and I’m a locksmith.”
 
 """
 
@@ -42,7 +42,7 @@ placement = 'bl'
 size      = '32'
 
 [[caption]]
-text      = "I’m the locksmith,\nand I’m the locksmith."
+text      = "I’m a locksmith,\nand I’m a locksmith."
 from      = '3.8'
 to        = '6.3'
 align     = 'right'
