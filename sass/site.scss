@@ -31,13 +31,19 @@ body {
     padding: 0 20px;
 }
 
-a {
+a:link {
     color: $link_color;
     border-bottom: 1px solid;
     text-decoration: none;
 }
 a:visited {
     color: $visited_link_color;
+}
+a:active,
+a:focus,
+a:hover {
+    background-color: $link_color;
+    color: #fff;
 }
 
 header {
@@ -62,11 +68,6 @@ header {
             font-weight: bold;
             font-style: normal;
             color: $visited_link_color;
-        }
-
-        li a,
-        li a:visited {
-            color: $link_color;
         }
     }
 }
@@ -242,8 +243,18 @@ ol.year {
             font-weight: bold;
         }
 
-        span.source a {
-            color: black;
+        span.source {
+            a:link,
+            a:visited {
+                color: black;
+            }
+
+            a:active,
+            a:focus,
+            a:hover {
+                background-color: $link_color;
+                color: #fff;
+            }
         }
 
         img {
@@ -328,7 +339,14 @@ ul.links {
         
         a,
         a:visited {
-            color: $visited_link_color;
+            color: $link_color;
+        }
+
+        a:active,
+        a:focus,
+        a:hover {
+            background-color: $link_color;
+            color: #fff;
         }
 
         &:before {
@@ -376,7 +394,15 @@ footer {
         margin-top: 5px;
     }
 
-    a, a:visited {
+    a:link,
+    a:visited {
         color: #000;
+    }
+    a:active,
+    a:focus,
+    a:hover {
+        background-color: $link_color;
+        border-color: $visited_link_color;
+        color: #fff;
     }
 }
