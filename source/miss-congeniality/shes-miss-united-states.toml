@@ -28,13 +28,13 @@ loss       = '0'
 max_size   = '2.8mb'
 
 [[caption]]
-text      = "She’s"
+text      = "She’s …"
 from      = '1.5'
 to        = '2.8'
 # align     = 'center'
 # margin    = '20'
 # placement = 'bc'
-placement = '93,217'
+placement = '89,217'
 size      = '28'
 
 [[caption]]

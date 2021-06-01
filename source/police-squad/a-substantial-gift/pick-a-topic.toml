@@ -18,7 +18,7 @@ source   = 'file'
 file     = 'police-squad-101'
 ext      = 'm4v'
 start    = '13:55.7'
-duration = '6.6'
+duration = '6'
 crop     = '1440:900:0:180'
 
 [output]
@@ -27,27 +27,27 @@ denoise  = true
 dither   = 'bayer:bayer_scale=3'
 fps      = '18'
 loss     = '20'
-max_size = '2.1mb'
+max_size = '1.91mb'
 width    = '400'
 
 [[caption]]
 text      = "What’s the word\non the street, Johnny?"
 from      = '0.3'
 to        = '1.65'
-align     = 'center'
+align     = 'right'
 font      = 'univers-condensed-bold.ttf'
 margin    = '12'
-placement = 'bc'
+placement = 'br'
 size      = '32'
 
 [[caption]]
 text      = "I don’t know,\nI hear a lot of things"
 from      = '2'
 to        = '4.4'
-align     = 'center'
+align     = 'left'
 font      = 'univers-condensed-bold.ttf'
 margin    = '12'
-placement = 'bc'
+placement = 'bl'
 size      = '32'
 
 [[caption]]
@@ -56,5 +56,5 @@ from      = '4.41'
 to        = '5.5'
 font      = 'univers-condensed-bold.ttf'
 margin    = '12'
-placement = 'bc'
+placement = '50,203'
 size      = '32'
