@@ -1,8 +1,18 @@
 <nav>
-  [[ sectile insert main_nav.html ]]
+  <ul class='links'>
+    [[ sectile insert main_nav_latest.html ]]
+    [[ sectile insert main_nav_sources.html ]]
+    [[ sectile insert main_nav_tags.html ]]
+    [[ sectile insert main_nav_about.html ]]
+    [[ sectile insert main_nav_feeds.html ]]
+  </ul>
   <ul class='years links'>
-    {% for year in global.publication_dates %}
-      <li><a href='/{{year.year.year}}/'>{{year.year.year}}</a></li>
+    {% for pubyear in global.publication_dates %}
+      {% if year and pubyear.year.year == year.year %}
+        <li><em>{{pubyear.year.year}}</em></li>
+      {% else %}
+        <li><a href='/{{pubyear.year.year}}/'>{{pubyear.year.year}}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 </nav>
