@@ -1,5 +1,5 @@
 title = 'Special Guest Star: William Shatner'
-published = 2021-11-17T07:00:00Z
+published = 2021-11-24T07:00:00Z
 show_fkey = 'police-squad/index'
 episode_fkey = 'police-squad/revenge-and-remorse/index'
 tag = [
