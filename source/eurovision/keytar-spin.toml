@@ -1,0 +1,30 @@
+title = 'Keytar spin'
+published = 2021-06-08T07:00:00Z
+source_fkey = 'eurovision/index'
+tag = [
+    'dai-og-gagnamagni',
+    '10-years',
+    'eurovision-2021',
+]
+body_markdown = """
+
+The keytars are spun during the Daði og Gagnamagnið performance of 10 Years.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'jaTRNImqnHM'
+ext      = 'mp4'
+start    = '1:40.1'
+duration = '1.9'
+crop     = '1760:990:120:0'
+
+[output]
+brightness = '0.1'
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.1mb'

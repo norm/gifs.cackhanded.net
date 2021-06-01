@@ -1,0 +1,86 @@
+title = 'Our twelve points go to…'
+published = 2021-06-11T07:00:00Z
+source_fkey = 'eurovision/index'
+tag = [
+    'husavik',
+    'iceland',
+    'eurovision-2021',
+    'jaja-ding-dong',
+    'hannes-oli-agustsson',
+]
+body_markdown = """
+
+Hannes Óli Ágústsson declares the twelve points from Iceland go to
+“Jaja Ding Dong!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'eurovision-2021'
+ext      = 'm4v'
+start    = '3:19:46.7'
+duration = '5'
+
+[output]
+colours    = '117'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.95mb'
+
+[[caption]]
+text      = "Our twelve\npoints go to…"
+from      = '0.5'
+to        = '2.1'
+align     = 'left'
+font      = 'greycliffcf-heavy.otf'       # emphasis
+margin    = '20'
+placement = 'bl'
+size      = '48'
+
+[[caption]]
+text         = "JAJA"
+from         = '2.4'
+to           = '4'
+colour       = '#e8e800'
+font         = 'greycliffcf-heavy.otf'       # emphasis
+margin       = '20'
+placement    = '80,10'
+size         = '72'
+stroke_width = '6'
+
+[[caption]]
+text         = "DING"
+from         = '2.4'
+to           = '4'
+colour       = '#e8e800'
+font         = 'greycliffcf-heavy.otf'       # emphasis
+margin       = '20'
+placement    = '83,80'
+size         = '72'
+stroke_width = '6'
+
+[[caption]]
+text         = "DONG!"
+from         = '2.4'
+to           = '4'
+colour       = '#e8e800'
+font         = 'greycliffcf-heavy.otf'       # emphasis
+margin       = '20'
+placement    = '55,150'
+size         = '72'
+stroke_width = '6'
+
+[[caption]]
+text         = "PLAY\nIT!"
+from         = '4.01'
+to           = '5'
+align        = 'center'
+colour       = '#e8e800'
+font         = 'greycliffcf-heavy.otf'       # emphasis
+margin       = '20'
+placement    = '85,42'
+size         = '72'
+stroke_width = '6'

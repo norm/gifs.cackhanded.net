@@ -1,0 +1,30 @@
+title = 'Chill guitarist'
+published = 2021-06-07T07:00:00Z
+source_fkey = 'eurovision/index'
+tag = [
+    'blind-channel',
+    'dark-side',
+    'eurovision-2021',
+]
+body_markdown = """
+
+One of the guitarists of Blind Channel takes a break during the performance
+of Dark Side.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Aw6KnFIIa4I'
+ext      = 'mp4'
+start    = '2:12'
+duration = '3.5'
+crop     = '1760:990:120:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '30'
+max_size   = '0.9mb'

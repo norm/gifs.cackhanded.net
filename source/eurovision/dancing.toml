@@ -1,0 +1,31 @@
+title = 'Dancing arms'
+published = 2021-06-10T07:00:00Z
+source_fkey = 'eurovision/index'
+tag = [
+    'the-roop',
+    'discoteque',
+    'eurovision-2021',
+    'dancing',
+]
+body_markdown = """
+
+WRITE ME.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'JNweec5olYw'
+ext      = 'mp4'
+start    = '1:13.25'
+duration = '4.4'
+crop     = '1600:765'
+
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.15mb'

@@ -1,0 +1,40 @@
+title = 'Excuse my french'
+published = 2021-06-09T07:00:00Z
+source_fkey = 'eurovision/index'
+tag = [
+    'destiny',
+    'je-me-casse',
+    'eurovision-2021',
+]
+body_markdown = """
+
+Destiny, while performing Je Me Casse, says “Excuse my french”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'uUElgja4B9w'
+ext      = 'mp4'
+start    = '2:41'
+duration = '2.2'
+crop     = '1600:900'
+
+[output]
+colours    = '88'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.9mb'
+width      = '440'
+
+[[caption]]
+text      = "EXCUSE MY FRENCH"
+from      = '0.8'
+to        = '1.9'
+align     = 'center'
+font      = 'acherusgrotesque-black.otf'
+margin    = '10'
+placement = '11,194'
+size      = '40'
