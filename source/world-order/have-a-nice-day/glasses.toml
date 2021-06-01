@@ -1,7 +1,7 @@
 title = 'Glasses'
 published = 2021-03-07T07:00:00Z
-show_fkey = 'world-order/index'
-episode_fkey = 'world-order/have-a-nice-day/index'
+source_fkey = 'world-order/have-a-nice-day/index'
+artist_fkey = 'world-order/index'
 tag = [
     'world-order',
 ]
