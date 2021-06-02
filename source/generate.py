@@ -112,6 +112,30 @@ class AtomFeed(atom.AtomGenerator):
         )
 
 
+class SourceAtomFeed(AtomFeed):
+    sources_filter = {'source': True}
+
+    def get_objects(self, tokens):
+        source = self.flourish.get(tokens['slug'])
+        if len(source.show_set.all()):
+            _filtered = source.show_set.filter(type__unset=True)
+        elif len(source.artist_set.all()):
+            _filtered = source.artist_set.filter(type__unset=True)
+        elif len(source.agency_set.all()):
+            _filtered = source.agency_set.filter(type__unset=True)
+        else:
+            _filtered = source.source_set.order_by('-published')
+
+        _ordered = _filtered.order_by(self.order_by)
+
+        if self.limit is not None:
+            self.source_objects = _ordered[0:self.limit]
+        else:
+            self.source_objects = _ordered
+
+        return self.source_objects
+
+
 class AllGifsCSV(csv.CSVGenerator):
     sources_filter = {'published__set': ''}
     order_by = ('published')
@@ -132,9 +156,17 @@ PATHS = (
         path = '/#slug',
         name = 'source',
     ),
+    SourceAtomFeed(
+        path = '/#slug.atom',
+        name = 'source-atom',
+    ),
     TagIndex(
         path = '/tags/#tag/',
         name = 'tag-index',
+    ),
+    AtomFeed(
+        path = '/tags/#tag/index.atom',
+        name = 'tag-atom',
     ),
     AllTags(
         path = '/tags/',

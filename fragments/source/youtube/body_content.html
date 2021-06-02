@@ -1,11 +1,5 @@
 <h1>{{title}}</h1>
-<p class='subhead'>
-  {% if video %}
-    A <a href='https://www.youtube.com/watch?v={{video}}'>YouTube video</a>.
-  {% elif playlist %}
-    A <a href='https://www.youtube.com/playlist?list={{playlist}}'>YouTube playlist</a>.
-  {% endif %}
-</p>
+[[ sectile insert source_index_links.html ]]
 
 <div class='synopsis'>
 {{body}}
