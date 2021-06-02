@@ -1,6 +1,6 @@
 title = 'THE WILL OF THE MONOLITH'
 published = 2020-11-27T06:22:37Z
-source_fkey = 'stephen-colbert/index'
+show_fkey = 'stephen-colbert/index'
 tag = ['stephen-colbert', 'monolith']
 body_markdown = """
 
