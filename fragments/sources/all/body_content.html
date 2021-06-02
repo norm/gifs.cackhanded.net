@@ -2,6 +2,8 @@
 
 <ul>
   {% for page in pages %}
-    <li><a href='{{page.path}}'>{{page.title}}</a></li>
+    <li>
+      <a href='{{page.path}}'>{{page.title}}{% if page.year %} ({{page.year}}){% endif %}</a>
+    </li>
   {% endfor %}
 </ul>
