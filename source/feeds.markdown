@@ -26,5 +26,17 @@ you can subscribe to just that. Be it:
 [ls]: /lilo-and-stitch/index.atom
 [sm]: /shatner-of-the-mount/index.atom
 
-Look for the "feed" link in the source page, or in the footer across the
-site.
+And every tag applied to a GIF comes with a feed, so you can subscribe
+to that subset too:
+
+* you are only interested in Invader Zim GIFs that feature the
+  Almighty Tallest Purple character —
+  [`/tags/almighty-tallest-purple/index.atom`][atp]
+* you (like me) are obsessed with whiteboards —
+  [`/tags/whiteboard/index.atom`][wb]
+
+[atp]: /tags/almighty-tallest-purple/index.atom
+[wb]: /tags/whiteboard/index.atom
+
+Look for the "feed" links in the source and tags pages, or in the footer
+across the site.

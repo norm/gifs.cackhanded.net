@@ -164,6 +164,10 @@ PATHS = (
         path = '/tags/#tag/',
         name = 'tag-index',
     ),
+    AtomFeed(
+        path = '/tags/#tag/index.atom',
+        name = 'tag-atom',
+    ),
     AllTags(
         path = '/tags/',
         name = 'tags',
