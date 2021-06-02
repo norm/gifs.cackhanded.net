@@ -409,4 +409,25 @@ footer {
         border-color: $visited_link_color;
         color: #fff;
     }
+
+    a.atomfeed {
+        svg {
+            width: 16px;
+            height: 16px;
+            float: right;
+        }
+    }
+}
+
+.atomfeed {
+    rect {
+        fill: $visited_link_color;
+    }
+    #outline {
+        fill: $link_color;
+        stroke: $visited_link_color;
+    }
+    circle, path {
+        stroke: $visited_link_color;
+    }
 }
