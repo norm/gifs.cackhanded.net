@@ -1,0 +1,8 @@
+  {% if video %}
+    <li>A
+      <a href='https://www.youtube.com/watch?v={{video}}'>YouTube video</a></li>
+  {% elif playlist %}
+    <li>A
+      <a href='https://www.youtube.com/playlist?list={{playlist}}'>YouTube
+      playlist</a></li>
+  {% endif %}

@@ -1,0 +1,17 @@
+<ul class='links'>
+  [[ sectile insert source_index_links_type.html ]]
+  {% if homepage %}
+    <li><a href='{{homepage}}/'>Homepage</a></li>
+  {% endif %}
+  {% if imdb %}
+    <li><a href='https://www.imdb.com/title/{{imdb}}/'>IMDb</a></li>
+  {% endif %}
+  {% if wikipedia %}
+    <li><a href='https://en.wikipedia.org/wiki/{{wikipedia}}'>Wikipedia</a></li>
+  {% endif %}
+  <li class='atomfeed'><a href='index.atom'>Feed<svg 
+        class='atomfeed' xmlns='http://www.w3.org/2000/svg' aria-label='RSS' 
+        role='img' viewBox='0 0 16 16' width='16' height='16'
+          ><use xlink:href='#atomfeed-icon'
+        /></svg></a></li>
+</ul>

@@ -1,10 +1,9 @@
-<h1>NASA</h1>
-<p class='subhead'>
-  Space missions.
-  <a href='index.atom'>Feed</a>.
-</p>
+<h1>{{title}}</h1>
+[[ sectile insert source_index_links.html ]]
 
+<div class='synopsis'>
 {{body}}
+</div>
 
 <ul>
   {% for mission in page.agency_set.filter(type='mission') %}

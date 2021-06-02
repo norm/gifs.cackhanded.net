@@ -1,16 +1,9 @@
 <h1>{{title}}</h1>
-<ul class='links'>
-  <li>A TV series</li>
-  {% if imdb %}
-    <li><a href='https://www.imdb.com/title/{{imdb}}/'>IMDb</a></li>
-  {% endif %}
-  {% if wikipedia %}
-    <li><a href='https://en.wikipedia.org/wiki/{{wikipedia}}'>Wikipedia</a></li>
-  {% endif %}
-  <li><a href='index.atom'>Feed</a></li>
-</ul>
+[[ sectile insert source_index_links.html ]]
 
+<div class='synopsis'>
 {{body}}
+</div>
 
 <ul>
   {% for episode in page.show_set.filter(type='tv-episode').order_by('-season') %}
