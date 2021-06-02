@@ -1,6 +1,6 @@
 title = 'What do you want?'
 published = 2020-09-22T06:30:00Z
-source_fkey = 'the-fast-show/index'
+show_fkey = 'the-fast-show/index'
 tag = ['john-actor', 'monkfish']
 body_markdown = """
 

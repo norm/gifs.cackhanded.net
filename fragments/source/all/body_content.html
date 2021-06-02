@@ -29,11 +29,13 @@
       <dd>{{page.author}}</dd>
     {% endif %}
   {% endif %}
-  {% if page.episode %}
+  {% if page.show %}
     <dt>Show</dt>
     <dd><a href='{{page.show.path}}'>{{page.show.title}}</a></dd>
-    <dt>Episode</dt>
-    <dd><a href='{{page.episode.path}}'>{{page.episode.title}}</a></dd>
+    {% if page.episode %}
+      <dt>Episode</dt>
+      <dd><a href='{{page.episode.path}}'>{{page.episode.title}}</a></dd>
+    {% endif %}
   {% endif %}
   {% if page.agency %}
     <dt>Agency</dt>
