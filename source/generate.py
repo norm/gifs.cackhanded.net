@@ -136,11 +136,12 @@ class SourceAtomFeed(AtomFeed):
 
     def get_objects(self, tokens):
         source = self.flourish.get(tokens['slug'])
-        if len(source.show_set.all()):
+        self.feed_title = source.title
+        if source.show_set.count():
             _filtered = source.show_set.filter(type__unset=True)
-        elif len(source.artist_set.all()):
+        elif source.artist_set.count():
             _filtered = source.artist_set.filter(type__unset=True)
-        elif len(source.agency_set.all()):
+        elif source.agency_set.count():
             _filtered = source.agency_set.filter(type__unset=True)
         else:
             _filtered = source.source_set.order_by('-published')
