@@ -3,7 +3,12 @@ published = 2020-08-27T07:16:25Z
 updated = 2021-06-03T13:00:00Z
 show_fkey = 'star-trek/index'
 source_fkey = 'star-trek/wrath-of-khan/index'
-tag = ['james-t-kirk', 'leonard-mccoy', 'saavik']
+tag = [
+    '404-page-candidate',
+    'james-t-kirk',
+    'leonard-mccoy',
+    'saavik',
+]
 body_markdown = """
 
 McCoy asks Kirk as they are about to beam into Regula One ”Go? Where are we going?”

@@ -1,7 +1,11 @@
 title = 'Machine dreams'
 published = 2021-04-14T07:00:00Z
 source_fkey = 'horizon-zero-dawn/index'
-tag = ['aloy', 'brin']
+tag = [
+    '404-page-candidate',
+    'aloy',
+    'brin',
+]
 body_markdown = """
 
 Brin talking to Aloy, says “Machine dreams, huntress.”

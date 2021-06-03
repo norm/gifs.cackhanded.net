@@ -3,7 +3,11 @@ published = 2020-11-14T06:54:54Z
 updated = 2021-03-09T14:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/pilot/index'
-tag = ['ted-lasso', 'leslie-higgins']
+tag = [
+    '404-page-candidate',
+    'leslie-higgins',
+    'ted-lasso',
+]
 body_markdown = """
 
 Ted asks the assembled press “Anybody got any questions?” and everybody

@@ -1,7 +1,12 @@
 title = 'Laugh'
 published = 2020-07-31T10:27:27Z
 source_fkey = 'lilo-and-stitch/index'
-tag = ['experiment-626', 'laughter', 'evil-laughter']
+tag = [
+    '404-page-candidate',
+    'evil-laughter',
+    'experiment-626',
+    'laughter',
+]
 body_markdown = """
 
 Experiment 626, standing over a smoking crater, laughs manically.

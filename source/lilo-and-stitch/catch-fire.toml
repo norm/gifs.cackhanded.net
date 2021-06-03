@@ -1,7 +1,12 @@
 title = 'Catch fire'
 published = 2020-07-31T13:47:12Z
 source_fkey = 'lilo-and-stitch/index'
-tag = ['nani-pelekai', 'david-kawena', 'fire']
+tag = [
+    '404-page-candidate',
+    'david-kawena',
+    'fire',
+    'nani-pelekai',
+]
 body_markdown = """
 
 Nani looks at David, who is covered in soot. “Did you catch fire again?”

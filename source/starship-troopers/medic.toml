@@ -1,7 +1,11 @@
 title = 'Medic!'
 published = 2020-08-18T07:39:12Z
 source_fkey = 'starship-troopers/index'
-tag = ['career-sergeant-zim', 'ace-levy']
+tag = [
+    '404-page-candidate',
+    'ace-levy',
+    'career-sergeant-zim',
+]
 body_markdown = """
 
 Zim pulls a knife out of Ace’s hand, and shouts for medical attention.

@@ -1,7 +1,12 @@
 title = 'The one they call'
 published = 2020-07-31T09:05:41Z
 source_fkey = 'lilo-and-stitch/index'
-tag = ['cobra-bubbles', 'nani-pelekia', 'washing-up']
+tag = [
+    '404-page-candidate',
+    'cobra-bubbles',
+    'nani-pelekia',
+    'washing-up',
+]
 body_markdown = """
 
 Cobra Bubbles tells Nani “I am the one they call when things go wrong.” as he

@@ -1,7 +1,11 @@
 title = 'Bye, Louis'
 published = 2020-11-09T06:27:44Z
 source_fkey = 'ghostbusters/index'
-tag = ['louis-tully', 'dana-barrett']
+tag = [
+    '404-page-candidate',
+    'dana-barrett',
+    'louis-tully',
+]
 body_markdown = """
 
 Dana shuts her apartment door in Louis' face.

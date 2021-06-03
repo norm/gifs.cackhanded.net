@@ -1,7 +1,12 @@
 title = 'Maniacal laugh'
 published = 2020-11-22T08:42:17Z
 source_fkey = 'the-muppets/index'
-tag = ['tex-richman', 'bobo-the-bear', 'uncle-deadly']
+tag = [
+    '404-page-candidate',
+    'bobo-the-bear',
+    'tex-richman',
+    'uncle-deadly',
+]
 body_markdown = """
 
 Tex saying “Maniacal laugh” to Bobo the Bear and Uncle Deadly.

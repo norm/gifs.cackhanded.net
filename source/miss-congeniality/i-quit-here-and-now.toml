@@ -2,6 +2,7 @@ title = 'I quit, here and now'
 published = 2022-01-18T07:00:00Z
 source_fkey = 'miss-congeniality/index'
 tag = [
+    '404-page-candidate',
     'victor-melling',
 ]
 body_markdown = """

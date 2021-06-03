@@ -1,7 +1,12 @@
 title = 'Control yourself'
 published = 2020-11-26T07:50:53Z
 source_fkey = 'starship-troopers/index'
-tag = ['lieutenant-rasczak', 'johnny-rico', 'ace-levy']
+tag = [
+    '404-page-candidate',
+    'ace-levy',
+    'johnny-rico',
+    'lieutenant-rasczak',
+]
 body_markdown = """
 
 Lt. Rasczak slaps the panicking general, and tells him to control himself.

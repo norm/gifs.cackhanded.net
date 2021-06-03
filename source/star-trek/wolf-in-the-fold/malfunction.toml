@@ -2,7 +2,12 @@ title = 'Malfunction'
 published = 2020-10-16T06:46:20Z
 episode_fkey = 'star-trek/wolf-in-the-fold/index'
 show_fkey = 'star-trek/index'
-tag = ['hikaru-sulu', 'james-t-kirk', 'spock']
+tag = [
+    '404-page-candidate',
+    'hikaru-sulu',
+    'james-t-kirk',
+    'spock',
+]
 body_markdown = """
 
 Sulu comments that it is the first time he’s heard a malfunction threaten

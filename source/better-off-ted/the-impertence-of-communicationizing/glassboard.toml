@@ -2,7 +2,13 @@ title = 'Glassboard'
 published = 2020-09-06T07:49:00Z
 episode_fkey = 'better-off-ted/the-impertence-of-communicationizing/index'
 show_fkey = 'better-off-ted/index'
-tag = ['whiteboard', 'glassboard', 'phil-myman', 'lem-hewitt']
+tag = [
+    '404-page-candidate',
+    'glassboard',
+    'lem-hewitt',
+    'phil-myman',
+    'whiteboard',
+]
 body_markdown = """
 
 Phil is standing at a glassboard on which some simple formula

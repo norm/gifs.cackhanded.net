@@ -3,6 +3,7 @@ published = 2021-06-02T07:00:00Z
 show_fkey = 'babylon-5/index'
 episode_fkey = 'babylon-5/war-without-end-ii/index'
 tag = [
+    '404-page-candidate',
     'susan-ivanova',
     'zathras',
 ]

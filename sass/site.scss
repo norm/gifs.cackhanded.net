@@ -143,6 +143,11 @@ figure {
 
     figcaption {
         margin: 0 20px;
+
+        cite {
+            display: block;
+            margin-top: -1em;
+        }
     }
 
     p.url {
@@ -153,6 +158,10 @@ figure {
         a {
             color: black;
         }
+    }
+
+    &.deep {
+        margin-top: 60px;
     }
 }
 

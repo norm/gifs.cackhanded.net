@@ -3,6 +3,7 @@ published = 2100-01-01T07:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/tan-lines/index'
 tag = [
+    '404-page-candidate',
     'ted-lasso',
 ]
 body_markdown = """

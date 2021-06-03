@@ -1,0 +1,37 @@
+<h1>404 Not Found</h1>
+
+<div class='synopsis'>
+    <p>
+      That page doesn’t appear to exist. Sorry about that. If you’ve
+      found it by following a link in this site, you can shout at
+      <a href='https://twitter.com/cackhanded'>@cackhanded</a>.
+      It might make you feel better.
+    </p>
+    <p>
+      Otherwise, I guess use one of the main navigation links at the start of
+      the page to wander off.
+    </p>
+</div>
+
+<figure class='deep'>
+  <p class='image'><img src='{{gif.path}}.gif' alt=''></p>
+  <figcaption>
+    {% if gif.body %}
+      {{gif.body}}
+    {% endif %}
+    <cite>
+      {% if gif.episode %}
+        — <a href='{{gif.episode.path}}'>
+            {{gif.episode.title}}, 
+            {{gif.show.title}}
+          </a>
+      {% elif gif.source.type == 'movie' %}
+        — <a href='{{gif.source.path}}'>
+            {{gif.source.title}} ({{gif.source.year}})
+          </a>
+      {% else %}
+        — <a href='{{gif.source.path}}'>{{gif.source.title}}</a>
+      {% endif %}
+    </cite>
+  </figcaption>
+</figure>

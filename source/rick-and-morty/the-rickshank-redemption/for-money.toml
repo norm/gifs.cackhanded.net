@@ -2,7 +2,10 @@ title = 'For money'
 published = 2020-08-31T08:59:41Z
 episode_fkey = 'rick-and-morty/the-rickshank-redemption/index'
 show_fkey = 'rick-and-morty/index'
-tag = ['galactic-federation']
+tag = [
+    '404-page-candidate',
+    'galactic-federation',
+]
 body_markdown = """
 
 An officer of the Galactic Federation says “I can answer that. For money.”

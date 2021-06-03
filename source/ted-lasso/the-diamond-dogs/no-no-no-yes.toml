@@ -3,6 +3,7 @@ published = 2021-12-03T07:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/the-diamond-dogs/index'
 tag = [
+    '404-page-candidate',
     'keeley-jones',
 ]
 body_markdown = """

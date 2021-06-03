@@ -2,6 +2,7 @@ title = 'Okay'
 published = 2021-07-29T07:00:00Z
 source_fkey = 'mr-right/index'
 tag = [
+    '404-page-candidate',
     'martha-mckay',
 ]
 body_markdown = """

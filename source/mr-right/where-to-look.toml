@@ -2,6 +2,7 @@ title = 'Where to look'
 published = 2021-07-22T07:00:00Z
 source_fkey = 'mr-right/index'
 tag = [
+    '404-page-candidate',
     'martha-mckay',
 ]
 body_markdown = """

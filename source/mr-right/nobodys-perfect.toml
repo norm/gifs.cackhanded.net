@@ -2,6 +2,7 @@ title = 'Nobody’s perfect'
 published = 2021-04-22T07:00:00Z
 source_fkey = 'mr-right/index'
 tag = [
+    '404-page-candidate',
     'francis-munch',
 ]
 body_markdown = """

@@ -3,6 +3,7 @@ published = 2021-10-08T07:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/the-hope-that-kills-you/index'
 tag = [
+    '404-page-candidate',
     'roy-kent',
     'ted-lasso',
 ]

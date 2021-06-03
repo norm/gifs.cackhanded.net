@@ -2,6 +2,7 @@ title = 'I’m confused'
 published = 2021-07-20T07:00:00Z
 source_fkey = 'miss-congeniality/index'
 tag = [
+    '404-page-candidate',
     'stan-fields',
 ]
 body_markdown = """

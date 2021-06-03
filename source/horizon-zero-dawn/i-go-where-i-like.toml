@@ -1,7 +1,11 @@
 title = 'I go where I like'
 published = 2021-02-26T07:00:00Z
 source_fkey = 'horizon-zero-dawn/index'
-tag = ['aloy', 'sun-furrows-keeper']
+tag = [
+    '404-page-candidate',
+    'aloy',
+    'sun-furrows-keeper',
+]
 body_markdown = """
 
 The Sun Furrows Hunting Grounds keeper asks Aloy “Aren’t you a little out

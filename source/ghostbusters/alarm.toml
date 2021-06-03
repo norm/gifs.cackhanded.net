@@ -2,6 +2,7 @@ title = 'Alarm'
 published = 2021-05-03T07:00:00Z
 source_fkey = 'ghostbusters/index'
 tag = [
+    '404-page-candidate',
     'alarm-bell',
     'red-light',
 ]

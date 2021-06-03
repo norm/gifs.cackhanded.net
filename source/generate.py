@@ -177,6 +177,21 @@ class AllGifsCSV(csv.CSVGenerator):
         return super().get_field_value(object, field)
 
 
+class NotFound(base.StaticGenerator):
+    template_name  = 'base_template.html'
+
+    def get_context_data(self):
+        context = super().get_context_data()
+        context['candidate_gifs'] = self.flourish.sources.filter(
+                tag='404-page-candidate'
+            )
+        context['gif'] = random.sample(
+            list(context['candidate_gifs']),
+            k = 1,
+        )[0]
+        return context
+
+
 PATHS = (
     SourcePage(
         path = '/#slug',
@@ -221,6 +236,10 @@ PATHS = (
     AllGifsCSV(
         path = '/index.csv',
         name = 'all-gifs-csv',
+    ),
+    NotFound(
+        path = '/404',
+        name = 'not-found',
     ),
     sass.SassGenerator(
         path = '/css/#sass_source.css',

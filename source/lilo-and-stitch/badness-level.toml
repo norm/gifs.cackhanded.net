@@ -1,7 +1,13 @@
 title = 'Badness level'
 published = 2020-07-31T13:44:03Z
 source_fkey = 'lilo-and-stitch/index'
-tag = ['mazzgif', 'lilo-pelekai', 'stitch', 'badness']
+tag = [
+    '404-page-candidate',
+    'badness',
+    'lilo-pelekai',
+    'mazzgif',
+    'stitch',
+]
 body_markdown = """
 
 Lilo puts a book down in front of Stitch. In it she has drawn an outline

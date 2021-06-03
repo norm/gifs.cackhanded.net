@@ -2,7 +2,17 @@ title = 'Pile up'
 source_fkey = 'the-lego-movie/index'
 published = 2014-07-06T18:00:00Z
 updated = 2020-07-29T09:58:00Z
-tag = ['bricksburg', 'car-chase', 'crash', 'disaster', 'fire', 'helicopter', 'lego', 'police']
+tag = [
+    '404-page-candidate',
+    'bricksburg',
+    'car-chase',
+    'crash',
+    'disaster',
+    'fire',
+    'helicopter',
+    'lego',
+    'police',
+]
 body_markdown = """
 
 Many Police cars crash into a wall. A helicopter crashes down onto the
