@@ -3,7 +3,6 @@ published = 2020-12-15T06:15:04Z
 sequence = 2
 source_fkey = 'larry-miller/5-levels-of-drinking/index'
 tag = [
-    '404-page-candidate',
     'larry-miller',
 ]
 body_markdown = """

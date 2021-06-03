@@ -1,0 +1,40 @@
+name: Rebuild the 404 page
+
+on:
+  schedule:
+      #        min   hr    dom   mon   dow
+      - cron: '15    *    *     *     *'     # hourly
+  workflow_dispatch:
+
+jobs:
+  update:
+    name: Update
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Configure pip caching
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Upload a new 404 page
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          make new404

@@ -2,7 +2,14 @@
 
 all: gifs
 
+404: clean
+	@flourish generate -v /404
+
+new404: 404
+	@flourish upload --invalidate
+
 clean:
+	@rm -rf output
 
 gifs:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs
