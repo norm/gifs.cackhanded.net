@@ -5,16 +5,37 @@
 {{body}}
 </div>
 
-<ul>
-  {% for episode in page.show_set.filter(type='tv-episode').order_by('-season') %}
-    <li><a href='{{episode.path}}'>{{episode.title}}</a></li>
-  {% endfor %}
-</ul>
+{% if page.show_set.filter(type='tv-episode').count() %}
+  <div class='episodes-list'>
+    <h2>Episodes</h2>
+    {% for episode in page.show_set.filter(
+                          type='tv-episode'
+                      ).order_by(
+                          'episode', 'season'
+                      )
+    %}
+      {% if loop.changed(episode.season) %}
+        {% if not loop.first %}
+          </ol>
+        {% endif %}
+        <h3>Season {{episode.season}}</h3>
+        <ol>
+      {% endif %}
+      {% if episode.episode_set.count() %}
+        <li value='{{episode.episode}}'>
+          <a href='{{episode.path}}'>{{episode.title}}</a>
+           {# FIXME pluralise #}
+          ({{episode.episode_set.count()}} GIF{% if episode.episode_set.count() == 1 %}{% else %}s{% endif %}) 
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ol>
+  </div>
+{% endif %}
 
 <h2>Latest {{title}} GIFs</h2>
 <ul class='thumbs'>
-  {# FIXME slice #}
-  {% for gif in page.show_set.filter(type__neq='tv-episode').order_by('-published') %}
+  {% for gif in (page.show_set.filter(type__neq='tv-episode').order_by('-published'))[0:12] %}
     <li>
       <a href='{{gif.path}}'>
         <img src='{{gif.path}}.tn.gif' alt=''>

@@ -446,3 +446,18 @@ footer {
         stroke: $visited_link_color;
     }
 }
+
+.episodes-list {
+    h2,
+    h3 {
+        margin: 0;
+    }
+
+    ol {
+        margin: 0 0 10px;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
