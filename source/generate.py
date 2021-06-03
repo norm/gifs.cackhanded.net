@@ -127,6 +127,9 @@ class AtomFeed(atom.AtomGenerator):
             tags = '</li><li>'.join(object.tag),
         )
 
+    def get_feed_title(self):
+        return 'All GIFs'
+
 
 class SourceAtomFeed(AtomFeed):
     sources_filter = {'source': True}
@@ -153,6 +156,9 @@ class SourceAtomFeed(AtomFeed):
             self.source_objects = _ordered
 
         return self.source_objects
+
+    def get_feed_title(self):
+        return '%s GIFs' % self.feed_title
 
 
 class AllGifsCSV(csv.CSVGenerator):
