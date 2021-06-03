@@ -2,8 +2,11 @@
 
 <ul>
   {% for page in pages %}
-    <li>
-      <a href='{{page.path}}'>{{page.title}}{% if page.year %} ({{page.year}}){% endif %}</a>
-    </li>
+    {% if page.show_set.count() or page.source_set.count() 
+          or page.artist_set.count() or page.agency_set.count() %}
+      <li>
+        <a href='{{page.path}}'>{{page.title}}{% if page.year %} ({{page.year}}){% endif %}</a>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>

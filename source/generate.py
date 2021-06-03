@@ -21,6 +21,22 @@ GLOBAL_CONTEXT = global_context
 class SourcePage(base.SourceGenerator):
     template_name  = 'base_template.html'
 
+    def get_context_data(self):
+        source = self.source_objects[0]
+        # don't generate GIF sources (eg tv shows, movies, etc)
+        # that have no published GIFs attached
+        if 'type' in source and source.type != 'static':
+            if not (
+                   source.agency_set.count()
+                or source.artist_set.count()
+                or source.episode_set.count()
+                or source.mission_set.count()
+                or source.show_set.count()
+                or source.source_set.count()
+            ):
+                raise self.DoNotGenerate
+        return super().get_context_data()
+
 
 class MostRecentFirstMixin:
     order_by = ('-published')
@@ -125,6 +141,9 @@ class SourceAtomFeed(AtomFeed):
             _filtered = source.agency_set.filter(type__unset=True)
         else:
             _filtered = source.source_set.order_by('-published')
+
+        if _filtered.count() == 0:
+            raise self.DoNotGenerate
 
         _ordered = _filtered.order_by(self.order_by)
 
