@@ -1,0 +1,49 @@
+title = 'Fighting words'
+published = 2021-06-16T07:00:00Z
+source_fkey = 'tasting-history/index'
+tag = [
+    'max-miller',
+    'wine',
+    'taunt',
+]
+body_markdown = """
+
+Max Miller, after making a controversial statement about pizza,
+goes "oooo fighting words!" and raises a glass of wine to his lips.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'h6XvMKdD2tY'
+ext      = 'mp4'
+start    = '11:26.6'
+duration = '2'
+
+[output]
+colours    = '54'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.5mb'
+
+[[caption]]
+text      = "OOOH!\n "
+from      = '0.2'
+to        = '1.4'
+align     = 'center'
+font      = 'greycliffcf-heavy.otf'       # emphasis
+margin    = '20'
+placement = 'bc'
+size      = '42'
+
+[[caption]]
+text      = "FIGHTING WORDS"
+from      = '0.8'
+to        = '1.4'
+align     = 'center'
+font      = 'greycliffcf-heavy.otf'       # emphasis
+margin    = '20'
+placement = 'bc'
+size      = '42'
