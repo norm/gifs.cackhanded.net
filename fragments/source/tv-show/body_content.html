@@ -5,20 +5,24 @@
 {{body}}
 </div>
 
-{% if page.show_set.filter(type='tv-episode').count() %}
+{% if page.show_set.filter(type__in=['tv-episode','movie']).count() %}
   <div class='episodes-list'>
     <h2>Episodes</h2>
     {% for episode in page.show_set.filter(
-                          type='tv-episode'
+                          type__in=['tv-episode','movie']
                       ).order_by(
-                          'episode', 'season'
+                          '-type', 'episode', 'season'
                       )
     %}
       {% if loop.changed(episode.season) %}
         {% if not loop.first %}
           </ol>
         {% endif %}
-        <h3>Season {{episode.season}}</h3>
+        {% if episode.season %}
+          <h3>Season {{episode.season}}</h3>
+        {% else %}
+          <h2>Movies</h2>
+        {% endif %}
         <ol>
       {% endif %}
       {% if episode.episode_set.count() %}
@@ -26,6 +30,12 @@
           <a href='{{episode.path}}'>{{episode.title}}</a>
            {# FIXME pluralise #}
           ({{episode.episode_set.count()}} GIF{% if episode.episode_set.count() == 1 %}{% else %}s{% endif %}) 
+        </li>
+      {% elif episode.source_set.count %}
+        <li value='{{episode.in_series}}'>
+          <a href='{{episode.path}}'>{{episode.title}}</a>
+           {# FIXME pluralise #}
+          ({{episode.source_set.count()}} GIF{% if episode.source_set.count() == 1 %}{% else %}s{% endif %}) 
         </li>
       {% endif %}
     {% endfor %}
@@ -35,7 +45,7 @@
 
 <h2>Latest {{title}} GIFs</h2>
 <ul class='thumbs'>
-  {% for gif in (page.show_set.filter(type__neq='tv-episode').order_by('-published'))[0:12] %}
+  {% for gif in (page.show_set.filter(type__notin=['tv-episode','movie']).order_by('-published'))[0:12] %}
     <li>
       <a href='{{gif.path}}'>
         <img src='{{gif.path}}.tn.gif' alt=''>

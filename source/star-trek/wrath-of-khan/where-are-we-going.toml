@@ -1,5 +1,7 @@
 title = 'Where are we going?'
 published = 2020-08-27T07:16:25Z
+updated = 2021-06-03T13:00:00Z
+show_fkey = 'star-trek/index'
 source_fkey = 'star-trek/wrath-of-khan/index'
 tag = ['james-t-kirk', 'leonard-mccoy', 'saavik']
 body_markdown = """
@@ -26,33 +28,41 @@ crop     = '1000:528:100:0'
 
 [output]
 colours  = '58'
+denoise  = true
 fps      = '12'
 mode     = 'full'
-loss     = '150'
-max_size = '3mb'
+loss     = '25'
+max_size = '2.6mb'
+width    = '400'
 
 [[caption]]
 text      = "Where are we going?"
 from      = '0'
 to        = '1.75'
+margin    = '16'
 placement = 'br'
-size      = '32'
+size      = '24'
 
 [[caption]]
 text      = "Where they went"
 from      = '1.76'
 to        = '2.75'
-size      = '32'
+margin    = '16'
+placement = 'bl'
+size      = '24'
 
 [[caption]]
 text      = "Suppose they went nowhere?"
 from      = '4.4'
 to        = '6.25'
+margin    = '16'
 placement = 'br'
-size      = '32'
+size      = '24'
 
 [[caption]]
 text      = "Then this’ll be your big\nchance to get away from it all"
 from      = '7.25'
 to        = '9.5'
-size      = '32'
+margin    = '16'
+placement = 'bl'
+size      = '24'

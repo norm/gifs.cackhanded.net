@@ -1,5 +1,7 @@
 title = 'Mutara Nebula'
 published = 2021-02-28T07:00:00Z
+updated = 2021-06-03T13:00:00Z
+show_fkey = 'star-trek/index'
 source_fkey = 'star-trek/wrath-of-khan/index'
 tag = [
     'uss-enterprise',
@@ -23,8 +25,9 @@ crop     = '1024:528'
 
 [output]
 colours    = '80'
-dither     = 'floyd_steinberg'
+denoise    = true
+dither     = 'bayer:bayer_scale=2'
 fps        = '18'
 loss       = '20'
-max_size   = '3mb'
+max_size   = '1.4mb'
 mode       = 'full'

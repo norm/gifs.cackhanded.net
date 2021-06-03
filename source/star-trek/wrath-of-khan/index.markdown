@@ -2,6 +2,8 @@
 title = 'Star Trek II: The Wrath of Khan'
 year = '1982'
 type = 'movie'
+show_fkey = 'star-trek/index'
+in_series = 2
 imdb = 'tt0084726'
 wikipedia = 'Star_Trek_II:_The_Wrath_of_Khan'
 ```
