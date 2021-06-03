@@ -31,7 +31,7 @@
            {# FIXME pluralise #}
           ({{episode.episode_set.count()}} GIF{% if episode.episode_set.count() == 1 %}{% else %}s{% endif %}) 
         </li>
-      {% elif episode.source_set.count %}
+      {% elif episode.source_set.count() %}
         <li value='{{episode.in_series}}'>
           <a href='{{episode.path}}'>{{episode.title}}</a>
            {# FIXME pluralise #}
