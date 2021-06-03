@@ -4,7 +4,7 @@ show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/biscuits/index'
 tag = [
     'roy-kent',
-    'colin',
+    'colin-hughes',
 ]
 body_markdown = """
 

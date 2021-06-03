@@ -31,9 +31,10 @@ max_size   = '1.4mb'
 mode       = 'full'
 
 [[caption]]
-text      = 'That’s not a compliment I’ve had before'
+text      = "That’s not a compliment\nI’ve had before"
 from      = '0.25'
 to        = '1.9'
+align     = 'center'
 margin    = '20'
 placement = 'bc'
-size      = '24'
+size      = '28'

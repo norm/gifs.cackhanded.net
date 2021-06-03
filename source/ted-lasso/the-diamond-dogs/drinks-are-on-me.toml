@@ -27,16 +27,17 @@ crop     = '1040:585:40:0'
 [output]
 brightness = '0.06'
 colours    = '74'
+denoise    = true
 dither     = 'bayer:bayer_scale=2'
 fps        = '18'
-loss       = '10'
+loss       = '25'
 max_size   = '1.54mb'
-width      = '400'
 
 [[caption]]
 text      = "DRINKS ARE ON ME!"
 from      = '0.45'
 to        = '1.4'
+font      = 'poppins-black.ttf'
 margin    = '16'
 placement = 'bc'
-size      = '24'
+size      = '36'

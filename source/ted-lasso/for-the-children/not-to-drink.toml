@@ -3,8 +3,8 @@ published = 2100-01-01T07:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/for-the-children/index'
 tag = [
-    'colin',
-    'isaac',
+    'colin-hughes',
+    'isaac-mcadoo',
 ]
 body_markdown = """
 
