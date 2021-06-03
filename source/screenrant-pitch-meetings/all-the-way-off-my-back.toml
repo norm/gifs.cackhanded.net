@@ -1,0 +1,116 @@
+title = 'All the way off my back'
+published = 2021-10-03T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a script writer tells a studio exec “I’m gonna need
+you to get all the way off my back about this,” and the exec responds
+“Okay, let me get off of that thing!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'w0s9mUXhHZ8'
+ext      = 'mp4'
+start    = '4:35.05'
+duration = '4.4'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '0'
+max_size   = '1.02mb'
+
+[[caption]]
+text      = "I’m gonna need you to get\n "
+from      = '0'
+to        = '0.7'
+align     = 'center'
+margin    = '20'
+placement = '31,180'
+size      = '28'
+
+[[caption]]
+text      = "I’m gonna need you to get a\n "
+from      = '0.701'
+to        = '0.8'
+align     = 'center'
+margin    = '20'
+placement = '31,180'
+size      = '28'
+
+[[caption]]
+text      = "I’m gonna need you to get aa\n "
+from      = '0.801'
+to        = '0.9'
+align     = 'center'
+margin    = '20'
+placement = '31,180'
+size      = '28'
+
+[[caption]]
+text      = "I’m gonna need you to get aaa\n "
+from      = '0.901'
+to        = '1.0'
+align     = 'center'
+margin    = '20'
+placement = '31,180'
+size      = '28'
+
+[[caption]]
+text      = "I’m gonna need you to get aaaa\n "
+from      = '1.01'
+to        = '1.1'
+align     = 'center'
+margin    = '20'
+placement = '31,180'
+size      = '28'
+
+[[caption]]
+text      = "I’m gonna need you to get aaaaa\n "
+from      = '1.101'
+to        = '1.2'
+align     = 'center'
+margin    = '20'
+placement = '31,180'
+size      = '28'
+
+[[caption]]
+text      = "I’m gonna need you to get aaaaaall\n "
+from      = '1.201'
+to        = '1.39'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "I’m gonna need you to get aaaaaall\nthe way off my back about this"
+from      = '1.4'
+to        = '3.04'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Okay, let me get off of that thing!"
+from      = '3.05'
+to        = '5'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

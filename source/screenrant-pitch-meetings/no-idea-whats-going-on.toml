@@ -1,0 +1,77 @@
+title = 'No idea what’s going on'
+published = 2021-10-10T07:00:00Z
+source_fkey = 'screenrant-pitch-meetings/index'
+tag = [
+    'ryan-george',
+    'pitch-meeting',
+]
+body_markdown = """
+
+In a pitch meeting, a script writer tells a studio exec “Long story short,
+I have no idea what’s going on”. The exec asks “But you had fun?”
+The script writer grins and says “I did, yeah” and the exec affirms
+“Well, that’s all that matters, then!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'w0s9mUXhHZ8'
+ext      = 'mp4'
+start    = '5:21.8'
+
+[palette]
+add = [
+    '#51684b',      # book spines
+    '#4f3523',
+    '#56442a',
+]
+
+[output]
+colours    = '119'
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = 'no'
+# max_size   = '1.02mb'
+
+[[clip]]
+start = '0'
+end   = '2.75'
+
+[[clip]]
+start = '3.45'
+end   = '6.1'
+
+[[caption]]
+text      = "Long story short, I have\nno idea what’s going on"
+from      = '0.25'
+to        = '2.7'
+align     = 'center'
+margin    = '20'
+placement = 'bl'
+size      = '28'
+
+[[caption]]
+text      = "But you had fun? "
+from      = '2.701'
+to        = '3.54'
+margin    = '20'
+placement = '219,217'
+size      = '28'
+
+[[caption]]
+text      = "I did, yeah"
+from      = '3.541'
+to        = '4.2'
+margin    = '20'
+placement = '90,217'
+size      = '28'
+
+[[caption]]
+text      = "Well, that’s all\nthat matters, then!"
+from      = '4.201'
+to        = '5.4'
+align     = 'center'
+margin    = '20'
+placement = '201,180'
+size      = '28'
