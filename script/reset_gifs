@@ -1,0 +1,11 @@
+#!/usr/bin/env -S bash -euo pipefail
+#
+# reset the timestamp of GIFs so that make won't try to remake them
+# (needed after a git checkout changes the timestamp of the TOML files)
+
+while read toml gif; do
+    base="${toml%.*}"
+    timestamp=$(stat -f'%m' $toml)
+    gtouch --date=@$((timestamp+1)) $base.gif $base.tn.gif
+
+done < <(make -n -f Makefile.gifs | grep make_gif | sed -e 's/.* make_gif //')

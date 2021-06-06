@@ -11,6 +11,9 @@ new404: 404
 clean:
 	@rm -rf output
 
+reset:
+	@./script/reset_gifs
+
 gifs:
 	@PATH="./bin:${PATH}" make -f Makefile.gifs
 
