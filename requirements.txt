@@ -1,4 +1,4 @@
 flourish>=0.9.7
-Pillow==7.2.0
+Pillow==8.1.1
 toml
 tweepy
