@@ -65,7 +65,7 @@ next: gifwrapped
 	@clear
 	@./script/next 60 high
 	@echo ''
-	@./script/next un
+	@./script/next
 
 example-fonts:
 	mkdir -p fonts
