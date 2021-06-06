@@ -1,5 +1,5 @@
 title = 'Scratching only makes it worse'
-published = 2100-01-01T07:00:00Z
+published = 2021-10-28T07:00:00Z
 source_fkey = 'that-mitchell-and-webb-look/index'
 tag = [
     'the-quiz-broadcast',
@@ -15,36 +15,36 @@ He then scratches at his face, and admonishes himself loudly “DON’T!”
 """
 
 [video]
-source   = 'youtube'
-file     = 'PYnmc10x_3Y'
-ext      = 'mp4'
-start    = '0:20.4'
-duration = '6.75'
+source   = 'file'
+file     = 'mwlook-405'
+ext      = 'mkv'
+start    = '21:07.5'
+duration = '6.6'
 
 [output]
-colours  = '74'
+colours  = '122'
 denoise  = true
 dither   = 'bayer:bayer_scale=3'
 fps      = '18'
-loss     = '25'
-max_size = '1.7mb'
+loss     = '20'
+max_size = '2.6mb'
 width    = '400'
 
 [[caption]]
 text      = "Hello, good evening, and\nscratching only makes it worse"
-from      = '0.3'
-to        = '3.2'
+from      = '0.2'
+to        = '3.3'
 align     = 'center'
-margin    = '20'
+margin    = '16'
 placement = 'bc'
-size      = '28'
+size      = '25'
 
 [[caption]]
 text      = "DON’T!"
-from      = '5.1'
+from      = '5.3'
 to        = '6'
 align     = 'center'
 font      = 'poppins-black.ttf'
-margin    = '20'
+margin    = '16'
 placement = 'bc'
 size      = '64'

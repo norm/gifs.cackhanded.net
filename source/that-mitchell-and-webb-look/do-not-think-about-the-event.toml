@@ -1,5 +1,5 @@
 title = 'Do not think about the event'
-published = 2100-01-01T07:00:00Z
+published = 2021-09-16T07:00:00Z
 source_fkey = 'that-mitchell-and-webb-look/index'
 tag = [
     'the-quiz-broadcast',
@@ -11,19 +11,18 @@ body_markdown = """
 """
 
 [video]
-source   = 'youtube'
-file     = 'dZ8Q0HNbmlU'
-ext      = 'mp4'
-start    = '1:39.4'
-duration = '0.85'
-crop     = '400:225'
-
+source   = 'file'
+file     = 'mwlook-403'
+ext      = 'mkv'
+start    = '3:37.1'
+duration = '0.3'
+crop     = '1120:630:80:0'
 
 [output]
 colours    = '74'
 denoise    = true
+slowdown   = '2'
 dither     = 'bayer:bayer_scale=3'
-fps        = '18'
+fps        = 'original'
 loss       = '0'
-max_size   = '0.21mb'
-width      = 'original'
+max_size   = '0.25mb'

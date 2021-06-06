@@ -1,0 +1,48 @@
+title = 'Some horrible memory of the event'
+published = 2021-10-14T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+    'gameshow-host',
+    'quiz-contestant-peter',
+]
+body_markdown = """
+
+The host of The Quiz Broadcast remarks about Sheila screaming and running
+out, “Some horrible memory of the event, no doubt” and Peter agrees
+“We all get them!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mwlook-301'
+ext      = 'mkv'
+start    = '8:34.3'
+duration = '5'
+
+[output]
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '2.08mb'
+
+[[caption]]
+text      = "Some horrible memory\nof the event, no doubt"
+from      = '0'
+to        = '2.35'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '30'
+
+[[caption]]
+text      = "We all get them!"
+from      = '3.1'
+to        = '4.2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '30'

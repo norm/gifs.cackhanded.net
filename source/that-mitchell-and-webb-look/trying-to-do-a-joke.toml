@@ -1,5 +1,5 @@
 title = 'Trying to do a joke'
-published = 2100-01-01T07:00:00Z
+published = 2021-10-21T07:00:00Z
 source_fkey = 'that-mitchell-and-webb-look/index'
 tag = [
     'the-quiz-broadcast',
@@ -13,21 +13,19 @@ The host of The Quiz Broadcast complains at the production crew
 """
 
 [video]
-source   = 'youtube'
-file     = 'PYnmc10x_3Y'
-ext      = 'mp4'
-start    = '1:20.4'
+source   = 'file'
+file     = 'mwlook-405'
+ext      = 'mkv'
+start    = '22:07.5'
 duration = '3.2'
-crop     = '400:225:120:40'
 
 [output]
 colours  = '74'
 denoise  = true
 dither   = 'bayer:bayer_scale=3'
 fps      = '18'
-loss     = '0'
-max_size = '2.2mb'
-width    = '400'
+loss     = '20'
+max_size = '1.25mb'
 
 [[caption]]
 text      = "I was only trying to do a joke"
@@ -36,4 +34,4 @@ to        = '3.4'
 align     = 'center'
 margin    = '20'
 placement = 'bc'
-size      = '28'
+size      = '30'

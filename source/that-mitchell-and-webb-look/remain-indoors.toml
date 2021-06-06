@@ -1,5 +1,5 @@
 title = 'Remain indoors'
-published = 2100-01-01T07:00:00Z
+published = 2021-09-09T07:00:00Z
 source_fkey = 'that-mitchell-and-webb-look/index'
 tag = [
     '404-page-candidate',
@@ -12,17 +12,18 @@ body_markdown = """
 """
 
 [video]
-source   = 'youtube'
-file     = '0WsuaYh_hkg'
-ext      = 'mp4'
-start    = '1:28.55'
-duration = '1.3'
-crop     = '560:315:52:80'
+source   = 'file'
+file     = 'mwlook-301'
+ext      = 'mkv'
+start    = '8:23.6'
+duration = '0.66'
+crop     = '1080:585:125:40'
 
 [output]
 colours    = '80'
 denoise    = true
 dither     = 'bayer:bayer_scale=3'
 fps        = '18'
+slowdown   = '1.2'
 loss       = '0'
-max_size   = '0.4mb'
+max_size   = '0.25mb'
