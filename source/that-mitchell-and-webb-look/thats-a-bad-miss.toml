@@ -1,0 +1,46 @@
+title = 'That’s a bad miss'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    '404-page-candidate',
+    'commentator-ted',
+    'commentator-peter',
+]
+body_markdown = """
+
+Ted, snooker commentator, comments “Oh, and that’s a bad miss.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'fqztJoME1ww'
+ext      = 'mp4'
+start    = '1:14.0'
+duration = '4.2'
+crop     = '630:354'
+
+[palette]
+add = [
+    '#5a6132',  # mini snooker table felt
+    '#85925b',
+    '#a2aa71'
+]
+
+[output]
+brightness = '0.05'
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.45mb'
+
+[[caption]]
+text      = "And that’s a bad miss"
+from      = '1.5'
+to        = '3.5'
+align     = 'center'
+margin    = '20'
+placement = 'bl'
+size      = '28'

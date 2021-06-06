@@ -1,0 +1,38 @@
+title = 'Please remain indoors'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+    'gameshow-host',
+]
+body_markdown = """
+
+The host of The Quiz Broadcast comments
+“Well, moving, please remain indoors.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'zGa2L_Z1gC4'
+ext      = 'mp4'
+start    = '1:33.5'
+duration = '3'
+crop     = '630:354'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1mb'
+
+[[caption]]
+text      = "Well, moving on\nplease remain indoors"
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

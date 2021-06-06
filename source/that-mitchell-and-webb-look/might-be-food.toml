@@ -1,0 +1,39 @@
+title = 'Might be food'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+    'gameshow-host',
+]
+body_markdown = """
+
+The host of The Quiz Broadcast declares
+“One of tonight’s prizes might be food!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'dZ8Q0HNbmlU'
+ext      = 'mp4'
+start    = '0:53.0'
+duration = '2.9'
+crop     = '400:225:13:5'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.75mb'
+width      = 'original'
+
+[[caption]]
+text      = "One of tonight’s prizes\nmight be food!"
+from      = '0'
+to        = '3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

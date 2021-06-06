@@ -1,0 +1,28 @@
+title = 'Remain indoors'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    '404-page-candidate',
+    'the-quiz-broadcast',
+]
+body_markdown = """
+
+“REMAIN INDOORS” flashes on screen during The Quiz Broadcast.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '0WsuaYh_hkg'
+ext      = 'mp4'
+start    = '1:28.55'
+duration = '1.3'
+crop     = '560:315:52:80'
+
+[output]
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.4mb'

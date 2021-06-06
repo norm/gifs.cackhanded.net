@@ -1,0 +1,39 @@
+title = 'Barter is forbidden'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+    'gameshow-host',
+]
+body_markdown = """
+
+The host of The Quiz Broadcast warns the viewer
+“Barter is forbidden and punishable by exposure.”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '_n-EwNcnRXI'
+ext      = 'mp4'
+start    = '1:13.4'
+duration = '2.85'
+crop     = '480:270:80:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.8mb'
+width      = '400'
+
+[[caption]]
+text      = "Barter is forbidden\nand punishable by exposure"
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,50 @@
+title = 'Scratching only makes it worse'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+    'gameshow-host',
+]
+body_markdown = """
+
+The host of The Quiz Broadcast greets the viewer
+“Hello, good evening, and scratching only makes it worse!”
+
+He then scratches at his face, and admonishes himself loudly “DON’T!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'PYnmc10x_3Y'
+ext      = 'mp4'
+start    = '0:20.4'
+duration = '6.75'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '25'
+max_size = '1.7mb'
+width    = '400'
+
+[[caption]]
+text      = "Hello, good evening, and\nscratching only makes it worse"
+from      = '0.3'
+to        = '3.2'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "DON’T!"
+from      = '5.1'
+to        = '6'
+align     = 'center'
+font      = 'poppins-black.ttf'
+margin    = '20'
+placement = 'bc'
+size      = '64'

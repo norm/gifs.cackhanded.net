@@ -1,0 +1,42 @@
+title = 'Blessed be the regulations'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+    'gameshow-host',
+    'peter',
+    'sheila',
+    'maltesers',
+]
+body_markdown = """
+
+The host and contestants of The Quiz Broadcast intone “Blessed be the
+regulations” while drawing a rectangle in the air with their index fingers.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'dZ8Q0HNbmlU'
+ext      = 'mp4'
+start    = '1:26.0'
+duration = '3'
+crop     = '400:225:13:5'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.62mb'
+width      = 'original'
+
+[[caption]]
+text      = "Blessed be the regulations"
+from      = '0'
+to        = '3'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

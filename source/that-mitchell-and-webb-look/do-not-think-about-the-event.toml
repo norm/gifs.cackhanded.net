@@ -1,0 +1,29 @@
+title = 'Do not think about the event'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+]
+body_markdown = """
+
+“DO NOT THINK ABOUT THE EVENT” flashes on screen during The Quiz Broadcast.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'dZ8Q0HNbmlU'
+ext      = 'mp4'
+start    = '1:39.4'
+duration = '0.85'
+crop     = '400:225'
+
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.21mb'
+width      = 'original'

@@ -1,0 +1,39 @@
+title = 'They’ve got in'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+    'gameshow-host',
+]
+body_markdown = """
+
+The host of The Quiz Broadcast tells the viewer that
+“They’ve got in”.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'PYnmc10x_3Y'
+ext      = 'mp4'
+start    = '2:39.05'
+duration = '2.85'
+crop     = '400:225:120:40'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '0'
+max_size = '0.6mb'
+width    = '400'
+
+[[caption]]
+text      = "They've got in"
+from      = '1.4'
+to        = '2.7'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'

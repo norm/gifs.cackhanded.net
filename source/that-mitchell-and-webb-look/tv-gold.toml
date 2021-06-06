@@ -1,0 +1,39 @@
+title = 'TV gold'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'the-quiz-broadcast',
+    'gameshow-host',
+]
+body_markdown = """
+
+The host of The Quiz Broadcast grins and tells the viewer
+“That really is TV gold!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '_n-EwNcnRXI'
+ext      = 'mp4'
+start    = '1:07.0'
+duration = '3'
+crop     = '480:270:80:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.8mb'
+width      = '400'
+
+[[caption]]
+text      = "That really is TV gold!"
+from      = '0'
+to        = '4'
+align     = 'center'
+margin    = '20'
+placement = 'bc'
+size      = '28'
