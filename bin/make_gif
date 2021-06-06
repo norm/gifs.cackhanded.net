@@ -61,6 +61,7 @@ function main {
     echo "    ${output_width}x${output_height}" \
         $(get_dither $toml | sed -e 's/bayer://') \
         $(get_denoise $toml | sed -e 's/hqdn3d/denoise/') \
+        $(get_slowdown $toml | sed -e 's/setpts=/slowdown=/' -e 's/*PTS//') \
         $(get_fps $toml | sed -e 's/^$/fps=original/')
 
 
@@ -262,7 +263,8 @@ function generate_filter {
         local crop=$(get_crop $toml)
         local fps=$(get_fps $toml)
         local scale=$(get_scale $toml)
-        local alter="$(join ',' $fps $crop $scale $bright $denoise)"
+        local slowdown="$(get_slowdown $toml)"
+        local alter="$(join ',' $fps $crop $scale $bright $denoise $slowdown)"
         alter="${alter:-scale=w=in_w:h=in_h}"
         if [ -n "$timings" ]; then
             echo "[0:v] $alter [cv]; ${timings}[tv]${captions}${paletteuse}"
@@ -334,6 +336,15 @@ function get_dither {
     echo "dither=${output_dither:-bayer:bayer_scale=4}"
 }
 
+function get_slowdown {
+    local toml="$1"
+
+    local output_slowdown="$(toml $toml output.slowdown)"
+
+    [ -n "$output_slowdown" ] && \
+        echo "setpts=${output_slowdown}*PTS"
+}
+
 function get_clips {
     local toml="$1"
 
@@ -358,7 +369,8 @@ function get_clips {
         local concat="concat=n=$index:v=1"
         local crop=$(get_crop $toml)
         local scale=$(get_scale $toml)
-        local alter="$(join ',' $concat $crop $scale $bright $denoise)"
+        local slowdown="$(get_slowdown $toml)"
+        local alter="$(join ',' $concat $crop $scale $bright $denoise $slowdown)"
         clips+="$filters $alter [cv];"
     fi
 

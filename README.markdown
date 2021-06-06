@@ -134,6 +134,8 @@ the video source.
   of `loss` to shrink the file size at the expense of image quality
   (can be expressed in megabytes, eg `1.5mb`, or as `auto` to calculate
   a maximum based on `0.45mb` per second from the length of the GIF).
+* `slowdown` is a multiplier to make the output GIF animate slower than the
+  source video (slo-mo). A multiplier lower than 1 will speed it up.
 * `dither` is how the palette colours are dithered to create the appearance
   of more colours:
     * `bayer:bayer_scale=1` — the scale is an integer between 0 and 5

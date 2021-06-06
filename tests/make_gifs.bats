@@ -67,6 +67,16 @@ reset=$'\e'[0m
     diff -u $BATS_TMPDIR/gif tests/gifs/crop.gif
 }
 
+@test generate_slowdown {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
+    run make_gif tests/config/slowdown.toml $BATS_TMPDIR/output.gif
+    echo "$output"
+
+    [ "$status" -eq 0 ]
+    diff -u $BATS_TMPDIR/output.gif tests/gifs/slowdown.gif
+}
+
 @test generate_clips {
     [ $(uname) != 'Darwin' ] && skip "Not macOS"
 
