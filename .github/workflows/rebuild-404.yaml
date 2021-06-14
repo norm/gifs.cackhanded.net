@@ -3,7 +3,7 @@ name: Rebuild the 404 page
 on:
   schedule:
       #        min   hr    dom   mon   dow
-      - cron: '15    *    *     *     *'     # hourly
+      - cron: '15    */4   *     *     *'    # every four hours
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.7
+          python-version: 3.9
 
       - name: Configure pip caching
         uses: actions/cache@v2
