@@ -1,0 +1,29 @@
+title = 'Home'
+published = 2021-09-15T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Gir flies Zim home, smacking into the door.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '22:06.3'
+duration = '4.2'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '12'
+loss       = '20'
+max_size   = '0.5mb'

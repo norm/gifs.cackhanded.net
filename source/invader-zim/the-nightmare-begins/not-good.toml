@@ -1,0 +1,41 @@
+title = 'It looks kind of not good'
+published = 2021-09-21T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim telling the Tallest “It looks kind of not good”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '10:15.2'
+duration = '3.8'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '0'
+max_size   = '0.31mb'
+
+[[caption]]
+text      = "It looks kind of …"
+from      = '0.7'
+to        = '2.9'
+type      = 'zim_speak'
+placement = '96,225'
+
+[[caption]]
+text      = "It looks kind of not good"
+from      = '2.91'
+to        = '4'
+type      = 'zim_speak'

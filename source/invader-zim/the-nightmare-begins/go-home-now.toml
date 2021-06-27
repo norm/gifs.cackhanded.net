@@ -1,0 +1,58 @@
+title = 'Go home now!'
+published = 2021-09-24T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'brian',
+    'dib-membrane',
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+In Skool, Ms Bitters is ending her class. “Doomed… doomed… doomed…
+go home now!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '19:28.2'
+duration = '4'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '0'
+max_size   = '0.26mb'
+
+[[caption]]
+text      = "Doomed…"
+from      = '0.5'
+to        = '1.49'
+type      = 'zim_speak'
+placement = '52,225'
+
+[[caption]]
+text      = "Doomed… doomed…"
+from      = '1.5'
+to        = '2.39'
+type      = 'zim_speak'
+placement = '52,225'
+
+[[caption]]
+text      = "Doomed… doomed… doomed…"
+from      = '2.4'
+to        = '2.9'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "GO HOME NOW!"
+from      = '3.1'
+to        = '4'
+type      = 'zim_shout'

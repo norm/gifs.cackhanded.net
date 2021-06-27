@@ -1,0 +1,32 @@
+title = 'Self-destruct'
+published = 2021-09-30T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'brian',
+    'invader-zim',
+    'skool',
+    'zita',
+]
+body_markdown = """
+
+At Skool, Zim is panicking, and reaches towards his self-destruct
+wristbrace.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '18:03'
+duration = '3.3'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.35mb'

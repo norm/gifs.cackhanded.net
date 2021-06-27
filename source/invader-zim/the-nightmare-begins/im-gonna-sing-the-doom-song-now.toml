@@ -1,0 +1,44 @@
+title = 'I’m gonna sing The Doom Song now!'
+published = 2021-09-18T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'the-doom-song',
+    'voot-runner',
+]
+body_markdown = """
+
+Gir declares “I’m gonna sing The Doom Song now!” and immediately starts,
+“doom doom do-doom doom do-doom doom doom doom…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '11:16.95'
+duration = '5'
+crop     = '710:400:5:50'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.32mb'
+
+[[caption]]
+text      = "I'm gonna sing the doom song now!"
+from      = '0.2'
+to        = '1.8'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "doom doom do-doom doom\ndo-doom doom doom doom!"
+from      = '1.9'
+to        = '4.7'
+type      = 'zim_speak'

@@ -1,0 +1,42 @@
+title = 'Step one went smoothly'
+published = 2021-09-12T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+    'robodad',
+    'robomom',
+]
+body_markdown = """
+
+Zim breaths a sigh of relief and say “Step one went smoothly.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '15:45.0'
+duration = '5.5'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.37mb'
+
+[[caption]]
+text      = "Whoo!"
+from      = '1'
+to        = '2.3'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Step one went smoothly"
+from      = '3'
+to        = '5.4'
+type      = 'zim_speak'

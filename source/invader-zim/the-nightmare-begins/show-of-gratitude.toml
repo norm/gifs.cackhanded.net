@@ -1,0 +1,43 @@
+title = 'A show of gratitude'
+published = 2021-10-13T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'almighty-tallest-purple',
+    'almighty-tallest-red',
+]
+body_markdown = """
+
+Almighty Tallest Red declares “As a show of gratitude for your
+service in the past, here’s a sandwich” and hands Zim a sandwich
+pulled from his armour.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '6:56.0'
+duration = '7'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.62mb'
+
+[[caption]]
+text      = "As a show of gratitude for\nyour service in the past…"
+from      = '0.75'
+to        = '5'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Here's a sandwich"
+from      = '5.75'
+to        = '7'
+type      = 'zim_speak'

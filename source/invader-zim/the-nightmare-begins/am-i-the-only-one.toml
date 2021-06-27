@@ -1,0 +1,37 @@
+title = 'Am I the only one?'
+published = 2021-10-21T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'aki',
+    'dib-membrane',
+    'skool',
+]
+body_markdown = """
+
+Dib asks everyone “Okay, am I the only one here who sees the alien
+sitting in class?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '17:44.1'
+duration = '4.8'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.33mb'
+
+[[caption]]
+text      = "Okay, am I the only one here\nwho sees the alien sitting in class?"
+from      = '0'
+to        = '5'
+type      = 'zim_speak'

@@ -1,0 +1,38 @@
+title = 'The Doom Song'
+published = 2021-09-18T15:00:01Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'the-doom-song',
+    'voot-runner',
+]
+body_markdown = """
+
+Gir is still singing The Doom Song six months later,
+“doom! doom doom de-doom\nde-doom doom de-doom-doom”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '11:33.8'
+duration = '1.8'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '0'
+max_size   = '0.3mb'
+
+[[caption]]
+text      = "doom! doom doom de-doom\nde-doom doom de-doom-doom"
+from      = '0'
+to        = '5'
+type      = 'zim_speak'

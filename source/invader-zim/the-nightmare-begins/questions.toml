@@ -1,0 +1,35 @@
+title = 'Questions?'
+published = 2021-09-17T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'dib-membrane',
+    'skool',
+]
+body_markdown = """
+
+Dib asking the class “Anyone? Anyone? Questions?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '18:41'
+duration = '1.75'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.16mb'
+
+[[caption]]
+text      = "Anyone? Anyone? Questions?"
+from      = '0'
+to        = '1.9'
+type      = 'zim_speak'

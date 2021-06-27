@@ -1,0 +1,42 @@
+title = 'Mission goo'
+published = 2021-10-15T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim reporting in to the Almighty Tallest, informs them he is “So very
+alive and full of goo … mission goo.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '23:16.3'
+duration = '4.5'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '100'
+max_size   = '0.63mb'
+
+[[caption]]
+text      = "So very alive and full of goo"
+from      = '0'
+to        = '3'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "MISSION GOO"
+from      = '3.3'
+to        = '4.5'
+type      = 'zim_shout'

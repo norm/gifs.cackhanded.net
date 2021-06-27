@@ -1,0 +1,58 @@
+title = 'Pull some levers!'
+published = 2021-10-19T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+    'irken-army',
+    'frontline-battlemech',
+]
+body_markdown = """
+
+Zim, commanding a frontline battlemech, tells another Irken invader “Twist
+those knobs” then repeats himself shouting “TWIST THOSE KNOBS!”
+
+His attention turns, “You! Pull some levers” and again repeats himself
+shouting “PULL SOME LEVERS!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '6:03.7'
+duration = '7.8'
+crop     = '640:360:80:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.57mb'
+
+[[caption]]
+text      = "Twist those knobs."
+from      = '0'
+to        = '1.3'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "TWIST THOSE KNOBS!"
+from      = '1.51'
+to        = '3'
+type      = 'zim_shout'
+
+[[caption]]
+text      = "You! Pull some levers."
+from      = '3.5'
+to        = '4.5'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "PULL SOME LEVERS!"
+from      = '4.71'
+to        = '6.1'
+type      = 'zim_shout'

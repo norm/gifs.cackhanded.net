@@ -1,0 +1,30 @@
+title = 'Get in the bin'
+published = 2021-10-26T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Gir and Zim walk over to the bin. Gir pressed the footpedal to open the lid,
+and Zim climbs in. He sinks down inside and the lid closes behind him.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '16:02.2'
+duration = '5.9'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.42mb'

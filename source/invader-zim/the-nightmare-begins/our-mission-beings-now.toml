@@ -1,0 +1,45 @@
+title = 'Our mission beings now'
+published = 2021-10-27T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'voot-runner',
+]
+body_markdown = """
+
+Zim tells Gir “Our mission begins now. Let us rain some doom down upon the
+filthy heads of our doomed enemies!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '11:08.0'
+duration = '8.6'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.61mb'
+
+[[caption]]
+text      = "Our mission begins now"
+from      = '0'
+to        = '2'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Let us rain some doom down upon the\nfilthy heads of our doomed enemies!"
+from      = '2.25'
+to        = '8.4'
+type      = 'zim_speak'
+margin    = '0'
+placement = '13,196'

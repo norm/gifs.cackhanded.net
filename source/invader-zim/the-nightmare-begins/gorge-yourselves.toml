@@ -42,27 +42,19 @@ end   = '7.5'
 text      = "Help yourself to some nachos"
 from      = '0'
 to        = '1.4'
-font      = 'anteb-regular.otf'
-margin    = '20'
+type      = 'zim_speak'
 placement = 'bl'
-size      = '28'
 
 [[caption]]
 text      = "Yes, gorge yourselves"
 from      = '1.7'
 to        = '4.1'
-font      = 'anteb-regular.otf'
-# margin    = '20'
-# placement = 'br'
+type      = 'zim_speak'
 placement = '140,225'
-size      = '28'
 
 [[caption]]
 text      = "You mooches"
 from      = '4.3'
 to        = '5.5'
-font      = 'anteb-regular.otf'
-# margin    = '20'
-# placement = 'br'
+type      = 'zim_speak'
 placement = '175,225'
-size      = '28'

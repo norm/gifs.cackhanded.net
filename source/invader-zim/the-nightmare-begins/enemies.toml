@@ -1,0 +1,30 @@
+title = 'Enemies'
+published = 2021-09-16T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'dib-membrane',
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+Dib and Zim are enemies now, as illustrated by their glares.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '19:26.1'
+duration = '2'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '10'
+max_size   = '0.15mb'

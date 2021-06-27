@@ -1,0 +1,41 @@
+title = 'Pitiful human'
+published = 2021-10-23T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim declares Dib a “pitiful human” and is immediately attacked by a dog.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '21:17.1'
+crop     = '710:400:5:20'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.3mb'
+
+[[clip]]
+start = '0'
+end   = '2.8'
+
+[[clip]]
+start = '3.3'
+end   = '4.2'
+
+[[caption]]
+text      = "Pitiful human!"
+from      = '0.5'
+to        = '2.8'
+type      = 'zim_speak'

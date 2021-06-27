@@ -1,0 +1,47 @@
+title = 'Learning'
+published = 2021-10-14T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim sitting infront of a computer, declares “Now to find the best
+possible way of ‘learning’ about this sad, filthy little planet.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '16:17'
+duration = '6'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.42mb'
+
+[[caption]]
+text      = "Now to find the best possible way of"
+from      = '0.3'
+to        = '2.6'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "“learning”"
+from      = '2.61'
+to        = '3.6'
+type      = 'zim_emphasis'
+
+[[caption]]
+text      = "about this sad, filthy little planet"
+from      = '3.61'
+to        = '5.8'
+type      = 'zim_speak'

@@ -1,0 +1,50 @@
+title = 'Doomed'
+published = 2021-10-05T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+Ms Bitters telling the class that everything is “Doomed, doomed, DOOMED!”
+as a bug crawls across her face.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '17:33.0'
+duration = '6.4'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '10'
+max_size   = '0.5mb'
+
+[[caption]]
+text      = "doomed…"
+from      = '0.8'
+to        = '1.89'
+type      = 'zim_speak'
+placement = '115,225'
+
+[[caption]]
+text      = "doomed… doomed…"
+from      = '1.9'
+to        = '2.9'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "DOOMED"
+from      = '3.05'
+to        = '6'
+type      = 'zim_shout'
+placement = 'bl'

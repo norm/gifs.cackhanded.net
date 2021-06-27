@@ -17,6 +17,13 @@ margin    = '20'
 placement = 'bc'
 size      = '48'
 
+[type_set.zim_emphasis]
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
 [type_set.zim_speak]
 align     = 'center'
 font      = 'anteb-regular.otf'

@@ -29,7 +29,7 @@ file     = 'zim_s01e01'
 ext      = 'm4v'
 start    = '8:44'
 duration = '6.6'
-crop     = '700:480'
+crop     = '710:400:5:20'
 
 [output]
 colours    = '90'
@@ -43,19 +43,12 @@ max_size   = '0.78mb'
 text      = "Not now son, I'm making..."
 from      = '0'
 to        = '2.25'
-align     = 'center'
-font      = 'anteb-regular.otf'
-margin    = '20'
-placement = 'bc'
-size      = '28'
+type      = 'zim_speak'
 
 [[caption]]
 text         = "TOAST!"
 from         = '4.3'
 to           = '5.25'
-align        = 'center'
-font         = 'anteb-extrablack.otf'
-margin       = '20'
-placement    = 'bc'
-size         = '180'
+type         = 'zim_shout'
+size         = '140'
 stroke_width = '4'

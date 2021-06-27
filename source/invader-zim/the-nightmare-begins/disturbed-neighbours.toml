@@ -1,0 +1,37 @@
+title = 'Disturbed neighbours'
+published = 2021-10-12T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim's new neighbours look on, as he and Gir walk towards his house.
+Zim is whistling nonchalantly.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '15:18.4'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '30'
+max_size   = '1.5mb'
+
+[[clip]]
+start = '0'
+end   = '2.7'
+
+[[clip]]
+start = '13'
+end   = '17.6'

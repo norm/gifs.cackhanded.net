@@ -1,0 +1,30 @@
+title = 'Head'
+published = 2021-10-08T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'almighty-tallest-purple',
+    'almighty-tallest-red',
+    'gir',
+]
+body_markdown = """
+
+Gir repeatedly punches itself in the head with a look of glee.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '10:44.5'
+duration = '4.2'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.78mb'
