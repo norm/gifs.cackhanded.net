@@ -4,3 +4,8 @@ base_url = 'https://gifs.cackhanded.net'
 bucket = 'gifs.ch.net'
 cloudfront_id = 'E2UHAOR9WJ1WUL'
 future = false
+
+[permanent_redirects]
+"/invader-zim/not-now-son.gif" = "/invader-zim/the-nightmare-begins/not-now-son.tn.gif"
+"/invader-zim/not-now-son.tn.gif" = "/invader-zim/the-nightmare-begins/not-now-son.tn.gif"
+"/tags/dib/" = "/tags/dib-membrane/"

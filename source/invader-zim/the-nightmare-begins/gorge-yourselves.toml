@@ -1,8 +1,13 @@
 title = 'Gorge yourselves'
 published = 2020-08-21T06:52:28Z
+updated = 2021-06-27T07:00:00Z
 show_fkey = 'invader-zim/index'
 episode_fkey = 'invader-zim/the-nightmare-begins/index'
-tag = ['almighty-tallest-red', 'almighty-tallest-purple', 'invader-skoodge']
+tag = [
+    'almighty-tallest-purple',
+    'almighty-tallest-red',
+    'invader-skoodge',
+]
 body_markdown = """
 
 Almighty Tallest Red says to the crowd “Help yourself to some nachos.”
@@ -12,16 +17,18 @@ Almighty Tallest Purple adds “Yes, gorge yourselves you mooches.”
 
 [video]
 source   = 'file'
-file     = 'zim-s01e01'
-ext      = 'mp4'
+file     = 'zim_s01e01'
+ext      = 'm4v'
 start    = '04:54.0'
-crop     = '700:480'
+crop     = '710:400'
 
 [output]
-colours  = '58'
-fps      = '12'
-mode     = 'full'
-max_size = '0.9mb'
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.64mb'
 
 [[clip]]
 start = '0'
@@ -35,25 +42,27 @@ end   = '7.5'
 text      = "Help yourself to some nachos"
 from      = '0'
 to        = '1.4'
-size      = '32'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'
 
 [[caption]]
-text      = "Yes"
+text      = "Yes, gorge yourselves"
 from      = '1.7'
-to        = '2.1'
-placement = 'br'
-size      = '32'
-
-[[caption]]
-text      = "Gorge yourselves"
-from      = '2.8'
 to        = '4.1'
-placement = 'br'
-size      = '32'
+font      = 'anteb-regular.otf'
+# margin    = '20'
+# placement = 'br'
+placement = '140,225'
+size      = '28'
 
 [[caption]]
 text      = "You mooches"
 from      = '4.3'
 to        = '5.5'
-placement = 'br'
-size      = '32'
+font      = 'anteb-regular.otf'
+# margin    = '20'
+# placement = 'br'
+placement = '175,225'
+size      = '28'
