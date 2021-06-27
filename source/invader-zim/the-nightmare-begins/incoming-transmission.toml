@@ -1,0 +1,49 @@
+title = 'Incoming transmission'
+published = 2021-09-11T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'irken-armada',
+    'massive',
+]
+body_markdown = """
+
+On the Massive, one of the Irken on the bridge inform the Almight Tallest
+that there is an “Incoming transmission from Earth”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '22:59'
+duration = '3.7'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.37mb'
+
+[[caption]]
+text      = "Incoming transmission from …"
+from      = '0.2'
+to        = '2.69'
+align     = 'center'
+font      = 'anteb-regular.otf'
+placement = '20,225'
+size      = '28'
+
+[[caption]]
+text      = "Incoming transmission from “Earth”?"
+from      = '2.7'
+to        = '3.7'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,41 @@
+title = 'We have to be quiet'
+published = 2021-10-03T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim shushes Gir and tells him “We have to be quiet!”
+
+Gir's eyes go from blue to red and he salutes.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '12:57.8'
+duration = '5'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.64mb'
+
+[[caption]]
+text      = "Ssh! We have to be quiet!"
+from      = '0.8'
+to        = '2.5'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'

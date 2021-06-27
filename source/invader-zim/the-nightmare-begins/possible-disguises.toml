@@ -1,0 +1,51 @@
+title = 'Possible disguises'
+published = 2021-10-30T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+    'jhonen-vasquez',
+    'steve-ressel',
+]
+body_markdown = """
+
+Zim looking at possible disguides, complains that they are “too ugly!”
+and “too stinky!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '13:10.8'
+duration = '4'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.33mb'
+
+[[caption]]
+text      = "TOO UGLY!"
+from      = '0.9'
+to        = '1.8'
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+margin    = '20'
+placement = 'bl'
+size      = '40'
+
+[[caption]]
+text      = "TOO STINKY!"
+from      = '2.9'
+to        = '3.9'
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+margin    = '20'
+placement = 'bl'
+size      = '40'

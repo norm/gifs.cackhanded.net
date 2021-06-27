@@ -1,0 +1,72 @@
+title = 'Do not ignore my veins'
+published = 2021-10-04T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'almighty-tallest-purple',
+    'almighty-tallest-red',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim implores the Tallest “But Invader’s blood marches through my veins
+like giant radioactive rubber pants! The pants command me! Do not ignore
+my veins!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '6:44.0'
+duration = '11.8'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.22mb'
+
+[[caption]]
+text      = "But Invader’s blood\nmarches through my veins"
+from      = '0.25'
+to        = '4.24'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "like giant radioactive rubber pants!"
+from      = '4.25'
+to        = '6.4'
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "The pants command me!"
+from      = '7'
+to        = '8.44'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Do not ignore my veins!"
+from      = '8.45'
+to        = '10'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'

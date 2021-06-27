@@ -1,0 +1,53 @@
+title = 'Stupid'
+published = 2021-09-23T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'almighty-tallest-purple',
+    'almighty-tallest-red',
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim hesitates, and asks the Tallest about Gir, “Is it supposed to be stupid?”
+Almighty Tallest Purple grins and replies “It’s not stupid, it’s advanced!”
+Gir starts bouncing around on his head.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '10:49.2'
+duration = '9.5'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '50'
+max_size   = '1mb'
+
+[[caption]]
+text      = "Is it supposed to be stupid?"
+from      = '1'
+to        = '3.1'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "It's not stupid it's advanced!"
+from      = '3.2'
+to        = '7.2'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'

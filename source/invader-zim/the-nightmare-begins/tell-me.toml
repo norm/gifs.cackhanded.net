@@ -1,0 +1,45 @@
+title = 'Tell me'
+published = 2021-09-22T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'brian',
+    'invader-zim',
+    'melvin',
+    'ms-bitters',
+    'skool',
+    'zita',
+]
+body_markdown = """
+
+Zim implores of Ms Bitters “Tell me!” 
+
+She just raises an eyebrow.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '17:26'
+duration = '3'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '0'
+max_size   = '0.21mb'
+
+[[caption]]
+text      = "Tell me!"
+from      = '0.5'
+to        = '1.3'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'

@@ -1,0 +1,29 @@
+title = 'Beamdown'
+published = 2021-09-29T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'conventia',
+]
+body_markdown = """
+
+An antenna array opens, and a magenta light beam issues forth. A wider shot
+shows a lot of beams flying from a ring on orbit down to a planet's surface.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '1:06.4'
+duration = '6'
+crop     = '710:400:5:0'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '1.25mb'

@@ -1,0 +1,50 @@
+title = 'Implode'
+published = 2021-10-11T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+Ms Bitters talking about how the universe
+“will eventually implode in on itself!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '17:11.0'
+duration = '5'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.35mb'
+
+[[caption]]
+text      = "It will"
+from      = '0.6'
+to        = '4.7'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'
+
+[[caption]]
+text      = "eventually implode in on itself!"
+from      = '1.75'
+to        = '4.7'
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+margin    = '20'
+placement = 'br'
+size      = '28'

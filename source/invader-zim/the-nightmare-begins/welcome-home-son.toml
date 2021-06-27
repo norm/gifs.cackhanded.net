@@ -1,0 +1,42 @@
+title = 'Welcome home, son!'
+published = 2021-09-13T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'robodad',
+    'robomom',
+]
+body_markdown = """
+
+Gir and Zim walk up to his house. The door is opened by Robodad, who with
+Robomom declare “Welcome home, son!” Zim looks around carefully.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '15:37.0'
+duration = '5'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '30'
+max_size   = '0.54mb'
+
+[[caption]]
+text      = "Welcome home, son!"
+from      = '1.2'
+to        = '2.5'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'br'
+size      = '28'

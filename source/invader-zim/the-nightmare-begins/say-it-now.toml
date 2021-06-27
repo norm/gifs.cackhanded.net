@@ -1,0 +1,59 @@
+title = 'Say it now'
+published = 2021-10-20T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+Ms Bitters tells Zim “If you have something to say, say it now. Because
+after this moment I don’t want to hear another sound from you!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '16:46.0'
+duration = '8.6'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.67mb'
+
+[[caption]]
+text      = "If you have something\nto say, say it now"
+from      = '0'
+to        = '3.6'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'
+
+[[caption]]
+text      = "Because after this moment…"
+from      = '3.9'
+to        = '5.59'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'
+
+[[caption]]
+text      = "I don’t want to hear\nanother sound from you!"
+from      = '5.6'
+to        = '7.75'
+align     = 'left'
+font      = 'anteb-extrablack.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'

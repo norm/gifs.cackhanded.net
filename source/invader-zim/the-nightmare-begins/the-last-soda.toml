@@ -1,0 +1,49 @@
+title = 'The last soda'
+published = 2021-09-20T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gaz-membrane',
+]
+body_markdown = """
+
+Gaz opens the fridge and notices “Dib drank the last soda.”
+She vows “He will pay!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '8:25.0'
+duration = '6.9'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.46mb'
+
+[[caption]]
+text      = "Dib drank the last soda"
+from      = '1.5'
+to        = '3.6'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "HE WILL PAY!"
+from      = '4'
+to        = '7'
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+margin    = '20'
+placement = 'bc'
+size      = '40'

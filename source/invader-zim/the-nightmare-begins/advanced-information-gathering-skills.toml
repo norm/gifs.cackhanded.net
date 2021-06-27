@@ -1,0 +1,53 @@
+title = 'Advanced information gathering skills'
+published = 2021-10-02T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'voot-runner',
+]
+body_markdown = """
+
+Zim tells Gir “This is where your advanced information gathering skills come
+in handy”. Girs eyes go from blue to red, he salutes, and says “Yes, my
+master”. His eyes then turn blue again, he says a nonsense syllable 
+and looks eagerly out of the window.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '12:02.0'
+duration = '6.3'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '12'
+loss       = '25'
+max_size   = '0.81mb'
+
+[[caption]]
+text      = "This is where your advanced\ninformation gathering skills\ncome in handy"
+from      = '0'
+to        = '3.8'
+align     = 'left'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'
+
+[[caption]]
+text      = "Yes my master."
+from      = '4.1'
+to        = '5'
+font      = 'anteb-regular.otf'
+# margin    = '20'
+# placement = 'br'
+placement = '250,225'
+size      = '28'

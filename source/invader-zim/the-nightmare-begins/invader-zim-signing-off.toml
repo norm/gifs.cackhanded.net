@@ -1,0 +1,63 @@
+title = 'invader zim signing off'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim after reporting in to the Almighty Tallest, informs them
+“Well, I’ve much work to do, so Invader Zim signing off.”
+
+Gir falls from the ceiling onto Zim’s head, causing him to 
+exclaim “MY SPINE!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '23:24.6'
+duration = '6.5'
+crop     = '710:400:5:50'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '100'
+max_size   = '0.61mb'
+
+[[caption]]
+text      = "Well, I’ve much work to do, so…"
+from      = '0.2'
+to        = '2.4'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '45'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Invader Zim signing off."
+from      = '2.61'
+to        = '4.9'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '45'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "MY SPINE!"
+from      = '5.3'
+to        = '5.8'
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+margin    = '45'
+placement = 'bc'
+size      = '40'

@@ -1,0 +1,56 @@
+title = 'Truly deserving'
+published = 2021-10-22T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'almighty-tallest-purple',
+    'almighty-tallest-red',
+    'invader-zim',
+]
+body_markdown = """
+
+Almighty Tallest Red hovers over to Zim, saying “We see now that you are
+truly deserving.” Zim nods and agrees “Yes, yes I am”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '7:19.8'
+duration = '5.6'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#dfc6a5'   # sandwich crust
+]
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.61mb'
+
+[[caption]]
+text      = "We see now that\nyou are truly deserving"
+from      = '0.1'
+to        = '3'
+align     = 'left'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'
+
+[[caption]]
+text      = "Yes, yes I am"
+from      = '3.5'
+to        = '5.2'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'br'
+size      = '28'

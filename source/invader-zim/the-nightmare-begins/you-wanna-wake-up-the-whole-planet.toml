@@ -1,0 +1,52 @@
+title = 'You wanna wake up the whole planet?'
+published = 2021-10-17T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim asks Gir “You wanna wake up the whole planet?”
+to which Gir replies “I do.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '13:29.8'
+duration = '4.2'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.42mb'
+
+[[caption]]
+text      = "You wanna wake up the whole planet?"
+from      = '0'
+to        = '2.5'
+align     = 'center'
+font      = 'anteb-regular.otf'
+# margin    = '20'
+# placement = 'bc'
+margin    = '0'
+placement = '14,226'
+size      = '28'
+
+[[caption]]
+text      = "I do"
+from      = '3.1'
+to        = '4.1'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'

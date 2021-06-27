@@ -1,0 +1,52 @@
+title = 'Leave me alone!'
+published = 2021-09-28T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'dib-membrane',
+    'invader-zim',
+]
+body_markdown = """
+
+Dib is chasing Zim through the city. Zim shouts back at him
+“Leave me alone! I just wanna go home and be all normal!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '20:16.6'
+duration = '4'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '100'
+max_size   = '1.04mb'
+
+[[caption]]
+text      = "Leave me alone!"
+from      = '0'
+to        = '1.1'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "I just wanna go home and be all normal!"
+from      = '1.5'
+to        = '4'
+align     = 'center'
+font      = 'anteb-regular.otf'
+# margin    = '20'
+# placement = 'bc'
+margin    = '0'
+placement = '5,226'
+size      = '28'

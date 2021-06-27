@@ -1,0 +1,30 @@
+title = 'Hometime'
+published = 2021-10-25T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+The Skool bell rings and all the kids leave for the day, including
+Zim who seems suspicious.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '19:33.95'
+duration = '7.8'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '30'
+max_size   = '0.89mb'

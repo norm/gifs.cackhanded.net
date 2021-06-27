@@ -1,0 +1,79 @@
+title = 'Worse, or better?'
+published = 2021-10-16T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'almighty-tallest-purple',
+    'almighty-tallest-red',
+    'invader-zim',
+    'irken-army',
+]
+body_markdown = """
+
+Zim defends himself. “I put the fires out.” Almighty Tallest Red snaps back
+“You made them worse!” Zim grins. “Worse? Or better?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '6:21'
+duration = '12'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.76mb'
+
+[[caption]]
+text      = "I put the fires out"
+from      = '0.7'
+to        = '2.4'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "You made them worse!"
+from      = '4.1'
+to        = '5.9'
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[[caption]]
+text      = "Worse?"
+from      = '6.5'
+to        = '9.29'
+align     = 'center'
+font      = 'anteb-regular.otf'
+placement = '129,225'
+size      = '28'
+
+[[caption]]
+text      = "Worse? Or"
+from      = '8.1'
+to        = '9.3'
+align     = 'center'
+font      = 'anteb-regular.otf'
+placement = '129,225'
+size      = '28'
+
+[[caption]]
+text      = "better?"
+from      = '8.1'
+to        = '9.3'
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+placement = '255,225'
+size      = '28'

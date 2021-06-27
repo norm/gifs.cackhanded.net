@@ -1,0 +1,49 @@
+title = 'Hello friends'
+published = 2021-10-07T07:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-nightmare-begins/index'
+tag = [
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+Zim telling the class “Hello friends,
+I am a perfectly normal human worm-baby.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e01'
+ext      = 'm4v'
+start    = '16:55.5'
+duration = '4.6'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.41mb'
+
+[[caption]]
+text      = "Hello friends!"
+from      = '0.8'
+to        = '1.75'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'
+
+[[caption]]
+text      = "I am a perfectly\nnormal human worm-baby!"
+from      = '1.76'
+to        = '5'
+align     = 'left'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bl'
+size      = '28'
