@@ -284,17 +284,35 @@ the site daily, and runs after 7am (so there will be a short delay between
 
 To list what is scheduled, there is a `next` script in the repo.
 
-    # coming in the next 30 days
+    # find the next day with no morning GIF scheduled
+    # (afternoon GIFs are considered secondary content);
+    # also shows a count and breakdown of what unscheduled
     ./script/next
 
-    # coming in the next 60 days
+    # show only the count of unscheduled GIFs
+    ./script/next unscheduled
+
+    # show what is scheduled in the next 60 days
     ./script/next 60
 
-    # coming on Wednesdays in the next 30 days
+    # show what is scheduled in the next 90 days, 
+    # visually highlighting the start of the week
+    ./script/next 90 high
+
+    # show what is scheduled on Wednesdays in the next 30 days (30 is default)
     ./script/next wed
 
     # coming on weekends in the next year
     ./script/next 365 sat sun
 
-    # a summary of what has been created but not yet scheduled
-    ./script/next unscheduled
+    # show what is scheduled in the morning for the next 30 days
+    ./script/next am
+
+    # show what is scheduled in the afternoon on weekends for the next 90 days
+    ./script/next 90 sat sun pm
+
+    # show only days with no scheduled content in the next 90 days
+    ./script/next 90 empty
+
+    # show only days with scheduled content in the next 90 days
+    ./script/next 90 full

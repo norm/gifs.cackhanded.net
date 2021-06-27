@@ -15,18 +15,20 @@ function usage {
         Usage:
 
             next
-                    next day with no scheduled gif
+                    show the next day with no scheduled gif, and a
+                    breakdown of any unscheduled GIFs
             next count
-                    count of unscheduled GIFs
-            next un[scheduled]
-                    sources of unscheduled GIFs
+                    show only the count of unscheduled GIFs
             next <count>
                     show the schedule for the next <count> days
-            next [<count>] <day> [...] [highlight] [empty|full]
+            next [<count>] [<day> ...] [am|pm] [highlight] [empty|full]
                 -   show the schedule for the next <count> <day(s)>
                     (eg. 'next 90 sat sun' will list weekends for 3 months);
                 -   <count> defaults to 30
-                -   'highlight' will highlight each Monday in colour
+                -   <day> default to all days
+                -   'am' will show only the morning GIFs,
+                    'pm' will show only the afternoon GIFs; defaults to both
+                -   'highlight' will highlight the start of the week in colour
                 -   'empty' will only list empty days
                 -   'full' will only list full days
     EOF
@@ -40,6 +42,7 @@ function list_scheduled_gifs {
     local highlight=0
     local next=0
     local unscheduled_day=0
+    local time='both'
 
     shift
     while [ "${1:-}" ]; do
@@ -48,6 +51,8 @@ function list_scheduled_gifs {
             full)   full=full   empty='' ;;
             high*)  highlight=1 ;;
             next)   next=1 empty=empty full='' ;;
+            am)     time='am' ;;
+            pm)     time='pm' ;;
             *)      [ -n "$days" ] && days="$days|$1" || days="$1"
         esac
         shift
@@ -61,8 +66,12 @@ function list_scheduled_gifs {
             && echo "$day_of_week" | egrep -iqv "$days" \
             && continue
 
+        pattern="published.*$datestamp"
+        [ $time = 'am' ] && pattern="${pattern}T07"
+        [ $time = 'pm' ] && pattern="${pattern}T15"
+
         content=$(
-            ( ag published.*$datestamp source || echo '' ) \
+            ( rg "$pattern" source || echo '' ) \
                 | cut -d: -f1 \
                 | sed -e 's#source/##' \
                       -e 's/.toml//' \
@@ -99,7 +108,7 @@ function count_unscheduled {
 }
 
 function list_unscheduled_gifs {
-    list_scheduled_gifs 1000 next
+    list_scheduled_gifs 1000 next am
 
     echo ''
     ag -l 2100 source \

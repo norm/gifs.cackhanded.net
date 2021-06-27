@@ -3,6 +3,9 @@
 from datetime import datetime, timezone
 import os
 from flourish import Flourish
+import random
+import requests
+import time
 import tweepy
 
 
@@ -22,21 +25,42 @@ today = datetime.now().replace(
         second=0,
         tzinfo=timezone.utc,
     )
+now = datetime.now().replace(
+        tzinfo=timezone.utc,
+    )
 
+sources = {}
 fl = Flourish()
-for gif in fl.sources.filter(published__gte=today):
+for gif in fl.sources.filter(published__gte=today).order_by('published'):
+    # don't tweet the morning's GIF again
+    elapsed = now - gif.published
+    if (elapsed.seconds // 3600) > 2:
+        continue
+
     try:
         source = gif.show.title
     except:
         source = gif.source.title
+    if source not in sources:
+        sources[source] = 1
+    else:
+        sources[source] += 1
     description = gif.body_markdown.replace('\n', ' ')
     url = gif.absolute_url
     media = 'source%s.gif' % gif.path
-    tweet = "Today's %s GIF: %s\n\n%s" % (
+    intro = "Today's"
+    if sources[source] == 2:
+        intro = "Today's second"
+    if sources[source] > 2:
+        intro = 'And another'
+    tweet = "%s %s GIF: %s\n\n%s" % (
+            intro,
             source,
             description,
             url,
         )
 
+    print('%s\n----------\n' % tweet)
     upload = api.media_upload(media)
     api.update_status(tweet, media_ids=[upload.media_id_string])
+    time.sleep(random.randint(60,180))
