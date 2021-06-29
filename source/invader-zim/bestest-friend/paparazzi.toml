@@ -1,0 +1,30 @@
+title = 'Paparazzi'
+published = 2021-11-08T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'flashbulbs',
+    'photography',
+    'press-conference',
+]
+body_markdown = """
+
+A scientist has his picture taken by multiple cameras.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '1:45.3'
+duration = '1.4'
+crop     = '710:400'
+
+[output]
+colours    = '60'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.2mb'

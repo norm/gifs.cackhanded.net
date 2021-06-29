@@ -1,0 +1,37 @@
+title = 'Squirrel'
+published = 2021-10-31T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'keef',
+    'squirrel',
+]
+body_markdown = """
+
+Keef takes on a squirrel and loses.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '12:05.0'
+duration = '8'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '50'
+max_size   = '0.7mb'
+
+[[clip]]
+start = '0'
+end   = '5.2'
+
+[[clip]]
+start = '5.8'
+end   = '8'

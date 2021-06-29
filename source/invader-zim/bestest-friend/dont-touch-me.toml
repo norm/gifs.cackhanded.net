@@ -1,0 +1,44 @@
+title = 'Don’t touch me'
+published = 2021-11-06T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'keef',
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+Keef runs up to Zim and hugs him, declaring “I’m so happy!”
+
+Zim pushes him away, “Don’t touch me”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '3:52.2'
+duration = '2.9'
+crop     = '710:400'
+
+[output]
+colours    = '60'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.36mb'
+
+[[caption]]
+text      = "I’m so happy!"
+from      = '0.5'
+to        = '1.74'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Don’t touch me"
+from      = '2.2'
+to        = '3'
+type      = 'zim_speak'

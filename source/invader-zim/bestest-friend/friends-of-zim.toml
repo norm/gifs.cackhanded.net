@@ -1,0 +1,57 @@
+title = 'Friends of zim'
+published = 2021-11-01T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+Zim declares “These human filthies should be honoured to even be consdiered
+as possible friends of ZIM!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '2:39.5'
+duration = '5'
+crop     = '710:400:5:40'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+# loss       = 'no'
+# max_size   = 'auto'
+
+[[caption]]
+text      = "These human filthies should be"
+from      = '0.3'
+to        = '1.6'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "honoured to even be considered"
+from      = '1.61'
+to        = '3.2'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "as possible friends of"
+from      = '3.21'
+to        = '5'
+type      = 'zim_speak'
+placement = '75,225'
+
+[[caption]]
+text      = "ZIM!"
+from      = '4.15'
+to        = '5'
+type      = 'zim_emphasis'
+placement = '335,223'
+size      = '32'

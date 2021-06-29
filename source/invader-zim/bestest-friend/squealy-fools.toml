@@ -1,0 +1,44 @@
+title = 'Squealy fools!'
+published = 2021-11-05T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'invader-zim',
+    'matthew',
+]
+body_markdown = """
+
+Zim walks up to Matthew, who cowers and runs away. Zim shouts
+after him “Squealy fools!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '2:33.4'
+duration = '6.5'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '0'
+max_size   = '0.8mb'
+
+[[clip]]
+start = '0'
+end   = '1.45'
+
+[[clip]]
+start = '1.75'
+end   = '6.5'
+
+[[caption]]
+text      = "SQUEALY FOOLS!"
+from      = '4.45'
+to        = '6.2'
+type      = 'zim_shout'

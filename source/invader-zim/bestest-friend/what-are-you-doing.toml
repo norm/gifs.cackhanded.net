@@ -1,0 +1,56 @@
+title = 'What are you doing?'
+published = 2021-11-03T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim asks ”What are you doing, Gir?” Gir turns, “Nothing.”
+Zim looks suspicious. “Nothing … or something?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '7:59.6'
+duration = '6'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.53mb'
+
+[[caption]]
+text      = "What are you doing, Gir?"
+from      = '0.24'
+to        = '1.95'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Nothing"
+from      = '2.2'
+to        = '3'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Nothing …"
+from      = '3.3'
+to        = '4.49'
+type      = 'zim_speak'
+placement = '87,225'
+
+[[caption]]
+text      = "Nothing … or something?"
+from      = '4.5'
+to        = '5.8'
+type      = 'zim_speak'
+

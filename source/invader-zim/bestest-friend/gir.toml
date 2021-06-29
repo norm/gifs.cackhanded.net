@@ -1,0 +1,42 @@
+title = 'GIR!'
+published = 2021-11-17T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim shouts for Gir, who falls from the ceiling, then salutes
+“Yes, my master?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '6:05.4'
+duration = '4.4'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.29mb'
+
+[[caption]]
+text      = "GIR!"
+from      = '0.3'
+to        = '0.9'
+type      = 'zim_shout'
+
+[[caption]]
+text      = "Yes, my master?"
+from      = '3.05'
+to        = '4.2'
+type      = 'zim_speak'

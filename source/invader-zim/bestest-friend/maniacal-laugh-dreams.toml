@@ -1,0 +1,28 @@
+title = 'Maniacal laugh dreams'
+published = 2021-11-14T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim daydreams about standing on top of his house, laughing maniacally.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '0:37.35'
+duration = '1'
+crop     = '710:400:5:0'
+
+[output]
+colours    = '60'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.12mb'

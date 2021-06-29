@@ -1,0 +1,49 @@
+title = 'Humans and their friendship'
+published = 2021-11-16T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, whilst using his Pak's legs to cling to the ceiling, declares
+“Humans and their ‘friendship’. Invaders need no-one! No-one!” then
+the part of the ceiling that the Pak's legs were clinging to breaks,
+and he falls to the floor.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '11:35.0'
+duration = '8'
+crop     = '710:400:5:20'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.64mb'
+
+[[caption]]
+text      = "Humans and their “friendship”"
+from      = '0'
+to        = '2.8'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Invaders need no-one"
+from      = '2.9'
+to        = '4.5'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "NO-ONE!"
+from      = '4.91'
+to        = '6.5'
+type      = 'zim_shout'

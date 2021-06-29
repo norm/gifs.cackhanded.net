@@ -1,0 +1,29 @@
+title = 'Cycling past'
+published = 2021-11-11T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bestest-friend/index'
+tag = [
+    'keef',
+    'invader-zim',
+]
+body_markdown = """
+
+Zeef repeatedly cycles past Zim’s house.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '6:01.5'
+duration = '2.9'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.16mb'
