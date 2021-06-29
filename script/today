@@ -5,6 +5,7 @@ import os
 from flourish import Flourish
 import random
 import requests
+import sys
 import time
 import tweepy
 
@@ -47,6 +48,12 @@ for gif in fl.sources.filter(published__gte=today).order_by('published'):
         sources[source] += 1
     description = gif.body_markdown.replace('\n', ' ')
     url = gif.absolute_url
+
+    # don't tweet if the publication has failed
+    req = requests.get(url)
+    if req.status_code != 200:
+        sys.exit('** not published: %s' % url)
+
     media = 'source%s.gif' % gif.path
     intro = "Today's"
     if sources[source] == 2:
