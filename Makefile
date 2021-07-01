@@ -69,6 +69,7 @@ next: gifwrapped
 
 example-fonts:
 	mkdir -p fonts
-	curl -L -o fonts/assistant-semibold.ttf 'https://github.com/google/fonts/blob/master/ofl/assistant/Assistant-SemiBold.ttf?raw=true'
-	curl -L -o fonts/assistant-extrabold.ttf 'https://github.com/google/fonts/blob/master/ofl/assistant/Assistant-ExtraBold.ttf?raw=true'
-	curl -L -o fonts/lato-regular.ttf 'https://github.com/google/fonts/blob/master/ofl/lato/Lato-Regular.ttf?raw=true'
+	curl -L -o fonts/assistant-semibold.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/assistant/static/Assistant-SemiBold.ttf
+	curl -L -o fonts/assistant-bold.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/assistant/static/Assistant-Bold.ttf
+	curl -L -o fonts/assistant-extrabold.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/assistant/static/Assistant-ExtraBold.ttf
+	curl -L -o fonts/lato-regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Regular.ttf
