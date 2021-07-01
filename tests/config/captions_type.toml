@@ -1,0 +1,29 @@
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '120'
+duration = '1'
+
+[output]
+colours  = '96'
+fps      = '18'
+
+[[caption]]
+text = 'And the climb'
+from = '0'
+to   = '0.3'
+type = 'normal'
+
+[[caption]]
+text = 'is going'
+from = '0.31'
+to   = '0.6'
+type = 'large'
+
+[[caption]]
+text = 'Where no man has gone before'
+from = '0.61'
+to   = '0.9'
+type = 'normal'
+font = 'assistant-extrabold.ttf'

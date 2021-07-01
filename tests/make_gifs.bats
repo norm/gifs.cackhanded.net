@@ -108,6 +108,23 @@ reset=$'\e'[0m
     diff -u $BATS_TMPDIR/output.gif tests/gifs/captions.gif
 }
 
+@test generate_captions_type_set {
+    [ $(uname) != 'Darwin' ] && skip "Not macOS"
+
+    GIF_TYPE_SETS=tests/config/type_sets.toml \
+        run make_gif tests/config/captions_type.toml $BATS_TMPDIR/output.gif
+    echo "$output"
+
+    [ "${lines[1]}" == '  " font_size=40 placement=[121, 305] And the climb' ]
+    [ "${lines[2]}" == '  " font_size=100 placement=[75, 243] is going' ]
+    [ "${lines[3]}" == "  \" ${magenta}font_size=32${reset} placement=[19, 313] Where no man has gone before" ]
+    [ "${lines[4]}" == "    102 colours (96 initially)" ]
+
+    [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/output.gif tests/gifs/captions_type.gif
+    diff -u $BATS_TMPDIR/output.gif tests/gifs/captions_type.gif
+}
+
 @test generate_captions_noscale {
     [ $(uname) != 'Darwin' ] && skip "Not macOS"
 

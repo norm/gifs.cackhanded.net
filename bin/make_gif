@@ -8,6 +8,7 @@ DEFAULT_WIDTH=480
 DEFAULT_FPS=10
 DEFAULT_COLOURS=64
 DEBUG="${GIF_DEBUG:-}"
+TYPE_SETS="${GIF_TYPE_SETS:-source/_site.toml}"
 green=$'\e'[32m
 cyan=$'\e'[36m
 magenta=$'\e'[35m
@@ -72,15 +73,15 @@ function main {
     if [ "$num_captions" -gt 0 ]; then
         for index in $(seq 1 $num_captions); do
             caption_text="$(toml $toml caption.text $index)"
-            caption_placement="$(toml $toml caption.placement $index)"
-            caption_size="$(toml $toml caption.size $index)"
-            caption_margin="$(toml $toml caption.margin $index)"
-            caption_font="$(toml $toml caption.font $index)"
-            caption_colour="$(toml $toml caption.colour $index)"
-            caption_strokew="$(toml $toml caption.stroke_width $index)"
-            caption_strokecol="$(toml $toml caption.stroke_colour $index)"
-            caption_align="$(toml $toml caption.align $index)"
-            caption_anchor="$(toml $toml caption.anchor $index)"
+            caption_placement="$(get_caption_key $toml $index placement)"
+            caption_size="$(get_caption_key $toml $index size)"
+            caption_margin="$(get_caption_key $toml $index margin)"
+            caption_font="$(get_caption_key $toml $index font)"
+            caption_colour="$(get_caption_key $toml $index colour)"
+            caption_strokew="$(get_caption_key $toml $index stroke_width)"
+            caption_strokecol="$(get_caption_key $toml $index stroke_colour)"
+            caption_align="$(get_caption_key $toml $index align)"
+            caption_anchor="$(get_caption_key $toml $index anchor)"
             caption \
                 ${output_width:-$DEFAULT_WIDTH} \
                 $output_height \
@@ -431,6 +432,20 @@ function get_stats_mode {
     local output_mode="$(toml $toml output.mode)"
 
     echo "stats_mode=${output_mode:-diff}"
+}
+
+function get_caption_key {
+    local toml="$1"
+    local index="$2"
+    local key="$3"
+
+    local set="$(toml $toml caption.type $index)"
+    local set_value="$(toml $TYPE_SETS type_set.$set.$key)"
+    local value="$(toml $toml caption.$key $index)"
+
+    [ -n "$value" ] \
+        && echo "$value" \
+        || echo "$set_value"
 }
 
 function size_in_mb {

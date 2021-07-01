@@ -1,0 +1,9 @@
+[type_set.normal]
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '40'
+
+[type_set.large]
+font      = 'assistant-semibold.ttf'
+placement = 'bc'
+size      = '100'

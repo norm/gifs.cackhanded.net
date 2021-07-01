@@ -9,3 +9,17 @@ future = false
 "/invader-zim/not-now-son.gif" = "/invader-zim/the-nightmare-begins/not-now-son.tn.gif"
 "/invader-zim/not-now-son.tn.gif" = "/invader-zim/the-nightmare-begins/not-now-son.tn.gif"
 "/tags/dib/" = "/tags/dib-membrane/"
+
+[type_set.zim_shout]
+align     = 'center'
+font      = 'anteb-extrablack.otf'
+margin    = '20'
+placement = 'bc'
+size      = '48'
+
+[type_set.zim_speak]
+align     = 'center'
+font      = 'anteb-regular.otf'
+margin    = '20'
+placement = 'bc'
+size      = '28'

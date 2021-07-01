@@ -193,10 +193,31 @@ array, supporting multiple captions in a GIF.
   `caption` reports the x,y position actually used
 * `anchor` is the [alignment of the text][an] relative to the `placement`;
   default is `la`
+* `type` is the caption type set to use, described below
 
 [col]: https://pillow.readthedocs.io/en/stable/reference/ImageColor.html
 [an]: https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
 
+#### Caption type sets
+
+Rather than multiple GIF configuration files all having identical settings for
+font, size, margin…, type sets can be used. Caption type sets are defined in
+the `_site.toml`:
+
+    [type_set.zim_shout]
+    align     = 'center'
+    font      = 'anteb-extrablack.otf'
+    margin    = '20'
+    placement = 'bc'
+    size      = '48'
+
+Then a caption only needs to declare the type to have all of the type set
+values applied. Note, any values in the source TOML take precedence, acting
+as overrides to the type set.
+
+    [[caption]]
+    type      = 'zim_shout'
+    placement = 'br'
 
 ### Note on colours
 
