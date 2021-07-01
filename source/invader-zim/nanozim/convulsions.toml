@@ -1,0 +1,29 @@
+title = 'Convulsions'
+published = 2021-11-24T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/nanozim/index'
+tag = [
+    'dib-membrane',
+]
+body_markdown = """
+
+Dib suffering from convulsions on the sofa.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '22:31.0'
+duration = '7.3'
+crop     = '710:400'
+
+[output]
+brightness = '0.05'
+colours    = '60'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.87mb'

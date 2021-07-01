@@ -1,0 +1,58 @@
+title = 'Arms like noodles!'
+published = 2021-11-25T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/nanozim/index'
+tag = [
+    'dib-membrane',
+    'gaz-membrane',
+]
+body_markdown = """
+
+Dib complains that he has arms like noodles. Gaz pushes him away from
+the controller and takes over.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '20:57.0'
+crop     = '710:400'
+
+[output]
+brightness = '0.05'
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.49mb'
+
+[[clip]]
+start = '0'
+end   = '5.5'
+
+[[clip]]
+start = '5.75'
+end   = '7.2'
+
+[[caption]]
+text      = "Arms …"
+from      = '0.65'
+to        = '2'
+type      = 'zim_shout'
+placement = '55,210'
+
+[[caption]]
+text      = "Arms like …"
+from      = '2.01'
+to        = '3.15'
+type      = 'zim_shout'
+placement = '55,210'
+
+[[caption]]
+text      = "Arms like noodles!"
+from      = '3.16'
+to        = '5.5'
+type      = 'zim_shout'

@@ -1,0 +1,42 @@
+title = 'Take me to the weasels!'
+published = 2021-11-23T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/nanozim/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim instructs his house, “Computer! Take me to the weasels!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e02'
+ext      = 'm4v'
+start    = '13:41.3'
+duration = '2.8'
+crop     = '710:400'
+
+
+[output]
+colours    = '120'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '25'
+max_size   = '0.26mb'
+
+[[caption]]
+text      = "Computer!"
+from      = '0.3'
+to        = '1.4'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Take me to the weasels!"
+from      = '1.41'
+to        = '2.5'
+type      = 'zim_speak'
