@@ -191,8 +191,11 @@ array, supporting multiple captions in a GIF.
   * `c,-60` — letters and numbers can be used in combination, and if
     only letters the comma can be omitted
   `caption` reports the x,y position actually used
+* `anchor` is the [alignment of the text][an] relative to the `placement`;
+  default is `la`
 
 [col]: https://pillow.readthedocs.io/en/stable/reference/ImageColor.html
+[an]: https://pillow.readthedocs.io/en/stable/handbook/text-anchors.html
 
 
 ### Note on colours

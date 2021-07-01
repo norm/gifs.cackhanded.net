@@ -17,6 +17,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/caption.png tests/output/caption.png
     diff tests/output/caption.png $BATS_TMPDIR/caption.png
 }
 
@@ -31,6 +32,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp  $BATS_TMPDIR/caption.png tests/output/caption_centred.png
     diff tests/output/caption_centred.png $BATS_TMPDIR/caption.png
 }
 
@@ -45,6 +47,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/caption.png tests/output/caption_placement.png
     diff tests/output/caption_placement.png $BATS_TMPDIR/caption.png
 }
 
@@ -61,6 +64,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/caption.png tests/output/caption_colours.png
     diff tests/output/caption_colours.png $BATS_TMPDIR/caption.png
 }
 
@@ -76,6 +80,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/caption.png tests/output/caption_sizes.png
     diff tests/output/caption_sizes.png $BATS_TMPDIR/caption.png
 }
 
@@ -91,6 +96,7 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/caption.png tests/output/caption_assistant_bold.png
     diff tests/output/caption_assistant_bold.png $BATS_TMPDIR/caption.png
 }
 
@@ -105,5 +111,6 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/caption.png tests/output/caption_align.png
     diff tests/output/caption_align.png $BATS_TMPDIR/caption.png
 }

@@ -80,6 +80,7 @@ function main {
             caption_strokew="$(toml $toml caption.stroke_width $index)"
             caption_strokecol="$(toml $toml caption.stroke_colour $index)"
             caption_align="$(toml $toml caption.align $index)"
+            caption_anchor="$(toml $toml caption.anchor $index)"
             caption \
                 ${output_width:-$DEFAULT_WIDTH} \
                 $output_height \
@@ -91,6 +92,7 @@ function main {
                 --stroke-colour "${caption_strokecol:-#000000}" \
                 --text-align "${caption_align:-left}" \
                 --placement ${caption_placement:-bl} \
+                --text-anchor ${caption_anchor:-la} \
                 "${caption_text}" \
                 "${TEMP}/caption-${index}.png"
 
