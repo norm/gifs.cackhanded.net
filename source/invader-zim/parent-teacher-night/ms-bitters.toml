@@ -1,0 +1,31 @@
+title = 'Ms Bitters'
+published = 2021-11-30T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'dib-membrane',
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+A shadowy figure appears next to Dib and is revealed as a very
+angry Ms Bitters.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '11:56.3'
+duration = '4.5'
+crop     = '710:400'
+
+[output]
+colours    = '120'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.49mb'

@@ -1,0 +1,55 @@
+title = 'You have the mixture all wrong!'
+published = 2021-12-11T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'mr-elliot',
+    'professor-membrane',
+    'skool',
+]
+body_markdown = """
+
+Professor Membrane, attending Parent Teacher Night by video conference,
+looks off to the side and shouts “You have the mixture all wrong!”
+
+An explosion occurs in the distance. The video conference screen 
+changes to say “Please stand by”. Everyone looks on dumbfounded.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '7:24.0'
+crop     = '710:400'
+
+[output]
+colours  = '120'
+denoise  = true
+dither   = 'bayer:bayer_scale=5'
+fps      = '12'
+loss     = '40'
+max_size = '1.05mb'
+
+[[clip]]
+start = '0.4'
+end   = '2.2'
+
+[[clip]]
+start = '4.5'
+end   = '6.5'
+
+[[clip]]
+start = '9'
+end   = '10.25'
+
+[[clip]]
+start = '10.8'
+end = '12.5'
+
+[[caption]]
+text = "You have the\nmixture all wrong!"
+from = '0.5'
+to   = '1.7'
+type = 'zim_shout'

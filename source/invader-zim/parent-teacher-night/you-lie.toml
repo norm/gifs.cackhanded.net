@@ -1,0 +1,43 @@
+title = 'You lie!'
+published = 2021-12-03T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'invader-zim',
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+Zim accuses Ms Bitters, “You lie! You lie!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '1:37.8'
+duration = '3.25'
+crop     = '710:400'
+
+[output]
+colours  = '80'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '12'
+loss     = '25'
+max_size = '0.27mb'
+
+[[caption]]
+text      = "You lie!"
+from      = '0.2'
+to        = '1.1'
+type      = 'zim_emphasis'
+placement = '300,225'
+
+[[caption]]
+text = "YOU LIE!"
+from = '1.3'
+to   = '2.6'
+type = 'zim_shout'

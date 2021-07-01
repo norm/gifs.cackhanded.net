@@ -1,0 +1,29 @@
+anttitle = 'Buffet table'
+published = 2021-12-07T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'dib-membrane',
+    'skool',
+]
+body_markdown = """
+
+Dib relaxes at the buffet table, sipping a drink and eating a ring donut.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '11:06.0'
+duration = '3'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.27mb'

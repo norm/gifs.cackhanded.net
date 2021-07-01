@@ -1,0 +1,33 @@
+title = 'Punch'
+published = 2021-11-27T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'dib-membrane',
+    'gaz-membrane',
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+Zim, covered in punch, climbs out of the punch bowl.
+
+Dib throws a small glass of punch on Zim, who points mouth agape.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '9:50.6'
+duration = '6.5'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.84mb'

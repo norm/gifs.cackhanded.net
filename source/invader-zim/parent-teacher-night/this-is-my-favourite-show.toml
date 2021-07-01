@@ -1,0 +1,52 @@
+title = 'This is my favourite show'
+published = 2021-12-01T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'gir',
+    'television',
+]
+body_markdown = """
+
+Gir looking at a bank of televisions all showing different programmes.
+“Ooh, this is my favourite show!”
+
+It runs to another screen. “Wait, no, this is my favorite show!”
+
+It runs back. “Look, this is my favorite show!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '5:05.1'
+duration = '6'
+crop     = '710:400:5:60'
+
+[output]
+colours  = '90'
+denoise  = true
+dither   = 'bayer:bayer_scale=5'
+fps      = '12'
+loss     = '25'
+max_size = '1.1mb'
+
+[[caption]]
+text = "Ooh, this is my favourite show!"
+from = '0.4'
+to   = '1.6'
+type = 'zim_speak'
+
+[[caption]]
+text = "Wait, no, this is my favorite show!"
+from = '2'
+to   = '3.5'
+type = 'zim_speak'
+
+[[caption]]
+text = "Look, this is my favorite show!"
+from = '4'
+to   = '5.3'
+type = 'zim_speak'

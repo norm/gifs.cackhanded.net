@@ -1,0 +1,29 @@
+title = 'Nearly hometime'
+published = 2021-11-28T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+It's nearly hometime, as Zim anxiously watches the clock.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '1:17.6'
+duration = '3'
+crop     = '710:400'
+
+[output]
+colours  = '40'
+denoise  = true
+dither   = 'bayer:bayer_scale=5'
+fps      = '12'
+loss     = '25'
+max_size = '0.24mb'

@@ -1,0 +1,35 @@
+title = 'They took my squeezing arm!'
+published = 2021-12-14T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'robodad',
+    'skool',
+]
+body_markdown = """
+
+Robodad laments that “They took my squeezing arm!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '10:28.3'
+duration = '3.1'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.64mb'
+
+[[caption]]
+text      = "They took my squeezing arm!"
+from      = '0'
+to        = '2.8'
+type      = 'zim_emphasis'

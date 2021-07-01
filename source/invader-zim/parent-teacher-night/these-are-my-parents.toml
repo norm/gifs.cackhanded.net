@@ -1,0 +1,44 @@
+title = 'These are my parents'
+published = 2021-12-15T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'invader-zim',
+    'robodad',
+    'robomom',
+    'skool',
+]
+body_markdown = """
+
+Zim tells Ms Bitters “These are my parents, I love them with all my heart.”
+Robomom flops around, while Robodad sparks.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '7:50.0'
+duration = '5.5'
+crop     = '710:400:5:20'
+
+[output]
+colours  = '90'
+denoise  = true
+dither   = 'bayer:bayer_scale=5'
+fps      = '18'
+loss     = '25'
+max_size = '0.69mb'
+
+[[caption]]
+text = "These are my parents"
+from = '0.4'
+to   = '1.1'
+type = 'zim_speak'
+
+[[caption]]
+text = "I love them with all my heart"
+from = '1.11'
+to   = '2.5'
+type = 'zim_speak'

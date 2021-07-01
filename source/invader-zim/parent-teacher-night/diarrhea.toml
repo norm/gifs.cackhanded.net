@@ -1,0 +1,39 @@
+title = 'Diarrhoea'
+published = 2021-12-10T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'robodad',
+    'robomom',
+    'skool',
+]
+body_markdown = """
+
+Robodad, clutching his stomach, says “Diarrhoea!”
+
+Everyone turns to look, concerned.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '9:17'
+duration = '5'
+crop     = '710:400'
+
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.63mb'
+
+[[caption]]
+text      = "DIARRHOEA!"
+from      = '1.1'
+to        = '3.2'
+type      = 'zim_shout'

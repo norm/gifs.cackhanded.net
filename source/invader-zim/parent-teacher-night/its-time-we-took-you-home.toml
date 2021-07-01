@@ -1,0 +1,37 @@
+title = 'It’s time we took you home'
+published = 2021-12-09T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/parent-teacher-night/index'
+tag = [
+    'invader-zim',
+    'robomom',
+    'skool',
+]
+body_markdown = """
+
+Zim is panting heavily. Robomom leans in, arms outstretched, and says
+“Aww honey, I think it’s time we took you home.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '11:26.5'
+duration = '4.2'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.51mb'
+
+[[caption]]
+text      = "I think it’s time we took you home"
+from      = '1.2'
+to        = '3.9'
+type      = 'zim_speak'
