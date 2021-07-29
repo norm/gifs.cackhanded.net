@@ -39,10 +39,10 @@ dev_css:
 	@./script/reset_css
 
 upload:
-	@flourish upload --invalidate
+	@flourish upload --invalidate --max-invalidations 50
 
 upload_css:
-	@flourish upload --invalidate
+	@flourish upload
 
 rebuild: gifs clean baked_css upload_css generate upload dev_css
 
