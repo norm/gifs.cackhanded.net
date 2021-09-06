@@ -60,12 +60,17 @@ for gif in fl.sources.filter(published__gte=today).order_by('published'):
         intro = "Today's second"
     if sources[source] > 2:
         intro = 'And another'
-    tweet = "%s %s GIF: %s\n\n%s" % (
+    tweet = "%s %s GIF: %s" % (
             intro,
             source,
             description,
-            url,
         )
+
+    # take care not to overwhelm twitter's posting limit
+    if len(tweet) > 250:
+        tweet = '%s…' % tweet[:249]
+
+    tweet += '\n\n%s' % url
 
     print('%s\n----------\n' % tweet)
     upload = api.media_upload(media)
