@@ -1,0 +1,25 @@
+#!/usr/bin/env -S bash -euo pipefail
+
+function error {
+    echo "$@" >&2
+    let "errors = errors + 1"
+}
+
+
+errors=0
+files=$(find output -type f | wc -l)
+
+# check for untitled GIFs
+while IFS= read file; do
+    error "GIF description missing" $file
+done < <(rg -l 'WRITE ME' output || true)
+
+# check for unfinished indexes
+while IFS= read file; do
+    error "GIF description missing" $file
+done < <(rg -l 'Write something here' output || true)
+
+# summary and exit status code
+echo ''
+echo "$files files, $errors errors"
+[ $errors == 0 ]

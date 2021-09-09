@@ -44,7 +44,7 @@ jobs:
 
       - name: Generate site
         run: |
-          make clean generate
+          make clean generate test_generated
 
       - name: Upload site
         env:

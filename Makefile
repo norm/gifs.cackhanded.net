@@ -58,6 +58,9 @@ publish: stash push rebuild gifwrapped unstash
 test:
 	@./script/test
 
+test_generated:
+	@./script/test_generated_site
+
 unstash:
 	@git stash pop
 
