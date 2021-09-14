@@ -1,0 +1,27 @@
+title = 'That’s not right'
+published = 2022-03-19T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'guy-fleegman',
+]
+body_markdown = """
+
+Guy (looking at a public display of affection) exclaims “That’s not right!”
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

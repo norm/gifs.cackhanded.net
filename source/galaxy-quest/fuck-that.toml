@@ -1,0 +1,28 @@
+title = 'Fuck that'
+published = 2021-10-16T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'gwen-demarco',
+    'jason-nesmith',
+]
+body_markdown = """
+
+Gwen swears “Well, fuck that!” after having seen the “chompers”.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

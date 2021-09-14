@@ -1,0 +1,31 @@
+title = 'One job'
+published = 2022-01-01T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'gwen-demarco',
+    'tommy-webber',
+]
+body_markdown = """
+
+Gwen angrily chastises Tommy “I have one job on this lousy ship. It’s 
+stupid, but I'm gonna do it, okay?”
+
+Tommy looks uncomfortable.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

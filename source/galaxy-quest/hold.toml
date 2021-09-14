@@ -1,0 +1,31 @@
+title = 'Hold'
+published = 2021-12-11T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'gwen-demarco',
+    'alexander-dane',
+    'tommy-webber',
+    'guy-fleegman',
+    'teb',
+]
+body_markdown = """
+
+Gwen tells Jason through the vox to “Hold, please” and looks at Teb confused.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'
