@@ -102,7 +102,7 @@ function list_scheduled_gifs {
 }
 
 function count_unscheduled {
-    unscheduled=$(ag -l 2100 source | wc -l)
+    unscheduled=$(rg -l 2100 source | wc -l)
     [ -n "$unscheduled" ] && \
         printf '\e[1m\e[32mThere are %d unscheduled GIFs.\e[0m\n' $unscheduled
 }
@@ -111,7 +111,7 @@ function list_unscheduled_gifs {
     list_scheduled_gifs 1000 next am
 
     echo ''
-    ag -l 2100 source \
+    rg -l 2100 source \
         | sed -e 's/^source.//' -e 's#/[^/]*$##' \
         | sort \
         | uniq -c \
