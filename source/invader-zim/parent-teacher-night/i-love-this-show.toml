@@ -1,4 +1,4 @@
-ptitle = 'I love this show'
+title = 'I love this show'
 published = 2021-11-26T15:00:00Z
 show_fkey = 'invader-zim/index'
 episode_fkey = 'invader-zim/parent-teacher-night/index'

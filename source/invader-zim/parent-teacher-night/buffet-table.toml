@@ -1,4 +1,4 @@
-anttitle = 'Buffet table'
+title = 'Buffet table'
 published = 2021-12-07T15:00:00Z
 show_fkey = 'invader-zim/index'
 episode_fkey = 'invader-zim/parent-teacher-night/index'

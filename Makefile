@@ -61,6 +61,10 @@ test:
 test_generated:
 	@./script/test_generated_site
 
+test_future:
+	@flourish generate -v --include-future
+	@./script/test_generated_site
+
 unstash:
 	@git stash pop
 

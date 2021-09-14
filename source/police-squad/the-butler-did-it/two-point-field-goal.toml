@@ -1,7 +1,7 @@
 title = 'Two point field goal'
 published = 2021-10-27T07:00:00Z
-show_fkey = 'police-squad/ring-of-fear/index'
-episode_fkey = 'police-squad/ring-of-fear/the-butler-did-it/index'
+show_fkey = 'police-squad/index'
+episode_fkey = 'police-squad/the-butler-did-it/index'
 tag = [
     'frank-drebin',
 ]
