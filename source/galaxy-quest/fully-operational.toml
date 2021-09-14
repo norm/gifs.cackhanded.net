@@ -1,0 +1,30 @@
+title = 'Fully operational'
+published = 2021-12-25T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'gwen-demarco',
+    'alexander-dane',
+    'fred-kwan',
+    'teb',
+]
+body_markdown = """
+
+Teb tells Gwen that “theoretically the mechanism is fully operational”.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

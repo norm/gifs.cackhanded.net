@@ -1,0 +1,32 @@
+title = 'Rudimentary lathe'
+published = 2022-08-06T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'alexander-dane',
+    'guy-fleegman',
+    'teb',
+]
+body_markdown = """
+
+Guy grabs at the vox in Alexander’s hand and exclaims “I know!”
+
+He continues “You construct a weapon. Look around you, can you form
+some sort of rudimentary lathe?”
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

@@ -1,0 +1,30 @@
+title = 'I got this'
+published = 2021-11-27T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'fred-kwan',
+    'guy-fleegman',
+    'laliari',
+]
+body_markdown = """
+
+Guy confidently proclaims “I got this!” and then falls backwards as he swings
+the rifle onto his shoulder. Fred and Laliari reach out to grab him.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

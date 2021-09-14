@@ -1,0 +1,31 @@
+title = 'Not as stupid as I am ugly'
+published = 2022-06-11T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'jason-nesmith',
+    'rothhar-sarris',
+]
+body_markdown = """
+
+Sarris angrily declares from the viewscreen “Perhaps I’m not as stupid 
+as I am ugly!”
+
+Jason looks around, aghast.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

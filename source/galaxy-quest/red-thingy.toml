@@ -1,0 +1,28 @@
+title = 'Red thingy'
+published = 2022-05-14T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'guy-fleegman',
+]
+body_markdown = """
+
+Guy, sat at a bridge console and looking at the display, informs the crew
+“There’s a red thingy moving toward the green thingy”.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

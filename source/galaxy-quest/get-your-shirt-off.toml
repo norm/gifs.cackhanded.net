@@ -1,0 +1,31 @@
+title = 'Get your shirt off'
+published = 2022-08-27T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'gwen-demarco',
+    'jason-nesmith',
+    'alexander-dane',
+]
+body_markdown = """
+
+Alexander says to Jason “I see you managed to get your shirt off”.
+
+Jason grins and shakes his hand.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'

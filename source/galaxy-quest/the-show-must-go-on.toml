@@ -1,0 +1,37 @@
+title = 'The show must go on'
+published = 2021-10-02T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'jason-nesmith',
+    'alexander-dane',
+]
+body_markdown = """
+
+
+Jason, aggressively holding Alexander by his coat, forcefully tells him
+“You will go out there!”
+
+Alexander denies this, saying “I won’t, and nothing you say will make me.”
+
+Jason counters with “The show must go on”.
+
+Alexander considers for a moment, then mutters “Damn you”.
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'
+# width      = '400'

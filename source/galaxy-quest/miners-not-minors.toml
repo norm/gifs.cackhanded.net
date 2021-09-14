@@ -1,0 +1,30 @@
+title = 'Miners, not minors!'
+published = 2022-04-09T07:00:00Z
+source_fkey = 'galaxy-quest/index'
+tag = [
+    'jason-nesmith',
+    'alexander-dane',
+    'fred-kwan',
+    'tommy-webber',
+]
+body_markdown = """
+
+Alexander tells a confused Fred “Miners, not minors!”
+
+"""
+
+# [video]
+# source   = 'file'
+# file     = 'galaxy-quest'
+# ext      = 'mkv'
+# start    = '0:00:00.0'
+# duration = '1'
+
+# [output]
+# brightness = '0'
+# colours    = '74'
+# denoise    = true
+# dither     = 'bayer:bayer_scale=3'
+# fps        = '18'
+# loss       = '25'
+# max_size   = 'auto'
