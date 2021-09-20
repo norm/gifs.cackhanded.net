@@ -1,0 +1,87 @@
+#!/usr/bin/env bash -oeu pipefail
+
+function main {
+    list_scheduled_gifs "$@" ''
+}
+
+function usage {
+    sed -e 's/^        //' <<"    EOF"
+        Usage:
+
+            prev [<count>] [<day> ...] [am|pm] [highlight] [empty|full]
+                -   show the schedule for the previous <count> <day(s)>
+                    (eg. 'prev 90 sat sun' will list weekends for 3 months);
+                -   <count> defaults to 30
+                -   <day> default to all days
+                -   'am' will show only the morning GIFs,
+                    'pm' will show only the afternoon GIFs; defaults to both
+                -   'highlight' will highlight the start of the week in colour
+                -   'empty' will only list empty days
+                -   'full' will only list full days
+    EOF
+    exit 1
+}
+
+function list_scheduled_gifs {
+    local count="${1:-30}"
+    local days=''
+    local empty=''
+    local full=''
+    local highlight=0
+    local next=0
+    local unscheduled_day=0
+    local time='both'
+
+    shift
+    while [ "${1:-}" ]; do
+        case "${1:-}" in
+            empty)  empty=empty full=''  ;;
+            full)   full=full   empty='' ;;
+            high*)  highlight=1 ;;
+            next)   next=1 empty=empty full='' ;;
+            am)     time='am' ;;
+            pm)     time='pm' ;;
+            *)      [ -n "$days" ] && days="$days|$1" || days="$1"
+        esac
+        shift
+    done
+
+    for day in $(seq 1 ${count}); do
+        datestamp=$(gdate +'%Y-%m-%d' --date="now - $day days")
+        day_of_week=$(gdate +%a --date $datestamp)
+
+        [ -n "$days" ] \
+            && echo "$day_of_week" | egrep -iqv "$days" \
+            && continue
+
+        pattern="published.*$datestamp"
+        [ $time = 'am' ] && pattern="${pattern}T07"
+        [ $time = 'pm' ] && pattern="${pattern}T15"
+
+        content=$(
+            ( rg "$pattern" source || echo '' ) \
+                | cut -d: -f1 \
+                | sed -e 's#source/##' \
+                      -e 's/.toml//' \
+                      -e '2,$s/^/               /'
+        )
+
+        [ -n "$content" -a -n "$empty" ] && continue
+
+        [ $highlight = 1 -a "$day_of_week" = "Mon" ] && printf '\e[34m'
+
+        if [ -z "$content" ]; then
+            [ -n "$full" ] && continue
+
+            [ $next = 1 ] && content="next unscheduled day ($day days)"
+            unscheduled_day=1
+            printf '\e[1m\e[35m'
+        fi
+
+        printf '%s %s %s\e[0m\n' $datestamp $day_of_week "$content"
+
+        [ $next = 1 ] && break
+    done
+}
+
+main "$@"
