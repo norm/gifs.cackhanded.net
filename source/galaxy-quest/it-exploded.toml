@@ -11,18 +11,24 @@ inside-out, and unperturbedly states “And it exploded”.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:57:46.6'
+duration = '4.2'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.1mb'
+
+[[caption]]
+text      = "And it exploded"
+from      = '2.65'
+to        = '3.75'
+type      = 'speak'

@@ -13,18 +13,26 @@ the rifle onto his shoulder. Fred and Laliari reach out to grab him.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '1:16:12.5'
+duration = '2.25'
+crop     = '960:540:0:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '40'
+max_size   = '1.1mb'
+
+[[caption]]
+text      = "I got this"
+from      = '0.2'
+to        = '1'
+type      = 'speak'
+placement = '100,217'

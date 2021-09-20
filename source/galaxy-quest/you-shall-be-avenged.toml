@@ -11,18 +11,24 @@ Alexander informs a dying Quellek “… you shall be avenged”.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '1:21:30.0'
+duration = '7'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "… you shall be avenged"
+from      = '2.3'
+to        = '6'
+type      = 'speak'

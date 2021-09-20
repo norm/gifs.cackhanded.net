@@ -11,18 +11,25 @@ Gwen exclaims that “This episode was badly written!”
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '1:17:44.8'
+duration = '2.7'
+crop     = '960:540:0:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '18'
+loss       = '50'
+max_size   = '1mb'
+
+[[caption]]
+text      = "This episode was\nbadly written!"
+from      = '0.4'
+to        = '2.3'
+type      = 'shout'
+placement = '60,180'

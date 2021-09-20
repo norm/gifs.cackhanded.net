@@ -11,18 +11,26 @@ Gwen swears “Well, fuck that!” after having seen the “chompers”.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '1:17:19.7'
+duration = '1.7'
+crop     = '960:540:50:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+brightness = '0.075'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '0.7mb'
+
+[[caption]]
+text      = "Well, fuck that!"
+from      = '0.3'
+to        = '1.8'
+type      = 'shout'
+placement = '50,217'

@@ -2,27 +2,42 @@ title = 'What a savings'
 published = 2022-01-15T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'gwen-demarco',
     'alexander-dane',
+    'gwen-demarco',
 ]
 body_markdown = """
 
-Alexander unconvincingly states “By Grabthar’s Hammer … what a savings.”
+Alexander, unenthused, promotes the opening of a store by saying “By
+Grabthar’s Hammer … what a savings.”
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:20:24.0'
+duration = '9'
+crop     = '960:540:120:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '3.2mb'
+
+[[caption]]
+text      = "By Grabthar’s\nHammer"
+from      = '2'
+to        = '4.15'
+type      = 'speak'
+placement = 'br'
+
+[[caption]]
+text      = "what a savings"
+from      = '7.5'
+to        = '8.8'
+type      = 'speak'
+placement = 'br'

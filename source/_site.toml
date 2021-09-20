@@ -30,3 +30,31 @@ font      = 'anteb-regular.otf'
 margin    = '20'
 placement = 'bc'
 size      = '28'
+
+[type_set.speak]
+align     = 'center'
+font      = 'assistant-semibold.ttf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[type_set.speak_400]
+align     = 'center'
+font      = 'assistant-semibold.ttf'
+margin    = '16'
+placement = 'bc'
+size      = '22'
+
+[type_set.shout]
+align     = 'center'
+font      = 'assistant-extrabold.ttf'
+margin    = '20'
+placement = 'bc'
+size      = '28'
+
+[type_set.shout_400]
+align     = 'center'
+font      = 'assistant-extrabold.ttf'
+margin    = '16'
+placement = 'bc'
+size      = '22'

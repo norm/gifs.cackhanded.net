@@ -12,18 +12,31 @@ shout back “Never surrender!”
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:05:52.0'
+duration = '4.6'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '40'
+max_size   = '2.3mb'
+
+[[caption]]
+text      = "Never give up…"
+from      = '1.16'
+to        = '2.2'
+type      = 'speak'
+
+[[caption]]
+text      = "NEVER SURRENDER!"
+from      = '3'
+to        = '5'
+type      = 'shout'
+size      = '40'

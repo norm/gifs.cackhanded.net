@@ -2,11 +2,10 @@ title = 'The show must go on'
 published = 2021-10-02T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'jason-nesmith',
     'alexander-dane',
+    'jason-nesmith',
 ]
 body_markdown = """
-
 
 Jason, aggressively holding Alexander by his coat, forcefully tells him
 “You will go out there!”
@@ -15,23 +14,61 @@ Alexander denies this, saying “I won’t, and nothing you say will make me.”
 
 Jason counters with “The show must go on”.
 
-Alexander considers for a moment, then mutters “Damn you”.
+A range of emotions play across Alexander‘s face. “Damn you!”
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
-# width      = '400'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:04:49.0'
+duration = '12'
+crop     = '960:540'
+
+[output]
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '4.05mb'
+width      = '400'
+
+[[caption]]
+text      = "You will go out there!"
+from      = '0.1'
+to        = '1.4'
+type      = 'speak_400'
+placement = 'bl'
+
+[[caption]]
+text      = "I won’t"
+from      = '1.41'
+to        = '2.1'
+type      = 'speak_400'
+placement = '280,182'
+
+[[caption]]
+text      = "And nothing you say\nwill make me"
+from      = '2.11'
+to        = '4'
+type      = 'speak_400'
+align     = 'center'
+placement = '191,151'
+
+[[caption]]
+text      = "The show must go on"
+from      = '4.1'
+to        = '5.3'
+type      = 'speak_400'
+placement = 'bl'
+
+
+[[caption]]
+text      = "Damn you"
+from      = '10'
+to        = '10.6'
+type      = 'shout_400'
+placement = '250,182'

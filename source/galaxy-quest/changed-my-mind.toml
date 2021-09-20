@@ -6,23 +6,30 @@ tag = [
 ]
 body_markdown = """
 
-Guy, looking out of the shuttle window at the heat of re-entry and crying,
-says “I’ve changed my mind, I wanna go back”.
+Guy, crying, as flames from reentry lick the windows of the shuttle.
+“I’ve changed my mind, I wanna go back.”
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:47:22.0'
+duration = '4.6'
+crop = '800:450:0:100'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+brightness = '0.1'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '40'
+max_size   = '1.42mb'
+
+[[caption]]
+text      = "I changed my mind,\nI wanna go back"
+from      = '2.4'
+to        = '4.4'
+type      = 'speak'

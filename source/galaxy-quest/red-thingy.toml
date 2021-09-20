@@ -11,18 +11,30 @@ Guy, sat at a bridge console and looking at the display, informs the crew
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:38:05.6'
+duration = '5.8'
+crop     = '960:540:90:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.95mb'
+
+[[caption]]
+text      = "There’s a red thingy\n "
+from      = '0.2'
+to        = '3.5'
+type      = 'speak'
+
+[[caption]]
+text      = "There’s a red thingy\nmoving toward the green thingy"
+from      = '3.51'
+to        = '6'
+type      = 'speak'

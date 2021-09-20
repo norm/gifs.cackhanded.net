@@ -2,10 +2,10 @@ title = 'Everything is fine'
 published = 2022-03-26T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'gwen-demarco',
     'alexander-dane',
     'fred-kwan',
     'guy-fleegman',
+    'gwen-demarco',
     'teb',
 ]
 body_markdown = """
@@ -17,18 +17,33 @@ to clap his hand over Teb’s mouth.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:57:39.2'
+duration = '3.1'
+crop     = '960:540:80:65'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+brightness = '0.1'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.63mb'
+
+[[caption]]
+text      = "Everything\nis fine"
+from      = '0'
+to        = '1.5'
+type      = 'speak'
+placement = '342,175'
+
+[[caption]]
+text      = "But the animal\nis inside-out"
+from      = '1.6'
+to        = '3.05'
+type      = 'speak'
+placement = '80,155'

@@ -2,9 +2,9 @@ title = 'Being on the show'
 published = 2021-10-09T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'gwen-demarco',
     'alexander-dane',
     'guy-fleegman',
+    'gwen-demarco',
 ]
 body_markdown = """
 
@@ -12,18 +12,27 @@ Guy tells Alexander that he’s “just jazzed about being on the show, man”.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:29:41.2'
+duration = '4.6'
+crop     = '960:540:60:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.7mb'
+
+[[caption]]
+text      = "I’m just jazzed about\nbeing on the show, man"
+from      = '0.8'
+to        = '3.2'
+type      = 'speak'
+align     = 'left'
+placement = 'bl'

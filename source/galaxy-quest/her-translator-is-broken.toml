@@ -3,10 +3,10 @@ published = 2022-05-07T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
     'jason-nesmith',
-    'mathesar',
-    'laliari',
-    'teb',
     'lahnk',
+    'laliari',
+    'mathesar',
+    'teb',
 ]
 body_markdown = """
 
@@ -19,19 +19,48 @@ Jason looks at her for a beat, then says “Okey dokey”.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
-# width      = '400'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:14:27.6'
+duration = '9.55'
+crop     = '960:540:80:90'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.45mb'
+width      = '400'
+
+[[caption]]
+text      = "Doesn’t she talk?"
+from      = '1'
+to        = '1.7'
+type      = 'speak_400'
+placement = '226,120'
+
+[[caption]]
+text      = "Her translator\nis broken"
+from      = '2.4'
+to        = '4.5'
+type      = 'speak_400'
+placement = '30,110'
+
+[[caption]]
+text      = "ALALALALA"
+from      = '4.8'
+to        = '6.1'
+type      = 'shout_400'
+placement = '70,110'
+
+[[caption]]
+text      = "Okey dokey"
+from      = '8.4'
+to        = '9.4'
+type      = 'speak_400'
+placement = '226,120'

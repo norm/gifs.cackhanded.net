@@ -10,19 +10,26 @@ Sarris tells Jason to “Explain, as you would a child”.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '1:05:02.0'
+duration = '4.9'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
-# width      = '400'
+[output]
+brightness = '0.075'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '2.03mb'
+width      = '400'
+
+[[caption]]
+text      = "Explain, as you would a child"
+from      = '0.8'
+to        = '4.4'
+type      = 'speak_400'

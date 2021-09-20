@@ -2,10 +2,11 @@ title = 'Rolling surrender'
 published = 2021-12-18T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'gwen-demarco',
-    'jason-nesmith',
     'alexander-dane',
     'fred-kwan',
+    'gwen-demarco',
+    'jason-nesmith',
+    'never-give-up-never-surrender',
 ]
 body_markdown = """
 
@@ -16,18 +17,32 @@ Alexander and Gwen tell him to “shut up!”
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:53:39'
+duration = '4'
+crop     = '960:540:90:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '40'
+max_size   = '2.4mb'
+
+[[caption]]
+text      = "Never give up,\nnever surrender!"
+from      = '0.5'
+to        = '2.4'
+type      = 'speak'
+placement = '190,122'
+
+[[caption]]
+text      = "Oh, shut up!"
+from      = '2.8'
+to        = '4'
+type      = 'shout'
+placement = '70,140'

@@ -14,18 +14,37 @@ Tommy looks uncomfortable.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:43:22.3'
+crop     = '960:540:90:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.9mb'
+
+[[clip]]
+start = '0'
+end   = '5.8'
+
+[[clip]]
+start = '7.4'
+end   = '8.5'
+
+[[caption]]
+text      = "I have one job\non this lousy ship"
+from      = '0'
+to        = '2.6'
+type      = 'speak'
+
+[[caption]]
+text      = "It’s stupid, but\nI’m gonna do it, okay?"
+from      = '2.9'
+to        = '5.7'
+type      = 'speak'

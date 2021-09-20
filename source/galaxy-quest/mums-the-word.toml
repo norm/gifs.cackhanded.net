@@ -2,10 +2,10 @@ title = 'Mum’s the word'
 published = 2021-11-06T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'mathesar',
-    'laliari',
-    'teb',
     'lahnk',
+    'laliari',
+    'mathesar',
+    'teb',
 ]
 body_markdown = """
 
@@ -13,18 +13,74 @@ Mathesar, Teb, Laliari, and Lahnk repeat the word “Mum” over and over.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:08:31.7'
+duration = '4'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.3mb'
+
+[[caption]]
+text      = "Mum"
+from      = '1.7'
+to        = '2.3'
+type      = 'speak'
+placement = '90,80'
+
+[[caption]]
+text      = "Mum"
+from      = '2.8'
+to        = '3.4'
+type      = 'speak'
+placement = '100,80'
+
+[[caption]]
+text      = "Mum"
+from      = '3.6'
+to        = '4.2'
+type      = 'speak'
+placement = '100,80'
+
+[[caption]]
+text      = "Mum"
+from      = '1'
+to        = '1.6'
+type      = 'speak'
+placement = '170,120'
+
+[[caption]]
+text      = "Mum"
+from      = '2.4'
+to        = '3'
+type      = 'speak'
+placement = '170,120'
+
+[[caption]]
+text      = "Mum"
+from      = '1'
+to        = '1.6'
+type      = 'speak'
+placement = '240,190'
+
+[[caption]]
+text      = "Mum"
+from      = '3'
+to        = '3.6'
+type      = 'speak'
+placement = '250,190'
+
+[[caption]]
+text      = "Mum"
+from      = '2.4'
+to        = '3.1'
+type      = 'speak'
+placement = '360,170'

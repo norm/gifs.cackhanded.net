@@ -2,8 +2,8 @@ title = 'Believe'
 published = 2021-10-30T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'gwen-demarco',
     'fred-kwan',
+    'gwen-demarco',
     'laliari',
 ]
 body_markdown = """
@@ -13,18 +13,18 @@ with a sense of purpose.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '1:00:20.5'
+duration = '6.5'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '102'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.7mb'

@@ -2,8 +2,8 @@ title = 'Expendable'
 published = 2022-02-05T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'jason-nesmith',
     'guy-fleegman',
+    'jason-nesmith',
 ]
 body_markdown = """
 
@@ -12,18 +12,33 @@ episode who dies to prove the situation is serious!”
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:35:48.0'
+duration = '5'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+brightness = '0.05'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '2.1mb'
+width      = '400'
+
+[[caption]]
+text      = "I'm expendable!\n "
+from      = '0'
+to        = '1'
+type      = 'speak_400'
+
+[[caption]]
+text      = "I'm the guy in the episode who dies\nto prove the situation is serious!"
+from      = '1.01'
+to        = '4.5'
+type      = 'speak_400'
+

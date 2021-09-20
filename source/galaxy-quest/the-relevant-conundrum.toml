@@ -2,11 +2,11 @@ title = 'The relevant conundrum'
 published = 2021-11-13T07:00:00Z
 source_fkey = 'galaxy-quest/index'
 tag = [
-    'jason-nesmith',
     'brandon',
-    'kyle',
-    'katelyn',
     'hollister',
+    'jason-nesmith',
+    'katelyn',
+    'kyle',
 ]
 body_markdown = """
 
@@ -15,18 +15,24 @@ gotten to the relevant conundrum”.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:07:30'
+duration = '5.85'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '2.2mb'
+
+[[caption]]
+text      = "Hadn’t even gotten to\nthe relevant conundrum"
+from      = '3.7'
+to        = '5.4'
+type      = 'speak'

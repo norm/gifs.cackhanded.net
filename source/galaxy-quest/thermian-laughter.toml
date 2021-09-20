@@ -4,9 +4,9 @@ source_fkey = 'galaxy-quest/index'
 tag = [
     'gwen-demarco',
     'jason-nesmith',
+    'laliari',
     'mathesar',
     'quellek',
-    'laliari',
 ]
 body_markdown = """
 
@@ -14,18 +14,33 @@ The Thermians laugh in a manner that makes Gwen and Jason uncomfortable.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:45:13.5'
+crop     = '960:540'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '40'
+max_size   = '3mb'
+
+[[clip]]
+start = '0'
+end   = '3.6'
+
+[[clip]]
+start = '8.5'
+end   = '10'
+
+[[clip]]
+start = '4.61'
+end   = '6.4'
+
+[[clip]]
+start = '3.9'
+end   = '4.6'

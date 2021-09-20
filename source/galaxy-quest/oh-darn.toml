@@ -10,18 +10,25 @@ Jason, looking at a Gorignak, says “Oh darn” and runs away.
 
 """
 
-# [video]
-# source   = 'file'
-# file     = 'galaxy-quest'
-# ext      = 'mkv'
-# start    = '0:00:00.0'
-# duration = '1'
+[video]
+source   = 'file'
+file     = 'galaxy_quest'
+ext      = 'mkv'
+start    = '0:58:34.8'
+duration = '5.8'
+crop     = '960:540:200:90'
 
-# [output]
-# brightness = '0'
-# colours    = '74'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=3'
-# fps        = '18'
-# loss       = '25'
-# max_size   = 'auto'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '2.2mb'
+
+[[caption]]
+text      = "Oh darn"
+from      = '0.3'
+to        = '1.3'
+type      = 'speak'
+placement = '210,217'
