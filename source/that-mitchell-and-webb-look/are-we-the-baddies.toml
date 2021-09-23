@@ -1,0 +1,34 @@
+title = 'Are we the baddies?'
+published = 2021-11-18T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'nazis',
+    'the-baddies',
+]
+body_markdown = """
+
+One Nazi soldier asks another “Are we the baddies?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mwlook-101'
+ext      = 'm4v'
+start    = '01:08'
+duration = '5.4'
+
+[output]
+colours    = '54'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.41mb'
+
+[[caption]]
+text      = "Are we the baddies?"
+from      = '1.65'
+to        = '2.8'
+type      = 'speak'
+placement = '170,211'

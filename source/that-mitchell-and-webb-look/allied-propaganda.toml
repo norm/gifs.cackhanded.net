@@ -1,0 +1,35 @@
+title = 'Allied propaganda'
+published = 2021-12-02T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'nazis',
+    'the-baddies',
+]
+body_markdown = """
+
+Hans is disappointed in his fellow Nazi officer. “Oh, you haven’t 
+been listening to Allied propaganda!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mwlook-101'
+ext      = 'm4v'
+start    = '13:19.5'
+duration = '2.4'
+
+[output]
+brightness = '0.033'
+colours    = '54'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.45mb'
+
+[[caption]]
+text      = "Oh, you haven’t been listening\nto Allied propaganda!"
+from      = '0'
+to        = '3'
+type = 'speak'

@@ -1,0 +1,53 @@
+title = 'Pirates are still the baddies'
+published = 2021-11-25T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'nazis',
+    'pirates',
+    'the-baddies',
+]
+body_markdown = """
+
+Hans interjects “Pirates are fun!”
+
+The other Nazi officer comments “I didn’t say we weren’t fun,
+but fun or not, pirates are still the baddies.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mwlook-101'
+ext      = 'm4v'
+start    = '13:01.65'
+duration = '6.7'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.3mb'
+
+[[caption]]
+text      = "Pirates are fun!"
+from      = '0'
+to        = '1'
+type      = 'speak'
+placement = '80,211'
+
+[[caption]]
+text      = "I didn’t say\nwe weren’t fun"
+from      = '2'
+to        = '3'
+type      = 'speak'
+placement = '200,174'
+
+[[caption]]
+text      = "But fun or not,\npirates are still the baddies"
+from      = '3.2'
+to        = '6'
+type      = 'speak'
+placement = '130,174'
+

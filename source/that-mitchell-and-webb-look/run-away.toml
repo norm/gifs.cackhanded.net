@@ -1,0 +1,28 @@
+title = 'Run away'
+published = 2021-12-09T07:00:00Z
+source_fkey = 'that-mitchell-and-webb-look/index'
+tag = [
+    'nazis',
+    'the-baddies',
+]
+body_markdown = """
+
+The Nazi officers look at each other, then scramble
+up from the table and run away.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mwlook-101'
+ext      = 'm4v'
+start    = '14:20'
+duration = '4.2'
+
+[output]
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.26mb'
