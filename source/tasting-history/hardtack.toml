@@ -1,0 +1,28 @@
+title = 'Hardtack'
+published = 2021-10-17T07:00:00Z
+source_fkey = 'tasting-history/index'
+tag = [
+    'max-miller',
+    'hardtack',
+]
+body_markdown = """
+
+Max Miller, smacking two hardtack ship’s biscuits together.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'oPTdSMOQRnY'
+ext      = 'mp4'
+start    = '17:12.4'
+duration = '1.65'
+crop     = '1600:900:160:40'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.6mb'
