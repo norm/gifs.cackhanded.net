@@ -1,0 +1,31 @@
+title = 'Wink'
+published = 2021-10-31T07:00:00Z
+source_fkey = 'robyn-adele-anderson/index'
+tag = [
+    'robyn-adele-anderson',
+    'why-dont-you-do-right',
+    'wink',
+]
+body_markdown = """
+
+Robyn Adele Anderson singing the last note of ”Why don’t you do right?”
+and then winking.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'DM7epH1L4x8'
+ext      = 'mp4'
+start    = '3:02.7'
+duration = '5.3'
+crop     = '940:600:490:100'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '25'
+max_size   = '1.35mb'
+width      = '400'
