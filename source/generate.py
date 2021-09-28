@@ -28,6 +28,7 @@ class SourcePage(base.SourceGenerator):
         if 'type' in source and source.type != 'static':
             if not (
                    source.agency_set.count()
+                or source.brand_set.count()
                 or source.artist_set.count()
                 or source.episode_set.count()
                 or source.mission_set.count()
@@ -143,6 +144,8 @@ class SourceAtomFeed(AtomFeed):
             _filtered = source.artist_set.filter(type__unset=True)
         elif source.agency_set.count():
             _filtered = source.agency_set.filter(type__unset=True)
+        elif source.parent_set.count():
+            _filtered = source.parent_set.filter(type__unset=True)
         else:
             _filtered = source.source_set.order_by('-published')
 

@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+[[ sectile insert source_index_links.html ]]
+
+<div class='synopsis'>
+{{body}}
+</div>
+
+<div class='episodes-list'>
+  <h2>Brands</h2>
+  {% for brand in page.parent_set %}
+    {% if brand.brand_set.count() %}
+      <li value='{{brand.brand}}'>
+        <a href='{{brand.path}}'>{{brand.title}}</a>
+         {# FIXME pluralise #}
+        ({{brand.brand_set.count()}} GIF{% if brand.brand_set.count() == 1 %}{% else %}s{% endif %}) 
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ol>
+</div>
+
+<h2>Latest {{title}} GIFs</h2>
+<ul class='thumbs'>
+  {% for gif in (page.parent_set.filter(type__neq='brand').order_by('-published'))[0:12] %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

@@ -43,6 +43,12 @@
     <dt>Mission</dt>
     <dd><a href='{{page.mission.path}}'>{{page.mission.title}}</a></dd>
   {% endif %}
+  {% if page.brand %}
+    <dt>Type</dt>
+    <dd><a href='{{page.parent.path}}'>{{page.parent.title}}</a></dd>
+    <dt>Brand</dt>
+    <dd><a href='{{page.brand.path}}'>{{page.brand.title}}</a></dd>
+  {% endif %}
   {% if page.source %}
     <dt>Source</dt>
     <dd><a href='{{page.source.path}}'>{{page.source.title}}</a></dd>

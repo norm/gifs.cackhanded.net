@@ -1,0 +1,33 @@
+title = 'Mexican slap'
+published = 2021-11-21T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/pot-noodle/index'
+tag = [
+    'mariachi-band',
+    'pot-noodle',
+    'seedy-sanchez',
+    'slap',
+]
+body_markdown = """
+
+In the "Seedy Sanchez" Pot Noodle advert, a Mariachi band seranade a couple
+as the woman slaps the man across the face.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '0Wd2KJuLvAQ'
+ext      = 'mp4'
+start    = '0:34.2'
+duration = '2.2'
+crop     = '1080:690'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '1.12mb'

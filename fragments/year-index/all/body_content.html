@@ -22,6 +22,8 @@
                 (from <a href='{{gif.artist.path}}'>{{gif.artist.title}}</a>)
               {% elif gif.show %}
                 (from <a href='{{gif.show.path}}'>{{gif.show.title}}</a>)
+              {% elif gif.brand %}
+                (from <a href='{{gif.brand.path}}'>{{gif.brand.title}}</a>)
               {% else %}
                 (from <a href='{{gif.source.path}}'>{{gif.source.title}}</a>)
               {% endif %}

@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<p class='subhead'>
+  A brand, one that likes
+  <a href='{{page.parent.path}}'>{{page.parent.title}}</a> at you.
+</p>
+
+<div class='synopsis'>
+{{body}}
+</div>
+
+<ul class='thumbs'>
+  {% for gif in page.brand_set.all().order_by('published') %}
+    <li>
+      <a href='{{gif.path}}'>
+        <img src='{{gif.path}}.tn.gif' alt=''>
+        <span>{{gif.title}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

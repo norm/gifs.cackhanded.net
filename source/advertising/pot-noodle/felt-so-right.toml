@@ -1,0 +1,45 @@
+title = 'Felt so right'
+published = 2021-11-28T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/pot-noodle/index'
+tag = [
+    'pot-noodle',
+    'slap',
+    'the-slag-of-all-snacks',
+]
+body_markdown = """
+
+In “The slag of all snacks” advert for Pot Noodle, a man and woman are on
+a bed, finishing Pot Noodles. He says “That felt so wrong, and yet it felt
+so right!”
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '0uGD5xAPt-E'
+ext      = 'mp4'
+start    = '0:32'
+duration = '5'
+crop     = '620:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '15'
+loss       = '20'
+max_size   = '2.1mb'
+width      = '400'
+
+[[caption]]
+text      = "That felt so wrong"
+from      = '1.85'
+to        = '3.35'
+type      = 'speak_400'
+
+[[caption]]
+text      = "and yet it felt so right!"
+from      = '3.36'
+to        = '5'
+type      = 'speak_400'

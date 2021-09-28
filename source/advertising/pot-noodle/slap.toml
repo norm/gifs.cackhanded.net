@@ -1,0 +1,39 @@
+title = 'Slap'
+published = 2021-11-14T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/pot-noodle/index'
+tag = [
+    'pot-noodle',
+    'slap',
+    'the-slag-of-all-snacks',
+]
+body_markdown = """
+
+In “The slag of all snacks” advert for Pot Noodle, a bloke gets
+slapped repeatedly.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '0uGD5xAPt-E'
+ext      = 'mp4'
+start    = '0:19.2'
+crop     = '620:400'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = 'original'
+loss       = '50'
+max_size   = '1.8mb'
+mode       = 'full'
+
+[[clip]]
+start = '0'
+end   = '1.1'
+
+[[clip]]
+start = '2.3'
+end   = '4.4'
