@@ -1,0 +1,30 @@
+title = 'Nodding'
+published = 2021-11-07T07:00:00Z
+source_fkey = 'flat-eric/index'
+tag = [
+    'flat-eric',
+]
+body_markdown = """
+
+Flat Eric nodding along during a telephone call.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'qmsbP13xu6k'
+ext      = 'mp4'
+start    = '0:37.85'
+duration = '0.88'
+crop     = '570:310'
+
+[output]
+brightness = '0.04'
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=2'
+fps        = 'original'
+loss       = '0'
+max_size   = '0.35mb'
+mode       = 'full'
+width      = 'original'
