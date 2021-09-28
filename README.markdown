@@ -129,12 +129,13 @@ the video source.
   number means a smaller GIF but less smooth movement; default
   is 10 (animation-like), `original` leaves it the same as the source
 * `loss` is the amount of artifacts allowed when initially optimising the
-  GIF's size; default is `0`
+  GIF's size; default is `0`. Set to `no` to disable optimising.
 * `max_size` is the maximum size in bytes of the GIF, if the output is
   larger than this value `gifsicle` will be run with increasing levels
   of `loss` to shrink the file size at the expense of image quality
   (can be expressed in megabytes, eg `1.5mb`, or as `auto` to calculate
   a maximum based on `0.45mb` per second from the length of the GIF).
+  If `loss` is set to `no`, `max_size` is ignored.
 * `slowdown` is a multiplier to make the output GIF animate slower than the
   source video (slo-mo). A multiplier lower than 1 will speed it up.
 * `dither` is how the palette colours are dithered to create the appearance

@@ -196,33 +196,34 @@ function main {
             $(size_in_mb $size) \
             "$(echo 3k $size $uncompressed_size / 100 \* p | dc)" \
             $reset
+
+        if [ -n "$output_max_size" ]; then
+            until [ "$size" -lt "$output_max_size" ]; do
+                let "losses = losses + 10"
+
+                gifsicle \
+                    -O3 \
+                    --lossy=$losses \
+                    --no-extensions \
+                    -o "${TEMP}/gifsicle.${losses}.gif" \
+                    "$TEMP/output.gif"
+
+                size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
+                [ "$size" -lt "$output_max_size" ] \
+                    && indicator="$green" \
+                    || indicator="$magenta"
+                printf "  %s< optimised with loss %d, now %.02fmb, %.01f%% of max%s\n" \
+                    $indicator \
+                    $losses \
+                    $(size_in_mb $size) \
+                    "$(echo 3k $size $output_max_size / 100 \* p | dc)" \
+                    $reset
+            done
+        fi
     else
         cp "$TEMP/output.gif" "${TEMP}/gifsicle.${losses}.gif"
     fi
 
-    if [ -n "$output_max_size" ]; then
-        until [ "$size" -lt "$output_max_size" ]; do
-            let "losses = losses + 10"
-
-            gifsicle \
-                -O3 \
-                --lossy=$losses \
-                --no-extensions \
-                -o "${TEMP}/gifsicle.${losses}.gif" \
-                "$TEMP/output.gif"
-
-            size="$(filesize "${TEMP}/gifsicle.${losses}.gif")"
-            [ "$size" -lt "$output_max_size" ] \
-                && indicator="$green" \
-                || indicator="$magenta"
-            printf "  %s< optimised with loss %d, now %.02fmb, %.01f%% of max%s\n" \
-                $indicator \
-                $losses \
-                $(size_in_mb $size) \
-                "$(echo 3k $size $output_max_size / 100 \* p | dc)" \
-                $reset
-        done
-    fi
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
 }
