@@ -43,6 +43,9 @@ def main(args):
     image.save(args.palette)
     print('    %s colours (%s initially)' % (len(colours), orig_count))
 
+    if args.list:
+        for colour in colours:
+            print("    '#%02x%02x%02x'," % colour[0:3])
 
 def colour_range(caption, stroke, steps=5):
     caption = ImageColor.getrgb(caption)
@@ -69,6 +72,10 @@ if __name__ == '__main__':
         '--range',
         nargs=2,
         action='append',
+    )
+    parser.add_argument(
+        '--list',
+        action='store_true',
     )
     parser.add_argument(
         'colours',

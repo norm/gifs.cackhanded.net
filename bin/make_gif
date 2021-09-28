@@ -104,14 +104,18 @@ function main {
         done
     fi
 
+    list_palette=''
+    [ -n "$(toml $toml palette.list)" ] && \
+        list_palette='--list'
+
     debug edit-palette \
+        $list_palette \
         $caption_colours \
         $(toml $toml palette.add) \
         "${TEMP}/palette.png"
 
-    if [ -n "$(toml $toml palette.show)" ]; then
+    [ -n "$(toml $toml palette.show)" ] && \
         open "${TEMP}/palette.png"
-    fi
 
     filter_debug "$(generate_filter $toml)"
     debug ffmpeg \

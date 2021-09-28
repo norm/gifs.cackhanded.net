@@ -38,6 +38,7 @@ add = [
     '#5a7e4c',
     '#d5dc4b',
 ]
+list = 1
 show = 1
 
 [output]
@@ -151,7 +152,8 @@ the video source.
 * `add` is an array of colours (in any format compatible with
   [the Pillow ImageColor][col] module) to add to the initial palette
   formed from the video source
-* `show` will open the final palette selection for inspection
+* `list` will list the RGB values for each colour used in the final palette
+* `show` will open the final palette PNG for inspection
 
 ### `[[caption]]` describes the caption(s)
 
