@@ -55,7 +55,7 @@ push:
 publish: stash push rebuild gifwrapped unstash
 	@flourish upload
 
-test:
+test: fonts videos
 	@./script/test
 
 test_generated:
@@ -74,9 +74,13 @@ next: gifwrapped
 	@echo ''
 	@./script/next
 
-example-fonts:
+fonts:
 	mkdir -p fonts
-	curl -L -o fonts/assistant-semibold.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/assistant/static/Assistant-SemiBold.ttf
-	curl -L -o fonts/assistant-bold.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/assistant/static/Assistant-Bold.ttf
-	curl -L -o fonts/assistant-extrabold.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/assistant/static/Assistant-ExtraBold.ttf
+	curl -L -o fonts/assistant-semibold.ttf https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-SemiBold.ttf
+	curl -L -o fonts/assistant-bold.ttf https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-Bold.ttf
+	curl -L -o fonts/assistant-extrabold.ttf https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-ExtraBold.ttf
 	curl -L -o fonts/lato-regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Regular.ttf
+
+videos:
+	mkdir videos
+	youtube-dl -o "videos/HU2ftCitvyQ.mp4" -f "bestvideo[ext=mp4]" HU2ftCitvyQ

@@ -35,18 +35,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Download sample video
-        run: |
-          mkdir videos
-          youtube-dl \
-              -o "videos/HU2ftCitvyQ.mp4" \
-              -f "bestvideo[ext=mp4]" \
-              HU2ftCitvyQ
-
-      - name: Download fonts
-        run: |
-          make example-fonts
-
       - name: Run tests
         run: |
           make test
