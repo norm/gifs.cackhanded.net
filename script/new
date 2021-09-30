@@ -136,8 +136,6 @@ EOF
             $toml
 
     subl $toml
-    make
-
 }
 
 function create_source {
