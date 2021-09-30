@@ -97,10 +97,7 @@ loss       = 'no'
 # text      = "Looks like I picked the\nwrong week to give up drinking"
 # from      = '1'
 # to        = '2'
-# align     = 'center'
-# margin    = '20'
-# placement = 'bc'
-# size      = '28'
+# type      = 'speak'
 #
 ##### not required, but can be used if needed
 # align     = 'center'
