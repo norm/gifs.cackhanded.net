@@ -1,0 +1,29 @@
+title = 'Sub-launch detection'
+published = 2022-02-14T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'norad',
+    'radar-analyst',
+]
+body_markdown = """
+
+A screen at NORAD lights up with “Sub-launch detection”. A radar analyst
+leans forward in his seat to look at his monitor.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:31:17.0'
+duration = '3.5'
+crop     = '1840:1035'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.3mb'

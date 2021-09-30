@@ -1,0 +1,29 @@
+title = 'CCTV'
+published = 2022-05-09T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'cctv',
+    'nuclear-missile',
+]
+body_markdown = """
+
+CCTV footage of nuclear missiles in their launch bays.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:03:06.5'
+duration = '10'
+crop     = '1200:920:350:45'
+
+[output]
+colours    = '24'
+denoise    = true
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '25'
+max_size   = '1.85mb'
+width      = '320'

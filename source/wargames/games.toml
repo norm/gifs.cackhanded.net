@@ -1,0 +1,39 @@
+title = 'Games!'
+published = 2022-04-11T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'norad',
+    'stephen-falken',
+]
+body_markdown = """
+
+David has a realisation. “Games!”
+
+Falken smiles.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:42:26.0'
+duration = '6.4'
+crop     = '1680:945:180:200'
+
+[output]
+brightness = '0.04'
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.1mb'
+
+[[caption]]
+text      = "GAMES!"
+from      = '4'
+to        = '4.9'
+type      = 'shout'
+placement = '155,217'

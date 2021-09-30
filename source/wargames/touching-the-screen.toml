@@ -1,0 +1,27 @@
+title = 'Touching the screen'
+published = 2022-07-25T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jennifer-mack',
+]
+body_markdown = """
+
+Jennifer touches David’s computer screen, almost reverently.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:27:16.0'
+duration = '4'
+crop     = '1840:1035'
+
+[output]
+colours    = '96'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.9mb'

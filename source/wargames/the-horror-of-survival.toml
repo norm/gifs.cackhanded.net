@@ -1,0 +1,44 @@
+title = 'The horror of survival'
+published = 2022-03-21T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'jennifer-mack',
+    'robert-hume',
+    'stephen-falken',
+]
+body_markdown = """
+
+Falken tells David and Jennifer “We’ll be spared the horror of survival”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:23:54.0'
+crop     = '1840:1035'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.95mb'
+
+[[clip]]
+start = '7.5'
+end   = '10.5'
+
+[[clip]]
+start = '2.5'
+end   = '5.5'
+
+[[caption]]
+text      = "We’ll be spared\nthe horror of survival"
+from      = '0.45'
+to        = '2.65'
+type      = 'speak'

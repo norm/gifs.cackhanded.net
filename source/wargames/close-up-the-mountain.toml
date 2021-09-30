@@ -1,0 +1,35 @@
+title = 'Close up the mountain'
+published = 2022-05-30T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jack-beringer',
+    'norad',
+]
+body_markdown = """
+
+General Beringer orders “Close up the mountain”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:31:25.6'
+duration = '3.6'
+crop     = '1840:1035'
+
+[output]
+brightness = '0.06'
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.2mb'
+
+[[caption]]
+text      = "Close up the mountain"
+from      = '0.9'
+to        = '1.9'
+type      = 'speak'

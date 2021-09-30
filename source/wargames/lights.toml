@@ -1,0 +1,30 @@
+title = 'Lights'
+published = 2022-08-15T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'joshua',
+    'norad',
+    'wopr',
+]
+body_markdown = """
+
+The lights blinking on the WOPR.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:45:56.5'
+duration = '1'
+crop     = '1440:810:0:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = 'original'
+loss       = '20'
+max_size   = '0.45mb'

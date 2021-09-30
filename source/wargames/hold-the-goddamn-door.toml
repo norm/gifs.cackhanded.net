@@ -1,0 +1,36 @@
+title = 'Hold the goddamn door!'
+published = 2022-06-27T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'norad',
+    'pat-healy',
+]
+body_markdown = """
+
+As the vault door of NORAD is being closed, Pat Healy turns to an officer
+and shouts “Hold the goddamn door!” then runs off.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:32:55.5'
+duration = '4.8'
+crop     = '1840:1035'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '40'
+max_size   = '1.75mb'
+width      = '400'
+
+[[caption]]
+text      = "Hold the goddamn door!"
+from      = '1.2'
+to        = '3'
+type      = 'shout_400'

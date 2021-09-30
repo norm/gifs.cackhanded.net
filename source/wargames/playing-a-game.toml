@@ -1,0 +1,35 @@
+title = 'Playing a game with us'
+published = 2022-01-24T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jack-beringer',
+    'norad',
+]
+body_markdown = """
+
+General Beringer tells the group “Somebody’s playing a game with us”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:46:26.4'
+duration = '4'
+crop     = '1840:1035'
+
+[output]
+brightness = '0.04'
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.45mb'
+
+[[caption]]
+text      = "Somebody’s playing a game with us"
+from      = '1.7'
+to        = '3.5'
+type      = 'speak'

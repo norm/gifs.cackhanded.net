@@ -1,0 +1,31 @@
+title = 'Launch detection'
+published = 2022-05-16T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jack-beringer',
+    'joshua',
+    'norad',
+]
+body_markdown = """
+
+A screen in NORAD lights up with “LAUNCH DETECTION”.
+
+General Beringer looks up, then frowns.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:30:10.0'
+duration = '3.7'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '1.15mb'

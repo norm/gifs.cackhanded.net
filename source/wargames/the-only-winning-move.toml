@@ -1,0 +1,30 @@
+title = 'The only winning move'
+published = 2023-01-23T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'joshua',
+    'norad',
+    'global-thermonuclear-war',
+]
+body_markdown = """
+
+Joshua declares that Global Thermonuclear War is a strange game.
+“The only winning move is not to play.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:48:32.2'
+duration = '3'
+crop     = '1600:900:160:0'
+
+[output]
+colours    = '48'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = 'original'
+loss       = '20'
+max_size   = '0.7mb'

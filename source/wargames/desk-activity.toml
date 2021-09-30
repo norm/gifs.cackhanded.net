@@ -1,0 +1,35 @@
+title = 'Desk activity'
+published = 2022-02-07T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'norad',
+]
+body_markdown = """
+
+A bunch of activity at NORAD as people hurriedly sit down at desks
+and start making urgent calls.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:41:46.0'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '2mb'
+
+[[clip]]
+start = '0.4'
+end   = '2.3'
+
+[[clip]]
+start = '13.4'
+end   = '15'

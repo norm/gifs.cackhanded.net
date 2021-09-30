@@ -1,0 +1,37 @@
+title = 'Power down'
+published = 2022-09-19T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'imsai-8080',
+    'norad',
+]
+body_markdown = """
+
+David turns off his IMSAI 8080, which terminates the simulated attack
+on the screens at NORAD.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:45:20'
+crop     = '1840:1035'
+
+[output]
+colours    = '96'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1mb'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '3.5'
+end   = '5'

@@ -1,0 +1,43 @@
+title = 'Confidence is high'
+published = 2022-10-17T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'norad',
+    'radar-analyst',
+]
+body_markdown = """
+
+A radar analyst at NORAD informs his superiors “Confidence is high. I repeat,
+confidence is high.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:42:50.8'
+duration = '4.3'
+crop     = '1840:1035'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.95mb'
+mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "Confidence is high"
+from      = '0.3'
+to        = '1.5'
+type      = 'speak_400'
+
+[[caption]]
+text      = "I repeat, confidence is high"
+from      = '1.8'
+to        = '4'
+type      = 'speak_400'

@@ -1,0 +1,46 @@
+title = 'Learn, goddamn it'
+published = 2022-07-18T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'jennifer-mack',
+    'john-mckittrick',
+    'joshua',
+    'norad',
+    'tic-tac-toe',
+]
+body_markdown = """
+
+David tells Joshua “Learn, goddamn it!” as it plays itself at tic-tac-toe.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:45:24.6'
+crop     = '1600:900:160:60'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.15mb'
+
+[[clip]]
+start = '0'
+end   = '2.3'
+
+[[clip]]
+start = '4'
+end   = '5.9'
+
+[[caption]]
+text      = "Learn, goddamn it!"
+from      = '1.1'
+to        = '2.2'
+type      = 'shout'

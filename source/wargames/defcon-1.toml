@@ -1,0 +1,43 @@
+title = 'DEFCON 1'
+published = 2023-01-02T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jack-beringer',
+    'norad',
+]
+body_markdown = """
+
+General Beringer declares “We are at DEFCON 1”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:30:42.0'
+duration = '5.2'
+crop     = '1840:1035'
+
+
+[output]
+colours    = '162'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.6mb'
+
+[[caption]]
+text      = "We are at"
+from      = '0.7'
+to        = '2.75'
+type      = 'speak'
+placement = '122,207'
+
+[[caption]]
+text      = "DEFCON 1"
+from      = '1.6'
+to        = '2.75'
+type      = 'shout'
+placement = '238,207'

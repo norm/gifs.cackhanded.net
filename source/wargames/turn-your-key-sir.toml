@@ -1,0 +1,36 @@
+title = 'Turn your key, sir'
+published = 2022-08-08T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'gun',
+    'nuclear-launch-capsule',
+    'steve-phelps',
+]
+body_markdown = """
+
+Lt. Phelps points his gun at Capt. Lawson, and orders him
+“Turn your key, sir”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:06:21.8'
+duration = '4'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.45mb'
+
+[[caption]]
+text      = "Turn your key, sir"
+from      = '1.6'
+to        = '3'
+type      = 'speak'

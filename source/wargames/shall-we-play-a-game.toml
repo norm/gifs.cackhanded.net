@@ -1,0 +1,30 @@
+title = 'Shall we play a game?'
+published = 2022-01-10T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'joshua',
+]
+body_markdown = """
+
+Joshua asks David “Shall we play a game?”
+
+David smiles.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:40:20.2'
+duration = '4'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.8mb'

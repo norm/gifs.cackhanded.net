@@ -1,0 +1,30 @@
+title = 'Game time remaining'
+published = 2022-12-19T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'joshua',
+    'norad',
+    'wopr',
+]
+body_markdown = """
+
+“Game time remaining 00 hrs 00 min 00 sec” flashing on the WOPR readout
+screen.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:45:57.6'
+duration = '0.4'
+crop     = '1760:860:30:0'
+
+[output]
+colours    = '20'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = 'original'
+loss       = '150'
+max_size   = '0.25mb'

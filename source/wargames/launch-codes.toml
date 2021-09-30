@@ -1,0 +1,37 @@
+title = 'Launch codes'
+published = 2022-02-21T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'cpe1704tks',
+    'joshua',
+    'launch-codes',
+    'norad',
+]
+body_markdown = """
+
+Multiple possibilities for launch codes flashing on a screen at NORAD.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:39:22.1'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '50'
+max_size   = '0.61mb'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '50.7'
+end   = '52.5'

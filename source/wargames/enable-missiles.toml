@@ -1,0 +1,37 @@
+title = 'Enable missiles'
+published = 2022-11-21T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jerry-lawson',
+    'nuclear-launch-capsule',
+]
+body_markdown = """
+
+Capt. Lawson orders Lt. Phelps “Enable missiles.”
+
+Phelps starts flipping covers and switches.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:05:08.9'
+duration = '3.5'
+crop     = '1840:1035'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '15'
+max_size   = '1.5mb'
+
+[[caption]]
+text      = "Enable missiles"
+from      = '0'
+to        = '1'
+type      = 'speak'

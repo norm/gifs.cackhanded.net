@@ -1,0 +1,39 @@
+title = 'Overload'
+published = 2022-02-28T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'norad',
+]
+body_markdown = """
+
+Computers and control panels overloading and exploding all throughout NORAD.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:46:11.0'
+crop     = '1840:1035'
+
+[output]
+colours    = '192'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = 'auto'
+mode       = 'full'
+
+[[clip]]
+start = '0.8'
+end   = '2.3'
+
+[[clip]]
+start = '7.2'
+end   = '8.2'
+
+[[clip]]
+start = '9.5'
+end   = '10.4'

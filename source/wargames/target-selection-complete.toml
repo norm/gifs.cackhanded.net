@@ -1,0 +1,118 @@
+title = 'Target selection complete'
+published = 2022-11-28T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'nuclear-launch-capsule',
+    'steve-phelps',
+]
+body_markdown = """
+
+Lt. Phelps going through the launch checklist, informing Jerry
+"Target selection complete".
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:04:20.8'
+crop     = '1840:1035'
+
+[palette]
+add = [
+    '#0e0c0d',
+    '#483232',
+    '#785939',
+    '#a53d43',
+    '#db5d6c',
+    '#151116',
+    '#520b15',
+    '#7a635a',
+    '#a97d5b',
+    '#1b0d0d',
+    '#522b2f',
+    '#7a706c',
+    '#aca4b7',
+    '#1e1e28',
+    '#533738',
+    '#7b7377',
+    '#b24655',
+    '#1f1c1e',
+    '#555454',
+    '#837c7e',
+    '#211917',
+    '#5b4043',
+    '#896a68',
+    '#292a30',
+    '#5c3739',
+    '#8c6846',
+    '#360e12',
+    '#5d4a4e',
+    '#8d8283',
+    '#363537',
+    '#5d5d63',
+    '#8e858a',
+    '#363942',
+    '#5f6366',
+    '#92827f',
+    '#381d1d',
+    '#601824',
+    '#932635',
+    '#382626',
+    '#625955',
+    '#97898c',
+    '#444550',
+    '#646b6e',
+    '#9b7c66',
+    '#454143',
+    '#6e5856',
+    '#9d8b92',
+    '#470b12',
+    '#706765',
+    '#9e919b',
+    '#472427',
+    '#726c70',
+    '#a35e67',
+    '#00ff00',
+    '#09362d',
+    '#6df0c2',
+    '#0d1016',
+    '#111c28',
+    '#11242c',
+    '#119a5d',
+    '#166249',
+    '#42a17e',
+    '#46de9c',
+    '#00ff00',
+]
+
+[output]
+brightness = '0.04'
+colours    = '20'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '15'
+max_size   = '0.85mb'
+
+[[clip]]
+start = '1.8'
+end   = '4.0'
+
+[[clip]]
+start = '0.5'
+end   = '1.6'
+
+[[caption]]
+text      = "Target selection …"
+from      = '1.2'
+to        = '2.85'
+type      = 'speak'
+placement = '85,217'
+
+[[caption]]
+text      = "Target selection complete"
+from      = '2.86'
+to        = '3.2'
+type      = 'speak'

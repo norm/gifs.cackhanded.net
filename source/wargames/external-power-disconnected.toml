@@ -1,0 +1,35 @@
+title = 'External power disconnected'
+published = 2022-12-12T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'norad',
+]
+body_markdown = """
+
+A sergeant disconnects the external power connections to NORAD.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:32:00.8'
+duration = '3.35'
+crop     = '1840:1035'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.51mb'
+width      = '400'
+
+[[caption]]
+text      = "External power disconnected"
+from      = '1.5'
+to        = '3.4'
+type      = 'speak_400'

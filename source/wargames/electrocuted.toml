@@ -1,0 +1,34 @@
+title = 'Electrocuted'
+published = 2022-03-14T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'mrs-lightman',
+]
+body_markdown = """
+
+Mrs Lightman explaining why she worries about David. “I dunno, sometimes
+I think we’re all going to get electrocuted.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:24:25.0'
+duration = '4'
+crop     = '1840:1035'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=3'
+fps      = '18'
+loss     = '20'
+max_size = '1.25mb'
+
+[[caption]]
+text = "Sometimes I think we’re all\ngoing to get electrocuted"
+from = '0.7'
+to   = '3.6'
+type = 'speak'

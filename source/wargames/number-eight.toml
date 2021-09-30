@@ -1,0 +1,30 @@
+title = 'Number eight'
+published = 2022-10-03T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'control-panel',
+    'nuclear-launch-capsule',
+    'steve-phelps',
+]
+body_markdown = """
+
+The number eight warhead alarm light is lit. Lt. Phelps leans in and taps
+it until it turns green.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:02:57.7'
+duration = '2.1'
+crop     = '1520:855:0:0'
+
+[output]
+colours    = '48'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = '0.5mb'

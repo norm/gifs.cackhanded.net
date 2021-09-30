@@ -1,0 +1,30 @@
+title = 'Launch'
+published = 2022-08-29T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'launch-button',
+    'norad',
+]
+body_markdown = """
+
+A hand unlocks the launch control, flips open the cover, and hovers
+a thumb over the button.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:37:12'
+duration = '1.8'
+crop     = '1600:900:320:100'
+
+[output]
+brightness = '-0.04'
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.65mb'

@@ -1,0 +1,43 @@
+title = 'Does it make any sense?'
+published = 2022-10-31T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jack-beringer',
+    'norad',
+    'stephen-falken',
+]
+body_markdown = """
+
+Falken asks Beringer “But does it make any sense?”
+
+Beringer, confused, retorts “Does what make any sense?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:34:44.8'
+duration = '2.9'
+crop     = '1840:1035'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.1mb'
+
+[[caption]]
+text      = "But does it make any sense?"
+from      = '0.2'
+to        = '1'
+type      = 'speak'
+
+[[caption]]
+text      = "Does what make any sense?"
+from      = '1.5'
+to        = '3'
+type      = 'speak'

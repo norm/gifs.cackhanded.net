@@ -1,0 +1,42 @@
+title = 'How rude'
+published = 2022-09-05T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'jennifer-mack',
+    'joshua',
+]
+body_markdown = """
+
+Jennifer reads from the screen “Connection terminated?” 
+and then declares that to be rude.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:29:45.0'
+duration = '4'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "“Connection terminated”?"
+from      = '1'
+to        = '2.15'
+type      = 'speak'
+
+[[caption]]
+text      = "How rude!"
+from      = '2.16'
+to        = '3'
+type      = 'speak'

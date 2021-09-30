@@ -1,0 +1,42 @@
+title = 'You can go to jail for that'
+published = 2022-06-20T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'jennifer-mack',
+]
+body_markdown = """
+
+Jennifer tells David “You can go to jail for that” to which he responds
+“Only if you’re over 18”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:27:36.5'
+duration = '5'
+crop     = '1840:1035'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.65mb'
+
+[[caption]]
+text      = "You can go to jail for that"
+from      = '1.2'
+to        = '2.7'
+type      = 'speak'
+
+[[caption]]
+text      = "Only if you’re over 18"
+from      = '3'
+to        = '4.4'
+type      = 'speak'

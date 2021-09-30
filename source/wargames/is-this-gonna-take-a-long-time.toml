@@ -1,0 +1,36 @@
+title = 'Is this gonna take a long time?'
+published = 2022-05-02T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'jennifer-mack',
+]
+body_markdown = """
+
+Jennifer nods towards the computer screen and asks David
+“Is this gonna take a long time?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:27:41.6'
+duration = '2.9'
+crop     = '1840:1035'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "Is this gonna take a long time?"
+from      = '1.85'
+to        = '3'
+type      = 'speak'

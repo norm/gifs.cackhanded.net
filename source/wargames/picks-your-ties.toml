@@ -1,0 +1,43 @@
+title = 'Picks your ties'
+published = 2022-06-13T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'john-mckittrick',
+    'norad',
+    'pat-healy',
+    'stephen-falken',
+]
+body_markdown = """
+
+Falken greets McKittrick and notices something.
+“I see the wife still picks your ties.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:34:06.8'
+duration = '2.7'
+crop     = '1840:1035'
+
+[palette]
+add = [
+    '#adf39e',  # green status bar
+]
+
+[output]
+brightness = '0.06'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.08mb'
+
+[[caption]]
+text      = "I see the wife still picks your ties"
+from      = '0.5'
+to        = '2.2'
+type      = 'speak'

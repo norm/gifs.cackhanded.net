@@ -1,0 +1,33 @@
+title = 'Falken’s maze'
+published = 2022-08-22T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'malvin',
+]
+body_markdown = """
+
+Malvin tells David to “Go right through Falken’s Maze!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:33:56.1'
+duration = '2.5'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1mb'
+
+[[caption]]
+text      = "Go right through\nFalken’s Maze!"
+from      = '0.3'
+to        = '1.9'
+type      = 'speak'

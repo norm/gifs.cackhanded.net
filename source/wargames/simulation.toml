@@ -1,0 +1,37 @@
+title = 'Simulation'
+published = 2022-03-28T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'joshua',
+    'norad',
+    'global-thermonuclear-war',
+]
+body_markdown = """
+
+Joshua running multiple Global Thermonuclear War scenarios.
+None have a winner.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:47:36.9'
+crop     = '1840:1035'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = 'original'
+loss       = '50'
+max_size   = '1.6mb'
+
+[[clip]]
+start = '0'
+end   = '2.4'
+
+[[clip]]
+start = '8.5'
+end   = '9.5'

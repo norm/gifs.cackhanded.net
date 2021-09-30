@@ -1,0 +1,43 @@
+title = 'We got something'
+published = 2022-04-04T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'jennifer-mack',
+    'joshua',
+]
+body_markdown = """
+
+A bunch of writing suddenly appears on screen in a seemingly random
+manner. David turns to Jennifer and says “We got something”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:39:07.4'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.12mb'
+
+[[clip]]
+start = '0'
+end   = '2.4'
+
+[[clip]]
+start = '4.2'
+end   = '6.2'
+
+[[caption]]
+text      = "We got something"
+from      = '2.8'
+to        = '3.8'
+type      = 'speak'

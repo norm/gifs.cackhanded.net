@@ -1,0 +1,30 @@
+title = 'WOPR'
+published = 2022-04-25T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'joshua',
+    'norad',
+    'wopr',
+    'pareidolia',
+]
+body_markdown = """
+
+A close-up on the WOPR computer logo and face-like light arrangement.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:15:22'
+duration = '2'
+crop     = '1600:900:320:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = 'original'
+loss       = '20'
+max_size   = '0.35mb'

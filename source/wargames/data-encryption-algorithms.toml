@@ -1,0 +1,34 @@
+title = 'Data encryption algorithms'
+published = 2022-11-07T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'malvin',
+]
+body_markdown = """
+
+Malvin tells David “That system probably has new data encryption algorithms.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:32:55.85'
+duration = '3.2'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.35mb'
+
+[[caption]]
+text      = "That system probably has\nnew data encryption algorithms"
+from      = '0'
+to        = '2.5'
+type      = 'speak'

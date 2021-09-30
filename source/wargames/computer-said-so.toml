@@ -1,0 +1,54 @@
+title = 'Computer said so'
+published = 2023-01-16T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'jennifer-mack',
+]
+body_markdown = """
+
+David tells Jennifer “Anyway, the computer said so”.
+
+And she sounds **so very convinced** when she replies
+“Oh, the computer said so…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:16:50.5'
+duration = '3.9'
+crop     = '1840:1035'
+
+[output]
+brightness = '0.1'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.7mb'
+width      = '400'
+
+[[caption]]
+text      = "Anyway, the\ncomputer said so"
+from      = '0.9'
+to        = '2'
+type      = 'speak_400'
+placement = '140,151'
+
+[[caption]]
+text      = "Oh,                               \nsaid so…"
+from      = '2.01'
+to        = '3.75'
+type      = 'speak_400'
+placement = 'bl'
+
+[[caption]]
+text      = "the computer"
+from      = '2.01'
+to        = '3.75'
+type      = 'shout_400'
+placement = '52,151'

@@ -1,0 +1,109 @@
+title = 'Global thermonuclear war'
+published = 2022-01-17T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'david-lightman',
+    'joshua',
+]
+body_markdown = """
+
+David watches as Joshua lists all of the games available, ending with
+“GLOBAL THERMONUCLEAR WAR”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:30:45.0'
+crop     = '1840:1035'
+
+[palette]
+# force the palette from the colours chosen when treating this as
+# two different GIFs; otherwise David's face ends up very washed
+# out as ffmpeg chooses more blues than skintones
+add = [
+    '#00ff00',
+    '#05080e',
+    '#054f9d',
+    '#070609',
+    '#0b111e',
+    '#0c3e86',
+    '#0e080a',
+    '#0e1731',
+    '#0e1b43',
+    '#0e2056',
+    '#0e3477',
+    '#112c63',
+    '#130e10',
+    '#150b0b',
+    '#191211',
+    '#1974a8',
+    '#1d1717',
+    '#1e0a09',
+    '#1f54a2',
+    '#210f0c',
+    '#231110',
+    '#231512',
+    '#252225',
+    '#2582bf',
+    '#261b18',
+    '#272632',
+    '#331513',
+    '#332926',
+    '#338ed6',
+    '#352f2a',
+    '#373641',
+    '#381d18',
+    '#3a221c',
+    '#3a3532',
+    '#3cb7e5',
+    '#42231d',
+    '#433733',
+    '#433d3e',
+    '#454241',
+    '#46251e',
+    '#482c26',
+    '#4a4950',
+    '#4e2421',
+    '#522e28',
+    '#53545c',
+    '#543531',
+    '#56a2d8',
+    '#58b6ef',
+    '#5c5960',
+    '#5d3734',
+    '#5ec0fd',
+    '#5ee3fc',
+    '#60616b',
+    '#61403c',
+    '#6a6d79',
+    '#6c3b3c',
+    '#6c4442',
+    '#714a48',
+    '#724f4c',
+    '#74737d',
+    '#777c8a',
+    '#77ecfe',
+    '#795251',
+    '#7e8494',
+    '#85595a',
+    '#90676b',
+]
+
+[output]
+colours    = '4'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.25mb'
+
+[[clip]]
+start = '0'
+end   = '4.6'
+
+[[clip]]
+start = '8.7'
+end   = '10'

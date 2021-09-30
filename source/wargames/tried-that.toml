@@ -1,0 +1,36 @@
+title = 'Tried that'
+published = 2022-09-12T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'norad',
+    'paul-richter',
+]
+body_markdown = """
+
+Paul Richter on the phone, saying “I tried that, don’t you think I would’ve
+tried that?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:40:06.0'
+duration = '3.4'
+crop     = '1600:900:0:140'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = 'auto'
+
+[[caption]]
+text      = "I tried that,\ndon’t you think I would’ve tried that?"
+from      = '1'
+to        = '3'
+type      = 'speak'
+margin    = '19'

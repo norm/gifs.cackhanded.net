@@ -1,0 +1,35 @@
+title = 'Listening to a machine'
+published = 2023-01-09T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jack-beringer',
+    'norad',
+    'stephen-falken',
+]
+body_markdown = """
+
+Falken tells Beringer “You are listening to a machine”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '1:35:23.7'
+duration = '3.7'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.96mb'
+
+[[caption]]
+text      = "You are listening to a machine"
+from      = '0.1'
+to        = '2.7'
+type      = 'speak'

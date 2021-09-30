@@ -1,0 +1,34 @@
+title = 'not touching the keys'
+published = 2022-07-04T07:00:00Z
+source_fkey = 'wargames/index'
+tag = [
+    'jennifer-mack',
+]
+body_markdown = """
+
+Jennifer sits down at David’s computer, and reassures him “I’m not
+touching the keys…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'wargames'
+ext      = 'mp4'
+start    = '0:27:02.5'
+duration = '4'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "I’m not touching the keys"
+from      = '0'
+to        = '1.8'
+type      = 'speak'
