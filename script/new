@@ -23,6 +23,12 @@ function create_gif {
     local gif="$3"
     local toml="source/$path/$gif.toml"
 
+    if [ -f "$toml" ]; then
+        read -p "** $toml exists; overwrite? (y/n) " -n1 overwrite
+        echo ''
+        [ "$overwrite" != 'y' -a "$overwrite" != Y ] && exit 1
+    fi
+
     cat <<EOF > "$toml"
 title = '$(echo "$gif" | sed -e 's/-/ /g')'
 published = 2100-01-01T07:00:00Z
