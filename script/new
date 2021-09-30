@@ -87,7 +87,7 @@ loss       = 'no'
 # max_size   = 'auto'
 # mode       = 'full'
 # width      = 'original'
-width    = '640'
+# width      = '400'
 
 # [[clip]]
 # start = '1'
