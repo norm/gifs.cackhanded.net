@@ -1,7 +1,16 @@
 gifs.cackhanded.net
 ===================
 
-Source files for generating https://gifs.cackhanded.net
+Source files for generating https://gifs.cackhanded.net.
+There is a rough [publishing schedule](schedule.markdown)
+for future content.
+No guarantees, substitutions, exchanges, or refunds.
+Follow [@mnfpublishing][bot] for notifications
+or subscribe to [an Atom feed][atom].
+
+[bot]: https://twitter.com/mnfpublishing
+[atom]: https://gifs.cackhanded.net/feeds
+
 
 The GIFs are made using ffmpeg, following advide from the GIPHY engineering
 blog post "[How to make GIFs with FFMPEG][how]",
