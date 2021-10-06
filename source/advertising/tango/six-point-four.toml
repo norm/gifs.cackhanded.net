@@ -1,0 +1,31 @@
+title = '6.4, whoof!'
+published = 2022-01-02T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/tango/index'
+tag = [
+    'apple-tango',
+    'hit-of-the-whole-fruit',
+]
+body_markdown = """
+
+The ceiling cracks open and a whole lot of apple juice sprays down on the man
+lying on the floor below. He caresses himself and tastes some of the juice.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'bR1SEGyVVe0'
+ext      = 'mp4'
+start    = '0:52.5'
+duration = '6.4'
+crop     = '640:360'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.9mb'
+width      = '400'

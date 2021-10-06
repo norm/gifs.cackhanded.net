@@ -1,0 +1,32 @@
+title = 'Look at us'
+published = 2022-01-16T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/tango/index'
+tag = [
+    'ray-gardner',
+    'blackcurrant-tango',
+]
+body_markdown = """
+
+Ray Gardner shouts “Look at us!” and starts running, and a crowd of people
+(some of whom are holding Blackcurrant Tango banners) are revealed and 
+start running with him.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'odCBml5TuNI'
+ext      = 'mp4'
+start    = '1:06.0'
+duration = '7'
+crop     = '640:400:0:40'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '2.7mb'
+width      = '400'

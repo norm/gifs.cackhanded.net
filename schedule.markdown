@@ -58,7 +58,7 @@ Comedy movie day.
 Miscellany day. YouTubers, adverts, anything really.
 
 * ...
-* Nostalgic adverts, from 2021-11-14 through 2022.
+* Nostalgic adverts, from 2021-11-14 through probably all of 2022.
 
 
 ## Afternoons

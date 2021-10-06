@@ -1,0 +1,30 @@
+title = 'Any Old Irn'
+published = 2021-12-19T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/irn-bru/index'
+tag = [
+    'irn-bru',
+    'vending-machine',
+]
+body_markdown = """
+
+A chap unwisely slaps at an Irn Bru vending machine, which throws a can
+into hit stomach.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '-rEd55q1k5A'
+ext      = 'mp4'
+start    = '0:54.8'
+duration = '6'
+crop     = '1400:900:260:180'
+
+[output]
+colours    = '74'
+fps        = '18'
+loss       = '50'
+max_size   = '2.5mb'
+mode       = 'full'
+width      = '400'

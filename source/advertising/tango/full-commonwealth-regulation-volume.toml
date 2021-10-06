@@ -1,0 +1,34 @@
+title = 'Full Commonwealth regulation volume'
+published = 2022-01-23T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/tango/index'
+tag = [
+    'barrel',
+    'extinguisher',
+    'office-chair',
+    'orange-tango',
+    'hit-of-the-whole-fruit',
+]
+body_markdown = """
+
+A chap on an office chair propelled by an extinguisher slams into a
+barrel full of oranges.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'bR1SEGyVVe0'
+ext      = 'mp4'
+start    = '0:20.4'
+duration = '6.3'
+crop     = '640:360'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '2mb'
+width      = '400'

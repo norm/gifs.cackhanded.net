@@ -1,0 +1,30 @@
+title = 'Made in Scotland from girders'
+published = 2021-12-12T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/irn-bru/index'
+tag = [
+    'irn-bru',
+    'vending-machine',
+]
+body_markdown = """
+
+A chap unwisely slaps at an Irn Bru vending machine, which then nuts him.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = '4h03QLwxi1g'
+ext      = 'mp4'
+start    = '1:17.9'
+duration = '2.55'
+crop     = '1400:900:260:140'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.5mb'
+width      = '400'

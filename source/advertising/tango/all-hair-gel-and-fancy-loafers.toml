@@ -1,0 +1,31 @@
+title = 'All hair gel and fancy loafers'
+published = 2022-01-09T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/tango/index'
+tag = [
+    'ray-gardner',
+    'blackcurrant-tango',
+]
+body_markdown = """
+
+Ray Gardner, walking out of his office, strips off his tie and shirt, and
+undoes his trousers so they fall down.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'odCBml5TuNI'
+ext      = 'mp4'
+start    = '0:38'
+duration = '8.5'
+crop     = '640:400:0:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '3.3mb'
+width      = '360'

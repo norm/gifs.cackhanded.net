@@ -1,0 +1,30 @@
+title = 'That’s naughty'
+published = 2022-02-06T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/tango/index'
+tag = [
+    'apple-tango',
+    'hit-of-the-whole-fruit',
+]
+body_markdown = """
+
+A drop of apple juice falls from the ceiling onto a man’s face. He licks it
+up. We see a shot of the hallway above containing about a foot deep juice.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'bR1SEGyVVe0'
+ext      = 'mp4'
+start    = '0:36.6'
+duration = '5.5'
+crop     = '640:360'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.3mb'

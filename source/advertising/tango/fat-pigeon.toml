@@ -1,0 +1,40 @@
+title = 'Fat pigeon!'
+published = 2022-02-13T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/tango/index'
+tag = [
+    'apple-tango',
+    'bathtub',
+    'pigeon',
+    'hit-of-the-whole-fruit',
+]
+body_markdown = """
+
+A pigeon lands on a man who is suspended from the ceiling by velcro. The
+extra weight causes him to fall, right into a bathtub full of apple juice.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'bR1SEGyVVe0'
+ext      = 'mp4'
+start    = '1:51.6'
+crop     = '620:360'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.6mb'
+width      = '400'
+
+[[clip]]
+start = '0'
+end   = '3.1'
+
+[[clip]]
+start = '3.7'
+end   = '7'

@@ -1,0 +1,30 @@
+title = 'In the air tonight'
+published = 2021-12-05T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/cadbury/index'
+tag = [
+    'gorilla',
+    'drum-kit',
+]
+body_markdown = """
+
+A gorilla plays the drums.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'Rs2z7OA3XKI'
+ext      = 'mp4'
+start    = '0:52.0'
+duration = '8'
+crop     = '1840:1035'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '25'
+max_size   = '1.85mb'
+width      = '360'

@@ -1,0 +1,31 @@
+title = 'Slap'
+published = 2022-01-30T07:00:00Z
+parent_fkey = 'advertising/index'
+brand_fkey = 'advertising/tango/index'
+tag = [
+    'orange-tango',
+    'slap',
+    'you-know-when-youve-been-tangod',
+]
+body_markdown = """
+
+A big orange fella gives a chap holding a can of Tango a good old slapping.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'cqm-s6h8l1I'
+ext      = 'mp4'
+start    = '0:17'
+duration = '5.2'
+crop     = '950:650'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.3mb'
+width      = '400'
