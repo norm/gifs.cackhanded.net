@@ -1,0 +1,38 @@
+title = 'Page turner'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'archer/index'
+tag = [
+    'algernop-krieger',
+    'sterling-archer',
+    'tentacle-porn',
+]
+body_markdown = """
+
+Krieger is looking at a Japanese magazine sideways. A tentacle-shaped
+fold-out falls down. He exclaims “Oho, this one’s a real page turner!”
+
+Archer just shakes his head.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'archer-1206'
+ext      = 'm4v'
+start    = '9:49.8'
+duration = '4.4'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '0.85mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Oho, this one’s a real page turner!"
+from      = '1.3'
+to        = '3.7'
+type      = 'speak'

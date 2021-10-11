@@ -1,0 +1,76 @@
+title = 'Smoke bomb!'
+published = 2100-01-01T07:00:00Z
+source_fkey = 'archer/index'
+tag = [
+    'algernop-krieger',
+    'anthony-drake',
+    'malory-archer',
+    'sterling-archer',
+]
+body_markdown = """
+
+Krieger mimes throwing something to the floor, shouts “Smoke bomb!”
+and runs off.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'archer-312'
+ext      = 'm4v'
+start    = '4:07.2'
+duration = '2.6'
+crop     = '1120:630:16:50'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '25'
+max_size   = 'auto'
+
+[[caption]]
+text          = "SMOKE BOMB!"
+from          = '0.9'
+to            = '1.5'
+colour        = '#fff'
+type          = 'shout'
+size          = '60'
+stroke_colour = '#000'
+
+[[caption]]
+text          = "SMOKE BOMB!"
+from          = '1.51'
+to            = '1.65'
+type          = 'shout'
+colour        = '#fffc'
+size          = '60'
+stroke_colour = '#000c'
+
+[[caption]]
+text          = "SMOKE BOMB!"
+from          = '1.66'
+to            = '1.75'
+type          = 'shout'
+colour        = '#fff9'
+size          = '60'
+stroke_colour = '#0009'
+
+[[caption]]
+text          = "SMOKE BOMB!"
+from          = '1.76'
+to            = '1.85'
+type          = 'shout'
+colour        = '#fff6'
+size          = '60'
+stroke_colour = '#0006'
+
+[[caption]]
+text          = "SMOKE BOMB!"
+from          = '1.86'
+to            = '1.95'
+type          = 'shout'
+colour        = '#fff3'
+size          = '60'
+stroke_colour = '#0003'
