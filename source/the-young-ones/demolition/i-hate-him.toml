@@ -1,0 +1,36 @@
+title = 'I hate him'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/demolition/index'
+tag = [
+    'mike-the-cool-person',
+    'rick-pratt',
+]
+body_markdown = """
+
+Rick gestures in frustration, and tells Mike “I hate him!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_101'
+ext      = 'm4v'
+start    = '17:04.3'
+duration = '9'
+crop     = '680:410:20:40'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '3.3mb'
+width      = '400'
+
+[[caption]]
+text      = "I hate him!"
+from      = '6.6'
+to        = '7.6'
+type      = 'shout_400'

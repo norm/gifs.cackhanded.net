@@ -1,0 +1,39 @@
+title = 'Sycophant!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/demolition/index'
+tag = [
+    'jerzei-balowski',
+    'mike-the-cool-person',
+    'neil-pye',
+    'rick-pratt',
+    'vyvyan-basterd',
+]
+body_markdown = """
+
+WRITE ME.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_101'
+ext      = 'm4v'
+start    = '6:09'
+duration = '3.6'
+crop     = '680:410:20:40'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.35mb'
+
+[[caption]]
+text      = "Sycophant!"
+from      = '0'
+to        = '0.9'
+type      = 'shout'

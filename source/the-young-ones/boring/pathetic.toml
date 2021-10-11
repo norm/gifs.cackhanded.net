@@ -1,0 +1,35 @@
+title = 'Pathetic'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/boring/index'
+tag = [
+    'rick-pratt',
+]
+body_markdown = """
+
+Rick calls Vyvyan's efforts to win a competition pathetic.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_103'
+ext      = 'm4v'
+start    = '2:40.6'
+duration = '3.2'
+crop     = '680:410:20:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.1mb'
+width      = '400'
+
+[[caption]]
+text      = "Pathetic!"
+from      = '0.3'
+to        = '1.5'
+type      = 'shout_400'

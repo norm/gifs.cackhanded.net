@@ -1,0 +1,36 @@
+title = 'Bastard!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/demolition/index'
+tag = [
+    'rick-pratt',
+]
+body_markdown = """
+
+Rick struggles to get out “Bastard!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_101'
+ext      = 'm4v'
+start    = '12:43.5'
+duration = '1.7'
+crop     = '680:410:20:100'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '0.6mb'
+
+[[caption]]
+text      = "Bastard!"
+from      = '0.8'
+to        = '1.6'
+type      = 'shout'
+size      = '40'

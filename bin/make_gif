@@ -13,7 +13,14 @@ green=$'\e'[32m
 cyan=$'\e'[36m
 magenta=$'\e'[35m
 reset=$'\e'[0m
-
+# TODO
+# optical stab http://blog.gregzaal.com/2014/05/30/camera-stabilisation-with-ffmpeg/
+# How to deshake a video
+# #opensource ffmpeg with vidstab: https://github.com/georgmartius/vid.stab…
+# # pass1
+# ffmpeg -i input.mp4 -vf vidstabdetect -f null -
+# # pass2
+# ffmpeg -i input.mp4 -vf vidstabtransform=crop=black:smoothing=20,unsharp=5:5:0.8:3:3:0.4 output.mp4
 
 function main {
     local toml="$1"

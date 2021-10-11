@@ -43,8 +43,11 @@ EOF
 
     cat <<EOF >> "$toml"
 tag = [
-    'tag',
-    'tag2',
+    'jerzei-balowski',
+    'mike-the-cool-person',
+    'neil-pye',
+    'rick-pratt',
+    'vyvyan-basterd',
 ]
 body_markdown = """
 
@@ -53,16 +56,16 @@ WRITE ME.
 """
 
 [video]
-source   = 'file | youtube'
-file     = '$path'
+source   = 'file'
+file     = 'young_ones_103'
 ext      = 'm4v'
-start    = '0:00:00.0'
+start    = '0:00.0'
 duration = '1'
 # end      = '00:00:00.0'
 # even numbered 16x9 crops:
 # 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
 # video size: REPLACE_SIZE
-# crop     = '800:450'
+crop     = '680:410:20:40'
 
 # [palette]
 # add = [
@@ -75,14 +78,9 @@ duration = '1'
 [output]
 # brightness = '0'
 colours    = '254'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=0-5'
-# dither     = 'floyd_steinberg'
-# dither     = 'sierra2'
-# dither     = 'sierra2_4a'
-# fps        = '12'
-# fps        = '18'
-fps        = 'original'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
 loss       = 'no'
 max_size   = 'auto'
 # mode       = 'full'

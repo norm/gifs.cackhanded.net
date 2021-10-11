@@ -1,0 +1,46 @@
+title = 'It was bound to happen'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/oil/index'
+tag = [
+    'neil-pye',
+    'rick-pratt',
+    'vyvyan-basterd',
+]
+body_markdown = """
+
+Vyvyan, after getting a pickaxe through his head, says “That’s okay Neil. It
+was bound to happen sooner or later” and falls over.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_102'
+ext      = 'm4v'
+start    = '24:57.0'
+duration = '7.5'
+crop     = '680:410:20:70'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = 'auto'
+# mode       = 'full'
+# width      = 'original'
+# width      = '400'
+
+[[caption]]
+text      = "That’s okay Neil"
+from      = '1.25'
+to        = '2.2'
+type      = 'speak'
+
+[[caption]]
+text      = "It was bound to happen,\nsooner or later"
+from      = '3.1'
+to        = '5.4'
+type      = 'speak'

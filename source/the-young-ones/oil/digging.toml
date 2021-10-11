@@ -1,0 +1,33 @@
+title = 'Digging'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/oil/index'
+tag = [
+    'neil-pye',
+    'rick-pratt',
+    'vyvyan-basterd',
+]
+body_markdown = """
+
+Rick watches as Neil and Vyvyan dig for oil. Neil is using a pickaxe,
+and Vyvyan is using his head.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_102'
+ext      = 'm4v'
+start    = '24:40.05'
+duration = '2.7'
+crop     = '640:385:40:130'
+
+[output]
+brightness = '0.025'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '60'
+max_size   = '0.7mb'
+width      = '400'

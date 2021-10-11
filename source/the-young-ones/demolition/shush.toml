@@ -1,0 +1,32 @@
+title = 'Shush!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/demolition/index'
+tag = [
+    'mike-the-cool-person',
+    'rick-pratt',
+    'the-fifth-roommate',
+]
+body_markdown = """
+
+Rick shushes everyone with wildly gesticulating arms, then settles in
+to watch a TV programme.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_101'
+ext      = 'm4v'
+start    = '23:34.0'
+duration = '4.8'
+crop     = '680:410:20:10'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.5mb'

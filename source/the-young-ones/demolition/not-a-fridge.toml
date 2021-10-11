@@ -1,0 +1,35 @@
+title = 'Not a fridge'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/demolition/index'
+tag = [
+    'neil-pye',
+    'rick-pratt',
+]
+body_markdown = """
+
+Rick tells Neil “I’m not a fridge, you know!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_101'
+ext      = 'm4v'
+start    = '1:12.4'
+duration = '3'
+crop     = '680:410:20:40'
+
+[output]
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = 'auto'
+
+[[caption]]
+text      = "I’m not a fridge, you know!"
+from      = '0.5'
+to        = '1.8'
+type      = 'speak'

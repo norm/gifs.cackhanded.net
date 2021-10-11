@@ -1,0 +1,35 @@
+title = 'Dinner on the floor'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/demolition/index'
+tag = [
+    'neil-pye',
+]
+body_markdown = """
+
+Neil shouts upstairs “There’s some dinner on the floor, if you want it”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_101'
+ext      = 'm4v'
+start    = '2:25.8'
+duration = '3'
+crop     = '680:410:20:10'
+
+[output]
+brightness = '0.06'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = 'auto'
+
+[[caption]]
+text      = "There’s some dinner on the floor,\nif you want it"
+from      = '0.4'
+to        = '2.6'
+type      = 'speak'

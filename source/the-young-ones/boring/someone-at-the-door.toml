@@ -1,0 +1,36 @@
+title = 'Someone at the door'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'the-young-ones/index'
+episode_fkey = 'the-young-ones/boring/index'
+tag = [
+    'mike-the-cool-person',
+    'neil-pye',
+    'rick-pratt',
+]
+body_markdown = """
+
+Neil shouts at himself “There’s someone at the door, Neil!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'young_ones_103'
+ext      = 'm4v'
+start    = '7:39.95'
+duration = '3.6'
+crop     = '680:410:20:40'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.4mb'
+
+[[caption]]
+text      = "There’s someone at the door, Neil!"
+from      = '0.15'
+to        = '1.75'
+type      = 'shout'
