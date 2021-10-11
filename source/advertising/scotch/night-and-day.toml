@@ -1,0 +1,83 @@
+title = 'night and day'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/scotch/index'
+tag = [
+    'david-lightman',
+    'imsai-8080',
+    'jack-beringer',
+    'jennifer-mack',
+    'joshua',
+    'norad',
+    'paul-richter',
+]
+body_markdown = """
+
+WRITE ME.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'YL3AzOFOolY'
+ext      = 'mp4'
+start    = '0:10.2'
+duration = '4.4'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: 640:480
+crop     = '630:440'
+
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# show = 1
+
+[output]
+# brightness = '0'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+# dither     = 'floyd_steinberg'
+# dither     = 'sierra2'
+# dither     = 'sierra2_4a'
+# fps        = '12'
+fps        = '18'
+# fps        = 'original'
+loss       = 'no'
+max_size   = 'auto'
+# mode       = 'full'
+# width      = 'original'
+# width      = '400'
+
+# [[clip]]
+# start = '1'
+# end   = '2'
+
+# [[caption]]
+# text      = "Looks like I picked the\nwrong week to give up drinking"
+# from      = '1'
+# to        = '2'
+# type      = 'speak'
+#
+##### not required, but can be used if needed
+# align     = 'center'
+# colour    = 'white'
+# font      = 'assistant-semibold.ttf'      # DEFAULT
+# font      = 'assistant-extrabold.ttf'     # emphasis
+# font      = 'acherusgrotesque-black.otf'  # eurovision
+# font      = 'greycliffcf-medium.otf'
+# font      = 'greycliffcf-heavy.otf'       # emphasis
+# font      = 'lato-black.ttf'              # "TOP. MEN."
+# font      = 'oita.otf'                    # Horizon Zero Dawn
+# font      = 'poppins-black.ttf'           # Spider-Verse
+# font      = 'morlrounded-regular.otf'     # animated
+# font      = 'morlrounded-italic.otf'      # animated actions (bonk, scream)
+# margin    = '10'
+# placement = 'bc'
+# size      = '24'
+# stroke_colour = 'black'
+# stroke_width  = '2'

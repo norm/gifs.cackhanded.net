@@ -1,0 +1,59 @@
+title = 'nutter'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/dime/index'
+tag = [
+    'david-lightman',
+    'imsai-8080',
+    'jack-beringer',
+    'jennifer-mack',
+    'joshua',
+    'norad',
+    'paul-richter',
+]
+body_markdown = """
+
+WRITE ME.
+
+"""
+
+[video]
+source   = 'youtube'
+file     = 'tmgBsjL4WTQ'
+ext      = 'mp4'
+start    = '0:25.9'
+duration = '2.95'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: 600:480
+crop     = '560:400'
+
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# show = 1
+
+[output]
+# brightness = '0'
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=2'
+# dither     = 'floyd_steinberg'
+# dither     = 'sierra2'
+# dither     = 'sierra2_4a'
+# fps        = '12'
+fps        = '15'
+# fps        = 'original'
+loss       = 'no'
+max_size   = 'auto'
+# mode       = 'full'
+width      = '400'
+
+[[caption]]
+text      = "That bloke’s a nutter"
+from      = '0.4'
+to        = '2.1'
+type      = 'speak_400'
