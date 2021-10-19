@@ -8,5 +8,3 @@ wikipedia = 'Galaxy_Quest'
 ```
 
 Never give up, never surrender.
-
-# TODO nothing from limo to leaving the Protector first contact
