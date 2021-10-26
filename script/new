@@ -1,5 +1,7 @@
 #!/usr/bin/env bash -euo pipefail
 
+yellow=$'\e'[33m
+reset=$'\e'[0m
 
 function main {
     local create="$1"
@@ -22,104 +24,36 @@ function create_gif {
     local path="$2"
     local gif="$3"
     local toml="source/$path/$gif.toml"
+    local output="source/$path/$gif.gif"
+    local template="source/$(dirname "$path")/new"
+    local overwrite=1
 
     if [ -f "$toml" ]; then
+        overwrite=0
         read -p "** $toml exists; overwrite? (y/n) " -n1 overwrite
         echo ''
-        [ "$overwrite" != 'y' -a "$overwrite" != Y ] && exit 1
+        [ "$overwrite" = 'y' -o "$overwrite" = Y ] && overwrite=1
     fi
 
-    cat <<EOF > "$toml"
-title = '$(echo "$gif" | sed -e 's/-/ /g')'
-published = 2100-01-01T07:00:00Z
-EOF
-    
-    if [ "$source" = "$path" ]; then
-        echo "source_fkey = '$source/index'" >> "$toml"
-    else
-        echo "show_fkey = '$source/index'" >> "$toml"
-        echo "episode_fkey = '$path/index'" >> "$toml"
+    if [ $overwrite = 1 ]; then
+        PATH="$path"
+        TITLE="$(echo "$gif" | sed -e 's/-/ /g')"
+        PUBLISHED="published = 2100-01-01T07:00:00Z"
+        KEYS="show_fkey = '$source/index'"$'\n'
+        KEYS+="episode_fkey = '$path/index'"
+
+        [ "$source" = "$path" ] \
+            && KEYS="source_fkey = '$source/index'"
+
+        [ ! -f $template ] \
+            && template=source/new
+
+        export KEYS PATH PUBLISHED TITLE
+        envsubst < $template > $toml
+
+        subl -w $toml
     fi
 
-    cat <<EOF >> "$toml"
-tag = [
-    'tag',
-    'tag2',
-]
-body_markdown = """
-
-WRITE ME.
-
-"""
-
-[video]
-source   = 'file | youtube'
-file     = '$path'
-ext      = 'm4v'
-start    = '0:00:00.0'
-duration = '1'
-# end      = '00:00:00.0'
-# even numbered 16x9 crops:
-# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
-# video size: REPLACE_SIZE
-# crop     = '800:450'
-
-# [palette]
-# add = [
-#     '#5a7e4c',
-#     '#d5dc4b',
-# ]
-# list = 1
-# show = 1
-
-[output]
-# brightness = '0'
-colours    = '254'
-# denoise    = true
-# dither     = 'bayer:bayer_scale=0-5'
-# dither     = 'floyd_steinberg'
-# dither     = 'sierra2'
-# dither     = 'sierra2_4a'
-# fps        = '12'
-# fps        = '18'
-fps        = 'original'
-loss       = 'no'
-max_size   = 'auto'
-# mode       = 'full'
-# width      = 'original'
-# width      = '400'
-
-# [[clip]]
-# start = '1'
-# end   = '2'
-
-# [[caption]]
-# text      = "Looks like I picked the\nwrong week to give up drinking"
-# from      = '1'
-# to        = '2'
-# type      = 'speak'
-#
-##### not required, but can be used if needed
-# align     = 'center'
-# colour    = 'white'
-# font      = 'assistant-semibold.ttf'      # DEFAULT
-# font      = 'assistant-extrabold.ttf'     # emphasis
-# font      = 'acherusgrotesque-black.otf'  # eurovision
-# font      = 'greycliffcf-medium.otf'
-# font      = 'greycliffcf-heavy.otf'       # emphasis
-# font      = 'lato-black.ttf'              # "TOP. MEN."
-# font      = 'oita.otf'                    # Horizon Zero Dawn
-# font      = 'poppins-black.ttf'           # Spider-Verse
-# font      = 'morlrounded-regular.otf'     # animated
-# font      = 'morlrounded-italic.otf'      # animated actions (bonk, scream)
-# margin    = '10'
-# placement = 'bc'
-# size      = '24'
-# stroke_colour = 'black'
-# stroke_width  = '2'
-EOF
-
-    subl -w $toml
     ./script/get_videos $toml
 
     dimensions=$(
@@ -136,6 +70,40 @@ EOF
             $toml
 
     subl $toml
+
+    # run this in the background, until we exit
+    ( echo $toml | entr -np sh -c 'echo ""; make' ) &
+    make
+
+    while true; do
+        read -s -N1 key
+        case $key in
+            g)      printf "$yellow>   Send to GIFwrapped$reset\n"
+                    (
+                        make gifwrapped
+                        printf "$yellow>   Done$reset\n"
+                    ) &
+                    ;;
+            l)      echo '    -----------------------------------------------'
+                    ;;
+            p)      printf "$yellow+   Preview$reset\n"
+                    open -a Preview $output
+                    ;;
+            ' ')    printf "$yellow*   Rebuild$reset"
+                    sed -i '' -e 's/XYZZZYX/XYZZZYX/' $toml
+                    ;;
+            $'\n')  echo ''
+                    ;;
+            \?)     echo ''
+                    echo 'Hit: [ ]:Rebuild [G]ifwrapped [L]ine [P]review [Q]uit'
+                    ;;
+            q)      break
+                    ;;
+        esac
+    done
+
+    # exit, taking the backgrounded entr with us
+    kill -2 0
 }
 
 function create_source {

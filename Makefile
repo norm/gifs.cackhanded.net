@@ -31,6 +31,7 @@ gifwrapped: gifs
 
 generate:
 	@flourish generate -v
+	@find output -name new -exec rm {} \;
 
 baked_css:
 	@./script/update_css
@@ -63,6 +64,7 @@ test_generated:
 
 test_future:
 	@flourish generate -v --include-future
+	@find output -name new -exec rm {} \;
 	@./script/test_generated_site
 
 unstash:

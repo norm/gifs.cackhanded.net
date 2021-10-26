@@ -3,7 +3,6 @@
 function main {
     case "${1:-}" in
         -h|help)    usage ;;
-        count)      count_unscheduled ;;
         [0-9]*)     list_scheduled_gifs "$@" ;;
         '')         list_unscheduled_gifs ;;
         *)          list_scheduled_gifs 30 "$@" ;;

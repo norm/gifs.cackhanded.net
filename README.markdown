@@ -287,25 +287,41 @@ To make the GIFs:
     # create GIFs with FFmpeg debugging output
     % GIF_DEBUG=y make
 
-To add a new GIF:
+To add a new GIF, use the `new` script:
 
     % ./script/new airplane/surely-you-cant-be-serious
 
-    # (opens config in Sublime Text)
-    # edit the config, save and close, and it makes the GIF
-    # (opens the GIF in Safari for previewing)
+It will create a new configuration from either a context-specific template (in
+this example, it would look for `source/airplane/new`), or the default
+template (stored in `source/new`), and open it in Sublime Text.
 
-    # this will rebuild the GIF and refresh it in Safari as
-    # you continue tweaking the config until you are happy
-    % make remake
+Once it has been edited for rough timings, captions, etc. closing the file
+makes the GIF and opens it in Safari for previewing. The file is reopened
+in Sublime Text and a loop now commences; as changes are saved to the file
+the GIF will be automatically remade. During this loop, pressing:
 
-    # when done, update the published date
+  * **G** will run `make gifwrapped` — to send any new GIFs to the
+    right location in Dropbox for [GIFwrapped][gw] to pick them up
+    for on-device previewing
+  * **P** will open the GIF in Preview — to be able to step through it
+    frame by frame, useful for getting caption/cut timings right
+  * **L** will mark the output with a line — useful when comparing runs
+    with different settings for output sizes, for example
+  * **Return** will output a blank line
+  * **?** will output a reminder of the keys available
+  * **Q** will quit the loop and exit
+
+To add the GIF to the site for right now, update the published date and
+push it to GitHub:
+
     % ./script/now airplane/surely-you-cant-be-serious
-
-    # commit and push (GitHub actions will update the website)
     % git add source/airplane/surely-you-cant-be-serious*
     % git commit -m'Add GIF'
     % git push origin main
+
+Otherwise, schedule it for the future and commit at your leisure.
+
+[gw]: https://gifwrapped.co
 
 
 ## Scheduling GIFs
@@ -322,11 +338,8 @@ To list what is scheduled, there is a `next` script in the repo.
 
     # find the next day with no morning GIF scheduled
     # (afternoon GIFs are considered secondary content);
-    # also shows a count and breakdown of what unscheduled
+    # also shows a count and breakdown of what is unscheduled
     ./script/next
-
-    # show only the count of unscheduled GIFs
-    ./script/next unscheduled
 
     # show what is scheduled in the next 60 days
     ./script/next 60
