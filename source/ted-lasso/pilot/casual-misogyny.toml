@@ -2,7 +2,10 @@ title = 'Your casual misogyny for one'
 published = 2100-01-01T07:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/pilot/index'
-tag = ['rebecca-welton', 'george']
+tag = [
+    'george-cartrick',
+    'rebecca-welton',
+]
 body_markdown = """
 
 Rebecca explaining to ex-manager George why he was fired. “Your casual

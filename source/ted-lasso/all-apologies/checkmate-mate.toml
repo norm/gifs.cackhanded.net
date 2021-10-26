@@ -4,7 +4,7 @@ show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/all-apologies/index'
 tag = [
     'coach-beard',
-    'jane',
+    'jane-payne',
 ]
 body_markdown = """
 
