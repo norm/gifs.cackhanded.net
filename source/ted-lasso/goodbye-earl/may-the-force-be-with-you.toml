@@ -1,0 +1,38 @@
+title = 'May the Force be with you'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'keeley-jones',
+    'leslie-higgins',
+    'rebecca-welton',
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted blesses Higgins, “May the Force be with you”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '9:54.9'
+duration = '1.9'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1mb'
+
+[[caption]]
+text      = "May the Force be with you"
+from      = '0.7'
+to        = '1.9'
+type      = 'speak'

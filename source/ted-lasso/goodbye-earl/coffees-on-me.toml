@@ -1,0 +1,50 @@
+title = 'Coffees are on me'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'john-wingsnight',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca tells John “Coffees are on me.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '29:45.2'
+duration = '4.6'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.45mb'
+
+[[caption]]
+text      = "Coffees are on me"
+from      = '0'
+to        = '1'
+type      = 'speak'
+placement = '80,217'
+
+[[caption]]
+text      = "Yeah, fair enough"
+from      = '1.8'
+to        = '2.8'
+type      = 'speak'
+placement = '210,217'
+
+[[caption]]
+text      = "Cheers"
+from      = '3.7'
+to        = '4.2'
+type      = 'speak'
+placement = '280,217'

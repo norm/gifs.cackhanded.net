@@ -1,0 +1,36 @@
+title = 'Football is death!'
+published = 2021-12-24T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'dani-rojas',
+]
+body_markdown = """
+
+Dani Rojas, panting after a nightmare, screams “Football is death!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '14:11.0'
+duration = '5'
+crop     = '1200:675'
+
+[output]
+brightness = '0.02'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.85mb'
+
+[[caption]]
+text      = "FOOTBALL IS DEATH!"
+from      = '1.2'
+to        = '4'
+type      = 'shout'
+size      = '44'

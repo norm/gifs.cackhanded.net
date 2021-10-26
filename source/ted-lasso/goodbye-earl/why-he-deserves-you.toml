@@ -1,0 +1,51 @@
+title = 'Why he deserves you'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'rebecca-welton',
+    'roy-kent',
+]
+body_markdown = """
+
+Roy tells Rebecca “It’s not about him, it’s about why **the fuck** you 
+think he deserves you”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '24:10.0'
+duration = '4'
+crop     = '1200:675:50:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.05mb'
+
+[[caption]]
+text      = "It’s not about him\n "
+from      = '0.35'
+to        = '1.2'
+type      = 'speak'
+placement = '173,180'
+
+[[caption]]
+text      = "It’s about                              \nyou think he deserves you"
+from      = '1.21'
+to        = '3.3'
+type      = 'speak'
+placement = '124,180'
+
+[[caption]]
+text      = "why the fuck"
+from      = '1.21'
+to        = '3.3'
+type      = 'shout'
+placement = '257,180'

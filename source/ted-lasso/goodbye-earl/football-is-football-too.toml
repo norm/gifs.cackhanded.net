@@ -1,0 +1,51 @@
+title = 'Football is football too'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'coach-beard',
+    'dani-rojas',
+    'ted-lasso',
+]
+body_markdown = """
+
+Dani tells Coach Beard and Ted that Dr Fieldstone reminded him that
+“Even though football is life, football is also death, and that
+football is football too”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '31:40.6'
+duration = '8'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.35mb'
+
+[[caption]]
+text      = "Even though football is life"
+from      = '0'
+to        = '2'
+type      = 'speak'
+
+[[caption]]
+text      = "Football is also death"
+from      = '2.6'
+to        = '3.8'
+type      = 'speak'
+
+[[caption]]
+text      = "And that football is football too"
+from      = '5.1'
+to        = '6.8'
+type      = 'speak'

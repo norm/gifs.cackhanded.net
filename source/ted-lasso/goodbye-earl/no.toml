@@ -1,0 +1,37 @@
+title = 'No'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    '404-page-candidate',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca, telling Ted “No”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '14:51.1'
+duration = '1.7'
+crop     = '1040:585:316:20'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.26mb'
+
+[[caption]]
+text      = "No"
+from      = '1.1'
+to        = '1.6'
+type      = 'speak'
+placement = '240,217'

@@ -3,8 +3,9 @@ published = 2021-03-19T07:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/biscuits/index'
 tag = [
-    'roy-kent',
     'colin-hughes',
+    'roy-kent',
+    'shower',
 ]
 body_markdown = """
 

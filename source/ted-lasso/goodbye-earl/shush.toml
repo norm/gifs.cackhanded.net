@@ -1,0 +1,31 @@
+title = 'Shush!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'keeley-jones',
+    'rebecca-welton',
+    'ted-lasso',
+]
+body_markdown = """
+
+Keeley and Rebecca simultaneously shush Ted, who indicates apology.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '10:06.9'
+duration = '1.5'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '0.73mb'

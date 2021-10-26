@@ -1,0 +1,41 @@
+title = 'Umbrella'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted telling Nate “I shouldn’t bring an umbrella to a brainstorm,
+so I appreciate you getting the ball rolling”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '18:05.6'
+duration = '3.15'
+crop     = '960:540:400:60'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '0'
+max_size   = '0.6mb'
+
+[[caption]]
+text      = "I shouldn’t bring\nan umbrella to a brainstorm"
+from      = '0'
+to        = '1.9'
+type      = 'speak'
+
+[[caption]]
+text      = "so I appreciate you\ngetting the ball rolling"
+from      = '1.91'
+to        = '3'
+type      = 'speak'

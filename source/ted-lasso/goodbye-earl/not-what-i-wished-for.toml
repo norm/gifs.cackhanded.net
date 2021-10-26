@@ -1,0 +1,39 @@
+title = 'Not what I wished for'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'coach-beard',
+    'nathan-shelley',
+    'ted-lasso',
+]
+body_markdown = """
+
+Nate turns to Ted and Coach Beard and says “I promise, that’s not
+what I wished for” then turns back to look at the pitch.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '2:17.3'
+duration = '3'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.25mb'
+
+[[caption]]
+text      = "I promise that’s not what I wished for"
+from      = '0.3'
+to        = '1.9'
+type      = 'speak'
+margin    = '0'
+placement = '20,217'

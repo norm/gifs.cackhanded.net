@@ -1,0 +1,46 @@
+title = 'Shakespearean fucking tragedy'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/goodbye-earl/index'
+tag = [
+    'coach-beard',
+    'nathan-shelley',
+]
+body_markdown = """
+
+Coach Beard tells Ted “We’ve got a situation, coach”.
+
+Nate goes deeper “He’s underselling, we’ve got a Shakespearean
+fucking tragedy!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_201'
+ext      = 'm4v'
+start    = '16:00.55'
+duration = '4.4'
+crop     = '880:495:200:110'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.7mb'
+
+[[caption]]
+text      = "We got a\nsituation, coach"
+from      = '0.2'
+to        = '1.6'
+type      = 'speak'
+placement = 'bl'
+
+[[caption]]
+text      = "He’s underselling, we’ve got\na Shakespearean fucking tragedy"
+from      = '1.8'
+to        = '3.8'
+type      = 'speak'
+placement = 'br'
