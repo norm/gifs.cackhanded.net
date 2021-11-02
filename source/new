@@ -14,7 +14,7 @@ WRITE ME.
 
 [video]
 source   = 'file | youtube'
-file     = '$PATH'
+file     = '$FILE'
 ext      = 'm4v'
 start    = '0:00.0'
 duration = '1'
