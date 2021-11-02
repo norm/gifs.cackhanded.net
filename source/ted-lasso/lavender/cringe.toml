@@ -1,0 +1,29 @@
+title = 'Cringe'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'keeley-jones',
+]
+body_markdown = """
+
+Keeley cringing while watching Roy Kent use some salty language
+on Soccer Saturday.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '26:38.9'
+duration = '2.8'
+crop     = '1200:675'
+
+[output]
+colours    = '96'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.91mb'

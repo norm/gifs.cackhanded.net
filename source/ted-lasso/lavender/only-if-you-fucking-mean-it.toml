@@ -1,0 +1,34 @@
+title = 'Only if you fucking mean it'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy shouts at his Under 9 Girls team “Only if you fucking mean it!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '13:32'
+duration = '3.1'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '1.26mb'
+
+[[caption]]
+text      = "Only if you fucking mean it!"
+from      = '1'
+to        = '3'
+type      = 'shout'

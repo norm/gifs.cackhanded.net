@@ -1,0 +1,37 @@
+title = 'So what’s next?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'holly-willoughby',
+    'philip-schofield',
+    'itv-this-morning',
+]
+body_markdown = """
+
+On the set of ITV's This Morning Philip Schofield asks Jamie Tartt
+“So what’s next?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '1:46.4'
+duration = '3.05'
+crop     = '1200:675'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.2mb'
+
+[[caption]]
+text      = "So what’s next?"
+from      = '2.1'
+to        = '4'
+type      = 'speak'

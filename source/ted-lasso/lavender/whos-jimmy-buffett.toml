@@ -1,0 +1,46 @@
+title = 'Who’s Jimmy Buffett?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'coach-beard',
+    'nathan-shelley',
+]
+body_markdown = """
+
+Nate asks Coach Beard “Who’s Jimmy Buffett?” 
+
+Beard looks astonished. “Really?!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '21:51.9'
+duration = '3.4'
+crop     = '1120:630:200:20'
+
+[output]
+brightness = '0.02'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.67mb'
+
+[[caption]]
+text      = "Who’s Jimmy Buffett?"
+from      = '0.1'
+to        = '1.2'
+type      = 'speak'
+placement = '160,217'
+
+[[caption]]
+text      = "Really?!"
+from      = '1.8'
+to        = '2.3'
+type      = 'speak'
+placement = '180,217'

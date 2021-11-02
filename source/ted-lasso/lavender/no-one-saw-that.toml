@@ -1,0 +1,56 @@
+title = 'No-one saw that'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'sam-obisanya',
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted telling Sam sarcastically “Nooo, no-one saw that” and then interrupts
+himself “Yeah, man, everyone saw that, come on!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '23:10.2'
+duration = '4.5'
+crop     = '1200:675'
+
+[palette]
+add = [
+    '#812632',      # red piping
+]
+
+[output]
+brightness = '0.02'
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.65mb'
+
+[[caption]]
+text      = "Nooo"
+from      = '0'
+to        = '0.6'
+type      = 'speak'
+placement = '205,180'
+
+[[caption]]
+text      = "Nooo\nno-one saw that"
+from      = '0.61'
+to        = '1.35'
+type      = 'speak'
+
+[[caption]]
+text      = "Yeah, man, everyone\nsaw that, come on!"
+from      = '1.36'
+to        = '3.1'
+type      = 'shout'
+

@@ -1,0 +1,62 @@
+title = 'Fuck off!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'baz',
+    'jeremy',
+    'mae',
+    'paul',
+]
+body_markdown = """
+
+Mae tells Paul, Jeremy, and Baz, “Oi! You three! Fuck off!” 
+
+As they turn around to watch the TV, Baz sarcastically exclaims “Sorry!”
+where Jeremy is more apologetic “Yeah, ’course Mae!” and Paul caps it
+off with a wave and says “Fucking off now”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '18:11.4'
+duration = '4.5'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+# loss       = '30'
+# max_size   = '1.86mb'
+
+[[caption]]
+text      = "Oi! You three! Fuck off!"
+from      = '0'
+to        = '2'
+type      = 'shout'
+
+[[caption]]
+text      = "Yeah, ’course Mae!"
+from      = '2.3'
+to        = '3.2'
+type      = 'speak'
+placement = '129,180'
+
+[[caption]]
+text      = "Fucking off now"
+from      = '3.4'
+to        = '4.2'
+type      = 'speak'
+placement = 'bl'
+
+[[caption]]
+text      = "Sorry!"
+from      = '2.5'
+to        = '3.2'
+type      = 'shout'
+placement = '350,217'

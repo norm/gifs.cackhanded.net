@@ -1,0 +1,28 @@
+title = 'Game face'
+published = 2021-12-31T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy mentally prepares himself, breathing out sharply.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '24:58.0'
+duration = '3.2'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.9mb'

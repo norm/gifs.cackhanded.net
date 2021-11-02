@@ -1,0 +1,35 @@
+title = 'Fucking arsehole'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca comments “What a fucking arsehole” and starts to eat a shortbread.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '11:05'
+duration = '1.7'
+crop     = '1080:585:300:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.65mb'
+
+[[caption]]
+text      = "What a fucking arsehole"
+from      = '0'
+to        = '1'
+type      = 'speak'

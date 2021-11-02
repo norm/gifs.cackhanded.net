@@ -1,0 +1,37 @@
+title = 'Just try a little bite'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'sharon-fieldstone',
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted implores Dr Fieldstone, “Come on now, just try a little bite”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '8:23.25'
+duration = '2.1'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.55mb'
+
+[[caption]]
+text      = "Come on now,\njust try a little bite"
+from      = '0'
+to        = '2'
+type      = 'speak'
+placement = '80,180'

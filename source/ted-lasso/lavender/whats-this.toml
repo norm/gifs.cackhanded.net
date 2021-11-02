@@ -1,0 +1,34 @@
+title = 'What’s this?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca lifts out a half-eaten shortbread and asks “What’s this?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '10:57.4'
+duration = '2.6'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "What’s this?"
+from      = '2'
+to        = '3'
+type      = 'speak'

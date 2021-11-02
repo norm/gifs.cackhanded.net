@@ -1,0 +1,48 @@
+title = 'Abject terror'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'roy-kent',
+    'soccer-saturday',
+]
+body_markdown = """
+
+Roy Kent, football pundit, saying “You could see it in their faces, abject
+terror. Like children waiting in line for the handsy Father Christmas.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '26:41.9'
+duration = '6.1'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.45mb'
+
+[[caption]]
+text      = "You could see it in their faces\n "
+from      = '0'
+to        = '1.3'
+type      = 'speak'
+
+[[caption]]
+text      = "Abject terror\n "
+from      = '1.6'
+to        = '2.7'
+type      = 'speak'
+
+[[caption]]
+text      = "Like children waiting in line\nfor the handsy Father Christmas"
+from      = '2.71'
+to        = '6.2'
+type      = 'speak'

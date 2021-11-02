@@ -1,0 +1,34 @@
+title = 'You deleted my number?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'keeley-jones',
+]
+body_markdown = """
+
+“You deleted my number?” Keeley asks, incredulously.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '12:31'
+duration = '5'
+crop     = '1120:630:40:25'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.15mb'
+
+[[caption]]
+text      = "You deleted my number?"
+from      = '1.65'
+to        = '2.8'
+type      = 'speak'

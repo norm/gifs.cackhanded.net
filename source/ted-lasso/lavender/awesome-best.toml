@@ -1,0 +1,73 @@
+title = 'Awesome, the best'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'jamie-tartt',
+    'ted-lasso',
+]
+body_markdown = """
+
+Jamie tells Ted that he’s been “Awesome, the best. Pretty good.
+Okay. Little depressed, yeah? It’s all shit, Ted.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '17:28.3'
+duration = '8.6'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '3.26mb'
+
+[[caption]]
+text      = "Awesome!"
+from      = '0.2'
+to        = '0.9'
+type      = 'speak'
+placement = '90,180'
+
+[[caption]]
+text      = "The best"
+from      = '1.3'
+to        = '1.8'
+type      = 'speak'
+placement = '120,180'
+
+[[caption]]
+text      = "Pretty good"
+from      = '2.7'
+to        = '3.3'
+type      = 'speak'
+placement = '60,180'
+
+[[caption]]
+text      = "Okay"
+from      = '3.8'
+to        = '4.3'
+type      = 'speak'
+placement = '100,180'
+
+[[caption]]
+text      = "Little depressed,\nyeah?"
+from      = '4.9'
+to        = '6'
+type      = 'speak'
+placement = '40,180'
+
+[[caption]]
+text      = "It’s all shit, Ted"
+from      = '6.5'
+to        = '7.3'
+type      = 'speak'
+placement = '50,180'

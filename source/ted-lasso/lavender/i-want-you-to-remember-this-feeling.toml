@@ -1,0 +1,63 @@
+title = 'I want you to remember this feeling'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/lavender/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy coaching his Under 9 Girls team, “I want you to remember this feeling.
+Burn this moment into your brains”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_202'
+ext      = 'm4v'
+start    = '12:41.55'
+duration = '6.8'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = 'auto'
+
+[[caption]]
+text      = "I want you to remember this feeling"
+from      = '0.2'
+to        = '2'
+type      = 'speak'
+
+[[caption]]
+text      = "Burn"
+from      = '2.7'
+to        = '3.25'
+type      = 'speak'
+placement = '34,217'
+
+[[caption]]
+text      = "Burn this"
+from      = '3.26'
+to        = '4'
+type      = 'speak'
+placement = '34,217'
+
+[[caption]]
+text      = "Burn this moment"
+from      = '4.01'
+to        = '5.1'
+type      = 'speak'
+placement = '34,217'
+
+[[caption]]
+text      = "Burn this moment into your brains"
+from      = '5.11'
+to        = '6.4'
+type      = 'speak'
+placement = '34,217'
