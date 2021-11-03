@@ -1,6 +1,8 @@
 #!/usr/bin/env bash -euo pipefail
 
 yellow=$'\e'[33m
+magenta=$'\e'[35m
+bold=$'\e'[1m
 reset=$'\e'[0m
 
 function main {
@@ -101,6 +103,15 @@ function create_gif {
                     ;;
         esac
     done
+
+    echo ""
+
+    case "$(./bin/toml $toml output.loss)" in
+        0|''|no)    printf "$bold$magenta   ? No loss specified.$reset "
+                    echo "GIF could be made smaller."
+                    ;;
+        *)          ;;
+    esac
 
     # exit, taking the backgrounded entr with us
     kill -2 0
