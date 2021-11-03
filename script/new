@@ -106,6 +106,16 @@ function create_gif {
 
     echo ""
 
+    # perform checks
+    if grep 'WRITE ME' $toml >/dev/null; then
+        printf "$bold$magenta  ! Description not written.$reset\n"
+    fi
+    if [ $(./bin/toml $toml --length tag) -lt 1 ]; then
+        printf "$bold$magenta  ! No tags applied.$reset\n"
+    fi
+    if ./bin/toml $toml tag | grep 'tag1' >/dev/null; then
+        printf "$bold$magenta  ! Contains default tags.$reset\n"
+    fi
     case "$(./bin/toml $toml output.loss)" in
         0|''|no)    printf "$bold$magenta   ? No loss specified.$reset "
                     echo "GIF could be made smaller."
