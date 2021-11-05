@@ -32,7 +32,9 @@ function create_gif {
 
     if [ -f "$toml" ]; then
         overwrite=0
-        read -p "** $toml exists; overwrite? (y/n) " -n1 overwrite
+        read -p \
+            "$(printf "$bold$magenta*** $toml exists; overwrite? (y/n) $reset")" \
+            -n1 overwrite
         echo ''
         [ "$overwrite" = 'y' -o "$overwrite" = Y ] && overwrite=1
     fi
@@ -80,7 +82,7 @@ function create_gif {
     while true; do
         read -s -N1 key
         case $key in
-            g)      printf "$yellow>   Send to GIFwrapped$reset\n"
+            g)      printf "$yellow  > Send to GIFwrapped$reset\n"
                     (
                         make gifwrapped
                         printf "$yellow>   Done$reset\n"
@@ -88,10 +90,10 @@ function create_gif {
                     ;;
             l)      echo '    -----------------------------------------------'
                     ;;
-            p)      printf "$yellow+   Preview$reset\n"
+            p)      printf "$yellow  + Preview$reset\n"
                     open -a Preview $output
                     ;;
-            ' ')    printf "$yellow*   Rebuild$reset"
+            ' ')    printf "$yellow  * Rebuild$reset"
                     sed -i '' -e 's/XYZZZYX/XYZZZYX/' $toml
                     ;;
             $'\n')  echo ''
@@ -117,7 +119,7 @@ function create_gif {
         printf "$bold$magenta  ! Contains default tags.$reset\n"
     fi
     case "$(./bin/toml $toml output.loss)" in
-        0|''|no)    printf "$bold$magenta   ? No loss specified.$reset "
+        0|''|no)    printf "$bold$magenta  ? No loss specified.$reset "
                     echo "GIF could be made smaller."
                     ;;
         *)          ;;
