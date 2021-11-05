@@ -1,0 +1,18 @@
+— 
+{% if page.source_fkey %}
+  {{title}}, a GIF from {{page.source.title}}
+{% elif page.show_fkey %}
+  {% if page.episode_fkey or page.video %}
+    {{title}}, a GIF from {{page.show.title}}
+  {% else %}
+    GIFs from {{title}}, an episode of {{page.show.title}}
+  {% endif %}
+{% elif page.agency_fkey %}
+  {% if page.mission_fkey %}
+    {{title}}, a GIF from {{page.mission.title}}
+  {% else %}
+    GIFs from {{title}}
+  {% endif %}
+{% else %}
+  GIFs from {{title}}
+{% endif %}
