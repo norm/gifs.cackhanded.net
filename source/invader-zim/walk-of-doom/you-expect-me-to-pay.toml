@@ -1,0 +1,53 @@
+title = 'You expect me to pay'
+published = 2021-12-26T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'bus',
+    'bus-driver',
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim asks the bus driver incredulously “You expect me to **pay** to be on
+this filthy machine?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '17:23.1'
+duration = '4'
+crop     = '710:400'
+
+[output]
+colours  = '74'
+denoise  = true
+dither   = 'bayer:bayer_scale=5'
+fps      = '12'
+loss     = '20'
+max_size = '0.45mb'
+
+[[caption]]
+text      = "You expect me to"
+from      = '0.05'
+to        = '4'
+type      = 'zim_speak'
+placement = '111,196'
+
+[[caption]]
+text      = 'pay'
+from      = '1.2'
+to        = '4'
+type      = 'zim_emphasis'
+placement = '320,196'
+
+[[caption]]
+text      = " \nto be on this filthy machine?"
+from      = '2'
+to        = '4'
+type      = 'zim_speak'
+

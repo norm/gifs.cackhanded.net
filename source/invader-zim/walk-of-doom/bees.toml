@@ -1,0 +1,36 @@
+title = 'Bees!'
+published = 2021-12-18T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim opens Gir's head to find a beehive. Bees start to fly out.
+Zim screams “BEES!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '12:49.9'
+duration = '3.1'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.37mb'
+
+[[caption]]
+text      = "BEES!"
+from      = '1.6'
+to        = '2.9'
+type      = 'zim_shout'

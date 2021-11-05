@@ -1,0 +1,53 @@
+title = 'Carne beat'
+published = 2021-12-30T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'butcher',
+    'carne',
+    'candy-girl',
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+While Gir and a butcher dance about, and a candy girl offers Zim some candy,
+Zim just stares into the distance.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '23:29'
+duration = '1.65'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#fad9df',  # zim's hat/candy girl's dress
+    '#d487a5',
+    '#82475d',
+    '#c2a5d2',
+    '#bcc043',  # donkey
+    '#a4a759',  # sombrero
+    '#a0a458',
+    '#646a31',
+    '#aa9572',  # carne sign
+    '#9ea78e',  # wanted poster photo bg
+    '#c4f06b',  # gir
+    '#a5cf5a',
+    '#aed088',  # zim
+    '#5e242d',  # rose
+    '#260101',
+]
+
+[output]
+colours    = '81'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.25mb'
+mode       = 'full'

@@ -1,0 +1,41 @@
+title = 'My incredible eyes'
+published = 2021-12-19T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim saying “My incredible eyes!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '20:53.7'
+duration = '2.55'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '58'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.35mb'
+
+[[caption]]
+text      = "My in…"
+from      = '0'
+to        = '1.45'
+type      = 'zim_emphasis'
+placement = '126,225'
+
+[[caption]]
+text      = "My incredible eyes!"
+from      = '1.46'
+to        = '2.55'
+type      = 'zim_emphasis'

@@ -1,0 +1,39 @@
+title = 'Witness the power of my compass!'
+published = 2021-12-22T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'compass',
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim tells Gir to “Witness the power of my compass!”
+
+Zim moves it around as it always points at Gir, then the compass flies
+out of Zim’s hand to stick to Gir.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '16:26.0'
+duration = '5.2'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = 'no'
+max_size   = 'auto'
+
+[[caption]]
+text      = "Witness the power of my compass!"
+from      = '0.4'
+to        = '2'
+type      = 'zim_speak'

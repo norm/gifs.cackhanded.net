@@ -1,0 +1,95 @@
+title = '$TITLE'
+$PUBLISHED
+$KEYS
+tag = [
+    'dib-membrane',
+    'gir',
+    'invader-zim',
+
+    '404-page-candidate',
+    'aki',
+    'almighty-tallest-purple',
+    'almighty-tallest-red',
+    'brian',
+    'carl',
+    'conventia',
+    'flashbulbs',
+    'frontline-battlemech',
+    'gaz-membrane',
+    'gretchen',
+    'invader-skoodge',
+    'irken-armada',
+    'irken-army',
+    'jhonen-vasquez',
+    'keef',
+    'lightning',
+    'lizard-boy',
+    'massive',
+    'matthew',
+    'melvin',
+    'mr-elliot',
+    'ms-bitters',
+    'photography',
+    'press-conference',
+    'professor-membrane',
+    'rob',
+    'robodad',
+    'robomom',
+    'sandwich',
+    'sara',
+    'scary-monkey-show',
+    'skool',
+    'squirrel',
+    'steve-ressel',
+    'tae',
+    'tag1',
+    'television',
+    'the-doom-song',
+    'toast',
+    'voot-runner',
+    'zita',
+]
+body_markdown = """
+
+WRITE ME.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '0:00.0'
+duration = '1'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: REPLACE_SIZE
+crop     = '710:400'
+
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# list = 1
+# show = 1
+
+[output]
+# brightness = '0'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = 'no'
+max_size   = 'auto'
+
+# [[clip]]
+# start = '1'
+# end   = '2'
+
+# [[caption]]
+# text      = "Looks like I picked the\nwrong week to give up drinking"
+# from      = '1'
+# to        = '2'
+# type      = 'zim_speak'

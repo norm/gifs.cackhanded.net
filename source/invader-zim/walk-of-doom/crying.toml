@@ -1,0 +1,28 @@
+title = 'Crying'
+published = 2021-12-23T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'gir',
+]
+body_markdown = """
+
+Tears well up in Gir’s eyes.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '15:59.6'
+duration = '5'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.31mb'

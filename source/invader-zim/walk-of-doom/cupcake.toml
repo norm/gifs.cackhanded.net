@@ -1,0 +1,29 @@
+title = 'Cupcake'
+published = 2021-12-28T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'cupcake',
+    'gir',
+]
+body_markdown = """
+
+A cupcake flies out of Gir’s head, which Gir promptly devours.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '15:41.9'
+duration = '6.1'
+crop     = '710:400'
+
+[output]
+colours    = '48'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '30'
+max_size   = '1mb'

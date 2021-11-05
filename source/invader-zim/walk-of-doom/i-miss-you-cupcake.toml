@@ -1,0 +1,36 @@
+title = 'I miss you cupcake'
+published = 2021-12-25T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'cupcake',
+    'gir',
+]
+body_markdown = """
+
+Gir, holding an cupcake wrapper listlessly, wipes a tear out of it’s eye
+and says “I miss you, cupcake”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '16:14.5'
+duration = '3.8'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.37mb'
+
+[[caption]]
+text      = "I miss you, cupcake"
+from      = '1.4'
+to        = '3.5'
+type      = 'zim_speak'

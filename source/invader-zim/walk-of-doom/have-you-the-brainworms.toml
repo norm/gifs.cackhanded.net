@@ -1,0 +1,39 @@
+title = 'Have you the brainworms?!'
+published = 2021-12-20T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    '404-page-candidate',
+    'bus',
+    'bus-driver',
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim screams at the bus driver “Have you the brainworms?!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '17:27.1'
+duration = '2.1'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.4mb'
+
+[[caption]]
+text      = "Have you the brainworms?!"
+from      = '0'
+to        = '1.9'
+type      = 'zim_shout'
+size      = '36'

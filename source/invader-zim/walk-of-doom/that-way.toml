@@ -1,0 +1,51 @@
+title = 'That way!'
+published = 2021-12-21T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/walk-of-doom/index'
+tag = [
+    'invader-zim',
+    'taxi',
+    'taxi-driver',
+]
+body_markdown = """
+
+Zim instructs a taxi cab driver “Take me to **that way!**”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e03'
+ext      = 'm4v'
+start    = '23:09.8'
+duration = '3'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.39mb'
+
+[[caption]]
+text      = "Take me to …"
+from      = '0.3'
+to        = '1.5'
+type      = 'zim_speak'
+placement = '114,225'
+
+[[caption]]
+text      = "Take me to"
+from      = '1.51'
+to        = '2.8'
+type      = 'zim_speak'
+placement = '114,225'
+
+[[caption]]
+text      = "THAT WAY!"
+from      = '1.51'
+to        = '2.8'
+type      = 'zim_emphasis'
+placement = '245,225'
