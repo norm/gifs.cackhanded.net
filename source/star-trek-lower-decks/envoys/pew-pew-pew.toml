@@ -1,6 +1,7 @@
 title = 'Pew pew pew'
 published = 2020-11-20T06:11:39Z
-source_fkey = 'star-trek-lower-decks/envoys/index'
+episode_fkey = 'star-trek-lower-decks/envoys/index'
+show_fkey = 'star-trek-lower-decks/index'
 tag = ['brad-boimler']
 body_markdown = """
 

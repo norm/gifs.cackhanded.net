@@ -1,6 +1,7 @@
 title = 'Put your knickers on'
 published = 2020-09-22T06:30:00Z
 show_fkey = 'the-fast-show/index'
+episode_fkey = 'the-fast-show/monkfish/index'
 tag = ['john-actor', 'monkfish']
 body_markdown = """
 
