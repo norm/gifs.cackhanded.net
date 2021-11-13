@@ -42,7 +42,8 @@ function create_gif {
     if [ $overwrite = 1 ]; then
         FILE="$path"
         TITLE="$(echo "$gif" | sed -e 's/-/ /g')"
-        PUBLISHED="published = 2100-01-01T07:00:00Z"
+        PUBLISHED_AM="published = 2100-01-01T07:00:00Z"
+        PUBLISHED_PM="published = 2100-01-01T15:00:00Z"
         KEYS="show_fkey = '$source/index'"$'\n'
         KEYS+="episode_fkey = '$path/index'"
 
@@ -52,7 +53,7 @@ function create_gif {
         [ ! -f $template ] \
             && template=source/new
 
-        export FILE KEYS PUBLISHED TITLE
+        export FILE KEYS PUBLISHED_AM PUBLISHED_PM TITLE
         envsubst < $template > $toml
 
         subl -w $toml

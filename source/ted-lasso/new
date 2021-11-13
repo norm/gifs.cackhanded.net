@@ -1,5 +1,5 @@
 title = '$TITLE'
-$PUBLISHED
+$PUBLISHED_AM
 $KEYS
 tag = [
     '404-page-candidate',
