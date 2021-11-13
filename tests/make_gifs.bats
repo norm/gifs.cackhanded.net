@@ -17,6 +17,7 @@ reset=$'\e'[0m
     [ "${lines[1]}" == "    64 colours (64 initially)" ]
     [ "${lines[2]}" == "    size 1.61mb (duration 1.01) $magenta[auto max 0.45mb]$reset" ]
     [ "${lines[3]}" == "  $cyan< optimised with loss 0, now 1.48mb, 92.3% of original$reset" ]
+    [ "${lines[4]}" == "  > 29 frames" ]
     # cp $BATS_TMPDIR/output.gif tests/gifs/original.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/original.gif
 }

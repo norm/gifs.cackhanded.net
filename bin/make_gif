@@ -226,6 +226,14 @@ function main {
 
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
+
+    frames=$(
+        gifsicle --info "$gif" \
+            | grep \+\ image \
+            | tail -1 \
+            | sed -e 's/^  . image .//' -e 's/ .*$//'
+    )
+    echo "  > $frames frames"
 }
 
 function palettegen_filter {
