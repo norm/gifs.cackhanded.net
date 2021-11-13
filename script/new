@@ -90,6 +90,9 @@ function create_gif {
                         printf "$yellow>   Done$reset\n"
                     ) &
                     ;;
+            i)      printf "$yellow  * Send infodump to Sublime$reset\n"
+                    gifsicle --info --color-info --size-info $output | subl -n -
+                    ;;
             l)      printf "$yellow%$((cols-1))s$reset\n" '' | tr ' ' -
                     ;;
             p)      printf "$yellow  + Preview$reset\n"
@@ -101,7 +104,7 @@ function create_gif {
             $'\n')  echo ''
                     ;;
             \?)     echo ''
-                    echo 'Hit: [ ]:Rebuild [G]ifwrapped [L]ine [P]review [Q]uit'
+                    echo 'Hit: [ ]:Rebuild [G]ifwrapped [I]nfo [L]ine [P]review [Q]uit'
                     ;;
             q)      break
                     ;;

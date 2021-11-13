@@ -303,10 +303,11 @@ the GIF will be automatically remade. During this loop, pressing:
   * **G** will run `make gifwrapped` — to send any new GIFs to the
     right location in Dropbox for [GIFwrapped][gw] to pick them up
     for on-device previewing
-  * **P** will open the GIF in Preview — to be able to step through it
-    frame by frame, useful for getting caption/cut timings right
+  * **I** will show (in Sublime Text) a bunch of info about the built GIF
   * **L** will mark the output with a line — useful when comparing runs
     with different settings for output sizes, for example
+  * **P** will open the GIF in Preview — to be able to step through it
+    frame by frame, useful for getting caption/cut timings right
   * **Return** will output a blank line
   * **?** will output a reminder of the keys available
   * **Q** will quit the loop and exit
