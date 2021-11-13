@@ -82,7 +82,7 @@ function main {
             caption_strokecol="$(get_caption_key $toml $index stroke_colour)"
             caption_align="$(get_caption_key $toml $index align)"
             caption_anchor="$(get_caption_key $toml $index anchor)"
-            caption \
+            debug caption \
                 ${output_width:-$DEFAULT_WIDTH} \
                 $output_height \
                 --colour "${caption_colour:-#ffffff}" \
