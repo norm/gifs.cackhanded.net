@@ -4,6 +4,7 @@ yellow=$'\e'[33m
 magenta=$'\e'[35m
 bold=$'\e'[1m
 reset=$'\e'[0m
+cols=$(tput cols)
 
 function main {
     local create="$1"
@@ -89,7 +90,7 @@ function create_gif {
                         printf "$yellow>   Done$reset\n"
                     ) &
                     ;;
-            l)      echo '    -----------------------------------------------'
+            l)      printf "$yellow%$((cols-1))s$reset\n" '' | tr ' ' -
                     ;;
             p)      printf "$yellow  + Preview$reset\n"
                     open -a Preview $output
