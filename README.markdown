@@ -309,6 +309,7 @@ the GIF will be automatically remade. During this loop, pressing:
   * **P** will open the GIF in Preview — to be able to step through it
     frame by frame, useful for getting caption/cut timings right
   * **Return** will output a blank line
+  * **^L** will clear the screen
   * **?** will output a reminder of the keys available
   * **Q** will quit the loop and exit
 
