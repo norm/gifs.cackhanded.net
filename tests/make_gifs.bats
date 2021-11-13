@@ -148,17 +148,6 @@ reset=$'\e'[0m
     diff -u $BATS_TMPDIR/output.gif tests/gifs/clips_captions.gif
 }
 
-@test generate_clips_captions_timing {
-    [ $(uname) != 'Darwin' ] && skip "Not macOS"
-
-    run make_gif tests/config/clips_captions_timing.toml $BATS_TMPDIR/output.gif
-    echo "$output"
-
-    [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/output.gif tests/gifs/clips_captions_timing.gif
-    diff -u $BATS_TMPDIR/output.gif tests/gifs/clips_captions_timing.gif
-}
-
 @test generate_palette_additions {
     [ $(uname) != 'Darwin' ] && skip "Not macOS"
 

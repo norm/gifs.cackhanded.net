@@ -124,7 +124,6 @@ function main {
         ${timing_args} \
         -i "$video" \
         -i "${TEMP}/palette.png" \
-        -i "cue.png" \
         ${caption_args} \
         -f gif \
         -filter_complex "$(generate_filter $toml)" \
@@ -265,14 +264,9 @@ function generate_filter {
     local paletteuse="[1:v] paletteuse=${dither}:diff_mode=rectangle"
     local clips=$(get_clips $toml)
     local captions=$(get_captions_filter $toml)
-    local timings="$(get_timing_cues $toml)"
 
     if [ -n "$clips" ]; then
-        if [ -n "$timings" ]; then
-            echo "${clips}${timings}[tv]${captions}${paletteuse}"
-        else
-            echo "$clips [cv]${captions}${paletteuse}"
-        fi
+        echo "$clips [cv]${captions}${paletteuse}"
     else
         local bright=$(get_bright $toml)
         local denoise=$(get_denoise $toml)
@@ -282,11 +276,7 @@ function generate_filter {
         local slowdown="$(get_slowdown $toml)"
         local alter="$(join ',' $fps $crop $scale $bright $denoise $slowdown)"
         alter="${alter:-scale=w=in_w:h=in_h}"
-        if [ -n "$timings" ]; then
-            echo "[0:v] $alter [cv]; ${timings}[tv]${captions}${paletteuse}"
-        else
-            echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
-        fi
+        echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
     fi
 }
 
@@ -401,7 +391,7 @@ function get_captions_filter {
     local input
     if [ "$num_captions" -gt 0 ]; then
         for index in $(seq 1 $num_captions); do
-            let "input = index + 2"
+            let "input = index + 1"
 
             local caption_from="$(toml $toml caption.from $index)"
             local caption_to="$(toml $toml caption.to $index)"
@@ -419,24 +409,6 @@ function get_captions_filter {
     fi
 
     echo $captions
-}
-
-function get_timing_cues {
-    local timing="$(toml $toml output.timing)"
-
-    local overlay="overlay=(main_w-25):5"
-    local index
-    if [ -n "$timing" ];then
-        echo -n "[cv][2:v] ${overlay}:enable='between(t,0,0.25)' [tm0a];"
-        echo -n "[tm0a][2:v] ${overlay}:enable='between(t,0.5,0.75)' [tm0b];"
-        for index in $(seq 1 9); do
-            echo -n "[tm$((index-1))b][2:v] $overlay:enable="
-            echo -n "'between(t,${index},${index}.25)' [tm${index}a];"
-            echo -n "[tm${index}a][2:v] $overlay:enable="
-            echo -n "'between(t,${index}.5,${index}.75)' [tm${index}b];"
-        done
-        echo "[tm9b][2:v] $overlay:enable='between(t,10,10.25)' [tv];"
-    fi
 }
 
 function get_stats_mode {
