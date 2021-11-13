@@ -341,6 +341,11 @@ To list what is scheduled, there is a `next` script in the repo.
     # also shows a count and breakdown of what is unscheduled
     ./script/next
 
+    # list the next day with no morning GIF scheduled, the first day that
+    # would have no scheduled GIF if any as-yet unscheduled GIFs were used
+    # to fill in the gaps, and a count and breakdown of what is unscheduled
+    ./script/next filling
+
     # show what is scheduled in the next 60 days
     ./script/next 60
 

@@ -4,7 +4,8 @@ function main {
     case "${1:-}" in
         -h|help)    usage ;;
         [0-9]*)     list_scheduled_gifs "$@" ;;
-        '')         list_unscheduled_gifs ;;
+        filling)    list_unscheduled_gifs filling ;;
+        '')         list_unscheduled_gifs next ;;
         *)          list_scheduled_gifs 30 "$@" ;;
     esac
 }
@@ -14,8 +15,12 @@ function usage {
         Usage:
 
             next
-                    show the next day with no scheduled gif, and a
+                    show the next day with no scheduled GIF, and a
                     breakdown of any unscheduled GIFs
+            next filling
+                    show the next day with no scheduled GIF, and the first
+                    day that would have no scheduled GIF if all currently
+                    unscheduled GIFs were used to fill in the gaps
             next count
                     show only the count of unscheduled GIFs
             next <count>
@@ -41,7 +46,10 @@ function list_scheduled_gifs {
     local highlight=0
     local next=0
     local unscheduled_day=0
+    local filling=0
     local time='both'
+    local unscheduled_count=$(rg -l 2100 source | wc -l)
+    local next_shown=0
 
     shift
     while [ "${1:-}" ]; do
@@ -50,6 +58,7 @@ function list_scheduled_gifs {
             full)   full=full   empty='' ;;
             high*)  highlight=1 ;;
             next)   next=1 empty=empty full='' ;;
+            filling) filling=1 next=1 empty=empty full='' ;;
             am)     time='am' ;;
             pm)     time='pm' ;;
             *)      [ -n "$days" ] && days="$days|$1" || days="$1"
@@ -83,15 +92,31 @@ function list_scheduled_gifs {
 
         if [ -z "$content" ]; then
             [ -n "$full" ] && continue
-
-            [ $next = 1 ] && content="next unscheduled day ($day days)"
-            unscheduled_day=1
             printf '\e[1m\e[35m'
+
+            if [ $next_shown = 0 ]; then
+                [ $next = 1 ] && content="-- next unscheduled day ($day days)"
+                unscheduled_day=1
+                next_shown=1
+            fi
+
+            if [ $filling = 1 ]; then
+                if [ $unscheduled_count = 0 ]; then
+                    content="-- next unscheduled day ($day days), if using unscheduled"
+                    filling=0
+                fi
+                unscheduled_count=$((unscheduled_count-1))
+            fi
         fi
 
-        printf '%s %s %s\e[0m\n' $datestamp $day_of_week "$content"
+        if [ $filling = 1 ]; then
+            [ -n "$content" ] && \
+                printf '%s %s %s\e[0m\n' $datestamp $day_of_week "$content"
+        else
+            printf '%s %s %s\e[0m\n' $datestamp $day_of_week "$content"
+        fi
 
-        [ $next = 1 ] && break
+        [ $next = 1 -a $filling = 0 ] && break
     done
 
     if [ $unscheduled_day = 1 -a $next = 0 ]; then
@@ -107,7 +132,7 @@ function count_unscheduled {
 }
 
 function list_unscheduled_gifs {
-    list_scheduled_gifs 1000 next am
+    list_scheduled_gifs 1000 "$1" am
 
     echo ''
     rg -l 2100 source \
