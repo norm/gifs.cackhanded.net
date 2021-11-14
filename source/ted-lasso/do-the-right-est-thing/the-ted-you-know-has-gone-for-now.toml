@@ -1,0 +1,39 @@
+title = 'The Ted you know has gone for now'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'coach-beard',
+    'nathan-shelley',
+    'sharon-fieldstone',
+    'ted-lasso',
+    'will-kitman',
+]
+body_markdown = """
+
+Ted angrily kicks a ball. Coach Beard tells Nate
+"The Ted you know has gone for now".
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '19:40.4'
+duration = '3.1'
+crop     = '1120:630:200:50'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1mb'
+
+[[caption]]
+text      = "The Ted you know has gone for now"
+from      = '1.3'
+to        = '2.9'
+type      = 'speak'

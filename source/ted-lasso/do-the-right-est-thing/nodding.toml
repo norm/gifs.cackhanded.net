@@ -1,0 +1,30 @@
+title = 'Nodding'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'jamie-tartt',
+    'sam-obisanya',
+]
+body_markdown = """
+
+Sam and Jamie nodding at each other.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '31:40.0'
+duration = '2.6'
+crop     = '1200:675'
+
+[output]
+brightness = '0.02'
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.57mb'

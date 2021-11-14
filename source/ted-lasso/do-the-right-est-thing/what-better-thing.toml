@@ -1,0 +1,35 @@
+title = 'What better thing'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'coach-beard',
+    'jamie-tartt',
+]
+body_markdown = """
+
+Jamie asks the coaches “What better thing to spend money on than love?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '16:49.8'
+duration = '4.2'
+crop     = '1120:630:200:0'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.2mb'
+
+[[caption]]
+text      = "What better thing to\nspend money on than love?"
+from      = '0.5'
+to        = '2.2'
+type      = 'speak'

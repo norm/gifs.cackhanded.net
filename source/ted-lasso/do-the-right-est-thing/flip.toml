@@ -1,0 +1,35 @@
+title = 'Flip'
+published = 2022-01-07T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    '404-page-candidate',
+    'coach-beard',
+    'nathan-shelley',
+    'sharon-fieldstone',
+    'ted-lasso',
+    'will-kitman',
+]
+body_markdown = """
+
+Ted flips the refreshments table, then grabs Will’s water bottle and
+throws it into the stands.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '19:29.6'
+duration = '4.6'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '1.63mb'

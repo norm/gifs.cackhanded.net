@@ -1,0 +1,35 @@
+title = '…the fuck just happened?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'jamie-tartt',
+]
+body_markdown = """
+
+Jamie, lying on the ground after a tackle, wonders “…the fuck just happened?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '9:04.4'
+duration = '3'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.26mb'
+
+[[caption]]
+text      = "…the fuck just happened?"
+from      = '0.9'
+to        = '2.1'
+type      = 'speak'

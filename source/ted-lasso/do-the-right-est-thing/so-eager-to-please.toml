@@ -1,0 +1,48 @@
+title = 'So eager to please'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'flo-collins',
+]
+body_markdown = """
+
+Flo commenting that Ted was “So eager to please, it was fabulous”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '2:04.6'
+crop     = '960:540:100:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.55mb'
+
+[[clip]]
+start = '0'
+end   = '1.35'
+
+[[clip]]
+start = '2.55'
+end   = '4'
+
+[[caption]]
+text      = "So eager to please"
+from      = '0.2'
+to        = '1.35'
+type      = 'speak'
+
+[[caption]]
+text      = "It was fabulous"
+from      = '1.36'
+to        = '2.5'
+type      = 'speak'

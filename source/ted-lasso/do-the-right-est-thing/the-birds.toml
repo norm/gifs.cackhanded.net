@@ -1,0 +1,30 @@
+title = 'The birds'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'nora-collins',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Nora pulls a face and flips two birds at the phone.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '22:10.8'
+duration = '1.6'
+crop     = '1040:585:316:80'
+
+[output]
+brightness = '0.05'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.45mb'

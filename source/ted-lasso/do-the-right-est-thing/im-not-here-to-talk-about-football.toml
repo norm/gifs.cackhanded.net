@@ -1,0 +1,45 @@
+title = 'I’m not here to talk about football'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'press-conference',
+    'sam-obisanya',
+    'trent-crimm',
+]
+body_markdown = """
+
+Sam tells the assembled press “I’m not here to talk about football”.
+
+"""
+
+[video]
+source    = 'file'
+file      = 'ted_lasso_203'
+ext       = 'm4v'
+start     = '34:11.6'
+duration  = '2.7'
+crop      = '1200:675:156:0'
+
+[palette]
+add = [
+    '#0b1b15',  # green mic
+    '#1f3529',
+    '#284438',
+]
+
+[output]
+brightness = '0.04'
+colours    = '119'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = 'auto'
+stabilise  = 'static'
+
+[[caption]]
+text      = "I’m not here to talk about football"
+from      = '0.3'
+to        = '1.6'
+type      = 'speak'

@@ -1,0 +1,49 @@
+title = 'Sometimes you have to do the right thing'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'nora-collins',
+]
+body_markdown = """
+
+Nora gives Rebecca the advice “Sometimes you have to do the right thing,
+even if you lose”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '25:14.9'
+duration = '4.6'
+crop     = '1040:585:316:40'
+
+[palette]
+add = [
+    '#8a4a49',  # lips
+    '#ad6766',
+]
+
+[output]
+brightness = '0.04'
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.66mb'
+
+[[caption]]
+text      = "Sometimes you have to do\nthe right thing"
+from      = '0'
+to        = '1.85'
+type      = 'speak'
+
+[[caption]]
+text      = "Even if you lose"
+from      = '3'
+to        = '4.1'
+type      = 'speak'
+placement = '146,180'

@@ -1,0 +1,39 @@
+title = 'It sounds better in french'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/do-the-right-est-thing/index'
+tag = [
+    'kyle-mccracken',
+    'moe-bumbercatch',
+    'paul-reynolds',
+    'thierry-zoreaux',
+    'tyler-shannon',
+]
+body_markdown = """
+
+Thierry telling the team “It sounds better in French”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_203'
+ext      = 'm4v'
+start    = '5:54.7'
+duration = '1.85'
+crop     = '1120:630:200:400'
+
+[output]
+brightness = '0.02'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.51mb'
+
+[[caption]]
+text      = "It sounds better in French"
+from      = '0.2'
+to        = '1.4'
+type      = 'speak'
