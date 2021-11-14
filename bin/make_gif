@@ -117,6 +117,17 @@ function main {
     [ -n "$(toml $toml palette.show)" ] && \
         open "${TEMP}/palette.png"
 
+    # first-pass stabilisation
+    local stabilise="$(get_stabilise $toml)"
+    if [ -n "$stabilise" ]; then
+        debug ffmpeg \
+            -loglevel error \
+            ${timing_args} \
+            -i "$video" \
+            -vf vidstabdetect=shakiness=10:accuracy=15 \
+            -f null -
+    fi
+
     filter_debug "$(generate_filter $toml)"
     debug ffmpeg \
         -loglevel error \
@@ -271,10 +282,13 @@ function generate_filter {
         local bright=$(get_bright $toml)
         local denoise=$(get_denoise $toml)
         local crop=$(get_crop $toml)
+        local stabilise=$(get_stabilise $toml)
         local fps=$(get_fps $toml)
         local scale=$(get_scale $toml)
         local slowdown="$(get_slowdown $toml)"
-        local alter="$(join ',' $fps $crop $scale $bright $denoise $slowdown)"
+        local alter="$(
+            join ',' $stabilise $fps $crop $scale $bright $denoise $slowdown
+        )"
         alter="${alter:-scale=w=in_w:h=in_h}"
         echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
     fi
@@ -288,6 +302,20 @@ function get_crop {
     [ -n "$video_crop" ] && crop="crop=${video_crop}"
 
     echo $crop
+}
+
+function get_stabilise {
+    local toml="$1"
+
+    local output_stabilise="$(toml $toml output.stabilise)"
+    if [ -n "$output_stabilise" ]; then
+        case "$output_stabilise" in
+            static)     echo "vidstabtransform=smoothing=0"
+                        ;;
+            *)          echo "vidstabtransform=smoothing=$output_stabilise"
+                        ;;
+        esac
+    fi
 }
 
 function get_fps {

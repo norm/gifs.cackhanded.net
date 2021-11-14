@@ -57,6 +57,7 @@ denoise    = true
 mode       = 'full'
 max_size   = '2mb'  # or 'auto'
 dither     = 'floyd_steinberg'
+stabilise  = 'static'
 
 [[clip]]
 start = '2'
@@ -149,10 +150,14 @@ the video source.
   source video (slo-mo). A multiplier lower than 1 will speed it up.
 * `dither` is how the palette colours are dithered to create the appearance
   of more colours:
-    * `bayer:bayer_scale=1` — the scale is an integer between 0 and 5
+    * `bayer:bayer_scale=1` — the scale is an integer between 0 and 5
     * `floyd_steinberg`
     * `sierra2`
     * `sierra2_4a`
+* `stabilise` attempts to stabilise (deshake) the output GIF, the value is the
+  number of frames before/after the current frame to consider for
+  stabilisation, or the value `static` which tries to emulate a static camera
+  (note that this will crop the video somewhat)
 
   The default is `bayer:bayer_scale=4`. Illustrative samples can be found in
   "[High quality GIF with FFmpeg][quality]".

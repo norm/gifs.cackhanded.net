@@ -46,6 +46,7 @@ fps        = 'original'
 loss       = 'no'
 max_size   = 'auto'
 # mode       = 'full'
+# stabilise  = 'static | ##'
 # width      = 'original'
 # width      = '400'
 

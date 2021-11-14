@@ -129,11 +129,11 @@ source bin/make_gif
 
 @test generate_captions {
     expected='[0:v] fps=18,scale=480:-1 [iv]; '
-    expected+='[iv][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
+    expected+='[iv][2:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0,0.3)' [v1]; "
-    expected+='[v1][4:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
+    expected+='[v1][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0.31,0.6)' [v2]; "
-    expected+='[v2][5:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
+    expected+='[v2][4:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0.61,0.9)' [v3]; "
     expected+='[v3][1:v] paletteuse='
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
@@ -146,9 +146,9 @@ source bin/make_gif
 
 @test generate_captions_noscale {
     expected='[0:v] scale=w=in_w:h=in_h [iv]; '
-    expected+='[iv][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
+    expected+='[iv][2:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0,0.5)' [v1]; "
-    expected+='[v1][4:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
+    expected+='[v1][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0.51,1)' [v2]; "
     expected+='[v2][1:v] paletteuse='
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
@@ -163,11 +163,11 @@ source bin/make_gif
     expected='[0:v] fps=18,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
     expected+='[0:v] fps=18,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
     expected+='[c1][c2] concat=n=2:v=1,scale=480:-1 [cv]; '
-    expected+='[cv][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
+    expected+='[cv][2:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0,0.3)' [v1]; "
-    expected+='[v1][4:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
+    expected+='[v1][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0.31,0.6)' [v2]; "
-    expected+='[v2][5:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
+    expected+='[v2][4:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0.61,0.9)' [v3]; "
     expected+='[v3][1:v] paletteuse='
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
