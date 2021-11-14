@@ -38,9 +38,11 @@ for gif in fl.sources.filter(published__gte=today).order_by('published'):
     if (elapsed.seconds // 3600) > 2:
         continue
 
-    try:
+    if 'show_fkey' in gif:
         source = gif.show.title
-    except:
+    elif 'brand_fkey' in gif:
+        source = gif.brand.title
+    else:
         source = gif.source.title
     if source not in sources:
         sources[source] = 1
