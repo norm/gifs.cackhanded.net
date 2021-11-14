@@ -3,6 +3,7 @@ $PUBLISHED_AM
 $KEYS
 tag = [
     '404-page-candidate',
+    'tag1',
     'baz',
     'coach-beard',
     'colin-hughes',
@@ -14,22 +15,32 @@ tag = [
     'jamie-tartt',
     'jan-maas',
     'jane-payne',
+    'jeff-stelling',
     'jeremy',
     'keeley-jones',
+    'kyle-mccracken',
     'leslie-higgins',
     'mae',
+    'moe-bumbercatch',
+    'nora-collins',
     'nathan-shelley',
     'paul',
+    'paul-reynolds',
     'paul-john-pope',
     'phoebe',
+    'press-conference',
     'rebecca-welton',
     'roy-kent',
     'rupert-mannion',
     'sam-obisanya',
     'sharon-fieldstone',
+    'soccer-saturday',
     'ted-lasso',
+    'thierry-zoreaux',
     'tommy',
     'trent-crimm',
+    'tyler-shannon',
+    'will-kitman',
 ]
 body_markdown = """
 
@@ -39,7 +50,7 @@ WRITE ME.
 
 [video]
 source   = 'file'
-file     = 'ted_lasso_201'
+file     = 'ted_lasso_203'
 ext      = 'm4v'
 start    = '0:00.0'
 duration = '1'
