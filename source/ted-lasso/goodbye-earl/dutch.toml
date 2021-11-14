@@ -3,32 +3,10 @@ published = 2100-01-01T07:00:00Z
 show_fkey = 'ted-lasso/index'
 episode_fkey = 'ted-lasso/goodbye-earl/index'
 tag = [
-    '404-page-candidate',
-    'baz',
-    'coach-beard',
     'colin-hughes',
-    'dani-rojas',
-    'flo-collins',
-    'george-cartrick',
-    'henry-lasso',
     'isaac-mcadoo',
-    'jamie-tartt',
-    'jane-payne',
-    'jeremy',
-    'keeley-jones',
-    'leslie-higgins',
-    'mae',
-    'nathan-shelley',
-    'paul',
-    'paul-john-pope',
-    'phoebe',
-    'rebecca-welton',
-    'roy-kent',
-    'rupert-mannion',
+    'jan-maas',
     'sam-obisanya',
-    'ted-lasso',
-    'tommy',
-    'trent-crimm',
 ]
 body_markdown = """
 
