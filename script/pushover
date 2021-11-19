@@ -1,0 +1,20 @@
+#!/usr/bin/env -S bash -euo pipefail
+
+declare -a params
+
+params+=(-F "title=gifs.cackhanded.net")
+params+=(-F "token=$PUSHOVER_API_KEY")
+params+=(-F "user=$PUSHOVER_USER_KEY")
+
+# an argument is seen as an associated URL
+[ -n "${1:-}" ] && params+=(-F "url=$1")
+
+# the message is from STDIN
+params+=(-F "message=$(cat)")
+
+curl \
+    -s \
+    "${params[@]}" \
+        https://api.pushover.net/1/messages.json
+
+echo ''

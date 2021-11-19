@@ -40,3 +40,11 @@ jobs:
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
         run: |
           ./script/today
+
+      - name: Notify on failure
+        env:
+          PUSHOVER_API_KEY: ${{secrets.PUSHOVER_API_KEY}}
+          PUSHOVER_USER_KEY: ${{secrets.PUSHOVER_USER_KEY}}
+        if: failure()
+        run: |
+          echo "Tweeting today's GIF failed" | ./script/pushover "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
