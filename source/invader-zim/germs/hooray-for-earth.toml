@@ -1,0 +1,31 @@
+title = 'Hooray for Earth!'
+published = 2022-01-01T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'soldier',
+    'intestines-of-war',
+]
+body_markdown = """
+
+Three soldiers stand bravely before flags depicting the Earth as seen
+from space. The camera zooms in on one flag and the caption “Hooray
+for Earth” appears.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '2:07.5'
+duration = '3.5'
+crop     = '710:400'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.76mb'

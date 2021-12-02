@@ -1,0 +1,47 @@
+title = 'Cleaning'
+published = 2022-01-08T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim scrubbing his house clean.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '5:20.8'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#374559',  # bucket
+    '#2a303d',
+    '#2d6d7a',  # toilet
+    '#914b3b',  # fridge
+    '#3f244c',  # wall
+    '#35252e',
+    '#394177',  # floor
+    '#50ca3e',  # goggles tint
+]
+
+[output]
+colours    = '72'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.43mb'
+
+[[clip]]
+start = '0.1'
+end   = '1.6'
+
+[[clip]]
+start = '4.9'
+end   = '5.7'

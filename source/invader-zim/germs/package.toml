@@ -1,0 +1,28 @@
+title = 'Package'
+published = 2022-01-04T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim rifles through a shipping box, throwing packing peanuts everywhere.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '4:26.7'
+duration = '2.3'
+crop     = '710:400:5:50'
+
+[output]
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.33mb'

@@ -1,0 +1,48 @@
+title = 'Destroy you'
+published = 2022-01-16T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, appearing on a viewscreen while wearing a shower cap, rubber gloves, and
+overalls, tells some germs “I’ll destroy you! And you! And you!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '9:09.0'
+duration = '4'
+crop     = '560:315:80:120'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '20'
+max_size   = '0.8mb'
+
+[[caption]]
+text      = "I’ll destroy you!"
+from      = '0'
+to        = '2.5'
+type      = 'zim_emphasis'
+
+[[caption]]
+text      = "And you!"
+from      = '2.51'
+to        = '3.3'
+type      = 'zim_speak'
+placement = '133,224'
+
+[[caption]]
+text      = "And you! And you!"
+from      = '3.31'
+to        = '4'
+type      = 'zim_speak'

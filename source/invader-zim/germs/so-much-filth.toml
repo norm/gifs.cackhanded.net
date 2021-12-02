@@ -1,0 +1,58 @@
+title = 'So. Much. Filth.'
+published = 2022-01-15T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, wearing nanogoggles and cringing, laments that there is
+“So. Much. Filth.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '4:38.0'
+duration = '8'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#503540',  # wall gradient
+    '#5e3d4a',
+    '#74495a',
+    '#56263d',  # sofa
+    '#642a44',
+]
+
+[output]
+colours    = '85'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '1.2mb'
+
+[[caption]]
+text      = "So."
+from      = '4.5'
+to        = '5.5'
+type      = 'zim_emphasis'
+placement = '150,225'
+
+[[caption]]
+text      = "So. Much."
+from      = '5.51'
+to        = '6.8'
+type      = 'zim_emphasis'
+placement = '150,225'
+
+[[caption]]
+text      = "So. Much. Filth."
+from      = '6.81'
+to        = '8'
+type      = 'zim_emphasis'

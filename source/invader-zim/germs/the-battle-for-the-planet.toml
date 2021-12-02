@@ -1,0 +1,36 @@
+title = 'The battle for the planet'
+published = 2021-12-31T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, wearing nanogoggles and carrying a mop, bucket, and cleaning spray,
+declares “I never even suspected that the battle for the planet would ever
+take place in my own fortress!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '5:02.0'
+duration = '7'
+crop     = '710:400:5:70'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.95mb'
+
+[[caption]]
+text      = "I never even suspected that the\nbattle for the planet would\never take place in my own fortress!"
+from      = '0'
+to        = '10'
+type      = 'zim_speak'

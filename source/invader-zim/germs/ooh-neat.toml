@@ -1,0 +1,34 @@
+title = 'Oooh! Neat!'
+published = 2022-01-14T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim admires something, “Oooh! Neat!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '3:16.6'
+duration = '1.75'
+crop     = '710:400:5:70'
+
+[output]
+colours    = '58'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.15mb'
+
+[[caption]]
+text      = "Oooh! Neat!"
+from      = '0.8'
+to        = '2'
+type      = 'zim_speak'

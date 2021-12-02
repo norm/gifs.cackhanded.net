@@ -1,0 +1,72 @@
+title = 'Space meat!'
+published = 2022-01-11T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'burgerlord',
+    'rocket',
+    'space',
+]
+body_markdown = """
+
+A close-up on a rocket flying through space, and overlaid is the
+head of Burgerlord saying “Space meat!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '11:18'
+duration = '2.2'
+crop     = '710:400:5:80'
+
+[palette]
+add = [
+    '#206906',  # hat lettuce
+    '#0d4c00',
+    '#926a73',  # hat meat
+    '#714e55',
+    '#8d625f',  # space meat
+    '#4f3e38',
+    '#947f67',
+    '#92715a',
+    '#906e53',
+]
+
+[output]
+colours    = '65'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '20'
+max_size   = '0.54mb'
+
+[[caption]]
+text          = "SPACE MEAT!"
+from          = '0.9'
+to            = '1'
+type          = 'zim_shout'
+size          = '36'
+placement     = '120,225'
+colour        = '#fff9'
+stroke_colour = '#0009'
+
+[[caption]]
+text      = "SPACE MEAT!"
+from      = '1.01'
+to        = '1.8'
+type      = 'zim_shout'
+size      = '36'
+placement = '120,225'
+
+[[caption]]
+text          = "SPACE MEAT!"
+from          = '1.81'
+to            = '1.9'
+type          = 'zim_shout'
+size          = '36'
+placement     = '120,225'
+colour        = '#fff9'
+stroke_colour = '#0009'

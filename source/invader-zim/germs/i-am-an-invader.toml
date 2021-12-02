@@ -1,0 +1,62 @@
+title = 'I am an Invader!'
+published = 2022-01-10T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, wearing a shower cap, rubber gloves, overalls, and boxes of
+tissues, admonishes himself. “I am an Invader! I can’t let these
+germs make me lose sight of the bigger mission!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '8:11'
+duration = '5.6'
+crop     = '710:400:5:75'
+
+[palette]
+add = [
+    '#b47dce',  # tank
+    '#d9a4ec',
+    '#f3cfff',
+    '#231f22',
+    '#f5b7cd',  # zim accents
+    '#bf3f7d',
+    '#cf3075',
+    '#79558b',  # piping
+    '#75125f',
+]
+
+[output]
+colours    = '75'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.01mb'
+
+[[caption]]
+text      = "I am an Invader!"
+from      = '0.2'
+to        = '1.7'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "I can’t let these germs make me\nlose sight of the bigger                   "
+from      = '1.96'
+to        = '5.3'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "mission!"
+from      = '4.3'
+to        = '5.3'
+type      = 'zim_emphasis'
+placement = '330,225'

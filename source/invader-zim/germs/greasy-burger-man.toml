@@ -1,0 +1,54 @@
+title = 'Greasy burger man'
+published = 2022-01-17T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'burgerlord',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, wearing a shower cap, rubber gloves, overalls, and boxes of
+tissues, tells Burgerlord “This gives me an idea, greasy burger man…”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '11:47.0'
+duration = '3.5'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#5bd048',  # nanogoggles
+    '#acd081',  # zim flesh
+    '#b8c24f',  # gloves
+    '#7e853d',
+    '#326624',  # hat lettuce
+    '#906976',  # hat meat
+    '#b0b49f',  # burgerlord flesh
+]
+
+[output]
+colours    = '67'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.26mb'
+mode       = 'full'
+
+[[caption]]
+text      = "This gives me an idea\n "
+from      = '0.9'
+to        = '3.25'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "greasy burger man…"
+from      = '2.1'
+to        = '3.25'
+type      = 'zim_emphasis'

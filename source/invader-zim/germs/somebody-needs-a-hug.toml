@@ -1,0 +1,69 @@
+title = 'Somebody needs a hug'
+published = 2022-01-09T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Gir declares to Zim “Somebody needs a hug!”
+
+Zim disagrees, “No! No! No, Gir, no!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '6:48.0'
+duration = '6.2'
+crop     = '710:400:5:75'
+
+[palette]
+add = [
+    '#3e2711',  # floor tiles
+    '#672b25',
+]
+
+[output]
+colours    = '120'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.84mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Aww, somebody\nneeds a hug!"
+from      = '0.6'
+to        = '2.4'
+type      = 'zim_speak'
+placement = '80,196'
+
+[[caption]]
+text      = "NO!"
+from      = '3.55'
+to        = '3.85'
+type      = 'zim_shout'
+placement = '200,210'
+size      = '36'
+
+[[caption]]
+text      = "NO!"
+from      = '4'
+to        = '4.2'
+type      = 'zim_shout'
+placement = '330,210'
+size      = '36'
+
+[[caption]]
+text      = "NO, GIR, NO!"
+from      = '4.3'
+to        = '5.2'
+type      = 'zim_shout'
+placement = '290,210'
+size      = '36'

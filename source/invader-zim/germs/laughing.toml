@@ -1,0 +1,41 @@
+title = 'Laughing'
+published = 2022-01-05T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim and Gir sitting on the sofa, laughing.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '2:32.0'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#d790cc',  # gir's tongue
+]
+
+[output]
+colours    = '63'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.63mb'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '2.2'
+end   = '4.7'

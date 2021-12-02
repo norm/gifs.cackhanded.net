@@ -1,0 +1,50 @@
+title = 'prepare yourselves for destruction'
+published = 2022-01-13T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, wearing nanogoggles and carrying a mop, bucket, and cleaning spray,
+threatens “Hear me now, germs! Prepare yourselves for destruction!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '5:08.8'
+duration = '8'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.9mb'
+
+[[caption]]
+text      = "Hear me now, germs!"
+from      = '0.3'
+to        = '2.2'
+type      = 'zim_shout'
+size      = '40'
+
+[[caption]]
+text      = "Prepare yourselves for"
+from      = '3.2'
+to        = '6.5'
+type      = 'zim_speak'
+placement = '27,225'
+
+[[caption]]
+text      = "destruction!"
+from      = '4.9'
+to        = '6.5'
+type      = 'zim_emphasis'
+placement = '302,225'

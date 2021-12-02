@@ -1,0 +1,43 @@
+title = 'Roll around on the floor'
+published = 2022-01-02T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/germs/index'
+tag = [
+    'gir',
+]
+body_markdown = """
+
+Gir declares “I’m gonna roll around on the floor for a little bit, ’kay?”,
+then proceeds to do just that.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '6:28'
+duration = '9.7'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#313616',  # wall gradient
+    '#f4462d',  # gir's tongue
+    '#53253b',  # sofa
+]
+
+[output]
+colours    = '77'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.65mb'
+
+
+[[caption]]
+text      = "I’m gonna roll around\non the floor for a little bit, ’kay?"
+from      = '0.4'
+to        = '2.4'
+type      = 'zim_speak'
