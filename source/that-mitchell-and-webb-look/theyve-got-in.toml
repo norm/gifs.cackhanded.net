@@ -1,6 +1,7 @@
 title = 'They’ve got in'
 published = 2021-11-04T07:00:00Z
-source_fkey = 'that-mitchell-and-webb-look/index'
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/4x05/index'
 tag = [
     'the-quiz-broadcast',
     'gameshow-host',

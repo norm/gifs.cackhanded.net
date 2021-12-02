@@ -1,0 +1,39 @@
+title = 'They’ve all gone'
+published = 2021-12-30T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x01/index'
+tag = [
+    'waiter',
+]
+body_markdown = """
+
+A waiter declares “She’s gone, sir. They’ve all gone.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mwlook-101'
+ext      = 'm4v'
+start    = '9:53.5'
+duration = '5.2'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.65mb'
+
+[[caption]]
+text      = "She’s gone, sir"
+from      = '0.5'
+to        = '2'
+type      = 'speak'
+
+[[caption]]
+text      = "They’ve all gone"
+from      = '2.7'
+to        = '3.8'
+type      = 'speak'

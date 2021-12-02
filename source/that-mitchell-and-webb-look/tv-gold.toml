@@ -1,6 +1,7 @@
 title = 'TV gold'
 published = 2021-11-11T07:00:00Z
-source_fkey = 'that-mitchell-and-webb-look/index'
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/4x04/index'
 tag = [
     'the-quiz-broadcast',
     'gameshow-host',

@@ -1,0 +1,58 @@
+title = 'One, one, one'
+published = 2021-12-16T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x01/index'
+tag = [
+    'contestant-julie',
+    'contestant-simon',
+    'numberwang-host',
+    'numberwang',
+]
+body_markdown = """
+
+The two contestants of Numberwang repeatedly guess “one” until the host
+declares “That’s wangernumb!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mwlook-101'
+ext      = 'm4v'
+start    = '4:03.75'
+
+[output]
+colours    = '186'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.8mb'
+
+[[clip]]
+start = '0'
+end   = '3.2'
+
+[[clip]]
+start = '3.85'
+end   = '4.1'
+
+[[clip]]
+start = '4.6'
+end   = '5.1'
+
+[[clip]]
+start = '5.5'
+end   = '7.4'
+
+[[caption]]
+text      = "One"
+from      = '0'
+to        = '4.8'
+type      = 'speak'
+
+[[caption]]
+text      = "That’s wangernumb!"
+from      = '5.1'
+to        = '8'
+type      = 'shout'

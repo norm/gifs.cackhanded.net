@@ -1,0 +1,55 @@
+title = 'The manager'
+published = 2022-01-06T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x01/index'
+tag = [
+    'waiter',
+]
+body_markdown = """
+
+A waiter sneers at a customer “How can I possibly introduce **you** to the
+manager? You haven’t shaved, you’re not wearing a tie, and you hold your
+ladle like a pen!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'mwlook-101'
+ext      = 'm4v'
+start    = '11:21.0'
+duration = '7'
+crop     = '560:315:45:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1mb'
+
+[[caption]]
+text      = "How can I possibly\nintroduce          to the manager?"
+from      = '0'
+to        = '2.5'
+type      = 'speak'
+
+[[caption]]
+text      = "you"
+from      = '0'
+to        = '2.5'
+type      = 'shout'
+placement = '175,216'
+
+[[caption]]
+text      = "You haven’t shaved,\nyou’re not wearing a tie"
+from      = '2.7'
+to        = '4.8'
+type      = 'speak'
+
+[[caption]]
+text      = "And you hold\nyour ladle like a pen!"
+from      = '4.9'
+to        = '6.8'
+type      = 'speak'

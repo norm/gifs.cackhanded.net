@@ -1,6 +1,7 @@
 title = 'That’s a bad miss'
 published = 2021-08-26T07:00:00Z
-source_fkey = 'that-mitchell-and-webb-look/index'
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x04/index'
 tag = [
     '404-page-candidate',
     'commentator-ted',

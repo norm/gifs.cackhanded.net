@@ -1,6 +1,7 @@
 title = 'Are we the baddies?'
 published = 2021-11-18T07:00:00Z
-source_fkey = 'that-mitchell-and-webb-look/index'
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x01/index'
 tag = [
     'nazis',
     'the-baddies',
