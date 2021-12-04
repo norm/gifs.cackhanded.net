@@ -1,0 +1,68 @@
+title = 'Pencil'
+published = 2022-01-22T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'dib-membrane',
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+With the butt end of a pencil sticking out of his nose, Dib informs Ms
+Bitters “I think a pencil is lodged in my brain”. She asks “How far in
+your brain?” He pauses, then says “Pretty far”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '15:45.5'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#c78f04',  # pencil
+    '#6a5200',
+    '#5f8d55',  # desk
+    '#7ebd4e',  # chair
+    '#4f0f00',  # apple
+    '#790c00',
+    '#428786',  # wall
+    '#30706d',
+]
+
+[output]
+colours    = '70'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.53mb'
+
+[[clip]]
+start = '0'
+end   = '3.5'
+
+[[clip]]
+start = '4.35'
+end   = '10.5'
+
+[[caption]]
+text      = "I think a pencil is lodged in my brain"
+from      = '0.25'
+to        = '3.25'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "How far in your brain?"
+from      = '3.5'
+to        = '5.3'
+type      = 'zim_speak'
+[[caption]]
+text      = "Pretty far"
+from      = '7.25'
+to        = '8.5'
+type      = 'zim_speak'

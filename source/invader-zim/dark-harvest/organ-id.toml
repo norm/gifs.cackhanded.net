@@ -1,0 +1,29 @@
+title = 'Organ I.D.'
+published = 2022-01-26T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim being examined by Dib’s X-scope, it reveals his internal organs are
+*unknown*.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '13:20.5'
+duration = '2.5'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.2mb'

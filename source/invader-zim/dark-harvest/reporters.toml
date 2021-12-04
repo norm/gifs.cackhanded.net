@@ -1,0 +1,39 @@
+title = 'Reporters'
+published = 2022-01-23T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'dib-membrane',
+    'flashbulbs',
+    'photography',
+    'press-conference',
+]
+body_markdown = """
+
+Dib looks around nervously at a bunch of reporters crowded around him with
+microphones and cameras, while camera flashbulbs go off repeatedly.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '23:28.8'
+duration = '1.6'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#1e8448',  # mic badge
+    '#0e502c',
+    '#352962',  # chair
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.28mb'

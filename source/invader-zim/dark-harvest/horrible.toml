@@ -1,0 +1,51 @@
+title = 'Horrible'
+published = 2022-01-19T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'dib-membrane',
+    'nurse',
+]
+body_markdown = """
+
+The nurse hears something strange while listening to Dib’s chest. She draws
+back in horror, points at him and screams “It isn’t human! It’s horrible!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '23:20.3'
+duration = '6'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '25'
+max_size   = '0.66mb'
+
+[[caption]]
+text      = "Aaah!"
+from      = '1'
+to        = '2.6'
+type      = 'zim_emphasis'
+placement = '91,225'
+
+[[caption]]
+text      = "It isn’t human!"
+from      = '2.61'
+to        = '4.1'
+type      = 'zim_emphasis'
+placement = '40,225'
+
+[[caption]]
+text      = "It’s horrible!"
+from      = '4.11'
+to        = '6'
+type      = 'zim_emphasis'
+placement = '51,225'

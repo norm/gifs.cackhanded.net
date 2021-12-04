@@ -1,0 +1,35 @@
+title = 'Phone'
+published = 2022-01-25T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'receptionist',
+]
+body_markdown = """
+
+A receptionist answers the phone, but instead of speaking foam
+spills from her mouth.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '17:10.25'
+duration = '4'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#360649',  # nameplate
+    '#1b0324',
+]
+
+[output]
+colours    = '72'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = 'auto'

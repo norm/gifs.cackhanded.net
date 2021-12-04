@@ -1,0 +1,58 @@
+title = 'Your organs, in danger'
+published = 2022-01-18T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'aki',
+    'dib-membrane',
+    'penny',
+    'rob',
+    'zootch',
+]
+body_markdown = """
+
+Dib, knocked to the floor, tells a bunch of kids walking past “Wait … your
+organs … in danger!" They remain oblivious.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '17:53.4'
+duration = '4.5'
+crop     = '710:400:5:0'
+
+[palette]
+add = [
+    '#8dd559',  # zootch's hair
+]
+
+[output]
+colours    = '73'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '30'
+max_size   = '1.01mb'
+
+[[caption]]
+text      = "Wait …"
+from      = '0.5'
+to        = '1.9'
+type      = 'zim_speak'
+placement = '45,225'
+
+[[caption]]
+text      = "Wait … your organs …"
+from      = '1.91'
+to        = '3.59'
+type      = 'zim_speak'
+placement = '45,225'
+
+[[caption]]
+text      = "Wait … your organs … in danger!"
+from      = '3.6'
+to        = '4.6'
+type      = 'zim_speak'

@@ -1,0 +1,57 @@
+title = 'Hideous blob'
+published = 2022-01-20T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'dib-membrane',
+    'invader-zim',
+    'spoo',
+]
+body_markdown = """
+
+Dib points at an obese-looking Zim and cries “You’re a hideous blob
+of stolen organs!”
+
+Zim defends himself with “I’ve been working out” but as he says it,
+his cheeks bulge and he barfs up a long intesinal-looking organ, which
+unrolls across the floor. He sucks it back up like spaghetti and smiles,
+revealing a mouthful of organs.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '19:17.0'
+duration = '10.8'
+crop     = '710:400:5:60'
+
+[palette]
+add = [
+    '#175180',  # dib's shirt
+    '#111f36',  # hair
+    '#28364d',
+]
+# list = 1
+# show = 1
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.04mb'
+
+[[caption]]
+text      = "You’re a hideous blob\nof stolen organs!"
+from      = '0'
+to        = '2.8'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "I’ve been working out"
+from      = '3'
+to        = '4'
+type      = 'zim_speak'

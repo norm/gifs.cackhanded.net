@@ -1,0 +1,44 @@
+title = 'Full of organs'
+published = 2022-01-21T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'hall-monitor',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim looks the Hall Monitor up and down. “Say, you’re full of organs,
+aren’t you?” The Hall Monitor proudly replies “Why yes, yes I am.”
+
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '14:46.0'
+duration = '6'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = 'auto'
+
+[[caption]]
+text      = "Say, you’re full of\norgans, aren’t you?"
+from      = '0.6'
+to        = '3.6'
+type      = 'zim_speak'
+placement = 'br'
+
+[[caption]]
+text      = "Why yes,\nyes I am"
+from      = '4.1'
+to        = '5.8'
+type      = 'zim_speak'

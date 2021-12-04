@@ -1,0 +1,49 @@
+title = 'Inferior human organs'
+published = 2022-01-24T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/dark-harvest/index'
+tag = [
+    'invader-zim',
+    'skool',
+    'zootch',
+]
+body_markdown = """
+
+As Zootch is on the floor in pain behind him, Zim celebrates “Inferior human
+organs!” A dodgeball catches him in the abdomen, and Zim doubles over in pain,
+crying “Aaah, my squeedily spooch!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e04'
+ext      = 'm4v'
+start    = '12:44.25'
+duration = '5.2'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#cdbc66',  # skin in shadow
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.43mb'
+
+[[caption]]
+text      = "Inferior human organs!"
+from      = '0.05'
+to        = '2.3'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Aaah, my squeedily spooch!"
+from      = '3.1'
+to        = '4.75'
+type      = 'zim_emphasis'
