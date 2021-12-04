@@ -1,0 +1,38 @@
+title = 'Finally we are safe'
+published = 2022-02-13T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'dib-membrane',
+    'gir',
+    'voot-carrier',
+]
+body_markdown = """
+
+Gir and Zim are flying above the city on the Voot Carrier (which is disguised
+as a pig), and Zim is saying “Everything is smooth and…” as a bee bumps into
+the carrier, which bursts into flames and starts an uncontrolled descent.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '12:24.5'
+duration = '6.2'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '1.2mb'
+
+[[caption]]
+text      = "Everything is smooth and…"
+from      = '0.9'
+to        = '2.9'
+type      = 'zim_speak'

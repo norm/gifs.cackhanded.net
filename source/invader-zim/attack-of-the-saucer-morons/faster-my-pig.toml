@@ -1,0 +1,45 @@
+title = 'Faster, my pig'
+published = 2022-01-27T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'voot-carrier',
+]
+body_markdown = """
+
+Zim turns from looking behind the Voot Carrier (which is disguised
+as a pig) and screams “Faster, my pig, faster!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '11:52.4'
+duration = '3.4'
+crop     = '710:400'
+
+[output]
+colours    = '58'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.7mb'
+
+[[caption]]
+text      = "Faster, my pig,"
+from      = '1'
+to        = '4'
+type      = 'zim_speak'
+placement = '109,225'
+
+[[caption]]
+text      = "faster!"
+from      = '2.2'
+to        = '4'
+type      = 'zim_emphasis'
+placement = '287,225'

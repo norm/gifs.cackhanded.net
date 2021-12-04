@@ -1,0 +1,30 @@
+title = 'Woop woop'
+published = 2022-02-11T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'police-car',
+    'da-beast',
+]
+body_markdown = """
+
+A police car rushing down the highway, lights flashing.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '0:55.9'
+duration = '1.5'
+crop     = '710:400:5:35'
+
+[output]
+brightness = '0.06'
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '20'
+max_size   = '0.4mb'

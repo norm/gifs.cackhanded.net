@@ -1,0 +1,51 @@
+title = 'Government Man'
+published = 2022-02-04T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'gir',
+    'government-man',
+    'saucer-morons',
+]
+body_markdown = """
+
+Gir, inside a robot styled to look like a man dressed in a black suit
+wearing dark glasses, and with an earpiece, stomps through the crowd
+of Saucer Morons saying “I am Government Man, come from the government.
+The government has sent me.”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '9:51.9'
+duration = '4.3'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '25'
+max_size   = '1.82mb'
+
+[[caption]]
+text      = "I am Government Man"
+from      = '0'
+to        = '1.09'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Come from the government"
+from      = '1.1'
+to        = '2.7'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "The government has sent me"
+from      = '2.71'
+to        = '4'
+type      = 'zim_speak'

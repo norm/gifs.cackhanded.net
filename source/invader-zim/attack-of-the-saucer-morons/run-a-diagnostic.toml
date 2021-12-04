@@ -1,0 +1,49 @@
+title = 'Run a diagnostic'
+published = 2022-02-08T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'invader-zim',
+    'voot-runner',
+]
+body_markdown = """
+
+Zim instructs his Voot Runner computer “run a diagnostic, you’ve gone crazy!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '1:58.0'
+duration = '4.4'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '0.55mb'
+
+[[caption]]
+text      = "Computer, run a diagnostic"
+from      = '0'
+to        = '2.1'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "You’ve gone"
+from      = '2.11'
+to        = '4.25'
+type      = 'zim_speak'
+placement = '128,225'
+
+[[caption]]
+text      = "crazy!"
+from      = '3.2'
+to        = '4.25'
+type      = 'zim_emphasis'
+placement = '277,225'

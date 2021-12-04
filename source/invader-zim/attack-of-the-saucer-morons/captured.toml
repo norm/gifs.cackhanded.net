@@ -1,0 +1,61 @@
+title = 'Captured'
+published = 2022-02-09T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'saucer-morons',
+]
+body_markdown = """
+
+Zim, held aloft by Saucer Morons, tells Gir over a video link
+“I’ve been captured!" Gir glaps and celebrates ”YAAAAY!”
+
+Zim corrects it, “No, that’s bad, Gir”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '8:48'
+duration = '5.2'
+crop     = '710:400:5:5'
+
+[palette]
+add = [
+    '#cbed79',  # gir's dog disguise
+    '#adc756',
+    '#259585',  # gir's antenna
+]
+
+[output]
+colours    = '71'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.8mb'
+
+[[caption]]
+text      = "I’ve been captured!"
+from      = '0'
+to        = '1.4'
+type      = 'zim_speak'
+placement = '50,225'
+
+[[caption]]
+text      = "YAAAAY!"
+from      = '1.41'
+to        = '3.2'
+type      = 'zim_emphasis'
+placement = '290,225'
+
+[[caption]]
+text      = "No, that’s bad, Gir"
+from      = '3.4'
+to        = '5.2'
+type      = 'zim_speak'
+placement = '50,225'

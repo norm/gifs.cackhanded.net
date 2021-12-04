@@ -1,0 +1,39 @@
+title = 'Slap'
+published = 2022-02-05T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'voot-carrier',
+    'yoa',
+]
+body_markdown = """
+
+Zim slaps Yoa, who was pleading to be taken along, and she falls off
+the racing Voot Carrier, splashing into the water below.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '11:45.8'
+crop     = '710:400:5:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.93mb'
+
+[[clip]]
+start = '0'
+end   = '2.1'
+
+[[clip]]
+start = '3.3'
+end   = '5'

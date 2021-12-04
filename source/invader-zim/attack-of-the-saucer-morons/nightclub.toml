@@ -1,0 +1,30 @@
+title = 'Nightclub'
+published = 2022-02-12T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'dancing',
+    'gir',
+    'nightclub',
+]
+body_markdown = """
+
+Gir and many other people dancing in a nightclub.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '3:22.4'
+duration = '2'
+crop     = '710:400:5:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '30'
+max_size   = '0.7mb'

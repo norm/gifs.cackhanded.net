@@ -1,0 +1,42 @@
+title = 'You smell like feet!'
+published = 2022-01-28T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'invader-zim',
+    'saucer-morons',
+]
+body_markdown = """
+
+Zim screams at the Saucer Morons “Stand away, you smell like feet!
+Leave me alone!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '8:09.0'
+duration = '3.5'
+crop     = '710:400:5:70'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.25mb'
+
+[[caption]]
+text      = "Stand away, you smell like feet!"
+from      = '0.3'
+to        = '1.95'
+type      = 'zim_emphasis'
+
+[[caption]]
+text      = "Leave me alone!"
+from      = '2'
+to        = '4.3'
+type      = 'zim_emphasis'

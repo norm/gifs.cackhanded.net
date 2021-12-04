@@ -1,0 +1,45 @@
+title = 'I like you'
+published = 2022-02-01T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'desmond-flapp',
+    'gir',
+    'government-man',
+    'voot-carrier',
+]
+body_markdown = """
+
+Gir, inside a robot styled to look like a man dressed in a black suit
+wearing dark glasses, and with an earpiece, strokes Desmond’s head
+and says “I like you”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '10:45.6'
+duration = '2.9'
+crop     = '710:400:5:20'
+
+[palette]
+add = [
+    '#47fb00',  # ufo hat
+]
+
+[output]
+colours    = '41'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.18mb'
+
+[[caption]]
+text      = "I like you"
+from      = '1.2'
+to        = '2.5'
+type      = 'zim_speak'
+placement = '130,225'

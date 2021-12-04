@@ -1,0 +1,59 @@
+title = 'Fill us'
+published = 2022-02-16T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'saucer-morons',
+    'yoa',
+]
+body_markdown = """
+
+Yoa, one of the Saucer Morons implores Zim “Fill us with wisdom from another
+beyond!”
+
+The rest raise up from bowing and chorus “Yes! Fill us!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '8:12.55'
+duration = '5.6'
+crop     = '710:400:5:70'
+
+[palette]
+add = [
+    '#454c55',  # saucer hat
+    '#bef9b4',
+]
+
+[output]
+colours    = '120'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.83mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Fill us with wisdom\nfrom another beyond!"
+from      = '0.6'
+to        = '2.8'
+type      = 'zim_speak'
+placement = '50,196'
+
+[[caption]]
+text      = "YES!"
+from      = '3.3'
+to        = '5.6'
+type      = 'zim_shout'
+placement = '105,210'
+
+[[caption]]
+text      = "YES! FILL US!"
+from      = '4.4'
+to        = '5.6'
+type      = 'zim_shout'

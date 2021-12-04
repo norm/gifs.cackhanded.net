@@ -1,0 +1,41 @@
+title = 'The bees!'
+published = 2022-02-03T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, standing infront of a raging fire, declares “Once I take care of the
+humans, I will begin my war against the bees!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '2:59.8'
+duration = '5.9'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '20'
+max_size   = '1mb'
+
+[[caption]]
+text      = "Once I take care of the humans,\nI will begin my war against…"
+from      = '0'
+to        = '2.9'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "…the bees!"
+from      = '5'
+to        = '6'
+type      = 'zim_emphasis'

@@ -1,0 +1,48 @@
+title = 'Release the pig!'
+published = 2022-02-06T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'desmond-flapp',
+    'invader-zim',
+    'saucer-morons',
+    'trudy',
+]
+body_markdown = """
+
+Zim screams at Trudy, who is holding the remote for the Voot Carrier
+“Release the pig!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '7:18.6'
+duration = '1.8'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#70ca54',  # ufo hat green
+    '#dcddc1',  # grey flesh
+    '#a09e90',
+    '#756d66',  # chihuahua
+    '#4f4938',
+]
+
+[output]
+colours    = '75'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '12'
+loss       = '20'
+max_size   = '0.36mb'
+mode       = 'full'
+
+[[caption]]
+text      = "Release the pig!"
+from      = '0.5'
+to        = '2'
+type      = 'zim_shout'

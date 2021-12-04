@@ -1,0 +1,42 @@
+title = 'Why am I so amazing?!'
+published = 2022-02-10T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim asks “Why am I so amazing?!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '4:36.0'
+duration = '3.5'
+crop     = '710:400:5:25'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.5mb'
+
+[[caption]]
+text      = "Why am I so"
+from      = '0.2'
+to        = '4'
+type      = 'zim_speak'
+placement = '106,225'
+
+[[caption]]
+text      = "amazing?!"
+from      = '2.1'
+to        = '4'
+type      = 'zim_emphasis'
+placement = '250,225'

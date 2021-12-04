@@ -1,0 +1,89 @@
+title = 'Experimental government aircraft'
+published = 2022-02-15T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'gir',
+    'government-man',
+    'invader-zim',
+    'saucer-morons',
+    'desmond-flapp',
+    'yoa',
+]
+body_markdown = """
+
+Gir, inside a robot styled to look like a man dressed in a black suit
+wearing dark glasses, and with an earpiece, tells the crowd of Saucer
+Morons that “This is not an alien lifeform, he is an experimental
+government aircraft”.
+
+Desmond is not convinced, “That’s an aircraft?”
+
+Zim yells at the crowd “FOOLS!” and asks “What else would I be?”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '10:01.8'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#b39e7b',  # flesh
+    '#41fb00',  # deely boppers
+    '#cffdc6',  # ufo hat
+]
+
+[output]
+colours    = '71'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.6mb'
+
+[[clip]]
+start = '0'
+end   = '5.4'
+
+[[clip]]
+start = '6.8'
+end   = '11'
+
+[[caption]]
+text      = "This is not\nan alien lifeform"
+from      = '0'
+to        = '2'
+type      = 'zim_speak'
+placement = '230,196'
+
+[[caption]]
+text      = "He is an experimental\ngovernment aircraft"
+from      = '2.6'
+to        = '5.4'
+type      = 'zim_speak'
+placement = 'br'
+
+[[caption]]
+text      = "That’s an aircraft?"
+from      = '5.5'
+to        = '7.1'
+type      = 'zim_speak'
+placement = 'bl'
+
+[[caption]]
+text      = "FOOLS!"
+from      = '7.3'
+to        = '8.6'
+type      = 'zim_emphasis'
+placement = '125,196'
+
+[[caption]]
+text      = "What else\nwould I be?"
+from      = '8.61'
+to        = '10'
+type      = 'zim_speak'
+placement = '100,196'

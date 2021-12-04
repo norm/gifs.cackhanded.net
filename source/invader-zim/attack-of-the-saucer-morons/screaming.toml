@@ -1,0 +1,31 @@
+title = 'Screaming'
+published = 2022-02-14T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'gir',
+    'invader-zim',
+    'voot-carrier',
+]
+body_markdown = """
+
+As the Voot Carrier is crashing to the ground, Gir repeatedly screams in Zim’s
+face.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '12:31.0'
+duration = '6.8'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '50'
+max_size   = '1.53mb'

@@ -1,0 +1,40 @@
+title = 'Experimentation'
+published = 2022-01-31T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'invader-zim',
+    'scientist',
+]
+body_markdown = """
+
+Zim has visions of being experimented upon.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '7:57.06'
+duration = '2.7'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#acd8ce',  # lab coat
+    '#bfc0bc',  # scientist's grin
+    '#841641',  # zim's tongue
+    '#a3b3b9',  # knife
+    '#7f5057',  # squeedily spooch
+    '#2e7636',
+    '#094006',
+]
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.66mb'

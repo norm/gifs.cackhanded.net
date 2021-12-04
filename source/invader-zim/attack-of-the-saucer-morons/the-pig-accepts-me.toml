@@ -1,0 +1,47 @@
+title = 'The pig accepts me!'
+published = 2022-02-02T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/attack-of-the-saucer-morons/index'
+tag = [
+    'saucer-morons',
+    'trudy',
+    'voot-carrier',
+]
+body_markdown = """
+
+The Voot Carrier (disguised as a pig) bites a man's head. Muffled from
+inside the pig comes his voice “The pig accepts me!”
+
+"""
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '7:10.7'
+duration = '3.1'
+crop     = '710:400:5:30'
+
+[palette]
+add = [
+    '#325841',  # green shirt
+    '#8840a6',  # voot cruiser
+    '#501d63',
+    '#430930',
+    '#c5fcc0',  # ufo hat light
+    '#56df2a',  # deely boppers
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.42mb'
+
+[[caption]]
+text      = "The pig accepts me!"
+from      = '2'
+to        = '3.1'
+type      = 'zim_emphasis'
