@@ -60,6 +60,8 @@ function create_gif {
         subl -w $toml
     fi
 
+    subl $toml
+
     ./script/get_videos $toml
 
     dimensions=$(
@@ -74,8 +76,6 @@ function create_gif {
         -i '' \
         -e "s/REPLACE_SIZE/$(echo $dimensions | sed -e 's/x/:/')/" \
             $toml
-
-    subl $toml
 
     # run this in the background, until we exit
     ( echo $toml | entr -np sh -c 'echo ""; make' ) &
