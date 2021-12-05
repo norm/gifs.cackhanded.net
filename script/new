@@ -100,13 +100,16 @@ function create_gif {
             p)      printf "$yellow  + Preview$reset\n"
                     open -a Preview $output
                     ;;
+            s)      printf "$yellow  + Safari$reset\n"
+                    open -a Safari $output
+                    ;;
             ' ')    printf "$yellow  * Rebuild$reset"
                     sed -i '' -e 's/XYZZZYX/XYZZZYX/' $toml
                     ;;
             $'\n')  echo ''
                     ;;
             \?)     echo ''
-                    echo 'Hit: [ ]:Rebuild [G]ifwrapped [I]nfo [L]ine [P]review [Q]uit'
+                    echo 'Hit: [ ]:Rebuild [G]ifwrapped [I]nfo [L]ine [P]review [Q]uit [S]afari'
                     ;;
             q)      break
                     ;;
