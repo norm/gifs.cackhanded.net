@@ -1,33 +1,23 @@
 #!/usr/bin/env -S bash -euo pipefail
 
-start="$1"
+match="$1"
 push="$2"
 
-declare -a files
-last_scheduled=$(
-    rg --no-filename published source \
-        | grep -v 2100-01-01 \
-        | sort -u \
-        | tail -1 \
-        | sed -e 's/published = //' -e 's/T.*Z//'
-)
-decrease=0
-datestamp=''
 
-while [ "$datestamp" != "$start" ]; do
-    datestamp=$(gdate +'%Y-%m-%d' --date="$last_scheduled $decrease days")
+today=$(date +'%Y-%m-%d')
 
-    files=($(
-        rg --files-with-matches published.*$datestamp source \
-            || echo ''
-    ))
-    for file in "${files[@]}"; do
-        new_date="$(gdate +'%Y-%m-%d' --date="$datestamp $push days")"
+declare -a sources
+IFS=$'\n' sources=($( rg published source | grep ^source/$match ))
+
+for source in "${sources[@]}"; do
+    filename=$(echo $source | cut -d: -f1)
+    published=$(echo $source | cut -d\  -f3)
+
+    if [[ $published > $today ]]; then
+        new_date=$(gdate +'%Y-%m-%d' --date="$published + $push")
         sed -i '' \
-            -e "s/^published = ${datestamp}.*/published = ${new_date}T07:00:00Z/" \
-            "$file"
-        echo "++ $new_date $file"
-    done
-
-    ((decrease=decrease-1))
+            -e "s/published = .*/published = ${new_date}T07:00:00Z/" \
+                $filename
+        echo "++ $filename pushed to $new_date"
+    fi
 done

@@ -15,7 +15,7 @@ if you look.
 Classic 80s movies day.
 
 * Ghostbusters, until 2022-01-03
-* WarGames, from 2022-01-10 through 2023-01-23
+* WarGames, from 2022-01-17 through 2023-01-30
 
 
 ### Tuesdays

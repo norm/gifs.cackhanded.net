@@ -1,0 +1,61 @@
+title = 'The perfect movie'
+published = 2022-01-10T07:00:00Z
+show_fkey = 'supergirl/index'
+episode_fkey = 'supergirl/lost-souls/index'
+tag = [
+    'brainiac-5',
+    'ghostbusters',
+    'lena-luthor',
+]
+body_markdown = """
+
+Brainy says “Just like in Ghostbusters”. Lena is confused “That’s
+a movie”. Brainy comments “It’s the perfect movie”. Lena, annoyed,
+says “The prototrap is real”.
+
+"""
+
+[video]
+source   = 'file'
+file     = 'supergirl_604'
+ext      = 'm4v'
+start    = '5:11.6'
+duration = '5'
+crop     = '1040:585:120:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '10'
+max_size   = '1.6mb'
+
+[[caption]]
+text      = "Just like in\nGhostbusters"
+from      = '0'
+to        = '1.4'
+type      = 'speak'
+placement = '53,180'
+
+[[caption]]
+text      = "That’s\na movie"
+from      = '1.6'
+to        = '2.3'
+type      = 'speak'
+placement = '275,180'
+
+[[caption]]
+text      = "It’s the\nperfect movie"
+from      = '2.5'
+to        = '3.85'
+type      = 'speak'
+placement = '50,180'
+
+[[caption]]
+text      = "The prototrap\nis real"
+from      = '4.0'
+to        = '4.8'
+type      = 'speak'
+placement = '240,180'

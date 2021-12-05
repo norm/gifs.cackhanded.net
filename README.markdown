@@ -341,6 +341,22 @@ future. A GitHub [workflow](.github/workflows/rebuild.yaml) is set to rebuild
 the site daily, and runs after 7am (so there will be a short delay between 
 7am and the content appearing on the site, I'm not bothered).
 
+
+## Rescheduling GIFs
+
+To reschedule some subset of GIFs for a new date (most typically to push
+publishing by days/weeks as something new is inserted into the schedule),
+use the `push` script:
+
+    # push anything in wargames/ by one week
+    ./script/push wargames '1 week'
+
+This will only affect the schedule for future GIFs, anything already
+published will be left alone.
+
+
+## Listing the scheduled GIFs
+
 To list what is scheduled, there is a `next` script in the repo.
 
     # find the next day with no morning GIF scheduled
