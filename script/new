@@ -84,10 +84,10 @@ function create_gif {
     while true; do
         read -s -N1 key
         case $key in
-            g)      printf "$yellow  > Send to GIFwrapped$reset\n"
+            g)      printf "$yellow  > Send to GIFwrapped\n"
                     (
                         make gifwrapped
-                        printf "$yellow>   Done$reset\n"
+                        printf "  > Done$reset\n"
                     ) &
                     ;;
             i)      printf "$yellow  * Send infodump to Sublime$reset\n"
