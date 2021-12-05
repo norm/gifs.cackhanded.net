@@ -16,6 +16,12 @@ Zim just stares into the distance.
 
 """
 
+info.colours = '97'
+info.filesize = '0.24mb'
+info.frames = '20'
+info.size = '480×270'
+info.time = '1.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

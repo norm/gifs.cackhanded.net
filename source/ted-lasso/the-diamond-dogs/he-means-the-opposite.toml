@@ -15,6 +15,12 @@ you got it right in a game of charades. Roy looks nonplussed
 
 """
 
+info.colours = '80'
+info.filesize = '0.91mb'
+info.frames = '36'
+info.size = '400×225'
+info.time = '2.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

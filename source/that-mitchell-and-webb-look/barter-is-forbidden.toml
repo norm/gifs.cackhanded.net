@@ -13,6 +13,12 @@ The host of The Quiz Broadcast warns the viewer
 
 """
 
+info.colours = '80'
+info.filesize = '1.28mb'
+info.frames = '58'
+info.size = '480×270'
+info.time = '3.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-404'

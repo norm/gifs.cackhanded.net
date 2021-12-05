@@ -11,6 +11,12 @@ Victor grabs Eric, says “Come on, muffin!” and steers him away, grinning.
 
 """
 
+info.colours = '80'
+info.filesize = '1.27mb'
+info.frames = '44'
+info.size = '480×270'
+info.time = '2.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

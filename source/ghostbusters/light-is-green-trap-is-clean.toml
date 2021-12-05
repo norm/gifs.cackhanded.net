@@ -13,6 +13,12 @@ Ray, instructing Winston how to use the containment unit, saying
 
 """
 
+info.colours = '80'
+info.filesize = '1.97mb'
+info.frames = '80'
+info.size = '400×225'
+info.time = '4.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

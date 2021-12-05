@@ -11,6 +11,12 @@ The boys of WORLD ORDER walking in simulated slow motion.
 
 """
 
+info.colours = '64'
+info.filesize = '1.23mb'
+info.frames = '55'
+info.size = '400×225'
+info.time = '2.75 seconds'
+
 [video]
 source   = 'youtube'
 file     = '_mkiGMtbrPM'

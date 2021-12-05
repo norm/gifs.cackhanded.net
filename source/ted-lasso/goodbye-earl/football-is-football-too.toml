@@ -15,6 +15,12 @@ football is football too”.
 
 """
 
+info.colours = '128'
+info.filesize = '2.22mb'
+info.frames = '144'
+info.size = '480×270'
+info.time = '7.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

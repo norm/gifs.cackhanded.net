@@ -15,6 +15,12 @@ Thierry telling the team “It sounds better in French”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.50mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '1.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

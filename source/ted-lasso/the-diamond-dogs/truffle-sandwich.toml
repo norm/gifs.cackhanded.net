@@ -11,6 +11,12 @@ Rebecca eats a biscuit and chocolate truffle breakfast sandwich.
 
 """
 
+info.colours = '75'
+info.filesize = '1.65mb'
+info.frames = '70'
+info.size = '480×270'
+info.time = '3.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

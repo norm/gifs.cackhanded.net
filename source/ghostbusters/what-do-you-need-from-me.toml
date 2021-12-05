@@ -11,6 +11,12 @@ The Mayor of New York turns from a map and asks the Ghostbusters
 
 """
 
+info.colours = '54'
+info.filesize = '2.03mb'
+info.frames = '71'
+info.size = '480×244'
+info.time = '3.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

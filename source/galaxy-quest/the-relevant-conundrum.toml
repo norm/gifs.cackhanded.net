@@ -15,6 +15,12 @@ gotten to the relevant conundrum”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.17mb'
+info.frames = '106'
+info.size = '480×270'
+info.time = '5.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

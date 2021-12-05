@@ -11,6 +11,12 @@ Roy shouts at his Under 9 Girls team “Only if you fucking mean it!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.26mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '3.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

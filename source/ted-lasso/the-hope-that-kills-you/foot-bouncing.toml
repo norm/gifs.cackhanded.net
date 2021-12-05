@@ -12,6 +12,12 @@ Roy and Jamie sat completely still at a table, apart from Roy’s foot bouncing.
 
 """
 
+info.colours = '85'
+info.filesize = '0.44mb'
+info.frames = '49'
+info.size = '480×270'
+info.time = '2.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

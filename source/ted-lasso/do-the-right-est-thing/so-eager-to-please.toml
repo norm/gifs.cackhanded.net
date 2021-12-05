@@ -11,6 +11,12 @@ Flo commenting that Ted was “So eager to please, it was fabulous”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.55mb'
+info.frames = '50'
+info.size = '480×270'
+info.time = '2.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

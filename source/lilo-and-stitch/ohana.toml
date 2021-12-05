@@ -9,6 +9,12 @@ gets left behind.” Stitch finishes the saying. “Or forgotten.”
 
 """
 
+info.colours = '97'
+info.filesize = '1.94mb'
+info.frames = '129'
+info.size = '480×285'
+info.time = '10.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

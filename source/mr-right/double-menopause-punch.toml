@@ -12,6 +12,12 @@ double menopause punch in the… ugh.”
 
 """
 
+info.colours = '60'
+info.filesize = '1.11mb'
+info.frames = '81'
+info.size = '480×266'
+info.time = '4.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

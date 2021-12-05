@@ -12,6 +12,12 @@ and end up falling down because there are no chairs.
 
 """
 
+info.colours = '75'
+info.filesize = '0.46mb'
+info.frames = '44'
+info.size = '400×250'
+info.time = '2.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-104'

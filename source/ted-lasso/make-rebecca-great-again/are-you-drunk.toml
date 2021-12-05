@@ -11,6 +11,12 @@ Nate asks Ted “Are you drunk?”
 
 """
 
+info.colours = '79'
+info.filesize = '0.87mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '1.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

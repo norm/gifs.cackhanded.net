@@ -10,6 +10,12 @@ Martha, looking perturbed, says “…fighting the urge to run away from you?”
 
 """
 
+info.colours = '80'
+info.filesize = '1.55mb'
+info.frames = '75'
+info.size = '480×266'
+info.time = '4.17 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

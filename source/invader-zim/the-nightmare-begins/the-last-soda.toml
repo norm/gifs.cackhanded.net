@@ -12,6 +12,12 @@ She vows “He will pay!”
 
 """
 
+info.colours = '95'
+info.filesize = '0.46mb'
+info.frames = '82'
+info.size = '480×270'
+info.time = '6.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

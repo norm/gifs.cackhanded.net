@@ -9,6 +9,12 @@ The Grand Councilwoman says (of Experiment 626's language) “So naughty!”
 
 """
 
+info.colours = '64'
+info.filesize = '0.50mb'
+info.frames = '45'
+info.size = '480×285'
+info.time = '4.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

@@ -12,6 +12,12 @@ Sam telling Ted “Have we won yet? No.”
 
 """
 
+info.colours = '80'
+info.filesize = '0.53mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '1.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

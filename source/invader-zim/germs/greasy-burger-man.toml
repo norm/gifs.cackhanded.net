@@ -13,6 +13,12 @@ tissues, tells Burgerlord “This gives me an idea, greasy burger man…”
 
 """
 
+info.colours = '80'
+info.filesize = '0.25mb'
+info.frames = '64'
+info.size = '480×270'
+info.time = '3.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

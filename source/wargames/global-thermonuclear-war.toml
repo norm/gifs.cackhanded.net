@@ -12,6 +12,12 @@ David watches as Joshua lists all of the games available, ending with
 
 """
 
+info.colours = '69'
+info.filesize = '1.25mb'
+info.frames = '106'
+info.size = '480×270'
+info.time = '5.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

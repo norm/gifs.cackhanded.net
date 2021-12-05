@@ -11,6 +11,12 @@ Ted commenting ”I value opinions … even when they’re wrong.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.79mb'
+info.frames = '79'
+info.size = '480×270'
+info.time = '4.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

@@ -18,6 +18,12 @@ Nate blows on his whistle indoors, and everybody cringes from the sound.
 
 """
 
+info.colours = '75'
+info.filesize = '1.06mb'
+info.frames = '43'
+info.size = '400×225'
+info.time = '2.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

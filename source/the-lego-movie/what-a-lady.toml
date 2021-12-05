@@ -9,6 +9,12 @@ Wyldstyle spits into a spitoon.
 
 """
 
+info.colours = '128'
+info.filesize = '0.97mb'
+info.frames = '50'
+info.size = '480×198'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'the-lego-movie'

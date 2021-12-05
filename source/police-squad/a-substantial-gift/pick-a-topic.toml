@@ -13,6 +13,12 @@ cagily, “I don’t know, I hear a lot of things. Pick a topic.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.90mb'
+info.frames = '108'
+info.size = '400×250'
+info.time = '5.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-101'

@@ -18,6 +18,12 @@ A range of emotions play across Alexander‘s face. “Damn you!”
 
 """
 
+info.colours = '86'
+info.filesize = '4.03mb'
+info.frames = '216'
+info.size = '400×225'
+info.time = '11.99 seconds'
+
 
 [video]
 source   = 'file'

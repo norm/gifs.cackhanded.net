@@ -11,6 +11,12 @@ Ted starts to strut. “Oooh, I like this.”
 
 """
 
+info.colours = '59'
+info.filesize = '1.11mb'
+info.frames = '42'
+info.size = '480×270'
+info.time = '2.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

@@ -11,6 +11,12 @@ Coach Beard comments “Grow up and get over it”.
 
 """
 
+info.colours = '60'
+info.filesize = '1.21mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '2.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

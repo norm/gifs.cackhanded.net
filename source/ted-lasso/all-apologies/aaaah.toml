@@ -11,6 +11,12 @@ Roy kent enjoying his sip of tea.
 
 """
 
+info.colours = '75'
+info.filesize = '0.69mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '1.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

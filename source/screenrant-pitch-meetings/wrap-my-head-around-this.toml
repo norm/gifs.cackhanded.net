@@ -12,6 +12,12 @@ around this”, and the script writer comments “Uh-oh, no”.
 
 """
 
+info.colours = '128'
+info.filesize = '0.72mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '2.50 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Ha10ImiP6So'

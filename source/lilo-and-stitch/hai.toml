@@ -8,6 +8,12 @@ Lilo and Stitch standing on the deserted beach. Lilo waves hesitantly.
 
 """
 
+info.colours = '64'
+info.filesize = '0.16mb'
+info.frames = '27'
+info.size = '480×285'
+info.time = '2.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

@@ -11,6 +11,12 @@ you **are** the crown!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.32mb'
+info.frames = '80'
+info.size = '360×203'
+info.time = '4.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

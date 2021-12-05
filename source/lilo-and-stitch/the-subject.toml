@@ -8,6 +8,12 @@ Cobra Bubbles says “We’re getting off the subject.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.43mb'
+info.frames = '42'
+info.size = '480×285'
+info.time = '3.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

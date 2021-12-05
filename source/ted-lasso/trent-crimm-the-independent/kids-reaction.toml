@@ -11,6 +11,12 @@ The schoolkids reacting to Roy Kent.
 
 """
 
+info.colours = '75'
+info.filesize = '1.86mb'
+info.frames = '56'
+info.size = '480×270'
+info.time = '3.74 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

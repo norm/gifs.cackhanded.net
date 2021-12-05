@@ -15,6 +15,12 @@ a matter of supreme importance”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.04mb'
+info.frames = '90'
+info.size = '400×225'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

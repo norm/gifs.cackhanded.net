@@ -11,6 +11,12 @@ Egon and Ray share a look after Venkman has said something.
 
 """
 
+info.colours = '49'
+info.filesize = '0.82mb'
+info.frames = '33'
+info.size = '480×264'
+info.time = '1.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

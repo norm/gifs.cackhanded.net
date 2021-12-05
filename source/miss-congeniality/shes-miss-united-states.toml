@@ -12,6 +12,12 @@ still the consummate professional, delivering his song.
 
 """
 
+info.colours = '80'
+info.filesize = '2.66mb'
+info.frames = '115'
+info.size = '480×270'
+info.time = '6.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

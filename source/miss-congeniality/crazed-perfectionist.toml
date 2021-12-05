@@ -11,6 +11,12 @@ had harangued her to within an inch of her sanity”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.73mb'
+info.frames = '102'
+info.size = '480×270'
+info.time = '5.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

@@ -10,6 +10,12 @@ Newt brushes her hair away from her face.
 
 """
 
+info.colours = '64'
+info.filesize = '1.71mb'
+info.frames = '90'
+info.size = '480×258'
+info.time = '7.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'aliens'

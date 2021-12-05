@@ -10,6 +10,12 @@ Victor despairs “A brief shining moment, and then that mouth”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.79mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

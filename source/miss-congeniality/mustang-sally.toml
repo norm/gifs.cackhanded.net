@@ -11,6 +11,12 @@ Gracie walks out of the treatment looking incredible.
 
 """
 
+info.colours = '75'
+info.filesize = '2.35mb'
+info.frames = '109'
+info.size = '480×270'
+info.time = '6.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

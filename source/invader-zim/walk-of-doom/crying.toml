@@ -11,6 +11,12 @@ Tears well up in Gir’s eyes.
 
 """
 
+info.colours = '91'
+info.filesize = '0.31mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '5.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

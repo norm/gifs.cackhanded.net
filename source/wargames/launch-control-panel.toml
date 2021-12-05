@@ -16,6 +16,12 @@ from the actual launch code determined by Joshua).
 
 """
 
+info.colours = '41'
+info.filesize = '0.28mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '1.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

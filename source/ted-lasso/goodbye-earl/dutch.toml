@@ -14,6 +14,12 @@ Sam reminds everyone “Jan Maas isn’t being rude, he’s just being Dutch”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.49mb'
+info.frames = '87'
+info.size = '480×270'
+info.time = '4.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

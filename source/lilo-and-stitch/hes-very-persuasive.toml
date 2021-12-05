@@ -14,6 +14,12 @@ Jumba says “Fine” and starts to unlock his cuffs. Wendell Pleakley asks
 
 """
 
+info.colours = '111'
+info.filesize = '2.90mb'
+info.frames = '129'
+info.size = '480×285'
+info.time = '10.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

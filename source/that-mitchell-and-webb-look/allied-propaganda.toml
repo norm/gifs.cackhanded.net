@@ -13,6 +13,12 @@ been listening to Allied propaganda!”
 
 """
 
+info.colours = '60'
+info.filesize = '0.44mb'
+info.frames = '44'
+info.size = '480×264'
+info.time = '2.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-101'

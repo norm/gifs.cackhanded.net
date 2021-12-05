@@ -13,6 +13,12 @@ Cheryl tells Stan “It’s not too hot and not too cold”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.15mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

@@ -15,6 +15,12 @@ as the woman slaps the man across the face.
 
 """
 
+info.colours = '75'
+info.filesize = '1.11mb'
+info.frames = '33'
+info.size = '480×307'
+info.time = '2.19 seconds'
+
 [video]
 source   = 'youtube'
 file     = '0Wd2KJuLvAQ'

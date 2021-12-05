@@ -11,6 +11,12 @@ in a box for you.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.03mb'
+info.frames = '65'
+info.size = '480×270'
+info.time = '3.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

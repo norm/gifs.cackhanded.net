@@ -12,6 +12,12 @@ Nora pulls a face and flips two birds at the phone.
 
 """
 
+info.colours = '75'
+info.filesize = '0.44mb'
+info.frames = '29'
+info.size = '480×270'
+info.time = '1.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

@@ -14,6 +14,12 @@ you to get all the way off my back about this,” and the exec responds
 
 """
 
+info.colours = '128'
+info.filesize = '1.01mb'
+info.frames = '105'
+info.size = '480×270'
+info.time = '4.39 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'w0s9mUXhHZ8'

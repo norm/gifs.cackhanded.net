@@ -13,6 +13,12 @@ screen.
 
 """
 
+info.colours = '21'
+info.filesize = '0.25mb'
+info.frames = '10'
+info.size = '480×235'
+info.time = '0.43 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

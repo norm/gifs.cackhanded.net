@@ -13,6 +13,12 @@ Sam tells the assembled press “I’m not here to talk about football”.
 
 """
 
+info.colours = '128'
+info.filesize = '0.78mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '2.67 seconds'
+
 [video]
 source    = 'file'
 file      = 'ted_lasso_203'

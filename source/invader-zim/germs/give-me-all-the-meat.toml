@@ -14,6 +14,12 @@ by his dog tags, pulls him closer, and tells him “Give me all the meat!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.92mb'
+info.frames = '43'
+info.size = '480×270'
+info.time = '2.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

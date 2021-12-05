@@ -14,6 +14,12 @@ Falken smiles.
 
 """
 
+info.colours = '128'
+info.filesize = '2.08mb'
+info.frames = '116'
+info.size = '480×270'
+info.time = '6.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

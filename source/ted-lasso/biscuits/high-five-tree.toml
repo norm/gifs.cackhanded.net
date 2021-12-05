@@ -12,6 +12,12 @@ Ted Lasso high-fives a tree-shaped coat rack as he leaves Rebecca's office.
 
 """
 
+info.colours = '48'
+info.filesize = '0.92mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '2.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-102'

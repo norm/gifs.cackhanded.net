@@ -11,6 +11,12 @@ labelled ”Happy birthday”. Nani, Cobra, David, and Stitch clap.
 
 """
 
+info.colours = '64'
+info.filesize = '0.98mb'
+info.frames = '84'
+info.size = '480×285'
+info.time = '7.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

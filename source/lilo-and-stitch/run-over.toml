@@ -9,6 +9,12 @@ him, taking him along and leaving the guns behind.
 
 """
 
+info.colours = '97'
+info.filesize = '1.44mb'
+info.frames = '42'
+info.size = '480×285'
+info.time = '3.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

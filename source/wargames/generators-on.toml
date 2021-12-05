@@ -11,6 +11,12 @@ and declares “Generators on and functioning”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.68mb'
+info.frames = '76'
+info.size = '480×270'
+info.time = '4.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

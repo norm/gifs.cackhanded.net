@@ -12,6 +12,12 @@ by burping is tight!”
 
 """
 
+info.colours = '128'
+info.filesize = '0.81mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '3.12 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Inf5du8u7OE'

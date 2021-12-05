@@ -9,6 +9,12 @@ Keenan's face betrays the sadness he feels inside.
 
 """
 
+info.colours = '81'
+info.filesize = '1.11mb'
+info.frames = '95'
+info.size = '480×270'
+info.time = '5.28 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'TbwlC2B-BIg'

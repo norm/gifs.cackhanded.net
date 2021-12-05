@@ -9,6 +9,12 @@ barman some money to cover the cost of the mess.
 
 """
 
+info.colours = '97'
+info.filesize = '3.19mb'
+info.frames = '292'
+info.size = '480×222'
+info.time = '16.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'star-wars'

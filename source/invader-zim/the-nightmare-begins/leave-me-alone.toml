@@ -13,6 +13,12 @@ Dib is chasing Zim through the city. Zim shouts back at him
 
 """
 
+info.colours = '96'
+info.filesize = '1.03mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '4.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

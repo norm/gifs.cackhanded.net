@@ -12,6 +12,12 @@ declares to two henchmen “Men.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.41mb'
+info.frames = '54'
+info.size = '400×225'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

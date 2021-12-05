@@ -10,6 +10,12 @@ and mouthing “I’m going”
 
 """
 
+info.colours = '45'
+info.filesize = '1.03mb'
+info.frames = '101'
+info.size = '320×240'
+info.time = '5.62 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

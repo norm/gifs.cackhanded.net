@@ -9,6 +9,12 @@ Spider-Man Noir holds a Rubik's cube out to Spider-Ham and asks
 
 """
 
+info.colours = '80'
+info.filesize = '1.69mb'
+info.frames = '67'
+info.size = '480×270'
+info.time = '3.71 seconds'
+
 [video]
 source   = 'file'
 file     = 'into-the-spiderverse'

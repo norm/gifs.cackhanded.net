@@ -10,6 +10,12 @@ to an unpleasant idea.
 
 """
 
+info.colours = '45'
+info.filesize = '0.60mb'
+info.frames = '65'
+info.size = '320×240'
+info.time = '3.62 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

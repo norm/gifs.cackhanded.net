@@ -13,6 +13,12 @@ ladle like a pen!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.00mb'
+info.frames = '126'
+info.size = '480×269'
+info.time = '6.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-101'

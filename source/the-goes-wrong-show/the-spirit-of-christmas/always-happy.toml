@@ -15,6 +15,12 @@ Santa played by Robert Groves (played by Henry Lewis)
 “Why? You're essentially enslaved.”
 
 """
+
+info.colours = '70'
+info.filesize = '2.79mb'
+info.frames = '105'
+info.size = '480×270'
+info.time = '5.84 seconds'
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

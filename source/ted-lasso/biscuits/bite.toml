@@ -12,6 +12,12 @@ Ted holds out a burger so Keeley can take a bite.
 
 """
 
+info.colours = '81'
+info.filesize = '1.05mb'
+info.frames = '38'
+info.size = '480×270'
+info.time = '2.12 seconds'
+
 [video]
 source   = 'file | youtube'
 file     = 'ted-lasso-102'

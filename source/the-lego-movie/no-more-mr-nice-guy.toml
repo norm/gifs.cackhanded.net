@@ -10,6 +10,12 @@ remove Good Cop's face.
 
 """
 
+info.colours = '64'
+info.filesize = '1.70mb'
+info.frames = '50'
+info.size = '480×198'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'the-lego-movie'

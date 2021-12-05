@@ -18,6 +18,12 @@ off with a wave and says “Fucking off now”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.86mb'
+info.frames = '82'
+info.size = '480×270'
+info.time = '4.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

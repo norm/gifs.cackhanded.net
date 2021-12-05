@@ -18,6 +18,12 @@ marked “bad” in the drawing.
 
 """
 
+info.colours = '64'
+info.filesize = '0.71mb'
+info.frames = '60'
+info.size = '480×285'
+info.time = '5.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

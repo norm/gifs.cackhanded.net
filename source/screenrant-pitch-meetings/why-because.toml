@@ -16,6 +16,12 @@ script writer.
 
 """
 
+info.colours = '128'
+info.filesize = '1.28mb'
+info.frames = '91'
+info.size = '480×270'
+info.time = '3.79 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'XsNAu72v2Yc'

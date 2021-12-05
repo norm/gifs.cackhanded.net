@@ -11,6 +11,12 @@ Rebecca mutters “Well, that’s a lesson learnt” and politely smiles.
 
 """
 
+info.colours = '60'
+info.filesize = '1.56mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '3.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

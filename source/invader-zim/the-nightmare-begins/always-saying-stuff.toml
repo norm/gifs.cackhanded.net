@@ -18,6 +18,12 @@ Dib yells “Hey! You just got here!”
 
 """
 
+info.colours = '96'
+info.filesize = '0.50mb'
+info.frames = '81'
+info.size = '480×270'
+info.time = '6.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

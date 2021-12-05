@@ -12,6 +12,12 @@ Rebecca going "ooooh" at a great idea. Sam looks more confused than anything.
 
 """
 
+info.colours = '128'
+info.filesize = '0.44mb'
+info.frames = '18'
+info.size = '480×270'
+info.time = '1.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-1101'

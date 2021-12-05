@@ -12,6 +12,12 @@ A chap unwisely slaps at an Irn Bru vending machine, which then nuts him.
 
 """
 
+info.colours = '64'
+info.filesize = '0.48mb'
+info.frames = '46'
+info.size = '400×257'
+info.time = '2.56 seconds'
+
 [video]
 source   = 'youtube'
 file     = '4h03QLwxi1g'

@@ -14,6 +14,12 @@ Rebecca confirms ”Yes, I do.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.48mb'
+info.frames = '61'
+info.size = '400×225'
+info.time = '3.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

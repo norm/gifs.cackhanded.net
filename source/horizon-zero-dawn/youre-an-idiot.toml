@@ -8,6 +8,12 @@ Aloy telling Helis “You’re an idiot. A dangerous idiot, but an idiot.”
 
 """
 
+info.colours = '60'
+info.filesize = '2.37mb'
+info.frames = '98'
+info.size = '480×270'
+info.time = '5.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-idiot'

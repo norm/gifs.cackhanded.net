@@ -16,6 +16,12 @@ Ted points at him and nods agreement “Yeah it is”
 
 """
 
+info.colours = '80'
+info.filesize = '0.98mb'
+info.frames = '38'
+info.size = '480×270'
+info.time = '2.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

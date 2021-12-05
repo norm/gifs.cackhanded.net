@@ -10,6 +10,12 @@ Jason tells some fans “It’s just a television show”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.18mb'
+info.frames = '42'
+info.size = '480×270'
+info.time = '2.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

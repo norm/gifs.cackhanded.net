@@ -8,6 +8,12 @@ A selection of wordless William Shatner expressions and pointing.
 
 """
 
+info.colours = '97'
+info.filesize = '1.86mb'
+info.frames = '77'
+info.size = '480×358'
+info.time = '4.27 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'HU2ftCitvyQ'

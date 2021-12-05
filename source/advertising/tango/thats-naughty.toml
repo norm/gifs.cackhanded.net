@@ -13,6 +13,12 @@ up. We see a shot of the hallway above containing about a foot deep juice.
 
 """
 
+info.colours = '75'
+info.filesize = '1.29mb'
+info.frames = '99'
+info.size = '480×270'
+info.time = '5.49 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'bR1SEGyVVe0'

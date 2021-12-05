@@ -12,6 +12,12 @@ She looks intrigued.
 
 """
 
+info.colours = '64'
+info.filesize = '2.37mb'
+info.frames = '99'
+info.size = '480×266'
+info.time = '5.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

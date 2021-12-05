@@ -12,6 +12,12 @@ Zim pushes Keef out of his house.
 
 """
 
+info.colours = '61'
+info.filesize = '0.17mb'
+info.frames = '18'
+info.size = '480×270'
+info.time = '1.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

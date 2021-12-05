@@ -12,6 +12,12 @@ his knee onto it first, almost as if he was expecting to trip over it.)
 
 """
 
+info.colours = '49'
+info.filesize = '0.97mb'
+info.frames = '34'
+info.size = '480×259'
+info.time = '2.12 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'AJWtLf4-WWs'

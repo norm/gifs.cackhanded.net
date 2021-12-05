@@ -9,6 +9,12 @@ sighs, and prepares to feign interest.
 
 """
 
+info.colours = '49'
+info.filesize = '1.50mb'
+info.frames = '67'
+info.size = '480×270'
+info.time = '4.19 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

@@ -21,6 +21,12 @@ Nistle played by Sandra Wilkinson (played by Charle Russell)
 look on.
 
 """
+
+info.colours = '70'
+info.filesize = '1.98mb'
+info.frames = '69'
+info.size = '480×270'
+info.time = '3.84 seconds'
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

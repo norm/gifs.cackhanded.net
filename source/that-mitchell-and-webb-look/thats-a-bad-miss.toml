@@ -13,6 +13,12 @@ Ted, snooker commentator, comments “Oh, and that’s a bad miss.”
 
 """
 
+info.colours = '73'
+info.filesize = '1.42mb'
+info.frames = '76'
+info.size = '480×264'
+info.time = '4.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-104'

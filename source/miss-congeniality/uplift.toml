@@ -16,6 +16,12 @@ while Victor does up her dress.
 
 """
 
+info.colours = '75'
+info.filesize = '1.52mb'
+info.frames = '44'
+info.size = '480×260'
+info.time = '2.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

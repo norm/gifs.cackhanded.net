@@ -23,6 +23,12 @@ Dib walks off.
 
 """
 
+info.colours = '96'
+info.filesize = '0.65mb'
+info.frames = '80'
+info.size = '480×270'
+info.time = '6.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

@@ -12,6 +12,12 @@ out a satisfied “aaaaah”.
 
 """
 
+info.colours = '63'
+info.filesize = '2.19mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

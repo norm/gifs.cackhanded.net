@@ -12,6 +12,12 @@ Sally Decker attacks Frank Drebin with a wig.
 
 """
 
+info.colours = '75'
+info.filesize = '1.94mb'
+info.frames = '84'
+info.size = '400×250'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-101'

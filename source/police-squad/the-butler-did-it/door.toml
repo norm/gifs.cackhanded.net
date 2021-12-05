@@ -12,6 +12,12 @@ Ted Olson walks through a door in the lab. Frank Drebin walks around it.
 
 """
 
+info.colours = '75'
+info.filesize = '2.16mb'
+info.frames = '72'
+info.size = '400×250'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-103'

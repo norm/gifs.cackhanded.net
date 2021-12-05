@@ -13,6 +13,12 @@ Terri Burton blows the cake out of her birthday cake.
 
 """
 
+info.colours = '75'
+info.filesize = '0.94mb'
+info.frames = '54'
+info.size = '400×250'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-103'

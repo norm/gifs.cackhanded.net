@@ -15,6 +15,12 @@ He then scratches at his face, and admonishes himself loudly “DON’T!”
 
 """
 
+info.colours = '128'
+info.filesize = '2.59mb'
+info.frames = '119'
+info.size = '400×225'
+info.time = '6.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-405'

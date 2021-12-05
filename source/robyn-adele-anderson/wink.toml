@@ -13,6 +13,12 @@ and then winking.
 
 """
 
+info.colours = '75'
+info.filesize = '1.33mb'
+info.frames = '80'
+info.size = '400×255'
+info.time = '5.34 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'DM7epH1L4x8'

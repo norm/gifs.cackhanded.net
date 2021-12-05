@@ -11,6 +11,12 @@ I skip straight to the winning.”
 
 """
 
+info.colours = '60'
+info.filesize = '2.16mb'
+info.frames = '63'
+info.size = '400×224'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

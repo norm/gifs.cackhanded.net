@@ -10,6 +10,12 @@ his head.
 
 """
 
+info.colours = '80'
+info.filesize = '1.98mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '3.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

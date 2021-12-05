@@ -11,6 +11,12 @@ Jamie wiggles his head and declares “I got the moves.”
 
 """
 
+info.colours = '94'
+info.filesize = '0.53mb'
+info.frames = '26'
+info.size = '480×270'
+info.time = '1.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-102'

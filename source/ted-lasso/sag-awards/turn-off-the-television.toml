@@ -16,6 +16,12 @@ though this is a great idea.
 
 """
 
+info.colours = '80'
+info.filesize = '1.75mb'
+info.frames = '66'
+info.size = '480×274'
+info.time = '3.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-1101'

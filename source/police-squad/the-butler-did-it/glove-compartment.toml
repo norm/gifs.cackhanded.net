@@ -11,6 +11,12 @@ Ed Hocken roots around some gloves stored in a car’s glove compartment.
 
 """
 
+info.colours = '75'
+info.filesize = '1.87mb'
+info.frames = '90'
+info.size = '400×250'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-103'

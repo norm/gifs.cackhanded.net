@@ -15,6 +15,12 @@ Robodad echoes “We sure are”, leans in towards Zim, and its eyes go wonky.
 
 """
 
+info.size = '480×270'
+info.frames = '84'
+info.colours = '96'
+info.filesize = '675043'
+info.time = '7.01'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

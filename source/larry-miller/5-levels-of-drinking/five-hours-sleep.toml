@@ -11,6 +11,12 @@ As long as I get five hours sleep … I’m cool.
 
 """
 
+info.colours = '40'
+info.filesize = '1.56mb'
+info.frames = '171'
+info.size = '320×240'
+info.time = '9.49 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

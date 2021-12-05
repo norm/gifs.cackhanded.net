@@ -9,6 +9,12 @@ William Shatner saying
 
 """
 
+info.colours = '97'
+info.filesize = '2.89mb'
+info.frames = '90'
+info.size = '480×358'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'HU2ftCitvyQ'

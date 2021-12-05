@@ -14,6 +14,12 @@ being worn by a second chap.
 
 """
 
+info.colours = '75'
+info.filesize = '0.96mb'
+info.frames = '52'
+info.size = '400×225'
+info.time = '2.88 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'bR1SEGyVVe0'

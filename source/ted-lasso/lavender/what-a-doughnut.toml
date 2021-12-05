@@ -11,6 +11,12 @@ Nate saying “What a doughnut!” about Will.
 
 """
 
+info.colours = '80'
+info.filesize = '0.69mb'
+info.frames = '54'
+info.size = '480×269'
+info.time = '3.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

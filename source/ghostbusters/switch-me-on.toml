@@ -13,6 +13,12 @@ the corner of the elevator.
 
 """
 
+info.colours = '54'
+info.filesize = '3.53mb'
+info.frames = '152'
+info.size = '480×226'
+info.time = '8.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

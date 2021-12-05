@@ -14,6 +14,12 @@ The Thermians laugh in a manner that makes Gwen and Jason uncomfortable.
 
 """
 
+info.colours = '75'
+info.filesize = '2.98mb'
+info.frames = '137'
+info.size = '480×270'
+info.time = '7.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

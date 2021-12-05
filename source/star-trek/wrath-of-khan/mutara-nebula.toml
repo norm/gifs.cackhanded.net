@@ -15,6 +15,12 @@ charge moves across a part of the nebula.
 
 """
 
+info.colours = '81'
+info.filesize = '1.36mb'
+info.frames = '152'
+info.size = '480×248'
+info.time = '8.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'wrath-of-khan'

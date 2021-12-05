@@ -8,6 +8,12 @@ Lilo takes a photo of a sunburned dude, who then drops his ice-cream.
 
 """
 
+info.colours = '64'
+info.filesize = '0.23mb'
+info.frames = '24'
+info.size = '480×285'
+info.time = '2.40 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

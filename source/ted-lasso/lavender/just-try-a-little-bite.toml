@@ -12,6 +12,12 @@ Ted implores Dr Fieldstone, “Come on now, just try a little bite”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.53mb'
+info.frames = '38'
+info.size = '480×270'
+info.time = '2.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

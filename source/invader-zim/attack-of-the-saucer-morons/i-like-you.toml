@@ -16,6 +16,12 @@ and says “I like you”.
 
 """
 
+info.colours = '48'
+info.filesize = '0.18mb'
+info.frames = '35'
+info.size = '480×270'
+info.time = '2.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

@@ -12,6 +12,12 @@ make you pay for that” and the studio exec asks “What?”
 
 """
 
+info.colours = '128'
+info.filesize = '0.95mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '3.12 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'TRkLLkpL5oY'

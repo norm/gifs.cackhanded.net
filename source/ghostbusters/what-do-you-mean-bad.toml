@@ -13,6 +13,12 @@ Venkman asks Egon “What do you mean ‘bad’?”
 
 """
 
+info.colours = '64'
+info.filesize = '1.34mb'
+info.frames = '54'
+info.size = '400×220'
+info.time = '3.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

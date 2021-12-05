@@ -10,6 +10,12 @@ Gozer asks Ray “Are you a god?”
 
 """
 
+info.colours = '53'
+info.filesize = '1.13mb'
+info.frames = '49'
+info.size = '480×185'
+info.time = '2.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

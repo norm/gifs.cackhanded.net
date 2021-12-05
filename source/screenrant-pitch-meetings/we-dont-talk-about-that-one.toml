@@ -13,6 +13,12 @@ The script writer flinches ”Oh my God, I’m sorry”. The exec continues
 
 """
 
+info.colours = '128'
+info.filesize = '1.03mb'
+info.frames = '100'
+info.size = '480×270'
+info.time = '4.17 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Ha10ImiP6So'

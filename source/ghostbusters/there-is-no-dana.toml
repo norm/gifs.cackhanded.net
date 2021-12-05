@@ -9,6 +9,12 @@ there is only Zuul.”
 
 """
 
+info.colours = '48'
+info.filesize = '1.87mb'
+info.frames = '93'
+info.size = '480×244'
+info.time = '5.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

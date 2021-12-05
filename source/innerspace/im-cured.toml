@@ -10,6 +10,12 @@ Jack tells his doctor “I’m cured!”
 
 """
 
+info.colours = '79'
+info.filesize = '1.20mb'
+info.frames = '48'
+info.size = '400×225'
+info.time = '2.67 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

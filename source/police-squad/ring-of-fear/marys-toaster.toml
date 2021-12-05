@@ -13,6 +13,12 @@ Montague Martin hands Buddy Briggs Mary’s toaster. Toast pops out.
 
 """
 
+info.colours = '80'
+info.filesize = '1.27mb'
+info.frames = '80'
+info.size = '400×250'
+info.time = '4.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-102'

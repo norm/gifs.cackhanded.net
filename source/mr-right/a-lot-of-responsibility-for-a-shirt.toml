@@ -11,6 +11,12 @@ Francis tells Martha “That’s a lot of responsibility for a shirt.”
 
 """
 
+info.colours = '60'
+info.filesize = '1.78mb'
+info.frames = '63'
+info.size = '480×266'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

@@ -8,6 +8,12 @@ The "Young Boy with Coffee" reacts subtly to what he’s just heard.
 
 """
 
+info.colours = '49'
+info.filesize = '1.17mb'
+info.frames = '52'
+info.size = '480×270'
+info.time = '2.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

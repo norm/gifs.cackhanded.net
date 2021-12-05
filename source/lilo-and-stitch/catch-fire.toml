@@ -13,6 +13,12 @@ Nani looks at David, who is covered in soot. “Did you catch fire again?”
 
 """
 
+info.colours = '64'
+info.filesize = '0.96mb'
+info.frames = '48'
+info.size = '480×285'
+info.time = '4.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

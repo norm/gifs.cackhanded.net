@@ -13,6 +13,12 @@ Okay. Little depressed, yeah? It’s all shit, Ted.”
 
 """
 
+info.colours = '80'
+info.filesize = '3.26mb'
+info.frames = '155'
+info.size = '480×270'
+info.time = '8.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

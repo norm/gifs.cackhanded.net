@@ -15,6 +15,12 @@ Hannes Óli Ágústsson declares the twelve points from Iceland go to
 
 """
 
+info.colours = '128'
+info.filesize = '0.95mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'eurovision-2021'

@@ -9,6 +9,12 @@ response “No, I only go as far as lackey.”
 
 """
 
+info.colours = '54'
+info.filesize = '1.64mb'
+info.frames = '72'
+info.size = '480×253'
+info.time = '4.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'last-action-hero'

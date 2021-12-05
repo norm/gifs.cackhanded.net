@@ -13,6 +13,12 @@ the final word.
 
 """
 
+info.colours = '64'
+info.filesize = '1.39mb'
+info.frames = '44'
+info.size = '480×269'
+info.time = '3.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

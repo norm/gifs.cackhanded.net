@@ -11,6 +11,12 @@ body_markdown = """
 
 """
 
+info.colours = '64'
+info.filesize = '3.02mb'
+info.frames = '120'
+info.size = '480×240'
+info.time = '6.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

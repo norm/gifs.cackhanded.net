@@ -10,6 +10,12 @@ hard on machines”.
 
 """
 
+info.colours = '54'
+info.filesize = '1.84mb'
+info.frames = '90'
+info.size = '400×300'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'youtube'
 file     = '5Dho47jZS9U'

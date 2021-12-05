@@ -12,6 +12,12 @@ and shouts “Hold the goddamn door!” then runs off.
 
 """
 
+info.colours = '128'
+info.filesize = '1.72mb'
+info.frames = '87'
+info.size = '400×225'
+info.time = '4.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

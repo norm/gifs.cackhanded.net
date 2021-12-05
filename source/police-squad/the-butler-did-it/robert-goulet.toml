@@ -12,6 +12,12 @@ credits of Police Squad!
 
 """
 
+info.colours = '75'
+info.filesize = '1.71mb'
+info.frames = '108'
+info.size = '400×250'
+info.time = '6.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-103'

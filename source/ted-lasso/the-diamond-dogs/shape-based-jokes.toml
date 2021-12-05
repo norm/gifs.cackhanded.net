@@ -11,6 +11,12 @@ Roy asking Ted
 
 """
 
+info.colours = '54'
+info.filesize = '1.18mb'
+info.frames = '68'
+info.size = '480×240'
+info.time = '3.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

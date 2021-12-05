@@ -10,6 +10,12 @@ Eric casually asking “So how you doin’ huh? You okay?”
 
 """
 
+info.colours = '80'
+info.filesize = '0.93mb'
+info.frames = '38'
+info.size = '480×270'
+info.time = '2.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

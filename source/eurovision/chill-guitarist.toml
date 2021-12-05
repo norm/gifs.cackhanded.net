@@ -13,6 +13,12 @@ of Dark Side.
 
 """
 
+info.colours = '74'
+info.filesize = '0.85mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Aw6KnFIIa4I'

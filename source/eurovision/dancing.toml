@@ -13,6 +13,12 @@ The Roop waving their arms about while performing Discoteque.
 
 """
 
+info.colours = '75'
+info.filesize = '2.14mb'
+info.frames = '79'
+info.size = '480×229'
+info.time = '4.39 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'JNweec5olYw'

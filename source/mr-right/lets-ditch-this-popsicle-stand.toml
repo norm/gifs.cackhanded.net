@@ -11,6 +11,12 @@ Francis tells Martha “Let’s ditch this popsicle stand.”
 
 """
 
+info.colours = '96'
+info.filesize = '1.99mb'
+info.frames = '65'
+info.size = '480×266'
+info.time = '3.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

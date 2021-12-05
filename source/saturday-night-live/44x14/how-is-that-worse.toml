@@ -12,6 +12,12 @@ that thought Doug.”
 
 """
 
+info.colours = '100'
+info.filesize = '1.93mb'
+info.frames = '108'
+info.size = '480×268'
+info.time = '9.01 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'rImxuuD_kwM'

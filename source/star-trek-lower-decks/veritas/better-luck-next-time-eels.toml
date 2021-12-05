@@ -10,6 +10,12 @@ eels. She whoohoos and says “Better luck next time, eels”.
 
 """
 
+info.colours = '60'
+info.filesize = '0.37mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'lower-decks-108'

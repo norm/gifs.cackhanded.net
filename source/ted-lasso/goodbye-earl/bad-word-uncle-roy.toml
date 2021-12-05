@@ -13,6 +13,12 @@ Phoebe tells her uncle “Bad word, uncle Roy. You owe me one quid.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.51mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '3.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

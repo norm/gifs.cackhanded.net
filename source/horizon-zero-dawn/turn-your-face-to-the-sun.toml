@@ -9,6 +9,12 @@ Helis, holding Aloy aloft, places a knife at her throat and instructs
 
 """
 
+info.colours = '59'
+info.filesize = '3.11mb'
+info.frames = '99'
+info.size = '480×270'
+info.time = '5.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-sun'

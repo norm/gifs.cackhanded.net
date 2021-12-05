@@ -15,6 +15,12 @@ Ted tosses it right back “But you have to”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.58mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '4.17 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

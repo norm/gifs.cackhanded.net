@@ -12,6 +12,12 @@ Roly scares some birds away by jumping out from underground and shouting
 
 """
 
+info.colours = '121'
+info.filesize = '1.41mb'
+info.frames = '293'
+info.size = '480×270'
+info.time = '16.28 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'KOIDNq8Ay5c'

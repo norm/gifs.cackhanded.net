@@ -14,6 +14,12 @@ office window, splintering the glass. Roy nods approval.
 
 """
 
+info.colours = '59'
+info.filesize = '2.44mb'
+info.frames = '93'
+info.size = '480×270'
+info.time = '5.16 seconds'
+
 [video]
 source   = 'file | youtube'
 file     = 'ted-lasso-102'

@@ -13,6 +13,12 @@ Tommy tells Jamie “Super embarrassing for you, yeah”
 
 """
 
+info.colours = '86'
+info.filesize = '0.76mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '2.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

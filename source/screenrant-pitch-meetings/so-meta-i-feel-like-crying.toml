@@ -12,6 +12,12 @@ I feel like crying”.
 
 """
 
+info.colours = '128'
+info.filesize = '0.55mb'
+info.frames = '43'
+info.size = '480×270'
+info.time = '1.79 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Ha10ImiP6So'

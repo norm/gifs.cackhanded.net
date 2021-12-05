@@ -10,6 +10,12 @@ Flat Eric nodding along during a telephone call.
 
 """
 
+info.colours = '128'
+info.filesize = '0.23mb'
+info.frames = '22'
+info.size = '480×261'
+info.time = '0.88 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'qmsbP13xu6k'

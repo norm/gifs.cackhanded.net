@@ -13,6 +13,12 @@ As Nate and Coach Beard cross their fingers, Ted looks from one to the other.
 
 """
 
+info.colours = '81'
+info.filesize = '1.60mb'
+info.frames = '87'
+info.size = '480×270'
+info.time = '4.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

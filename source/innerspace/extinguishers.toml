@@ -12,6 +12,12 @@ Jack and Tuck putting out fires at the same time.
 
 """
 
+info.colours = '128'
+info.filesize = '1.29mb'
+info.frames = '47'
+info.size = '400×225'
+info.time = '2.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

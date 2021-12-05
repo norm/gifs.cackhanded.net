@@ -12,6 +12,12 @@ Roy tells Ted “This is why it’s hard to love you”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.87mb'
+info.frames = '43'
+info.size = '480×270'
+info.time = '2.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

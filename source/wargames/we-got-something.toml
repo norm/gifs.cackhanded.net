@@ -13,6 +13,12 @@ manner. David turns to Jennifer and says “We got something”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.11mb'
+info.frames = '78'
+info.size = '480×270'
+info.time = '4.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

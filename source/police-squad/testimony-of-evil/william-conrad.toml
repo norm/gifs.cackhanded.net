@@ -12,6 +12,12 @@ of Police Squad!
 
 """
 
+info.colours = '75'
+info.filesize = '1.44mb'
+info.frames = '125'
+info.size = '400×250'
+info.time = '6.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-106'

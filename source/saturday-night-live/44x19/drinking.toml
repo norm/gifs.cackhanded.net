@@ -9,6 +9,12 @@ Aidy drinking wine, during the Romano Tours sketch.
 
 """
 
+info.colours = '128'
+info.filesize = '1.77mb'
+info.frames = '79'
+info.size = '480×270'
+info.time = '4.39 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'TbwlC2B-BIg'

@@ -12,6 +12,12 @@ In a pitch meeting, a studio exec comments
 
 """
 
+info.colours = '128'
+info.filesize = '0.72mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '2.39 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'XsNAu72v2Yc'

@@ -8,6 +8,12 @@ Brin telling Aloy “Open your mouth to insight.”
 
 """
 
+info.colours = '60'
+info.filesize = '1.77mb'
+info.frames = '67'
+info.size = '400×225'
+info.time = '3.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-insight'

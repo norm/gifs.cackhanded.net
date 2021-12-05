@@ -8,6 +8,12 @@ Major Eaton tells Indiana “Top men.”
 
 """
 
+info.colours = '54'
+info.filesize = '1.47mb'
+info.frames = '83'
+info.size = '480×204'
+info.time = '4.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'raiders-of-the-lost-ark'

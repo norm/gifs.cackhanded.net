@@ -9,6 +9,12 @@ Jessica eating popcorn.
 
 """
 
+info.colours = '49'
+info.filesize = '0.97mb'
+info.frames = '38'
+info.size = '360×269'
+info.time = '2.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'murder-she-wrote-403'

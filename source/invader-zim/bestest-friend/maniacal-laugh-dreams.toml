@@ -11,6 +11,12 @@ Zim daydreams about standing on top of his house, laughing maniacally.
 
 """
 
+info.colours = '61'
+info.filesize = '0.11mb'
+info.frames = '12'
+info.size = '480×270'
+info.time = '1.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

@@ -11,6 +11,12 @@ Robyn Adele Anderson singing ”Why don’t you do right like some other men do?
 
 """
 
+info.colours = '80'
+info.filesize = '2.49mb'
+info.frames = '137'
+info.size = '400×255'
+info.time = '9.14 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'DM7epH1L4x8'

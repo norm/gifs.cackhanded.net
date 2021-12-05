@@ -11,6 +11,12 @@ Coach Beard mutters “Good save” sotto voce.
 
 """
 
+info.colours = '80'
+info.filesize = '0.51mb'
+info.frames = '25'
+info.size = '480×269'
+info.time = '1.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

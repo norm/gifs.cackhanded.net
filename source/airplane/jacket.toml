@@ -8,6 +8,12 @@ Ted’s jacket returns to him after he threw it away.
 
 """
 
+info.colours = '64'
+info.filesize = '1.77mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '5.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

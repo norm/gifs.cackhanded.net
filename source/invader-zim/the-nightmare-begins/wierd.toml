@@ -12,6 +12,12 @@ Zim stares as the word *weird* wobbles across the screen.
 
 """
 
+info.colours = '91'
+info.filesize = '0.28mb'
+info.frames = '26'
+info.size = '480×270'
+info.time = '2.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

@@ -11,6 +11,12 @@ Guy, sat at a bridge console and looking at the display, informs the crew
 
 """
 
+info.colours = '80'
+info.filesize = '1.94mb'
+info.frames = '105'
+info.size = '480×270'
+info.time = '5.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

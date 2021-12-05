@@ -9,6 +9,12 @@ Rebecca saying “I could ask the same of your hair.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.32mb'
+info.frames = '31'
+info.size = '480×270'
+info.time = '1.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

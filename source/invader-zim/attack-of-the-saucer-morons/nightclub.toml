@@ -13,6 +13,12 @@ Gir and many other people dancing in a nightclub.
 
 """
 
+info.colours = '75'
+info.filesize = '0.69mb'
+info.frames = '24'
+info.size = '480×270'
+info.time = '2.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

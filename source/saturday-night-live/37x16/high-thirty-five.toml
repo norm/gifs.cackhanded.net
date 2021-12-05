@@ -10,6 +10,12 @@ the same time.
 
 """
 
+info.colours = '193'
+info.filesize = '1.12mb'
+info.frames = '23'
+info.size = '480×270'
+info.time = '2.30 seconds'
+
 tag = [
     'high-five',
     'vanessa-bayer',

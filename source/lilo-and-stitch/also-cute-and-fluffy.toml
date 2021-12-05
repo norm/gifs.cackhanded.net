@@ -12,6 +12,12 @@ cries ”Also cute and fluffy!”
 
 """
 
+info.colours = '70'
+info.filesize = '1.47mb'
+info.frames = '82'
+info.size = '480×285'
+info.time = '6.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

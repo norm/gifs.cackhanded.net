@@ -12,6 +12,12 @@ Frank Drebin gets shot at in the opening credits for Police Squad!
 
 """
 
+info.colours = '75'
+info.filesize = '0.86mb'
+info.frames = '83'
+info.size = '400×250'
+info.time = '4.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-101'

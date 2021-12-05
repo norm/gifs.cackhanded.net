@@ -10,6 +10,12 @@ Sarris tells Jason to “Explain, as you would a child”.
 
 """
 
+info.colours = '79'
+info.filesize = '2.02mb'
+info.frames = '88'
+info.size = '400×225'
+info.time = '4.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

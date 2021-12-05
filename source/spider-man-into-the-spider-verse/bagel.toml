@@ -10,6 +10,12 @@ them, bonking one on the head.
 
 """
 
+info.colours = '64'
+info.filesize = '1.24mb'
+info.frames = '51'
+info.size = '480×304'
+info.time = '4.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'into-the-spiderverse'

@@ -13,6 +13,12 @@ misogyny for one.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.98mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '2.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

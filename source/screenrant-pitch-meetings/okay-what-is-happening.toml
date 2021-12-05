@@ -12,6 +12,12 @@ In a pitch meeting, a studio exec asks “Okay, what is happening?”.
 
 """
 
+info.colours = '128'
+info.filesize = '0.44mb'
+info.frames = '55'
+info.size = '480×270'
+info.time = '2.29 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'TRkLLkpL5oY'

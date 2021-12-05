@@ -12,6 +12,12 @@ Rebecca, telling Ted “No”.
 
 """
 
+info.colours = '79'
+info.filesize = '0.26mb'
+info.frames = '31'
+info.size = '480×270'
+info.time = '1.71 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

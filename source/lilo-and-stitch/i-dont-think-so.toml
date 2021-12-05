@@ -8,6 +8,12 @@ Cobra Bubbles says “I don’t think so.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.31mb'
+info.frames = '24'
+info.size = '480×285'
+info.time = '2.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

@@ -10,6 +10,12 @@ Aloy responds “As am I. No need to sell ourselves short.”
 
 """
 
+info.colours = '79'
+info.filesize = '2.17mb'
+info.frames = '106'
+info.size = '480×270'
+info.time = '5.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-one-woman'

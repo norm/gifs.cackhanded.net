@@ -13,6 +13,12 @@ Keeley shouts “Referee!”
 
 """
 
+info.colours = '60'
+info.filesize = '0.85mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '2.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

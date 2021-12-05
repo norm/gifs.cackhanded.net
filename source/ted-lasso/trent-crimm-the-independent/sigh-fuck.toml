@@ -11,6 +11,12 @@ Rebecca sighs, shouts “FUCK!”, and falls back on her bed.
 
 """
 
+info.colours = '79'
+info.filesize = '1.20mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

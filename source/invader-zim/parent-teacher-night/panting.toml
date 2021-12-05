@@ -12,6 +12,12 @@ Zim, panting endlessly.
 
 """
 
+info.size = '480×270'
+info.frames = '33'
+info.colours = '91'
+info.filesize = '433501'
+info.time = '1.84'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

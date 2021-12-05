@@ -10,6 +10,12 @@ John Actor, as Inspector Monkfish, asking assembled police officers
 
 """
 
+info.colours = '64'
+info.filesize = '0.62mb'
+info.frames = '42'
+info.size = '480×304'
+info.time = '2.34 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'imr8WKuqFZo'

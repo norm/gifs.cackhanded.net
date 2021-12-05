@@ -9,6 +9,12 @@ Britney sings “I’m stronger”
 
 """
 
+info.colours = '54'
+info.filesize = '1.11mb'
+info.frames = '43'
+info.size = '480×259'
+info.time = '2.70 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'AJWtLf4-WWs'

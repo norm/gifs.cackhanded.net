@@ -8,6 +8,12 @@ Dana tells Venkman “You are so odd.”
 
 """
 
+info.colours = '84'
+info.filesize = '2.09mb'
+info.frames = '86'
+info.size = '400×203'
+info.time = '4.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

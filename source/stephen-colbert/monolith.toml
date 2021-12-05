@@ -9,6 +9,12 @@ then looks confused for a moment.
 
 """
 
+info.colours = '64'
+info.filesize = '2.92mb'
+info.frames = '158'
+info.size = '480×270'
+info.time = '8.77 seconds'
+
 [video]
 source   = 'youtube'
 file     = '362n-CIg3jo'

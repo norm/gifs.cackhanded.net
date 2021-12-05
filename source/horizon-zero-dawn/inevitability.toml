@@ -10,6 +10,12 @@ He responds “To inevitability.”
 
 """
 
+info.colours = '79'
+info.filesize = '1.53mb'
+info.frames = '61'
+info.size = '480×270'
+info.time = '3.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-inevitability'

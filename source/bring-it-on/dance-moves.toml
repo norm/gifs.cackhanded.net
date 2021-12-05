@@ -8,6 +8,12 @@ Sparky Polastri’s sweet, sweet dance moves.
 
 """
 
+info.colours = '64'
+info.filesize = '1.72mb'
+info.frames = '86'
+info.size = '480×270'
+info.time = '4.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'bring-it-on'

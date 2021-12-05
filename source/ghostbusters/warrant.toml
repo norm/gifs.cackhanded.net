@@ -11,6 +11,12 @@ him an envelope containing multiple legal documents.
 
 """
 
+info.colours = '64'
+info.filesize = '1.51mb'
+info.frames = '102'
+info.size = '480×198'
+info.time = '5.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

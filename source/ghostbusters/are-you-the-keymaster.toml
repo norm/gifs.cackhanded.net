@@ -8,6 +8,12 @@ Zuul asks Venkman if he is the Keymaster.
 
 """
 
+info.colours = '64'
+info.filesize = '4.95mb'
+info.frames = '270'
+info.size = '400×220'
+info.time = '14.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

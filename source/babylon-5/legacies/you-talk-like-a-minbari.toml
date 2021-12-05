@@ -12,6 +12,12 @@ Neroon tells Sinclair “You talk like a Minbari”
 
 """
 
+info.colours = '96'
+info.filesize = '0.66mb'
+info.frames = '43'
+info.size = '480×270'
+info.time = '2.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'babylon5-117'

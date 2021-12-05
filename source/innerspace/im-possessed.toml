@@ -10,6 +10,12 @@ Jack screams “I’m possessed!”
 
 """
 
+info.colours = '128'
+info.filesize = '1.18mb'
+info.frames = '44'
+info.size = '400×225'
+info.time = '2.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

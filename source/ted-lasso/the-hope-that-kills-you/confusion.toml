@@ -9,6 +9,12 @@ Leslie goes to shake Ted’s hand, and Ted looks mighty confused.
 
 """
 
+info.colours = '49'
+info.filesize = '0.54mb'
+info.frames = '39'
+info.size = '480×240'
+info.time = '2.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

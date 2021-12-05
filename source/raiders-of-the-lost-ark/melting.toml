@@ -9,6 +9,12 @@ from the Ark.
 
 """
 
+info.colours = '64'
+info.filesize = '1.46mb'
+info.frames = '48'
+info.size = '480×320'
+info.time = '4.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'raiders-of-the-lost-ark'

@@ -16,6 +16,12 @@ He walks off.
  
 """
 
+info.colours = '97'
+info.filesize = '1.00mb'
+info.frames = '67'
+info.size = '480×285'
+info.time = '6.70 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

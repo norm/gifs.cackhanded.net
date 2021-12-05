@@ -14,6 +14,12 @@ declared the second runner-up. Cheryl claps anyway.
 
 """
 
+info.colours = '75'
+info.filesize = '1.56mb'
+info.frames = '67'
+info.size = '480×270'
+info.time = '3.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

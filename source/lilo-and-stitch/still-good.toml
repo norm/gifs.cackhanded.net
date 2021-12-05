@@ -9,6 +9,12 @@ broken, but still good. Yeah, still good.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.88mb'
+info.frames = '105'
+info.size = '480×285'
+info.time = '8.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

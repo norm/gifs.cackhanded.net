@@ -10,6 +10,12 @@ while making motorcycle revving motions with his hands.
 
 """
 
+info.colours = '49'
+info.filesize = '0.94mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '4.50 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'K5Lv6t0moFY'

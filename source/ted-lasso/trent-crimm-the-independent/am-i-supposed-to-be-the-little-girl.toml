@@ -15,6 +15,12 @@ Ted responds “I’d like you to be.”
 
 """
 
+info.colours = '60'
+info.filesize = '2.09mb'
+info.frames = '85'
+info.size = '480×270'
+info.time = '4.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

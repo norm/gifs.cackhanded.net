@@ -12,6 +12,12 @@ and holds his breath. Fred just sniffs.
 
 """
 
+info.colours = '80'
+info.filesize = '1.80mb'
+info.frames = '112'
+info.size = '480×270'
+info.time = '6.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

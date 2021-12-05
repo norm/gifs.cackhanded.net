@@ -13,6 +13,12 @@ Ray looks unsure, so Venkman nods positively at him.
 
 """
 
+info.colours = '54'
+info.filesize = '3.07mb'
+info.frames = '137'
+info.size = '400×196'
+info.time = '7.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

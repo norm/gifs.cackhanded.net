@@ -11,6 +11,12 @@ though some people pronounce it ‘jif’.”
 
 """
 
+info.colours = '64'
+info.filesize = '4.00mb'
+info.frames = '167'
+info.size = '480×240'
+info.time = '9.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

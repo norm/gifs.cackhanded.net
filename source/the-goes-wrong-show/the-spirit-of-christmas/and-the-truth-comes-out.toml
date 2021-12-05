@@ -13,6 +13,12 @@ points accusingly and declares “And the truth comes out!”
 
 """
 
+info.colours = '70'
+info.filesize = '2.22mb'
+info.frames = '68'
+info.size = '480×270'
+info.time = '3.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

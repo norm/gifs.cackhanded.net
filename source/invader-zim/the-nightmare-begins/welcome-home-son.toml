@@ -15,6 +15,12 @@ Robomom declare “Welcome home, son!” Zim looks around carefully.
 
 """
 
+info.colours = '96'
+info.filesize = '0.53mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '5.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

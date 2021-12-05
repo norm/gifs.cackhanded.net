@@ -13,6 +13,12 @@ Flo walks off.
 
 """
 
+info.colours = '60'
+info.filesize = '0.65mb'
+info.frames = '35'
+info.size = '480×270'
+info.time = '1.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

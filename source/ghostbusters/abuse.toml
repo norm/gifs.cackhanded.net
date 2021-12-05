@@ -12,6 +12,12 @@ hundreds of people dying to abuse me.”
 
 """
 
+info.colours = '64'
+info.filesize = '2.47mb'
+info.frames = '99'
+info.size = '480×198'
+info.time = '5.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

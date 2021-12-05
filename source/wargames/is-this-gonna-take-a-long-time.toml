@@ -12,6 +12,12 @@ Jennifer nods towards the computer screen and asks David
 
 """
 
+info.colours = '80'
+info.filesize = '0.89mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '2.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

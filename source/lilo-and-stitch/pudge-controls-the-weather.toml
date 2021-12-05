@@ -8,6 +8,12 @@ Lilo tells her hula teacher “Pudge controls the weather.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.42mb'
+info.frames = '30'
+info.size = '480×285'
+info.time = '3.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

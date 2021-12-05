@@ -13,6 +13,12 @@ Nathan laughs at a joke Ted has just told. Ted turns and asks
 
 """
 
+info.colours = '62'
+info.filesize = '1.83mb'
+info.frames = '90'
+info.size = '480×240'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-102'

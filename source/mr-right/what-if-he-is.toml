@@ -11,6 +11,12 @@ he’s evil?” She turns and grins, “What if he is?!”
 
 """
 
+info.colours = '60'
+info.filesize = '1.34mb'
+info.frames = '63'
+info.size = '480×266'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

@@ -9,6 +9,12 @@ Venkman turns to the Library’s administrator and says
 
 """
 
+info.colours = '54'
+info.filesize = '1.72mb'
+info.frames = '69'
+info.size = '480×218'
+info.time = '3.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

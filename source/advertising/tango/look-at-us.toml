@@ -14,6 +14,12 @@ start running with him.
 
 """
 
+info.colours = '128'
+info.filesize = '2.68mb'
+info.frames = '126'
+info.size = '400×250'
+info.time = '7.00 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'odCBml5TuNI'

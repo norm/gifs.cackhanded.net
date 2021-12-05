@@ -11,6 +11,12 @@ by combat. Finding his behaviour attractive she comments with a smile,
 
 """
 
+info.colours = '46'
+info.filesize = '0.93mb'
+info.frames = '81'
+info.size = '480×270'
+info.time = '4.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'lower-decks-103'

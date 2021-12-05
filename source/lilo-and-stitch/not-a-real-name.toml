@@ -9,6 +9,12 @@ not say that to Lilo. The rescue lady adds “…in Iceland.”
 
 """
 
+info.colours = '63'
+info.filesize = '0.67mb'
+info.frames = '52'
+info.size = '480×285'
+info.time = '4.33 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

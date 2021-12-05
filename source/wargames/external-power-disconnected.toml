@@ -10,6 +10,12 @@ A sergeant disconnects the external power connections to NORAD.
 
 """
 
+info.colours = '80'
+info.filesize = '1.51mb'
+info.frames = '61'
+info.size = '400×225'
+info.time = '3.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

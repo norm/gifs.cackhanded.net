@@ -12,6 +12,12 @@ on Soccer Saturday.
 
 """
 
+info.colours = '97'
+info.filesize = '0.90mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '2.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

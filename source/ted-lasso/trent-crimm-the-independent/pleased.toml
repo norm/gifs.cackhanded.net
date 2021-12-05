@@ -11,6 +11,12 @@ Rebecca looks pleased.
 
 """
 
+info.colours = '81'
+info.filesize = '0.89mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '2.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

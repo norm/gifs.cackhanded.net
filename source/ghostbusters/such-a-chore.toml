@@ -13,6 +13,12 @@ him, wordless.
 
 """
 
+info.colours = '53'
+info.filesize = '2.08mb'
+info.frames = '56'
+info.size = '480×244'
+info.time = '3.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

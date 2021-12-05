@@ -13,6 +13,12 @@ Rebecca says “Oh the hell with it”. Ted and Leslie grin at each other.
 
 """
 
+info.colours = '60'
+info.filesize = '2.04mb'
+info.frames = '81'
+info.size = '480×260'
+info.time = '4.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

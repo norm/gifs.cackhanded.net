@@ -11,6 +11,12 @@ Keys fall from the ceiling onto Norberg.
 
 """
 
+info.colours = '75'
+info.filesize = '1.11mb'
+info.frames = '90'
+info.size = '400×250'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-105'

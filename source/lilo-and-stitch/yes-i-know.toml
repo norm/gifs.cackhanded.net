@@ -8,6 +8,12 @@ Cobra Bubbles says “Yes I know.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.16mb'
+info.frames = '12'
+info.size = '480×285'
+info.time = '1.20 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

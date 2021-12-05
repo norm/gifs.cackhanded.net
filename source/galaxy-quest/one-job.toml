@@ -14,6 +14,12 @@ Tommy looks uncomfortable.
 
 """
 
+info.colours = '80'
+info.filesize = '1.87mb'
+info.frames = '124'
+info.size = '480×270'
+info.time = '6.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

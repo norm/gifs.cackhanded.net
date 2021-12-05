@@ -14,6 +14,12 @@ Beringer, confused, retorts “Does what make any sense?”
 
 """
 
+info.colours = '96'
+info.filesize = '1.06mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '2.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

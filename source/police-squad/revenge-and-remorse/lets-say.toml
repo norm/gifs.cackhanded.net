@@ -17,6 +17,12 @@ Eddie nods, “Okay…” and all three repeat in unison
 
 """
 
+info.colours = '80'
+info.filesize = '1.33mb'
+info.frames = '134'
+info.size = '400×250'
+info.time = '7.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-104'

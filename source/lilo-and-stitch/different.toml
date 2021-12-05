@@ -8,6 +8,12 @@ Lilo tells Nani “People treat me different.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.73mb'
+info.frames = '45'
+info.size = '480×285'
+info.time = '3.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

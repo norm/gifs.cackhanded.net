@@ -14,6 +14,12 @@ and hands Rebecca her phone.
 
 """
 
+info.colours = '96'
+info.filesize = '0.97mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '2.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

@@ -10,6 +10,12 @@ The chompers, chomping.
 
 """
 
+info.colours = '41'
+info.filesize = '0.94mb'
+info.frames = '42'
+info.size = '480×270'
+info.time = '2.32 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

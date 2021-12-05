@@ -13,6 +13,12 @@ back in horror, points at him and screams “It isn’t human! It’s horrible!�
 
 """
 
+info.colours = '80'
+info.filesize = '0.66mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '6.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

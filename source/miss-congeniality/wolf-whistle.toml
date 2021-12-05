@@ -10,6 +10,12 @@ Eric wolf whistling.
 
 """
 
+info.colours = '75'
+info.filesize = '1.17mb'
+info.frames = '47'
+info.size = '400×225'
+info.time = '2.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

@@ -11,6 +11,12 @@ Victor tells Eric “Both painful and grotesque”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.25mb'
+info.frames = '67'
+info.size = '480×270'
+info.time = '3.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

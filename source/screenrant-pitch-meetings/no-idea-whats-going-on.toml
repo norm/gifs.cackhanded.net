@@ -15,6 +15,12 @@ The script writer grins and says “I did, yeah” and the exec affirms
 
 """
 
+info.colours = '128'
+info.filesize = '1.47mb'
+info.frames = '128'
+info.size = '480×270'
+info.time = '5.33 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'w0s9mUXhHZ8'

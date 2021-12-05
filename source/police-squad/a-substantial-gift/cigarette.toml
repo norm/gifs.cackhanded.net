@@ -14,6 +14,12 @@ Frank Drebin offers Sally Decker a cigarette. “Cigarette?” She responds,
 
 """
 
+info.colours = '80'
+info.filesize = '0.96mb'
+info.frames = '65'
+info.size = '400×250'
+info.time = '3.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-101'

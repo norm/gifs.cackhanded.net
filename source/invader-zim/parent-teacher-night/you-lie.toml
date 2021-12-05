@@ -13,6 +13,12 @@ Zim accuses Ms Bitters, “You lie! You lie!”
 
 """
 
+info.colours = '85'
+info.filesize = '0.26mb'
+info.frames = '39'
+info.size = '480×270'
+info.time = '3.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

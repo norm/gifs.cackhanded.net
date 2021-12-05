@@ -11,6 +11,12 @@ face with a fire extinguisher.
 
 """
 
+info.colours = '60'
+info.filesize = '1.61mb'
+info.frames = '48'
+info.size = '480×266'
+info.time = '2.67 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

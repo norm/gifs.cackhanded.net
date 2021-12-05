@@ -11,6 +11,12 @@ Ted saying “Ooo, high praise.”
 
 """
 
+info.colours = '60'
+info.filesize = '0.27mb'
+info.frames = '18'
+info.size = '480×270'
+info.time = '0.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

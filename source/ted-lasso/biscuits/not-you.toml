@@ -12,6 +12,12 @@ Rebecca says to Higgins “Not you, you garden gnome.”
 
 """
 
+info.colours = '61'
+info.filesize = '1.28mb'
+info.frames = '45'
+info.size = '400×225'
+info.time = '2.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-102'

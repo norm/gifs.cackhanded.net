@@ -13,6 +13,12 @@ suck on a Lambert”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.46mb'
+info.frames = '104'
+info.size = '480×264'
+info.time = '5.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-101'

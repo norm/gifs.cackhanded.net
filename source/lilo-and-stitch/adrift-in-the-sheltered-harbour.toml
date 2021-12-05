@@ -10,6 +10,12 @@ adrift in the sheltered harbour of my patience…”
 
 """
 
+info.colours = '64'
+info.filesize = '0.79mb'
+info.frames = '86'
+info.size = '480×285'
+info.time = '8.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

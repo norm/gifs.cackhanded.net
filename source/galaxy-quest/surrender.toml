@@ -12,6 +12,12 @@ the form of a question.
 
 """
 
+info.colours = '80'
+info.filesize = '1.65mb'
+info.frames = '76'
+info.size = '480×270'
+info.time = '4.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

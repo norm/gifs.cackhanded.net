@@ -13,6 +13,12 @@ A map of USA and Russia is slowly drawn on screen.
 
 """
 
+info.colours = '75'
+info.filesize = '1.23mb'
+info.frames = '97'
+info.size = '480×270'
+info.time = '5.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

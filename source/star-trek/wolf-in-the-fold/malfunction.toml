@@ -15,6 +15,12 @@ the crew.
 
 """
 
+info.colours = '84'
+info.filesize = '1.70mb'
+info.frames = '74'
+info.size = '400×258'
+info.time = '4.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'trek-tos-214'

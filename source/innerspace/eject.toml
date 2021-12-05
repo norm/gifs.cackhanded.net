@@ -13,6 +13,12 @@ across the room and smashes through the window.
 
 """
 
+info.colours = '81'
+info.filesize = '1.06mb'
+info.frames = '51'
+info.size = '400×225'
+info.time = '2.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

@@ -12,6 +12,12 @@ Jason pokes Mathesar in the chest. Mathesar makes a soundless squeak.
 
 """
 
+info.colours = '75'
+info.filesize = '1.02mb'
+info.frames = '39'
+info.size = '400×225'
+info.time = '2.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

@@ -15,6 +15,12 @@ After lighting the cigarette, she breathes out some smoke.
 
 """
 
+info.colours = '75'
+info.filesize = '1.58mb'
+info.frames = '97'
+info.size = '400×250'
+info.time = '5.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-106'

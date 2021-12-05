@@ -15,6 +15,12 @@ A train pulls in and everyone on it shouts “GO SPORTS TEAM!”
 
 """
 
+info.colours = '97'
+info.filesize = '1.20mb'
+info.frames = '30'
+info.size = '480×198'
+info.time = '3.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'the-lego-movie'

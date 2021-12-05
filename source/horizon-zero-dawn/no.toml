@@ -8,6 +8,12 @@ Aloy responds to Brin, “Uhhhhh, no.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.08mb'
+info.frames = '38'
+info.size = '480×270'
+info.time = '2.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-no'

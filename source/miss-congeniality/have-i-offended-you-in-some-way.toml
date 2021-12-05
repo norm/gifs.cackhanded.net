@@ -12,6 +12,12 @@ Gracie, with a mouthful of half-masticated cow, angrily asks Victor
 
 """
 
+info.colours = '80'
+info.filesize = '0.79mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

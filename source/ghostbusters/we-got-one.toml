@@ -11,6 +11,12 @@ A bell starts ringing and a red light flashes.
 
 """
 
+info.colours = '54'
+info.filesize = '2.09mb'
+info.frames = '83'
+info.size = '480×264'
+info.time = '4.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

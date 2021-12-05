@@ -13,6 +13,12 @@ and Zim climbs in. He sinks down inside and the lid closes behind him.
 
 """
 
+info.colours = '91'
+info.filesize = '0.41mb'
+info.frames = '71'
+info.size = '480×270'
+info.time = '5.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

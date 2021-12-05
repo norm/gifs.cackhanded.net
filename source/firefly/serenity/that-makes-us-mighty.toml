@@ -9,6 +9,12 @@ impossible, and that makes us mighty."
 
 """
 
+info.colours = '80'
+info.filesize = '1.65mb'
+info.frames = '84'
+info.size = '480×270'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'firefly-1'

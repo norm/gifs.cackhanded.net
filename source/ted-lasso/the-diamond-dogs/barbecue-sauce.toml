@@ -12,6 +12,12 @@ of the match, which lands in the bullseye.
 
 """
 
+info.colours = '80'
+info.filesize = '1.31mb'
+info.frames = '55'
+info.size = '400×225'
+info.time = '3.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

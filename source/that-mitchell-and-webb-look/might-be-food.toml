@@ -13,6 +13,12 @@ The host of The Quiz Broadcast declares
 
 """
 
+info.colours = '80'
+info.filesize = '1.15mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '2.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-403'

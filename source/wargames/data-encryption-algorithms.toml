@@ -11,6 +11,12 @@ Malvin tells David “That system probably has new data encryption algorithms.�
 
 """
 
+info.colours = '80'
+info.filesize = '1.29mb'
+info.frames = '58'
+info.size = '480×270'
+info.time = '3.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

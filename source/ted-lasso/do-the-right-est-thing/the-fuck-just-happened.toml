@@ -11,6 +11,12 @@ Jamie, lying on the ground after a tackle, wonders “…the fuck just happened?
 
 """
 
+info.colours = '80'
+info.filesize = '1.26mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

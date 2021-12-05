@@ -12,6 +12,12 @@ Zim, clutching his back, screaming incessantly.
 
 """
 
+info.size = '480×270'
+info.frames = '16'
+info.colours = '90'
+info.filesize = '197033'
+info.time = '1.33'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

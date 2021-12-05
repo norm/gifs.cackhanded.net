@@ -9,6 +9,12 @@ Keeley asks Ted “Do you even tweet?”
 
 """
 
+info.colours = '60'
+info.filesize = '0.31mb'
+info.frames = '15'
+info.size = '480×271'
+info.time = '0.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

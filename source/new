@@ -12,6 +12,12 @@ WRITE ME.
 
 """
 
+info.colours = ''
+info.filesize = ''
+info.frames = ''
+info.size = ''
+info.time = ''
+
 [video]
 source   = 'file | youtube'
 file     = '$FILE'

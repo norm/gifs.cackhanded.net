@@ -11,6 +11,12 @@ CCTV footage of nuclear missiles in their launch bays.
 
 """
 
+info.colours = '25'
+info.filesize = '1.80mb'
+info.frames = '181'
+info.size = '320×245'
+info.time = '10.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

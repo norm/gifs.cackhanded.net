@@ -10,6 +10,12 @@ Ray, lamenting “cross the streams”.
 
 """
 
+info.colours = '54'
+info.filesize = '0.88mb'
+info.frames = '43'
+info.size = '480×264'
+info.time = '2.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

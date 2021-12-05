@@ -12,6 +12,12 @@ Tuck kisses Jack on the cheek after the wedding.
 
 """
 
+info.colours = '81'
+info.filesize = '1.20mb'
+info.frames = '46'
+info.size = '400×225'
+info.time = '2.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

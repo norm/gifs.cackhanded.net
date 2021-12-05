@@ -11,6 +11,12 @@ Roy mentally prepares himself, breathing out sharply.
 
 """
 
+info.colours = '75'
+info.filesize = '0.89mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '3.17 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

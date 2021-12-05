@@ -11,6 +11,12 @@ They look at you and they know, and they say “Who’s Ruby?”
 
 """
 
+info.colours = '40'
+info.filesize = '2.23mb'
+info.frames = '244'
+info.size = '320×240'
+info.time = '13.56 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

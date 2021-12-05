@@ -13,6 +13,12 @@ A big orange fella gives a chap holding a can of Tango a good old slapping.
 
 """
 
+info.colours = '75'
+info.filesize = '2.29mb'
+info.frames = '94'
+info.size = '400×274'
+info.time = '5.23 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'cqm-s6h8l1I'

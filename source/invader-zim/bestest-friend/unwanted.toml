@@ -15,6 +15,12 @@ A bunch of kids scrunch up their leaflets and throw them at Keef.
 
 """
 
+info.colours = '91'
+info.filesize = '0.46mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '4.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

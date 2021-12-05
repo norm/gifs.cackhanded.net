@@ -13,6 +13,12 @@ Phelps starts flipping covers and switches.
 
 """
 
+info.colours = '80'
+info.filesize = '1.47mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '3.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

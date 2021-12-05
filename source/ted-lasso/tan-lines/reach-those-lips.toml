@@ -12,6 +12,12 @@ Keeley tells Rebecca ”I’d kiss you on the mouth if I could reach those lips.
 
 """
 
+info.colours = '60'
+info.filesize = '1.01mb'
+info.frames = '45'
+info.size = '480×269'
+info.time = '2.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

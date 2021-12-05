@@ -11,6 +11,12 @@ In a pitch meeting, a studio exec comments “Oh you’re so evil, I love it!”
 
 """
 
+info.colours = '128'
+info.filesize = '0.39mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '1.68 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Ha10ImiP6So'

@@ -11,6 +11,12 @@ of her head and walks off. Ted looks from one to the other.
 
 """
 
+info.colours = '81'
+info.filesize = '1.81mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '4.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

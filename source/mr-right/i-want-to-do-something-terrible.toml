@@ -11,6 +11,12 @@ repeats herself, and makes T-Rex claw hands.
 
 """
 
+info.colours = '128'
+info.filesize = '3.61mb'
+info.frames = '145'
+info.size = '400×222'
+info.time = '8.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

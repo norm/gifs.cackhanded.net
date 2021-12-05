@@ -11,6 +11,12 @@ Bad Cop, interrogating Emmet Brickowski about the Piece of Resistance.
 
 """
 
+info.colours = '81'
+info.filesize = '0.81mb'
+info.frames = '29'
+info.size = '480×198'
+info.time = '2.90 seconds'
+
 [video]
 source   = 'file'
 file     = 'the-lego-movie'

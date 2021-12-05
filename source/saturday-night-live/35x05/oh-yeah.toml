@@ -10,6 +10,12 @@ Dish during a Taylor Swift interview, nodding and mouthing "oh yeah".
 
 """
 
+info.colours = '64'
+info.filesize = '0.64mb'
+info.frames = '38'
+info.size = '360×203'
+info.time = '2.10 seconds'
+
 [video]
 source   = 'youtube'
 file     = '7bK5BQVi2ZE'

@@ -13,6 +13,12 @@ skool cafeteria.
 
 """
 
+info.colours = '91'
+info.filesize = '0.37mb'
+info.frames = '44'
+info.size = '480×270'
+info.time = '3.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

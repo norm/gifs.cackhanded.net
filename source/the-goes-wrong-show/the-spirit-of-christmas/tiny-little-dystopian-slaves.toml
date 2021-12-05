@@ -20,6 +20,12 @@ the future of present delivery:
 
 """
 
+info.colours = '70'
+info.filesize = '2.44mb'
+info.frames = '95'
+info.size = '480×270'
+info.time = '5.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

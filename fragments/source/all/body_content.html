@@ -69,4 +69,16 @@
       {% endfor %}
     </li>
   {% endif %}
+  {% if info.filesize %}
+    <dt>Size</dt>
+    <dd>{{info.size}}</dd>
+    <dt>File size</dt>
+    <dd>{{info.filesize}}</dd>
+    <dt>Frames</dt>
+    <dd>{{info.frames}}</dd>
+    <dt>Colours</dt>
+    <dd>{{info.colours}}</dd>
+    <dt>Time</dt>
+    <dd>{{info.time}}</dd>
+  {% endif %}
 </dl>

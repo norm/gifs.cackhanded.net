@@ -13,6 +13,12 @@ over and places on her head.
 
 """
 
+info.colours = '64'
+info.filesize = '2.31mb'
+info.frames = '161'
+info.size = '360×203'
+info.time = '8.95 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'F3lEPL1nzYI'

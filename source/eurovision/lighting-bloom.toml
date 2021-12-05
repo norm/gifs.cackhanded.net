@@ -9,6 +9,12 @@ A canonical example of "lighting bloom" for the
 
 """
 
+info.colours = '47'
+info.filesize = '0.98mb'
+info.frames = '84'
+info.size = '360×203'
+info.time = '7.01 seconds'
+
 [video]
 source   = 'youtube'
 file     = '5mPUMPcFQAY'

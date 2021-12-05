@@ -9,6 +9,12 @@ walk off.
 
 """
 
+info.colours = '64'
+info.filesize = '1.49mb'
+info.frames = '123'
+info.size = '480×270'
+info.time = '6.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'avengers'

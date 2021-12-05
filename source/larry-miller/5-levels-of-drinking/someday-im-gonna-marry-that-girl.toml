@@ -11,6 +11,12 @@ Someday I’m gonna marry that girl.
 
 """
 
+info.colours = '50'
+info.filesize = '0.62mb'
+info.frames = '61'
+info.size = '320×240'
+info.time = '3.39 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

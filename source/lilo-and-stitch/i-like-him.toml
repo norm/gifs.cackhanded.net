@@ -11,6 +11,12 @@ restrained by the rescue lady.
 
 """
 
+info.colours = '70'
+info.filesize = '0.49mb'
+info.frames = '36'
+info.size = '480×285'
+info.time = '3.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

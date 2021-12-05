@@ -10,6 +10,12 @@ Dish during a Taylor Swift interview, miming “duuuuuh”.
 
 """
 
+info.colours = '64'
+info.filesize = '0.43mb'
+info.frames = '30'
+info.size = '360×203'
+info.time = '1.67 seconds'
+
 [video]
 source   = 'youtube'
 file     = '7bK5BQVi2ZE'

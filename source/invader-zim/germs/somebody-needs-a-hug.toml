@@ -14,6 +14,12 @@ Zim disagrees, “No! No! No, Gir, no!”
 
 """
 
+info.colours = '128'
+info.filesize = '0.83mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '6.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

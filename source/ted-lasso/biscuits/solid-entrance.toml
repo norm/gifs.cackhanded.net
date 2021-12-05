@@ -13,6 +13,12 @@ Ted comments “Solid entrance.”
 
 """
 
+info.colours = '64'
+info.filesize = '1.33mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '2.95 seconds'
+
 [video]
 source   = 'file | youtube'
 file     = 'ted-lasso-102'

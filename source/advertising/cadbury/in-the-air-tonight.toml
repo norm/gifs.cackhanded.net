@@ -12,6 +12,12 @@ A gorilla plays the drums.
 
 """
 
+info.colours = '75'
+info.filesize = '1.82mb'
+info.frames = '120'
+info.size = '360×202'
+info.time = '7.99 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Rs2z7OA3XKI'

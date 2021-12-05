@@ -11,6 +11,12 @@ I love it! If not, I cannot wait to unpack that with you.”
 
 """
 
+info.colours = '70'
+info.filesize = '2.01mb'
+info.frames = '78'
+info.size = '400×225'
+info.time = '4.34 seconds'
+
 author     = 'Ryan Alexander'
 author_url = 'https://twitter.com/rnalexander'
 

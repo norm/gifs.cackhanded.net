@@ -8,6 +8,12 @@ Captain Gantu asks “What was that?” after a thumping sound.
 
 """
 
+info.colours = '64'
+info.filesize = '0.58mb'
+info.frames = '20'
+info.size = '480×285'
+info.time = '2.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

@@ -15,6 +15,12 @@ declares “That’s wangernumb!”
 
 """
 
+info.colours = '192'
+info.filesize = '1.70mb'
+info.frames = '106'
+info.size = '480×264'
+info.time = '5.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-101'

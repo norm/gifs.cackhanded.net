@@ -11,6 +11,12 @@ Keeley reacts to a picture on Rebecca's laptop “Holy shit!’
 
 """
 
+info.colours = '80'
+info.filesize = '1.74mb'
+info.frames = '74'
+info.size = '400×228'
+info.time = '4.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

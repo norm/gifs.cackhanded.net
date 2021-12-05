@@ -12,6 +12,12 @@ Mr Igoe cruelly pops the balloon of a clown.
 
 """
 
+info.colours = '64'
+info.filesize = '2.30mb'
+info.frames = '76'
+info.size = '400×225'
+info.time = '5.07 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

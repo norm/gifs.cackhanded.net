@@ -13,6 +13,12 @@ terror. Like children waiting in line for the handsy Father Christmas.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.44mb'
+info.frames = '110'
+info.size = '480×270'
+info.time = '6.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

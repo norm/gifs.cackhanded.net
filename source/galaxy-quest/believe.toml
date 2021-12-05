@@ -13,6 +13,12 @@ with a sense of purpose.
 
 """
 
+info.colours = '103'
+info.filesize = '2.69mb'
+info.frames = '117'
+info.size = '480×270'
+info.time = '6.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

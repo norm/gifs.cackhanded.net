@@ -12,6 +12,12 @@ A skeleton floats outside of the Kraken II's window. Tuck informs Jack
 
 """
 
+info.colours = '79'
+info.filesize = '1.80mb'
+info.frames = '108'
+info.size = '480×270'
+info.time = '6.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

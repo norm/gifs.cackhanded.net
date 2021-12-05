@@ -14,6 +14,12 @@ at each other in synchronisation.
 
 """
 
+info.colours = '61'
+info.filesize = '2.05mb'
+info.frames = '88'
+info.size = '480×270'
+info.time = '4.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

@@ -13,6 +13,12 @@ tells him “They go up.”
 
 """
 
+info.colours = '70'
+info.filesize = '2.90mb'
+info.frames = '132'
+info.size = '400×220'
+info.time = '7.32 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

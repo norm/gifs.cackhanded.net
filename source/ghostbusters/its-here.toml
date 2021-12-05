@@ -13,6 +13,12 @@ come in behind him.
 
 """
 
+info.colours = '70'
+info.filesize = '3.04mb'
+info.frames = '117'
+info.size = '480×244'
+info.time = '6.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

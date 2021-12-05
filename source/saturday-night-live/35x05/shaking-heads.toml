@@ -10,6 +10,12 @@ Dish during a Taylor Swift interview, shaking their heads.
 
 """
 
+info.colours = '64'
+info.filesize = '0.48mb'
+info.frames = '31'
+info.size = '360×203'
+info.time = '1.71 seconds'
+
 [video]
 source   = 'youtube'
 file     = '7bK5BQVi2ZE'

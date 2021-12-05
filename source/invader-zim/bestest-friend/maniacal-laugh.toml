@@ -11,6 +11,12 @@ Zim standing on top of his house, laughing maniacally.
 
 """
 
+info.colours = '91'
+info.filesize = '0.14mb'
+info.frames = '20'
+info.size = '480×270'
+info.time = '1.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

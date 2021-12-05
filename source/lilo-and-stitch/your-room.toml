@@ -11,6 +11,12 @@ slams the door again.
 
 """
 
+info.colours = '128'
+info.filesize = '0.65mb'
+info.frames = '65'
+info.size = '480×285'
+info.time = '5.41 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

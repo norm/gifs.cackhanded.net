@@ -8,6 +8,12 @@ Eddie saying “Control and P, print”
 
 """
 
+info.colours = '47'
+info.filesize = '1.58mb'
+info.frames = '63'
+info.size = '480×360'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'youtube'
 file     = '-5pyEkBuIb8'

@@ -12,6 +12,12 @@ confidence is high.”
 
 """
 
+info.colours = '128'
+info.filesize = '1.93mb'
+info.frames = '78'
+info.size = '400×225'
+info.time = '4.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

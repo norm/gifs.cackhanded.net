@@ -10,6 +10,12 @@ crate. After a second, Mal smiles.
 
 """
 
+info.colours = '54'
+info.filesize = '2.50mb'
+info.frames = '125'
+info.size = '480×270'
+info.time = '5.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'firefly-1'

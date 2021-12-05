@@ -14,6 +14,12 @@ Gracie catches Cheryl as she faints.
 
 """
 
+info.colours = '75'
+info.filesize = '2.38mb'
+info.frames = '92'
+info.size = '480×270'
+info.time = '5.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

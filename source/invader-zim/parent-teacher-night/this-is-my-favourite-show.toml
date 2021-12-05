@@ -17,6 +17,12 @@ It runs back. “Look, this is my favorite show!”
 
 """
 
+info.size = '480×270'
+info.frames = '72'
+info.colours = '96'
+info.filesize = '1150564'
+info.time = '6.01'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

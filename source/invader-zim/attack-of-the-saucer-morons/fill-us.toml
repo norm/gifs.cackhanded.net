@@ -15,6 +15,12 @@ The rest raise up from bowing and chorus “Yes! Fill us!”
 
 """
 
+info.colours = '128'
+info.filesize = '0.80mb'
+info.frames = '67'
+info.size = '480×270'
+info.time = '5.58 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

@@ -10,6 +10,12 @@ Vanessa (played by Bryony Corrigan) that Christmas is ultimately a
 “commercial holiday”.
 
 """
+
+info.colours = '70'
+info.filesize = '1.00mb'
+info.frames = '31'
+info.size = '480×270'
+info.time = '1.73 seconds'
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

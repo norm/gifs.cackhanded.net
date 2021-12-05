@@ -12,6 +12,12 @@ Tommy takes an ussie with Jamie, then slaps his thumb on his hand, “Wicked!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.50mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '3.32 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

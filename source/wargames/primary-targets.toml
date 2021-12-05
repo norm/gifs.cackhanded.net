@@ -11,6 +11,12 @@ primary targets by city and/or county name”.
 
 """
 
+info.colours = '25'
+info.filesize = '0.44mb'
+info.frames = '78'
+info.size = '480×270'
+info.time = '4.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

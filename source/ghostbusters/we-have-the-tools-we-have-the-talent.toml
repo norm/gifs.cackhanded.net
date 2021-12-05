@@ -13,6 +13,12 @@ we have the talent!”
 
 """
 
+info.colours = '63'
+info.filesize = '1.63mb'
+info.frames = '65'
+info.size = '480×207'
+info.time = '3.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

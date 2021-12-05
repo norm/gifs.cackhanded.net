@@ -11,6 +11,12 @@ Big cheese. The head honcho.”
 
 """
 
+info.colours = '64'
+info.filesize = '3.26mb'
+info.frames = '94'
+info.size = '480×270'
+info.time = '7.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

@@ -12,6 +12,12 @@ tried that?”
 
 """
 
+info.colours = '80'
+info.filesize = '1.49mb'
+info.frames = '62'
+info.size = '480×270'
+info.time = '3.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

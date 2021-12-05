@@ -10,6 +10,12 @@ Mr Igoe blows the smoke from his finger gun.
 
 """
 
+info.colours = '128'
+info.filesize = '1.87mb'
+info.frames = '74'
+info.size = '480×270'
+info.time = '4.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

@@ -12,6 +12,12 @@ screen writer replies “You’re damn right!”
 
 """
 
+info.colours = '128'
+info.filesize = '0.47mb'
+info.frames = '44'
+info.size = '480×270'
+info.time = '1.83 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Ha10ImiP6So'

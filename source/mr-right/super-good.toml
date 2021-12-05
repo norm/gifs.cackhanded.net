@@ -11,6 +11,12 @@ and mutters “Super good, super good.”
 
 """
 
+info.colours = '60'
+info.filesize = '1.61mb'
+info.frames = '62'
+info.size = '480×266'
+info.time = '3.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

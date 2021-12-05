@@ -14,6 +14,12 @@ Coach Beard nods, as though he expected that.
 
 """
 
+info.colours = '60'
+info.filesize = '0.99mb'
+info.frames = '38'
+info.size = '480×270'
+info.time = '2.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-102'

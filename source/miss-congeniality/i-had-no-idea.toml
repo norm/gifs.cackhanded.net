@@ -13,6 +13,12 @@ then carries on chewing.
 
 """
 
+info.colours = '80'
+info.filesize = '1.79mb'
+info.frames = '73'
+info.size = '480×270'
+info.time = '4.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

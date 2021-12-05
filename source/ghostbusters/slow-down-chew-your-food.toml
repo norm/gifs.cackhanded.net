@@ -9,6 +9,12 @@ your food.”
 
 """
 
+info.colours = '53'
+info.filesize = '2.17mb'
+info.frames = '95'
+info.size = '480×253'
+info.time = '5.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

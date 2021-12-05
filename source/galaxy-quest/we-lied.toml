@@ -11,6 +11,12 @@ Jason confesses “We lied” to Mathesar, who cries wordlessly.
 
 """
 
+info.colours = '80'
+info.filesize = '1.18mb'
+info.frames = '66'
+info.size = '480×270'
+info.time = '3.67 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

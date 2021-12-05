@@ -14,6 +14,12 @@ as a pig) and screams “Faster, my pig, faster!”
 
 """
 
+info.colours = '64'
+info.filesize = '0.68mb'
+info.frames = '41'
+info.size = '480×270'
+info.time = '3.41 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

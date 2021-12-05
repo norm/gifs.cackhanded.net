@@ -13,6 +13,12 @@ and looks back.
 
 """
 
+info.colours = '75'
+info.filesize = '1.55mb'
+info.frames = '108'
+info.size = '480×270'
+info.time = '5.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

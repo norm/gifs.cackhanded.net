@@ -9,6 +9,12 @@ and shakes it up. She tells Cobra Bubbles “My friends need to be punished.”
 
 """
 
+info.colours = '128'
+info.filesize = '1.31mb'
+info.frames = '113'
+info.size = '480×285'
+info.time = '9.41 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

@@ -15,6 +15,12 @@ wristbrace.
 
 """
 
+info.colours = '91'
+info.filesize = '0.35mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '3.33 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

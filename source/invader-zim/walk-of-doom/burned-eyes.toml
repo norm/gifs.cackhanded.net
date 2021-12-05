@@ -11,6 +11,12 @@ Zim’s lenses bubble and turn black as he stares at the sun.
 
 """
 
+info.colours = '37'
+info.filesize = '0.41mb'
+info.frames = '43'
+info.size = '480×270'
+info.time = '3.58 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

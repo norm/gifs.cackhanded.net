@@ -12,6 +12,12 @@ Kathy slaps Victor upside the back of the head.
 
 """
 
+info.colours = '75'
+info.filesize = '1.16mb'
+info.frames = '47'
+info.size = '400×225'
+info.time = '2.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

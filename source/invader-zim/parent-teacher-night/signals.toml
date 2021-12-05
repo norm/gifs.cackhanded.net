@@ -11,6 +11,12 @@ Robodad has signals beamed into his robobrain.
 
 """
 
+info.size = '480×270'
+info.frames = '10'
+info.colours = '63'
+info.filesize = '0.22mb'
+info.time = '0.43 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

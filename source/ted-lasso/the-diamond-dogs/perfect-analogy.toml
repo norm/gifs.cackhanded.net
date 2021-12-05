@@ -12,6 +12,12 @@ Coach Beard agreeing with Ted, “perfect analogy”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.85mb'
+info.frames = '32'
+info.size = '480×270'
+info.time = '1.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

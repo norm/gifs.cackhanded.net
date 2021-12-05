@@ -13,6 +13,12 @@ over, and Frank uses it to adjust the height of the stool.
 
 """
 
+info.colours = '80'
+info.filesize = '2.51mb'
+info.frames = '198'
+info.size = '400×250'
+info.time = '10.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-102'

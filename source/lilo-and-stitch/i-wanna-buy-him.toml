@@ -10,6 +10,12 @@ it and hands it back to the rescue lady.
 
 """
 
+info.colours = '64'
+info.filesize = '0.69mb'
+info.frames = '53'
+info.size = '480×285'
+info.time = '4.41 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

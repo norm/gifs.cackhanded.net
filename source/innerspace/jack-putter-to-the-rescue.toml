@@ -10,6 +10,12 @@ Jack behind the wheel of a ’67 Ford Mustang shouts “Jack Putter to the rescu
 
 """
 
+info.colours = '79'
+info.filesize = '0.96mb'
+info.frames = '37'
+info.size = '400×225'
+info.time = '2.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

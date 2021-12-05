@@ -48,9 +48,15 @@ WRITE ME.
 
 """
 
+info.colours = ''
+info.filesize = ''
+info.frames = ''
+info.size = ''
+info.time = ''
+
 [video]
 source   = 'file'
-file     = 'ted_lasso_203'
+file     = 'ted_lasso_204'
 ext      = 'm4v'
 start    = '0:00.0'
 duration = '1'

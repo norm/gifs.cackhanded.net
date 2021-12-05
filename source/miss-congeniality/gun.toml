@@ -14,6 +14,12 @@ Gracie pulls a gun and points it at him. He returns the bagel.
 
 """
 
+info.colours = '255'
+info.filesize = '3.37mb'
+info.frames = '141'
+info.size = '400×225'
+info.time = '7.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

@@ -11,6 +11,12 @@ and start making urgent calls.
 
 """
 
+info.colours = '75'
+info.filesize = '1.87mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

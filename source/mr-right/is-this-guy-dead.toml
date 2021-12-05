@@ -14,6 +14,12 @@ asks “Is this guy dead?”
 
 """
 
+info.colours = '100'
+info.filesize = '2.88mb'
+info.frames = '127'
+info.size = '480×266'
+info.time = '7.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

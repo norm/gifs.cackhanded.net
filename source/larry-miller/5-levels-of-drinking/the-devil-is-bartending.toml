@@ -11,6 +11,12 @@ Two in the morning, and the devil is bartending.
 
 """
 
+info.colours = '46'
+info.filesize = '1.56mb'
+info.frames = '165'
+info.size = '320×240'
+info.time = '9.16 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

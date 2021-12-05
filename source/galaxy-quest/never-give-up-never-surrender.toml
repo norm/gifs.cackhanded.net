@@ -12,6 +12,12 @@ shout back “Never surrender!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.27mb'
+info.frames = '84'
+info.size = '480×270'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

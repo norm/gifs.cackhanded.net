@@ -12,6 +12,12 @@ Ted drawing on a whiteboard.
 
 """
 
+info.colours = '64'
+info.filesize = '1.85mb'
+info.frames = '74'
+info.size = '480×270'
+info.time = '4.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

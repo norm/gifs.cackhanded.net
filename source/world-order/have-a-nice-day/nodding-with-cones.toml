@@ -12,6 +12,12 @@ of delicious food in cone form.
 
 """
 
+info.colours = '64'
+info.filesize = '1.68mb'
+info.frames = '70'
+info.size = '480×270'
+info.time = '3.50 seconds'
+
 [video]
 source   = 'youtube'
 file     = '_mkiGMtbrPM'

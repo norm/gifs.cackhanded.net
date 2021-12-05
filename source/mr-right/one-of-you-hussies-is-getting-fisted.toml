@@ -11,6 +11,12 @@ closet “One of you hussies is getting fisted!”
 
 """
 
+info.colours = '60'
+info.filesize = '2.02mb'
+info.frames = '75'
+info.size = '400×222'
+info.time = '4.17 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

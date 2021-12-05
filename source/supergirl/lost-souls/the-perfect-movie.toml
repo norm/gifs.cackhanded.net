@@ -15,6 +15,12 @@ says “The prototrap is real”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.49mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'supergirl_604'

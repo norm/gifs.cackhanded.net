@@ -11,6 +11,12 @@ You and your friends decide to leave, right after you get thrown out.
 
 """
 
+info.colours = '50'
+info.filesize = '1.31mb'
+info.frames = '126'
+info.size = '320×240'
+info.time = '6.99 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

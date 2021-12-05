@@ -9,6 +9,12 @@ Janice employs a quality eyeroll.
 
 """
 
+info.colours = '54'
+info.filesize = '0.72mb'
+info.frames = '45'
+info.size = '480×198'
+info.time = '2.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

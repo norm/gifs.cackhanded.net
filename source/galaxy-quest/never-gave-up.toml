@@ -12,6 +12,12 @@ declares “Never give up, never surrender!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.00mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '2.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

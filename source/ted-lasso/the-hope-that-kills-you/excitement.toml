@@ -9,6 +9,12 @@ Coach Beard gets a little overexcited.
 
 """
 
+info.colours = '49'
+info.filesize = '0.45mb'
+info.frames = '22'
+info.size = '480×240'
+info.time = '0.92 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

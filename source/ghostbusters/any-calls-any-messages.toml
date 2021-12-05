@@ -17,6 +17,12 @@ He tries again. “Any messages?”
 
 """
 
+info.colours = '54'
+info.filesize = '2.04mb'
+info.frames = '90'
+info.size = '400×250'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

@@ -11,6 +11,12 @@ as the Kraken II proceeds with remapping his ectodermal contours.
 
 """
 
+info.colours = '75'
+info.filesize = '1.07mb'
+info.frames = '46'
+info.size = '400×240'
+info.time = '2.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

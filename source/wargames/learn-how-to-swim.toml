@@ -10,6 +10,12 @@ David tells Jennifer “I really wanted to learn how to swim”.
 
 """
 
+info.colours = '79'
+info.filesize = '0.94mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '3.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

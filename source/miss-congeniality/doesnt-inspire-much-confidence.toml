@@ -11,6 +11,12 @@ Harry commenting “Doesn’t inspire much confidence”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.49mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '2.67 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

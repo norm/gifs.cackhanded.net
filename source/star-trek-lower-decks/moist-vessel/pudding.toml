@@ -10,6 +10,12 @@ it up in triumph. ”Ohhh pudding!”
 
 """
 
+info.colours = '38'
+info.filesize = '0.17mb'
+info.frames = '31'
+info.size = '480×270'
+info.time = '2.58 seconds'
+
 [video]
 source   = 'file'
 file     = 'lower-decks-104'

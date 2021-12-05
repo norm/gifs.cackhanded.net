@@ -11,6 +11,12 @@ Ted telling Roy “Know thyself. Rest in peace, Socrates.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.49mb'
+info.frames = '58'
+info.size = '400×225'
+info.time = '3.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

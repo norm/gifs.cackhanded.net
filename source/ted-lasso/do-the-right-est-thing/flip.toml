@@ -17,6 +17,12 @@ throws it into the stands.
 
 """
 
+info.colours = '75'
+info.filesize = '1.62mb'
+info.frames = '84'
+info.size = '480×270'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

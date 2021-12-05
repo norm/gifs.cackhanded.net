@@ -8,6 +8,12 @@ The “a little hot” warning light blinks.
 
 """
 
+info.colours = '49'
+info.filesize = '0.47mb'
+info.frames = '27'
+info.size = '480×270'
+info.time = '1.14 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

@@ -9,6 +9,12 @@ so he smashes a chair over a bar and starts to demonstrate them.
 
 """
 
+info.colours = '64'
+info.filesize = '2.49mb'
+info.frames = '102'
+info.size = '480×270'
+info.time = '5.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'bring-it-on'

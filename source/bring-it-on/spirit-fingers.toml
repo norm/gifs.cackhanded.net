@@ -9,6 +9,12 @@ Sparky Polastri demonstrates
 
 """
 
+info.colours = '56'
+info.filesize = '3.58mb'
+info.frames = '167'
+info.size = '480×270'
+info.time = '9.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'bring-it-on'

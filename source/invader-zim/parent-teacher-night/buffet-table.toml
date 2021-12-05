@@ -12,6 +12,12 @@ Dib relaxes at the buffet table, sipping a drink and eating a ring donut.
 
 """
 
+info.size = '480×270'
+info.frames = '36'
+info.colours = '91'
+info.filesize = '280888'
+info.time = '3.01'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

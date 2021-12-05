@@ -16,6 +16,12 @@ director comments “She’s kicking his ass!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.00mb'
+info.frames = '73'
+info.size = '480×270'
+info.time = '4.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

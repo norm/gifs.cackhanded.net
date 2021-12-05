@@ -12,6 +12,12 @@ Guy tells Alexander that he’s “just jazzed about being on the show, man”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.70mb'
+info.frames = '83'
+info.size = '480×270'
+info.time = '4.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

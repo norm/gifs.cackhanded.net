@@ -10,6 +10,12 @@ Dish during a Taylor Swift interview, giving a moderately sarcastic thumbs up.
 
 """
 
+info.colours = '64'
+info.filesize = '0.41mb'
+info.frames = '26'
+info.size = '360×203'
+info.time = '1.45 seconds'
+
 [video]
 source   = 'youtube'
 file     = '7bK5BQVi2ZE'

@@ -9,6 +9,12 @@ Nani chasing her.
 
 """
 
+info.colours = '128'
+info.filesize = '0.71mb'
+info.frames = '63'
+info.size = '480×285'
+info.time = '5.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

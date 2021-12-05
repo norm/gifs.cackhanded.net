@@ -16,6 +16,12 @@ Coach Beard sensibly interjects “Maybe we should do this part outside!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.62mb'
+info.frames = '94'
+info.size = '400×225'
+info.time = '5.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-106'

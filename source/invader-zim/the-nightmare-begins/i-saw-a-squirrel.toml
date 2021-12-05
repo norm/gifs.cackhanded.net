@@ -13,6 +13,12 @@ doing his best squirrel impression.
 
 """
 
+info.colours = '96'
+info.filesize = '0.52mb'
+info.frames = '56'
+info.size = '480×270'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

@@ -13,6 +13,12 @@ Dani Rojas goes for a corner kick, but instead hits Ted in the ass.
 
 """
 
+info.colours = '97'
+info.filesize = '1.14mb'
+info.frames = '58'
+info.size = '400×225'
+info.time = '3.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

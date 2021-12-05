@@ -12,6 +12,12 @@ a thumb over the button.
 
 """
 
+info.colours = '128'
+info.filesize = '0.63mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '1.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

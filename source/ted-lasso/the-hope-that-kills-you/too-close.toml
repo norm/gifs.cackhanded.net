@@ -12,6 +12,12 @@ Tommy puts his arm around Jamie, who looks at it, then at Tommy.
 
 """
 
+info.colours = '81'
+info.filesize = '1.44mb'
+info.frames = '69'
+info.size = '480×270'
+info.time = '3.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

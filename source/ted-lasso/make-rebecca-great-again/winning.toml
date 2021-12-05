@@ -15,6 +15,12 @@ at Anfield.
 
 """
 
+info.colours = '55'
+info.filesize = '1.88mb'
+info.frames = '76'
+info.size = '400×225'
+info.time = '4.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

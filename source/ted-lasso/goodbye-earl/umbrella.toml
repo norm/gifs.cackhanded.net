@@ -12,6 +12,12 @@ so I appreciate you getting the ball rolling”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.52mb'
+info.frames = '58'
+info.size = '480×270'
+info.time = '3.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

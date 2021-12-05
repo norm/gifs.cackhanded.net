@@ -13,6 +13,12 @@ Gir tunes a TV to the Scary Monkey Show. He hugs the TV, “I love this show!”
 
 """
 
+info.size = '480×270'
+info.frames = '34'
+info.colours = '66'
+info.filesize = '276837'
+info.time = '2.83'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

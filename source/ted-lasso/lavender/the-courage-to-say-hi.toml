@@ -12,6 +12,12 @@ Jamie hesitates, then says “hi” to Keeley.
 
 """
 
+info.colours = '80'
+info.filesize = '1.18mb'
+info.frames = '87'
+info.size = '480×270'
+info.time = '4.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

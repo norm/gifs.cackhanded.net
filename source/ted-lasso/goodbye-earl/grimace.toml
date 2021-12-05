@@ -14,6 +14,12 @@ As Dani Rojas continues with his depression shower, Ted turns and grimaces.
 
 """
 
+info.colours = '75'
+info.filesize = '1.17mb'
+info.frames = '52'
+info.size = '480×270'
+info.time = '2.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

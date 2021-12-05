@@ -12,6 +12,12 @@ Ted tells Rebecca “I forgive you”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.34mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '3.17 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

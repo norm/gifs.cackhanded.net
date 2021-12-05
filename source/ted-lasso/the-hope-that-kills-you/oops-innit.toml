@@ -17,6 +17,12 @@ Isaac says “Oops, innit” and Roy agrees “Well said!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.33mb'
+info.frames = '86'
+info.size = '480×270'
+info.time = '4.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

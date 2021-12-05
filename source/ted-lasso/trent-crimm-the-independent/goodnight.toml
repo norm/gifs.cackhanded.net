@@ -12,6 +12,12 @@ Roy leans in and kisses his niece goodnight.
 
 """
 
+info.colours = '81'
+info.filesize = '1.76mb'
+info.frames = '76'
+info.size = '480×270'
+info.time = '4.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

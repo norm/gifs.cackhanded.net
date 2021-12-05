@@ -12,6 +12,12 @@ Ted tastes some of the best barbecue sauce.
 
 """
 
+info.colours = '63'
+info.filesize = '1.17mb'
+info.frames = '50'
+info.size = '480×270'
+info.time = '2.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-102'

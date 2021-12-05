@@ -9,6 +9,12 @@ like time around an arrow.”
 
 """
 
+info.colours = '80'
+info.filesize = '3.07mb'
+info.frames = '106'
+info.size = '480×270'
+info.time = '5.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-change'

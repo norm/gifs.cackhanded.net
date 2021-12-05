@@ -12,6 +12,12 @@ Roy tells Keeley “Right, I didn’t know that, so … apologies.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.62mb'
+info.frames = '67'
+info.size = '480×270'
+info.time = '3.71 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

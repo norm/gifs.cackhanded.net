@@ -9,6 +9,12 @@ Wendell Pleakley slams a device into Dr Jumba Jookiba's face.
 
 """
 
+info.colours = '64'
+info.filesize = '0.47mb'
+info.frames = '42'
+info.size = '480×285'
+info.time = '3.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

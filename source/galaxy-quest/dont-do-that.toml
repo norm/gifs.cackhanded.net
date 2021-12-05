@@ -10,6 +10,12 @@ Alexander telling Quellek, “Don’t do that, I’m not kidding.”
 
 """
 
+info.colours = '80'
+info.filesize = '0.57mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '1.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

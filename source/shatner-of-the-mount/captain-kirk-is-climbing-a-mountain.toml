@@ -10,6 +10,12 @@ Why is he climbing a mountain?”
 
 """
 
+info.colours = '97'
+info.filesize = '1.75mb'
+info.frames = '72'
+info.size = '480×358'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'HU2ftCitvyQ'

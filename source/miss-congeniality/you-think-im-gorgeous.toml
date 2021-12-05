@@ -11,6 +11,12 @@ Gracie teases Eric “You think I’m gorgeous, you wanna date me…”
 
 """
 
+info.colours = '80'
+info.filesize = '3.41mb'
+info.frames = '126'
+info.size = '400×225'
+info.time = '7.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

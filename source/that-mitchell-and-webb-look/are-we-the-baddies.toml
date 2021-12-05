@@ -12,6 +12,12 @@ One Nazi soldier asks another “Are we the baddies?”
 
 """
 
+info.colours = '60'
+info.filesize = '1.40mb'
+info.frames = '97'
+info.size = '480×264'
+info.time = '5.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-101'

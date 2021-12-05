@@ -11,6 +11,12 @@ Two boys of WORLD ORDER playing with some lights.
 
 """
 
+info.colours = '55'
+info.filesize = '0.30mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.70 seconds'
+
 [video]
 source   = 'youtube'
 file     = '_mkiGMtbrPM'

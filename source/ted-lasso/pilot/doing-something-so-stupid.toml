@@ -9,6 +9,12 @@ Tommy telling Ted “You are a legend for doing something so stupid.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.90mb'
+info.frames = '40'
+info.size = '480×271'
+info.time = '2.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

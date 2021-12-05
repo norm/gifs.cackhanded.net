@@ -13,6 +13,12 @@ push Jack's face around.
 
 """
 
+info.colours = '75'
+info.filesize = '2.36mb'
+info.frames = '102'
+info.size = '400×225'
+info.time = '5.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

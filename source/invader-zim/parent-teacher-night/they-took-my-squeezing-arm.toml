@@ -12,6 +12,12 @@ Robodad laments that “They took my squeezing arm!”
 
 """
 
+info.size = '480×270'
+info.frames = '38'
+info.colours = '96'
+info.filesize = '665237'
+info.time = '3.16'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

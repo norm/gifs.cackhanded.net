@@ -15,6 +15,12 @@ and they really don’t like fire”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.13mb'
+info.frames = '117'
+info.size = '480×270'
+info.time = '6.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

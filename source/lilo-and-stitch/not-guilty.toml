@@ -9,6 +9,12 @@ Dr Jumba Jookiba proclaims “Not guilty!”
 
 """
 
+info.colours = '64'
+info.filesize = '0.55mb'
+info.frames = '21'
+info.size = '480×285'
+info.time = '2.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

@@ -13,6 +13,12 @@ the controller and takes over.
 
 """
 
+info.colours = '86'
+info.filesize = '0.48mb'
+info.frames = '83'
+info.size = '480×270'
+info.time = '6.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

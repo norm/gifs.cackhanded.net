@@ -11,6 +11,12 @@ tell me how to do mine!”
 
 """
 
+info.colours = '54'
+info.filesize = '1.71mb'
+info.frames = '62'
+info.size = '480×259'
+info.time = '3.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

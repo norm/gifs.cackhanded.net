@@ -10,6 +10,12 @@ by the present sack as Santa played by Robert Groves (played by Henry Lewis)
 swings it over his shoulder.
 
 """
+
+info.colours = '64'
+info.filesize = '2.12mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '3.99 seconds'
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

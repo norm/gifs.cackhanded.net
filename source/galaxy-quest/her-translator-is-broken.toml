@@ -19,6 +19,12 @@ Jason looks at her for a beat, then says “Okey dokey”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.45mb'
+info.frames = '172'
+info.size = '400×225'
+info.time = '9.56 seconds'
+
 
 [video]
 source   = 'file'

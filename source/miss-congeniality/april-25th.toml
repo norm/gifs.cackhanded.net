@@ -13,6 +13,12 @@ Cheryl tells Stan “April 25th”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.99mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '2.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

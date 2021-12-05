@@ -13,6 +13,12 @@ take place in my own fortress!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.94mb'
+info.frames = '84'
+info.size = '480×270'
+info.time = '7.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

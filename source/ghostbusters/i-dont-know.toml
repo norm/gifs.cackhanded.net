@@ -12,6 +12,12 @@ Venkman takes a swig from a bottle of alcohol, and tells Ray
 
 """
 
+info.colours = '64'
+info.filesize = '2.57mb'
+info.frames = '111'
+info.size = '400×189'
+info.time = '6.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

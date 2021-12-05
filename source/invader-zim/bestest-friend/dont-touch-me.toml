@@ -15,6 +15,12 @@ Zim pushes him away, “Don’t touch me”.
 
 """
 
+info.colours = '66'
+info.filesize = '0.35mb'
+info.frames = '35'
+info.size = '480×270'
+info.time = '2.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

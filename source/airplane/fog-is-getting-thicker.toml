@@ -10,6 +10,12 @@ Johnny responds while shaking Leon’s belly “And Leon is getting laaaarger!�
 
 """
 
+info.colours = '70'
+info.filesize = '1.72mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '4.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

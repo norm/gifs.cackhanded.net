@@ -11,6 +11,12 @@ the bullseye.
 
 """
 
+info.colours = '54'
+info.filesize = '2.13mb'
+info.frames = '100'
+info.size = '480×240'
+info.time = '5.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

@@ -12,6 +12,12 @@ Destiny, while performing Je Me Casse, says “Excuse my french”.
 
 """
 
+info.colours = '94'
+info.filesize = '0.89mb'
+info.frames = '40'
+info.size = '440×248'
+info.time = '2.23 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'uUElgja4B9w'

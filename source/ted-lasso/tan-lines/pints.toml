@@ -13,6 +13,12 @@ They nod at each other.
 
 """
 
+info.colours = '55'
+info.filesize = '3.47mb'
+info.frames = '224'
+info.size = '480×270'
+info.time = '12.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

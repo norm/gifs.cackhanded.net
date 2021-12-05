@@ -8,6 +8,12 @@ Stephen Colbert eating popcorn from a ridiculously large box.
 
 """
 
+info.colours = '49'
+info.filesize = '0.97mb'
+info.frames = '41'
+info.size = '480×270'
+info.time = '2.56 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'DnvTA9T_WfY'

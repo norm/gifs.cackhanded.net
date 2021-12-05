@@ -10,6 +10,12 @@ I’m gonna start punching dicks.”
 
 """
 
+info.colours = '64'
+info.filesize = '1.52mb'
+info.frames = '65'
+info.size = '480×270'
+info.time = '3.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

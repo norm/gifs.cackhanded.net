@@ -10,6 +10,12 @@ Victor tells himself “My God, I am good”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.81mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '2.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

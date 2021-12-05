@@ -13,6 +13,12 @@ Teb tells Gwen that “theoretically the mechanism is fully operational”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.08mb'
+info.frames = '44'
+info.size = '480×270'
+info.time = '2.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

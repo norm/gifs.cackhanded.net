@@ -13,6 +13,12 @@ Flo comically asks Rebecca “Who could’ve done that?”
 
 """
 
+info.colours = '80'
+info.filesize = '1.49mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '3.17 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

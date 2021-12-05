@@ -9,6 +9,12 @@ says “Sorry.” Peter also says “Sorry,“ quickly followed by Ray “I’m 
 
 """
 
+info.colours = '48'
+info.filesize = '1.42mb'
+info.frames = '54'
+info.size = '400×280'
+info.time = '4.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

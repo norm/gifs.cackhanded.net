@@ -10,6 +10,12 @@ Jack tells his boss “I quit!”, runs off and jumps into a ’67 Ford Mustang.
 
 """
 
+info.colours = '96'
+info.filesize = '2.62mb'
+info.frames = '106'
+info.size = '400×225'
+info.time = '5.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

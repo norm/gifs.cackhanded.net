@@ -9,6 +9,12 @@ what they see.
 
 """
 
+info.colours = '64'
+info.filesize = '2.43mb'
+info.frames = '80'
+info.size = '480×270'
+info.time = '6.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

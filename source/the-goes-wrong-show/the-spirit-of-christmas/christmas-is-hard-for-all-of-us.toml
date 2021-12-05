@@ -23,6 +23,12 @@ Santa continues,
 
 """
 
+info.colours = '69'
+info.filesize = '3.04mb'
+info.frames = '126'
+info.size = '480×270'
+info.time = '6.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

@@ -17,6 +17,12 @@ Alexander and Gwen tell him to “shut up!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.39mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

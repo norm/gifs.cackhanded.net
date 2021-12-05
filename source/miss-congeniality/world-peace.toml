@@ -24,6 +24,12 @@ Gracie tells the crowd “I really do want world peace”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.07mb'
+info.frames = '91'
+info.size = '400×225'
+info.time = '5.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

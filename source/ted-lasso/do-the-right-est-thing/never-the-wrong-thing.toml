@@ -12,6 +12,12 @@ Ted tells Sam “Doing the right thing is never the wrong thing”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.41mb'
+info.frames = '56'
+info.size = '480×270'
+info.time = '3.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

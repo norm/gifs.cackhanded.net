@@ -11,6 +11,12 @@ inconspicuously.
 
 """
 
+info.colours = '63'
+info.filesize = '1.87mb'
+info.frames = '108'
+info.size = '360×270'
+info.time = '5.99 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'R-Ct-CymZ7s'

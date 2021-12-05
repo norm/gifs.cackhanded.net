@@ -11,6 +11,12 @@ Martha not quite knowing where to look.
 
 """
 
+info.colours = '55'
+info.filesize = '2.05mb'
+info.frames = '90'
+info.size = '480×266'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file | youtube'
 file     = 'mr-right'

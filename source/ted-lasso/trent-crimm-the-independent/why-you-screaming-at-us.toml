@@ -13,6 +13,12 @@ falls off his chair in fake shock. Ted says “Why you screaming at us?”
 
 """
 
+info.colours = '60'
+info.filesize = '1.50mb'
+info.frames = '56'
+info.size = '480×270'
+info.time = '3.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

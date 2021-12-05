@@ -11,6 +11,12 @@ Jason, dejected, quotes along with the TV “Never give up, never surrender”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.38mb'
+info.frames = '69'
+info.size = '480×270'
+info.time = '3.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

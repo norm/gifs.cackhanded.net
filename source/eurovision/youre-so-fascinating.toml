@@ -13,6 +13,12 @@ of 10 Years by Daði og Gagnamagnið.
 
 """
 
+info.colours = '128'
+info.filesize = '1.38mb'
+info.frames = '51'
+info.size = '400×225'
+info.time = '2.84 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'jaTRNImqnHM'

@@ -12,6 +12,12 @@ Frank Drebin, surrounded by a pile of bodies, answers the phone.
 
 """
 
+info.colours = '75'
+info.filesize = '0.97mb'
+info.frames = '54'
+info.size = '400×265'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-101'

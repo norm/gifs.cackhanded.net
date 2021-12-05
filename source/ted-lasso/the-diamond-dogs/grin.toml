@@ -12,6 +12,12 @@ Ted grins at Rebecca.
 
 """
 
+info.colours = '55'
+info.filesize = '0.87mb'
+info.frames = '27'
+info.size = '480×269'
+info.time = '1.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

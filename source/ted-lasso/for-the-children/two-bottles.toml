@@ -11,6 +11,12 @@ Keeley takes two bottles of champagne from the bar and walks off.
 
 """
 
+info.colours = '55'
+info.filesize = '2.34mb'
+info.frames = '96'
+info.size = '480×270'
+info.time = '5.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

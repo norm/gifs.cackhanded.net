@@ -10,6 +10,12 @@ Victor tells a hair stylist to make it more fluffy.
 
 """
 
+info.colours = '80'
+info.filesize = '2.09mb'
+info.frames = '80'
+info.size = '480×270'
+info.time = '4.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

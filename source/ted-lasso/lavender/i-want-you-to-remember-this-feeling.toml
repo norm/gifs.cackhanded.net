@@ -12,6 +12,12 @@ Burn this moment into your brains”.
 
 """
 
+info.colours = '80'
+info.filesize = '4.24mb'
+info.frames = '123'
+info.size = '480×270'
+info.time = '6.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

@@ -14,6 +14,12 @@ As Gracie performs a body slam on Eric, Agent Grant tells Agent Harris
 
 """
 
+info.colours = '79'
+info.filesize = '1.53mb'
+info.frames = '74'
+info.size = '400×225'
+info.time = '4.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

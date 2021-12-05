@@ -12,6 +12,12 @@ Ted and Rebecca clink drinking vessels in a toast.
 
 """
 
+info.colours = '55'
+info.filesize = '1.33mb'
+info.frames = '49'
+info.size = '480×270'
+info.time = '2.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

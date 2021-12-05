@@ -9,6 +9,12 @@ Ray exclaims “Listen!”, then asks the other two Ghostbusters
 
 """
 
+info.colours = '64'
+info.filesize = '2.83mb'
+info.frames = '126'
+info.size = '400×220'
+info.time = '6.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

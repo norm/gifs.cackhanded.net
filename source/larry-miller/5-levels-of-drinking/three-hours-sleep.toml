@@ -11,6 +11,12 @@ As long as I get three hours sleep, and a complete change of blood … I’m coo
 
 """
 
+info.colours = '40'
+info.filesize = '2.52mb'
+info.frames = '253'
+info.size = '320×240'
+info.time = '14.06 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

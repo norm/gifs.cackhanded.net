@@ -10,6 +10,12 @@ Dr. Niles gets impatient with a robot arm.
 
 """
 
+info.colours = '64'
+info.filesize = '3.35mb'
+info.frames = '120'
+info.size = '400×225'
+info.time = '8.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

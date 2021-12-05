@@ -13,6 +13,12 @@ I fucking dare you”.
 
 """
 
+info.colours = '79'
+info.filesize = '1.37mb'
+info.frames = '83'
+info.size = '480×274'
+info.time = '4.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-1101'

@@ -14,6 +14,12 @@ Ted blesses Higgins, “May the Force be with you”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.96mb'
+info.frames = '35'
+info.size = '480×270'
+info.time = '1.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

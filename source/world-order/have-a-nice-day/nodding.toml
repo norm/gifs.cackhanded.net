@@ -11,6 +11,12 @@ The boys of WORLD ORDER nodding and bopping.
 
 """
 
+info.colours = '64'
+info.filesize = '1.53mb'
+info.frames = '70'
+info.size = '480×270'
+info.time = '3.50 seconds'
+
 [video]
 source   = 'youtube'
 file     = '_mkiGMtbrPM'

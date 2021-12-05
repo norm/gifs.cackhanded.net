@@ -14,6 +14,12 @@ turns, serious, and asks “What about the Twinkie?”
 
 """
 
+info.colours = '78'
+info.filesize = '2.62mb'
+info.frames = '94'
+info.size = '480×244'
+info.time = '5.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

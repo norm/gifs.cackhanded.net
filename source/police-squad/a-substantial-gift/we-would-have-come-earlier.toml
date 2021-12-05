@@ -12,6 +12,12 @@ wasn’t dead then.”
 
 """
 
+info.colours = '80'
+info.filesize = '0.59mb'
+info.frames = '50'
+info.size = '400×250'
+info.time = '2.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-101'

@@ -13,6 +13,12 @@ Stan looks confused after Cheryl's answer to her perfect date.
 
 """
 
+info.colours = '75'
+info.filesize = '1.11mb'
+info.frames = '44'
+info.size = '480×270'
+info.time = '2.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

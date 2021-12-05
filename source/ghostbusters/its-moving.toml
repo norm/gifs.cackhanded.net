@@ -15,6 +15,12 @@ Ray grabs his equipment and starts to follow.
 
 """
 
+info.colours = '54'
+info.filesize = '1.68mb'
+info.frames = '63'
+info.size = '400×220'
+info.time = '3.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

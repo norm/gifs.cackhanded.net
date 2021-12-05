@@ -12,6 +12,12 @@ this concept, it does not hold up to scrutiny”.
 
 """
 
+info.colours = '125'
+info.filesize = '0.82mb'
+info.frames = '96'
+info.size = '480×270'
+info.time = '4.00 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Ha10ImiP6So'

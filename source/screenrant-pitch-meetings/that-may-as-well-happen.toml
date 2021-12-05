@@ -11,6 +11,12 @@ In a pitch meeting, a studio exec comments “Sure, that may as well happen”.
 
 """
 
+info.colours = '127'
+info.filesize = '0.36mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '1.67 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'LGGWC5-q1Ts'

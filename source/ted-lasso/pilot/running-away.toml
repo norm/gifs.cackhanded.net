@@ -11,6 +11,12 @@ off in a panic.
 
 """
 
+info.colours = '64'
+info.filesize = '3.76mb'
+info.frames = '153'
+info.size = '400×225'
+info.time = '8.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

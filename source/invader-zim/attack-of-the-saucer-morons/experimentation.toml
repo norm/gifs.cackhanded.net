@@ -12,6 +12,12 @@ Zim has visions of being experimented upon.
 
 """
 
+info.colours = '128'
+info.filesize = '0.65mb'
+info.frames = '49'
+info.size = '480×270'
+info.time = '2.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

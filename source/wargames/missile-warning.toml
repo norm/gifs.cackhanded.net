@@ -12,6 +12,12 @@ his seat and reaches for his telephone handset.
 
 """
 
+info.colours = '128'
+info.filesize = '1.96mb'
+info.frames = '80'
+info.size = '480×270'
+info.time = '4.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

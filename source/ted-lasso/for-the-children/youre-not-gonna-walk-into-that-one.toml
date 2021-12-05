@@ -11,6 +11,12 @@ Rebecca asks Ted “You’re not gonna walk into that one are you?”
 
 """
 
+info.colours = '80'
+info.filesize = '1.03mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '2.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

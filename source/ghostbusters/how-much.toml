@@ -11,6 +11,12 @@ His expression beautifully tells you it was far too much.
 
 """
 
+info.colours = '64'
+info.filesize = '2.49mb'
+info.frames = '103'
+info.size = '480×264'
+info.time = '5.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

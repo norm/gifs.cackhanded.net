@@ -12,6 +12,12 @@ Zim being examined by Dib’s X-scope, it reveals his internal organs are
 
 """
 
+info.colours = '75'
+info.filesize = '0.19mb'
+info.frames = '30'
+info.size = '480×270'
+info.time = '2.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

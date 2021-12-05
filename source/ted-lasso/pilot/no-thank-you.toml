@@ -9,6 +9,12 @@ Ted saying (about tea) “It’s horrible, no thank you.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.90mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

@@ -12,6 +12,12 @@ Ted cracks his head on the metal shutter and falls back to the ground.
 
 """
 
+info.colours = '55'
+info.filesize = '0.60mb'
+info.frames = '38'
+info.size = '480×270'
+info.time = '2.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

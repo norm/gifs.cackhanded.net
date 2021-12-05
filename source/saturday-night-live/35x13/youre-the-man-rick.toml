@@ -13,6 +13,12 @@ face.
 
 """
 
+info.colours = '48'
+info.filesize = '1.36mb'
+info.frames = '108'
+info.size = '480×271'
+info.time = '6.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'snl-3513'

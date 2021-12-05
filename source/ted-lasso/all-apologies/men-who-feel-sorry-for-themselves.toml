@@ -13,6 +13,12 @@ are so sexy”.
 
 """
 
+info.colours = '96'
+info.filesize = '1.93mb'
+info.frames = '83'
+info.size = '400×225'
+info.time = '4.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

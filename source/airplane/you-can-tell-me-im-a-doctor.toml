@@ -10,6 +10,12 @@ you land?” Oveur replies “I can’t tell.” to which Rumack confides
 
 """
 
+info.colours = '70'
+info.filesize = '1.43mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '4.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

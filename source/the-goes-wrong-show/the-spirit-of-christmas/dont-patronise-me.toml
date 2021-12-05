@@ -12,6 +12,12 @@ to them and says “Don’t patronise me.”
 
 """
 
+info.colours = '64'
+info.filesize = '2.39mb'
+info.frames = '78'
+info.size = '480×270'
+info.time = '6.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

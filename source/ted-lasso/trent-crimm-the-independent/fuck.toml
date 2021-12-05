@@ -13,6 +13,12 @@ Roy, whilst reading to his niece Phoebe, puts down the book and shouts
 
 """
 
+info.colours = '60'
+info.filesize = '2.55mb'
+info.frames = '105'
+info.size = '480×270'
+info.time = '5.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

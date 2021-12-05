@@ -18,6 +18,12 @@ looks on.
 
 """
 
+info.colours = '81'
+info.filesize = '1.06mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

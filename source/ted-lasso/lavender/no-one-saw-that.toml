@@ -13,6 +13,12 @@ himself “Yeah, man, everyone saw that, come on!”
 
 """
 
+info.colours = '97'
+info.filesize = '1.57mb'
+info.frames = '81'
+info.size = '480×270'
+info.time = '4.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

@@ -11,6 +11,12 @@ his intent with “… into space”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.97mb'
+info.frames = '90'
+info.size = '400×225'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

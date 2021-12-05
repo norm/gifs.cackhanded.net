@@ -8,6 +8,12 @@ Experiment 626 threatens a frog with his rayguns.
 
 """
 
+info.colours = '64'
+info.filesize = '1.17mb'
+info.frames = '56'
+info.size = '480×285'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

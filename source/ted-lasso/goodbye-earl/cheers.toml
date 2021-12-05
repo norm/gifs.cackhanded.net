@@ -11,6 +11,12 @@ Roy raises his glass and says “Cheers!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.58mb'
+info.frames = '39'
+info.size = '480×270'
+info.time = '2.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

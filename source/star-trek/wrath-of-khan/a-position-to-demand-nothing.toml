@@ -12,6 +12,12 @@ effect. “… nothing.”
 
 """
 
+info.colours = '64'
+info.filesize = '2.54mb'
+info.frames = '150'
+info.size = '480×253'
+info.time = '12.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'wrath-of-khan'

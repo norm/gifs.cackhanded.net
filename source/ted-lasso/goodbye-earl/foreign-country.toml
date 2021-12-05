@@ -14,6 +14,12 @@ country”, to which Beard just throws his hands in the air as a shrug.
 
 """
 
+info.colours = '80'
+info.filesize = '1.09mb'
+info.frames = '65'
+info.size = '480×270'
+info.time = '3.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

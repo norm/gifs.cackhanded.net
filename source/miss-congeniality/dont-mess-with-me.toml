@@ -14,6 +14,12 @@ because of the high heels.
 
 """
 
+info.colours = '80'
+info.filesize = '3.87mb'
+info.frames = '145'
+info.size = '480×270'
+info.time = '8.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

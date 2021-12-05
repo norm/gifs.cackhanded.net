@@ -8,6 +8,12 @@ Ted turns to camera, breaking the fourth wall, and says “What a pisser.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.49mb'
+info.frames = '56'
+info.size = '480×270'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

@@ -16,6 +16,12 @@ Gracie starts clapping effusively.
 
 """
 
+info.colours = '75'
+info.filesize = '1.44mb'
+info.frames = '62'
+info.size = '400×225'
+info.time = '3.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

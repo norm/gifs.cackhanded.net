@@ -13,6 +13,12 @@ up from the table and run away.
 
 """
 
+info.colours = '81'
+info.filesize = '1.19mb'
+info.frames = '76'
+info.size = '480×264'
+info.time = '4.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-101'

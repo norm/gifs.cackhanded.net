@@ -12,6 +12,12 @@ Colin asks “What just happened?”
 
 """
 
+info.colours = '60'
+info.filesize = '0.89mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

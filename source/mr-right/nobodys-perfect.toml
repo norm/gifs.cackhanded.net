@@ -11,6 +11,12 @@ Francis says “Nobody’s perfect”, then shoots a woman dead.
 
 """
 
+info.colours = '79'
+info.filesize = '0.73mb'
+info.frames = '53'
+info.size = '480×266'
+info.time = '2.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

@@ -13,6 +13,12 @@ Agatha winks at Vision.
 
 """
 
+info.colours = '64'
+info.filesize = '0.89mb'
+info.frames = '30'
+info.size = '480×269'
+info.time = '1.67 seconds'
+
 [video]
 source   = 'file'
 file     = 'wandavision-103'

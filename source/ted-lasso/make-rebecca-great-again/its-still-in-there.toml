@@ -12,6 +12,12 @@ Nate taps Roy's chest and says “It’s still in there.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.73mb'
+info.frames = '73'
+info.size = '480×270'
+info.time = '4.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

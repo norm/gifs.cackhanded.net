@@ -15,6 +15,12 @@ in unison.
 
 """
 
+info.colours = '80'
+info.filesize = '1.19mb'
+info.frames = '39'
+info.size = '480×270'
+info.time = '2.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

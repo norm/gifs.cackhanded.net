@@ -11,6 +11,12 @@ body_markdown = """
 Victor tells Kathy “I wish I could explain, but there are no words”.
 """
 
+info.colours = '80'
+info.filesize = '2.54mb'
+info.frames = '102'
+info.size = '400×225'
+info.time = '5.67 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

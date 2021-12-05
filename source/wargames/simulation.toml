@@ -13,6 +13,12 @@ None have a winner.
 
 """
 
+info.colours = '64'
+info.filesize = '1.60mb'
+info.frames = '82'
+info.size = '480×270'
+info.time = '3.42 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

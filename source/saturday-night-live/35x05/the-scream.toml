@@ -11,6 +11,12 @@ Munch’s The Scream.
 
 """
 
+info.colours = '64'
+info.filesize = '0.80mb'
+info.frames = '48'
+info.size = '360×203'
+info.time = '2.66 seconds'
+
 [video]
 source   = 'youtube'
 file     = '7bK5BQVi2ZE'

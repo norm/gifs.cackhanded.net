@@ -9,6 +9,12 @@ to design a death ray on the whiteboard.
 
 """
 
+info.colours = '46'
+info.filesize = '1.45mb'
+info.frames = '75'
+info.size = '480×320'
+info.time = '6.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'dr-horrible'

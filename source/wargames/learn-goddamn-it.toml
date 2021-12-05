@@ -15,6 +15,12 @@ David tells Joshua “Learn, goddamn it!” as it plays itself at tic-tac-toe.
 
 """
 
+info.colours = '80'
+info.filesize = '1.13mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '4.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

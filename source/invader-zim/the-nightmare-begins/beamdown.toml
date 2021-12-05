@@ -12,6 +12,12 @@ shows a lot of beams flying from a ring on orbit down to a planet's surface.
 
 """
 
+info.colours = '91'
+info.filesize = '1.25mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '6.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

@@ -13,6 +13,12 @@ Okay. But never mind that now.
 
 """
 
+info.colours = '50'
+info.filesize = '0.82mb'
+info.frames = '79'
+info.size = '320×240'
+info.time = '4.38 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

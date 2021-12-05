@@ -16,6 +16,12 @@ exclaim “MY SPINE!”
 
 """
 
+info.colours = '96'
+info.filesize = '0.60mb'
+info.frames = '78'
+info.size = '480×270'
+info.time = '6.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

@@ -12,6 +12,12 @@ The assistant director looks around at him, bemused.
 
 """
 
+info.colours = '80'
+info.filesize = '1.52mb'
+info.frames = '67'
+info.size = '480×270'
+info.time = '3.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

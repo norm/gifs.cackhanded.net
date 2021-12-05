@@ -9,6 +9,12 @@ to him ”Yeah, well, who wants to work at this stupid fakey lū‘au anyway.”
 
 """
 
+info.colours = '81'
+info.filesize = '0.90mb'
+info.frames = '58'
+info.size = '480×285'
+info.time = '4.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

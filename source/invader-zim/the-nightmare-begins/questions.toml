@@ -12,6 +12,12 @@ Dib asking the class “Anyone? Anyone? Questions?”
 
 """
 
+info.colours = '96'
+info.filesize = '0.16mb'
+info.frames = '21'
+info.size = '480×270'
+info.time = '1.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

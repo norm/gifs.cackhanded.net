@@ -12,6 +12,12 @@ by biting a powdered donut, to which Gracie looks nonplussed.
 
 """
 
+info.colours = '75'
+info.filesize = '3.53mb'
+info.frames = '144'
+info.size = '400×225'
+info.time = '7.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

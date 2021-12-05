@@ -17,6 +17,12 @@ headgear, looking on.
 
 """
 
+info.colours = '64'
+info.filesize = '0.39mb'
+info.frames = '36'
+info.size = '480×250'
+info.time = '1.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'better-off-ted-208'

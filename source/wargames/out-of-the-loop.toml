@@ -13,6 +13,12 @@ Cabot turns to look at him.
 
 """
 
+info.colours = '79'
+info.filesize = '1.09mb'
+info.frames = '87'
+info.size = '480×270'
+info.time = '4.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

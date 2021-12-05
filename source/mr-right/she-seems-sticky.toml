@@ -11,6 +11,12 @@ Julia declares “I am not touching her, she seems sticky!”
 
 """
 
+info.colours = '63'
+info.filesize = '1.34mb'
+info.frames = '45'
+info.size = '480×269'
+info.time = '2.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

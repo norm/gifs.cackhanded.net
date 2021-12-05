@@ -12,6 +12,12 @@ sign to reveal the other side: “Sorry, owner being beaten. Be back in 5 mins.�
 
 """
 
+info.colours = '75'
+info.filesize = '1.00mb'
+info.frames = '90'
+info.size = '400×250'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-105'

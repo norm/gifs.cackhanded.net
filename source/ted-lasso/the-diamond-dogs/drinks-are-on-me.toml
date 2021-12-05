@@ -16,6 +16,12 @@ Baz, Paul, and Jeremy shout excitedly.
 
 """
 
+info.colours = '80'
+info.filesize = '1.52mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '2.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

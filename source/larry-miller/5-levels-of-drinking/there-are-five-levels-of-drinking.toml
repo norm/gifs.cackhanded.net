@@ -11,6 +11,12 @@ There are five levels of drinking. Six if you live in a trailer park.
 
 """
 
+info.colours = '50'
+info.filesize = '1.64mb'
+info.frames = '144'
+info.size = '320×240'
+info.time = '7.99 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

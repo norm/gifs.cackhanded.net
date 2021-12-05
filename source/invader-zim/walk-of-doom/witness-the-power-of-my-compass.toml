@@ -16,6 +16,12 @@ out of Zim’s hand to stick to Gir.
 
 """
 
+info.colours = '80'
+info.filesize = '0.67mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '5.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

@@ -11,6 +11,12 @@ Ted points with both hands and declares “Jackpot!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.98mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '2.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

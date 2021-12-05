@@ -10,6 +10,12 @@ figured out.
 
 """
 
+info.colours = '32'
+info.filesize = '1.23mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '5.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'lucifer-508'

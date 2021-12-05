@@ -12,6 +12,12 @@ photographers. “No. No. Fuck off.”
 
 """
 
+info.colours = '60'
+info.filesize = '1.20mb'
+info.frames = '52'
+info.size = '480×270'
+info.time = '2.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

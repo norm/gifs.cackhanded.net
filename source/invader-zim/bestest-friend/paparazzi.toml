@@ -13,6 +13,12 @@ A scientist has his picture taken by multiple cameras.
 
 """
 
+info.colours = '61'
+info.filesize = '0.19mb'
+info.frames = '17'
+info.size = '480×270'
+info.time = '1.41 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

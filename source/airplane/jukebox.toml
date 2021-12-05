@@ -9,6 +9,12 @@ People are drawn to the dance floor and start dancing.
 
 """
 
+info.colours = '64'
+info.filesize = '2.92mb'
+info.frames = '322'
+info.size = '480×270'
+info.time = '26.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

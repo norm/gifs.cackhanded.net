@@ -13,6 +13,12 @@ Roy turns to look at Jeff Stelling, who shivers.
 
 """
 
+info.colours = '75'
+info.filesize = '0.60mb'
+info.frames = '58'
+info.size = '480×270'
+info.time = '3.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

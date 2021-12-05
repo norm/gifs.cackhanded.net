@@ -10,6 +10,12 @@ you.” He leaves and closes the door again.
 
 """
 
+info.colours = '69'
+info.filesize = '2.76mb'
+info.frames = '101'
+info.size = '480×270'
+info.time = '8.41 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

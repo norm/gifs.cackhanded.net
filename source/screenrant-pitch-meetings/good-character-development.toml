@@ -12,6 +12,12 @@ development, is what that is”.
 
 """
 
+info.colours = '128'
+info.filesize = '0.46mb'
+info.frames = '59'
+info.size = '480×270'
+info.time = '2.46 seconds'
+
 [video]
 source   = 'youtube'
 file     = '4_Tm0SxIp6w'

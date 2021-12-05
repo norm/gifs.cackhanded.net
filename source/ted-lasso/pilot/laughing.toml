@@ -10,6 +10,12 @@ so Jeremy and Baz turn to stare at him.
 
 """
 
+info.colours = '55'
+info.filesize = '0.99mb'
+info.frames = '40'
+info.size = '480×271'
+info.time = '2.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

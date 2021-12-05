@@ -13,6 +13,12 @@ of your way, Nora?” to which she snaps back “I go where I like!”
 
 """
 
+info.colours = '90'
+info.filesize = '1.79mb'
+info.frames = '82'
+info.size = '480×270'
+info.time = '4.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-like'

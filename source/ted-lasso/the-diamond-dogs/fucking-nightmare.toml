@@ -11,6 +11,12 @@ Roy saying ”This is my fucking nightmare”.
 
 """
 
+info.colours = '60'
+info.filesize = '0.93mb'
+info.frames = '30'
+info.size = '480×270'
+info.time = '1.67 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

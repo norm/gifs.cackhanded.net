@@ -15,6 +15,12 @@ your brain?” He pauses, then says “Pretty far”.
 
 """
 
+info.colours = '84'
+info.filesize = '0.52mb'
+info.frames = '116'
+info.size = '480×270'
+info.time = '9.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

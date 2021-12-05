@@ -12,6 +12,12 @@ shown on a computer screen with the legend “compiling”.
 
 """
 
+info.colours = '55'
+info.filesize = '1.70mb'
+info.frames = '90'
+info.size = '400×225'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

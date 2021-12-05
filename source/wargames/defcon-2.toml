@@ -11,6 +11,12 @@ The DEFCON board changes from 3 to 2, and a red light starts flashing.
 
 """
 
+info.colours = '128'
+info.filesize = '0.98mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

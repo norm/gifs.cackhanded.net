@@ -12,6 +12,12 @@ Roy threatens Jamie “Call me old one more time…”
 
 """
 
+info.colours = '60'
+info.filesize = '1.84mb'
+info.frames = '71'
+info.size = '400×225'
+info.time = '3.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

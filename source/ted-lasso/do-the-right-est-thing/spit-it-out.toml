@@ -11,6 +11,12 @@ Rebecca spitting out a half-eaten shortbread.
 
 """
 
+info.colours = '75'
+info.filesize = '0.64mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

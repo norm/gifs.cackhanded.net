@@ -15,6 +15,12 @@ He and Ted walk off to join the team.
 
 """
 
+info.colours = '60'
+info.filesize = '2.35mb'
+info.frames = '108'
+info.size = '480×270'
+info.time = '5.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-106'

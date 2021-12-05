@@ -14,6 +14,12 @@ Zim threatens the Saucer Morons “I’ll lay eggs in your stomach, I mean it!�
 
 """
 
+info.colours = '126'
+info.filesize = '0.90mb'
+info.frames = '47'
+info.size = '480×270'
+info.time = '3.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

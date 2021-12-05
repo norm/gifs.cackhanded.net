@@ -11,6 +11,12 @@ Martha asks Francis, who is eating a hotdog, “Are you new to eating?”
 
 """
 
+info.colours = '60'
+info.filesize = '2.03mb'
+info.frames = '60'
+info.size = '480×266'
+info.time = '3.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

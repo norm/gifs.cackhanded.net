@@ -9,6 +9,12 @@ Rebecca saying to Higgins (but not about Higgins) “He’s an absolute wanker.�
 
 """
 
+info.colours = '60'
+info.filesize = '0.78mb'
+info.frames = '30'
+info.size = '480×271'
+info.time = '1.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

@@ -13,6 +13,12 @@ Gracie pulls several guns out from under her dress, and passes them to Victor.
 
 """
 
+info.colours = '75'
+info.filesize = '2.21mb'
+info.frames = '90'
+info.size = '400×225'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

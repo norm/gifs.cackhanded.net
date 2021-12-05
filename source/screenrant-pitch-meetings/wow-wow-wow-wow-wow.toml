@@ -11,6 +11,12 @@ In a pitch meeting, a studio exec reacts “wow wow wow wow wow”.
 
 """
 
+info.colours = '128'
+info.filesize = '0.34mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '1.37 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'VWjJxeAsruo'

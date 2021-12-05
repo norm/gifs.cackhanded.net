@@ -16,6 +16,12 @@ all you need is a light jacket.”.
 
 """
 
+info.colours = '80'
+info.filesize = '4.31mb'
+info.frames = '198'
+info.size = '480×270'
+info.time = '10.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

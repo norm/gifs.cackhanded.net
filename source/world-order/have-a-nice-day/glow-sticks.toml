@@ -11,6 +11,12 @@ The boys of WORLD ORDER dancing with glow sticks.
 
 """
 
+info.colours = '128'
+info.filesize = '1.94mb'
+info.frames = '80'
+info.size = '480×270'
+info.time = '4.00 seconds'
+
 [video]
 source   = 'youtube'
 file     = '_mkiGMtbrPM'

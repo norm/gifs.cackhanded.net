@@ -12,6 +12,12 @@ Rebecca tells John “Coffees are on me.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.43mb'
+info.frames = '83'
+info.size = '480×270'
+info.time = '4.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

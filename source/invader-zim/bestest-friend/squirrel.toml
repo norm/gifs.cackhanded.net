@@ -12,6 +12,12 @@ Keef takes on a squirrel and loses.
 
 """
 
+info.colours = '91'
+info.filesize = '0.70mb'
+info.frames = '88'
+info.size = '480×270'
+info.time = '7.33 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

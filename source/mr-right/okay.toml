@@ -11,6 +11,12 @@ Martha says “Okay” and looks around awkwardly.
 
 """
 
+info.colours = '100'
+info.filesize = '1.69mb'
+info.frames = '90'
+info.size = '480×269'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

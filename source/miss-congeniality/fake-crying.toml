@@ -12,6 +12,12 @@ Gracie parodying a contestant crying.
 
 """
 
+info.colours = '75'
+info.filesize = '2.07mb'
+info.frames = '121'
+info.size = '480×270'
+info.time = '6.71 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

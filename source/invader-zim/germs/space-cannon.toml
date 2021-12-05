@@ -12,6 +12,12 @@ Several space cannon fire.
 
 """
 
+info.colours = '128'
+info.filesize = '0.44mb'
+info.frames = '26'
+info.size = '480×270'
+info.time = '2.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

@@ -9,6 +9,12 @@ the way you want them to.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.76mb'
+info.frames = '82'
+info.size = '480×285'
+info.time = '6.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

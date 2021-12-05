@@ -12,6 +12,12 @@ The alarm bell ringing, with a red light flashing nearby.
 
 """
 
+info.colours = '97'
+info.filesize = '0.44mb'
+info.frames = '12'
+info.size = '480×264'
+info.time = '0.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

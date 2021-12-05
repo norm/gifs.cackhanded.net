@@ -11,6 +11,12 @@ The exec responds “Oh really?”
 
 """
 
+info.colours = '128'
+info.filesize = '0.85mb'
+info.frames = '79'
+info.size = '480×270'
+info.time = '3.33 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'XsNAu72v2Yc'

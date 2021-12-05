@@ -17,6 +17,12 @@ Rebecca is displeased.
 
 """
 
+info.colours = '81'
+info.filesize = '3.19mb'
+info.frames = '101'
+info.size = '480×270'
+info.time = '5.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

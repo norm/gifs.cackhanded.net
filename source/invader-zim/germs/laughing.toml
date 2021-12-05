@@ -12,6 +12,12 @@ Zim and Gir sitting on the sofa, laughing.
 
 """
 
+info.colours = '64'
+info.filesize = '0.62mb'
+info.frames = '68'
+info.size = '480×270'
+info.time = '4.54 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

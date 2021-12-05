@@ -12,6 +12,12 @@ David, reading from the list of games, reacts “It’s not on the list!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.39mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '2.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

@@ -8,6 +8,12 @@ Brin saying to Aloy “But no more stories of the past, all told, all done.”
 
 """
 
+info.colours = '80'
+info.filesize = '3.00mb'
+info.frames = '144'
+info.size = '400×225'
+info.time = '7.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-past'

@@ -12,6 +12,12 @@ Egon, entranced, saying “I looked at the trap, Ray.”
 
 """
 
+info.colours = '100'
+info.filesize = '1.63mb'
+info.frames = '51'
+info.size = '480×264'
+info.time = '2.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

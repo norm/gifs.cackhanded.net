@@ -13,6 +13,12 @@ Multiple possibilities for launch codes flashing on a screen at NORAD.
 
 """
 
+info.colours = '75'
+info.filesize = '0.60mb'
+info.frames = '46'
+info.size = '480×270'
+info.time = '3.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

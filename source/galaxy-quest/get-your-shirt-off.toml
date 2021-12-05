@@ -14,6 +14,12 @@ Jason grins and shakes his hand.
 
 """
 
+info.colours = '80'
+info.filesize = '1.73mb'
+info.frames = '70'
+info.size = '480×270'
+info.time = '3.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

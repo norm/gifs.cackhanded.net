@@ -11,6 +11,12 @@ In the pub with everyone watching a Richmond game, Baz shouts
 
 """
 
+info.colours = '79'
+info.filesize = '2.06mb'
+info.frames = '83'
+info.size = '480×240'
+info.time = '4.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

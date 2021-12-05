@@ -12,6 +12,12 @@ Zim instructs his Voot Runner computer “run a diagnostic, you’ve gone crazy!
 
 """
 
+info.colours = '80'
+info.filesize = '0.55mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '4.41 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

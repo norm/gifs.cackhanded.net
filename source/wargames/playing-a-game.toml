@@ -11,6 +11,12 @@ General Beringer tells the group “Somebody’s playing a game with us”.
 
 """
 
+info.colours = '128'
+info.filesize = '1.43mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

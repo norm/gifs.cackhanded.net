@@ -11,6 +11,12 @@ Roy asks Keeley “Why’d you throw your phone?”
 
 """
 
+info.colours = '80'
+info.filesize = '0.46mb'
+info.frames = '27'
+info.size = '480×270'
+info.time = '1.49 seconds'
+
 # FIXME remove the unnecessary panning?
 
 [video]

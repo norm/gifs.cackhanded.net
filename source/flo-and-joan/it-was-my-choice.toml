@@ -10,6 +10,12 @@ Now I’m outside the bar, but it was my choice.
 
 """
 
+info.colours = '80'
+info.filesize = '1.46mb'
+info.frames = '67'
+info.size = '480×270'
+info.time = '3.73 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Oz3oDIN6AaQ'

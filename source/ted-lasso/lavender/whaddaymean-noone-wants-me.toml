@@ -11,6 +11,12 @@ Jamie Tartt asks his agent Uri “Whadyamean no-one wants me?”
 
 """
 
+info.colours = '80'
+info.filesize = '0.38mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '3.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

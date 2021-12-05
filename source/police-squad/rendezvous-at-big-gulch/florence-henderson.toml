@@ -12,6 +12,12 @@ foot in the air, during the opening credits of Police Squad!
 
 """
 
+info.colours = '75'
+info.filesize = '1.96mb'
+info.frames = '81'
+info.size = '400×250'
+info.time = '4.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-105'

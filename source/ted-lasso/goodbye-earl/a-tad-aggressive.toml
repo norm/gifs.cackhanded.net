@@ -12,6 +12,12 @@ Ted tells Nate his suggestion was “A tad aggressive”.
 
 """
 
+info.colours = '128'
+info.filesize = '0.69mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

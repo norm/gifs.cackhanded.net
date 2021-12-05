@@ -13,6 +13,12 @@ Tex saying “Maniacal laugh” to Bobo the Bear and Uncle Deadly.
 
 """
 
+info.colours = '80'
+info.filesize = '1.86mb'
+info.frames = '77'
+info.size = '480×270'
+info.time = '4.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'the-muppets'

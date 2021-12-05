@@ -9,6 +9,12 @@ on a table, shouts “Lisa! I treasure your friendship!”
 
 """
 
+info.colours = '54'
+info.filesize = '0.88mb'
+info.frames = '61'
+info.size = '480×244'
+info.time = '3.38 seconds'
+
 [video]
 source   = 'file'
 file     = 'team-america'

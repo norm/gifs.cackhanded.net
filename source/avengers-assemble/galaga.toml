@@ -8,6 +8,12 @@ A S.H.I.E.L.D. member on the bridge of the Helicarrier starts playing Galaga.
 
 """
 
+info.colours = '49'
+info.filesize = '0.79mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '3.76 seconds'
+
 # FIXME is there an ffmpeg filter that can remove the lateral motion?
 [video]
 source   = 'file'

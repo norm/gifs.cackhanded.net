@@ -12,6 +12,12 @@ The lights blinking on the WOPR.
 
 """
 
+info.colours = '75'
+info.filesize = '0.45mb'
+info.frames = '24'
+info.size = '480×270'
+info.time = '1.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

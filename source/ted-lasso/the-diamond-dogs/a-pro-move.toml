@@ -11,6 +11,12 @@ Ted commenting “That’s a pro move right there.”
 
 """
 
+info.colours = '60'
+info.filesize = '0.55mb'
+info.frames = '23'
+info.size = '480×270'
+info.time = '1.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

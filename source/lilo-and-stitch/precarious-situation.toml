@@ -11,6 +11,12 @@ situation in which you have found yourself.” and shuts the fridge door.
 
 """
 
+info.colours = '64'
+info.filesize = '0.83mb'
+info.frames = '70'
+info.size = '480×285'
+info.time = '6.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

@@ -16,6 +16,12 @@ Lilo, in her bedroom, is doing the same.
 
 """
 
+info.colours = '133'
+info.filesize = '1.55mb'
+info.frames = '96'
+info.size = '480×285'
+info.time = '8.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

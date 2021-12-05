@@ -12,6 +12,12 @@ Jamie asks the coaches “What better thing to spend money on than love?”
 
 """
 
+info.colours = '96'
+info.filesize = '1.19mb'
+info.frames = '76'
+info.size = '480×270'
+info.time = '4.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

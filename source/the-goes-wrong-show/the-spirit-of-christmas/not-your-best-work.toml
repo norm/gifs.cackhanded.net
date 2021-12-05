@@ -13,6 +13,12 @@ Santa played by Robert Groves (played by Henry Lewis) shakes his head.
 
 """
 
+info.colours = '64'
+info.filesize = '1.97mb'
+info.frames = '59'
+info.size = '480×280'
+info.time = '4.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

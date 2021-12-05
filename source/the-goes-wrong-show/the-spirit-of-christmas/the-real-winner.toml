@@ -15,6 +15,12 @@ who is the real winner at Christmas.
 
 """
 
+info.colours = '69'
+info.filesize = '2.06mb'
+info.frames = '87'
+info.size = '480×270'
+info.time = '4.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'goes-wrong-101'

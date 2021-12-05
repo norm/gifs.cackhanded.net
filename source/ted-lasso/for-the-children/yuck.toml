@@ -12,6 +12,12 @@ Nathan spits back into the glass the mouthful of the drink he’d just taken.
 
 """
 
+info.colours = '61'
+info.filesize = '1.68mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

@@ -11,6 +11,12 @@ Roy, during a mock press conference, nods to Keeley who introduces herself as
 
 """
 
+info.colours = '73'
+info.filesize = '2.05mb'
+info.frames = '89'
+info.size = '480×240'
+info.time = '4.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

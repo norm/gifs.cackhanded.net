@@ -10,6 +10,12 @@ They cast him withering looks and he slinks off.
 
 """
 
+info.colours = '64'
+info.filesize = '0.54mb'
+info.frames = '98'
+info.size = '480×270'
+info.time = '6.54 seconds'
+
 [video]
 source   = 'file'
 file     = 'lower-decks-102'

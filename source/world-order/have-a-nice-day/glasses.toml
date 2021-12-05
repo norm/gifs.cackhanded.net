@@ -12,6 +12,12 @@ comedy glasses.
 
 """
 
+info.colours = '81'
+info.filesize = '0.55mb'
+info.frames = '17'
+info.size = '480×270'
+info.time = '0.85 seconds'
+
 [video]
 source   = 'youtube'
 file     = '_mkiGMtbrPM'

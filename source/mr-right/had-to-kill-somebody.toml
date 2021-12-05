@@ -13,6 +13,12 @@ as if to say yeah, that happens.
 
 """
 
+info.colours = '120'
+info.filesize = '1.81mb'
+info.frames = '64'
+info.size = '480×266'
+info.time = '3.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

@@ -10,6 +10,12 @@ little too literally.
 
 """
 
+info.colours = '48'
+info.filesize = '1.56mb'
+info.frames = '69'
+info.size = '480×270'
+info.time = '3.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'orville-206'

@@ -15,6 +15,12 @@ the racing Voot Carrier, splashing into the water below.
 
 """
 
+info.colours = '75'
+info.filesize = '0.90mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '3.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

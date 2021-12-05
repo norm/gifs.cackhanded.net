@@ -11,6 +11,12 @@ The opening title card of Police Squad! (in color)
 
 """
 
+info.colours = '75'
+info.filesize = '0.49mb'
+info.frames = '26'
+info.size = '400×250'
+info.time = '1.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-101'

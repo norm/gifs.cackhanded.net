@@ -11,6 +11,12 @@ Roy takes a swig from a bottle. “Vanilla vodka? Such a child.”
 
 """
 
+info.colours = '60'
+info.filesize = '1.98mb'
+info.frames = '83'
+info.size = '480×270'
+info.time = '4.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

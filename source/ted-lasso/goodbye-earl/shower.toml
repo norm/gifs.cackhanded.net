@@ -12,6 +12,12 @@ Dani Rojas, muttering prayers in the shower.
 
 """
 
+info.colours = '75'
+info.filesize = '1.14mb'
+info.frames = '47'
+info.size = '480×270'
+info.time = '2.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

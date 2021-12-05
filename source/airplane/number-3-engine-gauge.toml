@@ -9,6 +9,12 @@ because it is running a little hot.
 
 """
 
+info.colours = '80'
+info.filesize = '2.93mb'
+info.frames = '138'
+info.size = '480×270'
+info.time = '7.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

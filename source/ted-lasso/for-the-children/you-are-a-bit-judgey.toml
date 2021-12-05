@@ -13,6 +13,12 @@ Rebecca rolls her eyes, judgmentally.
 
 """
 
+info.colours = '80'
+info.filesize = '1.37mb'
+info.frames = '52'
+info.size = '480×270'
+info.time = '2.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

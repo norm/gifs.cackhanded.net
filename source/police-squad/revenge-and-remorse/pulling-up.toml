@@ -11,6 +11,12 @@ Frank Drebin pulls his car up, and knocks over several trash bins.
 
 """
 
+info.colours = '75'
+info.filesize = '0.98mb'
+info.frames = '48'
+info.size = '400×250'
+info.time = '2.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-104'

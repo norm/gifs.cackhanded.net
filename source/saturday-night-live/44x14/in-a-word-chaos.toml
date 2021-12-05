@@ -10,6 +10,12 @@ The camera slowly pushes in on Bill Hader as Vince Blight, host of
 
 """
 
+info.colours = '100'
+info.filesize = '2.44mb'
+info.frames = '124'
+info.size = '480×268'
+info.time = '10.33 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'rImxuuD_kwM'

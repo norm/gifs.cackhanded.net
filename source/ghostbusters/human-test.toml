@@ -10,6 +10,12 @@ Egon pokes a hotel guest with his finger to see if he is human.
 
 """
 
+info.colours = '81'
+info.filesize = '3.07mb'
+info.frames = '132'
+info.size = '400×225'
+info.time = '7.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

@@ -11,6 +11,12 @@ Rebecca telling Keeley “I see. Maybe think of it as a Plan B”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.29mb'
+info.frames = '74'
+info.size = '480×270'
+info.time = '4.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

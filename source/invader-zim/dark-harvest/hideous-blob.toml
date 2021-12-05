@@ -19,6 +19,12 @@ revealing a mouthful of organs.
 
 """
 
+info.colours = '83'
+info.filesize = '1.03mb'
+info.frames = '130'
+info.size = '480×270'
+info.time = '10.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

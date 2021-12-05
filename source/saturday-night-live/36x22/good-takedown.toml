@@ -10,6 +10,12 @@ Bill Hader as Vince Blight, host of “What’s That Name?” grins and says
 
 """
 
+info.colours = '100'
+info.filesize = '1.49mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '4.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'snl3622'

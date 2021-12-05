@@ -12,6 +12,12 @@ Sam and Jamie nodding at each other.
 
 """
 
+info.colours = '128'
+info.filesize = '0.57mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '2.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

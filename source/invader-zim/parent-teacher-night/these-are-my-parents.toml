@@ -15,6 +15,12 @@ Robomom flops around, while Robodad sparks.
 
 """
 
+info.size = '480×270'
+info.frames = '99'
+info.colours = '96'
+info.filesize = '720007'
+info.time = '5.49'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

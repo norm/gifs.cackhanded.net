@@ -11,6 +11,12 @@ Rebecca telling Ted “I’m brilliant!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.87mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.89 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

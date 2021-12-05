@@ -11,6 +11,12 @@ Stan puts a hand on his frowning face, and declares “I’m confused”.
 
 """
 
+info.colours = '80'
+info.filesize = '0.82mb'
+info.frames = '46'
+info.size = '480×270'
+info.time = '2.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

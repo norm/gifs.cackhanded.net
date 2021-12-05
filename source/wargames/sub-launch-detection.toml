@@ -12,6 +12,12 @@ leans forward in his seat to look at his monitor.
 
 """
 
+info.colours = '128'
+info.filesize = '1.28mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

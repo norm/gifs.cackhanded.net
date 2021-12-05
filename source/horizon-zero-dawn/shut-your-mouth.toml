@@ -12,6 +12,12 @@ would be a surprise!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.56mb'
+info.frames = '108'
+info.size = '480×270'
+info.time = '5.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-shut'

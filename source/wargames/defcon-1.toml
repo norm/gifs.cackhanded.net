@@ -11,6 +11,12 @@ General Beringer declares “We are at DEFCON 1”.
 
 """
 
+info.colours = '168'
+info.filesize = '1.59mb'
+info.frames = '94'
+info.size = '480×270'
+info.time = '5.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

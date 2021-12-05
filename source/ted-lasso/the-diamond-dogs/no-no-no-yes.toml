@@ -12,6 +12,12 @@ Keeley says “No” repeatedly, then admits “Yes”.
 
 """
 
+info.colours = '88'
+info.filesize = '1.34mb'
+info.frames = '121'
+info.size = '480×270'
+info.time = '6.71 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

@@ -12,6 +12,12 @@ humans, I will begin my war against the bees!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.98mb'
+info.frames = '107'
+info.size = '480×270'
+info.time = '5.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

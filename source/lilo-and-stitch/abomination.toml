@@ -8,6 +8,12 @@ Lilo cries “If I gave Pudge tuna, I’d be an abomination!”
 
 """
 
+info.colours = '64'
+info.filesize = '0.65mb'
+info.frames = '37'
+info.size = '480×285'
+info.time = '3.70 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

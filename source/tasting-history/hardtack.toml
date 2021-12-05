@@ -11,6 +11,12 @@ Max Miller, smacking two hardtack ship’s biscuits together.
 
 """
 
+info.colours = '75'
+info.filesize = '0.56mb'
+info.frames = '30'
+info.size = '480×270'
+info.time = '1.67 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'oPTdSMOQRnY'

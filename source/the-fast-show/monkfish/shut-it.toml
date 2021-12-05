@@ -10,6 +10,12 @@ there to “Shut it!”
 
 """
 
+info.colours = '54'
+info.filesize = '1.48mb'
+info.frames = '64'
+info.size = '400×253'
+info.time = '3.56 seconds'
+
 [video]
 source   = 'youtube'
 file     = '0VIyZ10vkps'

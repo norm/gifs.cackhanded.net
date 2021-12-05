@@ -9,6 +9,12 @@ Bill Hader, as Keith Morrison from Dateline, grinning and eating popcorn.
 
 """
 
+info.colours = '49'
+info.filesize = '0.56mb'
+info.frames = '27'
+info.size = '480×270'
+info.time = '2.26 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'K5Lv6t0moFY'

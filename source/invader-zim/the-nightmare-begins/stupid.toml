@@ -16,6 +16,12 @@ Gir starts bouncing around on his head.
 
 """
 
+info.colours = '96'
+info.filesize = '1.15mb'
+info.frames = '114'
+info.size = '480×270'
+info.time = '9.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

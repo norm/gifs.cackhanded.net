@@ -12,6 +12,12 @@ Zim pulls a knife out of Ace’s hand, and shouts for medical attention.
 
 """
 
+info.colours = '48'
+info.filesize = '1.48mb'
+info.frames = '51'
+info.size = '480×258'
+info.time = '4.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'starship-troopers'

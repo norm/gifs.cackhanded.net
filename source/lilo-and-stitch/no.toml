@@ -8,6 +8,12 @@ Lilo screams an extended “No!” then faceplants onto the floor in frustration
 
 """
 
+info.colours = '64'
+info.filesize = '0.54mb'
+info.frames = '58'
+info.size = '480×285'
+info.time = '4.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

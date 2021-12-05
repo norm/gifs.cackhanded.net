@@ -10,6 +10,12 @@ Lilo turns up the record player’s volume.
 
 """
 
+info.colours = '70'
+info.filesize = '0.45mb'
+info.frames = '62'
+info.size = '480×285'
+info.time = '5.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

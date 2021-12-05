@@ -14,6 +14,12 @@ while performing Tout l'univers.
 
 """
 
+info.colours = '75'
+info.filesize = '1.24mb'
+info.frames = '67'
+info.size = '400×217'
+info.time = '3.73 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'M_5mo8st8Mc'

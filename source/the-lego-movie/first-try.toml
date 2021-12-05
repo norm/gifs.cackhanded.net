@@ -12,6 +12,12 @@ Batman exclaims “First try!”
 
 """
 
+info.colours = '160'
+info.filesize = '2.03mb'
+info.frames = '53'
+info.size = '480×198'
+info.time = '5.30 seconds'
+
 [video]
 source   = 'file'
 file     = 'the-lego-movie'

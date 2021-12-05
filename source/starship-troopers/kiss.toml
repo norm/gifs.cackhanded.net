@@ -8,6 +8,12 @@ Dizzy kisses the side of the tank Johnny is healing in.
 
 """
 
+info.colours = '97'
+info.filesize = '0.83mb'
+info.frames = '47'
+info.size = '480×269'
+info.time = '3.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'starship-troopers'

@@ -12,6 +12,12 @@ She watches him walk off, then returns to reading a magazine.
 
 """
 
+info.colours = '54'
+info.filesize = '3.27mb'
+info.frames = '144'
+info.size = '480×264'
+info.time = '7.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

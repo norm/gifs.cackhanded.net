@@ -14,6 +14,12 @@ slapped repeatedly.
 
 """
 
+info.colours = '128'
+info.filesize = '1.80mb'
+info.frames = '80'
+info.size = '480×310'
+info.time = '3.20 seconds'
+
 [video]
 source   = 'youtube'
 file     = '0uGD5xAPt-E'

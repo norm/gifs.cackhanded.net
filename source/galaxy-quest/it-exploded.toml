@@ -11,6 +11,12 @@ inside-out, and unperturbedly states “And it exploded”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.07mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '4.17 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

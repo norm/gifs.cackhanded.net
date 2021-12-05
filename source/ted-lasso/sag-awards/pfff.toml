@@ -13,6 +13,12 @@ Rebecca letting out a breath at a bad idea.
 
 """
 
+info.colours = '81'
+info.filesize = '0.50mb'
+info.frames = '24'
+info.size = '480×274'
+info.time = '1.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-1101'

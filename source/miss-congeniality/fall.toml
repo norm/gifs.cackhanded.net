@@ -15,6 +15,12 @@ and Cheryl falls backwards.
 
 """
 
+info.colours = '61'
+info.filesize = '2.38mb'
+info.frames = '105'
+info.size = '400×225'
+info.time = '5.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

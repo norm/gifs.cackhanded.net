@@ -12,6 +12,12 @@ Rebecca salutes Roy, who salutes back.
 
 """
 
+info.colours = '55'
+info.filesize = '1.79mb'
+info.frames = '69'
+info.size = '480×270'
+info.time = '3.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

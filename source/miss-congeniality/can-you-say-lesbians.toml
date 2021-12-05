@@ -12,6 +12,12 @@ reponds “You got a problem with that?”
 
 """
 
+info.colours = '80'
+info.filesize = '1.52mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '3.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

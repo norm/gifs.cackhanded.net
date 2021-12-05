@@ -11,6 +11,12 @@ Victor declares “Because I am the best”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.79mb'
+info.frames = '62'
+info.size = '480×270'
+info.time = '3.43 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

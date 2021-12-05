@@ -13,6 +13,12 @@ Zim rolls Gretchen’s face around in a puddle of milk as the absorbency test.
 
 """
 
+info.colours = '61'
+info.filesize = '0.45mb'
+info.frames = '23'
+info.size = '480×270'
+info.time = '1.91 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

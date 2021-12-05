@@ -11,6 +11,12 @@ Roy kent comments “You’re all pricks”.
 
 """
 
+info.colours = '65'
+info.filesize = '1.28mb'
+info.frames = '52'
+info.size = '480×269'
+info.time = '2.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

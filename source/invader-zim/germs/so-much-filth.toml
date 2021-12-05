@@ -12,6 +12,12 @@ Zim, wearing nanogoggles and cringing, laments that there is
 
 """
 
+info.colours = '96'
+info.filesize = '1.18mb'
+info.frames = '96'
+info.size = '480×270'
+info.time = '8.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

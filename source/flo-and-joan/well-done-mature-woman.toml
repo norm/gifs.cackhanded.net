@@ -10,6 +10,12 @@ Well done, mature woman.
 
 """
 
+info.colours = '64'
+info.filesize = '0.34mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.89 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Oz3oDIN6AaQ'

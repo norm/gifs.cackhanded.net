@@ -12,6 +12,12 @@ Rain starts properly falling. He looks dejected.
 
 """
 
+info.colours = '64'
+info.filesize = '2.44mb'
+info.frames = '106'
+info.size = '480×285'
+info.time = '8.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

@@ -12,6 +12,12 @@ A cupcake flies out of Gir’s head, which Gir promptly devours.
 
 """
 
+info.colours = '49'
+info.filesize = '0.86mb'
+info.frames = '73'
+info.size = '480×270'
+info.time = '6.08 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

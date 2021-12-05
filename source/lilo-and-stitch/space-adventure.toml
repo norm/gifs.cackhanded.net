@@ -10,6 +10,12 @@ starts gently rocking back and forth. Stitch is not impressed.
 
 """
 
+info.colours = '64'
+info.filesize = '0.94mb'
+info.frames = '102'
+info.size = '480×285'
+info.time = '8.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

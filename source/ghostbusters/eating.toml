@@ -12,6 +12,12 @@ dropped out of view, they all turn back to their meals and conversations.
 
 """
 
+info.colours = '49'
+info.filesize = '2.70mb'
+info.frames = '118'
+info.size = '480×244'
+info.time = '6.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

@@ -234,6 +234,7 @@ function main {
         cp "$TEMP/output.gif" "${TEMP}/gifsicle.${losses}.gif"
     fi
 
+    ./script/gif_info "$TEMP/gifsicle.${losses}.gif" "$toml"
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
 

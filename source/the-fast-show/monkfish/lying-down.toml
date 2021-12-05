@@ -10,6 +10,12 @@ John Actor, as Inspector Monkfish, shouts at a corpse under a sheet
 
 """
 
+info.colours = '64'
+info.filesize = '0.56mb'
+info.frames = '58'
+info.size = '400×290'
+info.time = '3.23 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'imr8WKuqFZo'

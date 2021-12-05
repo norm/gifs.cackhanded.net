@@ -14,6 +14,12 @@ but you know it when you see it.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.96mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-102'

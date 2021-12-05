@@ -10,6 +10,12 @@ Ecto-1 starts up and leaves the Ghostbusters HQ.
 
 """
 
+info.colours = '81'
+info.filesize = '3.00mb'
+info.frames = '130'
+info.size = '480×198'
+info.time = '7.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

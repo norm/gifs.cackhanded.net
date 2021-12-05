@@ -10,6 +10,12 @@ Francis winks twice in an overexaggerated manner.
 
 """
 
+info.colours = '55'
+info.filesize = '1.02mb'
+info.frames = '40'
+info.size = '480×269'
+info.time = '2.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

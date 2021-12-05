@@ -12,6 +12,12 @@ Egon tells Louis “We’d like to get a sample of your brain tissue.”
 
 """
 
+info.colours = '54'
+info.filesize = '1.33mb'
+info.frames = '45'
+info.size = '480×244'
+info.time = '2.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

@@ -10,6 +10,12 @@ she looks confused.
 
 """
 
+info.colours = '72'
+info.filesize = '3.64mb'
+info.frames = '108'
+info.size = '480×270'
+info.time = '9.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'bring-it-on'

@@ -11,6 +11,12 @@ Zim rifles through a shipping box, throwing packing peanuts everywhere.
 
 """
 
+info.colours = '81'
+info.filesize = '0.32mb'
+info.frames = '28'
+info.size = '480×270'
+info.time = '2.33 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

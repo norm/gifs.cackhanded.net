@@ -13,6 +13,12 @@ his PKE meter. Venkman and Ray follow.
 
 """
 
+info.colours = '49'
+info.filesize = '1.90mb'
+info.frames = '68'
+info.size = '400×220'
+info.time = '3.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

@@ -13,6 +13,12 @@ Dib and Zim are enemies now, as illustrated by their glares.
 
 """
 
+info.colours = '91'
+info.filesize = '0.14mb'
+info.frames = '24'
+info.size = '480×270'
+info.time = '2.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

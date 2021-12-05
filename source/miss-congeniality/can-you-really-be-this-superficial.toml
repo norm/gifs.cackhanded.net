@@ -12,6 +12,12 @@ to which he responds “Hard to believe, right?”
 
 """
 
+info.colours = '80'
+info.filesize = '1.89mb'
+info.frames = '63'
+info.size = '400×225'
+info.time = '3.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

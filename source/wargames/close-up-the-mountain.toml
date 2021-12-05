@@ -11,6 +11,12 @@ General Beringer orders “Close up the mountain”.
 
 """
 
+info.colours = '127'
+info.filesize = '1.19mb'
+info.frames = '66'
+info.size = '480×270'
+info.time = '3.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

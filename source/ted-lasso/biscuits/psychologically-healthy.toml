@@ -14,6 +14,12 @@ healthy that actually is.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.86mb'
+info.frames = '88'
+info.size = '480×270'
+info.time = '4.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-102'

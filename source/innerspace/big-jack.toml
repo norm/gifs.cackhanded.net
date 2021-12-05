@@ -13,6 +13,12 @@ and the cork flies past Jack into the corridor.
 
 """
 
+info.colours = '75'
+info.filesize = '1.88mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

@@ -13,6 +13,12 @@ Cheryl tells Stan “All you need is a light jacket”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.35mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '3.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

@@ -13,6 +13,12 @@ Zim shouts for Gir, who falls from the ceiling, then salutes
 
 """
 
+info.colours = '96'
+info.filesize = '0.29mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '4.41 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e02'

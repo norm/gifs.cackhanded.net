@@ -14,6 +14,12 @@ Burton replies, “Yes, I know.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.37mb'
+info.frames = '72'
+info.size = '400×250'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-103'

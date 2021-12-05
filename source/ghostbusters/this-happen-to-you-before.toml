@@ -12,6 +12,12 @@ Venkman asks Ray “This happen to you before?” Ray shakes his head.
 
 """
 
+info.colours = '54'
+info.filesize = '2.87mb'
+info.frames = '126'
+info.size = '400×203'
+info.time = '7.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

@@ -10,6 +10,12 @@ and thumps a partially assembled spaceship, which breaks apart.
 
 """
 
+info.colours = '64'
+info.filesize = '0.60mb'
+info.frames = '42'
+info.size = '480×198'
+info.time = '4.20 seconds'
+
 [video]
 source   = 'file'
 file     = 'the-lego-movie'

@@ -8,6 +8,12 @@ Stitch looking at the tale of the Ugly Duckling. “I am lost.”
 
 """
 
+info.colours = '64'
+info.filesize = '1.16mb'
+info.frames = '97'
+info.size = '480×285'
+info.time = '8.08 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

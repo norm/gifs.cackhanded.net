@@ -12,6 +12,12 @@ A police car rushing down the highway, lights flashing.
 
 """
 
+info.colours = '91'
+info.filesize = '0.40mb'
+info.frames = '27'
+info.size = '480×270'
+info.time = '1.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

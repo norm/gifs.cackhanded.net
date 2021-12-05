@@ -9,6 +9,12 @@ It’ll give you a long life.”
 
 """
 
+info.colours = '80'
+info.filesize = '2.18mb'
+info.frames = '94'
+info.size = '400×225'
+info.time = '5.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-machine-dreams'

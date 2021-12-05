@@ -11,6 +11,12 @@ when Coach indicates his approval Ted is delighted.
 
 """
 
+info.colours = '102'
+info.filesize = '2.49mb'
+info.frames = '124'
+info.size = '480×240'
+info.time = '6.88 seconds'
+
 author     = 'Ryan Alexander'
 author_url = 'https://twitter.com/rnalexander'
 

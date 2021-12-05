@@ -12,6 +12,12 @@ about, embracing change.”
 
 """
 
+info.colours = '80'
+info.filesize = '2.31mb'
+info.frames = '94'
+info.size = '400×225'
+info.time = '5.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

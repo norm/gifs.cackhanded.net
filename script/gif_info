@@ -1,0 +1,58 @@
+#!/usr/bin/env -S bash -euo pipefail
+
+source="$1"
+toml="$2"
+
+function size_in_mb {
+    local bytes="$1"
+    printf '%0.2f' "$(echo 4k $bytes 1048576 / p | dc)"
+}
+
+info=$(gifsicle --color-info "$source")
+
+frames=$(
+    echo "$info" \
+        | head -1 \
+        | cut -d' ' -f3
+)
+
+size=$(
+    echo "$info" \
+        | head -2 \
+        | tail -1 \
+        | cut -d' ' -f5 \
+        | sed -e 's/x/×/'
+)
+
+colours=$(
+    echo $(echo "$info" \
+        | grep '^  [|]' \
+        | cut -c4- \
+        | fmt -1 \
+        | grep -v : \
+        | sed -e 's/^ *//' \
+        | sort \
+        | uniq \
+        | wc -l
+    )
+)
+
+delays=$(
+    echo "$info" \
+        | grep delay \
+        | cut -d' ' -f8 \
+        | sed -e 's/s/ +/'
+)
+time=$(printf '%0.2f' $(echo "2k 0 $delays p" | dc))
+
+
+bytes=$(stat -f'%z' $source)
+filesize=$(size_in_mb $bytes)
+
+sed -i '' \
+    -e "s/info.frames = .*/info.frames = '$frames'/" \
+    -e "s/info.size = .*/info.size = '$size'/" \
+    -e "s/info.colours = .*/info.colours = '$colours'/" \
+    -e "s/info.filesize = .*/info.filesize = '${filesize}mb'/" \
+    -e "s/info.time = .*/info.time = '${time} seconds'/" \
+    $toml

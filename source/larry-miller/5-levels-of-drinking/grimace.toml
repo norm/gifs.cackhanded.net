@@ -12,6 +12,12 @@ Larry Miller performing his skit ‘The Five Levels of Drinking’, grimacing.
 
 """
 
+info.colours = '45'
+info.filesize = '0.40mb'
+info.frames = '42'
+info.size = '320×240'
+info.time = '2.34 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

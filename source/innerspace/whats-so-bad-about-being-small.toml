@@ -10,6 +10,12 @@ Jack talking to Tuck, asks “What’s so bad about being small?”
 
 """
 
+info.colours = '79'
+info.filesize = '1.35mb'
+info.frames = '54'
+info.size = '400×225'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

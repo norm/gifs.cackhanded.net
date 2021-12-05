@@ -12,6 +12,12 @@ Ted nods, “Yeah, spot on” and Coach Beard agrees “Yep, got it right away�
 
 """
 
+info.colours = '80'
+info.filesize = '1.20mb'
+info.frames = '62'
+info.size = '480×270'
+info.time = '3.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

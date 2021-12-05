@@ -12,6 +12,12 @@ Gracie tells Eric “Why dont you stun gun yourself?”
 
 """
 
+info.colours = '80'
+info.filesize = '0.85mb'
+info.frames = '32'
+info.size = '400×225'
+info.time = '1.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

@@ -13,6 +13,12 @@ Jeff Stelling apologising to viewers about
 
 """
 
+info.colours = '80'
+info.filesize = '1.06mb'
+info.frames = '50'
+info.size = '480×270'
+info.time = '2.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

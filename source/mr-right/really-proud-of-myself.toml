@@ -10,6 +10,12 @@ Francis, saying “I was really proud of myself for that, gee whiz!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.71mb'
+info.frames = '47'
+info.size = '480×266'
+info.time = '2.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

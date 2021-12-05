@@ -15,6 +15,12 @@ Frank replies “I’m a locksmith, and I’m a locksmith.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.26mb'
+info.frames = '130'
+info.size = '400×250'
+info.time = '7.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-105'

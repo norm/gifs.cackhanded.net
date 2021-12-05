@@ -9,6 +9,12 @@ Niles the butler eating from a bowl of popcorn.
 
 """
 
+info.colours = '49'
+info.filesize = '0.77mb'
+info.frames = '59'
+info.size = '320×250'
+info.time = '3.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'nanny603'

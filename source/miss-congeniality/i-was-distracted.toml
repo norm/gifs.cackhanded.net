@@ -12,6 +12,12 @@ rolling around in your wide-open trap”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.67mb'
+info.frames = '125'
+info.size = '480×270'
+info.time = '6.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

@@ -12,6 +12,12 @@ like a person shot, clutching at their chest. The door falls over.
 
 """
 
+info.colours = '75'
+info.filesize = '1.57mb'
+info.frames = '77'
+info.size = '400×250'
+info.time = '4.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-105'

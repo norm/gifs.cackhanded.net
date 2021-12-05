@@ -13,6 +13,12 @@ The actor?!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.86mb'
+info.frames = '69'
+info.size = '480×270'
+info.time = '3.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-105'

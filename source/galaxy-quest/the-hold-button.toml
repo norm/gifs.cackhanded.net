@@ -10,6 +10,12 @@ Gwen saying “Like I know where the hold button is!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.59mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

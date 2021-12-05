@@ -18,6 +18,12 @@ She just raises an eyebrow.
 
 """
 
+info.colours = '96'
+info.filesize = '0.20mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '3.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

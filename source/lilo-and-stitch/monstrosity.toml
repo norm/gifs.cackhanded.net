@@ -11,6 +11,12 @@ Dr Jumba Jookiba insultedly exclaims “Monstrosity?!”
 
 """
 
+info.colours = '64'
+info.filesize = '0.66mb'
+info.frames = '48'
+info.size = '480×285'
+info.time = '4.80 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

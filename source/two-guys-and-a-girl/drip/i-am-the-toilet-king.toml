@@ -11,6 +11,12 @@ himself the Toilet King.
 
 """
 
+info.colours = '54'
+info.filesize = '1.97mb'
+info.frames = '138'
+info.size = '320×260'
+info.time = '11.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'two-guys-girl-409'

@@ -12,6 +12,12 @@ well stay up all night!
 
 """
 
+info.colours = '40'
+info.filesize = '2.45mb'
+info.frames = '211'
+info.size = '320×240'
+info.time = '11.73 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

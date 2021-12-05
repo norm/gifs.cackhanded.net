@@ -13,6 +13,12 @@ country.” Ted sort of agrees.
 
 """
 
+info.colours = '79'
+info.filesize = '1.46mb'
+info.frames = '62'
+info.size = '400×225'
+info.time = '3.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-103'

@@ -9,6 +9,12 @@ have it yet, you don’t have it!”
 
 """
 
+info.colours = '64'
+info.filesize = '1.93mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '4.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'bring-it-on'

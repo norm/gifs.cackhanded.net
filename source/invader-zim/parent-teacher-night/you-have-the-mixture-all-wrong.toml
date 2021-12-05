@@ -17,6 +17,12 @@ changes to say “Please stand by”. Everyone looks on dumbfounded.
 
 """
 
+info.size = '480×270'
+info.frames = '80'
+info.colours = '126'
+info.filesize = '1084843'
+info.time = '6.66'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

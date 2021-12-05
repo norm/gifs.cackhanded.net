@@ -15,6 +15,12 @@ extra weight causes him to fall, right into a bathtub full of apple juice.
 
 """
 
+info.colours = '75'
+info.filesize = '1.48mb'
+info.frames = '115'
+info.size = '400×232'
+info.time = '6.38 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'bR1SEGyVVe0'

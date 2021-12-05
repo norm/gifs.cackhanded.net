@@ -15,6 +15,12 @@ fucking tragedy!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.69mb'
+info.frames = '79'
+info.size = '480×269'
+info.time = '4.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

@@ -10,6 +10,12 @@ Bill Hader, as Keith Morrison from Dateline, grinning while saying
 
 """
 
+info.colours = '54'
+info.filesize = '0.84mb'
+info.frames = '56'
+info.size = '480×270'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'K5Lv6t0moFY'

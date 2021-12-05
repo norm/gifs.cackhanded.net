@@ -17,6 +17,12 @@ to clap his hand over Teb’s mouth.
 
 """
 
+info.colours = '80'
+info.filesize = '1.62mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '3.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

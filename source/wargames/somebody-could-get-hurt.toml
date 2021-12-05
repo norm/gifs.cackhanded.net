@@ -13,6 +13,12 @@ to be running in here, somebody could get hurt!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.19mb'
+info.frames = '74'
+info.size = '480×270'
+info.time = '4.12 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

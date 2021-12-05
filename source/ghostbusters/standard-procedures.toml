@@ -13,6 +13,12 @@ that often bring us results”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.81mb'
+info.frames = '67'
+info.size = '400×203'
+info.time = '3.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

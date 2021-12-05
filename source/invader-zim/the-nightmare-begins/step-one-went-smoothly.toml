@@ -13,6 +13,12 @@ Zim breaths a sigh of relief and say “Step one went smoothly.”
 
 """
 
+info.colours = '96'
+info.filesize = '0.36mb'
+info.frames = '66'
+info.size = '480×270'
+info.time = '5.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

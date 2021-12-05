@@ -13,6 +13,12 @@ Nora nods and tells her “Boss ass bitch”.
 
 """
 
+info.colours = '80'
+info.filesize = '3.20mb'
+info.frames = '155'
+info.size = '400×225'
+info.time = '8.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

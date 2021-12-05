@@ -10,6 +10,12 @@ Martha dead-eyeing.
 
 """
 
+info.colours = '55'
+info.filesize = '0.73mb'
+info.frames = '29'
+info.size = '480×266'
+info.time = '1.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'mr-right'

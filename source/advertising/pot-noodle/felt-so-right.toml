@@ -15,6 +15,12 @@ so right!”
 
 """
 
+info.colours = '96'
+info.filesize = '2.09mb'
+info.frames = '75'
+info.size = '400×258'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'youtube'
 file     = '0uGD5xAPt-E'

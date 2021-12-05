@@ -13,6 +13,12 @@ driving the car, shouts at him to “Get in this car!” He waves his arms aroun
 
 """
 
+info.colours = '80'
+info.filesize = '1.30mb'
+info.frames = '49'
+info.size = '480×270'
+info.time = '2.71 seconds'
+
 [video]
 source   = 'file'
 file     = 'innerspace'

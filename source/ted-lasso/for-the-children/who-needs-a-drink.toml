@@ -11,6 +11,12 @@ Ted asks “Who needs a drink?” and the entire table puts up their hands.
 
 """
 
+info.colours = '80'
+info.filesize = '1.12mb'
+info.frames = '44'
+info.size = '480×270'
+info.time = '2.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-104'

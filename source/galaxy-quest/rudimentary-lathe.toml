@@ -17,6 +17,12 @@ Alexander threatens to hit him.
 
 """
 
+info.colours = '80'
+info.filesize = '3.25mb'
+info.frames = '124'
+info.size = '480×270'
+info.time = '6.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

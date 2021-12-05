@@ -13,6 +13,12 @@ Ted purses his lips and looks sideways. Rebecca does the same.
 
 """
 
+info.colours = '81'
+info.filesize = '0.36mb'
+info.frames = '40'
+info.size = '480×274'
+info.time = '2.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-1101'

@@ -29,6 +29,7 @@ tag = [
     'melvin',
     'mr-elliot',
     'ms-bitters',
+    'penny',
     'photography',
     'press-conference',
     'professor-membrane',
@@ -39,6 +40,7 @@ tag = [
     'sara',
     'scary-monkey-show',
     'skool',
+    'spoo',
     'squirrel',
     'steve-ressel',
     'tae',
@@ -48,6 +50,7 @@ tag = [
     'toast',
     'voot-runner',
     'zita',
+    'zootch',
 ]
 body_markdown = """
 
@@ -55,9 +58,15 @@ WRITE ME.
 
 """
 
+info.colours = ''
+info.filesize = ''
+info.frames = ''
+info.size = ''
+info.time = ''
+
 [video]
 source   = 'file'
-file     = 'zim_s01e03'
+file     = 'zim_s01e05'
 ext      = 'm4v'
 start    = '0:00.0'
 duration = '1'

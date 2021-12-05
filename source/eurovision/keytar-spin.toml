@@ -12,6 +12,12 @@ The keytars are spun during the Daði og Gagnamagnið performance of 10 Years.
 
 """
 
+info.colours = '81'
+info.filesize = '1.07mb'
+info.frames = '35'
+info.size = '480×270'
+info.time = '1.95 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'jaTRNImqnHM'

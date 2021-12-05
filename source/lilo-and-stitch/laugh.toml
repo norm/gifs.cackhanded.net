@@ -13,6 +13,12 @@ Experiment 626, standing over a smoking crater, laughs manically.
 
 """
 
+info.colours = '64'
+info.filesize = '0.95mb'
+info.frames = '45'
+info.size = '480×285'
+info.time = '3.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

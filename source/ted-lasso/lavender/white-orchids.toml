@@ -11,6 +11,12 @@ Roy asking “How the fuck does he know I love white orchids?”
 
 """
 
+info.colours = '80'
+info.filesize = '0.35mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

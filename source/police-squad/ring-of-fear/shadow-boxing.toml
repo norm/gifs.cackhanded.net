@@ -11,6 +11,12 @@ Buddy Briggs is boxing towards his shadow, and knocks it out.
 
 """
 
+info.colours = '75'
+info.filesize = '1.63mb'
+info.frames = '72'
+info.size = '400×250'
+info.time = '4.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-102'

@@ -11,6 +11,12 @@ Rebecca turns with a growing look of horror on her face.
 
 """
 
+info.colours = '128'
+info.filesize = '0.92mb'
+info.frames = '32'
+info.size = '480×270'
+info.time = '1.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

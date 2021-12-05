@@ -9,6 +9,12 @@ Britney says “Whatever” in disgust.
 
 """
 
+info.colours = '102'
+info.filesize = '1.49mb'
+info.frames = '55'
+info.size = '480×259'
+info.time = '3.06 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'AJWtLf4-WWs'

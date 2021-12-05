@@ -17,6 +17,12 @@ made an account for my mustache.”
 
 """
 
+info.colours = '97'
+info.filesize = '1.47mb'
+info.frames = '71'
+info.size = '480×270'
+info.time = '3.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

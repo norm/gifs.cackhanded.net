@@ -9,6 +9,12 @@ as a superhero cape.
 
 """
 
+info.colours = '64'
+info.filesize = '0.93mb'
+info.frames = '51'
+info.size = '480×285'
+info.time = '4.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

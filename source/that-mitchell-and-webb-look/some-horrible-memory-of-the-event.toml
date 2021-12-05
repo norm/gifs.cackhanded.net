@@ -15,6 +15,12 @@ out, “Some horrible memory of the event, no doubt” and Peter agrees
 
 """
 
+info.colours = '86'
+info.filesize = '2.07mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-301'

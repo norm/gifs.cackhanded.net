@@ -12,6 +12,12 @@ Zim examaines the kitchen floor and declares
 
 """
 
+info.colours = '86'
+info.filesize = '0.36mb'
+info.frames = '55'
+info.size = '480×270'
+info.time = '3.67 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e04'

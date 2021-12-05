@@ -8,6 +8,12 @@ Sparky Polastri shakes his hips suggestively.
 
 """
 
+info.colours = '64'
+info.filesize = '0.77mb'
+info.frames = '35'
+info.size = '480×270'
+info.time = '1.46 seconds'
+
 [video]
 source   = 'file'
 file     = 'bring-it-on'

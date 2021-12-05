@@ -11,6 +11,12 @@ Frank Drebin scores a two point field goal in some friendly baseketball.
 
 """
 
+info.colours = '75'
+info.filesize = '1.36mb'
+info.frames = '60'
+info.size = '400×250'
+info.time = '3.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-103'

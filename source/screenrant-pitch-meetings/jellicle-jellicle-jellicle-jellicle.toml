@@ -13,6 +13,12 @@ script writer responds “Jellicle, jellicle, jellicle, jellicle.”
 
 """
 
+info.colours = '144'
+info.filesize = '1.36mb'
+info.frames = '137'
+info.size = '480×270'
+info.time = '5.71 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'XsNAu72v2Yc'

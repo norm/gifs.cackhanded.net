@@ -10,6 +10,12 @@ Venkman saying “There’s something you don’t see every day.”
 
 """
 
+info.colours = '54'
+info.filesize = '0.99mb'
+info.frames = '40'
+info.size = '480×264'
+info.time = '2.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

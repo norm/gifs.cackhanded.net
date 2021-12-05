@@ -10,6 +10,12 @@ Rebecca hugs Ted, which surprises him and so he takes a moment to hug back.
 
 """
 
+info.colours = '81'
+info.filesize = '1.37mb'
+info.frames = '77'
+info.size = '480×270'
+info.time = '4.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

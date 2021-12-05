@@ -11,6 +11,12 @@ On the countdown status board, the "lock out change" button flashes red.
 
 """
 
+info.colours = '64'
+info.filesize = '0.54mb'
+info.frames = '32'
+info.size = '480×270'
+info.time = '1.33 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

@@ -11,6 +11,12 @@ Eric asks Gracie “Is this you not arguing? Because you suck at it”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.37mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '3.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

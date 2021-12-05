@@ -12,6 +12,12 @@ even if you lose”.
 
 """
 
+info.colours = '98'
+info.filesize = '1.66mb'
+info.frames = '83'
+info.size = '480×270'
+info.time = '4.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_203'

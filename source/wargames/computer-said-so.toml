@@ -14,6 +14,12 @@ And she sounds **so very convinced** when she replies
 
 """
 
+info.colours = '79'
+info.filesize = '1.66mb'
+info.frames = '71'
+info.size = '400×225'
+info.time = '3.95 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

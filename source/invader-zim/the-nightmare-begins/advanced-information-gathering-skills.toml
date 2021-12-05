@@ -16,6 +16,12 @@ and looks eagerly out of the window.
 
 """
 
+info.colours = '96'
+info.filesize = '0.81mb'
+info.frames = '76'
+info.size = '480×270'
+info.time = '6.33 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

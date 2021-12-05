@@ -22,6 +22,12 @@ McCoy steps onto the transporter pad giving Kirk some serious side-eye.
 
 """
 
+info.colours = '64'
+info.filesize = '2.56mb'
+info.frames = '199'
+info.size = '400×211'
+info.time = '16.58 seconds'
+
 [video]
 source   = 'file'
 file     = 'wrath-of-khan'

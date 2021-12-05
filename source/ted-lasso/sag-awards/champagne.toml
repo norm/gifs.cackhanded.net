@@ -22,6 +22,12 @@ AFC Richmond, and Jamie Tartt, celebrating.
 
 """
 
+info.colours = '81'
+info.filesize = '1.36mb'
+info.frames = '45'
+info.size = '400×229'
+info.time = '2.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-1101'

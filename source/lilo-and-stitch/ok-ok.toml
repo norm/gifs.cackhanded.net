@@ -10,6 +10,12 @@ Nani screams and hits him with a tree branch.
 
 """
 
+info.colours = '64'
+info.filesize = '1.12mb'
+info.frames = '114'
+info.size = '480×285'
+info.time = '9.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

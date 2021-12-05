@@ -12,6 +12,12 @@ can monetise that, but, but okay”.
 
 """
 
+info.colours = '128'
+info.filesize = '0.49mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '3.04 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'NtH-HhaLw-Q'

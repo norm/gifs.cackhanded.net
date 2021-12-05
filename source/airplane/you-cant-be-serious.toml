@@ -10,6 +10,12 @@ Dr Rumack responds “I am serious, and don’t call me Shirley.”
 
 """
 
+info.colours = '70'
+info.filesize = '1.47mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '4.70 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

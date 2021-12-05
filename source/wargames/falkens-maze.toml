@@ -10,6 +10,12 @@ Malvin tells David to “Go right through Falken’s Maze!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.96mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

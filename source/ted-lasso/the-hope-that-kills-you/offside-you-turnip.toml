@@ -13,6 +13,12 @@ Keeley shouting “Offside, you turnip!”
 
 """
 
+info.colours = '60'
+info.filesize = '1.04mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-110'

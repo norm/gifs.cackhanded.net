@@ -12,6 +12,12 @@ Jan tells Colin “But I didn’t make any mistakes, only you played poorly”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.14mb'
+info.frames = '79'
+info.size = '480×270'
+info.time = '4.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

@@ -13,6 +13,12 @@ while the studio exec pulls a lot of confused faces.
 
 """
 
+info.colours = '127'
+info.filesize = '1.28mb'
+info.frames = '123'
+info.size = '480×270'
+info.time = '5.12 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'LGGWC5-q1Ts'

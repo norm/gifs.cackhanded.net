@@ -10,6 +10,12 @@ Venkman replies, as though Peck is dumb, “Please.”
 
 """
 
+info.colours = '60'
+info.filesize = '2.33mb'
+info.frames = '90'
+info.size = '480×244'
+info.time = '4.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

@@ -12,6 +12,12 @@ walks over to Ray and slaps him on the head.
 
 """
 
+info.colours = '54'
+info.filesize = '2.79mb'
+info.frames = '136'
+info.size = '400×220'
+info.time = '7.56 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

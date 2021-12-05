@@ -11,6 +11,12 @@ Alex Horne saying “Her name is Rebecca, she wasn’t happy”.
 
 """
 
+info.colours = '100'
+info.filesize = '0.52mb'
+info.frames = '50'
+info.size = '480×270'
+info.time = '2.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'taskmaster-1104'

@@ -11,6 +11,12 @@ Dani Rojas throws his arms wide and celebrates that “Football is life!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.01mb'
+info.frames = '42'
+info.size = '480×270'
+info.time = '2.34 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-106'

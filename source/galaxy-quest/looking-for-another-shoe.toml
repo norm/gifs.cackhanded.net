@@ -15,6 +15,12 @@ look around the room and not at Jason’s bare ass.
 
 """
 
+info.colours = '75'
+info.filesize = '2.09mb'
+info.frames = '98'
+info.size = '480×270'
+info.time = '5.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

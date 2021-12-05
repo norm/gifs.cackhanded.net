@@ -12,6 +12,12 @@ started, it is too late for the pebbles to vote”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.76mb'
+info.frames = '153'
+info.size = '480×270'
+info.time = '8.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'babylon5-110'

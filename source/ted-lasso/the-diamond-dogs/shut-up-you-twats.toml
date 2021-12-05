@@ -13,6 +13,12 @@ Baz tells Paul and Jeremy “Shut up you twats!”
 
 """
 
+info.colours = '80'
+info.filesize = '1.08mb'
+info.frames = '27'
+info.size = '480×270'
+info.time = '1.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

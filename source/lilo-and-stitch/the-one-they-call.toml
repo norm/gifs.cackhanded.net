@@ -15,6 +15,12 @@ be done. “And things have indeed gone wrong.”
 
 """
 
+info.colours = '64'
+info.filesize = '1.77mb'
+info.frames = '116'
+info.size = '480×285'
+info.time = '9.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

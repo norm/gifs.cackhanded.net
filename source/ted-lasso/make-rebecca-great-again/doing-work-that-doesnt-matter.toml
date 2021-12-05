@@ -12,6 +12,12 @@ Rebecca telling Higgins he'll be “…doing work that doesn’t matter.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.35mb'
+info.frames = '57'
+info.size = '480×270'
+info.time = '3.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

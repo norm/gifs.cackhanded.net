@@ -12,6 +12,12 @@ It's nearly hometime, as Zim anxiously watches the clock.
 
 """
 
+info.colours = '41'
+info.filesize = '0.23mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '3.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

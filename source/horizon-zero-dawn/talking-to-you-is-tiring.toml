@@ -9,6 +9,12 @@ Aloy, comments while talking with Blameless Marad,
 
 """
 
+info.colours = '60'
+info.filesize = '0.75mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '2.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-tiring'

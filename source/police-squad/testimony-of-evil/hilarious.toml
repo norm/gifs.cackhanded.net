@@ -12,6 +12,12 @@ The crowd finds Frank hilarious.
 
 """
 
+info.colours = '75'
+info.filesize = '1.86mb'
+info.frames = '137'
+info.size = '320×200'
+info.time = '7.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-106'

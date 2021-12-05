@@ -12,6 +12,12 @@ is vertically flipped so that it looks like the moon is on top of the stick.
 
 """
 
+info.colours = '43'
+info.filesize = '5.40mb'
+info.frames = '100'
+info.size = '480×338'
+info.time = '15.88 seconds'
+
 # FIXME
 # this was made from different segments of the movie, which there is No
 # option for yet (using the original 2014 gif)

@@ -13,6 +13,12 @@ undoes his trousers so they fall down.
 
 """
 
+info.colours = '75'
+info.filesize = '3.27mb'
+info.frames = '153'
+info.size = '360×225'
+info.time = '8.49 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'odCBml5TuNI'

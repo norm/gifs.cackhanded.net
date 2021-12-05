@@ -13,6 +13,12 @@ Sarcastically she replies "Oh good, that makes me feel so much better".
 
 """
 
+info.colours = '54'
+info.filesize = '2.30mb'
+info.frames = '94'
+info.size = '480×264'
+info.time = '5.23 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

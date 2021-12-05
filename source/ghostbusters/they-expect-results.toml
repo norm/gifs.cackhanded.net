@@ -10,6 +10,12 @@ Ray telling Venkman “I’ve worked in the private sector, they expect results.
 
 """
 
+info.colours = '80'
+info.filesize = '1.38mb'
+info.frames = '58'
+info.size = '400×203'
+info.time = '3.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

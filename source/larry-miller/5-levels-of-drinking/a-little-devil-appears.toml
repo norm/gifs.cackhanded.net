@@ -11,6 +11,12 @@ A little devil appears on your shoulder.
 
 """
 
+info.colours = '50'
+info.filesize = '0.57mb'
+info.frames = '54'
+info.size = '320×240'
+info.time = '3.00 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

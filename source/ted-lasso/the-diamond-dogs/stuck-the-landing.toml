@@ -12,6 +12,12 @@ landing on that…”
 
 """
 
+info.colours = '64'
+info.filesize = '2.30mb'
+info.frames = '113'
+info.size = '480×240'
+info.time = '6.27 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

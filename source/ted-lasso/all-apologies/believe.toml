@@ -11,6 +11,12 @@ Roy taps on the ‘believe’ sign.
 
 """
 
+info.colours = '81'
+info.filesize = '2.57mb'
+info.frames = '127'
+info.size = '480×268'
+info.time = '7.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

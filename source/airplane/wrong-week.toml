@@ -8,6 +8,12 @@ McCroskey says “Looks like I picked the wrong week to give up drinking.”
 
 """
 
+info.colours = '54'
+info.filesize = '1.44mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '4.01 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

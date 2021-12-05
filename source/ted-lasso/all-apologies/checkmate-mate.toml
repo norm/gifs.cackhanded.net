@@ -13,6 +13,12 @@ Jane was playing with “Checkmate, mate”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.71mb'
+info.frames = '117'
+info.size = '400×225'
+info.time = '6.49 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-109'

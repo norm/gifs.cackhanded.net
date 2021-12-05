@@ -12,6 +12,12 @@ Grabthar’s Hammer … what a savings.”
 
 """
 
+info.colours = '80'
+info.filesize = '3.16mb'
+info.frames = '163'
+info.size = '480×270'
+info.time = '9.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

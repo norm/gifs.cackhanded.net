@@ -11,6 +11,12 @@ body_markdown = """
 
 """
 
+info.colours = '74'
+info.filesize = '0.22mb'
+info.frames = '8'
+info.size = '480×270'
+info.time = '0.64 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-403'

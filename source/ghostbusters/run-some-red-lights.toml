@@ -8,6 +8,12 @@ Venkman leans out of the window of Ecto-1 and shouts at the police running
 around nearby “C’mon, let’s run some red lights!”
 """
 
+info.colours = '130'
+info.filesize = '1.70mb'
+info.frames = '62'
+info.size = '480×198'
+info.time = '3.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

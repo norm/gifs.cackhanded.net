@@ -15,6 +15,12 @@ No, no, not good, no, no”. He pulls out something, and waves it at Ivanova.
 
 """
 
+info.colours = '79'
+info.filesize = '3.56mb'
+info.frames = '164'
+info.size = '480×270'
+info.time = '9.10 seconds'
+
 [video]
 source   = 'file'
 file     = 'babylon5-317'

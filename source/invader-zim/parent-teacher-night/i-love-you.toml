@@ -11,6 +11,12 @@ A baby Zim, hugs and declares “I love you, cold unfeeling robot arm!”
 
 """
 
+info.size = '480×270'
+info.frames = '37'
+info.colours = '56'
+info.filesize = '210591'
+info.time = '3.08'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

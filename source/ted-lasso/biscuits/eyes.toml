@@ -11,6 +11,12 @@ Rebecca's eyes light up at a thought.
 
 """
 
+info.colours = '81'
+info.filesize = '1.15mb'
+info.frames = '58'
+info.size = '480×311'
+info.time = '3.23 seconds'
+
 [video]
 source   = 'file | youtube'
 file     = 'ted-lasso-102'

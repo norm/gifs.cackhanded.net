@@ -14,6 +14,12 @@ Dani Rojas lifts the bottle of mescal and instructs his teammates to
 
 """
 
+info.colours = '60'
+info.filesize = '1.05mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '1.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-106'

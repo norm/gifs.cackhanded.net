@@ -11,6 +11,12 @@ Egon turns his PKE meter on Louis, and it immediately goes to maximum.
 
 """
 
+info.colours = '111'
+info.filesize = '1.48mb'
+info.frames = '49'
+info.size = '480×264'
+info.time = '2.73 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

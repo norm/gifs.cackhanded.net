@@ -12,6 +12,12 @@ Brin talking to Aloy, says “Machine dreams, huntress.”
 
 """
 
+info.colours = '64'
+info.filesize = '1.59mb'
+info.frames = '65'
+info.size = '480×270'
+info.time = '3.62 seconds'
+
 [video]
 source   = 'file'
 file     = 'horizon-machine-dreams'

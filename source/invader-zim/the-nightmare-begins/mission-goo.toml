@@ -13,6 +13,12 @@ alive and full of goo … mission goo.”
 
 """
 
+info.colours = '96'
+info.filesize = '0.63mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '4.51 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

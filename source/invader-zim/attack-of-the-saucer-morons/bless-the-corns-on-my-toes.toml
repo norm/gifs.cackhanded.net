@@ -16,6 +16,12 @@ The crowd all raise their arms and move forward.
 
 """
 
+info.colours = '79'
+info.filesize = '0.97mb'
+info.frames = '49'
+info.size = '480×270'
+info.time = '4.08 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

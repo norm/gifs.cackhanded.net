@@ -17,6 +17,12 @@ Dib pointing (at Zim) and screaming.
 
 """
 
+info.colours = '91'
+info.filesize = '0.20mb'
+info.frames = '22'
+info.size = '480×270'
+info.time = '1.83 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e01'

@@ -13,6 +13,12 @@ Egon nods, and takes a bite out of a normal-sized Twinkie.
 
 """
 
+info.colours = '54'
+info.filesize = '1.17mb'
+info.frames = '52'
+info.size = '480×244'
+info.time = '2.88 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

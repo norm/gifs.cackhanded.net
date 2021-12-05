@@ -12,6 +12,12 @@ smooch me!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.91mb'
+info.frames = '36'
+info.size = '480×260'
+info.time = '1.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'miss-congeniality'

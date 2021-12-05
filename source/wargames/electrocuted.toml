@@ -11,6 +11,12 @@ I think we’re all going to get electrocuted.”
 
 """
 
+info.colours = '80'
+info.filesize = '1.24mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

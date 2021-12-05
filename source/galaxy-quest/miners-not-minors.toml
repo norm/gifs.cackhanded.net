@@ -13,6 +13,12 @@ Alexander tells a confused Fred “Miners, not minors!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.84mb'
+info.frames = '61'
+info.size = '480×270'
+info.time = '3.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

@@ -12,6 +12,12 @@ Abraham Lincoln gets shot at in the opening credits for Police Squad!
 
 """
 
+info.colours = '75'
+info.filesize = '0.95mb'
+info.frames = '69'
+info.size = '400×250'
+info.time = '3.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-101'

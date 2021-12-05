@@ -13,6 +13,12 @@ Keeley and Rebecca simultaneously shush Ted, who indicates apology.
 
 """
 
+info.colours = '75'
+info.filesize = '0.73mb'
+info.frames = '27'
+info.size = '480×270'
+info.time = '1.50 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_201'

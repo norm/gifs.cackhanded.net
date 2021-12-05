@@ -15,6 +15,12 @@ Venkman chimes in “So do I.”
 
 """
 
+info.colours = '54'
+info.filesize = '1.36mb'
+info.frames = '51'
+info.size = '480×226'
+info.time = '2.82 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

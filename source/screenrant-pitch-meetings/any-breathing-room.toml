@@ -12,6 +12,12 @@ room?” and the script writer tells him “Nope!”
 
 """
 
+info.colours = '149'
+info.filesize = '0.75mb'
+info.frames = '52'
+info.size = '480×270'
+info.time = '2.17 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'Ha10ImiP6So'

@@ -10,6 +10,12 @@ something inside you that is good…”
 
 """
 
+info.colours = '64'
+info.filesize = '0.49mb'
+info.frames = '46'
+info.size = '480×285'
+info.time = '4.60 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

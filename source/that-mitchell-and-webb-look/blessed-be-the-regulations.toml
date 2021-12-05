@@ -17,6 +17,12 @@ regulations” while drawing a rectangle in the air with their index fingers.
 
 """
 
+info.colours = '128'
+info.filesize = '1.12mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '2.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'mwlook-403'

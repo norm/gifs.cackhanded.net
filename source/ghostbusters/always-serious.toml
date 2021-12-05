@@ -12,6 +12,12 @@ Egon tells Venkman “I’m always serious.”
 
 """
 
+info.colours = '64'
+info.filesize = '1.88mb'
+info.frames = '54'
+info.size = '400×250'
+info.time = '3.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

@@ -11,6 +11,12 @@ I’ll turn that around, make it work for me.
 
 """
 
+info.colours = '50'
+info.filesize = '0.68mb'
+info.frames = '63'
+info.size = '320×240'
+info.time = '3.49 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

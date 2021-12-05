@@ -12,6 +12,12 @@ Jennifer tells David “You can go to jail for that” to which he responds
 
 """
 
+info.colours = '80'
+info.filesize = '1.63mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '5.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'wargames'

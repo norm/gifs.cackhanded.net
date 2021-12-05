@@ -20,6 +20,12 @@ pile of cars. Everything bursts into flames.
 
 """
 
+info.colours = '64'
+info.filesize = '1.72mb'
+info.frames = '60'
+info.size = '480×198'
+info.time = '6.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'the-lego-movie'

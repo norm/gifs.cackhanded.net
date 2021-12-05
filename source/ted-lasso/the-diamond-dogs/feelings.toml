@@ -15,6 +15,12 @@ control you!”
 
 """
 
+info.colours = '60'
+info.filesize = '1.77mb'
+info.frames = '68'
+info.size = '400×225'
+info.time = '3.77 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-108'

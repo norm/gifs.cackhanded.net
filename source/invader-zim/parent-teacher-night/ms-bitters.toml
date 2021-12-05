@@ -14,6 +14,12 @@ angry Ms Bitters.
 
 """
 
+info.size = '480×270'
+info.frames = '54'
+info.colours = '120'
+info.filesize = '512736'
+info.time = '4.51'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

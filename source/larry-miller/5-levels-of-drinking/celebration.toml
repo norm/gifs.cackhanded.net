@@ -10,6 +10,12 @@ his arms in celebration.
 
 """
 
+info.colours = '35'
+info.filesize = '0.75mb'
+info.frames = '81'
+info.size = '320×240'
+info.time = '4.49 seconds'
+
 [video]
 source   = 'youtube'
 file     = 'piPyfqAKf6o'

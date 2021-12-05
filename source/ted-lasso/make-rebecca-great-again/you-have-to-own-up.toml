@@ -12,6 +12,12 @@ Flo telling Rebecca “You have to own up to the part that you played.”
 
 """
 
+info.colours = '60'
+info.filesize = '1.45mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '3.00 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-107'

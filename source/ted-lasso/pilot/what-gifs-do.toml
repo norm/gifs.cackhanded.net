@@ -9,6 +9,12 @@ Rebecca asking Higgins “That’s what GIFs do isn’t it? They’re just … e
 
 """
 
+info.colours = '60'
+info.filesize = '1.38mb'
+info.frames = '80'
+info.size = '480×271'
+info.time = '4.45 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted-lasso-101'

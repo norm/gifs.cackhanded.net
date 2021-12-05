@@ -12,6 +12,12 @@ episode who dies to prove the situation is serious!”
 
 """
 
+info.colours = '80'
+info.filesize = '2.08mb'
+info.frames = '91'
+info.size = '400×225'
+info.time = '5.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

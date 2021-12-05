@@ -14,6 +14,12 @@ Beard looks astonished. “Really?!”
 
 """
 
+info.colours = '80'
+info.filesize = '0.67mb'
+info.frames = '61'
+info.size = '480×270'
+info.time = '3.39 seconds'
+
 [video]
 source   = 'file'
 file     = 'ted_lasso_202'

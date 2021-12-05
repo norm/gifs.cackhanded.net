@@ -10,6 +10,12 @@ She dabs at one of his wounds. He flinches.
 
 """
 
+info.colours = '86'
+info.filesize = '2.45mb'
+info.frames = '126'
+info.size = '480×204'
+info.time = '6.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'raiders-of-the-lost-ark'

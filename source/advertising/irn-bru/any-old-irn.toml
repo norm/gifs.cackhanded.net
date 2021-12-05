@@ -13,6 +13,12 @@ into hit stomach.
 
 """
 
+info.colours = '75'
+info.filesize = '2.01mb'
+info.frames = '94'
+info.size = '400×257'
+info.time = '5.23 seconds'
+
 [video]
 source   = 'youtube'
 file     = '-rEd55q1k5A'

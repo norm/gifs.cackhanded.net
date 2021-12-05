@@ -8,6 +8,12 @@ Nani saying “He wanted me to join his legion of the undead.”
 
 """
 
+info.colours = '64'
+info.filesize = '0.99mb'
+info.frames = '38'
+info.size = '480×285'
+info.time = '3.16 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

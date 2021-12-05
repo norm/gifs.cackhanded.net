@@ -15,6 +15,12 @@ Everyone turns to look, concerned.
 
 """
 
+info.size = '480×270'
+info.frames = '60'
+info.colours = '134'
+info.filesize = '658002'
+info.time = '5.01'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e03'

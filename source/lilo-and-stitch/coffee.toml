@@ -9,6 +9,12 @@ Lilo hands Stitch a baby bottle full of brown liquid.
 
 """
 
+info.colours = '64'
+info.filesize = '0.34mb'
+info.frames = '33'
+info.size = '480×285'
+info.time = '2.76 seconds'
+
 [video]
 source   = 'file'
 file     = 'lilo-and-stitch'

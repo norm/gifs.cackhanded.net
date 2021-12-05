@@ -12,6 +12,12 @@ her hair, and says into the vox “Hold, please”.
 
 """
 
+info.colours = '80'
+info.filesize = '2.26mb'
+info.frames = '108'
+info.size = '480×270'
+info.time = '5.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

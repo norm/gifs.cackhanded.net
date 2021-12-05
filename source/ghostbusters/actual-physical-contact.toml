@@ -12,6 +12,12 @@ Ray, commenting on Venkman having been slimed,
 
 """
 
+info.colours = '70'
+info.filesize = '2.06mb'
+info.frames = '84'
+info.size = '400×220'
+info.time = '4.66 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

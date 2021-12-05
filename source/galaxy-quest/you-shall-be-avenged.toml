@@ -11,6 +11,12 @@ Alexander informs a dying Quellek “… you shall be avenged”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.77mb'
+info.frames = '126'
+info.size = '480×270'
+info.time = '6.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

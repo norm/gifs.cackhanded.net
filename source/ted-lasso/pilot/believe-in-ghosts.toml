@@ -11,6 +11,12 @@ importantly I think they need to believe in themselves.”
 
 """
 
+info.colours = '70'
+info.filesize = '2.78mb'
+info.frames = '112'
+info.size = '480×270'
+info.time = '6.23 seconds'
+
 author     = 'Ryan Alexander'
 author_url = 'https://twitter.com/rnalexander'
 

@@ -13,6 +13,12 @@ the rifle onto his shoulder. Fred and Laliari reach out to grab him.
 
 """
 
+info.colours = '80'
+info.filesize = '1.06mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '2.21 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'

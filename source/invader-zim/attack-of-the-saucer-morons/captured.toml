@@ -16,6 +16,12 @@ Zim corrects it, “No, that’s bad, Gir”.
 
 """
 
+info.colours = '80'
+info.filesize = '1.79mb'
+info.frames = '63'
+info.size = '480×270'
+info.time = '5.26 seconds'
+
 [video]
 source   = 'file'
 file     = 'zim_s01e05'

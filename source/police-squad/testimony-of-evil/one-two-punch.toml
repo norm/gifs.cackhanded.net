@@ -15,6 +15,12 @@ Frank Drebin, undercover as Tony Diwonderful, punches Lester and Jerry Layne.
 
 """
 
+info.colours = '75'
+info.filesize = '0.88mb'
+info.frames = '55'
+info.size = '400×250'
+info.time = '3.06 seconds'
+
 [video]
 source   = 'file'
 file     = 'police-squad-106'

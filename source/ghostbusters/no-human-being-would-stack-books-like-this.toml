@@ -14,6 +14,12 @@ books like this.”
 
 """
 
+info.colours = '54'
+info.filesize = '1.40mb'
+info.frames = '72'
+info.size = '400×220'
+info.time = '3.99 seconds'
+
 [video]
 source   = 'file'
 file     = 'ghostbusters'

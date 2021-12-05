@@ -9,6 +9,12 @@ good luck. We’re all counting on you.”
 
 """
 
+info.colours = '70'
+info.filesize = '0.95mb'
+info.frames = '31'
+info.size = '480×270'
+info.time = '2.58 seconds'
+
 [video]
 source   = 'file'
 file     = 'airplane'

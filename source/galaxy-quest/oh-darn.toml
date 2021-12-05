@@ -10,6 +10,12 @@ Jason, looking at a Gorignak, says “Oh darn” and runs away.
 
 """
 
+info.colours = '80'
+info.filesize = '2.15mb'
+info.frames = '105'
+info.size = '480×270'
+info.time = '5.84 seconds'
+
 [video]
 source   = 'file'
 file     = 'galaxy_quest'
