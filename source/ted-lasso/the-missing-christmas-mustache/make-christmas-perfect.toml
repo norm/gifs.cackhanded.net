@@ -1,0 +1,50 @@
+title = 'Makes Christmas perfect'
+published = 2021-12-25T15:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'coach-beard',
+    'facetime',
+    'jamie-tartt',
+    'keeley-jones',
+    'leslie-higgins',
+    'nathan-shelley',
+    'rebecca-welton',
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Over Facetime, Ted tells Coach Beard, Higgins, Jamie, Nate, Rebecca, Keeley,
+and Roy that “It’s the people you love that make Christmas perfect”.
+
+"""
+
+info.colours = '128'
+info.filesize = '0.56mb'
+info.frames = '52'
+info.size = '480×270'
+info.time = '3.47 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '3:42.75'
+duration = '3.4'
+crop     = '1600:900:0:90'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.6mb'
+
+[[caption]]
+text      = "It’s the people you love\nthat make Christmas perfect"
+from      = '0.1'
+to        = '1.85'
+type      = 'speak'
+placement = 'bl'

@@ -50,7 +50,7 @@ Ted Lasso day.
 
 Comedy movie day.
 
-* Galaxy Quest, until 2022-09-10.
+* Galaxy Quest, until 2022-09-17.
 
 
 ### Sundays

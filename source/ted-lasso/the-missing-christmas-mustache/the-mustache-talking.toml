@@ -1,0 +1,40 @@
+title = 'The mustache talking'
+published = 2021-12-23T18:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'leslie-higgins',
+]
+body_markdown = """
+
+Leslie comments “Obviously I do care, it’s just the mustache talking”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.59mb'
+info.frames = '44'
+info.size = '480×270'
+info.time = '2.94 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '3:17.3'
+duration = '2.9'
+crop     = '1280:720:0:300'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.64mb'
+
+[[caption]]
+text      = "Obviously I do care,\nit’s just the mustache talking"
+from      = '0'
+to        = '2.5'
+type      = 'speak'

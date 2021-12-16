@@ -1,0 +1,48 @@
+title = 'Frankly my dear'
+published = 2021-12-22T18:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'leslie-higgins',
+]
+body_markdown = """
+
+Leslie says “Frankly, my dear, I don’t give a damn”, turning as he does
+so to reveal he's pencilled a Clarke Gable style mustache on his face.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.57mb'
+info.frames = '43'
+info.size = '480×270'
+info.time = '2.87 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '3:10.6'
+duration = '2.8'
+crop     = '1280:720:50:300'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.58mb'
+
+[[caption]]
+text      = "Frankly, my dear,\n "
+from      = '0.2'
+to        = '1.45'
+type      = 'speak'
+placement = '136,180'
+
+[[caption]]
+text      = "Frankly, my dear,\nI don’t give a damn"
+from      = '1.46'
+to        = '2.6'
+type      = 'speak'

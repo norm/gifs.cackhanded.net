@@ -1,0 +1,36 @@
+title = 'Eyebrows'
+published = 2021-12-19T18:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy Kent takes his eyebrows off and puts them on Ted, to replace his
+missing mustache.
+
+"""
+
+info.colours = '64'
+info.filesize = '0.83mb'
+info.frames = '46'
+info.size = '480×270'
+info.time = '3.07 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '2:42.5'
+duration = '3.1'
+crop     = '1440:810:220:135'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.84mb'

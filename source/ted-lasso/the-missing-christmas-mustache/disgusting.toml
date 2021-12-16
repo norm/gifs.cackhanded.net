@@ -1,0 +1,44 @@
+title = 'Disgusting'
+published = 2021-12-21T18:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'jamie-tartt',
+    'keeley-jones',
+    'roy-kent',
+]
+body_markdown = """
+
+As Keeley holds Roy’s arm, Jamie slides in from the side to comment
+“disgusting”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.19mb'
+info.frames = '23'
+info.size = '480×270'
+info.time = '1.54 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '3:00.4'
+duration = '1.5'
+crop     = '1600:900:0:90'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.2mb'
+
+[[caption]]
+text      = "Disgusting"
+from      = '0.3'
+to        = '2'
+type      = 'speak'
+placement = 'bl'

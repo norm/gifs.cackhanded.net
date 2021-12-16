@@ -1,0 +1,55 @@
+title = 'Why do you have a disguise kit?'
+published = 2021-12-20T18:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'coach-beard',
+    'keeley-jones',
+    'rebecca-welton',
+    'ted-lasso',
+]
+body_markdown = """
+
+Coach Beard puts a toolbox labelled “disguise kit” on the floor.
+
+Rebecca asks him “Why do you have a disguise kit?”
+
+He looks at her and retorts “Why don’t you?”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.67mb'
+info.frames = '61'
+info.size = '480×270'
+info.time = '4.07 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '2:24.4'
+duration = '4.1'
+crop     = '1600:900:0:90'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.68mb'
+
+[[caption]]
+text      = "Why do you have\na disguise kit?"
+from      = '1.3'
+to        = '2.7'
+type      = 'speak'
+placement = 'bl'
+
+[[caption]]
+text      = "Why don’t you?"
+from      = '2.8'
+to        = '3.8'
+type      = 'speak'
+placement = 'bl'

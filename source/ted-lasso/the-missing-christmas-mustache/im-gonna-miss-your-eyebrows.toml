@@ -1,0 +1,50 @@
+title = 'I’m gonna miss your eyebrows'
+published = 2021-12-24T18:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'keeley-jones',
+    'roy-kent',
+]
+body_markdown = """
+
+Keeley tells Roy “I’m gonna miss your eyebrows”. He says “Hang on…” and as he
+nods his head, one by one his eyebrows grow back.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.72mb'
+info.frames = '70'
+info.size = '480×270'
+info.time = '4.67 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '2:54.7'
+duration = '4.6'
+crop     = '1440:810:220:135'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.73mb'
+
+[[caption]]
+text      = "I’m gonna miss\nyour eyebrows"
+from      = '0.2'
+to        = '2.1'
+type      = 'speak'
+placement = '170,180'
+
+[[caption]]
+text      = "Hang on…\n "
+from      = '2.11'
+to        = '2.7'
+type      = 'speak'
+placement = 'br'

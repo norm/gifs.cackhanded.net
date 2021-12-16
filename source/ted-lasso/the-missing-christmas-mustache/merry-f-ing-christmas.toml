@@ -1,0 +1,49 @@
+title = 'Merry f*ing Christmas'
+published = 2021-12-25T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy Kent (in puppet form) wishes everyone “Merry f*ing Christmas”.
+
+"""
+
+info.colours = '128'
+info.filesize = '0.27mb'
+info.frames = '21'
+info.size = '480×270'
+info.time = '1.40 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '0:31.2'
+duration = '1.4'
+crop     = '1600:900:0:90'
+
+[palette]
+add = [
+    '#f4ffc7',  # censorship bow
+    '#91e789',
+    '#6bb34e',
+    '#5e8b43',
+    '#19381c',
+]
+
+[output]
+colours    = '117'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.38mb'
+
+[[caption]]
+text      = "Merry f*ing Christmas"
+from      = '0'
+to        = '1.5'
+type      = 'speak'

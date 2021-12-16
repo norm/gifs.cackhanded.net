@@ -76,7 +76,7 @@ function list_scheduled_gifs {
 
         pattern="published.*$datestamp"
         [ $time = 'am' ] && pattern="${pattern}T07"
-        [ $time = 'pm' ] && pattern="${pattern}T15"
+        [ $time = 'pm' ] && pattern="${pattern}T1[58]"
 
         content=$(
             ( rg "$pattern" source || echo '' ) \

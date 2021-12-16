@@ -16,7 +16,7 @@ for source in "${sources[@]}"; do
     if [[ $published > $today ]]; then
         new_date=$(gdate +'%Y-%m-%d' --date="$published + $push")
         sed -i '' \
-            -e "s/published = .*/published = ${new_date}T07:00:00Z/" \
+            -e "s/published = ....-..-../published = ${new_date}/" \
                 $filename
         echo "++ $filename pushed to $new_date"
     fi

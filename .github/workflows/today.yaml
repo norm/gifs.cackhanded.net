@@ -2,8 +2,8 @@ name: Tweet today's GIF(s)
 
 on:
   schedule:
-      #        min   hr    dom   mon   dow
-      - cron: '50    08,15 *     *     *'     # daily at 8.50am and 3.50pm UTC
+      #        min   hr       dom   mon   dow
+      - cron: '50    08,15,18 *     *     *'     # daily 8.50am, 3.50pm, 6.50pm UTC
   workflow_dispatch:
 
 jobs:

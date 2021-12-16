@@ -1,0 +1,36 @@
+title = 'Chairs'
+published = 2021-12-18T18:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-missing-christmas-mustache/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted sites on a stadium chair as those around him change colour from
+green to red.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.46mb'
+info.frames = '35'
+info.size = '480×270'
+info.time = '2.34 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'UW_qXIHtmTk'
+ext      = 'mp4'
+start    = '0:47.2'
+duration = '2.3'
+crop     = '1600:900:0:90'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.51mb'
+stabilise  = 'static'
