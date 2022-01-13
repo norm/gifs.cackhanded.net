@@ -1,0 +1,36 @@
+title = 'Vase'
+published = 2022-01-20T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x02/index'
+tag = [
+    'sherlock-holmes',
+    'john-watson',
+]
+body_markdown = """
+
+Sherlock Holmes smashes a vase over Watson's head. As Watson falls to
+the floor, Holmes walks casually away.
+
+"""
+
+info.colours = '76'
+info.filesize = '1.42mb'
+info.frames = '126'
+info.size = '480×264'
+info.time = '6.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-102'
+ext      = 'm4v'
+start    = '6:09.5'
+duration = '7'
+
+[output]
+brightness = '0.04'
+colours    = '75'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.44mb'

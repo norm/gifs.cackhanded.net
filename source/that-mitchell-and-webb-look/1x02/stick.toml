@@ -1,0 +1,37 @@
+title = 'Stick'
+published = 2022-01-13T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x02/index'
+tag = [
+    'david-mitchell',
+    'robert-webb',
+    'fetch',
+]
+body_markdown = """
+
+Mitchell swings a stick to play fetch with a seemingly unco-operative Webb,
+who then chases and fetches the stick with glee on his face.
+
+"""
+
+info.colours = '254'
+info.filesize = '7.14mb'
+info.frames = '150'
+info.size = '480×264'
+info.time = '6.00 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-102'
+ext      = 'm4v'
+start    = '19:42.7'
+duration = '14.4'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '30'
+max_size   = '3mb'
+width      = '320'

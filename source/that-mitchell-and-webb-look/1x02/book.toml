@@ -1,0 +1,39 @@
+title = 'Book'
+published = 2022-01-27T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x02/index'
+tag = [
+    'sherlock-holmes',
+    'john-watson',
+]
+body_markdown = """
+
+Sherlock Holmes taps his pipe on Watson's forehead, so Watson slams
+Holmes around the face with a book. Holmes falls to the floor.
+
+"""
+
+info.colours = '76'
+info.filesize = '1.70mb'
+info.frames = '79'
+info.size = '480×260'
+info.time = '4.38 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-102'
+ext      = 'm4v'
+start    = '7:37'
+duration = '4.4'
+crop     = '480:260:80:50'
+
+
+
+[output]
+brightness = '0.04'
+colours    = '75'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.7mb'
