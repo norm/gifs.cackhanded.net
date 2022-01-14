@@ -1,0 +1,44 @@
+title = 'Awooga'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'coach-beard',
+    'leslie-higgins',
+    'ted-lasso',
+]
+body_markdown = """
+
+Coach Beard, Ted, and Higgins all make suggestive gestures.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.82mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.49 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '2:26'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.83mb'
+
+[[clip]]
+start = '0'
+end   = '0.6'
+
+[[clip]]
+start = '1.1'
+end   = '3'

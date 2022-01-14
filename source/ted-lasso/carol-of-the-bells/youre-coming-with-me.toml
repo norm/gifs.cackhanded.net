@@ -1,0 +1,40 @@
+title = 'You’re coming with me'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca smiles and says “Grab a coat, you’re coming with me”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.78mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '2.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '14:39.5'
+duration = '3'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.8mb'
+
+[[caption]]
+text      = "Grab a coat,\nyou’re coming with me"
+from      = '1.2'
+to        = '2.7'
+type      = 'speak'

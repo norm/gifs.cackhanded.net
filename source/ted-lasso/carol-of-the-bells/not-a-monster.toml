@@ -1,0 +1,57 @@
+title = 'Not a monster'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'keeley-jones',
+    'phoebe',
+    'roy-kent',
+]
+body_markdown = """
+
+Keeley tells Phoebe “Your uncle, who loves you,” turns to look sternly
+at Roy, and continues “and who is not a monster”.
+
+"""
+
+info.colours = '96'
+info.filesize = '1.77mb'
+info.frames = '105'
+info.size = '480×270'
+info.time = '5.84 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '23:15.5'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = 'auto'
+
+[[clip]]
+start = '0'
+end   = '4.5'
+
+[[clip]]
+start = '4.8'
+end   = '6.1'
+
+[[caption]]
+text      = "Your uncle who loves you,"
+from      = '0.4'
+to        = '2.1'
+type      = 'speak'
+
+[[caption]]
+text      = "and who is not a monster"
+from      = '2.8'
+to        = '4.45'
+type      = 'speak'

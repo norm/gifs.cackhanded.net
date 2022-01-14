@@ -1,0 +1,43 @@
+title = 'Chocolate fountain'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'chocolate-fountain',
+    'keeley-jones',
+]
+body_markdown = """
+
+Keeley coats a strawberry in chocolate, then just sticks her tongue into
+the chocolate fountain, expressing pleasure on her face.
+
+"""
+
+info.colours = '75'
+info.filesize = '2.00mb'
+info.frames = '124'
+info.size = '480×270'
+info.time = '6.88 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '5:02.0'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '2.01mb'
+
+[[clip]]
+start = '0'
+end   = '2.9'
+
+[[clip]]
+start = '10.5'
+end   = '14.5'

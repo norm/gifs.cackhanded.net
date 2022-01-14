@@ -1,0 +1,51 @@
+title = 'Bonne chance'
+published = 2022-01-14T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'dani-rojas',
+    'thierry-zoreaux',
+]
+body_markdown = """
+
+Dani Rojas wishes Thierry “Good luck, mi amigo”. Thierry grabs Dani's hand,
+and echoes “Bonne chance, mon ami”.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.46mb'
+info.frames = '66'
+info.size = '480×270'
+info.time = '3.67 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '18:00'
+duration = '3.7'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.46mb'
+
+[[caption]]
+text      = "Good luck,\nmi amigo"
+from      = '0.6'
+to        = '1.9'
+type      = 'speak'
+placement = '210,180'
+
+[[caption]]
+text      = "Bonne chance,\nmon ami"
+from      = '2.1'
+to        = '3.2'
+type      = 'speak'
+placement = '130,180'

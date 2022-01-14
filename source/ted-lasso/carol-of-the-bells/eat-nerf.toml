@@ -1,0 +1,74 @@
+title = 'Eat nerf!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'dani-rojas',
+    'terry-higgins',
+    'thierry-zoreaux',
+]
+body_markdown = """
+
+Terry runs in, screams “EAT NERF!” and starts firing. Dani Rojas and
+Thierry react as though really shot.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.99mb'
+info.frames = '70'
+info.size = '480×270'
+info.time = '3.88 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '18:07.5'
+# duration = '1'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: 1356:678
+crop     = '1200:675'
+
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# list = 1
+# show = 1
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2mb'
+
+[[clip]]
+start = '0'
+end   = '1.9'
+
+[[clip]]
+start = '2.8'
+end   = '3.1'
+
+[[clip]]
+start = '3.6'
+end   = '4.3'
+
+[[clip]]
+start = '5.5'
+end   = '6.5'
+
+[[caption]]
+text      = "EAT NERF!"
+from      = '0.8'
+to        = '1.85'
+type      = 'shout'
+size      = '40'
+placement = '60,205'

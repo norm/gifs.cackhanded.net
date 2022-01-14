@@ -1,0 +1,35 @@
+title = 'Examination'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'dr-rogers',
+]
+body_markdown = """
+
+Dr Rogers peering into Phoebe's mouth, from the mouth's point of view.
+
+"""
+
+info.colours = '81'
+info.filesize = '1.89mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '5.00 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '22:11.0'
+duration = '5'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2mb'

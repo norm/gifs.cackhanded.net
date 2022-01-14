@@ -1,0 +1,50 @@
+title = 'Shoot!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'darts',
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted throws a miniature dart at a miniature dartboard, which hits but
+bounces off and falls to the table. He mutters “Shoot!”
+
+"""
+
+info.colours = '84'
+info.filesize = '1.45mb'
+info.frames = '117'
+info.size = '480×270'
+info.time = '6.50 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '9:42.0'
+duration = '6.5'
+crop     = '1200:675'
+
+[palette]
+add = [
+    '#fc0002',  # darts
+    '#ffcf4d',
+    '#04aa6f',
+    '#036644',
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '25'
+max_size   = '1.46mb'
+
+[[caption]]
+text      = "Shoot!"
+from      = '3.5'
+to        = '4.2'
+type      = 'speak'

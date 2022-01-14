@@ -1,0 +1,49 @@
+title = 'Holy shit!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'coach-beard',
+    'nathan-shelley',
+]
+body_markdown = """
+
+Coach Beard exclaims “Whoa!” and Nate agrees “Holy shit!”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.49mb'
+info.frames = '29'
+info.size = '480×270'
+info.time = '1.60 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '2:43.75'
+duration = '1.6'
+crop     = '1040:585:316:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.5mb'
+
+[[caption]]
+text      = "WHOA!"
+from      = '0.1'
+to        = '0.65'
+type      = 'shout'
+
+[[caption]]
+text      = "HOLY SHIT!"
+from      = '0.75'
+to        = '2'
+type      = 'shout'
+

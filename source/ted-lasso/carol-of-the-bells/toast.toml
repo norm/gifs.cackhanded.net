@@ -1,0 +1,70 @@
+title = 'Toast'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'leslie-higgins',
+]
+body_markdown = """
+
+Higgins raises a toast “To the family we are born with, and to the family
+we make along the way, and, most importantly, to Richmond!”
+
+Everyone raises their glass and echoes “TO RICHMOND!”
+
+"""
+
+info.colours = '80'
+info.filesize = '2.22mb'
+info.frames = '189'
+info.size = '480×270'
+info.time = '10.50 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '28:25.0'
+duration = '10.5'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.25mb'
+
+[[caption]]
+text      = "To the family\nwe are born with"
+from      = '0'
+to        = '1.6'
+type      = 'speak'
+
+[[caption]]
+text      = "And to the family\nwe make along the way"
+from      = '2'
+to        = '5.3'
+type      = 'speak'
+
+[[caption]]
+text      = "And, most importantly,\n "
+from      = '5.31'
+to        = '7.6'
+type      = 'speak'
+
+[[caption]]
+text      = "And, most importantly,\nto Richmond!"
+from      = '7.61'
+to        = '8.59'
+type      = 'speak'
+
+[[caption]]
+text      = "TO RICHMOND!"
+from      = '8.6'
+to        = '12'
+type      = 'shout'
+size      = '40'
+placement = '102,180'

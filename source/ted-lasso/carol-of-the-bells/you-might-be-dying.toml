@@ -1,0 +1,41 @@
+title = 'You might be dying'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'phoebe',
+    'roy-kent',
+]
+body_markdown = """
+
+Roy tells Phoebe “You might be dying”.
+
+"""
+
+info.colours = '80'
+info.filesize = '2.91mb'
+info.frames = '170'
+info.size = '480×270'
+info.time = '9.45 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '11:33.0'
+duration = '9.4'
+crop     = '1200:675:156:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '3.00mb'
+
+[[caption]]
+text      = "I think you might be dying"
+from      = '6.6'
+to        = '8.2'
+type      = 'speak'

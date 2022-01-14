@@ -1,0 +1,64 @@
+title = 'Wanker'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'mr-mann',
+    'rebecca-welton',
+    'ted-lasso',
+]
+body_markdown = """
+
+As Mr. Mann raises a finger at Ted while walking away, Rebecca asks “Did he
+just call you a wanker?” Ted smiles and agrees “Yeah, it’s an inside joke”.
+
+"""
+
+info.colours = '128'
+info.filesize = '2.46mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '4.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '16:13.0'
+duration = '5'
+crop     = '1120:630'
+
+[palette]
+add = [
+    '#07dd7b',  # tree baubles and lights
+    '#136a44',
+    '#c88f46',
+    '#c90009',
+    '#e4cd98',
+    '#9db4ac',  # rebecca's coat
+    '#72867f',
+    '#45615f',
+    '#3a4f4a',
+]
+
+[output]
+colours    = '113'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '2.5mb'
+
+[[caption]]
+text      = "Did he just call\nyou a wanker?"
+from      = '1.2'
+to        = '2.5'
+type      = 'speak'
+placement = '225,180'
+
+[[caption]]
+text      = "Yeah, it’s an\ninside joke"
+from      = '3.1'
+to        = '4.5'
+type      = 'speak'
+placement = '70,180'

@@ -1,0 +1,51 @@
+title = 'Colonisation'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/carol-of-the-bells/index'
+tag = [
+    'leslie-higgins',
+    'sam-obisanya',
+]
+body_markdown = """
+
+Higgins asks Sam “What does Christmas make you think of?”
+Sam replies “Colonisation”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.83mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '2.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_204'
+ext      = 'm4v'
+start    = '7:27.3'
+duration = '3'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.83mb'
+
+[[caption]]
+text      = "What does Christmas\nmake you think of?"
+from      = '0'
+to        = '1.7'
+type      = 'speak'
+placement = 'br'
+
+[[caption]]
+text      = "Colonisation"
+from      = '2.05'
+to        = '2.8'
+type      = 'speak'
+placement = '60,180'
