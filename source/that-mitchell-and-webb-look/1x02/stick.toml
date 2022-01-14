@@ -14,11 +14,11 @@ who then chases and fetches the stick with glee on his face.
 
 """
 
-info.colours = '254'
-info.filesize = '7.14mb'
-info.frames = '150'
-info.size = '480×264'
-info.time = '6.00 seconds'
+info.colours = '128'
+info.filesize = '2.90mb'
+info.frames = '216'
+info.size = '320×176'
+info.time = '14.39 seconds'
 
 [video]
 source   = 'file'
