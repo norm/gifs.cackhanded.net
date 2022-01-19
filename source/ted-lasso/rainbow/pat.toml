@@ -1,0 +1,42 @@
+title = 'Pat'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'nathan-shelley',
+]
+body_markdown = """
+
+As Nate leaves Keeley's office, he pats the pink leopard on the head.
+
+"""
+
+info.colours = '81'
+info.filesize = '1.14mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '2.67 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '14:23.5'
+duration = '2.7'
+crop     = '1200:675'
+
+[palette]
+add = [
+    '#431e20',  # leopard
+    '#7e4448',
+    '#956567',
+]
+
+[output]
+brightness = '0.025'
+colours    = '77'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.6mb'

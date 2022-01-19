@@ -1,0 +1,38 @@
+title = 'Big'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'keeley-jones',
+    'nathan-shelley',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca demonstrates to Keeley and Nate her technique of making herself as big
+as possible to feel her own power.
+
+"""
+
+info.colours = '75'
+info.filesize = '1.87mb'
+info.frames = '126'
+info.size = '400×225'
+info.time = '6.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '19:09.8'
+duration = '7'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.9mb'
+width      = '400'

@@ -1,0 +1,44 @@
+title = 'BOOM!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'coach-beard',
+    'ted-lasso',
+]
+body_markdown = """
+
+After having delivered a medium quality pun between them,
+Coach Beard and Ted go “BOOM!” at each other.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.60mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '1.82 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '6:32.4'
+duration = '1.8'
+crop     = '1200:675'
+
+[output]
+brightness = '0.025'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.6mb'
+
+[[caption]]
+text      = "BOOM!"
+from      = '0.7'
+to        = '1.4'
+type      = 'shout'
+size      = '40'

@@ -1,0 +1,73 @@
+title = 'Every-fucking-where'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'afc-richmond',
+    'nelson-road',
+    'roy-kent',
+]
+body_markdown = """
+
+The crowd at Nelson Road screaming “He’s here, he’s there, he’s
+every-fucking-where, Roy Kent! Roy Kent!” at Roy as he walks over to
+the other coaches.
+
+"""
+
+info.colours = '128'
+info.filesize = '2.73mb'
+info.frames = '88'
+info.size = '400×225'
+info.time = '5.87 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '36:52.2'
+duration = '5.8'
+crop     = '1120:630:240:0'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '30'
+max_size   = '2.75mb'
+width      = '400'
+
+[[caption]]
+text      = "HE’S HERE"
+from      = '0'
+to        = '0.6'
+type      = 'shout'
+placement = '50,172'
+
+[[caption]]
+text      = "HE’S HERE, HE’S THERE"
+from      = '0.61'
+to        = '1.2'
+type      = 'shout'
+
+[[caption]]
+text      = "HE’S EVERY-FUCKING-WHERE"
+from      = '1.21'
+to        = '2.3'
+type      = 'shout'
+margin    = '0'
+placement = '16,172'
+
+[[caption]]
+text      = "ROY KENT!"
+from      = '2.31'
+to        = '3.5'
+type      = 'shout'
+placement = '60,172'
+
+[[caption]]
+text      = "ROY KENT! ROY KENT!"
+from      = '3.51'
+to        = '5.1'
+type      = 'shout'

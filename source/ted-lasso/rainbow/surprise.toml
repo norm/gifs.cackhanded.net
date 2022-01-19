@@ -1,0 +1,38 @@
+title = 'Surprise'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'isaac-mcadoo',
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy’s face appears in the darkness, lit up by his phone.
+Isaac and Ted jump.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.68mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '2.00 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '20:11.3'
+duration = '2'
+crop     = '1200:675'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.7mb'

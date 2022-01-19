@@ -56,7 +56,7 @@ info.time = ''
 
 [video]
 source   = 'file'
-file     = 'ted_lasso_204'
+file     = 'ted_lasso_206'
 ext      = 'm4v'
 start    = '0:00.0'
 duration = '1'

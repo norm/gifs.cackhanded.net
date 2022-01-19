@@ -1,0 +1,53 @@
+title = 'A simple solution'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'keeley-jones',
+    'nathan-shelley',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca comments “There’s a simple solution to that, I’ll just buy the
+restaurant”. Keeley’s jaw drops open.
+
+"""
+
+info.colours = '85'
+info.filesize = '1.34mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '4.17 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '14:58.2'
+duration = '4.2'
+crop     = '1200:675'
+
+[palette]
+add = [
+    '#91171c',  # painting
+    '#6e8c87',
+    '#606f43',  # plant
+    '#832b3b',  # keeley's top
+    '#cc5844',
+]
+
+[output]
+brightness = '0.025'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=2'
+fps        = '18'
+loss       = '20'
+max_size   = '1.34mb'
+
+[[caption]]
+text      = "There’s a simple solution to that,\nI’ll just buy the restaurant"
+from      = '0.8'
+to        = '2.9'
+type      = 'speak'

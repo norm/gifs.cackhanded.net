@@ -1,0 +1,59 @@
+title = 'Solid negotiation tactic'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy tells Ted “Fuck off”.
+Ted nods, “That’s a solid negotiation tactic right there.”
+
+"""
+
+info.colours = '86'
+info.filesize = '0.78mb'
+info.frames = '64'
+info.size = '480×270'
+info.time = '3.56 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '16:24.0'
+duration = '3.5'
+crop     = '1200:675'
+
+[palette]
+add = [
+    '#d29402',      # yellow sauce bottle
+    '#cd9804',
+    '#bf9104',
+    '#a1c696',      # food standards sticker
+    '#b6d9df',
+    '#437a85',      # window
+]
+
+[output]
+brightness = '0.025'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.8mb'
+
+[[caption]]
+text      = "Fuck off"
+from      = '0.3'
+to        = '1.3'
+type      = 'speak'
+
+[[caption]]
+text      = "That’s a solid\nnegotiation tactic right there"
+from      = '1.6'
+to        = '3.5'
+type      = 'speak'

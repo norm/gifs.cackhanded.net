@@ -1,0 +1,48 @@
+title = 'Why won’t you let me be happy?'
+published = 2022-01-21T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy, around a mouthful of kebab, asks “Why won’t you let me be happy?”
+
+"""
+
+info.colours = '83'
+info.filesize = '0.54mb'
+info.frames = '42'
+info.size = '480×270'
+info.time = '2.34 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '16:43.0'
+duration = '2.3'
+crop     = '1200:675'
+
+[palette]
+add = [
+    '#d29402',      # yellow sauce bottle
+    '#cd9804',
+    '#bf9104',
+]
+
+[output]
+brightness = '0.025'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.55mb'
+
+[[caption]]
+text      = "Why won’t you let me be happy?"
+from      = '0.6'
+to        = '2.1'
+type      = 'speak'

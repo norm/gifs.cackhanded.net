@@ -1,0 +1,43 @@
+title = 'I am not crazy'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'nathan-shelley',
+    'sharon-fieldstone',
+]
+body_markdown = """
+
+Nate tells Dr Sharon “I’m not crazy” and she looks super convinced.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.50mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '2.23 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '6:44.4'
+duration = '2.2'
+crop     = '1200:675'
+
+[output]
+brightness = '0.025'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.5mb'
+
+[[caption]]
+text      = "I am not crazy"
+from      = '0.26'
+to        = '1.2'
+type      = 'speak'
+placement = '70,217'

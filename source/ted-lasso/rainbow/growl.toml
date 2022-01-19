@@ -1,0 +1,34 @@
+title = 'Growl'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy growls at a kid, who just looks delighted.
+
+"""
+
+info.colours = '81'
+info.filesize = '0.73mb'
+info.frames = '42'
+info.size = '480×270'
+info.time = '2.34 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '35:36.2'
+duration = '2.3'
+crop     = '1200:675'
+
+[output]
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.73mb'

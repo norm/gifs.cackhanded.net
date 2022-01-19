@@ -1,0 +1,40 @@
+title = 'Side eye'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted saying “Ain’t no side-eye like a Roy Kent side-eye”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.91mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.49 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '19:54.8'
+duration = '2.5'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.92mb'
+
+[[caption]]
+text      = "Ain’t no side-eye\nlike a Roy Kent side-eye"
+from      = '0'
+to        = '2.2'
+type      = 'speak'

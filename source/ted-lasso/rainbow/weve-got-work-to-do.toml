@@ -1,0 +1,49 @@
+title = 'We’ve got work to do'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Slack jawed, Rebecca mutters “Oh my god” then turns positive.
+“We’ve got work to do.”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.53mb'
+info.frames = '74'
+info.size = '480×270'
+info.time = '4.12 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '15:26.55'
+duration = '4.1'
+crop     = '1200:675'
+
+[output]
+brightness = '0.025'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = 'auto'
+
+[[caption]]
+text      = "oh my god"
+from      = '0'
+to        = '1.6'
+type      = 'speak'
+size      = '16'
+
+[[caption]]
+text      = "We’ve got work to do"
+from      = '2.9'
+to        = '3.7'
+type      = 'speak'

@@ -1,0 +1,55 @@
+title = 'Cutting up shit'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'hus',
+]
+body_markdown = """
+
+The kebab shop owner Hus explaining how he would’ve made a good doctor,
+saying “Bedside manner, reading charts, cutting up shit…”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.69mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '3.32 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '17:05.2'
+duration = '3.3'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.7mb'
+
+[[caption]]
+text      = "Bedside manner,"
+from      = '0'
+to        = '1'
+type      = 'speak'
+placement = '46,180'
+
+[[caption]]
+text      = "Bedside manner, reading charts,"
+from      = '1'
+to        = '2.3'
+type      = 'speak'
+placement = '46,180'
+
+[[caption]]
+text      = "Bedside manner, reading charts,\ncutting up shit"
+from      = '2.3'
+to        = '3.3'
+type      = 'speak'

@@ -1,0 +1,41 @@
+title = 'Too many fucks?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy asks Ted “Too many fucks?”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.71mb'
+info.frames = '51'
+info.size = '480×270'
+info.time = '2.82 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '25:22.7'
+duration = '2.8'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.72mb'
+
+[[caption]]
+text      = "Too many fucks?"
+from      = '0.6'
+to        = '1.8'
+type      = 'speak'

@@ -1,0 +1,73 @@
+title = 'With GIFs and everything'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy tells Ted “People tweet about me, with GIFs and everything”.
+Ted replies “I know some folks pronounce it GIFs, but I hear you”.
+
+(Roy pronounces it with a soft-G, like gibberish;
+Ted with a hard-G, like gift).
+
+"""
+
+info.colours = '86'
+info.filesize = '1.31mb'
+info.frames = '114'
+info.size = '480×270'
+info.time = '6.32 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '16:32.0'
+duration = '6.35'
+crop     = '1200:675'
+
+[palette]
+add = [
+    '#ce9705',      # yellow sauce bottle
+    '#be863b',
+    '#c59300',
+    '#c2e7a9',      # food standards sticker
+    '#bcdeb9',
+    '#65a0a5',      # window?
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.32mb'
+
+[[caption]]
+text      = "People tweet about me,\nwith GIFs and everything"
+from      = '0'
+to        = '3.9'
+type      = 'speak'
+
+[[caption]]
+text      = "I know some folks\npronounce it GIFs, but I hear you"
+from      = '3.91'
+to        = '6.5'
+type      = 'speak'
+
+
+
+
+
+
+
+
+
+
+
+

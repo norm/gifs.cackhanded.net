@@ -1,0 +1,43 @@
+title = 'beat too late'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'dani-rojas',
+    'jamie-tartt',
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted tells Dani Rojas “That’s a great call Dani, and not at all a beat
+too late”. Dani, grinning, turns to Jamie and raises his eyebrows.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.61mb'
+info.frames = '72'
+info.size = '480×270'
+info.time = '4.00 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '4:46.0'
+duration = '4'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.62mb'
+
+[[caption]]
+text      = "That’s a great call Dani,\nand not at all a beat too late"
+from      = '0.6'
+to        = '2.8'
+type      = 'speak'

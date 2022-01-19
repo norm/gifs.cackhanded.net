@@ -1,0 +1,48 @@
+title = 'Well fit'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/rainbow/index'
+tag = [
+    'keeley-jones',
+    'rebecca-welton',
+]
+body_markdown = """
+
+Keeley tells Rebecca “You’d look well fit with pigtails”.
+Rebecca shrugs, grinning, and confirms “I do”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.75mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.50 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_205'
+ext      = 'm4v'
+start    = '18:48.3'
+duration = '2.5'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.76mb'
+
+[[caption]]
+text      = "You’d look well fit with pigtails"
+from      = '0.1'
+to        = '1.8'
+type      = 'speak'
+
+[[caption]]
+text      = "I do"
+from      = '1.85'
+to        = '2.5'
+type      = 'speak'
