@@ -1,0 +1,53 @@
+title = 'Are you naked in my kitchen?'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-signal/index'
+tag = [
+    'luca',
+    'rebecca-welton',
+    'tea',
+]
+body_markdown = """
+
+As Luca makes some tea, from the bedroom Rebecca shouts “Wait, are you
+naked in my kitchen?”
+
+"""
+
+info.colours = '80'
+info.filesize = '1.11mb'
+info.frames = '70'
+info.size = '480×270'
+info.time = '3.88 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_206'
+ext      = 'm4v'
+start    = '0:59.4'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.12mb'
+# FIXME stabilise was running across the entire video, not only the clips;
+# pull out the clips into a cachable video, then produce GIF from that
+# stabilise  = 'static'
+
+[[clip]]
+start = '21.6'
+end   = '24.45'
+
+[[clip]]
+start = '0'
+end   = '1.1'
+
+[[caption]]
+text      = "Wait, are you naked in my kitchen?"
+from      = '0.7'
+to        = '2.8'
+type      = 'speak'

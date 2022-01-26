@@ -1,0 +1,43 @@
+title = 'Shipping'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/the-signal/index'
+tag = [
+    'keeley-jones',
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted tells Keeley and Roy “I am shipping the heck out of you two”.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.06mb'
+info.frames = '43'
+info.size = '480×270'
+info.time = '2.38 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_206'
+ext      = 'm4v'
+start    = '3:34.5'
+duration = '2.35'
+crop     = '1040:585:120:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.06mb'
+
+[[caption]]
+text      = "I am shipping the heck out of you two"
+from      = '0'
+to        = '1.6'
+type      = 'speak'
