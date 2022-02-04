@@ -1,0 +1,40 @@
+title = 'Cartoon rat'
+published = 2022-02-04T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/headspace/index'
+tag = [
+    'keeley-jones',
+]
+body_markdown = """
+
+Keeley telling Rebecca “Stop your dithering, and go fuck your cartoon rat!”
+"""
+
+info.colours = '80'
+info.filesize = '0.94mb'
+info.frames = '48'
+info.size = '480×273'
+info.time = '2.67 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_207'
+ext      = 'm4v'
+start    = '10:17.0'
+duration = '2.7'
+crop     = '950:540:0:0'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.95mb'
+
+[[caption]]
+text      = "Stop your dithering,\nand go fuck your cartoon rat!"
+from      = '0.5'
+to        = '3'
+type      = 'speak'
