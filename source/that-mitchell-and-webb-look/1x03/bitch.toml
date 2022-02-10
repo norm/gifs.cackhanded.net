@@ -1,0 +1,47 @@
+title = 'Bitch'
+published = 2022-02-17T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x03/index'
+tag = [
+    'vicar',
+]
+body_markdown = """
+
+A vicar tells one of a couple new to the area who have come to visit
+the church “We all thought you were a bitch”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.63mb'
+info.frames = '60'
+info.size = '480×264'
+info.time = '3.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-103'
+ext      = 'm4v'
+start    = '7:04.2'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.65mb'
+
+[[clip]]
+start = '0'
+end   = '2.55'
+
+[[clip]]
+start = '11.1'
+end   = '12.6'
+
+[[caption]]
+text      = "We all thought you were a bitch"
+from      = '0'
+to        = '2.5'
+type      = 'speak'

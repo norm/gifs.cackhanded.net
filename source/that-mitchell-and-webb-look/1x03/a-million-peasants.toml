@@ -1,0 +1,54 @@
+title = 'A million peasants'
+published = 2022-03-16T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x03/index'
+tag = [
+    'vicar',
+]
+body_markdown = """
+
+A vicar tells a couple new to the area who have come to visit the church “My
+kind have harvested the souls of a million peasants, and I couldn’t give a
+ha’penny jizz about your internet-assembled philosophy".
+
+"""
+
+info.colours = '80'
+info.filesize = '2.48mb'
+info.frames = '128'
+info.size = '480×264'
+info.time = '8.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-103'
+ext      = 'm4v'
+start    = '7:01.8'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '2.5mb'
+
+[[clip]]
+start = '26'
+end   = '32.5'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[caption]]
+text      = "My kind have harvested the souls\nof a million peasants"
+from      = '0'
+to        = '3'
+type      = 'speak'
+
+[[caption]]
+text      = "And I couldn’t give a ha’penny jizz\nabout your internet-assembled philosophy"
+from      = '3.01'
+to        = '6.5'
+type      = 'speak'

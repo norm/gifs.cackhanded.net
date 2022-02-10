@@ -1,0 +1,42 @@
+title = 'Are you testing me, Satan?'
+published = 2022-03-03T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x03/index'
+tag = [
+    '404-page-candidate',
+    'vicar',
+]
+body_markdown = """
+
+A vicar asks of a couple new to the area who have come to visit the
+church “Are you testing me, Satan?”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.59mb'
+info.frames = '69'
+info.size = '480×264'
+info.time = '4.59 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-103'
+ext      = 'm4v'
+start    = '6:30.4'
+duration = '4.6'
+
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.6mb'
+
+[[caption]]
+text      = "Are you testing me, Satan?"
+from      = '0.7'
+to        = '2.8'
+type      = 'speak'

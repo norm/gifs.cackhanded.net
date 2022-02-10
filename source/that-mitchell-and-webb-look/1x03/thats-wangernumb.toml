@@ -1,0 +1,41 @@
+title = 'That’s Wangernumb!'
+published = 2022-03-10T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x03/index'
+tag = [
+    'numberwang',
+    'numberwang-host',
+]
+body_markdown = """
+
+The host of Numberwang excitedly declares “That’s Wangernumb!”
+
+"""
+
+info.colours = '127'
+info.filesize = '0.29mb'
+info.frames = '23'
+info.size = '480×264'
+info.time = '1.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-103'
+ext      = 'm4v'
+start    = '11:57.5'
+duration = '1.5'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '15'
+loss       = '20'
+max_size   = '0.3mb'
+
+[[caption]]
+text      = "THAT’S WANGERNUMB!"
+from      = '0'
+to        = '2'
+type      = 'shout'
+size      = '40'

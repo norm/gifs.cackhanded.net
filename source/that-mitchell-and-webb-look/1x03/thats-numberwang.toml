@@ -1,0 +1,50 @@
+title = 'That’s Numberwang!'
+published = 2022-02-24T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x03/index'
+tag = [
+    'contestant-julie',
+    'numberwang-host',
+    'numberwang',
+]
+body_markdown = """
+
+The host of Numberwang declares “That’s Numberwang!” and contestant
+Julie scoffs a number cake.
+
+"""
+
+info.colours = '128'
+info.filesize = '0.42mb'
+info.frames = '30'
+info.size = '480×264'
+info.time = '1.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-103'
+ext      = 'm4v'
+start    = '10:47.9'
+duration = '2'
+
+[palette]
+add = [
+    '#adc284',  # green number
+    '#9caf77',
+]
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.44mb'
+mode       = 'full'
+
+[[caption]]
+text      = "THAT’S NUMBERWANG!"
+from      = '0'
+to        = '0.8'
+type      = 'shout'
+size      = '40'

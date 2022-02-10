@@ -1,0 +1,48 @@
+title = 'Priceless!'
+published = 2022-02-10T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x03/index'
+tag = [
+    'numberwang-host',
+    'numberwang',
+    'gyles-brandreth',
+]
+body_markdown = """
+
+Gyles Brandreth, eating a cake, mumbles "Three?" to which the host of
+Numberwang laughs, shaking his head with delight, and declares “Priceless!”
+
+"""
+
+info.colours = '127'
+info.filesize = '0.79mb'
+info.frames = '59'
+info.size = '480×264'
+info.time = '3.94 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-103'
+ext      = 'm4v'
+start    = '11:09.9'
+duration = '3.9'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.8mb'
+
+[[caption]]
+text      = "Three?"
+from      = '0.8'
+to        = '1.5'
+type      = 'speak'
+
+[[caption]]
+text      = "Priceless!"
+from      = '3.1'
+to        = '4'
+type      = 'speak'
