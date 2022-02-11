@@ -1,0 +1,51 @@
+title = 'Oops'
+published = 2022-02-11T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/man-city/index'
+tag = [
+    'coach-beard',
+    'james-tartt',
+]
+body_markdown = """
+
+Coach Beard ejects James Tartt from the locker room. As James hits his
+head on the door, Beard comments “Oops.”
+
+"""
+
+info.colours = '80'
+info.filesize = '1.64mb'
+info.frames = '75'
+info.size = '400×225'
+info.time = '4.16 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_208'
+ext      = 'm4v'
+start    = '38:17.4'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.65mb'
+width      = '400'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '3.35'
+end   = '5.5'
+
+[[caption]]
+text      = "oops"
+from      = '3.3'
+to        = '4'
+type      = 'speak_400'
+placement = '190,182'
