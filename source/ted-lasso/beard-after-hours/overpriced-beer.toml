@@ -1,0 +1,51 @@
+title = 'Overpriced beer'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/beard-after-hours/index'
+tag = [
+    'baz',
+    'coach-beard',
+    'jeremy',
+    'paul',
+]
+body_markdown = """
+
+Coach Beard asks “Who wants an overpriced beer that I’m paying for?”
+
+Jeremy, Baz, and Paul instantly raise their hands.
+
+"""
+
+info.colours = '96'
+info.filesize = '1.53mb'
+info.frames = '69'
+info.size = '480×270'
+info.time = '3.82 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_209'
+ext      = 'm4v'
+start    = '10:54.0'
+duration = '3.8'
+crop     = '1200:675'
+
+[palette]
+add = [
+    '#44223e',  # purple shirt
+    '#23172a',
+]
+
+[output]
+colours    = '88'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.54mb'
+
+[[caption]]
+text      = "Who wants an overpriced beer\nthat I’m paying for?"
+from      = '0.3'
+to        = '2.5'
+type      = 'speak'

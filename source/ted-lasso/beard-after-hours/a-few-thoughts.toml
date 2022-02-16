@@ -1,0 +1,41 @@
+title = 'I got a few thoughts'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/beard-after-hours/index'
+tag = [
+    'coach-beard',
+]
+body_markdown = """
+
+Coach Beard raises his pint glass, declares “I’ve got a few thoughts”,
+and downs it.
+
+"""
+
+info.colours = '80'
+info.filesize = '2.20mb'
+info.frames = '118'
+info.size = '480×270'
+info.time = '6.56 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_209'
+ext      = 'm4v'
+start    = '6:24.4'
+duration = '6.5'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.22mb'
+
+[[caption]]
+text      = "I’ve got a few thoughts"
+from      = '1'
+to        = '2'
+type      = 'speak'
