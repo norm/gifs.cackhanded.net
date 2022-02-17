@@ -1,0 +1,44 @@
+title = 'Settle this like children'
+published = 2022-02-19T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim declares “On Monday we settle this like children” then notices he still
+has some water balloon stuck to his hand, and tries to shake it off.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.76mb'
+info.frames = '76'
+info.size = '480×270'
+info.time = '6.33 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '18:00.9'
+duration = '6.3'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.8mb'
+
+[[caption]]
+text      = "On Monday we settle this like children"
+from      = '0'
+to        = '3'
+type      = 'zim_speak'
+margin    = '0'
+placement = '15,226'
+

@@ -1,0 +1,42 @@
+title = 'Worth it'
+published = 2022-03-01T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'melvin',
+    'ms-bitters',
+]
+body_markdown = """
+
+Ms Bitters asks Melvin “Would you say that losing the use of your mouth was
+worth it?” He only nods, because he has lost the use of his mouth.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.33mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '4.51 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '13:00.4'
+duration = '4.5'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.34mb'
+
+[[caption]]
+text      = "Would you say that losing\nthe use of your mouth was worth it?"
+from      = '0'
+to        = '3'
+type      = 'zim_speak'

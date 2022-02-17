@@ -1,0 +1,43 @@
+title = 'Twitching'
+published = 2022-03-03T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'dib-membrane',
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+Zim's eyes twitch as Dib leers at him.
+
+"""
+
+info.colours = '64'
+info.filesize = '0.22mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '1.88 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '16:41'
+crop     = '710:400'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '20'
+max_size   = '0.22mb'
+
+[[clip]]
+start = '0'
+end   = '1.3'
+
+[[clip]]
+start = '2.9'
+end   = '3.5'

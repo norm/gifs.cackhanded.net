@@ -1,0 +1,40 @@
+title = 'Every last cell'
+published = 2022-02-18T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim declares “I will annihilate you down to your every last cell!”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.68mb'
+info.frames = '44'
+info.size = '480×270'
+info.time = '3.66 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '17:57.2'
+duration = '3.65'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.7mb'
+
+[[caption]]
+text      = "I will annihilate you\ndown to your every last cell!"
+from      = '0'
+to        = '4'
+type      = 'zim_speak'

@@ -1,0 +1,37 @@
+title = 'Grinding'
+published = 2022-02-21T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'dib-membrane',
+]
+body_markdown = """
+
+Dib, grinding a piece of metal.
+
+"""
+
+info.colours = '64'
+info.filesize = '0.30mb'
+info.frames = '15'
+info.size = '480×270'
+info.time = '0.84 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '19:05.4'
+crop     = '710:400'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '20'
+max_size   = '0.31mb'
+
+[[clip]]
+start = '4.8'
+end   = '5.6'

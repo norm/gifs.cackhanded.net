@@ -1,0 +1,36 @@
+title = 'Analysis'
+published = 2022-02-20T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim's computer analyses the glue on his hand, and finds it to contain
+asteroid, rat hair, cupcake, ear wax, big dook, water, wale jellow,
+dirty dirt, and past.
+
+"""
+
+info.colours = '128'
+info.filesize = '0.43mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '2.83 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '18:15'
+duration = '2.8'
+crop     = '710:400'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.45mb'

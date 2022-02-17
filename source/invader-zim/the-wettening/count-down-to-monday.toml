@@ -1,0 +1,35 @@
+title = 'Count down to Monday'
+published = 2022-02-25T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim presses a button to start his computer counting down to Monday. It reads
+“48:00”.
+
+"""
+
+info.colours = '97'
+info.filesize = '0.28mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '3.01 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '18:18'
+duration = '3'
+crop     = '710:400'
+
+[output]
+colours    = '96'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.3mb'

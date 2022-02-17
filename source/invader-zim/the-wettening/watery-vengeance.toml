@@ -1,0 +1,43 @@
+title = 'Watery vengeance'
+published = 2022-02-26T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'dib-membrane',
+    'gaz-membrane',
+    'invader-zim',
+]
+body_markdown = """
+
+Gaz, dripping wet, and Zim, grinning, look on as Dib crawls through a puddle
+declaring “Soon watery vengeance will be mine!”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.25mb'
+info.frames = '38'
+info.size = '480×270'
+info.time = '3.16 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '16:03.8'
+duration = '3.15'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.25mb'
+
+[[caption]]
+text      = "Soon watery vengeance will be mine!"
+from      = '0'
+to        = '2.7'
+type      = 'zim_speak'

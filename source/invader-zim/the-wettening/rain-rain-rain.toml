@@ -1,0 +1,69 @@
+title = 'Rain rain rain'
+published = 2022-02-24T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'keef',
+    'mary',
+    'peyoopi',
+    'tae',
+    'the-letter-m',
+    'torque-smackey',
+    'zootch',
+]
+body_markdown = """
+
+Children playing in the rain, chanting “splash splash splash,
+rain, rain, rain, we love rain”.
+
+"""
+
+info.colours = '129'
+info.filesize = '2.75mb'
+info.frames = '58'
+info.size = '480×270'
+info.time = '4.83 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '13:55.8'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#ea918f',  # keef's hair accent
+]
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = 'no'
+max_size   = 'auto'
+
+[[clip]]
+start = '0'
+end   = '3.1'
+
+[[clip]]
+start = '5.4'
+end   = '7.2'
+
+[[caption]]
+text      = "we love rain"
+from      = '0'
+to        = '1.7'
+type      = 'zim_shout'
+[[caption]]
+text      = "splash splash splash"
+from      = '1.71'
+to        = '3'
+type      = 'zim_shout'
+[[caption]]
+text      = "rain rain rain"
+from      = '3.01'
+to        = '5'
+type      = 'zim_shout'

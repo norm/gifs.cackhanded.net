@@ -1,0 +1,37 @@
+title = 'Hammering'
+published = 2022-02-22T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'dib-membrane',
+]
+body_markdown = """
+
+Dib, hammering a metal pipe.
+
+"""
+
+info.colours = '64'
+info.filesize = '0.20mb'
+info.frames = '13'
+info.size = '480×270'
+info.time = '0.87 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '19:05.4'
+crop     = '710:400:0:80'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.2mb'
+
+[[clip]]
+start = '1.5'
+end   = '2.4'

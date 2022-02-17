@@ -1,0 +1,44 @@
+title = 'Why must this be?!'
+published = 2022-03-05T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'dib-membrane',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim, writhing in a puddle of water and burning, dramatically asks
+“Why must this be?!”
+
+Dib’s shadow appears.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.60mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '3.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '17:40.1'
+duration = '3.5'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.6mb'
+
+[[caption]]
+text      = "WHY MUST THIS BE?!"
+from      = '1.6'
+to        = '3.6'
+type      = 'zim_shout'

@@ -1,0 +1,38 @@
+title = 'We love rain'
+published = 2022-02-28T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'keef',
+    'letty',
+    'spoo',
+    'tae',
+    'the-letter-m',
+]
+body_markdown = """
+
+Children who love rain slowly rotating in the air.
+
+"""
+
+info.colours = '128'
+info.filesize = '1.71mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '1.50 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '14:04.9'
+duration = '1.5'
+crop     = '710:400:2000:40'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '24'
+loss       = 'no'
+max_size   = 'auto'

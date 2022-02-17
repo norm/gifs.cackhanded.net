@@ -1,0 +1,35 @@
+title = 'Shower'
+published = 2022-03-04T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/the-wettening/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim standing under a shower, wearing protective goggles, examining how the
+water doesn’t burn him.
+
+"""
+
+info.colours = '81'
+info.filesize = '1.68mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '4.01 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e05'
+ext      = 'm4v'
+start    = '18:43.1'
+duration = '4'
+crop     = '710:400'
+
+[output]
+colours    = '80'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '30'
+max_size   = '1.7mb'
