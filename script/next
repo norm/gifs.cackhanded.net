@@ -118,11 +118,7 @@ function list_scheduled_gifs {
 
         [ $next = 1 -a $filling = 0 ] && break
     done
-
-    if [ $unscheduled_day = 1 -a $next = 0 ]; then
-        echo ''
-        count_unscheduled
-    fi
+    return 0
 }
 
 function count_unscheduled {

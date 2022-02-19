@@ -70,11 +70,13 @@ test_future:
 unstash:
 	@git stash pop
 
-next: gifwrapped
+next:
 	@clear
-	@./script/next 60 high
+	@./script/next 33 am high
 	@echo ''
-	@./script/next
+	@./script/next 33 pm high
+	@echo ''
+	@./script/next filling
 
 fonts:
 	mkdir -p fonts
