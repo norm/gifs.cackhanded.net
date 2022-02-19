@@ -84,23 +84,23 @@ function create_gif {
     while true; do
         read -s -N1 key
         case $key in
-            g)      printf "$yellow  > Send to GIFwrapped\n"
+            g|G)    printf "$yellow  > Send to GIFwrapped\n"
                     (
                         make gifwrapped
                         printf "  > Done$reset\n"
                     ) &
                     ;;
-            i)      printf "$yellow  * Send infodump to Sublime$reset\n"
+            i|I)    printf "$yellow  * Send infodump to Sublime$reset\n"
                     gifsicle --info --color-info --size-info $output | subl -n -
                     ;;
-            l)      printf "$yellow%$((cols-1))s$reset\n" '' | tr ' ' -
+            l|L)    printf "$yellow%$((cols-1))s$reset\n" '' | tr ' ' -
                     ;;
             $'\f')  clear
                     ;;
-            p)      printf "$yellow  + Preview$reset\n"
+            p|P)    printf "$yellow  + Preview$reset\n"
                     open -a Preview $output
                     ;;
-            s)      printf "$yellow  + Safari$reset\n"
+            s|S)    printf "$yellow  + Safari$reset\n"
                     open -a Safari $output
                     ;;
             ' ')    printf "$yellow  * Rebuild$reset"
@@ -111,7 +111,7 @@ function create_gif {
             \?)     echo ''
                     echo 'Hit: [ ]:Rebuild [G]ifwrapped [I]nfo [L]ine [P]review [Q]uit [S]afari'
                     ;;
-            q)      break
+            q|Q)    break
                     ;;
         esac
     done
