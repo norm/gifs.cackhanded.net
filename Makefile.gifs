@@ -4,9 +4,9 @@ TOML  := $(shell find source -name '[a-z]*.toml')
 GIF   := $(TOML:$(TOML_DIR)/%.toml=$(TOML_DIR)/%.gif)
 THUMB := $(TOML:$(TOML_DIR)/%.toml=$(TOML_DIR)/%.tn.gif)
 
-.PHONY: all gifwrapped remove removethumbs
+.PHONY: all gifwrapped remove removethumbs silence
 
-all: $(GIF) $(THUMB)
+all: silence $(GIF) $(THUMB)
 
 .SECONDEXPANSION:
 $(TOML_DIR)/%.gif: $(TOML_DIR)/%.toml
@@ -32,6 +32,9 @@ remove:
 
 removethumbs:
 	@rm -f $(THUMB)
+
+silence:
+	@:
 
 gifwrapped:
 	@gifwrapped $(GIF)
