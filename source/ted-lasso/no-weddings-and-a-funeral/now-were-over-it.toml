@@ -1,0 +1,55 @@
+title = 'Now we’re over it'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/no-weddings-and-a-funeral/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca tells her mother “The whole world used to love that song, and then
+we heard it ad-nauseum, and now we’re over it”.
+
+"""
+
+info.colours = '80'
+info.filesize = '2.08mb'
+info.frames = '92'
+info.size = '480×270'
+info.time = '5.10 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_210'
+ext      = 'm4v'
+start    = '5:22.7'
+duration = '5.1'
+crop     = '1200:675'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.1mb'
+
+[[caption]]
+text      = "The whole world used to love that song"
+from      = '0'
+to        = '2.2'
+type      = 'speak'
+margin    = '0'
+placement = '6,217'
+
+[[caption]]
+text      = "And then we heard it ad-nauseum"
+from      = '2.21'
+to        = '3.4'
+type      = 'speak'
+
+[[caption]]
+text      = "And now we’re over it"
+from      = '3.41'
+to        = '5.2'
+type      = 'speak'

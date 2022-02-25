@@ -1,0 +1,48 @@
+title = 'You live, you die, you’re done'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/no-weddings-and-a-funeral/index'
+tag = [
+    'keeley-jones',
+    'roy-kent',
+]
+body_markdown = """
+
+Roy declares “You live, you die, you’re done. Goodnight.” and walks off,
+leaving Keeley looking taken aback.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.27mb'
+info.frames = '95'
+info.size = '480×270'
+info.time = '5.27 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_210'
+ext      = 'm4v'
+start    = '3:46.1'
+duration = '5.25'
+crop     = '960:540:396:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.28mb'
+
+[[caption]]
+text      = "You live, you die, you’re done"
+from      = '0'
+to        = '2'
+type      = 'speak'
+
+[[caption]]
+text      = "Goodnight"
+from      = '2.4'
+to        = '3.2'
+type      = 'speak'

@@ -1,0 +1,55 @@
+title = 'No trainers'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/no-weddings-and-a-funeral/index'
+tag = [
+    'dani-rojas',
+    'isaac-mcadoo',
+    'richard-montlaur',
+    'sam-obisanya',
+    'thierry-zoreaux',
+    'tommy-winchester',
+    'tyler-shannon',
+]
+body_markdown = """
+
+Isaac instructs the team “No trainers”. Thierry waves his hands, calling
+for calm.
+
+"""
+
+info.colours = '95'
+info.filesize = '1.23mb'
+info.frames = '50'
+info.size = '480×270'
+info.time = '2.77 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_210'
+ext      = 'm4v'
+start    = '4:07.3'
+crop     = '1200:675'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.25mb'
+
+[[clip]]
+start = '0'
+end   = '1'
+
+[[clip]]
+start = '3'
+end   = '4.85'
+
+[[caption]]
+text      = "No trainers"
+from      = '0'
+to        = '0.95'
+type      = 'speak'
+placement = '260,217'

@@ -1,0 +1,50 @@
+title = 'Avenge me!'
+published = 2022-02-25T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/no-weddings-and-a-funeral/index'
+tag = [
+    'keeley-jones',
+    'roy-kent',
+]
+body_markdown = """
+
+Roy tells Keeley, “Avenge me, Keeley”
+then repeats more forcefully “Avenge me!”
+
+"""
+
+info.colours = '128'
+info.filesize = '1.26mb'
+info.frames = '81'
+info.size = '480×270'
+info.time = '4.49 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_210'
+ext      = 'm4v'
+start    = '7:11.0'
+duration = '4.5'
+crop     = '1200:675'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.26mb'
+
+[[caption]]
+text      = "Avenge me, Keeley"
+from      = '0'
+to        = '1'
+type      = 'speak'
+placement = 'br'
+
+[[caption]]
+text      = "AVENGE ME!"
+from      = '2'
+to        = '3'
+type      = 'shout'
+placement = '255,217'
