@@ -1,0 +1,51 @@
+title = 'The machine will now decide your fate'
+published = 2022-03-09T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+Ms Bitters declares “The machine will now decide your fate” and slides
+papers into it. A report is ejected from a different slot.
+
+"""
+
+info.colours = '95'
+info.filesize = '0.96mb'
+info.frames = '78'
+info.size = '480×270'
+info.time = '5.19 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '2:36.7'
+crop     = '710:400'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.97mb'
+
+[[clip]]
+start = '0'
+end   = '3.8'
+
+[[clip]]
+start = '5.3'
+end   = '6.7'
+
+[[caption]]
+text      = "The machine will now decide your fate"
+from      = '0'
+to        = '3'
+type      = 'zim_speak'
+margin    = '15'
+placement = '15,225'

@@ -1,0 +1,46 @@
+title = 'Frustration'
+published = 2022-03-08T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+Zim, struggling with a test, repeatedly bangs his head on the desk.
+
+"""
+
+info.colours = '55'
+info.filesize = '1.42mb'
+info.frames = '113'
+info.size = '480×270'
+info.time = '9.41 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '2:24.0'
+duration = '9.4'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#d3929f',  # zim
+    '#955765',
+    '#521632',
+    '#6a6b7b',
+    '#debdcf',
+    '#c1a73f',  # pencil
+]
+
+[output]
+colours    = '48'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.44mb'
+mode       = 'full'

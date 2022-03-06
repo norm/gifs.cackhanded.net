@@ -1,0 +1,49 @@
+title = 'Lord of all humans'
+published = 2022-03-13T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'invader-zim',
+    'skool',
+]
+body_markdown = """
+
+Zim declares himself “Lord of all humans”, and informs the class “I will rule
+you all with an iron fist”.
+
+"""
+
+info.colours = '79'
+info.filesize = '0.90mb'
+info.frames = '75'
+info.size = '480×270'
+info.time = '4.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '3:14.8'
+duration = '5'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = 'no'
+max_size   = 'auto'
+
+[[caption]]
+text      = "LORD OF ALL HUMANS!"
+from      = '0.2'
+to        = '1.7'
+type      = 'zim_shout'
+size      = '40'
+
+[[caption]]
+text      = "I will rule you all with an iron fist"
+from      = '1.9'
+to        = '4'
+type      = 'zim_emphasis'

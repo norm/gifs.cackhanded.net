@@ -1,0 +1,42 @@
+title = 'Promotions'
+published = 2022-03-10T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'invader-zim',
+    'simon',
+    'skool',
+]
+body_markdown = """
+
+Zim declares his intentions, "Let’s talk more about these “promotions”".
+
+"""
+
+info.colours = '80'
+info.filesize = '0.39mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '3.33 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '4:32.1'
+duration = '3.3'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.4mb'
+
+[[caption]]
+text      = "Let’s talk more\nabout these “promotions”"
+from      = '0'
+to        = '4'
+type      = 'zim_speak'

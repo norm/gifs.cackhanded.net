@@ -1,0 +1,34 @@
+title = 'sensor'
+published = 2022-03-11T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'bill',
+]
+body_markdown = """
+
+The sensor in Bill’s hands wavers between zero and a high rating.
+
+"""
+
+info.colours = '97'
+info.filesize = '0.26mb'
+info.frames = '33'
+info.size = '480×270'
+info.time = '2.76 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '7:29.6'
+duration = '2.7'
+crop     = '710:400'
+
+[output]
+colours    = '96'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.26mb'

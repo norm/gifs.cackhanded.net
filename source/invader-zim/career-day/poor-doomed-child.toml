@@ -1,0 +1,41 @@
+title = 'poor doomed child'
+published = 2022-03-12T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+Ms Bitters shakes her head and commiserates “Oh you poor doomed child”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.60mb'
+info.frames = '31'
+info.size = '480×270'
+info.time = '2.58 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '1:59.0'
+duration = '2.6'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.61mb'
+
+[[caption]]
+text      = "Oh you poor doomed child"
+from      = '0'
+to        = '3'
+type      = 'zim_speak'

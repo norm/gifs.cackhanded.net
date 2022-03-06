@@ -1,0 +1,52 @@
+title = 'The lesson here'
+published = 2022-03-14T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'invader-zim',
+    'aki',
+    'brian',
+    'chunk',
+    'matthew',
+    'melvin',
+    'sara',
+    'zita',
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+Ms Bitters tells class “The lesson here is that dreams inevitably lead to
+hideous implosions!”
+
+"""
+
+info.colours = '80'
+info.filesize = '1.06mb'
+info.frames = '62'
+info.size = '480×270'
+info.time = '5.16 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '1:23.8'
+duration = '5.15'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.07mb'
+
+[[caption]]
+text      = "The lesson here is that dreams\ninevitably lead to hideous implosions!"
+from      = '0'
+to        = '5.2'
+type      = 'zim_speak'
+margin    = '0'
+placement = '16,197'

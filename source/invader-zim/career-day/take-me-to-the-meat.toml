@@ -1,0 +1,42 @@
+title = 'Take me to the meat'
+published = 2022-03-07T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'invader-zim',
+    'simon',
+    'skool',
+]
+body_markdown = """
+
+Zim gestures and demands “Take me to the meat!”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.18mb'
+info.frames = '21'
+info.size = '480×270'
+info.time = '1.39 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '4:09.0'
+duration = '1.4'
+crop     = '710:400:5:20'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.19mb'
+
+[[caption]]
+text      = "Take me to the meat!"
+from      = '0'
+to        = '2'
+type      = 'zim_speak'

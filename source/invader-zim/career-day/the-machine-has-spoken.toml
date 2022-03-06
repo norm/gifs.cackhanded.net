@@ -1,0 +1,41 @@
+title = 'The machine has spoken'
+published = 2022-03-15T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+Ms Bitters declares “Quiet! The machine has spoken!”
+
+"""
+
+info.colours = '64'
+info.filesize = '0.40mb'
+info.frames = '31'
+info.size = '480×270'
+info.time = '2.58 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '2:48.5'
+duration = '2.6'
+crop     = '710:400'
+
+[output]
+colours    = '58'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.4mb'
+
+[[caption]]
+text      = "Quiet! The machine has spoken!"
+from      = '0'
+to        = '3'
+type      = 'zim_speak'
