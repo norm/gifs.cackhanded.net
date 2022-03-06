@@ -1,0 +1,44 @@
+title = 'Papa?'
+published = 2022-03-06T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/renault-clio/index'
+tag = [
+    'papa',
+    'nicole',
+]
+body_markdown = """
+
+Papa yawns and settles in his chair. Nicole checks if he is awake “Papa?”
+With no response, she walks off, unnecessarily stamping on his hat.
+
+"""
+
+info.colours = '95'
+info.filesize = '0.96mb'
+info.frames = '82'
+info.size = '320×203'
+info.time = '4.56 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'sr_rC0pnxKQ'
+ext      = 'mp4'
+start    = '0:01.5'
+duration = '4.5'
+crop     = '600:380:20:80'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '1mb'
+width      = '320'
+
+[[caption]]
+text      = "Papa?"
+from      = '0.6'
+to        = '1.5'
+type      = 'shout'
+placement = '100,150'

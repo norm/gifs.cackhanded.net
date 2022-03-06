@@ -1,0 +1,53 @@
+title = 'Nicole? Papa?'
+published = 2022-04-17T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/renault-clio/index'
+tag = [
+    'nicole',
+    'papa',
+]
+body_markdown = """
+
+Nicole walks past Papa as he is getting out of a car with a lady friend
+carrying a dog. He inquires “Nicole?”
+
+Nicole walks up to her date, kisses him, turns and asks “Papa?”
+
+"""
+
+info.colours = '96'
+info.filesize = '1.03mb'
+info.frames = '59'
+info.size = '320×203'
+info.time = '3.27 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'sFlEKnQD658'
+ext      = 'mp4'
+start    = '0:53.5'
+duration = '3.25'
+crop     = '600:380:20:20'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '1.05mb'
+width      = '320'
+
+[[caption]]
+text      = "Nicole?"
+from      = '0.4'
+to        = '1.2'
+type      = 'shout'
+placement = '70,150'
+
+[[caption]]
+text      = "Papa?"
+from      = '2.4'
+to        = '3.3'
+type      = 'shout'
+placement = '130,150'

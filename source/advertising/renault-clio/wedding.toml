@@ -1,0 +1,84 @@
+title = 'Wedding crash'
+published = 2022-05-01T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/renault-clio/index'
+tag = [
+    'bob-mortimer',
+    'nicole',
+    'papa',
+    'vic-reeves',
+    'wedding',
+]
+body_markdown = """
+
+Bob Mortimer thumping his fists against glass calling for Nicole, who
+is getting married to Vic Reeves. Vic turns around “Bob?!”
+
+Nicole, confused, asks for advice. “Papa?” Papa, does a comedy double-take,
+and then tells her decisively “Nicole!”
+
+Bob is still hammering and shouting for Nicole. She cries out “BOB!”
+
+"""
+
+info.colours = '127'
+info.filesize = '2.20mb'
+info.frames = '144'
+info.size = '320×189'
+info.time = '7.99 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'ce4TiRHbD-Q'
+ext      = 'mp4'
+start    = '0:37.6'
+duration = '8'
+crop     = '610:360:24:60'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '2.22mb'
+width      = '320'
+
+[[caption]]
+text      = "NICOLE!"
+from      = '0'
+to        = '1.4'
+type      = 'shout'
+
+[[caption]]
+text      = "BOB?!"
+from      = '1.6'
+to        = '2.3'
+type      = 'shout'
+placement = '180,136'
+
+[[caption]]
+text      = "Papa?"
+from      = '4.1'
+to        = '4.8'
+type      = 'shout'
+
+[[caption]]
+text      = "Nicole!"
+from      = '5.1'
+to        = '5.8'
+type      = 'shout'
+placement = '80,136'
+
+[[caption]]
+text      = "NICOLE!"
+from      = '5.8'
+to        = '6.6'
+type      = 'shout'
+
+[[caption]]
+text      = "BOB!"
+from      = '6.61'
+to        = '8'
+type      = 'shout'
+placement = '100,136'

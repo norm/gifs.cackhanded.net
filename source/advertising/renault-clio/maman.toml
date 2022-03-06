@@ -1,0 +1,61 @@
+title = 'Maman'
+published = 2022-04-24T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/renault-clio/index'
+tag = [
+    'nicole',
+    'papa',
+]
+body_markdown = """
+
+Papa answers the phone, then looks horrified. “Nicole!” She enquires “Papa?”
+He informs her “Maman!”
+
+She gasps and leaves in a hurry, pulling her boyfriend with her.
+
+"""
+
+info.colours = '95'
+info.filesize = '1.59mb'
+info.frames = '126'
+info.size = '320×180'
+info.time = '6.99 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'eoDTMJPbddc'
+ext      = 'mp4'
+start    = '0:02.1'
+duration = '7'
+crop     = '480:270:80:30'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '1.6mb'
+width      = '320'
+
+
+[[caption]]
+text      = "Nicole!"
+from      = '2.3'
+to        = '2.9'
+type      = 'shout'
+placement = '80,127'
+
+[[caption]]
+text      = "Papa?"
+from      = '3.4'
+to        = '3.9'
+type      = 'shout'
+placement = '160,127'
+
+[[caption]]
+text      = "Maman!"
+from      = '4.05'
+to        = '4.7'
+type      = 'shout'
+placement = '100,127'

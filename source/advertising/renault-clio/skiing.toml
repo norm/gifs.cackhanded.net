@@ -1,0 +1,54 @@
+title = 'Skiing'
+published = 2022-04-03T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/renault-clio/index'
+tag = [
+    'nicole',
+    'papa',
+]
+body_markdown = """
+
+While showing off, Papa flies through the air above Nicole and her date
+on his skis, shouting “Nicole!”
+
+She looks on “Papa?” and then gets splashed with snow from his
+crashing to the ground.
+
+"""
+
+info.colours = '95'
+info.filesize = '0.86mb'
+info.frames = '72'
+info.size = '320×203'
+info.time = '3.99 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'WChPbLP3T-k'
+ext      = 'mp4'
+start    = '0:26.6'
+duration = '4'
+crop     = '600:380:20:50'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '0.9mb'
+width      = '320'
+
+[[caption]]
+text      = "Nicole!"
+from      = '0'
+to        = '0.85'
+type      = 'shout'
+placement = '80,50'
+
+[[caption]]
+text      = "Papa?"
+from      = '1.5'
+to        = '2.4'
+type      = 'shout'
+placement = '80,150'

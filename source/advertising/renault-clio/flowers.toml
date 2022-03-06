@@ -1,0 +1,40 @@
+title = 'Flowers'
+published = 2022-03-27T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/renault-clio/index'
+tag = [
+    'nicole',
+    'papa',
+]
+body_markdown = """
+
+Papa is on the back of a bike, being driven slowly by his chauffeur, while
+holding a bunch of red roses.
+
+Nicole and her boyfriend drive past. The boyfriend does a comedy double-take,
+Nicole is amused.
+
+"""
+
+info.colours = '128'
+info.filesize = '1.14mb'
+info.frames = '72'
+info.size = '320×203'
+info.time = '3.99 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'LXbYy_GI2Rw'
+ext      = 'mp4'
+start    = '0:30.8'
+duration = '4'
+crop     = '600:380:25:20'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '1.2mb'
+width      = '320'

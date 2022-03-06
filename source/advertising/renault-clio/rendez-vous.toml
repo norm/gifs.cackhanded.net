@@ -1,0 +1,53 @@
+title = 'Rendez-vous'
+published = 2022-03-20T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/renault-clio/index'
+tag = [
+    'papa',
+    'nicole',
+]
+body_markdown = """
+
+Nicole shows off her outfit, looking for an opinion asks “Papa?”
+
+Papa approves with “Nicole!”
+
+"""
+
+info.colours = '127'
+info.filesize = '0.60mb'
+info.frames = '50'
+info.size = '320×203'
+info.time = '2.77 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'LXbYy_GI2Rw'
+ext      = 'mp4'
+start    = '0:02.0'
+duration = '2.8'
+crop     = '600:380:25:20'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '0.6mb'
+mode       = 'full'
+width      = '320'
+
+[[caption]]
+text      = "Papa?"
+from      = '0.2'
+to        = '1'
+type      = 'shout'
+placement = '140,150'
+
+[[caption]]
+text      = "Nicole!"
+from      = '1.7'
+to        = '2.8'
+type      = 'shout'
+placement = '70,150'

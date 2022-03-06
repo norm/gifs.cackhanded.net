@@ -1,0 +1,43 @@
+title = 'Nicole?'
+published = 2022-03-13T07:00:00Z
+show_fkey = 'advertising/index'
+episode_fkey = 'advertising/renault-clio/index'
+tag = [
+    'papa',
+    'nicole',
+]
+body_markdown = """
+
+Papa pretend-sleepily asks “Nicole?” as she sidles back into her chair.
+
+"""
+
+info.colours = '96'
+info.filesize = '1.44mb'
+info.frames = '63'
+info.size = '320×203'
+info.time = '3.49 seconds'
+
+[video]
+source   = 'youtube'
+file     = 'sr_rC0pnxKQ'
+ext      = 'mp4'
+start    = '0:31.8'
+duration = '3.5'
+crop     = '600:380:20:40'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = 'no'
+max_size   = 'auto'
+width      = '320'
+
+[[caption]]
+text      = "Nicole?"
+from      = '0'
+to        = '1'
+type      = 'shout'
+placement = '200,150'
