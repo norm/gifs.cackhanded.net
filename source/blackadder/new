@@ -1,0 +1,85 @@
+title = '$TITLE'
+$PUBLISHED_AM
+$KEYS
+tag = [
+    '404-page-candidate',
+    'tag1',
+
+    'baldrick-son-of-robin',
+    'prince-edmund',
+    'duke-percy',
+]
+body_markdown = """
+
+WRITE ME.
+
+"""
+
+info.colours = ''
+info.filesize = ''
+info.frames = ''
+info.size = ''
+info.time = ''
+
+[video]
+source   = 'file'
+file     = 'blackadder_101'
+ext      = 'm4v'
+start    = '0:00.0'
+duration = '1'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: REPLACE_SIZE
+# crop     = '800:450'
+crop     = '690:388:7:94'
+
+# [palette]
+# add = [
+#     '#5a7e4c',
+#     '#d5dc4b',
+# ]
+# list = 1
+# show = 1
+
+[output]
+# brightness = '0'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = 'no'
+max_size   = 'auto'
+# mode       = 'full'
+# stabilise  = 'static | ##'
+# width      = 'original'
+# width      = '400'
+
+# [[clip]]
+# start = '1'
+# end   = '2'
+
+# [[caption]]
+# text      = "Looks like I picked the\nwrong week to give up drinking"
+# from      = '1'
+# to        = '2'
+# type      = 'speak'
+#
+##### not required, but can be used if needed
+# align     = 'center'
+# colour    = 'white'
+# font      = 'assistant-semibold.ttf'      # DEFAULT
+# font      = 'assistant-extrabold.ttf'     # emphasis
+# font      = 'acherusgrotesque-black.otf'  # eurovision
+# font      = 'greycliffcf-medium.otf'
+# font      = 'greycliffcf-heavy.otf'       # emphasis
+# font      = 'lato-black.ttf'              # "TOP. MEN."
+# font      = 'oita.otf'                    # Horizon Zero Dawn
+# font      = 'poppins-black.ttf'           # Spider-Verse
+# font      = 'morlrounded-regular.otf'     # animated
+# font      = 'morlrounded-italic.otf'      # animated actions (bonk, scream)
+# margin    = '10'
+# placement = 'bc'
+# size      = '24'
+# stroke_colour = 'black'
+# stroke_width  = '2'

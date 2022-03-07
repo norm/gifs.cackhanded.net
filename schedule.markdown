@@ -29,7 +29,7 @@ Contemporary comedy movie day.
 
 Classic TV show day.
 
-* Police Squad!, until 2022-03-02
+* Blackadders, 2022-03-09 through 2022-11-02
 
 
 ### Thursdays

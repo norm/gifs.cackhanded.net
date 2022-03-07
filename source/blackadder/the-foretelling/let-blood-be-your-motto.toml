@@ -1,0 +1,70 @@
+title = 'Let blood be your motto!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'blackadder/index'
+episode_fkey = 'blackadder/the-foretelling/index'
+tag = [
+    'prince-richard',
+]
+body_markdown = """
+
+Richard, Duke of York, encourages the troops by crying
+“Let blood — blood, BLOOD! — be your motto!”
+
+"""
+
+info.colours = '84'
+info.filesize = '2.19mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '4.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'blackadder_101'
+ext      = 'm4v'
+start    = '5:36.3'
+duration = '5'
+crop     = '690:388:7:14'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '50'
+max_size   = '2.2mb'
+
+[[caption]]
+text      = "Let"
+from      = '0'
+to        = '3.59'
+type      = 'speak'
+placement = '81,217'
+
+[[caption]]
+text      = "blood"
+from      = '0'
+to        = '1.59'
+type      = 'speak'
+placement = '126,217'
+
+[[caption]]
+text      = "blood"
+from      = '1.6'
+to        = '2.39'
+type      = 'shout'
+placement = '125,217'
+
+[[caption]]
+text      = "BLOOD"
+from      = '2.4'
+to        = '10'
+type      = 'shout'
+colour    = '#9D2235'
+placement = '125,217'
+
+[[caption]]
+text      = "Let                  be your motto!"
+from      = '3.6'
+to        = '10'
+type      = 'speak'

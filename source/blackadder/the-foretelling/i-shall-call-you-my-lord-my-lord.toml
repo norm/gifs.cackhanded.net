@@ -1,0 +1,58 @@
+title = 'I shall call you “my Lord” my Lord'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'blackadder/index'
+episode_fkey = 'blackadder/the-foretelling/index'
+tag = [
+    'baldrick-son-of-robin',
+    'prince-edmund',
+    'duke-percy',
+]
+body_markdown = """
+
+Edmund tells Baldrick “I shall call you Baldrick”. Baldrick replies
+“And I shall call you ‘my Lord’ my Lord”.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.99mb'
+info.frames = '93'
+info.size = '480×270'
+info.time = '6.19 seconds'
+
+[video]
+source   = 'file'
+file     = 'blackadder_101'
+ext      = 'm4v'
+start    = '4:09.0'
+duration = '6.2'
+crop = '690:388:7:50'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '2.05mb'
+
+[[caption]]
+text      = "I shall call you\n "
+from      = '0.3'
+to        = '2.6'
+type      = 'speak'
+placement = 'br'
+
+[[caption]]
+text      = "I shall call you\nBaldrick!"
+from      = '2.61'
+to        = '3.2'
+type      = 'speak'
+placement = 'br'
+
+[[caption]]
+text      = "And I shall call you\n“my Lord” my Lord"
+from      = '3.4'
+to        = '6'
+type      = 'speak'
+placement = '90,180'

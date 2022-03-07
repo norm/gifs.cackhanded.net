@@ -1,0 +1,61 @@
+title = 'Very quick thinking'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'blackadder/index'
+episode_fkey = 'blackadder/the-foretelling/index'
+tag = [
+    'baldrick-son-of-robin',
+    'prince-edmund',
+    'duke-percy',
+]
+body_markdown = """
+
+Baldrick sarcastically congratulates Prince Edmund “Brilliant my Lord,
+very quick thinking”.
+
+Both Edmund and Percy reply “Thank you, Baldrick”. Edmund eyes Percy.
+
+"""
+
+info.colours = '80'
+info.filesize = '2.16mb'
+info.frames = '83'
+info.size = '480×270'
+info.time = '5.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'blackadder_101'
+ext      = 'm4v'
+start    = '20:27.5'
+duration = '5.5'
+crop     = '690:388:7:50'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '30'
+max_size   = '2.2mb'
+
+[[caption]]
+text      = "Brilliant my Lord,\nvery quick thinking"
+from      = '0'
+to        = '2.7'
+type      = 'speak'
+placement = 'bl'
+
+[[caption]]
+text      = "Thank you,\nBaldrick"
+from      = '3.2'
+to        = '4.2'
+type      = 'speak'
+placement = '360,130'
+size      = '24'
+
+[[caption]]
+text      = "Thank you,\nBaldrick"
+from      = '3.2'
+to        = '4.2'
+type      = 'speak'
+placement = '230,180'
