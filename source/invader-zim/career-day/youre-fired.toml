@@ -1,0 +1,54 @@
+title = 'You’re fired'
+published = 2022-03-16T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/career-day/index'
+tag = [
+    'invader-zim',
+    'shift-captain',
+    'simon',
+    'zootch',
+]
+body_markdown = """
+
+The McMeaties restaurant is covered in green pus. The Shift Captain tells
+Zim “You’re fired.”
+
+"""
+
+info.colours = '84'
+info.filesize = '1.04mb'
+info.frames = '49'
+info.size = '480×270'
+info.time = '4.08 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '11:56.1'
+duration = '4.1'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#a52c4a',  # zim outfit accent
+    '#f0c9b6',  # shift cpt shirt
+    '#948b75',  # sole of shoe
+    '#9fa08b',  # pale skin
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.05mb'
+
+[[caption]]
+text      = "You’re fired!"
+from      = '3.2'
+to        = '4.2'
+type      = 'zim_emphasis'
+placement = '60,225'
+  
