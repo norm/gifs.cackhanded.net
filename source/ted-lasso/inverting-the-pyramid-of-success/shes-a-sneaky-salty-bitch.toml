@@ -1,0 +1,42 @@
+title = 'She’s a sneaky, salty bitch'
+published = 2022-03-11T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca, eating a biscuit, “She’s a sneaky, salty bitch”.
+
+"""
+
+info.colours = '96'
+info.filesize = '0.48mb'
+info.frames = '72'
+info.size = '480×269'
+info.time = '4.00 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '6:47.5'
+duration = '4'
+crop     = '880:495:400:0'
+
+[output]
+brightness = '0.04'
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.5mb'
+stabilise  = 'static'
+
+[[caption]]
+text      = "She’s a sneaky, salty bitch"
+from      = '0.9'
+to        = '3.6'
+type      = 'speak'

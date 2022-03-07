@@ -1,0 +1,49 @@
+title = 'Huge. Fan.'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'keeley-jones',
+    'suzi-campbell',
+]
+body_markdown = """
+
+Suzi shaking Keeley’s hand and saying with emphasis “Huge. Fan.”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.80mb'
+info.frames = '56'
+info.size = '480×273'
+info.time = '3.12 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '13:23.3'
+duration = '3.1'
+crop     = '1070:608:150:32'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.8mb'
+
+[[caption]]
+text      = "Huge."
+from      = '0'
+to        = '1.6'
+type      = 'speak'
+placement = '50,220'
+
+[[caption]]
+text      = "Huge. Fan."
+from      = '1.61'
+to        = '2.8'
+type      = 'speak'
+placement = '50,220'

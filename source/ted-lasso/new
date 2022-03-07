@@ -5,9 +5,12 @@ tag = [
     '404-page-candidate',
     'tag1',
     'baz',
+    'arlo-dixon',
+    'babatunde',
     'coach-beard',
     'colin-hughes',
     'dani-rojas',
+    'deborah-welton',
     'flo-collins',
     'george-cartrick',
     'henry-lasso',
@@ -22,14 +25,15 @@ tag = [
     'leslie-higgins',
     'mae',
     'moe-bumbercatch',
-    'nora-collins',
     'nathan-shelley',
+    'nora-collins',
     'paul',
-    'paul-reynolds',
     'paul-john-pope',
+    'paul-reynolds',
     'phoebe',
     'press-conference',
     'rebecca-welton',
+    'richard-montlaur',
     'roy-kent',
     'rupert-mannion',
     'sam-obisanya',
@@ -38,6 +42,7 @@ tag = [
     'ted-lasso',
     'thierry-zoreaux',
     'tommy',
+    'tommy-winchester',
     'trent-crimm',
     'tyler-shannon',
     'will-kitman',
@@ -56,7 +61,7 @@ info.time = ''
 
 [video]
 source   = 'file'
-file     = 'ted_lasso_206'
+file     = 'ted_lasso_212'
 ext      = 'm4v'
 start    = '0:00.0'
 duration = '1'
@@ -64,7 +69,8 @@ duration = '1'
 # even numbered 16x9 crops:
 # 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
 # video size: REPLACE_SIZE
-crop     = '1200:675'
+# crop     = '1200:675'
+crop     = '1120:630'
 
 # [palette]
 # add = [

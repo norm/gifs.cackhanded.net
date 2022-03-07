@@ -1,0 +1,41 @@
+title = 'Holy fucking shit'
+published = 2022-08-12T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'keeley-jones',
+]
+body_markdown = """
+
+Keeley, reading her computer screen, screams “Holy fucking shit!”
+and bounces in her chair excitedly.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.74mb'
+info.frames = '102'
+info.size = '480×270'
+info.time = '5.66 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '10:04.0'
+duration = '5.6'
+crop     = '1040:585:120:50'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.75mb'
+
+[[caption]]
+text      = "HOLY FUCKING SHIT!"
+from      = '1.2'
+to        = '2.7'
+type      = 'shout'

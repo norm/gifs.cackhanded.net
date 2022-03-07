@@ -1,0 +1,44 @@
+title = 'That’s copyright infringement, bruv'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'isaac-mcadoo',
+    'sam-obisanya',
+    'thierry-zoreaux',
+]
+body_markdown = """
+
+Isaac turns to Thierry and informs him “That’s copyright infringement, bruv”.
+Thierry looks chastened.
+
+"""
+
+info.colours = '96'
+info.filesize = '1.21mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '2.95 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '10:29.4'
+duration = '2.9'
+crop     = '1120:630'
+
+[output]
+colours    = '90'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.22mb'
+stabilise  = 'static'
+
+[[caption]]
+text      = "That’s copyright infringement, bruv"
+from      = '0'
+to        = '2'
+type      = 'speak'

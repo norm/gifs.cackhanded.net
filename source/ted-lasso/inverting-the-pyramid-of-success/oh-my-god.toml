@@ -1,0 +1,42 @@
+title = 'Oh my god!'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'keeley-jones',
+    'leslie-higgins',
+]
+body_markdown = """
+
+Keeley, visibly excited, and Higgins declaring “Oh my god!”.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.20mb'
+info.frames = '47'
+info.size = '480×270'
+info.time = '2.60 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '13:58.8'
+duration = '2.6'
+crop     = '1120:630'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.2mb'
+
+[[caption]]
+text      = "oh my god"
+from      = '1.1'
+to        = '2.5'
+type      = 'shout'
+placement = '60,217'
