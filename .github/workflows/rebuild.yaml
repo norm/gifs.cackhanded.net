@@ -46,6 +46,10 @@ jobs:
         run: |
           make clean generate test_generated
 
+      - name: Upcoming schedule
+        run: |
+          python script/upcoming > output/upcoming.txt
+
       - name: Upload site
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

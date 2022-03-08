@@ -1,0 +1,71 @@
+#!/usr/bin/env python
+
+from datetime import datetime, timedelta, timezone
+from flourish import Flourish
+
+
+today = datetime.now().replace(
+        hour=0,
+        minute=0,
+        second=0,
+        microsecond=0,
+        tzinfo=timezone.utc,
+    )
+now = datetime.now().replace(
+        tzinfo=timezone.utc,
+    )
+
+placeholder = datetime(
+        year=2100,
+        month=1,
+        day=1,
+        hour=7,
+        tzinfo=timezone.utc,
+    )
+
+fl = Flourish(future=True)
+upcoming = fl.sources.filter(
+        published__gte=today,
+        published__lt=placeholder,
+    ).order_by('published')
+last = upcoming[-1]
+
+
+def daterange(start, end):
+    for n in range(int((end - start).days)+1):
+        yield start + timedelta(n)
+
+def print_gif(gif):
+    print('%s %s' % (
+        gif.published.strftime('%Y-%m-%dT%H:%M:%S'),
+        gif.path,
+    ))
+
+def print_missing(dt):
+    print(dt.strftime('%Y-%m-%dT%H:%M:%S'))
+
+
+for day in daterange(today, last.published):
+    morning = day.replace(hour=7)
+    morning_gifs = fl.sources.filter(published=morning)
+    if len(morning_gifs):
+        for gif in morning_gifs:
+            print_gif(gif)
+    else:
+        print_missing(morning)
+
+    afternoon = day.replace(hour=15)
+    afternoon_gifs = fl.sources.filter(published=afternoon)
+    if len(afternoon_gifs):
+        for gif in afternoon_gifs:
+            print_gif(gif)
+    else:
+        print_missing(afternoon)
+
+    evening = day.replace(hour=18)
+    evening_gifs = fl.sources.filter(published=evening)
+    if len(evening_gifs):
+        for gif in evening_gifs:
+            print_gif(gif)
+    else:
+        pass    # not a required time slot
