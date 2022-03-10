@@ -1,0 +1,51 @@
+title = 'Masculine melancholy'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'arlo-dixon',
+    'babatunde',
+    'colin-hughes',
+    'dani-rojas',
+    'isaac-mcadoo',
+    'jamie-tartt',
+    'jan-maas',
+    'kyle-mccracken',
+    'moe-bumbercatch',
+    'paul-reynolds',
+    'richard-montlaur',
+    'sam-obisanya',
+    'thierry-zoreaux',
+    'tommy-winchester',
+    'tyler-shannon',
+    'will-kitman',
+]
+body_markdown = """
+
+The entire AFC Richmond team sit around the locker room like a 
+Renaissance painting portraying masculine melancholy.
+
+"""
+
+info.colours = '97'
+info.filesize = '0.68mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '5.00 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '28:17.5'
+duration = '5'
+crop     = '1120:630:80:10'
+
+[output]
+colours    = '96'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.7mb'
+stabilise  = 'static'

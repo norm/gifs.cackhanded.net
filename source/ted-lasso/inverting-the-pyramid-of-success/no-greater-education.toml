@@ -1,0 +1,41 @@
+title = 'No greater education'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'rebecca-welton',
+]
+body_markdown = """
+
+Rebecca tells Ted “Well, there’s no greater education than travel”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.43mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.49 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '40:59.4'
+duration = '2.5'
+crop     = '960:540:160:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.44mb'
+stabilise  = 'static'
+
+[[caption]]
+text      = "Well, there’s no greater\neducation than travel"
+from      = '0.35'
+to        = '2.1'
+type      = 'speak'

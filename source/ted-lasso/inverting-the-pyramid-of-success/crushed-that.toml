@@ -1,0 +1,36 @@
+title = 'Crushed that'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'rebecca-welton',
+    'ted-lasso',
+]
+body_markdown = """
+
+Rebecca downs a glass of champagne in one.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.85mb'
+info.frames = '49'
+info.size = '480×270'
+info.time = '2.73 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '43:22.6'
+duration = '2.7'
+crop     = '1120:630'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.86mb'

@@ -1,0 +1,44 @@
+title = 'Crisps'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'coach-beard',
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted and Beard eating crisps in the pub.
+
+"""
+
+info.colours = '79'
+info.filesize = '0.89mb'
+info.frames = '103'
+info.size = '480×270'
+info.time = '5.73 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '20:33.0'
+duration = '5.7'
+crop     = '1120:630'
+
+[palette]
+add = [
+    '#520004',  # richmond scarves
+    '#780116',
+    '#ed4c58',
+    '#1e2e55',
+    '#025c23',  # crisps
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.9mb'

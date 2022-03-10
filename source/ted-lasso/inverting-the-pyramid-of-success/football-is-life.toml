@@ -1,0 +1,42 @@
+title = 'Football is life'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'dani-rojas',
+    'jamie-tartt',
+]
+body_markdown = """
+
+Looking at the new AFC Richmond greyhound wearing a fetching helmet,
+Dani smiles and reaffirms “Football is life”.
+
+"""
+
+info.colours = '127'
+info.filesize = '2.17mb'
+info.frames = '98'
+info.size = '480×270'
+info.time = '6.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '36:11.0'
+duration = '6.5'
+crop     = '1040:585:240:100'
+
+[output]
+colours    = '122'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '40'
+max_size   = '2.2mb'
+
+[[caption]]
+text      = "Football is life"
+from      = '4.5'
+to        = '5.5'
+type      = 'speak'

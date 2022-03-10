@@ -1,0 +1,36 @@
+title = 'Fear'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'coach-beard',
+]
+body_markdown = """
+
+Coach Beard looks terrified.
+
+"""
+
+info.colours = '97'
+info.filesize = '0.46mb'
+info.frames = '33'
+info.size = '480×269'
+info.time = '1.84 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '23:56.8'
+duration = '1.8'
+crop = '720:405:350:0'
+
+[output]
+brightness = '0.04'
+colours    = '96'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.47mb'
+stabilise  = 'static'

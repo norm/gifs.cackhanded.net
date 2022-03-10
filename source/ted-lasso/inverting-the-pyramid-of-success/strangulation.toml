@@ -1,0 +1,37 @@
+title = 'Strangulation'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'edwin-akufo',
+]
+body_markdown = """
+
+Edwin Akufo strangles a mannekin wearing Richmond kit, lowering its
+lifeless body to the ground.
+
+"""
+
+info.colours = '74'
+info.filesize = '1.71mb'
+info.frames = '117'
+info.size = '400×224'
+info.time = '6.49 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '39:45.0'
+duration = '6.5'
+crop     = '720:405:380:130'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.72mb'
+stabilise  = 'static'
+width      = '400'

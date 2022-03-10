@@ -1,0 +1,44 @@
+title = 'That’s cool'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'coach-beard',
+    'roy-kent',
+    'ted-lasso',
+]
+body_markdown = """
+
+Roy declares “That’s cool.”
+
+Coach Beard and Ted celebrate the approval very quietly.
+
+"""
+
+info.colours = '79'
+info.filesize = '1.74mb'
+info.frames = '93'
+info.size = '480×270'
+info.time = '5.17 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '26:55.5'
+duration = '5.2'
+crop     = '1120:630'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.75mb'
+
+[[caption]]
+text      = "That’s cool"
+from      = '0.6'
+to        = '1.3'
+type      = 'speak'

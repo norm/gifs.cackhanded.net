@@ -1,0 +1,35 @@
+title = 'Growl'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'roy-kent',
+]
+body_markdown = """
+
+Roy growls at a pink leopard.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.22mb'
+info.frames = '27'
+info.size = '480×270'
+info.time = '1.49 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '47:50.7'
+duration = '1.5'
+crop     = '1120:630:0:5'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.22mb'

@@ -1,0 +1,42 @@
+title = 'A nice change'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted tells Rebecca “Well, that’ll be a nice change”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.79mb'
+info.frames = '53'
+info.size = '480×270'
+info.time = '2.95 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '41:16.5'
+duration = '2.9'
+crop     = '1040:585:1000:40'
+
+[output]
+brightness = '0.04'
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '0.8mb'
+stabilise  = '80'
+
+[[caption]]
+text      = "Well that’ll be a nice change"
+from      = '1.5'
+to        = '2.7'
+type      = 'speak'

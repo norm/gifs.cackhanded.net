@@ -1,0 +1,36 @@
+title = 'A sign of two halves'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'ted-lasso',
+]
+body_markdown = """
+
+Ted turns over some yellow paper to reveal the "believe" sign that
+has been torn in half.
+
+"""
+
+info.colours = '74'
+info.filesize = '1.60mb'
+info.frames = '81'
+info.size = '480×270'
+info.time = '4.49 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '37:43.0'
+duration = '4.5'
+crop     = '1120:630'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.6mb'
+stabilise  = 'static'

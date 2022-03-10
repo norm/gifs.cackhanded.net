@@ -1,0 +1,54 @@
+title = 'Believe'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    '404-page-candidate',
+    'arlo-dixon',
+    'babatunde',
+    'coach-beard',
+    'colin-hughes',
+    'dani-rojas',
+    'isaac-mcadoo',
+    'jamie-tartt',
+    'jan-maas',
+    'kyle-mccracken',
+    'moe-bumbercatch',
+    'nathan-shelley',
+    'paul-reynolds',
+    'richard-montlaur',
+    'roy-kent',
+    'sam-obisanya',
+    'ted-lasso',
+    'thierry-zoreaux',
+    'tommy-winchester',
+    'tyler-shannon',
+]
+body_markdown = """
+
+The entire AFC Richmond team touches the “believe” poster.
+
+"""
+
+info.colours = '128'
+info.filesize = '1.12mb'
+info.frames = '62'
+info.size = '480×270'
+info.time = '3.45 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '30:29.7'
+duration = '3.4'
+crop     = '1040:585:120:0'
+
+[output]
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = '1.12mb'
+stabilise  = 'static'

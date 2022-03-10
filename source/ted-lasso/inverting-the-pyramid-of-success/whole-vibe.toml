@@ -1,0 +1,43 @@
+title = 'Whole vibe'
+published = 2023-01-13T07:00:00Z
+show_fkey = 'ted-lasso/index'
+episode_fkey = 'ted-lasso/inverting-the-pyramid-of-success/index'
+tag = [
+    'ted-lasso',
+    'trent-crimm',
+]
+body_markdown = """
+
+Trent Crimm, independent, asks Ted “’Cause of the hair and the whole vibe?”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.79mb'
+info.frames = '42'
+info.size = '480×270'
+info.time = '2.34 seconds'
+
+[video]
+source   = 'file'
+file     = 'ted_lasso_212'
+ext      = 'm4v'
+start    = '43:45.4'
+duration = '2.3'
+crop     = '960:540:0:20'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '20'
+max_size   = 'auto'
+
+[[caption]]
+text      = "’Cause of the hair and the whole vibe?"
+from      = '0.2'
+to        = '1.7'
+type      = 'speak'
+margin    = '0'
+placement = '14,219'
