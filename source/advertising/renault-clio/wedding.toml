@@ -52,7 +52,7 @@ type      = 'shout'
 
 [[caption]]
 text      = "BOB?!"
-from      = '1.6'
+from      = '1.7'
 to        = '2.3'
 type      = 'shout'
 placement = '180,136'
@@ -66,19 +66,19 @@ type      = 'shout'
 [[caption]]
 text      = "Nicole!"
 from      = '5.1'
-to        = '5.8'
+to        = '5.75'
 type      = 'shout'
 placement = '80,136'
 
 [[caption]]
 text      = "NICOLE!"
-from      = '5.8'
-to        = '6.6'
+from      = '5.76'
+to        = '6.65'
 type      = 'shout'
 
 [[caption]]
 text      = "BOB!"
-from      = '6.61'
+from      = '6.66'
 to        = '8'
 type      = 'shout'
 placement = '100,136'
