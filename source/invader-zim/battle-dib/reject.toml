@@ -1,0 +1,45 @@
+title = 'Reject'
+published = 2022-03-21T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/battle-dib/index'
+tag = [
+    'exam',
+    'gaz-membrane',
+]
+body_markdown = """
+
+A girl achieves an unacceptable score on the test so she, and her desk and
+chair, slides from the hall through a door labelled “reject”.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.94mb'
+info.frames = '66'
+info.size = '480×270'
+info.time = '5.51 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '15:27.0'
+duration = '5.5'
+# end      = '00:00:00.0'
+# even numbered 16x9 crops:
+# 1760:990 1600:900 1440:810 1280:720 1120:630 960:540 800:450 640:360
+# video size: 720:480
+crop     = '710:400'
+
+[palette]
+add = [
+    '#552a5d',  # "reject"
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.95mb'

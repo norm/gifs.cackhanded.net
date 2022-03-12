@@ -1,0 +1,40 @@
+title = 'Pizza-stealing heart'
+published = 2022-03-19T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/battle-dib/index'
+tag = [
+    'gaz-membrane',
+]
+body_markdown = """
+
+Gaz theatens “I shall rain misery down upon your pizza-stealing heart!”
+
+"""
+
+info.colours = '60'
+info.filesize = '1.57mb'
+info.frames = '90'
+info.size = '480×270'
+info.time = '5.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '13:49'
+duration = '6'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '54'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '1.62mb'
+
+[[caption]]
+text      = "I shall rain misery down\nupon your pizza-stealing heart!"
+from      = '0'
+to        = '4.2'
+type      = 'zim_emphasis'

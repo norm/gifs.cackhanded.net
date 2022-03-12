@@ -1,0 +1,42 @@
+title = 'Shocked'
+published = 2022-03-18T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/battle-dib/index'
+tag = [
+    'dib-membrane',
+]
+body_markdown = """
+
+Dib is repeatedly shocked by a guard with an electric prod.
+Smoke rises from his body.
+
+"""
+
+info.colours = '74'
+info.filesize = '0.70mb'
+info.frames = '40'
+info.size = '480×270'
+info.time = '2.23 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '12:31.8'
+crop     = '710:400:5:30'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '20'
+max_size   = '0.7mb'
+
+[[clip]]
+start = '0'
+end   = '1.05'
+
+[[clip]]
+start = '2.1'
+end   = '3.3'

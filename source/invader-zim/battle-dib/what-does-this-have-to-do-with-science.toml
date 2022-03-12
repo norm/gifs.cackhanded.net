@@ -1,0 +1,42 @@
+title = 'What does this have to do with science?'
+published = 2022-03-17T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/battle-dib/index'
+tag = [
+    'dib-membrane',
+    'shunk-wugga',
+]
+body_markdown = """
+
+Dib, in the battle area, cries out “What does this have to do with science?”
+
+
+"""
+
+info.colours = '101'
+info.filesize = '1.08mb'
+info.frames = '55'
+info.size = '480×270'
+info.time = '4.58 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '17:36.0'
+duration = '4.6'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '96'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.1mb'
+
+[[caption]]
+text      = "What does this\nhave to do with science?"
+from      = '0.8'
+to        = '3.2'
+type      = 'zim_speak'

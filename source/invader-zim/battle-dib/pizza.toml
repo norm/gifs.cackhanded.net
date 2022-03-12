@@ -1,0 +1,35 @@
+title = 'Pizza'
+published = 2022-03-20T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/battle-dib/index'
+tag = [
+    'gaz-membrane',
+    'pizza',
+]
+body_markdown = """
+
+Gaz sees a box of pizza, and her eyes grow wide.
+
+"""
+
+info.colours = '60'
+info.filesize = '0.38mb'
+info.frames = '30'
+info.size = '480×270'
+info.time = '1.66 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e06'
+ext      = 'm4v'
+start    = '21:23.85'
+duration = '1.65'
+crop     = '710:400'
+
+[output]
+colours    = '60'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '18'
+loss       = '20'
+max_size   = '0.4mb'
