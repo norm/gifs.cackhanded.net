@@ -1,7 +1,7 @@
 ```
 title = 'Battle-Dib'
 type = 'tv-episode'
-show_fkey = 'invadecarr-zim/index'
+show_fkey = 'invader-zim/index'
 season = 1
 episode = 11    # officially "6b"
 ```
