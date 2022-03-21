@@ -1,0 +1,37 @@
+title = 'Toast'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'blackadder/index'
+episode_fkey = 'blackadder/the-archbishop/index'
+tag = [
+    'richard-iv',
+    'the-queen',
+]
+body_markdown = """
+
+The King smashes the goblet of the Queen while toasting Prince Edmund,
+Archbishop of Cantebury.
+
+"""
+
+info.colours = '75'
+info.filesize = '1.69mb'
+info.frames = '83'
+info.size = '400×225'
+info.time = '5.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'blackadder_103'
+ext      = 'm4v'
+start    = '20:23.0'
+duration = '5.5'
+crop     = '690:388:7:94'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '1.7mb'
+width      = '400'

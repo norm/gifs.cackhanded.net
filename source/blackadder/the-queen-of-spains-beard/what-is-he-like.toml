@@ -1,0 +1,64 @@
+title = 'What is he like'
+published = 2100-01-01T07:00:00Z
+show_fkey = 'blackadder/index'
+episode_fkey = 'blackadder/the-queen-of-spains-beard/index'
+tag = [
+    'infanta-maria-escalosa',
+    'the-queen',
+    'don-speekingleesh',
+]
+body_markdown = """
+
+The Infanta's interpreter reiterates slowly “What … is … he … like?” and
+the Infanta makes a suggestive face.
+
+"""
+
+info.colours = '80'
+info.filesize = '2.53mb'
+info.frames = '78'
+info.size = '480×270'
+info.time = '6.51 seconds'
+
+[video]
+source   = 'file'
+file     = 'blackadder_104'
+ext      = 'm4v'
+start    = '24:25.6'
+duration = '6.5'
+crop     = '640:360:24:60'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '2.53mb'
+
+[[caption]]
+text      = "What"
+from      = '0'
+to        = '1.2'
+type      = 'speak'
+placement = '147,217'
+
+[[caption]]
+text      = "What is"
+from      = '1.21'
+to        = '2.7'
+type      = 'speak'
+placement = '147,217'
+
+[[caption]]
+text      = "What is he"
+from      = '2.71'
+to        = '4.5'
+type      = 'speak'
+placement = '147,217'
+
+[[caption]]
+text      = "What is he like?"
+from      = '4.51'
+to        = '5.4'
+type      = 'speak'
