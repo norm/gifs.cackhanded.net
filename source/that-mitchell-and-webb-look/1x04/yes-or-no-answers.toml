@@ -1,0 +1,41 @@
+title = 'Yes or no answers'
+published = 2022-03-24T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x04/index'
+tag = [
+    'big-talk',
+    'raymond-terrific',
+]
+body_markdown = """
+
+Raymond Terrific, the host of Big Talk, tells a guest “I can think of two
+yes or no answers just off the top of my head!”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.66mb'
+info.frames = '51'
+info.size = '480×264'
+info.time = '3.39 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-104'
+ext      = 'm4v'
+start    = '19:07.2'
+duration = '3.4'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.68mb'
+
+[[caption]]
+text      = "I can think of two yes or no answers\njust off the top of my head!"
+from      = '0'
+to        = '4'
+type      = 'speak'

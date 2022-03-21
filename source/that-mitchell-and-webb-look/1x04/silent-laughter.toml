@@ -1,0 +1,34 @@
+title = 'Silent laughter'
+published = 2022-04-07T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x04/index'
+tag = [
+    'commentator-peter',
+    'commentator-ted',
+]
+body_markdown = """
+
+The two snooker commentators laughing silently.
+
+"""
+
+info.colours = '75'
+info.filesize = '1.16mb'
+info.frames = '66'
+info.size = '480×264'
+info.time = '4.39 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-104'
+ext      = 'm4v'
+start    = '9:03.0'
+duration = '4.4'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '25'
+max_size   = '1.2mb'

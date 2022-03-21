@@ -1,0 +1,40 @@
+title = 'Bad news'
+published = 2022-04-28T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x04/index'
+tag = [
+    'big-talk',
+    'raymond-terrific',
+]
+body_markdown = """
+
+Raymond Terrific, the host of Big Talk, saying “That is bad news”.
+
+"""
+
+info.colours = '78'
+info.filesize = '0.39mb'
+info.frames = '30'
+info.size = '480×264'
+info.time = '1.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-104'
+ext      = 'm4v'
+start    = '18:50.2'
+duration = '2'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.4mb'
+
+[[caption]]
+text      = "That is bad news"
+from      = '0'
+to        = '3'
+type      = 'speak'

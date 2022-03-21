@@ -1,0 +1,34 @@
+title = 'Hooray'
+published = 2022-03-31T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x04/index'
+tag = [
+    'celebration',
+]
+body_markdown = """
+
+Three white haired gentlemen behind desks raise their arms to the sky
+in celebration.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.58mb'
+info.frames = '45'
+info.size = '480×264'
+info.time = '2.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-104'
+ext      = 'm4v'
+start    = '15:50.5'
+duration = '3'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.6mb'

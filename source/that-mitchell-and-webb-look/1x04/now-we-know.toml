@@ -1,0 +1,43 @@
+title = 'Now we know'
+published = 2022-04-14T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x04/index'
+tag = [
+    'director',
+]
+body_markdown = """
+
+A director on a film set, watching the action,
+mutters to himself “Now we know”.
+
+"""
+
+info.colours = '133'
+info.filesize = '1.78mb'
+info.frames = '72'
+info.size = '380×209'
+info.time = '3.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-104'
+ext      = 'm4v'
+start    = '5:24.0'
+duration = '4'
+
+[output]
+brightness = '0.05'
+colours    = '128'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '18'
+loss       = '30'
+max_size   = '1.8mb'
+stabilise  = '60'
+width      = '380'
+
+[[caption]]
+text      = "Now we know"
+from      = '1.6'
+to        = '2.7'
+type      = 'speak_400'

@@ -1,0 +1,54 @@
+title = 'Chloroform'
+published = 2022-04-21T07:00:00Z
+show_fkey = 'that-mitchell-and-webb-look/index'
+episode_fkey = 'that-mitchell-and-webb-look/1x04/index'
+tag = [
+    'chloroform',
+    'dinner-party',
+]
+body_markdown = """
+
+A guest at a dinner party chloroforms another particularly annoying guest.
+
+"""
+
+info.colours = '75'
+info.filesize = '1.97mb'
+info.frames = '93'
+info.size = '400×220'
+info.time = '7.76 seconds'
+
+[video]
+source   = 'file'
+file     = 'mwlook-104'
+ext      = 'm4v'
+start    = '0:13.5'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '25'
+max_size   = '2mb'
+width      = '400'
+
+[[clip]]
+start = '0'
+end   = '1.5'
+
+[[clip]]
+start = '5.9'
+end   = '6.7'
+
+[[clip]]
+start = '4'
+end   = '5.3'
+
+[[clip]]
+start = '7.3'
+end   = '9.5'
+
+[[clip]]
+start = '12'
+end   = '14'
