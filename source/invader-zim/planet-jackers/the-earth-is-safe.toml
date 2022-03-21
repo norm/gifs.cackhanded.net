@@ -1,0 +1,56 @@
+title = 'The Earth is safe'
+published = 2022-03-27T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+After having saved the Earth from being thrown into the Planet Jackers’
+sun, Zim declares “The Earth is safe, I did it Gir!”
+
+He follows up menacingly, “Now let’s go destroy it”.
+
+"""
+
+info.colours = '79'
+info.filesize = '0.46mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '5.01 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '12:04.0'
+duration = '5'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.46mb'
+
+[[caption]]
+text      = "The Earth is safe!"
+from      = '0'
+to        = '1.5'
+type      = 'zim_emphasis'
+
+[[caption]]
+text      = "I did it, Gir!"
+from      = '1.6'
+to        = '2.8'
+type      = 'zim_emphasis'
+
+[[caption]]
+text      = "Now let’s go destroy it"
+from      = '3.2'
+to        = '4.1'
+type      = 'zim_speak'

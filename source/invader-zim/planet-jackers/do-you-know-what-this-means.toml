@@ -1,0 +1,57 @@
+title = 'Do you know what this means?'
+published = 2022-03-25T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim asks Gir “Do you know what this means?”
+
+Gir confidently exclaims “YES!”
+
+Zim pauses for a moment and asks “You don’t really, do you?”
+
+Gir looks confused and holds up his toy pig.
+
+"""
+
+info.colours = '79'
+info.filesize = '0.53mb'
+info.frames = '66'
+info.size = '480×320'
+info.time = '5.51 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '5:56.6'
+duration = '5.5'
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.53mb'
+
+[[caption]]
+text      = "Do you know what this means?"
+from      = '0.4'
+to        = '1.3'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "YES!"
+from      = '1.8'
+to        = '2.4'
+type      = 'zim_shout'
+
+[[caption]]
+text      = "You don’t really, do you?"
+from      = '3.75'
+to        = '4.8'
+type      = 'zim_speak'

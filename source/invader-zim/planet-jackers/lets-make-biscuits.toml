@@ -1,0 +1,48 @@
+title = 'Let’s make biscuits'
+published = 2022-03-29T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Gir grabs Zim’s face, pulls him closer, and demands
+“Biscuits! Let’s make biscuits!”
+
+"""
+
+info.colours = '79'
+info.filesize = '0.47mb'
+info.frames = '41'
+info.size = '480×270'
+info.time = '3.41 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '2:44.0'
+duration = '3.45'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.47mb'
+
+[[caption]]
+text      = "Biscuits!"
+from      = '0.8'
+to        = '1.3'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Let’s make biscuits!"
+from      = '1.8'
+to        = '3.5'
+type      = 'zim_emphasis'

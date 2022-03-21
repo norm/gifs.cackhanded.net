@@ -1,0 +1,36 @@
+title = 'I’m crushing your head'
+published = 2022-04-03T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+From Gir’s point of view we see him pretend to crush Zim’s head between 
+finger and thumb, in a manner reminiscent of Kids in the Hall.
+
+"""
+
+info.colours = '74'
+info.filesize = '0.10mb'
+info.frames = '18'
+info.size = '480×270'
+info.time = '1.51 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '3:35.2'
+duration = '1.45'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.1mb'

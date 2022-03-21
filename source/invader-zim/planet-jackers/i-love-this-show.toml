@@ -1,0 +1,42 @@
+title = 'I love this show'
+published = 2022-03-30T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Static covers the computer screen. Gir comments “I love this show”.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.47mb'
+info.frames = '30'
+info.size = '480×270'
+info.time = '2.51 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '2:10.5'
+duration = '2.5'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.48mb'
+
+[[caption]]
+text      = "I love this show"
+from      = '1.2'
+to        = '2.5'
+type      = 'zim_speak'
+placement = '200,225'

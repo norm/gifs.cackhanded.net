@@ -1,0 +1,49 @@
+title = 'Not your fault'
+published = 2022-03-23T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim asks Gir incredulously ”Something is broken and it’s not your fault?"
+
+Gir replies nervously “I know, I’m scared too”.
+
+"""
+
+info.colours = '79'
+info.filesize = '0.32mb'
+info.frames = '56'
+info.size = '480×270'
+info.time = '4.66 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '1:58.9'
+duration = '4.6'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.32mb'
+
+[[caption]]
+text      = "Something is broken\nand it’s not your fault?"
+from      = '0'
+to        = '2.4'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "I know, I’m scared too"
+from      = '2.6'
+to        = '4.4'
+type      = 'zim_speak'

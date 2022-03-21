@@ -1,0 +1,44 @@
+title = 'This planet’s doom'
+published = 2022-03-31T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim declares “I know for certain the Armada expects me to ensure this
+planet’s doom!” while Gir waves at the Planet Jackers.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.57mb'
+info.frames = '61'
+info.size = '480×270'
+info.time = '4.07 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '7:42.4'
+duration = '4'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.58mb'
+
+[[caption]]
+text      = "I know for certain the Armada expects\nme to ensure this planet’s doom!"
+from      = '0.2'
+to        = '4'
+type      = 'zim_speak'
+margin    = '0'
+placement = '14,198'

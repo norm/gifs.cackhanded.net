@@ -1,0 +1,35 @@
+title = 'Screaming'
+published = 2022-03-22T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'invader-zim',
+    'oog-ah',
+]
+body_markdown = """
+
+Zim and Oog Ah fly at each other, preparing to fight, screaming.
+
+"""
+
+info.colours = '74'
+info.filesize = '0.64mb'
+info.frames = '45'
+info.size = '480×270'
+info.time = '2.99 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '11:04.0'
+duration = '3'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.65mb'

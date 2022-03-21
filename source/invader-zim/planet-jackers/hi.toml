@@ -1,0 +1,40 @@
+title = 'HI!'
+published = 2022-03-24T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/planet-jackers/index'
+tag = [
+    'gir',
+]
+body_markdown = """
+
+Gir excitedly waves.
+
+"""
+
+info.colours = '76'
+info.filesize = '0.21mb'
+info.frames = '47'
+info.size = '480×270'
+info.time = '1.96 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '9:54.5'
+duration = '1.95'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#f0b5e1',      # gir's tongue
+    '#dd84c6',
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '24'
+loss       = '20'
+max_size   = '0.22mb'
