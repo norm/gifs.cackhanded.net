@@ -1,0 +1,49 @@
+title = 'That thing on his face'
+published = 2022-04-11T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'dib-membrane',
+    'skool',
+    'torque-smackey',
+]
+body_markdown = """
+
+Dib tells a gathering of skoolchildren “Don’t look at that thing on
+his face, he’s using it to control you!”
+
+"""
+
+info.colours = '80'
+info.filesize = '0.22mb'
+info.frames = '43'
+info.size = '480×270'
+info.time = '3.58 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '20:43.0'
+duration = '3.6'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.23mb'
+
+[[caption]]
+text      = "Don’t look at that thing on his face"
+from      = '0.7'
+to        = '2'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "He’s using it to control you!"
+from      = '2.01'
+to        = '4'
+type      = 'zim_speak'

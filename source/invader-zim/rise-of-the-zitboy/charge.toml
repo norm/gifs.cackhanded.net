@@ -1,0 +1,40 @@
+title = 'Charge!'
+published = 2022-04-10T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'dib-membrane',
+]
+body_markdown = """
+
+Dib in an anime-like flying into action pose with rushing lines behind him.
+
+"""
+
+info.colours = '32'
+info.filesize = '0.29mb'
+info.frames = '14'
+info.size = '480×270'
+info.time = '0.94 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '20:38.5'
+duration = '0.9'
+crop     = '710:400:5:20'
+
+[palette]
+add = [
+    '#c88db6',  # tongue
+    '#ba6a9f',
+]
+
+[output]
+colours    = '30'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.3mb'

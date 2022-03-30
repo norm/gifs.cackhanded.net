@@ -1,0 +1,42 @@
+title = 'Eating pizza'
+published = 2022-04-06T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'gir',
+]
+body_markdown = """
+
+Gir tears the edge off of a pizza box, rips the pizza in half and slaps one
+half on its face, eating it by dragging it down its face and into its mouth.
+
+"""
+
+info.colours = '74'
+info.filesize = '0.65mb'
+info.frames = '58'
+info.size = '480×270'
+info.time = '4.83 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '14:29.7'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.66mb'
+
+[[clip]]
+start = '0'
+end   = '2'
+
+[[clip]]
+start = '2.8'
+end   = '5.7'

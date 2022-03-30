@@ -1,0 +1,44 @@
+title = 'Can’t I use that sponge?'
+published = 2022-04-05T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'dib-membrane',
+    'ms-bitters',
+    'skool',
+]
+body_markdown = """
+
+The skool classroom is drowning in pus. Ms Bitters hands Dib a tiny
+fragment of sponge to clean up. A much bigger sponge is floating past.
+He asks “Can’t I use that sponge?”
+
+"""
+
+info.colours = '79'
+info.filesize = '0.88mb'
+info.frames = '73'
+info.size = '480×270'
+info.time = '6.08 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '23:21.0'
+duration = '6.1'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.9mb'
+
+[[caption]]
+text      = "Can’t I use that sponge?"
+from      = '4.3'
+to        = '6'
+type      = 'zim_speak'

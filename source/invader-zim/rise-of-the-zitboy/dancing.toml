@@ -1,0 +1,35 @@
+title = 'Dancing'
+published = 2022-04-14T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Gir dances while Zim ponders.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.11mb'
+info.frames = '11'
+info.size = '480×270'
+info.time = '0.74 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '17:47.5'
+duration = '0.7'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.11mb'

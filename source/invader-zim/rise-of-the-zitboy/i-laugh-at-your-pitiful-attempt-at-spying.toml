@@ -1,0 +1,50 @@
+title = 'I laugh at your pitiful attempt at spying'
+published = 2022-04-07T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim tells Dib “I laugh at your pitiful attempt at spying”.
+
+He then says “Here I go!” and starts laughing.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.48mb'
+info.frames = '68'
+info.size = '480×270'
+info.time = '4.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '13:33.7'
+duration = '4.5'
+crop     = '710:400:5:0'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.48mb'
+
+[[caption]]
+text      = "I laugh at your pitiful attempt at spying"
+from      = '0'
+to        = '2.1'
+type      = 'zim_speak'
+margin    = '0'
+placement = '6,226'
+
+[[caption]]
+text      = "Here I go!"
+from      = '2.5'
+to        = '3.1'
+type      = 'zim_speak'

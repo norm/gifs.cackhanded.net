@@ -1,0 +1,35 @@
+title = 'Little hand'
+published = 2022-04-04T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'invader-zim',
+    'pustulio',
+]
+body_markdown = """
+
+Zim waves Pustulio’s little hand.
+
+"""
+
+info.colours = '48'
+info.filesize = '0.53mb'
+info.frames = '46'
+info.size = '480×270'
+info.time = '3.83 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '22:13.3'
+duration = '3.8'
+crop     = '710:400:5:35'
+
+[output]
+colours    = '48'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = 'no'
+max_size   = 'auto'

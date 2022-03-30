@@ -1,0 +1,42 @@
+title = 'Roll over'
+published = 2022-04-13T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim watches a hypnotised Gir performing ‘roll over’.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.31mb'
+info.frames = '23'
+info.size = '480×270'
+info.time = '1.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '17:32.4'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.32mb'
+
+[[clip]]
+start = '0'
+end   = '0.6'
+
+[[clip]]
+start = '1.4'
+end   = '2.3'

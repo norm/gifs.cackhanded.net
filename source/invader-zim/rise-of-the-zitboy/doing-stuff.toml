@@ -1,0 +1,85 @@
+title = 'Doing stuff'
+published = 2022-04-12T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'dib-membrane',
+    'invader-zim',
+]
+body_markdown = """
+
+Dib threatens Zim that he’ll find him in his home.
+“I’ll be there … doing stuff!”
+
+Zim rebuffs him. “‘stuff’? In my home? Never!”
+
+"""
+
+info.colours = '87'
+info.filesize = '0.71mb'
+info.frames = '81'
+info.size = '480×270'
+info.time = '5.39 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '13:42.8'
+duration = '5.4'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#36563f',  # walls
+    '#5e6932',
+    '#52825d',
+    '#88675c',
+    '#2c4d33',
+    '#563317',  # fence
+    '#310218',  # pipes
+    '#5b1c40',
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '15'
+loss       = '20'
+max_size   = '0.72mb'
+
+[[caption]]
+text      = "I’ll be there"
+from      = '0'
+to        = '2.1'
+type      = 'zim_speak'
+placement = '104,225'
+
+[[caption]]
+text      = "doing stuff"
+from      = '1.3'
+to        = '2.1'
+type      = 'zim_emphasis'
+placement = '244,225'
+
+[[caption]]
+text      = "“stuff”?"
+from      = '2.6'
+to        = '3.6'
+type      = 'zim_speak'
+placement = '67,225'
+
+[[caption]]
+text      = "“stuff”? In my home?"
+from      = '3.61'
+to        = '5.4'
+type      = 'zim_speak'
+placement = '67,225'
+
+[[caption]]
+text      = "NEVER!"
+from      = '4.7'
+to        = '5.4'
+type      = 'zim_emphasis'
+placement = '324,225'

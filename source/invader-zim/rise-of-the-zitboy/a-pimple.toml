@@ -1,0 +1,45 @@
+title = 'A pimple'
+published = 2022-04-08T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/rise-of-the-zitboy/index'
+tag = [
+    'pimple',
+    'acne-blast',
+    'highskool',
+]
+body_markdown = """
+
+In an advert for Acne Blast! a kid with a huge pimple stands
+forlornly in front of other highskoolers, who all gasp and express
+their revulsion in unison.
+
+"""
+
+info.colours = '77'
+info.filesize = '0.54mb'
+info.frames = '54'
+info.size = '480×270'
+info.time = '4.51 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e07'
+ext      = 'm4v'
+start    = '16:02.2'
+duration = '4.5'
+crop     = '710:400:5:20'
+
+[palette]
+add = [
+    '#c8dcd5',  # eyes
+    '#b5ba69',  # hair 
+    '#96528b',  # top
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.55mb'
