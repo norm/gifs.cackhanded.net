@@ -1,0 +1,54 @@
+title = 'everything is normal'
+published = 2022-04-20T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/invasion-of-the-idiot-dog-brain/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim reporting back to the Almighty Tallest, informs them that
+“Everything is normal again. If possible, things are even more normal
+now than they ever were.”
+
+Gir, wearing a Krazy Taco hat in the background,
+finishes a taco and dances off.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.94mb'
+info.frames = '89'
+info.size = '480×270'
+info.time = '7.41 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '11:40.2'
+duration = '7.4'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.95mb'
+
+[[caption]]
+text      = "Everything is normal again\n "
+from      = '0'
+to        = '1.6'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "If possible, things are even\nmore normal now than they ever were"
+from      = '1.61'
+to        = '6.5'
+type      = 'zim_speak'
+margin    = '0'
+placement = '16,198'

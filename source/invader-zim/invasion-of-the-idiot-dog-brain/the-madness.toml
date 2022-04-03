@@ -1,0 +1,48 @@
+title = 'The madness!'
+published = 2022-04-23T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/invasion-of-the-idiot-dog-brain/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim cracks and screams “The madness! THE MADNESS!”
+
+"""
+
+info.colours = '79'
+info.filesize = '0.98mb'
+info.frames = '77'
+info.size = '480×270'
+info.time = '5.14 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '6:17.4'
+duration = '5.1'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '1mb'
+
+[[caption]]
+text      = "THE MADNESS!"
+from      = '2.6'
+to        = '3.9'
+type      = 'zim_speak'
+size      = '48'
+
+[[caption]]
+text      = "THE MADNESS!"
+from      = '4'
+to        = '5.1'
+type      = 'zim_emphasis'
+size      = '48'

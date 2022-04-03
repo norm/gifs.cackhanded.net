@@ -1,0 +1,36 @@
+title = 'Madness'
+published = 2022-04-22T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/invasion-of-the-idiot-dog-brain/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim stands in the kitchen while the bin, toilet, fridge, cupboard, and oven
+all flap about.
+
+"""
+
+info.colours = '75'
+info.filesize = '0.15mb'
+info.frames = '11'
+info.size = '480×270'
+info.time = '0.91 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '5:47.2'
+duration = '0.9'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.15mb'
+mode       = 'full'

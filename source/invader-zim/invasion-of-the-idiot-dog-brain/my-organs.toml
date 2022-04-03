@@ -1,0 +1,47 @@
+title = 'My organs!'
+published = 2022-04-19T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/invasion-of-the-idiot-dog-brain/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Gir, temporarily trapped in the house’s brain, is squeezing Zim with a waldo.
+Zim cries out “Put me down, Gir! My organs!”
+
+"""
+
+info.colours = '79'
+info.filesize = '1.00mb'
+info.frames = '84'
+info.size = '480×270'
+info.time = '7.01 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '4:23.0'
+duration = '7'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.0mb'
+
+[[caption]]
+text      = "Put me down, Gir!"
+from      = '0.4'
+to        = '1.7'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "MY ORGANS!"
+from      = '4.2'
+to        = '5.6'
+type      = 'zim_emphasis'

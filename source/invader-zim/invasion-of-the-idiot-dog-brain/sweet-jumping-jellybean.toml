@@ -1,0 +1,41 @@
+title = 'Sweet jumping jellybean!'
+published = 2022-04-16T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/invasion-of-the-idiot-dog-brain/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+As his house, which Gir has transformed into a dog shape, runs down the
+street, Zim exclaims “Sweet jumping jellybean!”
+
+"""
+
+info.colours = '80'
+info.filesize = '1.25mb'
+info.frames = '60'
+info.size = '480×270'
+info.time = '5.01 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '7:29.0'
+duration = '5'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '1.26mb'
+
+[[caption]]
+text      = "Sweet jumping jellybean!"
+from      = '0.4'
+to        = '3.2'
+type      = 'zim_emphasis'

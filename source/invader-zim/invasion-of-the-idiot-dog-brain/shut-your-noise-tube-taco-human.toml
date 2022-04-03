@@ -1,0 +1,42 @@
+title = 'Shut your noise tube, Taco Human'
+published = 2022-04-21T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/invasion-of-the-idiot-dog-brain/index'
+tag = [
+    'invader-zim',
+    'taco-human',
+]
+body_markdown = """
+
+Zim tells the drive-through employee “Shut your noise tube, Taco Human!”
+and throws a wad of dollar bills in his face.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.77mb'
+info.frames = '48'
+info.size = '480×270'
+info.time = '4.01 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '9:54.6'
+duration = '4'
+crop     = '710:400:5:15'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '12'
+loss       = '20'
+max_size   = '0.78mb'
+
+[[caption]]
+text      = "Shut your noise tube, Taco Human!"
+from      = '0.3'
+to        = '2.2'
+type      = 'zim_emphasis'

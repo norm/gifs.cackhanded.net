@@ -1,0 +1,51 @@
+title = 'Taco taco taco'
+published = 2022-04-25T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/invasion-of-the-idiot-dog-brain/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Gir, its mind clearly on other things than the instructions Zim is giving
+it, mutters “taco taco taco”.
+
+"""
+
+info.colours = '80'
+info.filesize = '0.37mb'
+info.frames = '34'
+info.size = '480×270'
+info.time = '2.27 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '1:54.0'
+duration = '2.25'
+crop     = '710:400:5:80'
+
+[palette]
+add = [
+    '#eba2d6',  # gir's tongue
+    '#b689d8',  # brain
+    '#aab3aa',  # gir in shadow
+    '#948690',  # wall highlight
+]
+
+[output]
+colours    = '70'
+denoise    = true
+dither     = 'bayer:bayer_scale=3'
+fps        = '15'
+loss       = '20'
+max_size   = '0.38mb'
+
+[[caption]]
+text      = "taco taco taco"
+from      = '0.2'
+to        = '1.7'
+type      = 'zim_emphasis'
+placement = '230,225'
