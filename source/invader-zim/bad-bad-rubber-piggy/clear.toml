@@ -1,0 +1,54 @@
+title = 'Clear!'
+published = 2022-04-30T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'dib-membrane',
+    'paramedic',
+    'defibrilator',
+]
+body_markdown = """
+
+Two paramedics are trying to rescue Dib. One is working the defibrilator’s
+controls, the other shouts “Clear!” and applies the paddles (which have been
+replaced by rubber piggies).
+
+"""
+
+info.colours = '80'
+info.filesize = '0.35mb'
+info.frames = '17'
+info.size = '480×270'
+info.time = '1.14 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '20:09.15'
+duration = '1.1'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.35mb'
+
+[[caption]]
+text      = "CLEAR!"
+from      = '0'
+to        = '0.35'
+type      = 'zim_shout'
+placement = '250,192'
+size      = '60'
+
+[[caption]]
+text      = "CLEAR!"
+from      = '0.65'
+to        = '2'
+type      = 'zim_shout'
+placement = '250,192'
+size      = '60'

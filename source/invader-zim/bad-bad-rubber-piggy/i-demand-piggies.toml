@@ -1,0 +1,46 @@
+title = 'I demand piggies!'
+published = 2022-05-06T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim orders “More piggies, Gir! I demand piggies!”
+
+"""
+
+info.colours = '79'
+info.filesize = '0.65mb'
+info.frames = '46'
+info.size = '480×270'
+info.time = '3.83 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '18:25.0'
+duration = '3.8'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.65mb'
+
+[[caption]]
+text      = "More piggies, Gir!"
+from      = '0.8'
+to        = '2.2'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "I demand piggies!"
+from      = '2.4'
+to        = '3.6'
+type      = 'zim_emphasis'

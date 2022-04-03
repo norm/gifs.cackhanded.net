@@ -1,0 +1,59 @@
+title = 'Not compatible'
+published = 2022-04-29T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim complains at the response from the computer “not compatible”?
+
+He asks rhetorically “Is this thing just completely useless?” then
+dismissively quotes the computer again “not compatible” and throws
+Gir’s rubber piggy at the hunter-destroyer.
+
+"""
+
+info.colours = '80'
+info.filesize = '1.15mb'
+info.frames = '94'
+info.size = '480×270'
+info.time = '7.83 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '15:28.4'
+duration = '7.8'
+crop     = '710:400'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '1.15mb'
+
+[[caption]]
+text      = "“not compatible”?"
+from      = '1.25'
+to        = '2.6'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "Is this thing just completely useless?"
+from      = '2.61'
+to        = '4.2'
+type      = 'zim_speak'
+margin    = '0'
+placement = '18,225'
+
+[[caption]]
+text      = "“not compatible”!"
+from      = '4.21'
+to        = '5.5'
+type      = 'zim_emphasis'

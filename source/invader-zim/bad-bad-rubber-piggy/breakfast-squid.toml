@@ -1,0 +1,35 @@
+title = 'Breakfast squid'
+published = 2022-05-03T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'squid',
+]
+body_markdown = """
+
+A child cheers at having a bowl of Breakfast Squid,
+until the squid attacks him.
+
+"""
+
+info.colours = '64'
+info.filesize = '0.75mb'
+info.frames = '47'
+info.size = '480×270'
+info.time = '3.14 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '13:25.0'
+duration = '3.1'
+crop     = '710:400'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.77mb'

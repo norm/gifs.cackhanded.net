@@ -1,0 +1,48 @@
+title = 'Yay we’re doomed!'
+published = 2022-04-27T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'gir',
+    'invader-zim',
+]
+body_markdown = """
+
+Zim holds aloft the last rubber piggie and screams.
+Gir exclaims “Yay! We’re doomed!”
+
+"""
+
+info.colours = '81'
+info.filesize = '0.94mb'
+info.frames = '68'
+info.size = '480×270'
+info.time = '4.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '22:08.2'
+duration = '4.5'
+crop     = '710:400'
+
+[palette]
+add = [
+    '#f4b8e1',  # gir's tongue
+    '#bcfefb',  # gir's chest
+]
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.95mb'
+
+[[caption]]
+text      = "Yay! We’re doomed!"
+from      = '2.5'
+to        = '4.5'
+type      = 'zim_emphasis'

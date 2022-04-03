@@ -1,0 +1,46 @@
+title = 'I love-ed you, piggy!'
+published = 2022-05-04T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'gir',
+]
+body_markdown = """
+
+Gir cries for its lost toy pig “I love-ed you, piggy! I love-ed you-hou-hou!”
+
+"""
+
+info.colours = '80'
+info.filesize = '1.14mb'
+info.frames = '89'
+info.size = '480×270'
+info.time = '5.94 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '16:45.4'
+duration = '5.9'
+crop     = '710:400:5:80'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = 'no'
+max_size   = 'auto'
+
+[[caption]]
+text      = "I love-ed you, piggy!"
+from      = '1.5'
+to        = '3.2'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "I love-ed you-hou-hou!"
+from      = '3.4'
+to        = '5'
+type      = 'zim_speak'

@@ -1,0 +1,34 @@
+title = 'Crying'
+published = 2022-04-26T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'gir',
+]
+body_markdown = """
+
+Gir, surrounded by rubber piggies, crying.
+
+"""
+
+info.colours = '64'
+info.filesize = '0.12mb'
+info.frames = '8'
+info.size = '480×270'
+info.time = '0.54 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '18:47.0'
+duration = '0.5'
+crop     = '710:400'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=4'
+fps        = '15'
+loss       = '0'
+max_size   = '0.12mb'

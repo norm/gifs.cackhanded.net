@@ -1,0 +1,35 @@
+title = 'Head explode'
+published = 2022-05-02T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'gir',
+]
+body_markdown = """
+
+Gir‘s head explodes, and its body falls to the ground, sparking
+and smoking from the neck.
+
+"""
+
+info.colours = '64'
+info.filesize = '0.62mb'
+info.frames = '36'
+info.size = '480×270'
+info.time = '3.01 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '15:10.6'
+duration = '3'
+crop     = '710:400'
+
+[output]
+colours    = '64'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '12'
+loss       = '20'
+max_size   = '0.62mb'

@@ -1,0 +1,46 @@
+title = 'Screaming temporal doom'
+published = 2022-05-01T15:00:00Z
+show_fkey = 'invader-zim/index'
+episode_fkey = 'invader-zim/bad-bad-rubber-piggy/index'
+tag = [
+    'invader-zim',
+]
+body_markdown = """
+
+Zim declares “Now to unleash **screaming temporal doom!**”
+
+"""
+
+info.colours = '79'
+info.filesize = '0.57mb'
+info.frames = '62'
+info.size = '480×270'
+info.time = '4.14 seconds'
+
+[video]
+source   = 'file'
+file     = 'zim_s01e08'
+ext      = 'm4v'
+start    = '15:18.0'
+duration = '4.1'
+crop     = '710:400:5:60'
+
+[output]
+colours    = '74'
+denoise    = true
+dither     = 'bayer:bayer_scale=5'
+fps        = '15'
+loss       = '20'
+max_size   = '0.7mb'
+
+[[caption]]
+text      = "Now to unleash…"
+from      = '0'
+to        = '1.75'
+type      = 'zim_speak'
+
+[[caption]]
+text      = "screaming temporal doom!"
+from      = '1.76'
+to        = '4.1'
+type      = 'zim_emphasis'
