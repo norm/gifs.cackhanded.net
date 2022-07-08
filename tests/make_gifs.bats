@@ -15,8 +15,8 @@ reset=$'\e'[0m
     [ "$status" -eq 0 ]
     [ "${lines[0]}" == "    640x480 dither=bayer_scale=4 fps=original" ]
     [ "${lines[1]}" == "    64 colours (64 initially)" ]
-    [ "${lines[2]}" == "    size 1.61mb (duration 1.01) $magenta[auto max 0.45mb]$reset" ]
-    [ "${lines[3]}" == "  $cyan< optimised with loss 0, now 1.48mb, 92.3% of original$reset" ]
+    [ "${lines[2]}" == "    size 1.62mb (duration 1.01) $magenta[auto max 0.45mb]$reset" ]
+    [ "${lines[3]}" == "  $cyan< optimised with loss 0, now 1.49mb, 92.2% of original$reset" ]
     [ "${lines[4]}" == "  > 30 frames" ]
     # cp $BATS_TMPDIR/output.gif tests/gifs/original.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/original.gif
@@ -28,10 +28,11 @@ reset=$'\e'[0m
     run make_gif tests/config/lossy.toml $BATS_TMPDIR/output.gif
     echo "$output"
 
-    [ "${lines[2]}" == "    size 1.61mb (duration 1.01), ${magenta}max_size 1.00mb$reset $magenta[auto max 0.45mb]$reset" ]
-    [ "${lines[3]}" == "  $magenta< optimised with loss 20, now 1.20mb, 74.4% of original$reset" ]
-    [ "${lines[4]}" == "  $magenta< optimised with loss 30, now 1.08mb, 108.0% of max$reset" ]
-    [ "${lines[5]}" == "  $green< optimised with loss 40, now 1.00mb, 99.6% of max$reset" ]
+    [ "${lines[2]}" == "    size 1.62mb (duration 1.01), ${magenta}max_size 1.00mb$reset $magenta[auto max 0.45mb]$reset" ]
+    [ "${lines[3]}" == "  $magenta< optimised with loss 20, now 1.20mb, 74.2% of original$reset" ]
+    [ "${lines[4]}" == "  $magenta< optimised with loss 30, now 1.08mb, 108.3% of max$reset" ]
+    [ "${lines[5]}" == "  $magenta< optimised with loss 40, now 1.00mb, 100.0% of max$reset" ]
+    [ "${lines[6]}" == "  $green< optimised with loss 50, now 0.95mb, 94.6% of max$reset" ]
 
     [ "$status" -eq 0 ]
     # cp $BATS_TMPDIR/output.gif tests/gifs/lossy.gif
@@ -80,6 +81,7 @@ reset=$'\e'[0m
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/output.gif tests/gifs/slowdown.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/slowdown.gif
 }
 
@@ -90,6 +92,7 @@ reset=$'\e'[0m
     echo "$output"
 
     [ "$status" -eq 0 ]
+    # cp $BATS_TMPDIR/output.gif tests/gifs/clips.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/clips.gif
 }
 
