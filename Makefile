@@ -87,4 +87,4 @@ fonts:
 
 videos:
 	mkdir videos
-	youtube-dl -o "videos/HU2ftCitvyQ.mp4" -f "bestvideo[ext=mp4]" HU2ftCitvyQ
+	yt-dlp -o "videos/HU2ftCitvyQ.mp4" -f "bestvideo[ext=mp4]" HU2ftCitvyQ

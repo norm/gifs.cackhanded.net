@@ -5,6 +5,17 @@ cyan=$'\e'[36m
 magenta=$'\e'[35m
 reset=$'\e'[0m
 
+function ffmpeg_major_version {
+    ffmpeg -version | head -1 | cut -d\  -f3 | cut -d. -f1
+}
+
+@test check_ffmpeg_version {
+    run ffmpeg_major_version
+
+    [ "$status" -eq 0 ]
+    [ "$output" = '5' ]
+}
+
 @test generate_original {
     # FIXME
     [ $(uname) != 'Darwin' ] && skip "Not macOS"
