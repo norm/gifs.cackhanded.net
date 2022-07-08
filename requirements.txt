@@ -2,3 +2,4 @@ flourish>=0.10.3
 Pillow==8.4.0
 toml
 tweepy
+yt-dlp

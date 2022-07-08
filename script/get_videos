@@ -25,7 +25,7 @@ for toml in "${files[@]}"; do
             video="videos/${id}.${ext}"
             if [ ! -f "$video" ]; then
                 echo "++ $video"
-                youtube-dl \
+                yt-dlp \
                     -o "$video" \
                     -f "bestvideo[ext=${ext}]" \
                     -- \
