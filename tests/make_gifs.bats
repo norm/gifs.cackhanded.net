@@ -29,7 +29,7 @@ function ffmpeg_major_version {
     [ "${lines[2]}" == "    size 1.61mb (duration 1.01) $magenta[auto max 0.45mb]$reset" ]
     [ "${lines[3]}" == "  $cyan< optimised with loss 0, now 1.48mb, 92.3% of original$reset" ]
     [ "${lines[4]}" == "  > 30 frames" ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/original.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/original.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/original.gif
 }
 
@@ -45,7 +45,7 @@ function ffmpeg_major_version {
     [ "${lines[5]}" == "  $green< optimised with loss 40, now 1.00mb, 99.6% of max$reset" ]
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/lossy.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/lossy.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/lossy.gif
 }
 
@@ -57,7 +57,7 @@ function ffmpeg_major_version {
 
     [ "$status" -eq 0 ]
     [ "${lines[0]}" == "    640x480 dither=bayer_scale=4 fps=10" ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/fps.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/fps.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/fps.gif
 }
 
@@ -69,7 +69,7 @@ function ffmpeg_major_version {
 
     [ "$status" -eq 0 ]
     [ "${lines[0]}" == "    480x360 dither=floyd_steinberg fps=10" ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/scale.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/scale.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/scale.gif
 }
 
@@ -80,7 +80,7 @@ function ffmpeg_major_version {
     echo "$output"
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/crop.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/crop.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/crop.gif
 }
 
@@ -91,7 +91,7 @@ function ffmpeg_major_version {
     echo "$output"
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/slowdown.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/slowdown.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/slowdown.gif
 }
 
@@ -102,7 +102,7 @@ function ffmpeg_major_version {
     echo "$output"
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/clips.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/clips.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/clips.gif
 }
 
@@ -118,7 +118,7 @@ function ffmpeg_major_version {
     [ "${lines[4]}" == "    102 colours (96 initially)" ]
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/captions.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/captions.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/captions.gif
 }
 
@@ -135,7 +135,7 @@ function ffmpeg_major_version {
     [ "${lines[4]}" == "    102 colours (96 initially)" ]
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/captions_type.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/captions_type.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/captions_type.gif
 }
 
@@ -146,7 +146,7 @@ function ffmpeg_major_version {
     echo "$output"
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/captions_noscale.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/captions_noscale.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/captions_noscale.gif
 }
 
@@ -157,7 +157,7 @@ function ffmpeg_major_version {
     echo "$output"
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/clips_captions.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/clips_captions.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/clips_captions.gif
 }
 
@@ -170,6 +170,6 @@ function ffmpeg_major_version {
     [ "${lines[4]}" == "    58 colours (48 initially)" ]
 
     [ "$status" -eq 0 ]
-    cp $BATS_TMPDIR/output.gif tests/gifs/captions_colours.gif
+    # cp $BATS_TMPDIR/output.gif tests/gifs/captions_colours.gif
     diff -u $BATS_TMPDIR/output.gif tests/gifs/captions_colours.gif
 }
