@@ -8,7 +8,7 @@ tag = [
 body_markdown = """
 
 Ted, experiencing semantic satiation, saying “Said ‘plan’ too many times,
-word’s lost all it’s meaning.”
+word’s lost all its meaning.”
 
 """
 
@@ -42,7 +42,7 @@ placement = 'bc'
 size      = '28'
 
 [[caption]]
-text      = "Word’s lost all it’s meaning now"
+text      = "Word’s lost all its meaning now"
 from      = '2.5'
 to        = '3.7'
 margin    = '20'
