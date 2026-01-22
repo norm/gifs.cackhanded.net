@@ -1,4 +1,4 @@
-.PHONY: all baked_css clean dev_css example-fonts gifwrapped generate rebuild push publish remove removethumbs test
+.PHONY: all baked_css clean dev_css fonts google-fonts local-fonts gifwrapped generate rebuild push publish remove removethumbs test
 
 all: gifs
 
@@ -79,11 +79,13 @@ next:
 	@./script/next filling
 
 fonts:
-	mkdir -p fonts
-	curl -L -o fonts/assistant-semibold.ttf https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-SemiBold.ttf
-	curl -L -o fonts/assistant-bold.ttf https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-Bold.ttf
-	curl -L -o fonts/assistant-extrabold.ttf https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-ExtraBold.ttf
-	curl -L -o fonts/lato-regular.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Regular.ttf
+	@make -s -f Makefile.fonts
+
+google-fonts:
+	@make -s -f Makefile.fonts google
+
+local-fonts:
+	@make -s -f Makefile.fonts local
 
 videos:
 	mkdir videos

@@ -10,6 +10,20 @@
     [ "$status" -eq 2 ]
 }
 
+@test missing_font_is_error_not_stacktrace {
+    expected_output="Font not found: fonts/nonexistent.ttf"
+
+    run ./bin/caption \
+        480 300 \
+        'I am a caption' \
+        --font 'nonexistent.ttf' \
+        $BATS_TMPDIR/caption.png
+    echo "$output"
+
+    diff <(echo "$expected_output") <(echo "$output")
+    [ "$status" -eq 1 ]
+}
+
 @test basic_caption {
     [ $(uname) != 'Darwin' ] && skip "Not macOS"
 

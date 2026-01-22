@@ -1,0 +1,80 @@
+.PHONY: all google local
+
+LOCAL_FONTS_DIR := $(HOME)/Documents/fonts
+
+GOOGLE_FONTS := \
+	fonts/assistant-semibold.ttf \
+	fonts/assistant-bold.ttf \
+	fonts/assistant-extrabold.ttf \
+	fonts/lato-black.ttf \
+	fonts/lato-regular.ttf \
+	fonts/poppins-black.ttf \
+	fonts/poppins-regular.ttf \
+	fonts/poppins-bold.ttf
+
+LOCAL_FONTS := \
+	fonts/acherusgrotesque-black.otf \
+	fonts/anteb-extrablack.otf \
+	fonts/anteb-regular.otf \
+	fonts/greycliffcf-heavy.otf \
+	fonts/greycliffcf-medium.otf \
+	fonts/morlrounded-italic.otf \
+	fonts/morlrounded-regular.otf \
+	fonts/oita.otf
+
+all: google local
+
+google: $(GOOGLE_FONTS)
+
+local: $(LOCAL_FONTS)
+
+fonts:
+	mkdir -p $@
+
+fonts/assistant-semibold.ttf: | fonts
+	curl -L -o $@ https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-SemiBold.ttf
+
+fonts/assistant-bold.ttf: | fonts
+	curl -L -o $@ https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-Bold.ttf
+
+fonts/assistant-extrabold.ttf: | fonts
+	curl -L -o $@ https://raw.githubusercontent.com/google/fonts/89c9db01508963eb8b48a171c8baf2ef750c5bd9/ofl/assistant/static/Assistant-ExtraBold.ttf
+
+fonts/lato-black.ttf: | fonts
+	curl -L -o $@ https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Black.ttf
+
+fonts/lato-regular.ttf: | fonts
+	curl -L -o $@ https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Regular.ttf
+
+fonts/poppins-black.ttf: | fonts
+	curl -L -o $@ https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Black.ttf
+
+fonts/poppins-regular.ttf: | fonts
+	curl -L -o $@ https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf
+
+fonts/poppins-bold.ttf: | fonts
+	curl -L -o $@ https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf
+
+fonts/acherusgrotesque-black.otf: | fonts
+	cp "$(LOCAL_FONTS_DIR)/acherus grotesque/$(@F)" $@
+
+fonts/anteb-extrablack.otf: | fonts
+	cp "$(LOCAL_FONTS_DIR)/anteb/$(@F)" $@
+
+fonts/anteb-regular.otf: | fonts
+	cp "$(LOCAL_FONTS_DIR)/anteb/$(@F)" $@
+
+fonts/greycliffcf-heavy.otf: | fonts
+	cp "$(LOCAL_FONTS_DIR)/greycliff/$(@F)" $@
+
+fonts/greycliffcf-medium.otf: | fonts
+	cp "$(LOCAL_FONTS_DIR)/greycliff/$(@F)" $@
+
+fonts/morlrounded-italic.otf: | fonts
+	cp "$(LOCAL_FONTS_DIR)/morl/$(@F)" $@
+
+fonts/morlrounded-regular.otf: | fonts
+	cp "$(LOCAL_FONTS_DIR)/morl/$(@F)" $@
+
+fonts/oita.otf: | fonts
+	cp "$(LOCAL_FONTS_DIR)/oita/Oita-NorReg.otf" $@
