@@ -31,14 +31,31 @@ function main {
         exit 1
     fi
 
-    # main video timings
+    duration=$(get_duration "$video")
+
     timing_args=''
+    local start_seconds=0
     start=$(toml $toml video.start)
-    [ -n "$start" ] && timing_args="$timing_args -ss $start"
-    duration=$(toml $toml video.duration)
-    [ -n "$duration" ] && timing_args="$timing_args -t $duration"
+    if [ -n "$start" ]; then
+        start_seconds=$(to_seconds "$start")
+        check_time "video.start" "$start_seconds"
+        timing_args="$timing_args -ss $start"
+    fi
+    local toml_duration=$(toml $toml video.duration)
+    if [ -n "$toml_duration" ]; then
+        check_time "video end" $(( ${start_seconds%.*} + ${toml_duration%.*} ))
+        timing_args="$timing_args -t $toml_duration"
+    fi
     end=$(toml $toml video.end)
-    [ -n "$end" ] && timing_args="$timing_args -to $end"
+    if [ -n "$end" ]; then
+        check_time "video end" $(( ${start_seconds%.*} + ${end%.*} ))
+        timing_args="$timing_args -to $end"
+    fi
+
+    local num_clips="$(toml $toml clip --length)"
+    for index in $(seq 1 $num_clips); do
+        check_time "clip $index" "$(to_seconds "$(toml $toml clip.end $index)")"
+    done
 
     # calculate the palette
     debug ffmpeg \
@@ -467,6 +484,13 @@ function size_in_mb {
     echo "$(echo 4k $bytes 1048576 / p | dc)"
 }
 
+function get_duration {
+    local video="$1"
+    local duration=$(ffprobe -v error -show_entries format=duration \
+        -of default=noprint_wrappers=1:nokey=1 "$video")
+    echo ${duration%.*}
+}
+
 function convert_mb {
     size="${1:-0}"
 
@@ -506,6 +530,16 @@ function cleanup {
 
 function filesize {
     perl -E 'say((stat($ARGV[0]))[7])' "$1"
+}
+
+function check_time {
+    local label="$1"
+    local seconds="$2"
+
+    if [[ ${seconds%.*} -gt $duration ]]; then
+        echo " ** $label ends after video (${seconds%.*} > $duration)"
+        exit 1
+    fi
 }
 
 if [ "$0" = "${BASH_SOURCE[0]}" ]; then

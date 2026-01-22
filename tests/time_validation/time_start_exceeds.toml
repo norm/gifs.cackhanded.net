@@ -1,0 +1,9 @@
+[video]
+source   = 'youtube'
+file     = 'HU2ftCitvyQ'
+ext      = 'mp4'
+start    = '3:00'
+
+[output]
+fps      = 'original'
+width    = 'original'
