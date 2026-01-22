@@ -1,0 +1,188 @@
+#!/usr/bin/env -S bash -euo pipefail
+#
+# - different versions of ffmpeg will change algorithms for selecting colours,
+#   so simple byte comparisons won't work
+# - instead remake the GIF and compare the existing file frame-by-frame using
+#   a perceptual tolerance where as long as the pixel is within `-fuzz %` of
+#   the original colour, it counts as the same
+# - calculate the number of failed pixels and if it is within the maximum
+#   tolerance, consider the GIF "the same"
+
+PATH="./bin:$PATH"
+source bin/make_gif
+
+function main {
+    fuzz=5
+    maximum_diff=4
+    while getopts "f:p:" opt; do
+        case "$opt" in
+            f)  fuzz="$OPTARG" ;;
+            p)  maximum_diff="$OPTARG" ;;
+            *)  usage ;;
+        esac
+    done
+    shift $((OPTIND-1))
+
+    mkdir -p temp
+
+    [ $# -eq 0 ] && usage
+
+    for toml in "$@"; do
+        run_comparison "$toml"
+    done
+}
+
+function usage {
+    echo "Usage: $0 [-f fuzz%] [-p diff%] config.toml..." >&2
+    exit 1
+}
+
+function handle_failure {
+    local tmpdir="$1"
+    local output="$2"
+    echo "  GIF kept at $output"
+    echo "  frames kept in $tmpdir"
+    open "$tmpdir"
+}
+
+function run_comparison {
+    local config_toml="$1"
+    local expected="${config_toml%.toml}.gif"
+    local output="temp/compare_$(basename "$config_toml" .toml).gif"
+
+    echo "=== $config_toml -> $output"
+    make_gif "$config_toml" "$output"
+
+    if validate_expectations "$config_toml" "$output" && setup_comparison "$expected" "$output" && run_frame_comparisons && report_results; then
+        rm "$output"
+        return 0
+    else
+        return 1
+    fi
+}
+
+function validate_expectations {
+    local config_toml="$1"
+    local output="$2"
+    local failed=0
+
+    local exp_frames exp_width exp_height exp_max_size
+    exp_frames=$(toml "$config_toml" expected.frames 2>/dev/null || echo "")
+    exp_width=$(toml "$config_toml" expected.width 2>/dev/null || echo "")
+    exp_height=$(toml "$config_toml" expected.height 2>/dev/null || echo "")
+    exp_max_size=$(toml "$config_toml" output.max_size 2>/dev/null || echo "")
+
+    [ -z "$exp_frames" ] && [ -z "$exp_width" ] && [ -z "$exp_height" ] && [ -z "$exp_max_size" ] && return 0
+
+    local info dimensions actual_frames actual_width actual_height
+    info=$(gifsicle --info "$output" 2>/dev/null | head -2)
+    actual_frames=$(echo "$info" | grep -oE '[0-9]+ images' | grep -oE '[0-9]+')
+    dimensions=$(echo "$info" | grep -oE 'logical screen [0-9]+x[0-9]+' | grep -oE '[0-9]+x[0-9]+')
+    actual_width=${dimensions%x*}
+    actual_height=${dimensions#*x}
+
+    if [ -n "$exp_frames" ] && [ "$exp_frames" != "$actual_frames" ]; then
+        echo "  expected $exp_frames frames, got $actual_frames"
+        failed=1
+    fi
+    if [ -n "$exp_width" ] && [ "$exp_width" != "$actual_width" ]; then
+        echo "  expected width $exp_width, got $actual_width"
+        failed=1
+    fi
+    if [ -n "$exp_height" ] && [ "$exp_height" != "$actual_height" ]; then
+        echo "  expected height $exp_height, got $actual_height"
+        failed=1
+    fi
+    if [ -n "$exp_max_size" ]; then
+        local max_bytes actual_bytes
+        max_bytes=$(convert_mb "$exp_max_size")
+        actual_bytes=$(stat -f%z "$output")
+        if [ "$actual_bytes" -gt "$max_bytes" ]; then
+            echo "  expected max size $exp_max_size ($max_bytes bytes), got $actual_bytes bytes"
+            failed=1
+        fi
+    fi
+
+    return $failed
+}
+
+function setup_comparison {
+    local expected="$1"
+    local actual="$2"
+
+    expected_size=$(stat -f%z "$expected")
+    actual_size=$(stat -f%z "$actual")
+    comparison_actual="$actual"
+
+    comparison_tmpdir=$(mktemp -d temp/compare.XXXXXX)
+    mkdir -p "$comparison_tmpdir/expected" "$comparison_tmpdir/actual"
+    gifsicle --unoptimize --explode "$expected" -o "$comparison_tmpdir/expected/frame"
+    gifsicle --unoptimize --explode "$actual" -o "$comparison_tmpdir/actual/frame"
+    for f in "$comparison_tmpdir"/expected/frame.* "$comparison_tmpdir"/actual/frame.*; do mv "$f" "$f.gif"; done
+
+    frame_count=$(set -- "$comparison_tmpdir"/expected/frame.*; echo $#)
+    local actual_count
+    actual_count=$(set -- "$comparison_tmpdir"/actual/frame.*; echo $#)
+
+    if [ "$frame_count" -ne "$actual_count" ]; then
+        echo "  frame count differs: expected=$frame_count actual=$actual_count"
+        handle_failure "$comparison_tmpdir" "$comparison_actual"
+        return 1
+    fi
+
+    local dimensions width height
+    dimensions=$(magick identify -format "%w %h" "$comparison_tmpdir/expected/frame.000.gif")
+    width="${dimensions% *}"
+    height="${dimensions#* }"
+    total_pixels=$((width * height))
+}
+
+function run_frame_comparisons {
+    echo "  comparing $frame_count frames (fuzz=${fuzz}%, threshold=${maximum_diff}%)..."
+
+    failed_frames=0
+    max_diff_pct=0
+    total_diff=0
+
+    for expected_frame in "$comparison_tmpdir"/expected/frame.*.gif; do
+        local frame_num="${expected_frame%.gif}"
+        frame_num="${frame_num##*.}"
+        local actual_frame="$comparison_tmpdir/actual/frame.$frame_num.gif"
+
+        local diff diff_int pct exceeds
+        diff=$(magick compare -fuzz "${fuzz}%" -metric AE "$expected_frame" "$actual_frame" null: 2>&1 || true)
+        diff_int="${diff%% *}"
+
+        total_diff=$((total_diff + diff_int))
+        pct=$(echo "scale=2; $diff_int * 100 / $total_pixels" | bc)
+        exceeds=$(echo "$pct > $maximum_diff" | bc)
+        [ "$(echo "$pct > $max_diff_pct" | bc)" -eq 1 ] && max_diff_pct="$pct"
+
+        if [ "$exceeds" -eq 1 ]; then
+            printf "\033[35m    frame %s: %5.2f%% (%d) FAIL\033[0m\n" "$frame_num" "$pct" "$diff_int"
+            failed_frames=$((failed_frames + 1))
+        else
+            printf "    frame %s: %5.2f%% (%d)\n" "$frame_num" "$pct" "$diff_int"
+        fi
+    done
+}
+
+function report_results {
+    local avg_diff avg_pct size_pct
+    avg_diff=$((total_diff / frame_count))
+    avg_pct=$(echo "scale=2; $avg_diff * 100 / $total_pixels" | bc)
+    size_pct=$(echo "scale=1; $actual_size * 100 / $expected_size" | bc)
+
+    printf "  summary: max=%5.2f%% avg=%5.2f%% threshold=%s%%\n" "$max_diff_pct" "$avg_pct" "$maximum_diff"
+    printf "  size: %d -> %d (%.1f%%)\n" "$expected_size" "$actual_size" "$size_pct"
+
+    if [ "$failed_frames" -gt 0 ]; then
+        echo "  $failed_frames frames exceeded threshold"
+        handle_failure "$comparison_tmpdir" "$comparison_actual"
+        return 1
+    fi
+
+    rm -rf "$comparison_tmpdir"
+}
+
+main "$@"

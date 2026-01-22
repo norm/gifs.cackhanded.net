@@ -27,3 +27,8 @@ from = '0.61'
 to   = '0.9'
 type = 'normal'
 font = 'assistant-extrabold.ttf'
+
+[expected]
+frames = 18
+width  = 480
+height = 360

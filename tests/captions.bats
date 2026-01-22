@@ -31,8 +31,8 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/output/caption.png
-    diff tests/output/caption.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TMPDIR/caption.png tests/captions/caption.png
+    diff tests/captions/caption.png $BATS_TMPDIR/caption.png
 }
 
 @test basic_caption_centred {
@@ -46,8 +46,8 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp  $BATS_TMPDIR/caption.png tests/output/caption_centred.png
-    diff tests/output/caption_centred.png $BATS_TMPDIR/caption.png
+    # cp  $BATS_TMPDIR/caption.png tests/captions/caption_centred.png
+    diff tests/captions/caption_centred.png $BATS_TMPDIR/caption.png
 }
 
 @test basic_caption_placement_negative {
@@ -61,8 +61,8 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/output/caption_placement.png
-    diff tests/output/caption_placement.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TMPDIR/caption.png tests/captions/caption_placement.png
+    diff tests/captions/caption_placement.png $BATS_TMPDIR/caption.png
 }
 
 @test basic_caption_colours {
@@ -78,8 +78,8 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/output/caption_colours.png
-    diff tests/output/caption_colours.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TMPDIR/caption.png tests/captions/caption_colours.png
+    diff tests/captions/caption_colours.png $BATS_TMPDIR/caption.png
 }
 
 @test basic_caption_sizes {
@@ -94,8 +94,8 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/output/caption_sizes.png
-    diff tests/output/caption_sizes.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TMPDIR/caption.png tests/captions/caption_sizes.png
+    diff tests/captions/caption_sizes.png $BATS_TMPDIR/caption.png
 }
 
 @test basic_caption_font {
@@ -110,8 +110,8 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/output/caption_assistant_bold.png
-    diff tests/output/caption_assistant_bold.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TMPDIR/caption.png tests/captions/caption_assistant_bold.png
+    diff tests/captions/caption_assistant_bold.png $BATS_TMPDIR/caption.png
 }
 
 @test basic_caption_newline_align {
@@ -125,6 +125,6 @@
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/output/caption_align.png
-    diff tests/output/caption_align.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TMPDIR/caption.png tests/captions/caption_align.png
+    diff tests/captions/caption_align.png $BATS_TMPDIR/caption.png
 }

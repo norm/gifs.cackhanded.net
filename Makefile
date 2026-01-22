@@ -1,4 +1,4 @@
-.PHONY: all baked_css clean dev_css fonts google-fonts local-fonts gifwrapped generate rebuild push publish remove removethumbs test
+.PHONY: all baked_css clean clean-test dev_css fonts google-fonts local-fonts gifwrapped generate rebuild push publish remove removethumbs test
 
 all: gifs
 
@@ -10,6 +10,9 @@ new404: 404
 
 clean:
 	@rm -rf output
+
+clean-test:
+	@rm -rf temp
 
 reset:
 	@./script/reset_gifs

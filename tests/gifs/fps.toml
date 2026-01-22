@@ -26,3 +26,8 @@ width    = 'original'
 # to        = '3.75'
 # font      = 'lato-black.ttf'
 # placement = 'bc'
+
+[expected]
+frames = 10
+width  = 640
+height = 480

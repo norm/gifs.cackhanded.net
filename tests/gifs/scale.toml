@@ -8,3 +8,8 @@ duration = '1'
 [output]
 colours = '128'
 dither  = 'floyd_steinberg'
+
+[expected]
+frames = 10
+width  = 480
+height = 360

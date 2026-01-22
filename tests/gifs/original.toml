@@ -8,3 +8,8 @@ duration = '1'
 [output]
 fps      = 'original'
 width    = 'original'
+
+[expected]
+frames = 30
+width  = 640
+height = 480

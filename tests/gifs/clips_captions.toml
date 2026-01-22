@@ -2,13 +2,18 @@
 source   = 'youtube'
 file     = 'HU2ftCitvyQ'
 ext      = 'mp4'
-start    = '120'
-duration = '1'
 
 [output]
 colours  = '96'
-fps      = 'original'
-width    = 'original'
+fps      = '18'
+
+[[clip]]
+start = '10'
+end   = '12'
+
+[[clip]]
+start = '1:10'
+end   = '1:12'
 
 [[caption]]
 text = 'And the climb'
@@ -20,8 +25,21 @@ placement = 'bc'
 
 [[caption]]
 text = 'is going'
-from = '0.51'
-to   = '1'
+from = '1.5'
+to   = '2.5'
 size = '24'
 font = 'assistant-semibold.ttf'
 placement = 'bc'
+
+[[caption]]
+text = 'Where no man has gone before'
+from = '3'
+to   = '4'
+size = '24'
+font = 'assistant-semibold.ttf'
+placement = 'bc'
+
+[expected]
+frames = 72
+width  = 480
+height = 360

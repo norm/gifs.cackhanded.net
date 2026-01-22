@@ -330,6 +330,15 @@ Otherwise, schedule it for the future and commit at your leisure.
 
 [gw]: https://gifwrapped.co
 
+### Updating GIFs
+
+After ffmpeg updates, or changes to the `make_gif` script, to see if a GIF
+would still be generated the same the original can be compared frame-by-frame,
+allowing for small perceptual changes:
+
+    # fuzz tolerance (default 5%) and pixel diff threshold (default 4%)
+    % ./script/compare_frames_fuzzed -f 10 -p 5 source/airplane/*.toml
+
 
 ## Scheduling GIFs
 

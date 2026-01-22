@@ -8,3 +8,8 @@ crop     = '200:100'
 
 [output]
 width    = 'original'
+
+[expected]
+frames = 10
+width  = 200
+height = 100

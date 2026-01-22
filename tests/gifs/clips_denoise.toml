@@ -5,7 +5,7 @@ ext      = 'mp4'
 crop     = '200:100'
 
 [output]
-brightness = '0.25'
+denoise    = true
 fps        = '16'
 width      = '320'
 
@@ -16,3 +16,8 @@ end   = '12'
 [[clip]]
 start = '1:10'
 end   = '1:12'
+
+[expected]
+frames = 64
+width  = 320
+height = 160

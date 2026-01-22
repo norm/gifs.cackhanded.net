@@ -8,4 +8,10 @@ duration = '1'
 [output]
 fps      = 'original'
 width    = 'original'
-slowdown = '1.5'
+loss     = '20'
+max_size = '1.15mb'
+
+[expected]
+frames = 30
+width  = 640
+height = 480
