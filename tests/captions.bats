@@ -17,7 +17,7 @@
         480 300 \
         'I am a caption' \
         --font 'nonexistent.ttf' \
-        $BATS_TMPDIR/caption.png
+        $BATS_TEST_TMPDIR/caption.png
     echo "$output"
 
     diff <(echo "$expected_output") <(echo "$output")
@@ -27,12 +27,12 @@
 @test basic_caption {
     [ $(uname) != 'Darwin' ] && skip "Not macOS"
 
-    run ./bin/caption 480 300 'I am a caption' $BATS_TMPDIR/caption.png
+    run ./bin/caption 480 300 'I am a caption' $BATS_TEST_TMPDIR/caption.png
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/captions/caption.png
-    diff tests/captions/caption.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/caption.png
+    diff tests/captions/caption.png $BATS_TEST_TMPDIR/caption.png
 }
 
 @test basic_caption_centred {
@@ -42,12 +42,12 @@
         480 300 \
         'I am a caption' \
         --placement 'mc' \
-        $BATS_TMPDIR/caption.png
+        $BATS_TEST_TMPDIR/caption.png
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp  $BATS_TMPDIR/caption.png tests/captions/caption_centred.png
-    diff tests/captions/caption_centred.png $BATS_TMPDIR/caption.png
+    # cp  $BATS_TEST_TMPDIR/caption.png tests/captions/caption_centred.png
+    diff tests/captions/caption_centred.png $BATS_TEST_TMPDIR/caption.png
 }
 
 @test basic_caption_placement_negative {
@@ -57,12 +57,12 @@
         480 300 \
         'I am a caption' \
         --placement='-40,-40' \
-        $BATS_TMPDIR/caption.png
+        $BATS_TEST_TMPDIR/caption.png
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/captions/caption_placement.png
-    diff tests/captions/caption_placement.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/caption_placement.png
+    diff tests/captions/caption_placement.png $BATS_TEST_TMPDIR/caption.png
 }
 
 @test basic_caption_colours {
@@ -74,12 +74,12 @@
         --colour yellow \
         --stroke-colour red \
         --stroke-width 10 \
-        $BATS_TMPDIR/caption.png
+        $BATS_TEST_TMPDIR/caption.png
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/captions/caption_colours.png
-    diff tests/captions/caption_colours.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/caption_colours.png
+    diff tests/captions/caption_colours.png $BATS_TEST_TMPDIR/caption.png
 }
 
 @test basic_caption_sizes {
@@ -90,12 +90,12 @@
         'I am a caption' \
         --margin 50 \
         --font-size 100 \
-        $BATS_TMPDIR/caption.png
+        $BATS_TEST_TMPDIR/caption.png
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/captions/caption_sizes.png
-    diff tests/captions/caption_sizes.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/caption_sizes.png
+    diff tests/captions/caption_sizes.png $BATS_TEST_TMPDIR/caption.png
 }
 
 @test basic_caption_font {
@@ -106,12 +106,12 @@
         'I am a caption' \
         --font 'assistant-bold.ttf' \
         --font-size 100 \
-        $BATS_TMPDIR/caption.png
+        $BATS_TEST_TMPDIR/caption.png
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/captions/caption_assistant_bold.png
-    diff tests/captions/caption_assistant_bold.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/caption_assistant_bold.png
+    diff tests/captions/caption_assistant_bold.png $BATS_TEST_TMPDIR/caption.png
 }
 
 @test basic_caption_newline_align {
@@ -121,10 +121,10 @@
         480 300 \
         'I am a caption'$'\n''that lives next door' \
         --text-align 'right' \
-        $BATS_TMPDIR/caption.png
+        $BATS_TEST_TMPDIR/caption.png
     echo "$output"
 
     [ "$status" -eq 0 ]
-    # cp $BATS_TMPDIR/caption.png tests/captions/caption_align.png
-    diff tests/captions/caption_align.png $BATS_TMPDIR/caption.png
+    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/caption_align.png
+    diff tests/captions/caption_align.png $BATS_TEST_TMPDIR/caption.png
 }

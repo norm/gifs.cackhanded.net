@@ -7,6 +7,12 @@ blue="\e[34m"
 reset="\e[0m"
 success=0
 
+# Use parallel jobs if GNU parallel is available
+jobs_arg=""
+if command -v parallel &>/dev/null; then
+    jobs_arg="--jobs 8"
+fi
+
 if [ -n "$*" ]; then
     tests=( "$@" )
 else
@@ -15,7 +21,7 @@ fi
 
 for test in "${tests[@]}"; do
     printf "=== ${blue}%s${reset}\n" $test
-    bats $test
+    bats $jobs_arg $test
     let "success = success + $?"
 done
 

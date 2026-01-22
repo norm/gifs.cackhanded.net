@@ -260,7 +260,10 @@ caption colours.
 To install pre-requisites:
 
     # tools to make GIFs
-    % brew install entr ffmpeg gifsicle youtube-dl
+    % brew install entr ffmpeg gifsicle yq youtube-dl
+
+    # optional: for faster parallel test runs
+    % brew install parallel
 
     # the python libraries to make captions
     % pip install -r requirements.txt

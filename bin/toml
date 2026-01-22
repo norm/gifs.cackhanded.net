@@ -1,82 +1,20 @@
-#!/usr/bin/env python
+#!/usr/bin/env -S bash -euo pipefail
 
-import argparse
-import os
-import sys
-from types import SimpleNamespace
+file="$1"
+key="$2"
+index="${3:-}"
 
-import toml
+if [[ "$index" == "--length" ]]; then
+    result=$(yq -p toml -oy ".${key} | length" "$file" 2>/dev/null) || echo 0
+    [[ -n "$result" ]] && echo "$result"
+else
+    if [[ -n "$index" ]]; then
+        array_path="${key%.*}"
+        field="${key##*.}"
+        result=$(yq -p toml -oy ".${array_path}[$((index-1))].${field}" "$file" 2>/dev/null) || true
+    else
+        result=$(yq -p toml -oy ".${key}" "$file" 2>/dev/null | sed -e "s/^- //" -e "s/^'//" -e "s/'$//") || true
+    fi
 
-
-class NestedNamespace(SimpleNamespace):
-    def __init__(self, dictionary, **kwargs):
-        super().__init__(**kwargs)
-        for key, value in dictionary.items():
-            if isinstance(value, dict):
-                self.__setattr__(key, NestedNamespace(value))
-            else:
-                self.__setattr__(key, value)
-
-
-def lookahead(iterable):
-    """Pass through all values from the given iterable, augmented by the
-    information if there are more values to come after the current one
-    (True), or if it is the last value (False).
-    """
-    # Get an iterator and pull the first value.
-    it = iter(iterable)
-    last = next(it)
-    # Run the iterator to exhaustion (starting from the second value).
-    for val in it:
-        # Report the *previous* value (more to come).
-        yield last, True
-        last = val
-    # Report the last value.
-    yield last, False
-
-
-parser = argparse.ArgumentParser(
-    description='Create a caption image.'
-)
-parser.add_argument(
-    'toml_file',
-)
-parser.add_argument(
-    'key',
-)
-parser.add_argument(
-    'index',
-    default=0,
-    type=int,
-    nargs='?',
-)
-parser.add_argument(
-    '--length',
-    default=False,
-    action='store_true',
-)
-args = parser.parse_args()
-
-with open(args.toml_file) as handle:
-    data = NestedNamespace(toml.load(handle))
-
-for arg, more in lookahead(args.key.split('.')):
-    try:
-        data = getattr(data, arg)
-        if not data:
-            raise NoMoreData
-        if type(data) == list:
-            if args.length:
-                print(len(data))
-                sys.exit(0)
-            if more:
-                # FIXME, this should be done in the class
-                data = NestedNamespace(data[args.index-1])
-        if not more:
-            if type(data) == list:
-                print('\n'.join(data))
-            else:
-                print(data)
-    except AttributeError:
-        if args.length:
-            print('0')
+    [[ "$result" == "null" || -z "$result" ]] && echo "" || echo "$result"
+fi
