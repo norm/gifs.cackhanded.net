@@ -9,8 +9,60 @@ from PIL import Image, ImageDraw, ImageFont
 MINIMUM_FONT_SIZE = 8
 
 
-class FontTooSmall(Exception):
-    pass
+def position_multiline_with_anchor(
+    text, placement, anchor, font, stroke_width, temp_draw, align='left'
+):
+    if '\n' not in text:
+        return placement, anchor
+
+    # pillow's support for anchors in multline text is lacking, so we calculate a
+    # reference bounding box from a known character and extrapolate
+    text_bbox = temp_draw.multiline_textbbox(
+        (0, 0), text, font=font, stroke_width=stroke_width, align=align
+    )
+
+    # horizontal positioning -- reference "M""
+    horizontal_bbox = temp_draw.textbbox(
+        (placement[0], 0),
+        "M",
+        font=font,
+        stroke_width=stroke_width,
+        anchor=anchor,
+    )
+
+    if anchor[0] == 'r':
+        # right
+        new_x = horizontal_bbox[2] - text_bbox[2]
+    elif anchor[0] == 'm':
+        # h centre ("middle"")
+        new_x = (horizontal_bbox[0] + horizontal_bbox[2]) / 2 - (text_bbox[0] + text_bbox[2]) / 2
+    else:
+        # left
+        new_x = horizontal_bbox[0] - text_bbox[0]
+
+    if anchor[1] == 't':
+        # top
+        top_bbox = temp_draw.multiline_textbbox(
+            (0, placement[1]), "T",
+            font=font, stroke_width=stroke_width, anchor=anchor
+        )
+        new_y = top_bbox[1] - text_bbox[1]
+    elif anchor[1] == 'd':
+        # bottom ("descender")
+        modified_bbox = temp_draw.multiline_textbbox(
+            (0, 0), text + 'y', font=font, stroke_width=stroke_width
+        )
+        bottom_bbox = temp_draw.multiline_textbbox(
+            (0, placement[1]), "y",
+            font=font, stroke_width=stroke_width, anchor=anchor
+        )
+        new_y = bottom_bbox[3] - modified_bbox[3]
+    else:
+        # v centre
+        text_height = text_bbox[3] - text_bbox[1]
+        new_y = placement[1] - (text_height / 2) - text_bbox[1]
+
+    return [new_x, new_y], None
 
 
 def main():
@@ -49,10 +101,6 @@ def main():
         default='left',
     )
     parser.add_argument(
-        '--text-anchor',
-        default='la',
-    )
-    parser.add_argument(
         'width',
         type=int,
     )
@@ -70,6 +118,11 @@ def main():
         '--placement',
         default='bl',
     )
+    parser.add_argument(
+        '--guides',
+        action='store_true',
+        help='Draw margin box and center lines',
+    )
     args = parser.parse_args()
     image_size = (args.width, args.height)
     font_size = args.font_size
@@ -78,31 +131,63 @@ def main():
     if not os.path.exists(font_path):
         sys.exit('Font not found: %s' % font_path)
 
+    # Derive text alignment from placement if not explicitly set
+    if args.text_align == 'left':
+        if 'c' in args.placement:
+            args.text_align = 'center'
+        elif 'r' in args.placement:
+            args.text_align = 'right'
+
     # check the text fits
     font = ImageFont.truetype(font_path, font_size)
-    text_size = font.getsize_multiline(
+    temp_image = ImageDraw.Draw(Image.new('RGBA', (1, 1)))
+    bbox = temp_image.multiline_textbbox(
+        (0, 0),
         args.text,
-        stroke_width=args.stroke_width
+        font=font,
+        stroke_width=args.stroke_width,
+        align=args.text_align,
     )
+    text_size = (bbox[2] - bbox[0], bbox[3] - bbox[1])
     while text_too_large(text_size, image_size, args.margin):
         font_size -= 2
-        if args.font_size < MINIMUM_FONT_SIZE:
-            raise FontTooSmall
+        if font_size < MINIMUM_FONT_SIZE:
+            sys.exit('Text too large to fit in image at font size %s' % font_size)
         font = ImageFont.truetype(font_path, font_size)
-        text_size = font.getsize_multiline(
+        temp_image = ImageDraw.Draw(Image.new('RGBA', (1, 1)))
+        bbox = temp_image.multiline_textbbox(
+            (0, 0),
             args.text,
-            stroke_width=2
+            font=font,
+            stroke_width=args.stroke_width,
+            align=args.text_align,
         )
+        text_size = (bbox[2] - bbox[0], bbox[3] - bbox[1])
 
     canvas = Image.new('RGBA', image_size, (0, 0, 0, 0))
     image = ImageDraw.Draw(canvas)
 
-    top = args.margin
-    bottom = image_size[1] - (text_size[1]+args.margin)
+    if args.guides:
+        image.rectangle(
+            [(args.margin, args.margin),
+             (image_size[0] - args.margin, image_size[1] - args.margin)],
+            outline=(200, 0, 0),
+            width=2
+        )
+        center_x = image_size[0] // 2
+        center_y = image_size[1] // 2
+        image.line([(center_x, 0), (center_x, image_size[1])],
+                   fill=(200, 0, 0), width=1)
+        image.line([(0, center_y), (image_size[0], center_y)],
+                   fill=(200, 0, 0), width=1)
+
     left = args.margin
-    right = image_size[0] - (text_size[0]+args.margin)
-    vcentre = int((image_size[1] - text_size[1]) / 2)
-    hcentre = int((image_size[0] - text_size[0]) / 2)
+    hcentre = int(image_size[0] / 2)
+    right = image_size[0] - args.margin
+
+    top = args.margin
+    vcentre = int(image_size[1] / 2)
+    bottom = image_size[1] - args.margin
 
     # FIXME percentage placements?
     placement = list(image_size)
@@ -123,28 +208,45 @@ def main():
             pass
         placement = [x, y]
 
+    v_anchor = 'm'
     if 't' in args.placement:
         placement[1] = top
-    if 'm' in args.placement:
+        v_anchor = 't'
+    elif 'm' in args.placement:
         placement[1] = vcentre
-    if 'b' in args.placement:
+    elif 'b' in args.placement:
         placement[1] = bottom
+        v_anchor = 'd'
+
+    h_anchor = 'l'
     if 'l' in args.placement:
         placement[0] = left
-    if 'c' in args.placement:
+    elif 'c' in args.placement:
         placement[0] = hcentre
-    if 'r' in args.placement:
+        h_anchor = 'm'
+    elif 'r' in args.placement:
         placement[0] = right
+        h_anchor = 'r'
+
+    adjusted_placement, adjusted_anchor = position_multiline_with_anchor(
+        args.text,
+        placement,
+        h_anchor + v_anchor,
+        font,
+        args.stroke_width,
+        temp_image,
+        args.text_align,
+    )
 
     image.text(
-        placement,
+        adjusted_placement,
         args.text,
         args.colour,
         font,
         stroke_fill=args.stroke_colour,
         stroke_width=args.stroke_width,
         align=args.text_align,
-        anchor=args.text_anchor,
+        anchor=adjusted_anchor,
     )
     canvas.save(args.output)
 

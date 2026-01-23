@@ -98,7 +98,6 @@ function main {
             caption_strokew="$(get_caption_key $toml $index stroke_width)"
             caption_strokecol="$(get_caption_key $toml $index stroke_colour)"
             caption_align="$(get_caption_key $toml $index align)"
-            caption_anchor="$(get_caption_key $toml $index anchor)"
             debug caption \
                 ${output_width:-$DEFAULT_WIDTH} \
                 $output_height \
@@ -110,7 +109,6 @@ function main {
                 --stroke-colour "${caption_strokecol:-#000000}" \
                 --text-align "${caption_align:-left}" \
                 --placement ${caption_placement:-bl} \
-                --text-anchor ${caption_anchor:-la} \
                 "${caption_text}" \
                 "${TEMP}/caption-${index}.png"
 
