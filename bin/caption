@@ -139,7 +139,7 @@ def main():
             args.text_align = 'right'
 
     # check the text fits
-    font = ImageFont.truetype(font_path, font_size)
+    font = ImageFont.truetype(font_path, font_size, layout_engine=ImageFont.Layout.BASIC)
     temp_image = ImageDraw.Draw(Image.new('RGBA', (1, 1)))
     bbox = temp_image.multiline_textbbox(
         (0, 0),
@@ -153,7 +153,7 @@ def main():
         font_size -= 2
         if font_size < MINIMUM_FONT_SIZE:
             sys.exit('Text too large to fit in image at font size %s' % font_size)
-        font = ImageFont.truetype(font_path, font_size)
+        font = ImageFont.truetype(font_path, font_size, layout_engine=ImageFont.Layout.BASIC)
         temp_image = ImageDraw.Draw(Image.new('RGBA', (1, 1)))
         bbox = temp_image.multiline_textbbox(
             (0, 0),

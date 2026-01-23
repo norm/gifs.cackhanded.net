@@ -34,15 +34,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Check versions
-        run: |
-          python --version
-          python -c "import platform; print('Arch:', platform.machine())"
-          python -c "import PIL; print('Pillow:', PIL.__version__)"
-          python -c "import PIL; print('Location:', PIL.__file__)"
-          python -c "from PIL import features; print('FreeType:', features.version('freetype2'))"
-          python -c "from PIL import features; print('HarfBuzz:', features.version('harfbuzz'))"
-
       - name: Download test video
         run: |
           mkdir -p videos
