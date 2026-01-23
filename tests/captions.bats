@@ -4,6 +4,7 @@ setup() {
     if [ "$(uname)" != 'Darwin' ]; then
         skip "Not macOS"
     fi
+    mkdir -p temp
 }
 
 
@@ -20,7 +21,7 @@ setup() {
         300 \
         'I am a caption' \
         --font 'nonexistent.ttf' \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/missing_font.png
 
     echo "$output"
     diff <(echo "$expected_output") <(echo "$output")
@@ -34,12 +35,11 @@ setup() {
         'I am a caption' \
         --placement 'tl' \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_tl_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_tl_sl.png
-    diff tests/captions/anchor_tl_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_tl_sl.png temp/anchor_tl_sl.png
 }
 
 @test anchor_top_middle {
@@ -49,12 +49,11 @@ setup() {
         'I am a caption' \
         --placement 'tc' \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_tc_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_tc_sl.png
-    diff tests/captions/anchor_tc_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_tc_sl.png temp/anchor_tc_sl.png
 }
 
 @test anchor_top_right {
@@ -64,12 +63,11 @@ setup() {
         'I am a caption' \
         --placement tr \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_tr_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_tr_sl.png
-    diff tests/captions/anchor_tr_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_tr_sl.png temp/anchor_tr_sl.png
 }
 
 @test anchor_middle_left {
@@ -79,12 +77,11 @@ setup() {
         'I am a caption' \
         --placement ml \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_ml_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_ml_sl.png
-    diff tests/captions/anchor_ml_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_ml_sl.png temp/anchor_ml_sl.png
 }
 
 @test anchor_middle_centre {
@@ -94,12 +91,11 @@ setup() {
         'I am a caption' \
         --placement mc \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_mc_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_mc_sl.png
-    diff tests/captions/anchor_mc_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_mc_sl.png temp/anchor_mc_sl.png
 }
 
 @test anchor_middle_right {
@@ -109,12 +105,11 @@ setup() {
         'I am a caption' \
         --placement mr \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_mr_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_mr_sl.png
-    diff tests/captions/anchor_mr_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_mr_sl.png temp/anchor_mr_sl.png
 }
 
 @test anchor_bottom_left {
@@ -124,12 +119,11 @@ setup() {
         'I am a caption' \
         --placement bl \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_bl_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_bl_sl.png
-    diff tests/captions/anchor_bl_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_bl_sl.png temp/anchor_bl_sl.png
 }
 
 @test anchor_bottom_middle {
@@ -139,12 +133,11 @@ setup() {
         'I am a caption' \
         --placement bc \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_bc_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_bc_sl.png
-    diff tests/captions/anchor_bc_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_bc_sl.png temp/anchor_bc_sl.png
 }
 
 @test anchor_bottom_right {
@@ -154,12 +147,11 @@ setup() {
         'I am a caption' \
         --placement br \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_br_sl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_br_sl.png
-    diff tests/captions/anchor_br_sl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_br_sl.png temp/anchor_br_sl.png
 }
 
 @test anchor_top_left_multiline {
@@ -169,12 +161,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement tl \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_tl_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_tl_ml.png
-    diff tests/captions/anchor_tl_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_tl_ml.png temp/anchor_tl_ml.png
 }
 
 @test anchor_top_middle_multiline {
@@ -184,12 +175,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement tc \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_tc_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_tc_ml.png
-    diff tests/captions/anchor_tc_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_tc_ml.png temp/anchor_tc_ml.png
 }
 
 @test anchor_top_right_multiline {
@@ -199,12 +189,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement tr \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_tr_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_tr_ml.png
-    diff tests/captions/anchor_tr_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_tr_ml.png temp/anchor_tr_ml.png
 }
 
 @test anchor_middle_left_multiline {
@@ -214,12 +203,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement ml \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_ml_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_ml_ml.png
-    diff tests/captions/anchor_ml_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_ml_ml.png temp/anchor_ml_ml.png
 }
 
 @test anchor_middle_centre_multiline {
@@ -229,12 +217,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement mc \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_mc_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_mc_ml.png
-    diff tests/captions/anchor_mc_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_mc_ml.png temp/anchor_mc_ml.png
 }
 
 @test anchor_middle_right_multiline {
@@ -244,12 +231,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement mr \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_mr_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_mr_ml.png
-    diff tests/captions/anchor_mr_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_mr_ml.png temp/anchor_mr_ml.png
 }
 
 @test anchor_bottom_left_multiline {
@@ -259,12 +245,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement bl \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_bl_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_bl_ml.png
-    diff tests/captions/anchor_bl_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_bl_ml.png temp/anchor_bl_ml.png
 }
 
 @test anchor_bottom_middle_multiline {
@@ -274,12 +259,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement bc \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_bc_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_bc_ml.png
-    diff tests/captions/anchor_bc_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_bc_ml.png temp/anchor_bc_ml.png
 }
 
 @test anchor_bottom_right_multiline {
@@ -289,12 +273,11 @@ setup() {
         'I am a caption'$'\n''that lives next door' \
         --placement br \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/anchor_br_ml.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/anchor_br_ml.png
-    diff tests/captions/anchor_br_ml.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/anchor_br_ml.png temp/anchor_br_ml.png
 }
 
 @test placement_negative {
@@ -303,12 +286,11 @@ setup() {
         300 \
         'I am a caption' \
         --placement='-40,-40' \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/placement_negative.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/placement_negative.png
-    diff tests/captions/placement_negative.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/placement_negative.png temp/placement_negative.png
 }
 
 @test placement_positive {
@@ -317,12 +299,11 @@ setup() {
         300 \
         'I am a caption' \
         --placement='100,200' \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/placement_positive.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/placement_positive.png
-    diff tests/captions/placement_positive.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/placement_positive.png temp/placement_positive.png
 }
 
 @test colour_default {
@@ -331,12 +312,11 @@ setup() {
         300 \
         'I am a caption' \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/colour_default.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/colour_default.png
-    diff tests/captions/colour_default.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/colour_default.png temp/colour_default.png
 }
 @test colour_yellow {
     run ./bin/caption \
@@ -345,12 +325,11 @@ setup() {
         'I am a caption' \
         --colour yellow \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/colour_yellow.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/colour_yellow.png
-    diff tests/captions/colour_yellow.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/colour_yellow.png temp/colour_yellow.png
 }
 
 @test stroke_colour_default {
@@ -359,12 +338,11 @@ setup() {
         300 \
         'I am a caption' \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/stroke_colour_default.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/stroke_colour_default.png
-    diff tests/captions/stroke_colour_default.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/stroke_colour_default.png temp/stroke_colour_default.png
 }
 @test stroke_colour_red {
     run ./bin/caption \
@@ -373,12 +351,11 @@ setup() {
         'I am a caption' \
         --stroke-colour red \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/stroke_colour_red.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/stroke_colour_red.png
-    diff tests/captions/stroke_colour_red.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/stroke_colour_red.png temp/stroke_colour_red.png
 }
 
 @test stroke_width_large {
@@ -388,12 +365,11 @@ setup() {
         'I am a caption' \
         --stroke-width 10 \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/stroke_width_large.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/stroke_width_large.png
-    diff tests/captions/stroke_width_large.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/stroke_width_large.png temp/stroke_width_large.png
 }
 
 @test fontsize_default {
@@ -402,12 +378,11 @@ setup() {
         300 \
         'I am a caption' \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/fontsize_default.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/fontsize_default.png
-    diff tests/captions/fontsize_default.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/fontsize_default.png temp/fontsize_default.png
 }
 
 @test fontsize_small {
@@ -417,12 +392,11 @@ setup() {
         'I am a caption' \
         --font-size 20 \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/fontsize_small.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/fontsize_small.png
-    diff tests/captions/fontsize_small.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/fontsize_small.png temp/fontsize_small.png
 }
 @test fontsize_large {
     run ./bin/caption \
@@ -431,12 +405,11 @@ setup() {
         'I am a caption' \
         --font-size 100 \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/fontsize_large.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/fontsize_large.png
-    diff tests/captions/fontsize_large.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/fontsize_large.png temp/fontsize_large.png
 }
 
 @test font_assistant_bold {
@@ -446,12 +419,11 @@ setup() {
         'I am a caption' \
         --font assistant-bold.ttf \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/font_assistant_bold.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp --placement mc $BATS_TEST_TMPDIR/caption.png tests/captions/font_assistant_bold.png
-    diff tests/captions/font_assistant_bold.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/font_assistant_bold.png temp/font_assistant_bold.png
 }
 
 
@@ -460,7 +432,7 @@ setup() {
         50 \
         50 \
         'This text is far too long to fit' \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/font_too_small.png
 
     echo "$output"
     diff <(echo "Text too large to fit in image at font size 6") <(echo "$output")
@@ -477,12 +449,11 @@ setup() {
         --colour black \
         --placement mc \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/resize_basic.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/resize_basic.png
-    diff tests/captions/resize_basic.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/resize_basic.png temp/resize_basic.png
 }
 
 @test resize_multiline {
@@ -493,12 +464,11 @@ setup() {
         --font-size 60 \
         --placement mc \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/resize_multiline.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/resize_multiline.png
-    diff tests/captions/resize_multiline.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/resize_multiline.png temp/resize_multiline.png
 }
 @test resize_with_stroke {
     run ./bin/caption \
@@ -509,11 +479,10 @@ setup() {
         --font-size 60 \
         --placement mc \
         --guides \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/resize_with_stroke.png
 
     echo "$output"
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/resize_with_stroke.png
-    diff tests/captions/resize_with_stroke.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/resize_with_stroke.png temp/resize_with_stroke.png
     [ "$status" -eq 0 ]
 }
 
@@ -523,12 +492,11 @@ setup() {
         300 \
         'I am a caption' \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/stroke_width_default.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/stroke_width_default.png
-    diff tests/captions/stroke_width_default.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/stroke_width_default.png temp/stroke_width_default.png
 }
 @test stroke_width_zero {
     run ./bin/caption \
@@ -538,12 +506,11 @@ setup() {
         --stroke-width 0 \
         --colour black \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/stroke_width_zero.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/stroke_width_zero.png
-    diff tests/captions/stroke_width_zero.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/stroke_width_zero.png temp/stroke_width_zero.png
 }
 
 @test margin_top_left {
@@ -553,12 +520,11 @@ setup() {
         'I am a caption' \
         --margin 40 \
         --placement tl \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/margin_tl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/margin_tl.png
-    diff tests/captions/margin_tl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/margin_tl.png temp/margin_tl.png
 }
 
 @test margin_top_right {
@@ -568,12 +534,11 @@ setup() {
         'I am a caption' \
         --margin 40 \
         --placement tr \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/margin_tr.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/margin_tr.png
-    diff tests/captions/margin_tr.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/margin_tr.png temp/margin_tr.png
 }
 
 @test margin_bottom_left {
@@ -583,12 +548,11 @@ setup() {
         'I am a caption' \
         --margin 40 \
         --placement bl \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/margin_bl.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/margin_bl.png
-    diff tests/captions/margin_bl.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/margin_bl.png temp/margin_bl.png
 }
 
 @test margin_bottom_right {
@@ -598,12 +562,11 @@ setup() {
         'I am a caption' \
         --margin 40 \
         --placement br \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/margin_br.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp $BATS_TEST_TMPDIR/caption.png tests/captions/margin_br.png
-    diff tests/captions/margin_br.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/margin_br.png temp/margin_br.png
 }
 
 @test font_lato_black {
@@ -613,25 +576,23 @@ setup() {
         'I am a caption' \
         --font lato-black.ttf \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/font_lato_black.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp --placement mc $BATS_TEST_TMPDIR/caption.png tests/captions/font_lato_black.png
-    diff tests/captions/font_lato_black.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/font_lato_black.png temp/font_lato_black.png
 }
 
-@test font_oita {
+@test font_raleway {
     run ./bin/caption \
         480 \
         300 \
         'I am a caption' \
-        --font oita.otf \
+        --font raleway-regular.ttf \
         --placement mc \
-        $BATS_TEST_TMPDIR/caption.png
+        temp/font_raleway.png
 
     echo "$output"
     [ "$status" -eq 0 ]
-    # cp --placement mc $BATS_TEST_TMPDIR/caption.png tests/captions/font_oita.png
-    diff tests/captions/font_oita.png $BATS_TEST_TMPDIR/caption.png
+    diff tests/captions/font_raleway.png temp/font_raleway.png
 }

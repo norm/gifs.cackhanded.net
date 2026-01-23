@@ -59,7 +59,7 @@ push:
 publish: stash push rebuild gifwrapped unstash
 	@flourish upload
 
-test: fonts videos
+test: google-fonts
 	@./script/test
 
 test_generated:
@@ -89,7 +89,3 @@ google-fonts:
 
 local-fonts:
 	@make -s -f Makefile.fonts local
-
-videos:
-	mkdir videos
-	yt-dlp -o "videos/HU2ftCitvyQ.mp4" -f "bestvideo[ext=mp4]" HU2ftCitvyQ

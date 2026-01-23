@@ -10,7 +10,8 @@ GOOGLE_FONTS := \
 	fonts/lato-regular.ttf \
 	fonts/poppins-black.ttf \
 	fonts/poppins-regular.ttf \
-	fonts/poppins-bold.ttf
+	fonts/poppins-bold.ttf \
+	fonts/raleway-regular.ttf
 
 LOCAL_FONTS := \
 	fonts/acherusgrotesque-black.otf \
@@ -54,6 +55,9 @@ fonts/poppins-regular.ttf: | fonts
 
 fonts/poppins-bold.ttf: | fonts
 	curl -L -o $@ https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf
+
+fonts/raleway-regular.ttf: | fonts
+	curl -L -o $@ https://github.com/google/fonts/raw/main/ofl/raleway/Raleway%5Bwght%5D.ttf
 
 fonts/acherusgrotesque-black.otf: | fonts
 	cp "$(LOCAL_FONTS_DIR)/acherus grotesque/$(@F)" $@

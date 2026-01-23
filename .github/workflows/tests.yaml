@@ -6,23 +6,23 @@ on:
 jobs:
   tests:
     name: Run the tests
-    runs-on: macos-12
+    runs-on: macos-14
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install tools
         run: |
-          brew install bats-core ffmpeg gifsicle imagemagick yq yt-dlp
+          brew install bats-core ffmpeg gifsicle imagemagick yq
 
       - name: Setup python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9
+          python-version: 3.12
 
       - name: Configure pip caching
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -34,14 +34,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Download test video
+        run: |
+          mkdir -p videos
+          curl -o videos/HU2ftCitvyQ.mp4 https://bumph.cackhanded.net/HU2ftCitvyQ.mp4
+
       - name: Run tests
         run: |
           make test
 
-      - name: Notify on failure
-        env:
-          PUSHOVER_API_KEY: ${{secrets.PUSHOVER_API_KEY}}
-          PUSHOVER_USER_KEY: ${{secrets.PUSHOVER_USER_KEY}}
+      - name: Upload failed test artifacts
+        uses: actions/upload-artifact@v4
         if: failure()
-        run: |
-          echo "Tests failed" | ./script/pushover "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        with:
+          name: failed-tests
+          path: temp/
