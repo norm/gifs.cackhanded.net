@@ -4,9 +4,14 @@ PATH="./bin:$PATH"
 
 python --version
 python -c "import platform; print('Arch:', platform.machine())"
-python -c "import PIL; print('Pillow:', PIL.__version__)"
-python -c "from PIL import features; print('FreeType:', features.version('freetype2'))"
-python -c "from PIL import features; print('HarfBuzz:', features.version('harfbuzz'))"
+python -c "
+import PIL
+from PIL import features, Image
+print('Pillow:', PIL.__version__)
+print('FreeType:', features.version('freetype2'))
+print('HarfBuzz:', features.version('harfbuzz'))
+print('libimagequant:', 'LIBIMAGEQUANT' in dir(Image.Quantize))
+"
 echo ""
 
 declare -a tests
