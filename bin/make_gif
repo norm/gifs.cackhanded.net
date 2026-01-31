@@ -9,6 +9,7 @@ DEFAULT_FPS=10
 DEFAULT_COLOURS=64
 DEBUG="${GIF_DEBUG:-}"
 TYPE_SETS="${GIF_TYPE_SETS:-source/_site.toml}"
+video=""
 green=$'\e'[32m
 cyan=$'\e'[36m
 magenta=$'\e'[35m
@@ -18,13 +19,7 @@ reset=$'\e'[0m
 function main {
     local toml="$1"
     local gif="$2"
-    local video="${3:-}"
-
-    if [ -z "$video" ]; then
-        file=$(toml $toml video.file)
-        ext=$(toml $toml video.ext)
-        video="videos/${file}.${ext}"
-    fi
+    video="${3:-$(video_path $toml)}"
 
     if [ ! -f "$video" ]; then
         echo " ** $video does not exist"
@@ -71,9 +66,13 @@ function main {
     local scale=$(get_scale $toml)
     size_filter="$(join ',' "$crop" "$scale")"
     ffmpeg \
-        -loglevel error -y -ss 0 -t 0.01 -i "$video" \
+        -loglevel error \
+        -y \
+        -ss 0 \
+        -t 0.01 \
+        -i "$video" \
         -filter_complex "[0:v] ${size_filter:-scale=w=in_w:h=in_h}" \
-        ${TEMP}/size.gif
+            ${TEMP}/size.gif
     output_width="$( file $TEMP/size.gif | awk '{ print $7 }')"
     output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
     echo "    ${output_width}x${output_height}" \
@@ -271,6 +270,7 @@ function palettegen_filter {
     local mode=$(get_stats_mode $toml)
     local palettegen="palettegen=${max_cols}:${mode}"
     local clips=$(get_clips $toml)
+    local tonemap=$(get_tonemap $toml)
 
     if [ -n "$clips" ]; then
         echo "$clips [cv] $palettegen"
@@ -278,7 +278,7 @@ function palettegen_filter {
         local crop=$(get_crop $toml)
         local scale=$(get_scale $toml)
         local fps=$(get_fps $toml)
-        echo "[0:v] $(join ',' $fps $crop $scale $bright $denoise $palettegen)"
+        echo "[0:v] $(join ',' $tonemap $fps $crop $scale $bright $denoise $palettegen)"
     fi
 }
 
@@ -291,6 +291,7 @@ function generate_filter {
     local paletteuse="[1:v] paletteuse=${dither}:diff_mode=rectangle"
     local clips=$(get_clips $toml)
     local captions=$(get_captions_filter $toml)
+    local tonemap=$(get_tonemap $toml)
 
     if [ -n "$clips" ]; then
         echo "$clips [cv]${captions}${paletteuse}"
@@ -303,7 +304,7 @@ function generate_filter {
         local scale=$(get_scale $toml)
         local slowdown="$(get_slowdown $toml)"
         local alter="$(
-            join ',' $stabilise $fps $crop $scale $bright $denoise $slowdown
+            join ',' $tonemap $stabilise $fps $crop $scale $bright $denoise $slowdown
         )"
         alter="${alter:-scale=w=in_w:h=in_h}"
         echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
@@ -463,6 +464,33 @@ function get_stats_mode {
     echo "stats_mode=${output_mode:-diff}"
 }
 
+function get_tonemap {
+    local transfer=$(
+        ffprobe \
+            -v error \
+            -select_streams v:0 \
+            -show_entries stream=color_transfer \
+            -of default=noprint_wrappers=1:nokey=1 \
+                "$video"
+    )
+
+    if [ "$transfer" = "smpte2084" ]; then
+        # convert HDR's perceptual curve to linear light
+        local tonemap="zscale=t=linear:npl=100,"
+        # use 32-bit float to avoid banding during conversion
+        tonemap+="format=gbrpf32le,"
+        # shrink HDR's wide colour gamut to SDR's narrower gamut
+        tonemap+="zscale=p=bt709,"
+        # compress bright highlights smoothly (Hable curve)
+        tonemap+="tonemap=hable:desat=0,"
+        # convert linear back to SDR gamma, set encoding, limit range
+        tonemap+="zscale=t=bt709:m=bt709:r=tv,"
+        # back to 8-bit for GIF processing
+        tonemap+="format=yuv420p"
+        echo "$tonemap"
+    fi
+}
+
 function get_caption_key {
     local toml="$1"
     local index="$2"
@@ -483,10 +511,22 @@ function size_in_mb {
 }
 
 function get_duration {
-    local video="$1"
-    local duration=$(ffprobe -v error -show_entries format=duration \
-        -of default=noprint_wrappers=1:nokey=1 "$video")
+    local duration=$(
+        ffprobe \
+            -v error \
+            -show_entries format=duration \
+            -of default=noprint_wrappers=1:nokey=1 \
+                "$1"
+    )
     echo ${duration%.*}
+}
+
+function video_path {
+    local toml="$1"
+
+    local file=$(toml $toml video.file)
+    local ext=$(toml $toml video.ext)
+    echo "videos/${file}.${ext}"
 }
 
 function convert_mb {

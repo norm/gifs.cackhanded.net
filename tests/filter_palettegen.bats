@@ -57,3 +57,13 @@ source bin/make_gif
     got="$(palettegen_filter tests/gifs/clips.toml)"
     diff -u <(echo "$expected") <(echo "$got")
 }
+
+@test palettegen_hdr_includes_tonemap {
+    expected='[0:v] zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,'
+    expected+='fps=12,scale=480:-1,'
+    expected+='palettegen=max_colors=64:stats_mode=diff'
+
+    video=tests/videos/sol_levante_hdr.mp4
+    got="$(palettegen_filter tests/gifs/sol-levante-hdr.toml)"
+    diff -u <(echo "$expected") <(echo "$got")
+}

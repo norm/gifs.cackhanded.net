@@ -73,3 +73,7 @@ setup() {
 @test compare_captions_colours {
     ./script/compare_frames_fuzzed tests/gifs/captions_colours.toml
 }
+
+@test compare_hdr_tonemapped {
+    ./script/compare_frames_fuzzed tests/gifs/sol-levante-hdr.toml
+}

@@ -50,8 +50,15 @@ function run_comparison {
     local expected="${config_toml%.toml}.gif"
     local output="temp/compare_$(basename "$config_toml" .toml).gif"
 
+    local video=""
+    local file=$(toml "$config_toml" video.file)
+    local ext=$(toml "$config_toml" video.ext)
+    if [[ -f "tests/videos/${file}.${ext}" ]]; then
+        video="tests/videos/${file}.${ext}"
+    fi
+
     echo "=== $config_toml -> $output"
-    make_gif "$config_toml" "$output"
+    make_gif "$config_toml" "$output" "$video"
 
     if validate_expectations "$config_toml" "$output" && setup_comparison "$expected" "$output" && run_frame_comparisons && report_results; then
         rm "$output"

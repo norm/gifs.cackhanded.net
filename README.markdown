@@ -402,3 +402,13 @@ To list what is scheduled, there is a `next` script in the repo.
 
     # show only days with scheduled content in the next 90 days
     ./script/next 90 full
+
+
+## Attributions
+
+The test suite includes a clip extracted from [Sol Levante][sol], part of
+[Netflix's open content][oc], provided under the
+[Creative Commons Attribution 4.0 International Public License][cc].
+
+[oc]: https://opencontent.netflix.com/
+[cc]: https://creativecommons.org/licenses/by-nc-nd/4.0/

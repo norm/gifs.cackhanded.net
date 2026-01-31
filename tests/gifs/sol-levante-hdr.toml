@@ -1,0 +1,10 @@
+[video]
+source = 'file'
+file = 'sol_levante_hdr'
+ext = 'mp4'
+start = '0'
+duration = '2.833'
+
+[output]
+fps = '12'
+width = '480'
