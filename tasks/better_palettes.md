@@ -25,3 +25,8 @@ If it works out, replace ffmpeg's palette chooser.
 - [ ] use the composite to calculate a palette, mixing in the caption and
       fixed colours (replaces need for edit-palette)
 - [ ] profile for speed
+
+If not,
+
+- [ ] add tests for the two different stats_mode settings, if we don't
+      replace it entirely
