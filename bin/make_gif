@@ -343,7 +343,7 @@ function create_tiled_image {
             -loglevel error \
             -y \
             -i "$segment" \
-            -vf "tile=${grid_size}x${grid_size}" \
+            -vf "format=rgba,tile=${grid_size}x${grid_size}:color=#00000000" \
             "$temp_tiled"
 
         mv "$temp_tiled" "$tiled"
