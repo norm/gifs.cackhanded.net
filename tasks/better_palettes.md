@@ -46,7 +46,7 @@ The ffmpeg palettegen runs in a few tens of seconds, but producing a
 composite image takes seconds, as does imagequant choosing a palette from
 the composite -- a 10x slowdown, so caching will be important.
 
-- [ ] extract the original segment, to a predictable filename
+- [X] extract the original segment, to a predictable filename
 - [ ] create a tiled image from the segment, to a predictable filename
 - [ ] script to choose colours from the tiled image, accepting individual colours
       to add, ranges to add, and frames to duplicate (weighting)

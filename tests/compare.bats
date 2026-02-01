@@ -1,5 +1,9 @@
 bats_require_minimum_version 1.7.0
 
+setup_file() {
+    rm -rf /tmp/make_gif
+}
+
 setup() {
     if [ "$(uname)" != 'Darwin' ]; then
         skip "Not macOS"
