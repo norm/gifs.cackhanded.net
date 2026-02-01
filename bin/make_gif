@@ -49,6 +49,7 @@ function main {
     done
 
     video="$(extract_segment "$toml" "$source_video")"
+    create_tiled_image "$video" >/dev/null
 
     # calculate the palette
     debug ffmpeg \
@@ -319,6 +320,36 @@ function extract_segment {
     mv "$temp_segment" "$segment"
 
     echo "$segment"
+}
+
+function create_tiled_image {
+    local segment="$1"
+
+    local cache_dir=$(dirname "$segment")
+    local segment_base=$(basename "$segment")
+    local hash=${segment_base#segment.}
+    hash=${hash%.*}
+    local tiled="${cache_dir}/tiled.${hash}.png"
+
+    if [ ! -f "$tiled" ]; then
+        local frame_count=$(
+            ffprobe -v error -count_frames -select_streams v:0 \
+                -show_entries stream=nb_read_frames -of csv=p=0 "$segment"
+        )
+        local grid_size=$(echo "10k ${frame_count} v .9999 + 0k 1 / p" | dc)
+        local temp_tiled="${cache_dir}/tiled.${hash}.$$.png"
+
+        debug ffmpeg \
+            -loglevel error \
+            -y \
+            -i "$segment" \
+            -vf "tile=${grid_size}x${grid_size}" \
+            "$temp_tiled"
+
+        mv "$temp_tiled" "$tiled"
+    fi
+
+    echo "$tiled"
 }
 
 function segment_filter {
