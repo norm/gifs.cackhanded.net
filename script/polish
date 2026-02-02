@@ -1,0 +1,317 @@
+#!/usr/bin/env -S bash -euo pipefail
+
+yellow=$'\e[33m'
+magenta=$'\e[35m'
+green=$'\e[32m'
+bold=$'\e[1m'
+reset=$'\e[0m'
+dim=$'\e[2m'
+
+header_lines=5
+
+bindings=(
+    "f:Finalise:key_finalise:1"
+    "n:Next:key_next:1"
+    "r:Rebuild:key_rebuild:"
+    "e:Edit:key_edit:"
+    "p:Preview:key_preview:"
+    "s:Safari:key_safari:"
+    "i:Info:key_info:"
+    "l:Line:key_line:"
+    "c:Clear:key_clear:"
+    "w:Wipe:key_wipe:"
+    "q:Quit:key_quit:"
+)
+aliases=(
+    " ::key_rebuild:"
+    $'\f::key_clear:'
+)
+
+
+function main {
+    local drafts=("$@")
+
+    while [[ ${#drafts[@]} -gt 0 ]]; do
+        for i in "${!drafts[@]}"; do
+            toml="${drafts[$i]}"
+            process_draft "$toml" || true
+            if ! grep -q '^draft = true' "$toml"; then
+                unset 'drafts[$i]'
+            fi
+        done
+        drafts=("${drafts[@]}")
+    done
+
+    clear_header
+    echo "No more drafts."
+}
+
+function build_key_help {
+    local help=""
+    local binding key label
+
+    for binding in "${bindings[@]}"; do
+        IFS=: read -r key label _ _ <<< "$binding"
+        key_upper="${key^}"
+        label_rest="${label:1}"
+        help+="[${bold}${key_upper}${reset}]${label_rest}  "
+    done
+    echo "${help%  }"
+}
+
+function draw_header {
+    local toml="$1"
+
+    tput sc
+    tput cup 0 0
+    tput el
+    build_key_help
+    tput cup 2 0
+    tput el
+    printf "${bold}${green}%s${reset}" "$toml"
+    tput cup 3 0
+    tput el
+    printf "${dim}%s${reset}" "$(printf '%*s' "$(tput cols)" '' | tr ' ' '=')"
+    tput rc
+}
+
+function clear_header {
+    tput cup 0 0
+    for _ in $(seq 1 $header_lines); do
+        tput el
+        echo
+    done
+}
+
+function setup_screen {
+    clear
+    local lines=$(tput lines)
+    tput csr $header_lines $((lines - 1))
+    tput cup $header_lines 0
+}
+
+function start_watcher {
+    echo "$toml" | entr -np sh -c "make -f Makefile.gifs '$output'; echo" &
+    entr_pid=$!
+}
+
+function stop_watcher {
+    kill "$entr_pid" 2>/dev/null || true
+    wait "$entr_pid" 2>/dev/null || true
+}
+
+function key_finalise {
+    stop_watcher
+    if finalise_draft "$toml"; then
+        return 0
+    fi
+    start_watcher
+    return 1
+}
+
+function key_next {
+    stop_watcher
+}
+
+function key_rebuild {
+    sed -i '' -e 's/XYZZZYX/XYZZZYX/' "$toml"
+}
+
+function key_edit {
+    subl "$toml"
+}
+
+function key_preview {
+    open -a Preview "$output"
+}
+
+function key_safari {
+    open -a Safari "$output"
+}
+
+function key_info {
+    gifsicle --info --color-info --size-info "$output" | subl -
+}
+
+function key_line {
+    printf "${dim}%s${reset}\n" "$(printf '%*s' "$(tput cols)" '' | tr ' ' '─')"
+}
+
+function key_clear {
+    tput cup $header_lines 0
+    tput ed
+}
+
+function key_wipe {
+    local file=$(./bin/toml "$toml" video.file)
+    local cache_dir="/tmp/make_gif/${file}"
+
+    rm -rf "$cache_dir"
+    key_rebuild
+}
+
+function key_quit {
+    stop_watcher
+    exit 0
+}
+
+function handle_key {
+    local pressed="$1"
+    local binding key func next
+
+    for binding in "${bindings[@]}" "${aliases[@]}"; do
+        IFS=: read -r key _ func next <<< "$binding"
+        if [[ "$pressed" == "$key" || "${pressed,,}" == "$key" ]]; then
+            if "$func" && [[ "$next" == "1" ]]; then
+                return 0
+            fi
+            return 1
+        fi
+    done
+    return 1
+}
+
+function process_draft {
+    local toml="$1"
+    local output="${toml%.toml}.gif"
+    local entr_pid=""
+
+    setup_screen
+    draw_header "$toml"
+
+    make -s -f Makefile.gifs "$output"
+    echo
+    start_watcher
+
+    while true; do
+        draw_header "$toml"
+        read -rsN1 key
+        handle_key "$key" && return 0
+    done
+}
+
+function pass {
+    printf "${green}✓ %s${reset}\n" "$1"
+}
+
+function fail {
+    printf "${bold}${magenta}✗ %s${reset}\n" "$1"
+}
+
+function note {
+    printf "? %s\n" "$1"
+}
+
+function test_for_description {
+    local toml="$1"
+
+    if grep -q 'WRITE ME' "$toml"; then
+        fail "Description not written."
+        return 1
+    fi
+    pass "Description written."
+}
+
+function test_for_tags {
+    local toml="$1"
+    local tag_count
+
+    if ! tag_count=$(./bin/toml "$toml" tag --length 2>/dev/null); then
+        tag_count=0
+    fi
+    if [[ $tag_count -lt 1 ]]; then
+        fail "No tags applied."
+        return 1
+    fi
+    if ./bin/toml "$toml" tag 2>/dev/null | grep -q 'tag1'; then
+        fail "Contains default tags."
+        return 1
+    fi
+    pass "Tags applied."
+}
+
+function test_for_loss {
+    local toml="$1"
+    local loss max_size
+
+    loss=$(./bin/toml "$toml" output.loss 2>/dev/null)
+    max_size=$(./bin/toml "$toml" output.max_size 2>/dev/null)
+
+    case "$loss" in
+        0|''|no)
+            if [[ -z "$max_size" ]]; then
+                note "No loss specified. GIF could be made smaller."
+                return 1
+            else
+                pass "Max size will optimise."
+            fi
+            ;;
+        *)
+            pass "Loss specified."
+            ;;
+    esac
+}
+
+function report_comments {
+    local toml="$1"
+    local count
+
+    count=$(grep -c '^#' "$toml" 2>/dev/null) || count=0
+    if [[ $count -gt 0 ]]; then
+        note "$count comment lines."
+        return 1
+    fi
+}
+
+function finalise_draft {
+    local toml="$1"
+    local errors=0
+    local notes=0
+
+    echo
+    test_for_description "$toml" || errors=1
+    test_for_tags "$toml" || errors=1
+    test_for_loss "$toml" || notes=1
+    report_comments "$toml" || notes=1
+
+    if [[ $errors -eq 1 ]]; then
+        printf "\nCannot finalise, fix errors first.\n\n"
+        return 1
+    fi
+
+    if [[ $notes -eq 1 ]]; then
+        printf "\nFinalise anyway? [y/N] "
+        read -rsN1 confirm
+        echo
+        echo
+        if [[ "${confirm,,}" != "y" ]]; then
+            return 1
+        fi
+    fi
+
+    sed -i '' -e '/^draft = true$/d' "$toml"
+    printf "Finished %s\n" "$toml"
+    return 0
+}
+
+function restore_terminal {
+    tput csr 0 $(($(tput lines) - 1))
+    tput cup $(($(tput lines) - 1)) 0
+    echo ""
+    kill -2 0
+}
+
+drafts=()
+while IFS= read -r toml; do
+    if [[ -z "${1:-}" || "$toml" == *"$1"* ]]; then
+        drafts+=("$toml")
+    fi
+done < <(rg -l '^draft = true' source --glob '*.toml' 2>/dev/null || true)
+
+if [[ ${#drafts[@]} -eq 0 ]]; then
+    echo "No matching draft GIFs."
+    exit 0
+fi
+
+trap restore_terminal EXIT
+main "${drafts[@]}"

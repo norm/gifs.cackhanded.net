@@ -251,13 +251,13 @@ def main():
     canvas.save(args.output)
 
     if args.font_size > font_size:
-        print('  " \33[35mfont_size=%s\33[0m placement=%s %s' % (
+        print('    \33[35mfont_size=%s\33[0m placement=%s %s' % (
             font_size,
             placement,
             args.text.replace("\n", "\\n")
         ))
     else:
-        print('  " font_size=%s placement=%s %s' % (
+        print('    font_size=%s placement=%s %s' % (
             font_size,
             placement,
             args.text.replace("\n", "\\n")

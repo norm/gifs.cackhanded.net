@@ -5,17 +5,14 @@ PATH="./bin:$PATH"
 python --version
 python -c "import platform; print('Arch:', platform.machine())"
 python -c "
-import PIL
+from importlib.metadata import version
 from PIL import features
-print('Pillow:', PIL.__version__)
+print('Pillow:', version('Pillow'))
 print('FreeType:', features.version('freetype2'))
 print('HarfBuzz:', features.version('harfbuzz'))
-import basic_colormath
-print('basic-colormath:', basic_colormath.__version__)
-import flourish
-print('flourish:', flourish.__version__)
-import imagequant
-print('imagequant:', imagequant.__version__)
+print('basic-colormath:', version('basic-colormath'))
+print('flourish:', version('flourish'))
+print('imagequant:', version('imagequant'))
 "
 echo ""
 

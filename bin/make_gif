@@ -9,6 +9,7 @@ DEBUG="${GIF_DEBUG:-}"
 TYPE_SETS="${GIF_TYPE_SETS:-source/_site.toml}"
 video=""
 green=$'\e'[32m
+yellow=$'\e'[33m
 cyan=$'\e'[36m
 magenta=$'\e'[35m
 reset=$'\e'[0m
@@ -223,6 +224,10 @@ function main {
     output_loss="$(toml $toml output.loss)"
     losses="${output_loss:-0}"
 
+    if [ "$losses" = 'no' ] && [ -n "$output_max_size" ]; then
+        echo "    ${yellow}max_size ignored, loss='no'${reset}" >&2
+    fi
+
     if [ "$losses" != 'no' ]; then
         gifsicle \
             -O3 \
@@ -238,7 +243,7 @@ function main {
                 && indicator="$green" \
                 || indicator="$magenta"
         fi
-        printf "  %s< optimised with loss %d, now %.02fmb, %.01f%% of original%s\n" \
+        printf "    %soptimised with loss %d, now %.02fmb, %.01f%% of original%s\n" \
             $indicator \
             $losses \
             $(size_in_mb $size) \
@@ -260,7 +265,7 @@ function main {
                 [ "$size" -lt "$output_max_size" ] \
                     && indicator="$green" \
                     || indicator="$magenta"
-                printf "  %s< optimised with loss %d, now %.02fmb, %.01f%% of max%s\n" \
+                printf "    %soptimised with loss %d, now %.02fmb, %.01f%% of max%s\n" \
                     $indicator \
                     $losses \
                     $(size_in_mb $size) \
@@ -280,7 +285,7 @@ function main {
     local frames=$(toml $toml info.frames)
     local colours=$(toml $toml info.colours)
     local elapsed=$(awk "BEGIN {printf \"%.1fs\", $EPOCHREALTIME - $start_time}")
-    echo "  = ${elapsed}, ${bytes}, ${frames} frames, ${colours} colours, ${gif}"
+    echo "  > ${elapsed}, ${bytes}, ${frames} frames, ${colours} colours, ${gif}"
 }
 
 function extract_segment {

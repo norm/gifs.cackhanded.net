@@ -22,10 +22,10 @@ This will replace `script/new`.
 Create a tool `polish` to iteratively rebuild GIFs as the TOML is tweaked.
 An improvement on the core loop in `script/new`.
 
-- [ ] search for `draft = true`, exiting when no remaining GIFs are in draft
-- [ ] key to skip temporarily
-- [ ] key to finalise, removing draft, and running checks against the TOML
-- [ ] improve the screen handling to have zones, keeping the keys in view
+- [X] search for `draft = true`, exiting when no remaining GIFs are in draft
+- [X] key to skip temporarily
+- [X] key to finalise, removing draft, and running checks against the TOML
+- [X] improve the screen handling to have zones, keeping the keys in view
       when clearing the screen
 
 
