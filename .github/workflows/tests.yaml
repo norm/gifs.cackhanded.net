@@ -41,6 +41,10 @@ jobs:
           mkdir -p videos
           curl -o videos/HU2ftCitvyQ.mp4 https://bumph.cackhanded.net/HU2ftCitvyQ.mp4
 
+      - name: Use CI fixtures
+        run: |
+          cp tests/gifs/ci-sol-levante-hdr.gif tests/gifs/sol-levante-hdr.gif
+
       - name: Run tests
         run: |
           make test
