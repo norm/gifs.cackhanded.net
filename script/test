@@ -6,11 +6,16 @@ python --version
 python -c "import platform; print('Arch:', platform.machine())"
 python -c "
 import PIL
-from PIL import features, Image
+from PIL import features
 print('Pillow:', PIL.__version__)
 print('FreeType:', features.version('freetype2'))
 print('HarfBuzz:', features.version('harfbuzz'))
-print('libimagequant:', 'LIBIMAGEQUANT' in dir(Image.Quantize))
+import basic_colormath
+print('basic-colormath:', basic_colormath.__version__)
+import flourish
+print('flourish:', flourish.__version__)
+import imagequant
+print('imagequant:', imagequant.__version__)
 "
 echo ""
 

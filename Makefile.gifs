@@ -25,7 +25,6 @@ $(TOML_DIR)/%.tn.gif: $(TOML_DIR)/%.gif
 		--no-warnings \
 			$< '#0-20' \
 			> $@
-	@stat -f'  = %z %N' $@
 
 remove:
 	@rm -f $(GIF) $(THUMB)

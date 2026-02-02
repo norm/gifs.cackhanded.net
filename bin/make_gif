@@ -1,6 +1,4 @@
-#!/bin/bash
-
-set -eu
+#!/usr/bin/env -S bash -euo pipefail
 
 export AV_LOG_FORCE_NOCOLOR=1
 
@@ -17,6 +15,7 @@ reset=$'\e'[0m
 
 
 function main {
+    local start_time=$EPOCHREALTIME
     local toml="$1"
     local gif="$2"
     local source_video="${3:-$(video_path $toml)}"
@@ -72,6 +71,7 @@ function main {
 
 
     # create captions
+    local cache_dir=$(dirname "$video")
     num_captions="$(toml $toml caption --length)"
     caption_args=''
     caption_colours=''
@@ -86,24 +86,35 @@ function main {
             caption_strokew="$(get_caption_key $toml $index stroke_width)"
             caption_strokecol="$(get_caption_key $toml $index stroke_colour)"
             caption_align="$(get_caption_key $toml $index align)"
-            debug caption \
-                ${output_width:-$DEFAULT_WIDTH} \
-                $output_height \
-                --colour "${caption_colour:-#ffffff}" \
-                --font "${caption_font:-assistant-semibold.ttf}" \
-                --font-size "${caption_size:-40}" \
-                --margin "${caption_margin:-10}" \
-                --stroke-width "${caption_strokew:-2}" \
-                --stroke-colour "${caption_strokecol:-#000000}" \
-                --text-align "${caption_align:-left}" \
-                --placement ${caption_placement:-bl} \
-                "${caption_text}" \
-                "${TEMP}/caption-${index}.png"
+
+            local caption_hash=$(
+                echo -n "${output_width}${output_height}${caption_text}${caption_placement}${caption_size}${caption_margin}${caption_font}${caption_colour}${caption_strokew}${caption_strokecol}${caption_align}" \
+                    | shasum | cut -c1-12
+            )
+            local caption_path="${cache_dir}/caption-${index}.${caption_hash}.png"
+
+            if [ ! -f "$caption_path" ]; then
+                local temp_caption="${cache_dir}/caption-${index}.${caption_hash}.$$.png"
+                debug caption \
+                    ${output_width:-$DEFAULT_WIDTH} \
+                    $output_height \
+                    --colour "${caption_colour:-#ffffff}" \
+                    --font "${caption_font:-assistant-semibold.ttf}" \
+                    --font-size "${caption_size:-40}" \
+                    --margin "${caption_margin:-10}" \
+                    --stroke-width "${caption_strokew:-2}" \
+                    --stroke-colour "${caption_strokecol:-#000000}" \
+                    --text-align "${caption_align:-left}" \
+                    --placement ${caption_placement:-bl} \
+                    "${caption_text}" \
+                    "$temp_caption"
+                mv "$temp_caption" "$caption_path"
+            fi
 
             caption_colours+="--range ${caption_colour:-#ffffff} "
             caption_colours+="${caption_strokecol:-#000000} "
 
-            caption_args+=" -i ${TEMP}/caption-${index}.png"
+            caption_args+=" -i $caption_path"
         done
     fi
 
@@ -129,9 +140,10 @@ function main {
     local palette_path="${cache_dir}/palette.${palette_hash}.png"
 
     if [ ! -f "$palette_path" ]; then
+        local temp_palette="${cache_dir}/palette.${palette_hash}.$$.png"
         debug palette \
             "$tiled" \
-            "$palette_path" \
+            "$temp_palette" \
             --colours "${output_colours:-$DEFAULT_COLOURS}" \
             --frame-count "$frame_count" \
             ${weighted_frames:+--weighted-frames "$weighted_frames"} \
@@ -139,6 +151,7 @@ function main {
             $caption_colours \
             $palette_add \
             $list_palette
+        mv "$temp_palette" "$palette_path"
     fi
 
     [ -n "$(toml $toml palette.show)" ] && \
@@ -266,7 +279,8 @@ function main {
     local bytes=$(stat -f'%z' "$gif")
     local frames=$(toml $toml info.frames)
     local colours=$(toml $toml info.colours)
-    echo "  = ${bytes}, ${frames} frames, ${colours} colours, ${gif}"
+    local elapsed=$(awk "BEGIN {printf \"%.1fs\", $EPOCHREALTIME - $start_time}")
+    echo "  = ${elapsed}, ${bytes}, ${frames} frames, ${colours} colours, ${gif}"
 }
 
 function extract_segment {
@@ -340,7 +354,7 @@ function extract_segment {
     fi
 
     mv "$temp_segment" "$segment"
-    echo "    segment cached $segment" >&2
+    echo "    video segment cached $segment" >&2
 
     echo "$segment"
 }
@@ -370,7 +384,7 @@ function create_tiled_image {
             "$temp_tiled"
 
         mv "$temp_tiled" "$tiled"
-        echo "    tiled cached $tiled" >&2
+        echo "    frame tiles cached $tiled" >&2
     fi
 
     echo "$tiled"

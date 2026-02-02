@@ -59,7 +59,13 @@ setup() {
 }
 
 @test compare_captions {
+    cache="/tmp/make_gif/HU2ftCitvyQ"
+
     ./script/compare_frames_fuzzed tests/gifs/captions.toml
+
+    [ -f "$cache/caption-1.c9ef70ebf1e9.png" ]
+    [ -f "$cache/caption-2.d568d770d085.png" ]
+    [ -f "$cache/caption-3.e6e673842f18.png" ]
 }
 
 @test compare_captions_type {
@@ -89,4 +95,7 @@ setup() {
 
     [ -f "$cache/tiled.$hash.png" ]
     diff tests/gifs/sol-levante-hdr.tiled.png "$cache/tiled.$hash.png"
+
+    [ -f "$cache/palette.ce279924d55f.png" ]
+    diff tests/gifs/sol-levante-hdr.palette.png "$cache/palette.ce279924d55f.png"
 }
