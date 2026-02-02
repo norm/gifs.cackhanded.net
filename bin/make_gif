@@ -19,32 +19,28 @@ reset=$'\e'[0m
 function main {
     local toml="$1"
     local gif="$2"
-    video="${3:-$(video_path $toml)}"
+    local source_video="${3:-$(video_path $toml)}"
 
-    if [ ! -f "$video" ]; then
-        echo " ** $video does not exist"
+    if [ ! -f "$source_video" ]; then
+        echo " ** $source_video does not exist"
         exit 1
     fi
 
-    duration=$(get_duration "$video")
+    duration=$(get_duration "$source_video")
 
-    timing_args=''
     local start_seconds=0
-    start=$(toml $toml video.start)
+    local start=$(toml $toml video.start)
     if [ -n "$start" ]; then
         start_seconds=$(to_seconds "$start")
         check_time "video.start" "$start_seconds"
-        timing_args="$timing_args -ss $start"
     fi
     local toml_duration=$(toml $toml video.duration)
     if [ -n "$toml_duration" ]; then
         check_time "video end" $(( ${start_seconds%.*} + ${toml_duration%.*} ))
-        timing_args="$timing_args -t $toml_duration"
     fi
-    end=$(toml $toml video.end)
+    local end=$(toml $toml video.end)
     if [ -n "$end" ]; then
         check_time "video end" $(( ${start_seconds%.*} + ${end%.*} ))
-        timing_args="$timing_args -to $end"
     fi
 
     local num_clips="$(toml $toml clip --length)"
@@ -52,29 +48,22 @@ function main {
         check_time "clip $index" "$(to_seconds "$(toml $toml clip.end $index)")"
     done
 
-    # calculate the palette
-    debug ffmpeg \
-        -loglevel error \
-        -y \
-        ${timing_args} \
-        -i "$video" \
-        -filter_complex "$(palettegen_filter $toml)" \
-        "${TEMP}/palette.png"
+    video="$(extract_segment "$toml" "$source_video")"
+    tiled="$(create_tiled_image "$video")"
+    frame_count=$(
+        ffprobe -v error -count_frames -select_streams v:0 \
+            -show_entries stream=nb_read_frames -of csv=p=0 "$video"
+    )
 
-    # calculate the size
-    local crop=$(get_crop $toml)
-    local scale=$(get_scale $toml)
-    size_filter="$(join ',' "$crop" "$scale")"
-    ffmpeg \
-        -loglevel error \
-        -y \
-        -ss 0 \
-        -t 0.01 \
-        -i "$video" \
-        -filter_complex "[0:v] ${size_filter:-scale=w=in_w:h=in_h}" \
-            ${TEMP}/size.gif
-    output_width="$( file $TEMP/size.gif | awk '{ print $7 }')"
-    output_height="$( file $TEMP/size.gif | awk '{ print $9 }')"
+    # get dimensions from processed segment
+    output_width=$(
+        ffprobe -v error -select_streams v:0 \
+            -show_entries stream=width -of csv=p=0 "$video"
+    )
+    output_height=$(
+        ffprobe -v error -select_streams v:0 \
+            -show_entries stream=height -of csv=p=0 "$video"
+    )
     echo "    ${output_width}x${output_height}" \
         $(get_dither $toml | sed -e 's/bayer://') \
         $(get_denoise $toml | sed -e 's/hqdn3d/denoise/') \
@@ -122,21 +111,44 @@ function main {
     [ -n "$(toml $toml palette.list)" ] && \
         list_palette='--list'
 
-    debug edit-palette \
-        $list_palette \
-        $caption_colours \
-        $(toml $toml palette.add) \
-        "${TEMP}/palette.png"
+    palette_add=''
+    for colour in $(toml $toml palette.add); do
+        palette_add+="--add $colour "
+    done
+
+    weighted_frames="$(toml $toml palette.weighted_frames)"
+    rescue="$(toml $toml palette.rescue)"
+
+    output_colours="$(toml $toml output.colours)"
+
+    local cache_dir=$(dirname "$tiled")
+    local palette_hash=$(
+        echo -n "${tiled}${output_colours}${weighted_frames}${rescue}${caption_colours}${palette_add}" \
+            | shasum | cut -c1-12
+    )
+    local palette_path="${cache_dir}/palette.${palette_hash}.png"
+
+    if [ ! -f "$palette_path" ]; then
+        debug palette \
+            "$tiled" \
+            "$palette_path" \
+            --colours "${output_colours:-$DEFAULT_COLOURS}" \
+            --frame-count "$frame_count" \
+            ${weighted_frames:+--weighted-frames "$weighted_frames"} \
+            ${rescue:+--rescue "$rescue"} \
+            $caption_colours \
+            $palette_add \
+            $list_palette
+    fi
 
     [ -n "$(toml $toml palette.show)" ] && \
-        open "${TEMP}/palette.png"
+        open "$palette_path"
 
     # first-pass stabilisation
     local stabilise="$(get_stabilise $toml)"
     if [ -n "$stabilise" ]; then
         debug ffmpeg \
             -loglevel error \
-            ${timing_args} \
             -i "$video" \
             -vf vidstabdetect=shakiness=10:accuracy=15 \
             -f null -
@@ -146,9 +158,8 @@ function main {
     debug ffmpeg \
         -loglevel error \
         -y \
-        ${timing_args} \
         -i "$video" \
-        -i "${TEMP}/palette.png" \
+        -i "$palette_path" \
         ${caption_args} \
         -f gif \
         -filter_complex "$(generate_filter $toml)" \
@@ -252,63 +263,145 @@ function main {
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
 
-    frames=$(
-        gifsicle --info "$gif" \
-            | grep \+\ image \
-            | tail -1 \
-            | sed -e 's/^  . image .//' -e 's/ .*$//'
-    )
-    echo "  > $((frames+1)) frames"
+    local bytes=$(stat -f'%z' "$gif")
+    local frames=$(toml $toml info.frames)
+    local colours=$(toml $toml info.colours)
+    echo "  = ${bytes}, ${frames} frames, ${colours} colours, ${gif}"
 }
 
-function palettegen_filter {
+function extract_segment {
     local toml="$1"
+    local source_video="$2"
 
-    local max_cols=$(get_colours $toml)
+    local file=$(toml $toml video.file)
+    local ext=$(toml $toml video.ext)
+    local hash=$(segment_hash "$toml" "$source_video")
+    local cache_dir="/tmp/make_gif/${file}"
+    local segment="${cache_dir}/segment.${hash}.${ext}"
+
+    if [ -f "$segment" ]; then
+        echo "$segment"
+        return
+    fi
+
+    mkdir -p "$cache_dir"
+
+    local vf="$(segment_filter "$toml" "$source_video")"
+    local temp_segment="${cache_dir}/segment.${hash}.$$.${ext}"
+
+    local num_clips="$(toml $toml clip --length)"
+    if [ "$num_clips" -gt 0 ]; then
+        # extract and concatenate clips, then apply visual filters
+        local filter=""
+        local inputs=""
+        for index in $(seq 1 $num_clips); do
+            local start="$(toml $toml clip.start $index)"
+            local end="$(toml $toml clip.end $index)"
+            filter+="[0:v]trim=start=$(to_seconds $start):end=$(to_seconds $end),setpts=PTS-STARTPTS[c${index}];"
+            inputs+="[c${index}]"
+        done
+        filter+="${inputs}concat=n=${num_clips}:v=1[concat]"
+        [ -n "$vf" ] \
+            && filter+=";[concat]${vf}[out]" \
+            || filter+=";[concat]copy[out]"
+
+        local video_start=$(toml $toml video.start)
+        local timing_args=""
+        [ -n "$video_start" ] && timing_args="-ss $video_start"
+
+        debug ffmpeg \
+            -loglevel error \
+            -y \
+            $timing_args \
+            -i "$source_video" \
+            -filter_complex "$filter" \
+            -map "[out]" \
+            "$temp_segment"
+    else
+        # simple timing extraction with visual filters
+        local timing_args=""
+        local start=$(toml $toml video.start)
+        [ -n "$start" ] && timing_args+=" -ss $start"
+        local toml_duration=$(toml $toml video.duration)
+        [ -n "$toml_duration" ] && timing_args+=" -t $toml_duration"
+        local end=$(toml $toml video.end)
+        [ -n "$end" ] && timing_args+=" -to $end"
+
+        local vf_args=""
+        [ -n "$vf" ] && vf_args="-vf $vf"
+
+        debug ffmpeg \
+            -loglevel error \
+            -y \
+            $timing_args \
+            -i "$source_video" \
+            $vf_args \
+            "$temp_segment"
+    fi
+
+    mv "$temp_segment" "$segment"
+    echo "    segment cached $segment" >&2
+
+    echo "$segment"
+}
+
+function create_tiled_image {
+    local segment="$1"
+
+    local cache_dir=$(dirname "$segment")
+    local segment_base=$(basename "$segment")
+    local hash=${segment_base#segment.}
+    hash=${hash%.*}
+    local tiled="${cache_dir}/tiled.${hash}.png"
+
+    if [ ! -f "$tiled" ]; then
+        local frame_count=$(
+            ffprobe -v error -count_frames -select_streams v:0 \
+                -show_entries stream=nb_read_frames -of csv=p=0 "$segment"
+        )
+        local grid_size=$(echo "10k ${frame_count} v .9999 + 0k 1 / p" | dc)
+        local temp_tiled="${cache_dir}/tiled.${hash}.$$.png"
+
+        debug ffmpeg \
+            -loglevel error \
+            -y \
+            -i "$segment" \
+            -vf "format=rgba,tile=${grid_size}x${grid_size}:color=#00000000" \
+            "$temp_tiled"
+
+        mv "$temp_tiled" "$tiled"
+        echo "    tiled cached $tiled" >&2
+    fi
+
+    echo "$tiled"
+}
+
+function segment_filter {
+    local toml="$1"
+    local source_video="$2"
+
+    local tonemap=$(get_tonemap "$source_video")
+    local fps=$(get_fps $toml)
+    local crop=$(get_crop $toml)
+    local scale=$(get_scale $toml)
     local bright=$(get_bright $toml)
     local denoise=$(get_denoise $toml)
-    local mode=$(get_stats_mode $toml)
-    local palettegen="palettegen=${max_cols}:${mode}"
-    local clips=$(get_clips $toml)
-    local tonemap=$(get_tonemap $toml)
 
-    if [ -n "$clips" ]; then
-        echo "$clips [cv] $palettegen"
-    else
-        local crop=$(get_crop $toml)
-        local scale=$(get_scale $toml)
-        local fps=$(get_fps $toml)
-        echo "[0:v] $(join ',' $tonemap $fps $crop $scale $bright $denoise $palettegen)"
-    fi
+    join ',' $tonemap $fps $crop $scale $bright $denoise
 }
 
 function generate_filter {
     local toml="$1"
 
-    local mode=$(get_stats_mode $toml)
     local dither=$(get_dither $toml)
-
     local paletteuse="[1:v] paletteuse=${dither}:diff_mode=rectangle"
-    local clips=$(get_clips $toml)
     local captions=$(get_captions_filter $toml)
-    local tonemap=$(get_tonemap $toml)
+    local stabilise=$(get_stabilise $toml)
+    local slowdown="$(get_slowdown $toml)"
+    local alter="$(join ',' $stabilise $slowdown)"
+    alter="${alter:-copy}"
 
-    if [ -n "$clips" ]; then
-        echo "$clips [cv]${captions}${paletteuse}"
-    else
-        local bright=$(get_bright $toml)
-        local denoise=$(get_denoise $toml)
-        local crop=$(get_crop $toml)
-        local stabilise=$(get_stabilise $toml)
-        local fps=$(get_fps $toml)
-        local scale=$(get_scale $toml)
-        local slowdown="$(get_slowdown $toml)"
-        local alter="$(
-            join ',' $tonemap $stabilise $fps $crop $scale $bright $denoise $slowdown
-        )"
-        alter="${alter:-scale=w=in_w:h=in_h}"
-        echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
-    fi
+    echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
 }
 
 function get_crop {
@@ -371,14 +464,6 @@ function get_scale {
     echo $scale
 }
 
-function get_colours {
-    local toml="$1"
-
-    local output_colours="$(toml $toml output.colours)"
-
-    echo max_colors=${output_colours:-$DEFAULT_COLOURS}
-}
-
 function get_dither {
     local toml="$1"
 
@@ -394,38 +479,6 @@ function get_slowdown {
 
     [ -n "$output_slowdown" ] && \
         echo "setpts=${output_slowdown}*PTS"
-}
-
-function get_clips {
-    local toml="$1"
-
-    local clips=''
-    local num_clips="$(toml $toml clip --length)"
-    if [ "$num_clips" -gt 0 ]; then
-        local fps=$(get_fps $toml)
-        local filters=''
-        for index in $(seq 1 $num_clips); do
-            local start="$(toml $toml clip.start $index)"
-            local end="$(toml $toml clip.end $index)"
-            local trim="trim=start=$(to_seconds $start)"
-            trim+=":end=$(to_seconds $end)"
-
-            local cmd="$(join ',' "$fps" "$trim" setpts=PTS-STARTPTS)"
-            clips+="[0:v] $cmd [c$index]; "
-            filters+="[c$index]"
-        done
-
-        local bright=$(get_bright $toml)
-        local denoise=$(get_denoise $toml)
-        local concat="concat=n=$index:v=1"
-        local crop=$(get_crop $toml)
-        local scale=$(get_scale $toml)
-        local slowdown="$(get_slowdown $toml)"
-        local alter="$(join ',' $concat $crop $scale $bright $denoise $slowdown)"
-        clips+="$filters $alter [cv];"
-    fi
-
-    echo $clips
 }
 
 function get_captions_filter {
@@ -456,22 +509,19 @@ function get_captions_filter {
     echo $captions
 }
 
-function get_stats_mode {
-    local toml="$1"
-
-    local output_mode="$(toml $toml output.mode)"
-
-    echo "stats_mode=${output_mode:-diff}"
-}
-
 function get_tonemap {
+    local source="${1:-$video}"
+    if [ ! -f "$source" ]; then
+        echo "get_tonemap: $source does not exist" >&2
+        return 1
+    fi
     local transfer=$(
         ffprobe \
             -v error \
             -select_streams v:0 \
             -show_entries stream=color_transfer \
             -of default=noprint_wrappers=1:nokey=1 \
-                "$video"
+                "$source"
     )
 
     if [ "$transfer" = "smpte2084" ]; then
@@ -503,6 +553,31 @@ function get_caption_key {
     [ -n "$value" ] \
         && echo "$value" \
         || echo "$set_value"
+}
+
+function segment_hash {
+    local toml="$1"
+    local source_video="$2"
+    local params=""
+
+    # timing
+    params+="$(toml $toml video.start)"
+    params+="$(toml $toml video.duration)"
+    params+="$(toml $toml video.end)"
+    local num_clips="$(toml $toml clip --length)"
+    for index in $(seq 1 $num_clips); do
+        params+="$(toml $toml clip.start $index)"
+        params+="$(toml $toml clip.end $index)"
+    done
+    # visual transformations
+    params+="$(get_tonemap "$source_video")"
+    params+="$(toml $toml output.fps)"
+    params+="$(toml $toml video.crop)"
+    params+="$(toml $toml output.width)"
+    params+="$(toml $toml output.brightness)"
+    params+="$(toml $toml output.denoise)"
+
+    echo -n "$params" | shasum | cut -c1-12
 }
 
 function size_in_mb {
@@ -546,7 +621,7 @@ function convert_mb {
 }
 
 function debug {
-    [ -n "$DEBUG" ] && echo "$@"
+    [ -n "$DEBUG" ] && echo "$@" >&2
     "$@"
 }
 

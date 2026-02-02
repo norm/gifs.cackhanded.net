@@ -1,0 +1,245 @@
+#!/usr/bin/env python
+
+import argparse
+import math
+import sys
+from collections import Counter
+
+import imagequant
+from basic_colormath import rgb_to_lab
+from PIL import Image, ImageColor
+
+
+def find_rescue_colour(image, palette):
+    min_distance = 10
+    sample_rate = 10
+
+    palette_lab = [rgb_to_lab(p[:3]) for p in palette]
+    pixel_data = image.tobytes()
+    lab_cache = {}
+
+    orphan_counts = Counter()
+    for offset in range(0, len(pixel_data), 4 * sample_rate):
+        r, g, b, a = (
+            pixel_data[offset],
+            pixel_data[offset+1],
+            pixel_data[offset+2],
+            pixel_data[offset+3],
+        )
+        if a == 0:
+            continue
+        rgb = (r, g, b)
+        if rgb not in lab_cache:
+            lab_cache[rgb] = rgb_to_lab(rgb)
+        lab = lab_cache[rgb]
+        min_dist = min(
+            math.dist(lab, p_lab)
+                for p_lab in palette_lab
+        )
+        if min_dist >= min_distance:
+            orphan_counts[rgb] += min_dist
+
+    # top by cumulative distance (frequency * distance)
+    top = orphan_counts.most_common(1)
+    if not top:
+        return None
+    return top[0][0]
+
+
+def get_weighted_frames(weighted):
+    # convert frames string "1 6-9 200" to 0-indexed numbers
+    frames = set()
+    for part in weighted.split():
+        if '-' in part:
+            start, end = part.split('-', 1)
+            frames.update(range(int(start) - 1, int(end)))
+        else:
+            frames.add(int(part) - 1)
+    return sorted(frames)
+
+
+def extract_frames(image, frame_indices, frame_count):
+    width, height = image.size
+    grid_size = math.ceil(math.sqrt(frame_count))
+    frame_width = width // grid_size
+    frame_height = height // grid_size
+
+    frames = []
+    for idx in frame_indices:
+        if idx >= frame_count:
+            continue
+        col = idx % grid_size
+        row = idx // grid_size
+        frame = image.crop((
+            col * frame_width,
+            row * frame_height,
+            (col + 1) * frame_width,
+            (row + 1) * frame_height,
+        ))
+        frames.append(frame)
+
+    if not frames:
+        return None
+
+    new_grid = math.ceil(math.sqrt(len(frames)))
+    composite = Image.new(
+        'RGBA',
+        (new_grid * frame_width, new_grid * frame_height),
+        (0, 0, 0, 0),
+    )
+    for index, frame in enumerate(frames):
+        col = index % new_grid
+        row = index // new_grid
+        composite.paste(frame, (col * frame_width, row * frame_height))
+
+    return composite
+
+
+def pick_palette(image, max_colors):
+    # uses imagequant perceptual weighting for "human eye" choices, not popularity
+    quantized = imagequant.quantize_pil_image(
+        image,
+        dithering_level=0.0,
+        max_colors=max_colors,
+    )
+    palette_data = quantized.getpalette()
+    used_indices = set(quantized.get_flattened_data())
+
+    # palette is flat RGB [R0, G0, B0, R1...], extract to RGBA tuples
+    return {
+        (palette_data[i*3], palette_data[i*3+1], palette_data[i*3+2], 255)
+        for i in used_indices
+    }
+
+
+def colour_range(start, end):
+    start = ImageColor.getrgb(start)
+    end = ImageColor.getrgb(end)
+
+    colours = [
+        (start[0], start[1], start[2], 255),
+        (end[0], end[1], end[2], 255),
+    ]
+
+    # calculate 6 colours -- the two endpoints plus four intermediates
+    for step in range(4, 0, -1):
+        mult = step / 5
+        red = start[0] + int((end[0] - start[0]) * mult)
+        green = start[1] + int((end[1] - start[1]) * mult)
+        blue = start[2] + int((end[2] - start[2]) * mult)
+        colours.append((red, green, blue, 255))
+
+    return colours
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('input', help='Tiled image (frames from ffmpeg)')
+    parser.add_argument('output', help='Output palette PNG (16x16)')
+    parser.add_argument('--colours', type=int, default=64)
+    parser.add_argument('--add', action='append', default=[],
+                        help='Spot colour to add (can be repeated)')
+    parser.add_argument('--range', nargs=2, action='append', default=[],
+                        dest='ranges', metavar=('FROM', 'TO'),
+                        help='Colour range to interpolate')
+    parser.add_argument('--frame-count', type=int,
+                        help='Number of frames in the tiled image')
+    parser.add_argument('--weighted-frames',
+                        help='Frame indices to prioritise (e.g. "0", "0-2", "0 1 2-6")')
+    parser.add_argument('--list', action='store_true',
+                        help='Print all palette colours')
+    parser.add_argument('--rescue', type=int, default=4,
+                        help='Number of underrepresented colours to rescue (default 4, 0 to disable)')
+    args = parser.parse_args()
+
+    image = Image.open(args.input).convert('RGBA')
+    summary_parts = []
+
+    # first choose the palette from the source frames
+    if args.weighted_frames:
+        # weighting: allocate 40% of colours to weighted frames, 60% to remaining frames
+        weighted_indices = set(get_weighted_frames(args.weighted_frames))
+        weighted_colours_budget = args.colours * 2 // 5
+        nonweighted_colours_budget = args.colours - weighted_colours_budget
+        colours = set()
+
+        weighted_composite = extract_frames(
+            image,
+            sorted(weighted_indices),
+            args.frame_count,
+        )
+        weighted_colours = pick_palette(weighted_composite, weighted_colours_budget)
+        colours.update(weighted_colours)
+        weighted_count = len(colours)
+
+        nonweighted_composite = extract_frames(
+            image,
+            sorted(set(range(args.frame_count)) - weighted_indices),
+            args.frame_count,
+        )
+        nonweighted_colours = pick_palette(nonweighted_composite, nonweighted_colours_budget)
+        colours.update(nonweighted_colours)
+        nonweighted_count = len(colours) - weighted_count
+
+        summary_parts.append(f'{nonweighted_count}')
+        summary_parts.append(f'{weighted_count} (weighted)')
+    else:
+        # no weighting - quantize the full image
+        colours = pick_palette(image, args.colours)
+        summary_parts.append(f'{len(colours)}')
+
+    # add forced colours
+    initial_count = len(colours)
+    for colour in args.add:
+        rgb = ImageColor.getrgb(colour)
+        colours.add((rgb[0], rgb[1], rgb[2], 255))
+
+    for from_colour, to_colour in args.ranges:
+        for colour in colour_range(from_colour, to_colour):
+            colours.add(colour)
+
+    added_count = len(colours) - initial_count
+    if added_count:
+        summary_parts.append(f'{added_count} (added)')
+
+    # rescue underrepresented colours
+    rescued_count = 0
+    if args.rescue and args.weighted_frames:
+        for _ in range(args.rescue):
+            rgb = find_rescue_colour(weighted_composite, colours)
+            if not rgb:
+                break
+            colours.add((rgb[0], rgb[1], rgb[2], 255))
+            rescued_count += 1
+        if rescued_count:
+            summary_parts.append(f'{rescued_count} (rescued)')
+
+    if len(colours) > 256:
+        print(f'error: {len(colours)} colours exceeds 256 limit', file=sys.stderr)
+        sys.exit(1)
+
+    # 16x16 PNG is ffmpeg's expected 256 colour palette format,
+    # padded with last colour when there are fewer colours
+    colour_list = sorted(colours)
+    palette_img = Image.new('RGBA', (16, 16), colour_list[-1])
+    pixels = palette_img.load()
+
+    for index, colour in enumerate(colour_list):
+        x = index % 16
+        y = index // 16
+        pixels[x, y] = colour
+
+    palette_img.save(args.output)
+
+    print(
+        f'    palette {len(colour_list)} colours = {" + ".join(summary_parts)}',
+        file=sys.stderr,
+    )
+
+    if args.list:
+        for colour in colour_list:
+            print('#%02x%02x%02x' % colour[:3])
+
+
+if __name__ == '__main__':
+    main()

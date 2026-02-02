@@ -2,35 +2,11 @@
 
 source bin/make_gif
 
-@test generate_no_args {
-    expected='[0:v] scale=w=in_w:h=in_h [iv]; [iv][1:v] paletteuse='
+@test generate_default {
+    expected='[0:v] copy [iv]; [iv][1:v] paletteuse='
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
 
     got="$(generate_filter tests/gifs/original.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_brighten {
-    expected='[0:v] eq=brightness=0.25 [iv]; [iv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/brighten.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_denoise {
-    expected='[0:v] hqdn3d [iv]; [iv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/denoise.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_fps {
-    expected='[0:v] fps=10 [iv]; [iv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/fps.toml)"
     diff -u <(echo "$expected") <(echo "$got")
 }
 
@@ -42,71 +18,8 @@ source bin/make_gif
     diff -u <(echo "$expected") <(echo "$got")
 }
 
-@test generate_fps_scale_dither {
-    expected='[0:v] fps=10,scale=480:-1 [iv]; [iv][1:v] paletteuse='
-    expected+='dither=floyd_steinberg:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/scale.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_fps_crop {
-    expected='[0:v] fps=10,crop=200:100 [iv]; [iv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/crop.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_clips {
-    expected='[0:v] fps=16,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
-    expected+='[0:v] fps=16,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
-    expected+='[c1][c2] concat=n=2:v=1,crop=200:100,scale=320:-1 [cv]; '
-    expected+='[cv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/clips.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_clips_brighten {
-    expected='[0:v] fps=16,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
-    expected+='[0:v] fps=16,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
-    expected+='[c1][c2] concat=n=2:v=1,crop=200:100,scale=320:-1,'
-    expected+='eq=brightness=0.25 [cv]; '
-    expected+='[cv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/clips_brighten.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_clips_denoise {
-    expected='[0:v] fps=16,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
-    expected+='[0:v] fps=16,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
-    expected+='[c1][c2] concat=n=2:v=1,crop=200:100,scale=320:-1,'
-    expected+='hqdn3d [cv]; '
-    expected+='[cv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/clips_denoise.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_clips_slowdown {
-    expected='[0:v] fps=16,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
-    expected+='[0:v] fps=16,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
-    expected+='[c1][c2] concat=n=2:v=1,crop=200:100,scale=320:-1,'
-    expected+='setpts=1.5*PTS [cv]; '
-    expected+='[cv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/clips_slowdown.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
 @test generate_captions {
-    expected='[0:v] fps=18,scale=480:-1 [iv]; '
+    expected='[0:v] copy [iv]; '
     expected+='[iv][2:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
     expected+=":enable='between(t,0,0.3)' [v1]; "
     expected+='[v1][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
@@ -117,45 +30,5 @@ source bin/make_gif
     expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
 
     got="$(generate_filter tests/gifs/captions.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_captions_noscale {
-    expected='[0:v] scale=w=in_w:h=in_h [iv]; '
-    expected+='[iv][2:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
-    expected+=":enable='between(t,0,0.5)' [v1]; "
-    expected+='[v1][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
-    expected+=":enable='between(t,0.51,1)' [v2]; "
-    expected+='[v2][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/captions_noscale.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_clips_captions {
-    expected='[0:v] fps=18,trim=start=10:end=12,setpts=PTS-STARTPTS [c1]; '
-    expected+='[0:v] fps=18,trim=start=70:end=72,setpts=PTS-STARTPTS [c2]; '
-    expected+='[c1][c2] concat=n=2:v=1,scale=480:-1 [cv]; '
-    expected+='[cv][2:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
-    expected+=":enable='between(t,0,0.5)' [v1]; "
-    expected+='[v1][3:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
-    expected+=":enable='between(t,1.5,2.5)' [v2]; "
-    expected+='[v2][4:v] overlay=(main_w-overlay_w):(main_h-overlay_h)'
-    expected+=":enable='between(t,3,4)' [v3]; "
-    expected+='[v3][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    got="$(generate_filter tests/gifs/clips_captions.toml)"
-    diff -u <(echo "$expected") <(echo "$got")
-}
-
-@test generate_hdr_includes_tonemap {
-    expected='[0:v] zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,'
-    expected+='fps=12,scale=480:-1 [iv]; [iv][1:v] paletteuse='
-    expected+='dither=bayer:bayer_scale=4:diff_mode=rectangle'
-
-    video=tests/videos/sol_levante_hdr.mp4
-    got="$(generate_filter tests/gifs/sol-levante-hdr.toml)"
     diff -u <(echo "$expected") <(echo "$got")
 }

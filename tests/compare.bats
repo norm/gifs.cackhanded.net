@@ -1,5 +1,9 @@
 bats_require_minimum_version 1.7.0
 
+setup_file() {
+    rm -rf /tmp/make_gif
+}
+
 setup() {
     if [ "$(uname)" != 'Darwin' ]; then
         skip "Not macOS"
@@ -75,5 +79,14 @@ setup() {
 }
 
 @test compare_hdr_tonemapped {
+    cache="/tmp/make_gif/sol_levante_hdr"
+    hash="4ab44f7cdb2b"
+
     ./script/compare_frames_fuzzed tests/gifs/sol-levante-hdr.toml
+
+    [ -f "$cache/segment.$hash.mp4" ]
+    diff tests/gifs/sol-levante-hdr.segment.mp4 "$cache/segment.$hash.mp4"
+
+    [ -f "$cache/tiled.$hash.png" ]
+    diff tests/gifs/sol-levante-hdr.tiled.png "$cache/tiled.$hash.png"
 }
