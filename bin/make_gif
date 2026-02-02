@@ -458,7 +458,7 @@ function get_scale {
     local toml="$1"
 
     local output_width="$(toml $toml output.width)"
-    local scale="scale=${output_width:-$DEFAULT_WIDTH}:-1"
+    local scale="scale=${output_width:-$DEFAULT_WIDTH}:-2"
     [ "$output_width" == 'original' ] && scale=''
 
     echo $scale
