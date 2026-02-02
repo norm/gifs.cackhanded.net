@@ -14,7 +14,9 @@ jobs:
 
       - name: Install tools
         run: |
-          brew install bash bats-core ffmpeg gifsicle imagemagick yq
+          brew install bash bats-core gifsicle imagemagick yq
+          brew tap homebrew-ffmpeg/ffmpeg
+          brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-zimg
 
       - name: Setup python
         uses: actions/setup-python@v5

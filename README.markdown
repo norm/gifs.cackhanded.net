@@ -263,7 +263,11 @@ caption colours.
 To install pre-requisites:
 
     # tools to make GIFs
-    % brew install bash entr ffmpeg gifsicle ripgrep yq youtube-dl
+    % brew install bash entr gifsicle ripgrep yq youtube-dl
+
+    # ffmpeg with zimg for HDR video support
+    % brew tap homebrew-ffmpeg/ffmpeg
+    % brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-zimg
 
     # optional: for faster parallel test runs
     % brew install parallel
