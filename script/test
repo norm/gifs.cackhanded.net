@@ -15,6 +15,9 @@ print('flourish:', version('flourish'))
 print('imagequant:', version('imagequant'))
 "
 echo ""
+ffmpeg -version | head -1
+ffmpeg -buildconf
+echo ""
 
 declare -a tests
 blue="\e[34m"
