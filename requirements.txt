@@ -1,2 +1,4 @@
+basic-colormath
 flourish
+imagequant
 Pillow

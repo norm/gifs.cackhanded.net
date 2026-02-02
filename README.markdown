@@ -43,9 +43,9 @@ duration = '4.8'
 crop     = '628:468'
 
 [palette]
+weighted_frames = '1-5'  # prioritise these frames when picking palette
 add = [
-    '#5a7e4c',
-    '#d5dc4b',
+    '#5a7e4c'            # force a specific colour to be included
 ]
 list = 1
 show = 1
@@ -164,6 +164,12 @@ the video source.
 
 ### `[palette]` provides finer grained control over the colour palette chosen
 
+Palettes are generated using perceptual weighting to preserve visually
+important colours. This should mostly work without intervention.
+
+* `weighted_frames` specify frames to have more influence over the palette
+  selection (eg `"1 3 10-15"`), and rescue more important minority colours
+* `rescue` controls how many rescued colours are looked for (default: 4)
 * `add` is an array of colours (in any format compatible with
   [the Pillow ImageColor][col] module) to add to the initial palette
   formed from the video source

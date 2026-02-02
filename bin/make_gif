@@ -49,15 +49,11 @@ function main {
     done
 
     video="$(extract_segment "$toml" "$source_video")"
-    create_tiled_image "$video" >/dev/null
-
-    # calculate the palette
-    debug ffmpeg \
-        -loglevel error \
-        -y \
-        -i "$video" \
-        -filter_complex "$(palettegen_filter $toml)" \
-        "${TEMP}/palette.png"
+    tiled="$(create_tiled_image "$video")"
+    frame_count=$(
+        ffprobe -v error -count_frames -select_streams v:0 \
+            -show_entries stream=nb_read_frames -of csv=p=0 "$video"
+    )
 
     # get dimensions from processed segment
     output_width=$(
@@ -115,14 +111,38 @@ function main {
     [ -n "$(toml $toml palette.list)" ] && \
         list_palette='--list'
 
-    debug edit-palette \
-        $list_palette \
-        $caption_colours \
-        $(toml $toml palette.add) \
-        "${TEMP}/palette.png"
+    palette_add=''
+    for colour in $(toml $toml palette.add); do
+        palette_add+="--add $colour "
+    done
+
+    weighted_frames="$(toml $toml palette.weighted_frames)"
+    rescue="$(toml $toml palette.rescue)"
+
+    output_colours="$(toml $toml output.colours)"
+
+    local cache_dir=$(dirname "$tiled")
+    local palette_hash=$(
+        echo -n "${tiled}${output_colours}${weighted_frames}${rescue}${caption_colours}${palette_add}" \
+            | shasum | cut -c1-12
+    )
+    local palette_path="${cache_dir}/palette.${palette_hash}.png"
+
+    if [ ! -f "$palette_path" ]; then
+        debug palette \
+            "$tiled" \
+            "$palette_path" \
+            --colours "${output_colours:-$DEFAULT_COLOURS}" \
+            --frame-count "$frame_count" \
+            ${weighted_frames:+--weighted-frames "$weighted_frames"} \
+            ${rescue:+--rescue "$rescue"} \
+            $caption_colours \
+            $palette_add \
+            $list_palette
+    fi
 
     [ -n "$(toml $toml palette.show)" ] && \
-        open "${TEMP}/palette.png"
+        open "$palette_path"
 
     # first-pass stabilisation
     local stabilise="$(get_stabilise $toml)"
@@ -139,7 +159,7 @@ function main {
         -loglevel error \
         -y \
         -i "$video" \
-        -i "${TEMP}/palette.png" \
+        -i "$palette_path" \
         ${caption_args} \
         -f gif \
         -filter_complex "$(generate_filter $toml)" \
@@ -243,13 +263,10 @@ function main {
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
 
-    frames=$(
-        gifsicle --info "$gif" \
-            | grep \+\ image \
-            | tail -1 \
-            | sed -e 's/^  . image .//' -e 's/ .*$//'
-    )
-    echo "  > $((frames+1)) frames"
+    local bytes=$(stat -f'%z' "$gif")
+    local frames=$(toml $toml info.frames)
+    local colours=$(toml $toml info.colours)
+    echo "  = ${bytes}, ${frames} frames, ${colours} colours, ${gif}"
 }
 
 function extract_segment {
@@ -288,9 +305,14 @@ function extract_segment {
             && filter+=";[concat]${vf}[out]" \
             || filter+=";[concat]copy[out]"
 
+        local video_start=$(toml $toml video.start)
+        local timing_args=""
+        [ -n "$video_start" ] && timing_args="-ss $video_start"
+
         debug ffmpeg \
             -loglevel error \
             -y \
+            $timing_args \
             -i "$source_video" \
             -filter_complex "$filter" \
             -map "[out]" \
@@ -318,6 +340,7 @@ function extract_segment {
     fi
 
     mv "$temp_segment" "$segment"
+    echo "    segment cached $segment" >&2
 
     echo "$segment"
 }
@@ -347,6 +370,7 @@ function create_tiled_image {
             "$temp_tiled"
 
         mv "$temp_tiled" "$tiled"
+        echo "    tiled cached $tiled" >&2
     fi
 
     echo "$tiled"
@@ -364,15 +388,6 @@ function segment_filter {
     local denoise=$(get_denoise $toml)
 
     join ',' $tonemap $fps $crop $scale $bright $denoise
-}
-
-function palettegen_filter {
-    local toml="$1"
-
-    local max_cols=$(get_colours $toml)
-    local mode=$(get_stats_mode $toml)
-
-    echo "[0:v] palettegen=${max_cols}:${mode}"
 }
 
 function generate_filter {
@@ -449,14 +464,6 @@ function get_scale {
     echo $scale
 }
 
-function get_colours {
-    local toml="$1"
-
-    local output_colours="$(toml $toml output.colours)"
-
-    echo max_colors=${output_colours:-$DEFAULT_COLOURS}
-}
-
 function get_dither {
     local toml="$1"
 
@@ -500,14 +507,6 @@ function get_captions_filter {
     fi
 
     echo $captions
-}
-
-function get_stats_mode {
-    local toml="$1"
-
-    local output_mode="$(toml $toml output.mode)"
-
-    echo "stats_mode=${output_mode:-diff}"
 }
 
 function get_tonemap {

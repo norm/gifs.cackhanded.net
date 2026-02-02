@@ -50,4 +50,15 @@ the composite -- a 10x slowdown, so caching will be important.
 - [X] create a tiled image from the segment, to a predictable filename
 - [X] script to choose colours from the tiled image, accepting individual colours
       to add, ranges to add, and frames to duplicate (weighting)
-- [ ] integrate into make_gif
+
+During further testing, the palette chooser was modified to not duplicate
+frames, as this only achieved the desired results in artificial testing (1:4
+does what you want, but 70:200 does not, there's just too many pixels).
+
+Instead, applying weighting will split the available colours, with the
+weighted frames getting 40% and unweighted 60%. Further, the weighted frames
+will then also be scanned to try and find colours that have a low pixel count
+and are not represented in the palette chosen (such as colour of lips when
+skin tones dominate, or small highlight colours).
+
+- [X] integrate into make_gif

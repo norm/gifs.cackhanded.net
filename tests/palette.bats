@@ -58,18 +58,6 @@ bats_require_minimum_version 1.7.0
     [ "$status" -eq 1 ]
 }
 
-@test "palette does not duplicate colours" {
-    run ./bin/palette \
-        tests/palette/solid_grey.png \
-        "$BATS_TEST_TMPDIR/solid_grey.png" \
-        --colours 8 \
-        --list
-
-    [ "$status" -eq 0 ]
-    count=$(echo "$output" | grep -c '^#')
-    diff <(echo "1") <(echo "$count")
-}
-
 @test "spot colour is added to palette" {
     run ./bin/palette \
         tests/gifs/sol-levante-hdr.tiled.png \
@@ -96,6 +84,20 @@ bats_require_minimum_version 1.7.0
     diff tests/palette/multi_spot.png "$BATS_TEST_TMPDIR/multi_spot.png"
 }
 
+@test "palette does not duplicate colours" {
+    run ./bin/palette \
+        tests/gifs/sol-levante-hdr.tiled.png \
+        "$BATS_TEST_TMPDIR/no_dupe.png" \
+        --add '#ff00ff' \
+        --add '#ff00ff' \
+        --add '#ff00ff' \
+        --list
+
+    [ "$status" -eq 0 ]
+    count=$(echo "$output" | grep -c '#ff00ff')
+    diff <(echo "1") <(echo "$count")
+}
+
 @test "colour range adds interpolated colours" {
     run ./bin/palette \
         tests/gifs/sol-levante-hdr.tiled.png \
@@ -110,57 +112,7 @@ bats_require_minimum_version 1.7.0
     diff tests/palette/range.png "$BATS_TEST_TMPDIR/range.png"
 }
 
-@test "frame weighting with individual frames" {
-    ./bin/palette \
-        tests/gifs/sol-levante-hdr.tiled.png \
-        "$BATS_TEST_TMPDIR/weight_range.png" \
-        --colours 16 \
-        --frame-count 34 \
-        --weight-frames '0 1 2 13' \
-        --weighting 2 \
-        --save-weighted "$BATS_TEST_TMPDIR/weighted_image.png"
-
-    diff tests/palette/weighted_frames_4.png "$BATS_TEST_TMPDIR/weighted_image.png"
-
-    ./bin/palette \
-        tests/gifs/sol-levante-hdr.tiled.png \
-        "$BATS_TEST_TMPDIR/weight_range.png" \
-        --colours 16 \
-        --frame-count 34 \
-        --weight-frames '0 13 1 2' \
-        --weighting 2 \
-        --save-weighted "$BATS_TEST_TMPDIR/weighted_image.png"
-
-    diff tests/palette/weighted_frames_4.png "$BATS_TEST_TMPDIR/weighted_image.png"
-}
-
-@test "frame weighting with range syntax" {
-    ./bin/palette \
-        tests/gifs/sol-levante-hdr.tiled.png \
-        "$BATS_TEST_TMPDIR/weight_range.png" \
-        --colours 16 \
-        --frame-count 34 \
-        --weight-frames '0-6' \
-        --weighting 2 \
-        --save-weighted "$BATS_TEST_TMPDIR/weighted_image.png"
-
-    diff tests/palette/weighted_frames_7.png "$BATS_TEST_TMPDIR/weighted_image.png"
-}
-
-@test "frame weighting with mixed syntax" {
-    ./bin/palette \
-        tests/gifs/sol-levante-hdr.tiled.png \
-        "$BATS_TEST_TMPDIR/weight_mixed.png" \
-        --colours 16 \
-        --frame-count 34 \
-        --weight-frames '0 1 2-6' \
-        --weighting 2 \
-        --save-weighted "$BATS_TEST_TMPDIR/weighted_image.png"
-
-    diff tests/palette/weighted_frames_7.png "$BATS_TEST_TMPDIR/weighted_image.png"
-}
-
-@test "frame weighting changes palette" {
+@test "weighted frames changes palette" {
     ./bin/palette \
         tests/gifs/sol-levante-hdr.tiled.png \
         "$BATS_TEST_TMPDIR/no_weight.png" \
@@ -172,8 +124,44 @@ bats_require_minimum_version 1.7.0
         "$BATS_TEST_TMPDIR/weighted.png" \
         --colours 16 \
         --frame-count 34 \
-        --weight-frames '0-6' \
-        --weighting 4
+        --weighted-frames '1-7'
 
     ! cmp -s "$BATS_TEST_TMPDIR/no_weight.png" "$BATS_TEST_TMPDIR/weighted.png"
+}
+
+@test "weighted frames splits palette 40/60" {
+    run ./bin/palette \
+        tests/gifs/sol-levante-hdr.tiled.png \
+        "$BATS_TEST_TMPDIR/split.png" \
+        --colours 16 \
+        --frame-count 34 \
+        --weighted-frames '1-7' \
+        --rescue 0
+
+    [ "$status" -eq 0 ]
+    echo "$output" | grep -q '6 (weighted)'
+}
+
+@test "weighted frames with individual frame syntax" {
+    run ./bin/palette \
+        tests/gifs/sol-levante-hdr.tiled.png \
+        "$BATS_TEST_TMPDIR/individual.png" \
+        --colours 16 \
+        --frame-count 34 \
+        --weighted-frames '1 2 3 14'
+
+    [ "$status" -eq 0 ]
+    echo "$output" | grep -q '(weighted)'
+}
+
+@test "weighted frames with mixed syntax" {
+    run ./bin/palette \
+        tests/gifs/sol-levante-hdr.tiled.png \
+        "$BATS_TEST_TMPDIR/mixed.png" \
+        --colours 16 \
+        --frame-count 34 \
+        --weighted-frames '1 2 3-7'
+
+    [ "$status" -eq 0 ]
+    echo "$output" | grep -q '(weighted)'
 }
