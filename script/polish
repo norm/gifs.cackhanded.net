@@ -12,7 +12,7 @@ header_lines=5
 bindings=(
     "f:Finalise:key_finalise:1"
     "n:Next:key_next:1"
-    "r:Rebuild:key_rebuild:"
+    "r:Rebuild:key_debug_rebuild:"
     "e:Edit:key_edit:"
     "p:Preview:key_preview:"
     "s:Safari:key_safari:"
@@ -115,6 +115,11 @@ function key_next {
 
 function key_rebuild {
     sed -i '' -e 's/XYZZZYX/XYZZZYX/' "$toml"
+}
+
+function key_debug_rebuild {
+    GIF_DEBUG=y make -sB -f Makefile.gifs "$output"
+    echo
 }
 
 function key_edit {

@@ -39,10 +39,10 @@ sizes = true
 timecode = true
 ```
 
-- [ ] add an overlay of a quartered grid to help visualise spacing
-- [ ] annotate the grid with pixel measurements to help when cropping
-- [ ] issue a warning if the requested crop is out of bounds
-- [ ] provide a timecode to help with cut and caption timing
+- [X] add an overlay of a quartered grid to help visualise spacing
+- [X] annotate the grid with pixel measurements to help when cropping
+- [X] issue a warning if the requested crop is out of bounds
+- [X] provide a timecode to help with cut and caption timing
 
 Cropping is specified `crop = '3240:1820:400:128'` to simplify passing it
 to ffmpeg. A more human-readable and self-documenting version would be:

@@ -11,7 +11,9 @@ GOOGLE_FONTS := \
 	fonts/poppins-black.ttf \
 	fonts/poppins-regular.ttf \
 	fonts/poppins-bold.ttf \
-	fonts/raleway-regular.ttf
+	fonts/raleway-regular.ttf \
+	fonts/spacemono-regular.ttf \
+	fonts/spacemono-bold.ttf
 
 LOCAL_FONTS := \
 	fonts/acherusgrotesque-black.otf \
@@ -58,6 +60,12 @@ fonts/poppins-bold.ttf: | fonts
 
 fonts/raleway-regular.ttf: | fonts
 	curl -L -o $@ https://github.com/google/fonts/raw/main/ofl/raleway/Raleway%5Bwght%5D.ttf
+
+fonts/spacemono-regular.ttf: | fonts
+	curl -L -o $@ https://github.com/google/fonts/raw/main/ofl/spacemono/SpaceMono-Regular.ttf
+
+fonts/spacemono-bold.ttf: | fonts
+	curl -L -o $@ https://github.com/google/fonts/raw/main/ofl/spacemono/SpaceMono-Bold.ttf
 
 fonts/acherusgrotesque-black.otf: | fonts
 	cp "$(LOCAL_FONTS_DIR)/acherus grotesque/$(@F)" $@

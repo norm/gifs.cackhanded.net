@@ -26,7 +26,29 @@ function main {
         exit 1
     fi
 
-    duration=$(get_duration "$source_video")
+    probe_video "$source_video"
+
+    local crop_val="$(toml $toml video.crop)"
+    if [ -n "$crop_val" ]; then
+        local crop_w=$(echo "$crop_val" | cut -d: -f1)
+        local crop_h=$(echo "$crop_val" | cut -d: -f2)
+        local crop_x=$(echo "$crop_val" | cut -d: -f3)
+        local crop_y=$(echo "$crop_val" | cut -d: -f4)
+        if [ -n "$crop_x" ] && [ -n "$crop_y" ]; then
+            # validate crop bounds as ffmpeg will silently ignore
+            local right=$((crop_x + crop_w))
+            local bottom=$((crop_y + crop_h))
+            [ "$right" -gt "$source_width" ] && \
+                echo "    ${yellow}crop exceeds frame width: $right > $source_width${reset}"
+            [ "$bottom" -gt "$source_height" ] && \
+                echo "    ${yellow}crop exceeds frame height: $bottom > $source_height${reset}"
+        else
+            # show full crop, helpful for tweaking
+            crop_x=$(( (source_width - crop_w) / 2 ))
+            crop_y=$(( (source_height - crop_h) / 2 ))
+            echo "    crop=${crop_w}:${crop_h}:${crop_x}:${crop_y} (frame ${source_width}x${source_height})"
+        fi
+    fi
 
     local start_seconds=0
     local start=$(toml $toml video.start)
@@ -118,6 +140,11 @@ function main {
             caption_args+=" -i $caption_path"
         done
     fi
+
+    debug_enabled "$toml" timecode && \
+        caption_colours+="--add #ffffff --add #000000 "
+    debug_enabled "$toml" sizes && \
+        caption_colours+="--add #ffff00 --add #00ffff --add #000000 "
 
     list_palette=''
     [ -n "$(toml $toml palette.list)" ] && \
@@ -277,13 +304,26 @@ function main {
         cp "$TEMP/output.gif" "${TEMP}/gifsicle.${losses}.gif"
     fi
 
-    ./script/gif_info "$TEMP/gifsicle.${losses}.gif" "$toml"
+    # don't rewrite TOML during creation
+    "$(toml $toml draft)" != "true" && \
+        ./script/gif_info "$TEMP/gifsicle.${losses}.gif" "$toml"
 
     mv "$TEMP/gifsicle.${losses}.gif" "$gif"
 
     local bytes=$(stat -f'%z' "$gif")
-    local frames=$(toml $toml info.frames)
-    local colours=$(toml $toml info.colours)
+    local gif_info=$(gifsicle --color-info "$gif")
+    local frames=$(echo "$gif_info" | head -1 | cut -d' ' -f3)
+    local colours=$(
+        echo "$gif_info" \
+            | grep '^  [|]' \
+            | cut -c4- \
+            | fmt -1 \
+            | grep -v : \
+            | sed -e 's/^ *//' \
+            | sort -u \
+            | wc -l \
+            | tr -d ' '
+    )
     local elapsed=$(awk "BEGIN {printf \"%.1fs\", $EPOCHREALTIME - $start_time}")
     echo "  > ${elapsed}, ${bytes}, ${frames} frames, ${colours} colours, ${gif}"
 }
@@ -417,7 +457,9 @@ function generate_filter {
     local captions=$(get_captions_filter $toml)
     local stabilise=$(get_stabilise $toml)
     local slowdown="$(get_slowdown $toml)"
-    local alter="$(join ',' $stabilise $slowdown)"
+    local grid="$(get_grid $toml)"
+    local timecode="$(get_timecode $toml)"
+    local alter="$(join ',' $stabilise $slowdown $grid $timecode)"
     alter="${alter:-copy}"
 
     echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
@@ -498,6 +540,98 @@ function get_slowdown {
 
     [ -n "$output_slowdown" ] && \
         echo "setpts=${output_slowdown}*PTS"
+}
+
+function get_timecode {
+    local toml="$1"
+
+    debug_enabled "$toml" timecode && \
+        echo "drawtext=text='%{pts}':fontfile=fonts/spacemono-regular.ttf:x=(W/4-tw)/2:y=(H/4-th)/2:fontsize=18:fontcolor=white:box=1:boxcolor=black@0.7"
+}
+
+function get_grid {
+    local toml="$1"
+    local show_grid=false
+    local show_sizes=false
+
+    debug_enabled "$toml" grid && show_grid=true
+    debug_enabled "$toml" sizes && show_sizes=true
+
+    $show_grid || $show_sizes || return
+
+    local filters=""
+
+    if $show_grid; then
+        filters="drawgrid=w=iw/4:h=ih/4:t=2:c=white@0.5"
+    fi
+
+    if $show_sizes; then
+        local crop_val="$(toml $toml video.crop)"
+        local crop_w=$source_width
+        local crop_h=$source_height
+        local crop_x=0
+        local crop_y=0
+        if [ -n "$crop_val" ]; then
+            crop_w=$(echo "$crop_val" | cut -d: -f1)
+            crop_h=$(echo "$crop_val" | cut -d: -f2)
+            crop_x=$(echo "$crop_val" | cut -d: -f3)
+            crop_y=$(echo "$crop_val" | cut -d: -f4)
+            if [ -z "$crop_x" ] || [ -z "$crop_y" ]; then
+                crop_x=$(( (source_width - crop_w) / 2 ))
+                crop_y=$(( (source_height - crop_h) / 2 ))
+            fi
+        fi
+
+        local font="fontfile=fonts/spacemono-bold.ttf:fontsize=W/48:fontcolor=yellow:box=1:boxcolor=black@0.7"
+        local wfont="fontfile=fonts/spacemono-bold.ttf:fontsize=W/48:fontcolor=cyan:box=1:boxcolor=black@0.7"
+        local sep=""
+        [ -n "$filters" ] && sep=","
+
+        # X position labels (top edge) - use source coordinates
+        filters+="${sep}drawtext=text='${crop_x}':${font}:x=2:y=2"
+        for col in 1 2 3; do
+            local x_src=$(( col * crop_w / 4 + crop_x ))
+            filters+=",drawtext=text='${x_src}':${font}:x=${col}*W/4+2:y=2"
+        done
+        local x_end=$(( crop_w + crop_x ))
+        filters+=",drawtext=text='${x_end}':${font}:x=W-tw-2:y=2"
+
+        # Width stacks (below each column line) - use source dimensions
+        for col in 1 2 3 4; do
+            [ $col -eq 4 ] && x_pos="W-tw-2" || x_pos="${col}*W/4-tw-2"
+            for row in $(seq 1 $col); do
+                local val=$(( (col - row + 1) * crop_w / 4 ))
+                [ $((col - row + 1)) -eq 4 ] && val=$crop_w
+                filters+=",drawtext=text='${val}':${wfont}:x=${x_pos}:y=th*${row}+$((row*2+2))"
+            done
+        done
+
+        # Y position labels (left edge) - use source coordinates
+        filters+=",drawtext=text='${crop_y}':${font}:x=2:y=th+4"
+        for row in 1 2 3; do
+            local y_src=$(( row * crop_h / 4 + crop_y ))
+            filters+=",drawtext=text='${y_src}':${font}:x=2:y=${row}*H/4+2"
+        done
+        local y_end=$(( crop_h + crop_y ))
+        filters+=",drawtext=text='${y_end}':${font}:x=2:y=H-th-2"
+
+        # Height stacks (above each row line) - use source dimensions
+        for row in 1 2 3; do
+            for idx in $(seq 1 $row); do
+                local val=$(( (row - idx + 1) * crop_h / 4 ))
+                [ $((row - idx + 1)) -eq 4 ] && val=$crop_h
+                filters+=",drawtext=text='${val}':${wfont}:x=2:y=${row}*H/4-th*${idx}-$((idx*2))"
+            done
+        done
+        # Bottom row (special case - offset from H not H/4)
+        for idx in 1 2 3 4; do
+            local val=$(( (5 - idx) * crop_h / 4 ))
+            [ $((5 - idx)) -eq 4 ] && val=$crop_h
+            filters+=",drawtext=text='${val}':${wfont}:x=2:y=H-th*$((idx+1))-$((idx*2+2))"
+        done
+    fi
+
+    echo "$filters"
 }
 
 function get_captions_filter {
@@ -604,15 +738,27 @@ function size_in_mb {
     echo "$(echo 4k $bytes 1048576 / p | dc)"
 }
 
-function get_duration {
-    local duration=$(
-        ffprobe \
-            -v error \
-            -show_entries format=duration \
-            -of default=noprint_wrappers=1:nokey=1 \
-                "$1"
+function probe_video {
+    local video="$1"
+    local info=$(
+        ffprobe -v error -select_streams v:0 \
+            -show_entries stream=color_transfer,width,height:format=duration \
+            -of default=noprint_wrappers=1 "$video"
     )
-    echo ${duration%.*}
+    source_transfer=$(echo "$info" | grep '^color_transfer=' | cut -d= -f2)
+    source_width=$(echo "$info" | grep '^width=' | cut -d= -f2)
+    source_height=$(echo "$info" | grep '^height=' | cut -d= -f2)
+    local dur=$(echo "$info" | grep '^duration=' | cut -d= -f2)
+    duration=${dur%.*}
+}
+
+function debug_enabled {
+    local toml="$1"
+    local feature="$2"
+
+    [ "$(toml $toml debug)" = "true" ] && return 0
+    [ "$(toml $toml debug.$feature)" = "true" ] && return 0
+    return 1
 }
 
 function video_path {
