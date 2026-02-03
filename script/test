@@ -15,8 +15,13 @@ print('flourish:', version('flourish'))
 print('imagequant:', version('imagequant'))
 "
 echo ""
-ffmpeg -version | head -1
+sysctl -n machdep.cpu.brand_string
+echo ""
+ffmpeg -version
 ffmpeg -buildconf
+echo ""
+echo "Linked libraries:"
+otool -L "$(which ffmpeg)" | grep -E '(zimg|x265|x264|videotoolbox)' || echo "  (none matched filter)"
 echo ""
 
 declare -a tests
@@ -29,6 +34,7 @@ jobs_arg=""
 if command -v parallel &>/dev/null; then
     jobs_arg="--jobs 8"
 fi
+exit 1
 
 if [ -n "$*" ]; then
     tests=( "$@" )
