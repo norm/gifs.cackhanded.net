@@ -46,16 +46,20 @@ bats_require_minimum_version 1.7.0
     [ "$status" -eq 0 ]
 }
 
-@test "palette errors when exceeding 256 colours" {
+@test "palette reduces when reserved colours exceed budget" {
     run ./bin/palette \
         tests/gifs/sol-levante-hdr.tiled.png \
         "$BATS_TEST_TMPDIR/overflow.png" \
         --colours 250 \
         --range '#000000' '#ffffff' \
-        --range '#ff0000' '#00ff00'
+        --range '#ff0000' '#00ff00' \
+        --list
 
-    diff <(echo "error: 262 colours exceeds 256 limit") <(echo "$output")
-    [ "$status" -eq 1 ]
+    diff <(echo "    reducing automatic palette to 244 + 12 (reserved)") \
+         <(echo "$output" | head -1)
+    count=$(echo "$output" | grep -c '^#')
+    diff <(echo "256") <(echo "$count")
+    [ "$status" -eq 0 ]
 }
 
 @test "spot colour is added to palette" {

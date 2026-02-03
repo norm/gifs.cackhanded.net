@@ -155,12 +155,33 @@ def main():
     image = Image.open(args.input).convert('RGBA')
     summary_parts = []
 
+    # calculate reserved colours (explicitly added, must be kept)
+    reserved_add = len(args.add)
+    reserved_range = len(args.ranges) * 6
+    reserved_rescue = args.rescue if args.weighted_frames else 0
+    reserved = reserved_add + reserved_range + reserved_rescue
+    available = 256 - reserved
+
+    quantized_colours = args.colours
+    if available < 1:
+        print(
+            f'error: {reserved} reserved colours exceeds 256 limit',
+            file=sys.stderr,
+        )
+        sys.exit(1)
+    if quantized_colours > available:
+        print(
+            f'    reducing automatic palette to {available} + {reserved} (reserved)',
+            file=sys.stderr,
+        )
+        quantized_colours = available
+
     # first choose the palette from the source frames
     if args.weighted_frames:
         # weighting: allocate 40% of colours to weighted frames, 60% to remaining frames
         weighted_indices = set(get_weighted_frames(args.weighted_frames))
-        weighted_colours_budget = args.colours * 2 // 5
-        nonweighted_colours_budget = args.colours - weighted_colours_budget
+        weighted_colours_budget = quantized_colours * 2 // 5
+        nonweighted_colours_budget = quantized_colours - weighted_colours_budget
         colours = set()
 
         weighted_composite = extract_frames(
@@ -185,7 +206,7 @@ def main():
         summary_parts.append(f'{weighted_count} (weighted)')
     else:
         # no weighting - quantize the full image
-        colours = pick_palette(image, args.colours)
+        colours = pick_palette(image, quantized_colours)
         summary_parts.append(f'{len(colours)}')
 
     # add forced colours
