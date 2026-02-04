@@ -7,14 +7,15 @@ draft GIFs which can then be refined.
 
 This will replace `script/new`.
 
-- [ ] if there is an embedded SRT, extract it
-- [ ] create (prompting as needed) the index.markdown for the movie, series,
+- [X] if there is an embedded SRT, extract it
+- [X] create (prompting as needed) the index.markdown for the movie, series,
       episode, etc.
-- [ ] quick entry of start timecode plus duration, understanding 1:15:35,
+- [X] quick entry of start timecode plus duration, understanding 1:15:35,
       3:04.5, 6s
-- [ ] fuzzy search to find a word or phrase in the subtitles, present nearby
+- [X] fuzzy search to find a word or phrase in the subtitles, present nearby
       context lines to select a range
-- [ ] allow content specific templates to override the default
+- [X] allow content specific templates to override the default
+- [ ] support YouTube video IDs?
 
 
 # Refinement

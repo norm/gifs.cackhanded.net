@@ -4,16 +4,26 @@ file="$1"
 key="$2"
 index="${3:-}"
 
+function query {
+    local expr="$1"
+
+    if [[ "$file" == "-" ]]; then
+        yq -p toml -oy "$expr" 2>/dev/null
+    else
+        yq -p toml -oy "$expr" "$file" 2>/dev/null
+    fi
+}
+
 if [[ "$index" == "--length" ]]; then
-    result=$(yq -p toml -oy ".${key} | length" "$file" 2>/dev/null) || echo 0
+    result=$(query ".${key} | length") || echo 0
     [[ -n "$result" ]] && echo "$result"
 else
     if [[ -n "$index" ]]; then
         array_path="${key%.*}"
         field="${key##*.}"
-        result=$(yq -p toml -oy ".${array_path}[$((index-1))].${field}" "$file" 2>/dev/null) || true
+        result=$(query ".${array_path}[$((index-1))].${field}") || true
     else
-        result=$(yq -p toml -oy ".${key}" "$file" 2>/dev/null | sed -e "s/^- //" -e "s/^'//" -e "s/'$//") || true
+        result=$(query ".${key}" | sed -e "s/^- //" -e "s/^'//" -e "s/'$//") || true
     fi
 
     [[ "$result" == "null" || -z "$result" ]] && echo "" || echo "$result"

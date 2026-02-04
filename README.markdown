@@ -302,31 +302,20 @@ To make the GIFs:
     # create GIFs with FFmpeg debugging output
     % GIF_DEBUG=y make
 
-To add a new GIF, use the `new` script:
+To add a new GIF (or entire family of GIFs), use the `carve` script:
 
-    % ./script/new airplane/surely-you-cant-be-serious
+    % ./script/carve videos/Back.to.the.Future.1985.mkv
 
-It will create a new configuration from either a context-specific template (in
-this example, it would look for `source/airplane/new`), or the default
-template (stored in `source/new`), and open it in Sublime Text.
+As well as creating the index files for a new source, it will loop over
+creating draft TOML files, either from subtitles or direct timecodes.
+Once the video has been mined for possible GIFs, refine the draft files with:
 
-Once it has been edited for rough timings, captions, etc. closing the file
-makes the GIF and opens it in Safari for previewing. The file is reopened
-in Sublime Text and a loop now commences; as changes are saved to the file
-the GIF will be automatically remade. During this loop, pressing:
+    % ./script/polish
 
-  * **G** will run `make gifwrapped` — to send any new GIFs to the
-    right location in Dropbox for [GIFwrapped][gw] to pick them up
-    for on-device previewing
-  * **I** will show (in Sublime Text) a bunch of info about the built GIF
-  * **L** will mark the output with a line — useful when comparing runs
-    with different settings for output sizes, for example
-  * **P** will open the GIF in Preview — to be able to step through it
-    frame by frame, useful for getting caption/cut timings right
-  * **Return** will output a blank line
-  * **^L** will clear the screen
-  * **?** will output a reminder of the keys available
-  * **Q** will quit the loop and exit
+This finds all GIFs marked as drafts and allows for easier refinement,
+watching the TOML for changes and rebuilding automatically, along with easy
+options to check the work in Preview, show the GIF detail, and more. Then when
+finalising, it runs a set of checks to make sure its ready for publication.
 
 To add the GIF to the site for right now, update the published date and
 push it to GitHub:
@@ -338,7 +327,6 @@ push it to GitHub:
 
 Otherwise, schedule it for the future and commit at your leisure.
 
-[gw]: https://gifwrapped.co
 
 ### Updating GIFs
 
