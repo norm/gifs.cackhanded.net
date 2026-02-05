@@ -29,3 +29,8 @@ bats_require_minimum_version 1.7.0
     diff -u <(echo "640") <(echo "$output")
     [ "$status" -eq 0 ]
 }
+
+@test "conflicting string and table errors" {
+    run bin/toml tests/toml/conflicting.toml video.crop
+    [ "$status" -ne 0 ]
+}

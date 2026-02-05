@@ -1,0 +1,4 @@
+[video]
+crop = '300:200'
+[video.crop]
+width = 200

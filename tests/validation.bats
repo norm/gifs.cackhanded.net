@@ -38,3 +38,9 @@ setup() {
     diff -u <(echo "$expected_output") <(echo "$output")
     [ $status -eq 1 ]
 }
+
+@test "invalid toml errors" {
+    run bin/make_gif tests/toml/conflicting.toml "$BATS_TEST_TMPDIR/output.gif" videos/HU2ftCitvyQ.mp4
+    diff -u <(echo "tests/toml/conflicting.toml: Cannot overwrite a value (at line 3, column 12)") <(echo "$output")
+    [ $status -ne 0 ]
+}

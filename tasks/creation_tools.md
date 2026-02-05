@@ -56,4 +56,9 @@ width = 3240
 height = 1820
 ```
 
-- [ ] expand crop to use multiple keys, not one string
+- [X] expand crop to use multiple keys, not one string
+
+Crop supports more than numeric values, into the realm of functions:
+https://ffmpeg.org/ffmpeg-filters.html#crop
+
+- [ ] support non-numeric crop values

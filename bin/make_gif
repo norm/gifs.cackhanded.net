@@ -19,6 +19,10 @@ function main {
     local start_time=$EPOCHREALTIME
     local toml="$1"
     local gif="$2"
+
+    validate_toml "$toml" \
+        || exit 1
+
     local source_video="${3:-$(video_path $toml)}"
 
     if [ ! -f "$source_video" ]; then
@@ -28,26 +32,11 @@ function main {
 
     probe_video "$source_video"
 
-    local crop_val="$(toml $toml video.crop)"
-    if [ -n "$crop_val" ]; then
-        local crop_w=$(echo "$crop_val" | cut -d: -f1)
-        local crop_h=$(echo "$crop_val" | cut -d: -f2)
-        local crop_x=$(echo "$crop_val" | cut -d: -f3)
-        local crop_y=$(echo "$crop_val" | cut -d: -f4)
-        if [ -n "$crop_x" ] && [ -n "$crop_y" ]; then
-            # validate crop bounds as ffmpeg will silently ignore
-            local right=$((crop_x + crop_w))
-            local bottom=$((crop_y + crop_h))
-            [ "$right" -gt "$source_width" ] && \
-                echo "    ${yellow}crop exceeds frame width: $right > $source_width${reset}"
-            [ "$bottom" -gt "$source_height" ] && \
-                echo "    ${yellow}crop exceeds frame height: $bottom > $source_height${reset}"
-        else
-            # show full crop, helpful for tweaking
-            crop_x=$(( (source_width - crop_w) / 2 ))
-            crop_y=$(( (source_height - crop_h) / 2 ))
-            echo "    crop=${crop_w}:${crop_h}:${crop_x}:${crop_y} (frame ${source_width}x${source_height})"
-        fi
+    local crop_errors=$(validate_crop "$toml" "$source_width" "$source_height")
+    if [[ -n "$crop_errors" ]]; then
+        while IFS= read -r error; do
+            echo "    ${yellow}${error}${reset}"
+        done <<< "$crop_errors"
     fi
 
     local start_seconds=0
@@ -465,14 +454,96 @@ function generate_filter {
     echo "[0:v] $alter [iv]; [iv]${captions}${paletteuse}"
 }
 
+function get_crop_value {
+    local toml="$1"
+
+    local width="$(toml $toml video.crop.width)"
+    local height="$(toml $toml video.crop.height)"
+    local left="$(toml $toml video.crop.left)"
+    local top="$(toml $toml video.crop.top)"
+
+    # if no structured values, try string format
+    if [[ -z "$width" && -z "$height" && -z "$left" && -z "$top" ]]; then
+        toml $toml video.crop
+        return
+    fi
+
+    echo "$width:$height:$left:$top"
+}
+
 function get_crop {
     local toml="$1"
 
-    local video_crop="$(toml $toml video.crop)"
-    local crop=''
-    [ -n "$video_crop" ] && crop="crop=${video_crop}"
+    local value=$(get_crop_value "$toml")
+    [[ -z "$value" ]] \
+        && return
 
-    echo $crop
+    local width height left top
+    IFS=: read -r width height left top <<< "$value"
+
+    local result="$width"
+    [[ -n "$height" || -n "$left" || -n "$top" ]] \
+        && result+=":$height"
+    [[ -n "$left" || -n "$top" ]] \
+        && result+=":$left"
+    [[ -n "$top" ]] \
+        && result+=":$top"
+
+    echo "crop=$result"
+}
+
+function validate_crop {
+    local toml="$1"
+    local src_w="$2"
+    local src_h="$3"
+
+    local crop_value=$(get_crop_value "$toml")
+    [[ -z "$crop_value" ]] \
+        && return
+
+    local width height left top
+    IFS=: read -r width height left top <<< "$crop_value"
+
+    local errors=()
+
+    [[ -z "$width" ]] \
+        && errors+=("crop requires width")
+    [[ -n "$width" && "$width" -le 0 ]] \
+        && errors+=("crop width must be positive")
+    [[ -n "$height" && "$height" -le 0 ]] \
+        && errors+=("crop height must be positive")
+    [[ -n "$top" && -z "$left" ]] \
+        && errors+=("crop top requires left")
+
+    # bounds checks need valid dimensions
+    if [[ -n "$width" && "$width" -gt 0 ]]; then
+        [[ -z "$left" ]] \
+            && left=$(( (src_w - width) / 2 ))
+        [[ -z "$top" ]] \
+            && top=$(( (src_h - height) / 2 ))
+
+        local right=$((left + width))
+        local bottom=$((top + height))
+        [[ "$right" -gt "$src_w" ]] \
+            && errors+=("crop exceeds frame width: $right > $src_w")
+        [[ "$bottom" -gt "$src_h" ]] \
+            && errors+=("crop exceeds frame height: $bottom > $src_h")
+    fi
+
+    printf '%s\n' "${errors[@]}"
+}
+
+function validate_toml {
+    local toml="$1"
+
+    sed 's/^        //' <<-EOF | python - "$toml"
+        import sys, tomllib
+        try:
+            tomllib.load(open(sys.argv[1], 'rb'))
+        except tomllib.TOMLDecodeError as e:
+            print(f'{sys.argv[1]}: {e}')
+            sys.exit(1)
+	EOF
 }
 
 function get_stabilise {
@@ -566,20 +637,18 @@ function get_grid {
     fi
 
     if $show_sizes; then
-        local crop_val="$(toml $toml video.crop)"
-        local crop_w=$source_width
-        local crop_h=$source_height
-        local crop_x=0
-        local crop_y=0
-        if [ -n "$crop_val" ]; then
-            crop_w=$(echo "$crop_val" | cut -d: -f1)
-            crop_h=$(echo "$crop_val" | cut -d: -f2)
-            crop_x=$(echo "$crop_val" | cut -d: -f3)
-            crop_y=$(echo "$crop_val" | cut -d: -f4)
-            if [ -z "$crop_x" ] || [ -z "$crop_y" ]; then
-                crop_x=$(( (source_width - crop_w) / 2 ))
-                crop_y=$(( (source_height - crop_h) / 2 ))
-            fi
+        local crop_value=$(get_crop_value $toml)
+        local crop_w crop_h crop_x crop_y
+        if [[ -n "$crop_value" ]]; then
+            IFS=: read -r crop_w crop_h crop_x crop_y <<< "$crop_value"
+            # calculate centres if not specified
+            [[ -z "$crop_x" ]] && crop_x=$(( (source_width - crop_w) / 2 ))
+            [[ -z "$crop_y" ]] && crop_y=$(( (source_height - crop_h) / 2 ))
+        else
+            crop_w=$source_width
+            crop_h=$source_height
+            crop_x=0
+            crop_y=0
         fi
 
         local font="fontfile=fonts/spacemono-bold.ttf:fontsize=W/48:fontcolor=yellow:box=1:boxcolor=black@0.7"
@@ -725,7 +794,7 @@ function segment_hash {
     # visual transformations
     params+="$(get_tonemap "$source_video")"
     params+="$(toml $toml output.fps)"
-    params+="$(toml $toml video.crop)"
+    params+="$(get_crop_value $toml)"
     params+="$(toml $toml output.width)"
     params+="$(toml $toml output.brightness)"
     params+="$(toml $toml output.denoise)"

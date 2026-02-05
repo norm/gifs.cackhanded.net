@@ -8,9 +8,9 @@ function query {
     local expr="$1"
 
     if [[ "$file" == "-" ]]; then
-        yq -p toml -oy "$expr" 2>/dev/null
+        yq -p toml -oy "$expr"
     else
-        yq -p toml -oy "$expr" "$file" 2>/dev/null
+        yq -p toml -oy "$expr" "$file"
     fi
 }
 
@@ -21,9 +21,9 @@ else
     if [[ -n "$index" ]]; then
         array_path="${key%.*}"
         field="${key##*.}"
-        result=$(query ".${array_path}[$((index-1))].${field}") || true
+        result=$(query ".${array_path}[$((index-1))].${field}")
     else
-        result=$(query ".${key}" | sed -e "s/^- //" -e "s/^'//" -e "s/'$//") || true
+        result=$(query ".${key}" | sed -e "s/^- //" -e "s/^'//" -e "s/'$//")
     fi
 
     [[ "$result" == "null" || -z "$result" ]] && echo "" || echo "$result"

@@ -1,0 +1,2 @@
+- [ ] make captions using a function not a block of inline code
+- [ ] refine the function further
