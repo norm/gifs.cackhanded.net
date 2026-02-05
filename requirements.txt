@@ -1,4 +1,6 @@
+atproto
 basic-colormath
 flourish
 imagequant
 Pillow
+pytest

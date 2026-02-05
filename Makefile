@@ -1,4 +1,4 @@
-.PHONY: all baked_css clean clean-test dev_css fonts google-fonts local-fonts gifwrapped generate rebuild push publish remove removethumbs test
+.PHONY: all baked_css clean clean-test dev_css fonts google-fonts local-fonts gifwrapped generate pull_history push_history rebuild push publish remove removethumbs test
 
 all: gifs
 
@@ -80,6 +80,12 @@ next:
 	@./script/next 33 pm high
 	@echo ''
 	@./script/next filling
+
+pull_history:
+	@gh gist view 341abe028fa444a3015cf5736ee9f452 --raw -f post_history.txt > post_history.txt
+
+push_history:
+	@gh gist edit 341abe028fa444a3015cf5736ee9f452 -f post_history.txt post_history.txt
 
 fonts:
 	@make -s -f Makefile.fonts

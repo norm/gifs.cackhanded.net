@@ -1,0 +1,113 @@
+#!/usr/bin/env python
+"""Post a random GIF from the archives to Bluesky."""
+
+import argparse
+import os
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent / 'lib'))
+
+from atproto import Client, models
+from flourish import Flourish
+
+from posting import (
+    filter_pool,
+    format_post_text,
+    parse_history,
+    select_random_gif,
+)
+
+HISTORY_FILE = Path(__file__).parent.parent / 'post_history.txt'
+BASE_URL = 'https://gifs.cackhanded.net'
+
+
+def load_history():
+    if not HISTORY_FILE.exists():
+        return {}
+    return parse_history(HISTORY_FILE.read_text())
+
+
+def save_post(slug):
+    now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+    with open(HISTORY_FILE, 'a') as handle:
+        handle.write(f'{now} {slug}\n')
+
+
+def fetch_gif(url):
+    import urllib.request
+    with urllib.request.urlopen(url) as response:
+        return response.read()
+
+
+def make_link_facet(text, url):
+    text_bytes = text.encode('utf-8')
+    url_bytes = url.encode('utf-8')
+    byte_start = text_bytes.find(url_bytes)
+    byte_end = byte_start + len(url_bytes)
+    return models.AppBskyRichtextFacet.Main(
+        index=models.AppBskyRichtextFacet.ByteSlice(
+            byte_start=byte_start,
+            byte_end=byte_end,
+        ),
+        features=[models.AppBskyRichtextFacet.Link(uri=url)],
+    )
+
+
+def post_to_bluesky(client, text, gif_data, alt_text, page_url):
+    facets = [make_link_facet(text, page_url)]
+    client.send_video(
+        text=text,
+        video=gif_data,
+        video_alt=alt_text,
+        facets=facets,
+    )
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Post a random GIF to Bluesky')
+    parser.add_argument(
+        '--dry-run', '-n',
+        action='store_true',
+        help='Show what would be posted without actually posting',
+    )
+    args = parser.parse_args()
+
+    fl = Flourish()
+    pool = [s for s in fl.sources.all() if 'published' in s]
+    history = load_history()
+    now = datetime.now(timezone.utc)
+
+    filtered = filter_pool(pool, history, now)
+    if not filtered:
+        print('No GIFs available to post', file=sys.stderr)
+        sys.exit(1)
+
+    gif = select_random_gif(filtered, history, now)
+    slug = gif.path.lstrip('/')
+    page_url = f'{BASE_URL}/{slug}'
+    gif_url = f'{page_url}.gif'
+    text, alt_text = format_post_text(gif)
+    text = f'{text}\n\n{page_url}'
+
+    print(text)
+
+    if args.dry_run:
+        return
+
+    handle = os.environ['BSKY_HANDLE']
+    password = os.environ['BSKY_APP_PASSWORD']
+
+    gif_data = fetch_gif(gif_url)
+
+    client = Client()
+    client.login(handle, password)
+    post_to_bluesky(client, text, gif_data, alt_text, page_url)
+
+    save_post(slug)
+    print('Posted successfully')
+
+
+if __name__ == '__main__':
+    main()

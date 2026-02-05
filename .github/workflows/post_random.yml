@@ -1,0 +1,35 @@
+name: Post Random GIF
+
+on:
+  schedule:
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install atproto flourish
+
+      - name: Download history from gist
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: make pull_history
+
+      - name: Post random GIF
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+        run: ./script/post_random
+
+      - name: Upload history to gist
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: make push_history
